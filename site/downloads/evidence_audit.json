@@ -1,0 +1,78 @@
+{
+  "counts": {
+    "references": 27,
+    "mechanisms": 11,
+    "in_window": 25,
+    "outside_window": 2,
+    "date_uncertain": 0,
+    "metadata_verified": 0,
+    "fulltext_reviewed": 0,
+    "rank_eligible": 0,
+    "jcr_independently_verified": 0,
+    "journals": 22
+  },
+  "checks": [
+    "机制引用均能解析",
+    "重复文献已按DOI／规范题名合并",
+    "日期边界不臆造发表日",
+    "未填造IF或期刊排名",
+    "未将书目下载标为全文阅读"
+  ],
+  "limitations": [
+    "候选文献清单不等同于完成数据库系统检索；403访问失败不是零检索结果。",
+    "尚未取得用户指定版本的JCR学科榜单，不声称符合IF前79名。",
+    "书目信息核对与机制全文审校相互独立；metadata_verified不表示结论已核验。",
+    "其他癌种机制、单细胞关联与临床试验效果不能替代EGFR肺癌患者级因果证据。",
+    "奥希替尼联合化疗、埃万妥单抗及ADC后的完整治疗序列缺少本报告直接核验的证据。"
+  ],
+  "deduplication_notes": [],
+  "search": {
+    "status": "blocked",
+    "query": "((TITLE_ABS:EGFR OR TITLE_ABS:\"epidermal growth factor receptor\") AND (TITLE_ABS:\"lung cancer\" OR TITLE_ABS:NSCLC OR TITLE_ABS:\"lung adenocarcinoma\") AND (TITLE_ABS:resistan* OR TITLE_ABS:toleran* OR TITLE_ABS:osimertinib OR TITLE_ABS:gefitinib OR TITLE_ABS:erlotinib) AND (TITLE_ABS:microenvironment OR TITLE_ABS:fibroblast* OR TITLE_ABS:macrophage* OR TITLE_ABS:immune OR TITLE_ABS:cytokine* OR TITLE_ABS:chemokine* OR TITLE_ABS:FGF OR TITLE_ABS:VEGF OR TITLE_ABS:HGF OR TITLE_ABS:angiogen* OR TITLE_ABS:stromal)) AND FIRST_PDATE:[2011-10-21 TO 2026-10-21]",
+    "searched_at": "2026-10-21T12:54:23+00:00",
+    "total_hits": null,
+    "retrieved_count": 0,
+    "truncated": true,
+    "diagnostics": [
+      {
+        "kind": "access_denied",
+        "http_status": 403,
+        "attempts": 1,
+        "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%28TITLE_ABS%3AEGFR+OR+TITLE_ABS%3A%22epidermal+growth+factor+receptor%22%29+AND+%28TITLE_ABS%3A%22lung+cancer%22+OR+TITLE_ABS%3ANSCLC+OR+TITLE_ABS%3A%22lung+adenocarcinoma%22%29+AND+%28TITLE_ABS%3Aresistan%2A+OR+TITLE_ABS%3Atoleran%2A+OR+TITLE_ABS%3Aosimertinib+OR+TITLE_ABS%3Agefitinib+OR+TITLE_ABS%3Aerlotinib%29+AND+%28TITLE_ABS%3Amicroenvironment+OR+TITLE_ABS%3Afibroblast%2A+OR+TITLE_ABS%3Amacrophage%2A+OR+TITLE_ABS%3Aimmune+OR+TITLE_ABS%3Acytokine%2A+OR+TITLE_ABS%3Achemokine%2A+OR+TITLE_ABS%3AFGF+OR+TITLE_ABS%3AVEGF+OR+TITLE_ABS%3AHGF+OR+TITLE_ABS%3Aangiogen%2A+OR+TITLE_ABS%3Astromal%29%29+AND+FIRST_PDATE%3A%5B2011-10-21+TO+2026-10-21%5D&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+        "query": "((TITLE_ABS:EGFR OR TITLE_ABS:\"epidermal growth factor receptor\") AND (TITLE_ABS:\"lung cancer\" OR TITLE_ABS:NSCLC OR TITLE_ABS:\"lung adenocarcinoma\") AND (TITLE_ABS:resistan* OR TITLE_ABS:toleran* OR TITLE_ABS:osimertinib OR TITLE_ABS:gefitinib OR TITLE_ABS:erlotinib) AND (TITLE_ABS:microenvironment OR TITLE_ABS:fibroblast* OR TITLE_ABS:macrophage* OR TITLE_ABS:immune OR TITLE_ABS:cytokine* OR TITLE_ABS:chemokine* OR TITLE_ABS:FGF OR TITLE_ABS:VEGF OR TITLE_ABS:HGF OR TITLE_ABS:angiogen* OR TITLE_ABS:stromal)) AND FIRST_PDATE:[2011-10-21 TO 2026-10-21]",
+        "observed_at": "2026-10-21T12:54:23+00:00",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+        "required_domain": "www.ebi.ac.uk",
+        "guidance": "Use the supported environment network settings or existing authentication. Do not disable TLS verification or bypass the proxy."
+      }
+    ]
+  },
+  "ranking": {
+    "file": null,
+    "jif_year": null,
+    "max_rank": 79,
+    "independently_verified_jcr": false
+  },
+  "metadata_verification": {
+    "provider": "Europe PMC",
+    "checked_at": "2026-10-21T13:01:33+00:00",
+    "match_policy": "normalized exact title AND pubYear AND DOI when supplied",
+    "full_text_reviewed": false,
+    "diagnostics": [
+      {
+        "kind": "access_denied",
+        "http_status": 403,
+        "attempts": 1,
+        "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fnature11183%22&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+        "query": "DOI:\"10.1038/nature11183\"",
+        "observed_at": "2026-10-21T13:01:33+00:00",
+        "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+        "required_domain": "www.ebi.ac.uk",
+        "guidance": "Use the supported environment network settings or existing authentication. Do not disable TLS verification or bypass the proxy."
+      }
+    ],
+    "verified_count": 0,
+    "reference_count": 27,
+    "status": "blocked"
+  }
+}

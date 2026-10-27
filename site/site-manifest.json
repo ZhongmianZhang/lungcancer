@@ -1,0 +1,28 @@
+{
+  "title": "EGFR突变肺癌：肿瘤微环境与耐药机制",
+  "entrypoint": "index.html",
+  "status": "prepared_not_deployed",
+  "platform": "general_static_files",
+  "sites_import_compatibility": "not_verified",
+  "counts": {
+    "references": 27,
+    "mechanisms": 11,
+    "in_window": 25,
+    "outside_window": 2,
+    "date_uncertain": 0,
+    "metadata_verified": 0,
+    "fulltext_reviewed": 0,
+    "rank_eligible": 0,
+    "jcr_independently_verified": 0,
+    "journals": 22
+  },
+  "source_report_sha256": "b6f86ba31330353aeafb71bbab3bbffc30dd923dbd75532ee1475cb7d4186c04",
+  "research_status": "文献与JCR期刊排名待核验的研究草稿",
+  "files": [
+    "index.html",
+    "downloads/references.csv",
+    "downloads/report_data.json",
+    "downloads/evidence_audit.json",
+    "downloads/research_code.zip"
+  ]
+}

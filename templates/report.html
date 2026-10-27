@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>EGFR 突变肺癌 · 微环境与耐药机制</title>
+  <style>__REPORT_CSS__</style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">跳转到报告正文</a>
+  <aside class="sidebar" aria-label="报告导航">
+    <a class="brand" href="#overview"><span class="brand-icon">E</span><span>EGFR / TME<small>肺癌耐药机制研究报告</small></span></a>
+    <div class="sidebar-label">阅读路径</div>
+    <nav>
+      <a href="#overview"><span>01</span>证据与全景</a>
+      <a href="#network"><span>02</span>交互机制网络</a>
+      <a href="#mechanisms"><span>03</span>机制详解</a>
+      <a href="#translation"><span>04</span>转化研究方向</a>
+      <a href="#timeline"><span>05</span>文献时间线</a>
+      <a href="#references"><span>06</span>文献与证据表</a>
+      <a href="#methods"><span>07</span>方法与审计</a>
+    </nav>
+    <div class="sidebar-bottom"><span class="offline-dot"></span>自包含离线报告<br><small>无需外部脚本、字体或图表服务</small><button class="button secondary print-button" type="button" id="print-report">打印 / 保存 PDF</button></div>
+  </aside>
+  <main id="main-content">
+    <header class="hero" id="overview">
+      <div class="eyebrow">LUNG CANCER · TUMOR MICROENVIRONMENT</div>
+      <div class="draft-banner" id="draft-status">文献与期刊排名待核验的研究草稿</div>
+      <h1 id="report-title">EGFR 突变肺癌<br>微环境与耐药机制</h1>
+      <p class="hero-deck">从细胞间通讯到药物耐受：连接免疫细胞、成纤维细胞、炎症信号与血管生态。</p>
+      <div class="meta-row"><span id="date-window"></span><span id="generated-at"></span></div>
+      <div class="status-notices" id="status-notices" role="note"></div>
+      <div class="stats-grid" id="stats-grid"></div>
+    </header>
+    <section class="report-section overview-section" aria-labelledby="overview-title">
+      <div class="section-heading"><div><div class="section-kicker">01 / EVIDENCE LANDSCAPE</div><h2 id="overview-title">先理解证据，再连接机制</h2></div><span class="section-note">关联、因果与临床获益分别呈现</span></div>
+      <div class="intro-copy" id="overview-intro"></div>
+      <div class="takeaway-grid" id="overview-conclusions"></div>
+      <div class="crosstalk-heading" id="crosstalk-heading"><h3>跨细胞反馈：可检验的工作模型</h3><p class="figure-note">以下反馈环连接不同研究线索，完整回路需要在同一疾病模型与患者队列中验证。</p></div>
+      <div class="crosstalk-grid" id="crosstalk-list"></div>
+      <div class="evidence-legend"><strong>证据范围</strong><span class="badge direct">EGFR 肺癌直接研究</span><span class="badge association">人体 / EGFR 相关观察</span><span class="badge external">非 EGFR 特定 / 跨癌种背景</span><span class="badge clinical">临床试验</span><span class="badge review">综述</span></div>
+    </section>
+    <section class="report-section" id="network" aria-labelledby="network-title">
+      <div class="section-heading"><div><div class="section-kicker">02 / INTERACTION MAP</div><h2 id="network-title">微环境相互作用图</h2></div><label class="compact-select">图谱范围<select id="graph-select" aria-label="选择机制图谱"></select></label></div>
+      <p class="section-description">选择单条机制可查看完整的信号方向。点击节点，定位与其相关的机制；再次点击取消筛选。</p>
+      <div class="graph-wrap"><div class="graph-columns" aria-hidden="true"><span>细胞 / 来源</span><span>配体 / 微环境</span><span>受体 / 信号通路</span><span>细胞状态 / 结局</span></div><svg id="mechanism-graph" role="img" aria-labelledby="graph-svg-title graph-svg-desc"></svg><p class="graph-caption" id="graph-caption"></p></div>
+      <p class="figure-note">箭头表示文献讨论的信号关系，图形位置、线宽和节点大小不代表因果强度、效应量或证据质量。关联证据不得据此解读为已证实的耐药因果机制。</p>
+    </section>
+    <section class="report-section" id="mechanisms" aria-labelledby="mechanisms-title">
+      <div class="section-heading"><div><div class="section-kicker">03 / MECHANISM ATLAS</div><h2 id="mechanisms-title">耐药机制详解</h2></div><button id="expand-all" class="button secondary" type="button">展开全部详情</button></div>
+      <div class="filter-panel"><label class="search-label">检索机制与文献<input id="report-search" type="search" placeholder="例如：CAF、IL-6、MET、CXCL8、缺氧…" autocomplete="off"></label><label>细胞 / 通路类别<select id="category-filter"><option value="">全部类别</option></select></label><button class="button secondary" type="button" id="clear-filters">清除筛选</button></div>
+      <div class="results-line" aria-live="polite"><span id="mechanism-count"></span><button id="node-filter" class="node-filter" type="button" hidden></button></div>
+      <div id="mechanism-list" class="mechanism-list"></div>
+    </section>
+    <section class="report-section" id="translation" aria-labelledby="translation-title">
+      <div class="section-heading"><div><div class="section-kicker">04 / TRANSLATIONAL QUESTIONS</div><h2 id="translation-title">从机制到可验证的研究问题</h2></div></div>
+      <p class="section-description">机制具有生物学合理性，并不等同于已证明的临床治疗价值。以下按可检验的问题组织，避免将临床前信号直接转换为用药结论。</p>
+      <div id="translation-list" class="translation-grid"></div>
+    </section>
+    <section class="report-section" id="timeline" aria-labelledby="timeline-title">
+      <div class="section-heading"><div><div class="section-kicker">05 / PUBLICATION TIMELINE</div><h2 id="timeline-title">研究线索的时间分布</h2></div><span class="section-note">点击年份定位文献</span></div>
+      <div class="timeline" id="publication-timeline"></div><p class="figure-note">时间线描述当前候选文献库的发表分布，不代表该领域的发表总量或研究热度。</p>
+    </section>
+    <section class="report-section" id="references" aria-labelledby="references-title">
+      <div class="section-heading"><div><div class="section-kicker">06 / TRACEABLE REFERENCES</div><h2 id="references-title">文献与证据表</h2></div><span id="reference-count" class="section-note" aria-live="polite"></span></div>
+      <div class="reference-controls"><label>发表年份<select id="year-filter"><option value="">全部年份</option></select></label><label>证据范围<select id="evidence-filter"><option value="">全部证据范围</option></select></label><label class="checkbox-label"><input id="verified-only" type="checkbox">仅显示元数据已核验文献</label></div>
+      <div class="table-wrap"><table class="reference-table"><thead><tr><th scope="col">文献 / 来源</th><th scope="col">证据与机制边界</th><th scope="col">核验 / 期刊排名</th></tr></thead><tbody id="reference-table-body"></tbody></table></div>
+      <p class="figure-note">DOI 链接指向论文；PubMed 检索链接只是核验入口，不表示已成功匹配论文。IF 与期刊排名用于描述期刊，不替代单篇研究的质量评价。</p>
+    </section>
+    <section class="report-section" id="methods" aria-labelledby="methods-title">
+      <div class="section-heading"><div><div class="section-kicker">07 / METHODS & AUDIT</div><h2 id="methods-title">方法、局限与可复现性</h2></div></div>
+      <div class="methods-grid"><article class="method-card"><h3>范围与方法</h3><div id="methods-copy"></div></article><article class="method-card caution-card"><h3>解读边界</h3><ul id="limitations-list"></ul></article></div>
+      <details class="audit-panel"><summary>查看数据审计与完整性检查</summary><div id="audit-counts"></div><ul id="audit-checks"></ul></details>
+    </section>
+    <footer class="report-footer"><strong>EGFR / TME · 肺癌耐药机制研究报告</strong><p>面向文献整理与研究设计。具体治疗决策需要结合病理、分子检测、既往治疗和临床试验证据。</p><a href="#overview">返回顶部 ↑</a></footer>
+    <section class="report-section" id="static-report"><h2>完整静态正文</h2><noscript><p>当前浏览器禁用了 JavaScript，交互筛选和机制网络不可用。以下完整正文由生成器提供。</p></noscript>__STATIC_CONTENT__</section>
+  </main>
+  <script id="report-data" type="application/json">__REPORT_DATA__</script>
+  <script>__REPORT_JS__</script>
+</body>
+</html>

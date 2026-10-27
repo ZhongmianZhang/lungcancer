@@ -1,0 +1,589 @@
+{
+  "module": "immune",
+  "literature_window": {
+    "start": "2011-10-21",
+    "end": "2026-10-21"
+  },
+  "ranking_status": "用户已确认相关学科期刊IF排名前79；JCR年份、学科范围及官方榜单尚缺，未执行排名纳入筛选。",
+  "verification_note": "网络受限；以下为待联网核验的真实文献候选种子，不能声称已逐条核对全文、元数据或2026年更新。DOI仅在已有高把握时填入，状态仍统一为unverified_seed。",
+  "references": [
+    {
+      "id": "I01",
+      "title": "Activation of the PD-1 pathway contributes to immune escape in EGFR-driven lung tumors.",
+      "authors": "Akbay EA, Koyama S, Carretero J, et al.",
+      "year": 2013,
+      "journal": "Cancer Discovery",
+      "doi": "10.1158/2159-8290.CD-13-0310",
+      "pmid": "",
+      "url": "https://doi.org/10.1158/2159-8290.CD-13-0310",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_direct",
+      "finding_zh": "在EGFR驱动肺肿瘤模型中，把致癌信号、PD-1轴与免疫逃逸联系起来，支持肿瘤基因型可以塑造免疫微环境。",
+      "limitation_zh": "模型中的免疫逃逸证据不能直接证明所有EGFR突变患者均对PD-1治疗敏感，也不能单独说明奥希替尼获得性耐药。",
+      "exact_title": true
+    },
+    {
+      "id": "I02",
+      "title": "EGFR Mutations and ALK Rearrangements Are Associated with Low Response Rates to PD-1 Pathway Blockade in Non-Small Cell Lung Cancer: A Retrospective Analysis.",
+      "authors": "Gainor JF, Shaw AT, Sequist LV, et al.",
+      "year": 2016,
+      "journal": "Clinical Cancer Research",
+      "doi": "10.1158/1078-0432.CCR-15-3101",
+      "pmid": "",
+      "url": "https://doi.org/10.1158/1078-0432.CCR-15-3101",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_association",
+      "finding_zh": "临床回顾性结果显示EGFR突变/ALK重排NSCLC对PD-1通路阻断的缓解率较低，支持分子背景与免疫治疗表现有关。",
+      "limitation_zh": "EGFR与ALK是不同驱动背景；回顾性关联不能证实某个细胞因子导致耐药，不能外推到所有免疫联合策略。",
+      "exact_title": true
+    },
+    {
+      "id": "I03",
+      "title": "EGFR mutation correlates with uninflamed phenotype and weak immunogenicity, causing impaired response to PD-1 blockade in non-small cell lung cancer.",
+      "authors": "Dong ZY, Zhang JT, Liu SY, et al.",
+      "year": 2017,
+      "journal": "OncoImmunology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=EGFR%20mutation%20correlates%20with%20uninflamed%20phenotype%20and%20weak%20immunogenicity%2C%20causing%20impaired%20response%20to%20PD-1%20blockade%20in%20non-small%20cell%20lung%20cancer.",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_association",
+      "finding_zh": "支持EGFR突变肺癌较弱免疫原性和非炎症性免疫环境与PD-1阻断低反应相关这一框架。",
+      "limitation_zh": "标题中的因果措辞需结合原文实验分层审查；不同EGFR亚型、吸烟背景、治疗阶段和共突变均可能改变结果。",
+      "exact_title": true
+    },
+    {
+      "id": "I04",
+      "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+      "authors": "Maynard A, McCoach CE, Rotow JK, et al.",
+      "year": 2020,
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "pmid": "",
+      "url": "https://doi.org/10.1016/j.cell.2020.07.017",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_association",
+      "finding_zh": "单细胞层面的纵向/治疗阶段分析显示靶向治疗过程中肿瘤细胞状态及微环境发生重塑，强调治疗残留与进展期不可混为一类。",
+      "limitation_zh": "观察性单细胞图谱支持状态关联和假说生成；细胞比例和配体受体共表达不能单独证明功能性耐药因果。",
+      "exact_title": true
+    },
+    {
+      "id": "I05",
+      "title": "Targeting macrophages: therapeutic approaches in cancer.",
+      "authors": "Cassetta L, Pollard JW.",
+      "year": 2018,
+      "journal": "Nature Reviews Drug Discovery",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Targeting%20macrophages%3A%20therapeutic%20approaches%20in%20cancer.",
+      "verification": "unverified_seed",
+      "evidence_scope": "review",
+      "finding_zh": "综述巨噬细胞招募、分化、免疫抑制和治疗靶向的多种机制，可作为TAM网络的概念基础。",
+      "limitation_zh": "跨癌种综述；不能据此声称CCL2/CCR2或CSF1R抑制已在EGFR突变肺癌耐药后证实临床获益。",
+      "exact_title": true
+    },
+    {
+      "id": "I06",
+      "title": "Myeloid-derived suppressor cells in the era of increasing myeloid cell diversity.",
+      "authors": "Veglia F, Sanseviero E, Gabrilovich DI.",
+      "year": 2021,
+      "journal": "Nature Reviews Immunology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Myeloid-derived%20suppressor%20cells%20in%20the%20era%20of%20increasing%20myeloid%20cell%20diversity.",
+      "verification": "unverified_seed",
+      "evidence_scope": "review",
+      "finding_zh": "强调MDSC的功能定义、异质性及代谢/氧化应激介导的免疫抑制，提醒区分中性粒细胞表型与抑制功能。",
+      "limitation_zh": "主要为跨癌种免疫生物学；具体趋化轴在EGFR突变耐药人群中的方向和效应量需要专门验证。",
+      "exact_title": true
+    },
+    {
+      "id": "I07",
+      "title": "Single-Cell Transcriptomics of Human and Mouse Lung Cancers Reveals Conserved Myeloid Populations across Individuals and Species.",
+      "authors": "Zilionis R, Engblom C, Pfirschke C, et al.",
+      "year": 2019,
+      "journal": "Immunity",
+      "doi": "10.1016/j.immuni.2019.03.009",
+      "pmid": "",
+      "url": "https://doi.org/10.1016/j.immuni.2019.03.009",
+      "verification": "unverified_seed",
+      "evidence_scope": "other_cancer",
+      "finding_zh": "肺癌单细胞研究揭示复杂、可跨物种对应的髓系细胞状态，为精细区分TAM、单核细胞和中性粒细胞提供依据。",
+      "limitation_zh": "肺癌髓系图谱不等于EGFR突变耐药专属图谱；本报告将其列为NSCLC背景证据，而非EGFR直接因果。",
+      "exact_title": true,
+      "evidence_scope_detail": "一般肺癌髓系图谱，非EGFR突变耐药专属研究。"
+    },
+    {
+      "id": "I08",
+      "title": "The adenosine pathway in immuno-oncology.",
+      "authors": "Allard B, Allard D, Buisseret L, Stagg J.",
+      "year": 2020,
+      "journal": "Nature Reviews Clinical Oncology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=The%20adenosine%20pathway%20in%20immuno-oncology.",
+      "verification": "unverified_seed",
+      "evidence_scope": "review",
+      "finding_zh": "概述CD39/CD73介导胞外腺苷生成及其通过A2A/A2B受体影响免疫和肿瘤生态的机制。",
+      "limitation_zh": "跨癌种综述；CD73表达或腺苷相关基因特征不能直接当作EGFR-TKI耐药的已验证临床预测标志物。",
+      "exact_title": true
+    },
+    {
+      "id": "I09",
+      "title": "Nivolumab Plus Chemotherapy in EGFR-Mutated Metastatic Non-Small-Cell Lung Cancer After Disease Progression on EGFR Tyrosine Kinase Inhibitors: Final Results of CheckMate 722.",
+      "authors": "Mok TSK, Nakagawa K, Park K, et al.",
+      "year": 2024,
+      "journal": "Journal of Clinical Oncology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Nivolumab%20Plus%20Chemotherapy%20in%20EGFR-Mutated%20Metastatic%20Non-Small-Cell%20Lung%20Cancer%20After%20Disease%20Progression%20on%20EGFR%20Tyrosine%20Kinase%20Inhibitors%3A%20Final%20Results%20of%20CheckMate%20722.",
+      "verification": "unverified_seed",
+      "evidence_scope": "clinical_trial",
+      "finding_zh": "EGFR-TKI后人群的随机研究未达到主要PFS终点，说明加入常规PD-1阻断不能普遍解决EGFR突变肺癌耐药。",
+      "limitation_zh": "这是特定方案与人群的结果；不排除其他免疫联合有效，也不代表已检验奥希替尼化疗、埃万妥单抗和ADC全部失败后的序列。",
+      "exact_title": false
+    },
+    {
+      "id": "I10",
+      "title": "Phase III KEYNOTE-789 Study of Pembrolizumab or Placebo Plus Pemetrexed and Platinum in Patients With Tyrosine Kinase Inhibitor–Resistant, EGFR-Mutant, Metastatic Nonsquamous Non–Small Cell Lung Cancer.",
+      "authors": "Yang JCH, Lee DH, Lee JS, et al.",
+      "year": 2024,
+      "journal": "Journal of Clinical Oncology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Phase%20III%20KEYNOTE-789%20Study%20of%20Pembrolizumab%20or%20Placebo%20Plus%20Pemetrexed%20and%20Platinum%20in%20Patients%20With%20Tyrosine%20Kinase%20Inhibitor%E2%80%93Resistant%2C%20EGFR-Mutant%2C%20Metastatic%20Nonsquamous%20Non%E2%80%93Small%20Cell%20Lung%20Cancer.",
+      "verification": "unverified_seed",
+      "evidence_scope": "clinical_trial",
+      "finding_zh": "帕博利珠单抗联合化疗相对化疗未达到预设的主要终点显著性要求，为常规PD-1加化疗策略提供重要边界。",
+      "limitation_zh": "需按原文预设统计阈值解读，不能把未达主要终点改写为所有个体无效，也不能据此否定所有免疫通路。",
+      "exact_title": false,
+      "title_note": "按已知题名整理，正式标点及完整题名需联网核对；当前仅作KEYNOTE-789检索线索。"
+    },
+    {
+      "id": "I11",
+      "title": "Atezolizumab plus bevacizumab and chemotherapy in non-small-cell lung cancer (IMpower150): key subgroup analyses of patients with EGFR mutations or baseline liver metastases in a randomised, open-label phase 3 trial.",
+      "authors": "Reck M, Mok TSK, Nishio M, et al.",
+      "year": 2019,
+      "journal": "The Lancet Respiratory Medicine",
+      "doi": "10.1016/S2213-2600(19)30084-0",
+      "pmid": "",
+      "url": "https://doi.org/10.1016/S2213-2600(19)30084-0",
+      "verification": "unverified_seed",
+      "evidence_scope": "clinical_trial",
+      "finding_zh": "探索性亚组结果为抗血管生成、化疗与免疫联合在EGFR相关人群中的研究提供线索。",
+      "limitation_zh": "EGFR亚组规模、选择和分析层级限制因果结论；组合方案的临床表现不能定位究竟哪条微环境轴被逆转，也不能直接外推至现代重度经治序列。",
+      "exact_title": true
+    },
+    {
+      "id": "I12",
+      "title": "Elements of cancer immunity and the cancer–immune set point.",
+      "authors": "Chen DS, Mellman I.",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature21349",
+      "pmid": "",
+      "url": "https://doi.org/10.1038/nature21349",
+      "verification": "unverified_seed",
+      "evidence_scope": "review",
+      "finding_zh": "以癌症免疫循环和免疫设定点解释抗原呈递、T细胞启动、迁移、浸润、识别及杀伤之间的连续约束。",
+      "limitation_zh": "这是跨癌种整合框架，不是EGFR突变肺癌耐药的单一原始实验，也不能替代具体配体受体轴的功能验证。",
+      "exact_title": true
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "immune_exclusion",
+      "title": "EGFR致癌信号与非炎症性微环境：免疫逃逸和TKI耐药需要分别解释",
+      "category": "免疫设定点",
+      "summary": "EGFR基因型可塑造PD-L1、抗原可见性和T细胞浸润，但免疫逃逸并不等于已经证明了EGFR-TKI耐药。",
+      "chain": [
+        "EGFR致癌信号与共突变/治疗状态",
+        "抗原呈递、趋化因子与PD-L1动态变化",
+        "T细胞启动或进入肿瘤受限",
+        "残留克隆免疫清除不足；与肿瘤内耐药并行"
+      ],
+      "details": [
+        "EGFR突变首先提供肿瘤细胞内的生长驱动，同时也可能改变细胞因子、PD-L1及抗原呈递相关程序。Akbay等的EGFR驱动肺癌模型将PD-1轴和免疫逃逸联系起来；Gainor及Dong等临床/转录组研究则提示不少EGFR突变肿瘤具有较低的免疫治疗反应及非炎症性特征。两类结果并不矛盾：肿瘤细胞有PD-L1并不保证存在足够的肿瘤反应性T细胞，也不保证单独阻断PD-1就能恢复完整的癌症免疫循环。",
+        "机制应拆成抗原产生、HLA呈递、树突状细胞交叉呈递、T细胞启动、血管外渗、趋化进入、识别和杀伤多个环节。即使某个环节被恢复，其他限速环节仍可能存在。不同EGFR亚型、TP53等共突变、吸烟相关突变负荷、病灶部位及既往治疗都会影响这些状态；不宜把所有EGFR突变肺癌统一归为绝对的“免疫冷肿瘤”。PD-L1、CD8数量与功能、空间分布也不能互相替代。",
+        "对于耐药研究，更合理的假设是免疫清除不足允许药物耐受残留细胞存活，而肿瘤细胞本身同时获得靶内突变、旁路激活或表型重编程。这里“帮助残留克隆存活”与“直接恢复EGFR下游信号”是不同的因果层次，需要用肿瘤细胞/免疫细胞共培养、功能阻断及体内干预分别检验。单纯比较治疗前后PD-L1染色，不足以确认微环境导致了奥希替尼耐药。"
+      ],
+      "references": [
+        "I01",
+        "I02",
+        "I03",
+        "I12"
+      ],
+      "evidence_level": "EGFR模型因果＋人体关联；直接TKI耐药因果需另证",
+      "clinical_boundary": "不能依据PD-L1阳性或EGFR相关免疫逃逸模型，直接推荐以PD-1单药替代有效的EGFR靶向策略。",
+      "research_questions": [
+        "在相同EGFR亚型下，何种共突变和空间免疫状态决定残留克隆能否被清除？",
+        "早期治疗残留阶段与临床进展阶段，抗原呈递和CD8功能变化是否一致？"
+      ],
+      "nodes": [
+        "EGFR突变肿瘤",
+        "PD-L1",
+        "PD-1+T细胞",
+        "树突状细胞",
+        "抗原呈递",
+        "肿瘤残留细胞"
+      ],
+      "edges": [
+        {
+          "source": "EGFR突变肿瘤",
+          "target": "PD-L1",
+          "label": "可调节；依状态变化"
+        },
+        {
+          "source": "PD-L1",
+          "target": "PD-1+T细胞",
+          "label": "抑制受体信号"
+        },
+        {
+          "source": "树突状细胞",
+          "target": "抗原呈递",
+          "label": "交叉呈递"
+        },
+        {
+          "source": "PD-1+T细胞",
+          "target": "肿瘤残留细胞",
+          "label": "清除能力受限时可能形成庇护"
+        }
+      ]
+    },
+    {
+      "id": "immune_tam",
+      "title": "TAM与肿瘤/CAF的反馈：生存信号和免疫抑制可同时存在",
+      "category": "髓系免疫",
+      "summary": "CCL2/CCR2与CSF1/CSF1R等参与单核细胞募集及存活；TAM释放的多种因子可连接免疫抑制、基质重塑和肿瘤存活。",
+      "chain": [
+        "肿瘤/CAF产生CCL2与CSF1等",
+        "单核细胞募集和TAM状态形成",
+        "IL-6、IL-10、TGF-β及生长因子网络",
+        "CD8功能受限、基质重塑与残留细胞支持"
+      ],
+      "details": [
+        "肿瘤细胞、成纤维细胞及其他基质细胞可以提供CCL2等趋化信号，CCR2表达的单核细胞由循环进入病灶后，在CSF1、缺氧、代谢底物及局部炎症共同作用下形成不同TAM状态。TAM并非固定的“M1/M2”二选一：来源、空间位置、吞噬功能、脂质代谢和治疗时间均会改变其表型。单细胞肺癌研究支持这一异质性，因此以一个CD68或CD163指标代表所有巨噬细胞的促耐药功能，会丢失关键差异。",
+        "在机制层面，TAM可通过IL-10、TGF-β、抑制性配体和代谢竞争限制T细胞，通过IL-6等炎症/生存信号与肿瘤STAT3程序形成反馈，并通过蛋白酶和基质调节连接CAF及血管生态。部分情境下巨噬细胞相关生长因子还可能帮助维持PI3K/AKT或MAPK输出。但本模块引用的巨噬细胞综述和肺癌图谱不能独立证明每个串联环节已在EGFR突变奥希替尼耐药患者中完成因果验证，具体轴需要按原始研究逐项补证。",
+        "研究应同时测量细胞来源、配体浓度、受体表达和功能反应，并用来源特异的基因干预或药理阻断检验因果。若CSF1R/CCR2干预后肿瘤缩小，还需要区分是改变免疫杀伤、肿瘤生存信号还是药物暴露造成。治疗会诱发其他髓系细胞代偿，广泛清除巨噬细胞也可能损失抗肿瘤亚群，因此TAM数量下降不能自动等同于耐药被逆转。"
+      ],
+      "references": [
+        "I05",
+        "I07",
+        "I04"
+      ],
+      "evidence_level": "跨癌种机制综述＋肺癌细胞图谱；EGFR特异因果有限",
+      "clinical_boundary": "CCR2/CSF1R等靶向策略仍需在明确EGFR耐药队列中验证；不能仅凭TAM富集认定某药有效。",
+      "research_questions": [
+        "耐药病灶中促存活配体来自TAM、CAF还是肿瘤细胞本身？",
+        "选择性重编程某类TAM能否优于不分亚群的清除策略？"
+      ],
+      "nodes": [
+        "肿瘤/CAF",
+        "CCL2",
+        "CCR2+单核细胞",
+        "CSF1",
+        "TAM",
+        "IL-6/IL-10/TGF-β",
+        "CD8+T细胞"
+      ],
+      "edges": [
+        {
+          "source": "肿瘤/CAF",
+          "target": "CCL2",
+          "label": "可能分泌"
+        },
+        {
+          "source": "CCL2",
+          "target": "CCR2+单核细胞",
+          "label": "趋化募集"
+        },
+        {
+          "source": "CSF1",
+          "target": "TAM",
+          "label": "支持存活/分化"
+        },
+        {
+          "source": "TAM",
+          "target": "IL-6/IL-10/TGF-β",
+          "label": "依细胞状态分泌"
+        },
+        {
+          "source": "IL-6/IL-10/TGF-β",
+          "target": "CD8+T细胞",
+          "label": "部分信号抑制或重塑功能"
+        }
+      ]
+    },
+    {
+      "id": "immune_chemokine",
+      "title": "趋化因子决定谁进入肿瘤：抑制性髓系募集与效应T细胞募集相互竞争",
+      "category": "趋化因子与MDSC",
+      "summary": "CXCL8–CXCR1/2与CCL2–CCR2可关联髓系募集；CXCL9/10/11–CXCR3则常参与活化T细胞迁移，不能把所有趋化因子统称为促耐药。",
+      "chain": [
+        "肿瘤/CAF/髓系细胞产生趋化因子",
+        "不同受体决定募集细胞的种类和位置",
+        "髓系抑制与效应T细胞进入的平衡变化",
+        "局部免疫清除效率改变"
+      ],
+      "details": [
+        "趋化因子的意义取决于来源、受体、浓度梯度、空间位置和治疗阶段。CXCL8及其他CXCR2配体可参与中性粒细胞/粒细胞样髓系细胞募集；CCL2–CCR2可参与单核细胞进入。部分被募集细胞获得精氨酸酶、活性氧/氮、免疫抑制性代谢和细胞因子程序，从而降低T细胞增殖及杀伤。但“中性粒细胞增多”与“存在功能性MDSC”不是同一结论：MDSC需要抑制功能证据，不能只依靠形态、单一标记或中性粒细胞/淋巴细胞比值定义。",
+        "相对地，IFN相关CXCL9、CXCL10和CXCL11可通过CXCR3帮助活化T细胞迁移，在某些环境中有利于肿瘤免疫识别；持续炎症又可能同时诱导抑制性反馈。因此，某种趋化因子在耐药组织中升高，可能是耐药的推动者、治疗反应、免疫浸润的结果，或多个过程的混合。泛癌或一般肺癌观察不能直接确定其在EGFR突变肿瘤中的净效应，更不能预设阻断所有趋化信号都会获益。",
+        "优先的研究设计是将空间配体/受体图谱与真实迁移和抑制实验结合：比较阻断CXCR2后进入的髓系细胞是否减少、CD8是否恢复、肿瘤细胞对TKI的敏感性是否改变；并检测是否出现另一条趋化轴代偿。血液趋化因子可用于动态观察，但其来源可能包括感染、组织损伤和药物炎症，不宜直接当成肿瘤内耐药强度的替代指标。"
+      ],
+      "references": [
+        "I06",
+        "I07",
+        "I12"
+      ],
+      "evidence_level": "一般肺癌/跨癌种免疫机制；EGFR耐药中的方向需验证",
+      "clinical_boundary": "CXCR2/CCR2等抑制剂属于机制匹配研究方向；现有框架不构成EGFR耐药后的通用治疗推荐。",
+      "research_questions": [
+        "同一病灶中CXCR2相关髓系募集和CXCR3相关T细胞募集，哪一条轴是限速环节？",
+        "趋化轴抑制后的代偿网络以及感染相关混杂因素如何控制？"
+      ],
+      "nodes": [
+        "肿瘤/CAF/髓系细胞",
+        "CXCL8",
+        "CXCR1/2+髓系细胞",
+        "MDSC功能程序",
+        "CXCL9/10/11",
+        "CXCR3+效应T细胞"
+      ],
+      "edges": [
+        {
+          "source": "肿瘤/CAF/髓系细胞",
+          "target": "CXCL8",
+          "label": "情境依赖分泌"
+        },
+        {
+          "source": "CXCL8",
+          "target": "CXCR1/2+髓系细胞",
+          "label": "趋化"
+        },
+        {
+          "source": "CXCR1/2+髓系细胞",
+          "target": "MDSC功能程序",
+          "label": "部分细胞可获得，需功能确认"
+        },
+        {
+          "source": "CXCL9/10/11",
+          "target": "CXCR3+效应T细胞",
+          "label": "促进迁移，净效应依情境"
+        }
+      ]
+    },
+    {
+      "id": "immune_cell_network",
+      "title": "DC、Treg、CD8与NK构成串联约束：免疫细胞丰度不等于功能",
+      "category": "淋巴细胞与抗原呈递",
+      "summary": "树突状细胞启动、效应T细胞进入/杀伤、Treg抑制及NK识别相互依赖；任何一环受限都可能保护药物残留克隆。",
+      "chain": [
+        "抗原释放与树突状细胞交叉呈递",
+        "T细胞启动及向肿瘤迁移",
+        "Treg/髓系抑制与代谢竞争",
+        "CD8及NK杀伤能力决定残留细胞清除"
+      ],
+      "details": [
+        "肿瘤细胞受TKI影响后，抗原释放和炎症信号可能变化，但有效免疫反应还要求树突状细胞摄取并交叉呈递抗原、适当的共刺激和T细胞克隆扩增。DC数量增加不必然意味着成熟或呈递功能恢复。CD8细胞进入肿瘤后仍可能受到抗原缺失、抑制性受体、营养竞争及缺氧限制，因此数量、空间位置、克隆性、细胞毒功能和耗竭状态应分别分析。转录组中的耗竭标记有时也伴随抗原经历和激活，不能只凭一个标记判定不可逆失能。",
+        "Treg可通过CTLA-4相关调节、IL-10/TGF-β以及消耗局部IL-2等途径限制效应反应，其募集可涉及CCL22–CCR4等情境依赖信号，但不能把这一常见免疫轴直接认定为EGFR-TKI耐药的已证实主导机制。NK细胞通过激活/抑制受体组合识别肿瘤，与依赖肽-HLA识别的CD8细胞并不相同；HLA降低可能削弱CD8识别，却在某些条件下增加NK的“缺失自身”识别。若NK也受TGF-β、腺苷等抑制，后一补偿可能不足。",
+        "因此，耐药机制图应表现反馈而不是简单的免疫细胞多少：例如髓系细胞与CAF抑制DC/T细胞，T细胞产生IFN又改变抗原呈递和趋化信号。对残留克隆的研究应结合肿瘤特异T细胞、DC呈递实验、NK杀伤以及空间距离，而非将所有Treg、TAM增加与CD8下降汇总成一个未经验证的耐药评分。现有引用主要提供免疫循环框架和EGFR关联证据。"
+      ],
+      "references": [
+        "I12",
+        "I01",
+        "I02",
+        "I04"
+      ],
+      "evidence_level": "免疫循环框架＋EGFR相关观察；具体细胞间因果链需逐项验证",
+      "clinical_boundary": "仅凭免疫浸润评分或Treg/CD8比例，不能选择已获临床验证的EGFR耐药治疗，更不能推断细胞疗法必然有效。",
+      "research_questions": [
+        "抗原呈递、T细胞进入还是进入后的杀伤，哪一个环节限制残留克隆清除？",
+        "HLA下降的耐药病灶是否保留NK可识别的激活配体与NK功能？"
+      ],
+      "nodes": [
+        "树突状细胞",
+        "抗原呈递",
+        "CD8+T细胞",
+        "Treg",
+        "NK细胞",
+        "肿瘤残留细胞",
+        "HLA-I状态"
+      ],
+      "edges": [
+        {
+          "source": "树突状细胞",
+          "target": "抗原呈递",
+          "label": "交叉呈递与共刺激"
+        },
+        {
+          "source": "抗原呈递",
+          "target": "CD8+T细胞",
+          "label": "启动/识别所必需"
+        },
+        {
+          "source": "Treg",
+          "target": "CD8+T细胞",
+          "label": "抑制性调节，依情境"
+        },
+        {
+          "source": "CD8+T细胞",
+          "target": "肿瘤残留细胞",
+          "label": "抗原依赖杀伤"
+        },
+        {
+          "source": "NK细胞",
+          "target": "肿瘤残留细胞",
+          "label": "受激活/抑制受体平衡控制"
+        },
+        {
+          "source": "HLA-I状态",
+          "target": "CD8+T细胞",
+          "label": "影响识别"
+        },
+        {
+          "source": "HLA-I状态",
+          "target": "NK细胞",
+          "label": "对抑制性识别的作用不同于CD8"
+        }
+      ]
+    },
+    {
+      "id": "immune_adenosine",
+      "title": "缺氧—CD39/CD73—腺苷：把组织损伤转化为免疫抑制的代谢反馈",
+      "category": "代谢与免疫抑制",
+      "summary": "胞外ATP经CD39/CD73转化为腺苷，A2A/A2B信号连接T/NK细胞抑制、髓系状态及血管生态；EGFR耐药中的生物标志物仍需验证。",
+      "chain": [
+        "缺氧、组织损伤与胞外ATP",
+        "CD39/CD73介导核苷酸逐级代谢",
+        "腺苷作用于A2A/A2B受体",
+        "效应免疫受限及髓系/血管微环境重塑"
+      ],
+      "details": [
+        "缺氧、细胞死亡和治疗损伤可增加胞外核苷酸释放。CD39将ATP/ADP逐步水解为AMP，CD73再把AMP转为腺苷；表达这些酶的细胞可包括肿瘤、Treg、髓系或基质细胞，且不同细胞可以在空间上协作完成代谢。ATP本身可作为危险信号，腺苷则通过A2A/A2B等受体改变免疫状态，因此这一轴提供了从炎症/损伤转向抑制性修复的机制解释。其作用强弱受缺氧程度、酶活性、扩散和清除共同影响。",
+        "腺苷可限制T细胞及NK效应功能，并影响髓系细胞和血管相关程序；同时TGF-β、乳酸、营养竞争与异常血管可构成相互加强的局部环境。对于EGFR-TKI耐药，可以提出“药物残留细胞在代谢性免疫庇护所中存活”的假说，但本模块引用的腺苷综述主要支持跨癌种机制，并未证明CD73是所有EGFR耐药病灶的主导原因。表达量、酶活性和真实腺苷通量也不是同一指标。",
+        "实验上宜同时测量局部腺苷/代谢物、CD39/CD73的细胞来源、T/NK功能及TKI残留，而不是只比较NT5E转录量。若阻断CD73或A2A后观察到增效，需要评估效应来自免疫恢复、肿瘤细胞自身作用还是血管变化，并排除药物暴露差异。血液指标未必反映肿瘤空间代谢梯度；目前也不能把CD73阳性直接当作这类联合治疗的临床选择标准。"
+      ],
+      "references": [
+        "I08",
+        "I12"
+      ],
+      "evidence_level": "跨癌种机制综述；EGFR耐药适用性属于待验证假说",
+      "clinical_boundary": "CD73/腺苷受体靶向尚需EGFR耐药特定队列验证；本报告不将其写成已确立标准治疗或预测标志物。",
+      "research_questions": [
+        "CD73主要来自肿瘤、CAF还是免疫细胞，是否决定联合治疗反应？",
+        "ADC或化疗导致组织损伤后，腺苷通路是否形成与TKI不同的耐药庇护所？"
+      ],
+      "nodes": [
+        "缺氧/组织损伤",
+        "胞外ATP",
+        "CD39",
+        "AMP",
+        "CD73",
+        "腺苷",
+        "A2A/A2B受体",
+        "T/NK细胞"
+      ],
+      "edges": [
+        {
+          "source": "缺氧/组织损伤",
+          "target": "胞外ATP",
+          "label": "可增加释放"
+        },
+        {
+          "source": "胞外ATP",
+          "target": "CD39",
+          "label": "底物"
+        },
+        {
+          "source": "CD39",
+          "target": "AMP",
+          "label": "逐级水解产生"
+        },
+        {
+          "source": "AMP",
+          "target": "CD73",
+          "label": "底物"
+        },
+        {
+          "source": "CD73",
+          "target": "腺苷",
+          "label": "催化生成"
+        },
+        {
+          "source": "腺苷",
+          "target": "A2A/A2B受体",
+          "label": "受体激动"
+        },
+        {
+          "source": "A2A/A2B受体",
+          "target": "T/NK细胞",
+          "label": "A2A等信号可抑制效应功能"
+        }
+      ]
+    },
+    {
+      "id": "immune_dynamic_clinical",
+      "title": "治疗会重塑微环境：免疫联合必须接受随机试验检验",
+      "category": "动态生态与临床边界",
+      "summary": "治疗残留、寡进展和广泛进展的免疫生态不同；微环境机制的合理性不能代替EGFR耐药人群中的临床获益证据。",
+      "chain": [
+        "TKI/化疗/抗体/ADC造成选择压力与组织损伤",
+        "肿瘤克隆及免疫/基质状态动态变化",
+        "按时间、病灶和机制分层选择联合策略",
+        "以对照试验检验净临床获益"
+      ],
+      "details": [
+        "靶向治疗并非只改变一个受体：肿瘤负荷下降、细胞死亡、残留细胞状态、局部修复和免疫募集会共同变化。治疗早期残留与临床进展期的免疫生态可能不同，脑部和肺部病灶也可能不同。Maynard等单细胞研究提供了研究这些状态转换的方法基础。纵向采样尤其重要：若仅横断面比较治疗前和耐药后，就难以区分导致耐药的细胞状态、伴随肿瘤增长出现的状态，以及先前用药造成的继发改变。",
+        "临床证据要求保持方案和人群边界。CheckMate 722与KEYNOTE-789未达到各自预设的主要终点要求，说明常规PD-1加化疗不能被视为普遍逆转EGFR-TKI耐药的方法。IMpower150的EGFR相关探索性亚组为免疫、抗血管生成和化疗联合提供线索，但亚组分析和多药方案不能证明某一单独微环境通路的因果作用，也不能与另一试验跨研究直接比较有效率。",
+        "对已经接受奥希替尼加化疗、埃万妥单抗及ADC的人群，既往治疗史会改变肿瘤抗原、载荷敏感性、淋巴/髓系状态和器官耐受性。未来试验应明确允许这些既往暴露，并报告专门亚组；同时区分直接TKI耐药、免疫逃逸和ADC药物递送/载荷耐药。应以生存、症状、持续缓解、颅内控制和毒性综合评估，不能仅凭一次血液炎症指标下降或影像短期缩小就认定微环境耐药被解决。"
+      ],
+      "references": [
+        "I04",
+        "I09",
+        "I10",
+        "I11"
+      ],
+      "evidence_level": "人体单细胞关联＋EGFR-TKI后随机试验；现代完整序列仍需专门证据",
+      "clinical_boundary": "本模块不把既往EGFR-TKI后研究直接外推到奥希替尼化疗、埃万妥单抗和ADC全部失败后的患者，也不把机制推测写成用药建议。",
+      "research_questions": [
+        "哪一种治疗时点最适合干预微环境：早期残留、寡进展还是广泛进展？",
+        "在明确既往amivantamab/ADC暴露者中，哪些可重复的生物标志物能够预测联合获益？"
+      ],
+      "nodes": [
+        "治疗选择压力",
+        "残留克隆",
+        "动态免疫/基质状态",
+        "机制匹配联合",
+        "随机对照验证",
+        "临床净获益"
+      ],
+      "edges": [
+        {
+          "source": "治疗选择压力",
+          "target": "残留克隆",
+          "label": "筛选"
+        },
+        {
+          "source": "治疗选择压力",
+          "target": "动态免疫/基质状态",
+          "label": "重塑"
+        },
+        {
+          "source": "动态免疫/基质状态",
+          "target": "残留克隆",
+          "label": "可能提供支持或清除，需功能验证"
+        },
+        {
+          "source": "机制匹配联合",
+          "target": "随机对照验证",
+          "label": "需要检验"
+        },
+        {
+          "source": "随机对照验证",
+          "target": "临床净获益",
+          "label": "评估疗效和毒性"
+        }
+      ]
+    }
+  ]
+}

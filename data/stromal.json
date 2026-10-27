@@ -1,0 +1,615 @@
+{
+  "references": [
+    {
+      "id": "S01",
+      "title": "Tumour micro-environment elicits innate resistance to RAF inhibitors through HGF secretion",
+      "authors": "Straussman R et al.",
+      "year": 2012,
+      "journal": "Nature",
+      "doi": "10.1038/nature11183",
+      "pmid": "",
+      "url": "https://doi.org/10.1038/nature11183",
+      "verification": "unverified_seed",
+      "evidence_scope": "other_cancer",
+      "finding_zh": "基质细胞分泌HGF可通过MET旁路挽救RAF抑制后的肿瘤细胞，说明外源配体足以改变靶向药敏感性。",
+      "limitation_zh": "主要是RAF抑制/黑色素瘤等模型，不能写成EGFR突变肺癌CAF-HGF机制的直接人体证明。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S02",
+      "title": "Widespread potential for growth-factor-driven resistance to anticancer kinase inhibitors",
+      "authors": "Wilson TR et al.",
+      "year": 2012,
+      "journal": "Nature",
+      "doi": "10.1038/nature11249",
+      "pmid": "",
+      "url": "https://doi.org/10.1038/nature11249",
+      "verification": "unverified_seed",
+      "evidence_scope": "other_cancer",
+      "finding_zh": "跨肿瘤与驱动模型的生长因子筛查显示，替代受体酪氨酸激酶可在原驱动被抑制时维持下游信号。",
+      "limitation_zh": "跨模型临床前规律；不能将每一种配体-受体组合视为每位EGFR患者的实际耐药机制。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S03",
+      "title": "Hepatocyte growth factor induces gefitinib resistance of lung adenocarcinoma with epidermal growth factor receptor-activating mutations",
+      "authors": "Yano S et al.",
+      "year": 2008,
+      "journal": "Cancer Research",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Hepatocyte%20growth%20factor%20induces%20gefitinib%20resistance%20of%20lung%20adenocarcinoma%20with%20epidermal%20growth%20factor%20receptor-activating%20mutations%22",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_direct",
+      "finding_zh": "经典EGFR突变肺癌模型提示HGF激活MET可绕过EGFR抑制，恢复存活信号。",
+      "limitation_zh": "时间窗外的历史背景文献；不得计入近15年主分析。早代TKI模型也不能自动代表奥希替尼及ADC多线治疗后。",
+      "publication_date": "",
+      "in_time_window": false,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S04",
+      "title": "A mechanism of resistance to gefitinib mediated by cellular reprogramming and the acquisition of an FGF2-FGFR1 autocrine growth loop",
+      "authors": "Ware KE et al.",
+      "year": 2013,
+      "journal": "Oncogenesis",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=A%20mechanism%20of%20resistance%20to%20gefitinib%20mediated%20by%20cellular%20reprogramming%20and%20the%20acquisition%20of%20an%20FGF2-FGFR1%20autocrine%20growth%20loop",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_direct",
+      "finding_zh": "部分EGFR抑制剂耐药模型经过细胞状态重编程，形成FGF2-FGFR1自分泌依赖。",
+      "limitation_zh": "关键证据包含肿瘤细胞自分泌环，不能直接将FGF2来源归于CAF；模型与药物代际有限。 DOI定位待核对，暂仅提供题名检索入口。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S05",
+      "title": "Genotypic and histological evolution of lung cancers acquiring resistance to EGFR inhibitors",
+      "authors": "Sequist LV et al.",
+      "year": 2011,
+      "journal": "Science Translational Medicine",
+      "doi": "10.1126/scitranslmed.3002003",
+      "pmid": "",
+      "url": "https://doi.org/10.1126/scitranslmed.3002003",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_association",
+      "finding_zh": "患者耐药重复活检显示基因型与组织学可发生演化，支持对耐药状态重新取样。",
+      "limitation_zh": "发表于2011年3月，早于严格的2011-10-21起点；仅作历史背景。组织学变化不能证明特定CAF或TGF-beta来源。",
+      "publication_date": "2011-03-23",
+      "in_time_window": false,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S06",
+      "title": "An epithelial-mesenchymal transition gene signature predicts resistance to EGFR and PI3K inhibitors and identifies Axl as a therapeutic target for overcoming EGFR inhibitor resistance",
+      "authors": "Byers LA et al.",
+      "year": 2013,
+      "journal": "Clinical Cancer Research",
+      "doi": "10.1158/1078-0432.CCR-12-1558",
+      "pmid": "",
+      "url": "https://doi.org/10.1158/1078-0432.CCR-12-1558",
+      "verification": "unverified_seed",
+      "evidence_scope": "other_cancer",
+      "finding_zh": "EMT表达状态与EGFR/PI3K抑制剂敏感性相关，并以实验支持AXL作为部分间质状态细胞的脆弱点。",
+      "limitation_zh": "涵盖广泛NSCLC背景，具体模型基因型需全文核对；不能视为EGFR突变患者的专属因果证明。表达签名不是单一因果机制；AXL依赖和EMT标志不能替代对具体病例耐药驱动的功能验证。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true,
+      "evidence_scope_detail": "一般NSCLC跨基因型EMT签名、药敏及AXL实验；非EGFR突变获得性耐药专属证据。"
+    },
+    {
+      "id": "S07",
+      "title": "Activation of the AXL kinase causes resistance to EGFR-targeted therapy in lung cancer",
+      "authors": "Zhang Z et al.",
+      "year": 2012,
+      "journal": "Nature Genetics",
+      "doi": "10.1038/ng.2330",
+      "pmid": "",
+      "url": "https://doi.org/10.1038/ng.2330",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_direct",
+      "finding_zh": "在EGFR突变肺癌耐药模型中，AXL激活与EMT相关，并通过功能实验支持其耐药作用。",
+      "limitation_zh": "支持AXL/细胞状态轴，不等于直接证明TGF-beta或CAF是所有样本的上游诱因。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S08",
+      "title": "Activation of IL-6R/JAK1/STAT3 signaling induces de novo resistance to irreversible EGFR inhibitors in non-small cell lung cancer with T790M resistance mutation",
+      "authors": "Kim SM et al.",
+      "year": 2012,
+      "journal": "Molecular Cancer Therapeutics",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Activation%20of%20IL-6R/JAK1/STAT3%20signaling%20induces%20de%20novo%20resistance%20to%20irreversible%20EGFR%20inhibitors%20in%20non-small%20cell%20lung%20cancer%20with%20T790M%20resistance%20mutation%22",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_direct",
+      "finding_zh": "特定T790M肺癌模型中IL-6R/JAK1/STAT3激活可维持抗凋亡信号并削弱不可逆EGFR抑制剂作用。",
+      "limitation_zh": "模型和药物背景特定；不能将其解释为所有奥希替尼耐药患者可从IL-6或JAK抑制中获益。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S09",
+      "title": "Drug resistance via feedback activation of Stat3 in oncogene-addicted cancer cells",
+      "authors": "Lee HJ et al.",
+      "year": 2014,
+      "journal": "Cancer Cell",
+      "doi": "10.1016/j.ccr.2014.05.019",
+      "pmid": "",
+      "url": "https://doi.org/10.1016/j.ccr.2014.05.019",
+      "verification": "unverified_seed",
+      "evidence_scope": "egfr_lung_direct",
+      "finding_zh": "癌基因依赖模型在靶向治疗后可发生STAT3反馈激活，为持续细胞存活提供可干预的信号解释。",
+      "limitation_zh": "反馈环和细胞因子来源具有模型依赖性；不能凭组织pSTAT3或血清IL-6升高即认定因果。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S10",
+      "title": "Ramucirumab plus erlotinib in patients with untreated, EGFR-mutated, advanced non-small-cell lung cancer (RELAY): a randomised, double-blind, placebo-controlled, phase 3 trial",
+      "authors": "Nakagawa K et al.",
+      "year": 2019,
+      "journal": "The Lancet Oncology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Ramucirumab%20plus%20erlotinib%20in%20patients%20with%20untreated%2C%20EGFR-mutated%2C%20advanced%20non-small-cell%20lung%20cancer%20%28RELAY%29%3A%20a%20randomised%2C%20double-blind%2C%20placebo-controlled%2C%20phase%203%20trial%22",
+      "verification": "unverified_seed",
+      "evidence_scope": "clinical_trial",
+      "finding_zh": "随机研究支持在其入组的一线人群中，VEGFR2阻断联合厄洛替尼可改善无进展生存。",
+      "limitation_zh": "临床获益并不逐条证明缺氧-CAF-免疫轴；不直接证明奥希替尼+化疗或埃万妥单抗/ADC耐药后的同类联合有效。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S11",
+      "title": "Efficacy of Osimertinib Plus Bevacizumab vs Osimertinib in Patients With EGFR T790M-Mutated Non-Small Cell Lung Cancer Previously Treated With Epidermal Growth Factor Receptor-Tyrosine Kinase Inhibitor: West Japan Oncology Group 8715L Phase 2 Randomized Clinical Trial",
+      "authors": "Akamatsu H et al.",
+      "year": 2021,
+      "journal": "JAMA Oncology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Efficacy%20of%20Osimertinib%20Plus%20Bevacizumab%20vs%20Osimertinib%20in%20Patients%20With%20EGFR%20T790M-Mutated%20Non-Small%20Cell%20Lung%20Cancer%20Previously%20Treated%20With%20Epidermal%20Growth%20Factor%20Receptor-Tyrosine%20Kinase%20Inhibitor%3A%20West%20Japan%20Oncology%20Group%208715L%20Phase%202%20Randomized%20Clinical%20Trial%22",
+      "verification": "unverified_seed",
+      "evidence_scope": "clinical_trial",
+      "finding_zh": "该特定T790M经治人群的随机研究未显示奥希替尼加入贝伐珠单抗可改善主要PFS结果。",
+      "limitation_zh": "阴性结果不能否定所有血管生成生物学；提示应区分TKI代际、线次、人群、药物和具体试验终点。 题名为可检索的近似题名，需在线核对标准书目信息。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": false
+    },
+    {
+      "id": "S12",
+      "title": "Distinct populations of inflammatory fibroblasts and myofibroblasts in pancreatic cancer",
+      "authors": "Öhlund D et al.",
+      "year": 2017,
+      "journal": "Journal of Experimental Medicine",
+      "doi": "10.1084/jem.20162024",
+      "pmid": "",
+      "url": "https://doi.org/10.1084/jem.20162024",
+      "verification": "unverified_seed",
+      "evidence_scope": "other_cancer",
+      "finding_zh": "在胰腺癌中描绘炎症型与肌成纤维型CAF状态，提示成纤维细胞功能受位置和旁分泌信号影响。",
+      "limitation_zh": "并非EGFR突变肺癌直接证据；iCAF/myCAF分类及空间关系需要在肺癌样本中重新验证。",
+      "publication_date": "",
+      "in_time_window": true,
+      "journal_rank_status": "未核对JCR排名",
+      "exact_title": true
+    },
+    {
+      "id": "S13",
+      "title": "Enhancing cancer immunotherapy using antiangiogenics: opportunities and challenges",
+      "authors": "Fukumura D, Kloepper J, Amoozgar Z, Duda DG, Jain RK.",
+      "year": 2018,
+      "journal": "Nature Reviews Clinical Oncology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Enhancing%20cancer%20immunotherapy%20using%20antiangiogenics%3A%20opportunities%20and%20challenges",
+      "verification": "unverified_seed",
+      "evidence_scope": "review",
+      "finding_zh": "提供血管功能、缺氧和免疫相互影响的跨癌种机制框架。",
+      "limitation_zh": "非EGFR耐药专属研究；不能据此推断抗VEGF药物可普遍逆转TKI耐药。",
+      "exact_title": true
+    },
+    {
+      "id": "S14",
+      "title": "A framework for advancing our understanding of cancer-associated fibroblasts",
+      "authors": "Sahai E et al.",
+      "year": 2020,
+      "journal": "Nature Reviews Cancer",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=A%20framework%20for%20advancing%20our%20understanding%20of%20cancer-associated%20fibroblasts",
+      "verification": "unverified_seed",
+      "evidence_scope": "review",
+      "finding_zh": "梳理CAF异质性、基质重塑与细胞互作的概念框架。",
+      "limitation_zh": "跨癌种综述，不能代替EGFR突变肺癌中具体CAF亚群的功能验证。",
+      "exact_title": true
+    },
+    {
+      "id": "S15",
+      "title": "Mechanotransduction and YAP-dependent matrix remodelling is required for the generation and maintenance of cancer-associated fibroblasts",
+      "authors": "Calvo F et al.",
+      "year": 2013,
+      "journal": "Nature Cell Biology",
+      "doi": "",
+      "pmid": "",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Mechanotransduction%20and%20YAP-dependent%20matrix%20remodelling%20is%20required%20for%20the%20generation%20and%20maintenance%20of%20cancer-associated%20fibroblasts",
+      "verification": "unverified_seed",
+      "evidence_scope": "other_cancer",
+      "finding_zh": "临床前研究将力学信号、YAP和CAF相关基质重塑联系起来。",
+      "limitation_zh": "主要为其他肿瘤或一般CAF模型；不构成EGFR突变肺癌TKI耐药直接证据。",
+      "exact_title": true
+    }
+  ],
+  "mechanisms": [
+    {
+      "id": "caf_hgf",
+      "title": "CAF–HGF–MET：由外源配体建立EGFR旁路",
+      "category": "CAF/基质",
+      "summary": "基质细胞提供HGF，使肿瘤细胞在EGFR受到抑制时仍通过MET维持存活；这是配体驱动旁路，必须与MET扩增区分。",
+      "chain": [
+        "肿瘤及治疗相关损伤信号改变基质细胞状态",
+        "部分CAF/其他间质细胞分泌HGF",
+        "HGF结合MET并激活GAB1等接头蛋白",
+        "PI3K–AKT及RAS–ERK重新维持存活",
+        "细胞凋亡减少，残存细胞成为耐药演化的底物"
+      ],
+      "details": [
+        "EGFR突变细胞常依赖EGFR维持下游PI3K–AKT和RAS–ERK信号。EGFR-TKI使这一输入下降时，邻近基质释放的HGF可通过MET提供平行输入，因此即使药物确实抑制了EGFR，细胞也可能未进入充分凋亡。这类配体驱动的耐受不要求事先出现MET基因扩增，也不能只凭血清HGF升高就诊断。HGF既可能来自CAF及其他间质成分，也可能来自肿瘤细胞；应通过空间定位和细胞来源实验区分。",
+        "历史EGFR肺癌模型和跨癌种生长因子救援实验，为这一生物学模式提供支持。但Straussman等Nature论文的主要语境为RAF抑制及其他癌种，不应被写成“已在奥希替尼耐药患者中证实CAF-HGF普遍致病”。对具体模型，较强的因果链需要共培养或条件培养基可转移耐受、HGF中和或来源细胞敲除能消除作用，以及肿瘤细胞MET抑制能恢复敏感性。",
+        "转化研究应联合测定MET拷贝数、pMET、组织HGF来源、治疗前后变化及药物暴露。抑制EGFR和MET在分子匹配患者中有研究价值，但CAF-HGF高表达、MET蛋白过表达与高水平MET扩增并不等价；既往埃万妥单抗失败后是否仍保留该依赖，也必须重新判断。"
+      ],
+      "references": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "evidence_level": "EGFR肺癌临床前因果＋跨癌种机制外推；历史证据单列",
+      "clinical_boundary": "组织HGF或pMET异常不等于已确立治疗指征；不能从早代TKI模型直接推出多线奥希替尼/ADC耐药后的疗效。",
+      "research_questions": [
+        "治疗前后哪些CAF亚群是HGF的主要来源？",
+        "HGF配体驱动与MET扩增驱动能否用空间蛋白/拷贝数和功能实验区分？",
+        "既往EGFR/MET双抗后仍保留MET信号的病例，有无可重复的联合治疗脆弱点？"
+      ],
+      "nodes": [
+        "CAF",
+        "HGF",
+        "MET",
+        "AKT",
+        "ERK",
+        "存活/耐药"
+      ],
+      "edges": [
+        {
+          "source": "CAF",
+          "target": "HGF",
+          "label": "可分泌"
+        },
+        {
+          "source": "HGF",
+          "target": "MET",
+          "label": "配体激活"
+        },
+        {
+          "source": "MET",
+          "target": "AKT",
+          "label": "经GAB1等"
+        },
+        {
+          "source": "MET",
+          "target": "ERK",
+          "label": "维持信号"
+        },
+        {
+          "source": "AKT",
+          "target": "存活/耐药",
+          "label": "抑制凋亡"
+        }
+      ]
+    },
+    {
+      "id": "fgf_fgfr",
+      "title": "FGF2–FGFR1：细胞状态重编程与自/旁分泌切换",
+      "category": "生长因子",
+      "summary": "部分耐药细胞从EGFR依赖转向FGF–FGFR输入；基质可参与，但已有经典实验也包含肿瘤细胞自身建立的自分泌环。",
+      "chain": [
+        "EGFR抑制与细胞状态选择/重编程",
+        "FGF配体和FGFR表达谱改变",
+        "FGF2–FGFR1形成自分泌或旁分泌输入",
+        "ERK/AKT持续激活",
+        "部分间质状态克隆获得适应性存活"
+      ],
+      "details": [
+        "FGF家族的配体、受体剪接体及组织来源具有明显异质性。部分EGFR抑制剂耐药模型会伴随细胞重编程，出现FGF2与FGFR1表达增强，使ERK等下游信号不再完全受EGFR控制。FGF还可参与成纤维细胞与内皮细胞的相互作用，因此它既可能直接救援肿瘤细胞，也可能通过改变基质与血管间接影响疗效；这两层作用需要分开检验。",
+        "Ware等研究的重要信息是FGF2–FGFR1自分泌环能够在特定耐药模型中形成。它支持FGFR依赖的可塑性，却不支持把所有FGF2都归因于CAF，也不支持把FGFR1表达升高自动等同于可药物化驱动。若要证明旁分泌机制，需要细胞类型特异的表达与分泌证据、配体来源敲除、受体阻断，以及信号和药敏恢复的连续验证。",
+        "值得开展的研究是用配对活检、空间转录/蛋白组及共培养，将FGF来源、受体状态和EMT状态放在同一空间框架中，再测试抑制FGFR是否真正逆转耐药。FGFR抑制剂的非选择性作用和组合毒性也需控制。由吉非替尼细胞模型得到的现象不能直接当作奥希替尼、化疗和ADC多重暴露后的临床有效性证据。"
+      ],
+      "references": [
+        "S02",
+        "S04",
+        "S06"
+      ],
+      "evidence_level": "特定EGFR肺癌模型临床前因果；基质来源及人体普适性待验证",
+      "clinical_boundary": "FGF2/FGFR1高表达本身不是成熟预测标志物；自分泌证据不能替代CAF旁分泌证据。",
+      "research_questions": [
+        "FGF2主要由耐药肿瘤细胞还是CAF分泌，来源会否随疗程切换？",
+        "FGFR依赖是否只存在于特定EMT/染色质状态？",
+        "抑制FGFR后的药敏恢复是否可由激活下游ERK再次救援，以验证通路特异性？"
+      ],
+      "nodes": [
+        "CAF",
+        "耐药肿瘤细胞",
+        "FGF2",
+        "FGFR1",
+        "ERK",
+        "存活/耐药"
+      ],
+      "edges": [
+        {
+          "source": "CAF",
+          "target": "FGF2",
+          "label": "可能旁分泌，需验证"
+        },
+        {
+          "source": "耐药肿瘤细胞",
+          "target": "FGF2",
+          "label": "可形成自分泌环"
+        },
+        {
+          "source": "FGF2",
+          "target": "FGFR1",
+          "label": "结合/激活"
+        },
+        {
+          "source": "FGFR1",
+          "target": "ERK",
+          "label": "旁路输入"
+        },
+        {
+          "source": "ERK",
+          "target": "存活/耐药",
+          "label": "维持生长"
+        }
+      ]
+    },
+    {
+      "id": "il6_stat3",
+      "title": "IL-6–gp130/JAK–STAT3：炎症反馈维持残存细胞",
+      "category": "细胞因子",
+      "summary": "来自肿瘤、髓系细胞或部分CAF状态的炎症输入，可能在EGFR抑制后维持STAT3及抗凋亡程序；来源和因果性应逐一验证。",
+      "chain": [
+        "EGFR抑制后反馈/局部炎症改变",
+        "IL-6等细胞因子输入",
+        "IL-6R/gp130–JAK–STAT3",
+        "抗凋亡和细胞状态程序维持",
+        "药物耐受残存细胞持续存在"
+      ],
+      "details": [
+        "EGFR靶向治疗并不总能同步关闭所有促存活转录程序。IL-6与IL-6R/gp130受体复合体可激活JAK–STAT3，改变抗凋亡、炎症及细胞状态相关基因表达，使一部分细胞在EGFR输出降低后仍存活。肿瘤细胞、髓系细胞和炎症型基质状态都可能贡献细胞因子输入，但它们的相对贡献会受治疗时点和空间位置影响；同一配体也可涉及不同受体条件。",
+        "Kim及Lee等在特定癌基因依赖/EGFR肺癌模型中提供了IL-6/STAT3相关耐药和反馈的实验依据。另一方面，iCAF分泌炎症因子的分类来自多种癌种，胰腺癌中的CAF亚型不能直接照搬到EGFR肺癌。稳健证据应同时包含来源定位、受体/磷酸化状态、配体或JAK/STAT3扰动，以及EGFR-TKI相关凋亡和残存细胞数量变化。",
+        "血清IL-6升高可反映感染、组织损伤或全身炎症；组织pSTAT3也可由多种受体激活，二者均不能单独证明耐药因果。未来应在明确的细胞来源和功能依赖基础上，研究短时阻断炎症反馈能否减少药物持留细胞，并同时观察免疫功能与感染等风险。该路线尚不能概括为所有耐药患者的标准联合治疗。"
+      ],
+      "references": [
+        "S08",
+        "S09",
+        "S12"
+      ],
+      "evidence_level": "特定EGFR肺癌/癌基因依赖模型因果；CAF来源部分为跨癌种外推",
+      "clinical_boundary": "细胞因子升高不是可直接处方的预测标志；尚不能据此常规加用IL-6、JAK或STAT3抑制药。",
+      "research_questions": [
+        "治疗早期STAT3反馈发生于哪些细胞，是短暂适应还是稳定耐药依赖？",
+        "肿瘤来源和髓系/CAF来源IL-6对持留细胞各有多少贡献？",
+        "是否存在可兼顾抗肿瘤免疫的短程/时序阻断方案？"
+      ],
+      "nodes": [
+        "CAF",
+        "髓系细胞",
+        "耐药肿瘤细胞",
+        "IL-6",
+        "JAK/STAT3",
+        "存活/耐药"
+      ],
+      "edges": [
+        {
+          "source": "CAF",
+          "target": "IL-6",
+          "label": "部分状态可分泌"
+        },
+        {
+          "source": "髓系细胞",
+          "target": "IL-6",
+          "label": "炎症来源"
+        },
+        {
+          "source": "耐药肿瘤细胞",
+          "target": "IL-6",
+          "label": "可自分泌"
+        },
+        {
+          "source": "IL-6",
+          "target": "JAK/STAT3",
+          "label": "经IL-6R/gp130"
+        },
+        {
+          "source": "JAK/STAT3",
+          "target": "存活/耐药",
+          "label": "抗凋亡/状态维持"
+        }
+      ]
+    },
+    {
+      "id": "tgfb_ecm_emt",
+      "title": "TGF-β、ECM与EMT：可塑性和力学信号共同改变药物反应",
+      "category": "CAF/基质",
+      "summary": "TGF-β相关基质重塑、细胞外基质力学和肿瘤细胞EMT可能形成耦合回路；AXL是部分EGFR耐药模型中得到功能支持的状态相关节点。",
+      "chain": [
+        "肿瘤-基质互作及TGF-β等信号改变CAF状态",
+        "ECM沉积/重排与力学条件变化",
+        "整合素–FAK/SRC、YAP/TAZ等输入及EMT程序",
+        "部分细胞形成AXL等替代依赖",
+        "凋亡敏感性下降及耐药细胞状态选择"
+      ],
+      "details": [
+        "TGF-β可在不同背景下影响成纤维细胞活化、胶原及纤连蛋白沉积，并影响肿瘤细胞的上皮-间质状态。ECM不只是支架：配体呈递、整合素结合和组织刚度可改变FAK/SRC及YAP/TAZ等机械转导，进而影响生长、迁移和凋亡阈值。药物扩散受限与信号性耐药是不同层面；不能只观察到纤维化就认定药物浓度不足。",
+        "EGFR肺癌中，EMT相关表达状态、AXL激活与耐药的联系获得了模型实验支持，部分研究也有患者组织关联。但“存在EMT或AXL”并不能证明它由CAF-TGF-β启动；肿瘤内在转录/表观遗传变化同样能够形成类似状态。相应地，不能把胰腺癌iCAF/myCAF分类或其他癌种的力学机制当作每个EGFR肺癌样本中的已证实事实。",
+        "更有说服力的研究应把空间病理、基质定量、组织药物浓度和细胞状态联合起来，再通过可调刚度基质、细胞类型特异TGF-β扰动或AXL/FAK功能实验拆开因果链。应特别区分可逆药物耐受、稳定EMT相关耐药和真实组织学转化。对TGF-β、FAK、YAP或AXL的干预属于需分层验证的研究路线，而不是由单个标志物直接推出的通用疗法。",
+        "ECM力学—YAP等细节参考一般CAF机制与综述，属于跨模型综合；尚不能将这条完整反馈链视为EGFR突变患者中已证实的耐药因果。"
+      ],
+      "references": [
+        "S05",
+        "S06",
+        "S07",
+        "S12",
+        "S14",
+        "S15"
+      ],
+      "evidence_level": "EGFR肺癌EMT/AXL临床前因果＋人体关联；CAF/ECM上游链部分为外推",
+      "clinical_boundary": "间质标志物或α-SMA阳性不能独立确立CAF致耐药；EMT、谱系转化与小细胞转化须分别定义。",
+      "research_questions": [
+        "ECM改变的主要作用是药代屏障、信号重编程还是二者并存？",
+        "CAF-TGF-β是否为AXL依赖的必要上游，还是仅与它共同出现？",
+        "阻断特定基质状态能否减少耐药而不去除限制肿瘤的CAF功能？"
+      ],
+      "nodes": [
+        "CAF",
+        "TGF-β",
+        "ECM",
+        "FAK/YAP",
+        "EMT/AXL",
+        "存活/耐药"
+      ],
+      "edges": [
+        {
+          "source": "TGF-β",
+          "target": "CAF",
+          "label": "可调节状态"
+        },
+        {
+          "source": "CAF",
+          "target": "ECM",
+          "label": "沉积/重塑"
+        },
+        {
+          "source": "ECM",
+          "target": "FAK/YAP",
+          "label": "力学/整合素信号"
+        },
+        {
+          "source": "TGF-β",
+          "target": "EMT/AXL",
+          "label": "状态调节，依背景"
+        },
+        {
+          "source": "FAK/YAP",
+          "target": "EMT/AXL",
+          "label": "候选耦合"
+        },
+        {
+          "source": "EMT/AXL",
+          "target": "存活/耐药",
+          "label": "部分模型获得依赖"
+        }
+      ]
+    },
+    {
+      "id": "hypoxia_vegf",
+      "title": "缺氧–VEGF–异常血管：递药、代谢与免疫状态相互影响",
+      "category": "血管/缺氧",
+      "summary": "异常灌注和缺氧可能共同影响药物暴露、炎症及基质状态；临床抗血管生成联合结果具有药物代际和线次依赖，不能由机制合理性推断普遍获益。",
+      "chain": [
+        "异常血管和灌注不均",
+        "局部缺氧/HIF相关程序",
+        "VEGF及代谢/炎症改变",
+        "血管、CAF、髓系及T细胞状态相互影响",
+        "药物暴露与生物学耐受共同变化"
+      ],
+      "details": [
+        "肿瘤异常血管可造成灌注不均，使不同区域同时出现供药不足、低氧和营养压力。缺氧相关HIF程序可促进VEGF等因子表达，并与乳酸积累、酸化及基质重塑交织；VEGF也可能影响免疫细胞进入和髓系状态。因此观察到的耐药可能既含局部药物暴露差异，也含细胞适应和免疫压制，不能把全部作用简单归入一个“VEGF耐药基因”。",
+        "抗血管生成治疗可能在特定时间和剂量条件下改善灌注，但过度抑制血管也可能加重缺氧；方向依赖具体背景，应以灌注影像、组织缺氧标志、药物浓度和免疫空间分布直接测量。临床随机试验可检验联合方案的整体获益，却不能仅凭PFS变化逐条证实所有血管-CAF-免疫因果环。",
+        "RELAY支持其入组的一线人群中雷莫西尤单抗联合厄洛替尼的PFS获益；WJOG8715L则在特定T790M经治人群中，未显示奥希替尼加入贝伐珠单抗改善主要PFS结果。两类证据共同提示：早代TKI、奥希替尼、联合化疗及多线ADC后属于不同临床问题。未来需要按灌注/缺氧、VEGF相关状态和既往治疗分层，并同时评价疗效、毒性及免疫变化。",
+        "血管—缺氧—免疫环的机制解释来自跨癌种框架；RELAY与WJOG8715L只回答各自人群中组合方案的临床效果，并未直接证明上述全部机制。"
+      ],
+      "references": [
+        "S10",
+        "S11",
+        "S13"
+      ],
+      "evidence_level": "随机临床试验支持特定组合结果；完整缺氧-基质-免疫链需独立机制验证",
+      "clinical_boundary": "抗VEGF联合的临床获益并不普遍，不能外推至奥希替尼+化疗、埃万妥单抗及ADC全部失败后的患者。",
+      "research_questions": [
+        "哪些灌注/缺氧标志可预测联合获益，而不是仅预测不良预后？",
+        "血管正常化窗口内给药是否能同时改善递药与免疫细胞进入？",
+        "多线ADC后，血管和ECM状态是否影响抗体递送、载荷分布及旁观者效应？"
+      ],
+      "nodes": [
+        "异常血管",
+        "缺氧/HIF",
+        "VEGF",
+        "CAF",
+        "髓系细胞",
+        "T细胞功能",
+        "存活/耐药"
+      ],
+      "edges": [
+        {
+          "source": "异常血管",
+          "target": "缺氧/HIF",
+          "label": "灌注不均"
+        },
+        {
+          "source": "缺氧/HIF",
+          "target": "VEGF",
+          "label": "可诱导"
+        },
+        {
+          "source": "VEGF",
+          "target": "异常血管",
+          "label": "血管生成/反馈"
+        },
+        {
+          "source": "缺氧/HIF",
+          "target": "CAF",
+          "label": "状态改变，依背景"
+        },
+        {
+          "source": "VEGF",
+          "target": "髓系细胞",
+          "label": "可影响募集/状态"
+        },
+        {
+          "source": "缺氧/HIF",
+          "target": "T细胞功能",
+          "label": "代谢/酸化压制"
+        },
+        {
+          "source": "异常血管",
+          "target": "存活/耐药",
+          "label": "可能影响递药"
+        }
+      ]
+    }
+  ],
+  "source_note": "全部条目为知识种子，当前网络403导致未在线核验；不得宣称已完成近15年系统检索或JCR前79名筛选。S03和S05仅作时间窗外背景。FGF/TGF/缺氧网络中的部分边为跨癌种概念外推或待检验假说。"
+}
