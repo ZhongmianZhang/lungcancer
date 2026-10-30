@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "context": {
+    "egfr_mutant_nsclc": true,
+    "progression_confirmed": true,
+    "treatment_setting": "concurrent_osimertinib_platinum_pemetrexed",
+    "histology": "adenocarcinoma",
+    "transformation_confirmed": false,
+    "progression_pattern": "systemic"
+  },
+  "samples": [
+    {"id": "synthetic_tissue", "material": "tissue", "timepoint": "progression", "quality": "adequate", "pathway_inhibitor_exposure": "no"}
+  ],
+  "findings": []
+}

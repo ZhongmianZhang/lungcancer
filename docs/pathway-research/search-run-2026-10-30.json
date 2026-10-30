@@ -1,0 +1,75 @@
+{
+  "started_at_utc": "2026-10-30T13:25:27.955113+00:00",
+  "plan": {
+    "window": {
+      "start": "2016-10-30",
+      "end": "2026-10-30"
+    },
+    "endpoint": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+    "date_field": "FIRST_PDATE",
+    "queries": {
+      "01_upstream": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (MET OR ERBB2 OR HER2 OR ERBB3 OR HER3 OR IGF1R OR INSR OR IRS1 OR GAB1) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "02_pi3k_akt": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (PIK3CA OR PIK3CB OR PIK3R1 OR PDPK1 OR AKT1 OR AKT2 OR AKT3) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "03_negative_regulators": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (PTEN OR INPP4B OR PHLPP1 OR PHLPP2 OR TSC1 OR TSC2 OR STK11) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "04_mtor_feedback": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (MTOR OR RICTOR OR RPTOR OR RHEB OR EIF4EBP1 OR RPS6 OR mTORC1 OR mTORC2) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "05_crosstalk": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (KRAS OR NRAS OR BRAF OR RET OR ALK OR NTRK OR FGFR OR AXL OR YAP OR TEAD OR SHP2 OR SOS1) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "06_combination_clinical": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (FLAURA2 OR \"FLAURA 2\" OR chemotherapy OR pemetrexed OR platinum OR COMPEL) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "07_chemo_metabolism": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (BCL2 OR MCL1 OR BCL2L1 OR BIM OR TYMS OR DHFR OR KEAP1 OR NRF2 OR GPX4 OR ERCC1 OR RB1 OR autophagy) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "08_evidence_synthesis": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (\"PI3K\" OR \"AKT\" OR \"mTOR\") AND (resistance OR progression OR trial OR biopsy) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]"
+    },
+    "direct_combination_overlay": "(chemotherapy OR pemetrexed OR platinum OR FLAURA2) AND (resistance OR progression)",
+    "scope_note": "No journal filter: avoid missing negative/less prominent studies. Screen population and original study manually.",
+    "conference_search": "Manual ASCO/ESMO/WCLC/AACR archives and journal supplements required; Europe PMC does not establish complete conference coverage.",
+    "not_a_systematic_review": true
+  },
+  "status": "blocked",
+  "full_text_verified": false,
+  "conference_search_completed": false,
+  "registry_automatically_updated": false,
+  "results": {
+    "01_upstream": {
+      "status": "access_failed",
+      "query": "(osimertinib OR AZD9291) AND (\"lung cancer\" OR NSCLC) AND (MET OR ERBB2 OR HER2 OR ERBB3 OR HER3 OR IGF1R OR INSR OR IRS1 OR GAB1) AND FIRST_PDATE:[2016-10-30 TO 2026-10-30]",
+      "hit_count": null,
+      "pages": 0,
+      "records": [],
+      "error_type": "URLError",
+      "reason_category": "proxy_connect_forbidden"
+    },
+    "02_pi3k_akt": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    },
+    "03_negative_regulators": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    },
+    "04_mtor_feedback": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    },
+    "05_crosstalk": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    },
+    "06_combination_clinical": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    },
+    "07_chemo_metabolism": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    },
+    "08_evidence_synthesis": {
+      "status": "not_run_after_access_failure",
+      "hit_count": null,
+      "records": []
+    }
+  }
+}

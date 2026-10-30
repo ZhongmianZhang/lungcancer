@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "context": {
+    "egfr_mutant_nsclc": true,
+    "progression_confirmed": true,
+    "treatment_setting": "concurrent_osimertinib_platinum_pemetrexed",
+    "histology": "unknown",
+    "transformation_confirmed": false,
+    "progression_pattern": "cns_only"
+  },
+  "samples": [
+    {"id": "synthetic_plasma", "material": "plasma", "timepoint": "progression", "quality": "limited", "tumor_fraction": 0.005}
+  ],
+  "findings": [
+    {"id": "plasma_negative", "sample_id": "synthetic_plasma", "gene": "PIK3CA", "alteration": "no_alteration_detected", "assay": "DNA_NGS", "significance": "unknown"}
+  ]
+}

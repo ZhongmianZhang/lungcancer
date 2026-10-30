@@ -1,0 +1,2009 @@
+{
+  "schema_version": "1.0",
+  "literature_window": {
+    "start": "2016-10-30",
+    "end": "2026-10-30",
+    "timezone": "Asia/Shanghai"
+  },
+  "verification": {
+    "status": "offline_candidate_map_not_systematic_review",
+    "online_source_verification_completed": false,
+    "conference_search_completed": false,
+    "clinical_validation_completed": false,
+    "regulatory_labels_verified": false,
+    "node_specific_evidence_gaps": true,
+    "note_zh": "403阻止医学数据库访问；部分规则仅为保护性解释或生物学研究假说，背景引用不等于该节点的直接证据。"
+  },
+  "sources": {
+    "FLAURA2_2023": {
+      "title": "Osimertinib with or without Chemotherapy in EGFR-Mutated Advanced NSCLC",
+      "year": 2023,
+      "journal": "New England Journal of Medicine",
+      "population": "Untreated EGFR-mutant advanced NSCLC",
+      "support_role": "first_line_context_only",
+      "doi": "10.1056/NEJMoa2306434",
+      "nct": "NCT04035486",
+      "url": "https://doi.org/10.1056/NEJMoa2306434",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "FLAURA_RESISTANCE_2023": {
+      "title": "Candidate mechanisms of acquired resistance to first-line osimertinib in EGFR-mutated advanced non-small cell lung cancer",
+      "year": 2023,
+      "journal": "Nature Communications",
+      "population": "First-line osimertinib monotherapy; plasma resistance analysis",
+      "support_role": "observational_mechanism",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Candidate%20mechanisms%20of%20acquired%20resistance%20to%20first-line%20osimertinib%20in%20EGFR-mutated%20advanced%20non-small%20cell%20lung%20cancer%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "BLAKELY_2017": {
+      "title": "Evolution and clinical impact of co-occurring genetic alterations in advanced-stage EGFR-mutant lung cancers",
+      "year": 2017,
+      "journal": "Nature Genetics",
+      "population": "EGFR-mutant lung cancer; co-alterations and evolution",
+      "support_role": "co_alteration_context",
+      "doi": "10.1038/ng.3990",
+      "nct": null,
+      "url": "https://doi.org/10.1038/ng.3990",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "YU_MTOR_2018": {
+      "title": "Concurrent Alterations in EGFR-Mutant Lung Cancers Associated with Resistance to EGFR Kinase Inhibitors and Characterization of MTOR as a Mediator of Resistance",
+      "year": 2018,
+      "journal": "Clinical Cancer Research",
+      "population": "EGFR-mutant lung cancer and MTOR functional models",
+      "support_role": "observational_and_functional_mechanism",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Concurrent%20Alterations%20in%20EGFR-Mutant%20Lung%20Cancers%20Associated%20with%20Resistance%20to%20EGFR%20Kinase%20Inhibitors%20and%20Characterization%20of%20MTOR%20as%20a%20Mediator%20of%20Resistance%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "SCHOENFELD_2020": {
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer",
+      "year": 2020,
+      "journal": "Clinical Cancer Research",
+      "population": "Selected tissue biopsies after first-line osimertinib",
+      "support_role": "histology_and_mechanism_context",
+      "doi": "10.1158/1078-0432.CCR-19-3563",
+      "nct": null,
+      "url": "https://doi.org/10.1158/1078-0432.CCR-19-3563",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "OXNARD_2018": {
+      "title": "Assessment of Resistance Mechanisms and Clinical Implications in Patients With EGFR T790M–Positive Lung Cancer and Acquired Resistance to Osimertinib",
+      "year": 2018,
+      "journal": "JAMA Oncology",
+      "population": "T790M-positive later-line osimertinib resistance",
+      "support_role": "observational_mechanism",
+      "doi": "10.1001/jamaoncol.2018.2969",
+      "nct": null,
+      "url": "https://doi.org/10.1001/jamaoncol.2018.2969",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "INSIGHT2_2024": {
+      "title": "Tepotinib plus osimertinib in patients with EGFR-mutated non-small-cell lung cancer with MET amplification following progression on first-line osimertinib (INSIGHT 2): a multicentre, open-label, phase 2 trial",
+      "year": 2024,
+      "journal": "Lancet Oncology",
+      "population": "MET-amplified NSCLC after first-line osimertinib",
+      "support_role": "prospective_nonrandomized_treatment_in_different_setting",
+      "doi": null,
+      "nct": "NCT03940703",
+      "url": "https://clinicaltrials.gov/study/NCT03940703",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "TATTON_2023": {
+      "title": "Osimertinib + Savolitinib to Overcome Acquired MET-Mediated Resistance in Epidermal Growth Factor Receptor-Mutated, MET-Amplified Non-Small Cell Lung Cancer: TATTON",
+      "year": 2023,
+      "journal": "Cancer Discovery",
+      "population": "MET-selected cohorts with different prior EGFR-TKIs",
+      "support_role": "early_phase_treatment_in_different_setting",
+      "doi": null,
+      "nct": "NCT02143466",
+      "url": "https://clinicaltrials.gov/study/NCT02143466",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "HERTHENA_2023": {
+      "title": "HERTHENA-Lung01, a Phase II Trial of Patritumab Deruxtecan (HER3-DXd) in EGFR-Mutated Non-Small-Cell Lung Cancer After EGFR Tyrosine Kinase Inhibitor Therapy and Platinum-Based Chemotherapy",
+      "year": 2023,
+      "journal": "Journal of Clinical Oncology",
+      "population": "Prior EGFR-TKI and platinum; concurrent-combination subgroup not established here",
+      "support_role": "ADC_delivery_not_HER3_signal_causality",
+      "doi": "10.1200/JCO.23.01476",
+      "nct": "NCT04619004",
+      "url": "https://doi.org/10.1200/JCO.23.01476",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "MATCH_AKT1_2021": {
+      "title": "Effect of Capivasertib in Patients With an AKT1 E17K-Mutated Tumor: NCI-MATCH Subprotocol EAY131-Y Nonrandomized Trial",
+      "year": 2021,
+      "journal": "JAMA Oncology",
+      "population": "AKT1 E17K-selected pan-tumor cohort",
+      "support_role": "indirect_basket_treatment",
+      "doi": null,
+      "nct": "NCT02465060",
+      "url": "https://clinicaltrials.gov/study/NCT02465060",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "MATCH_PI3K_2022": {
+      "title": "Phase II Study of Copanlisib in Patients With Tumors With PIK3CA Mutations: Results From the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1F",
+      "year": 2022,
+      "journal": "Journal of Clinical Oncology",
+      "population": "PIK3CA-selected pan-tumor cohort",
+      "support_role": "indirect_basket_treatment",
+      "doi": null,
+      "nct": "NCT02465060",
+      "url": "https://clinicaltrials.gov/study/NCT02465060",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "S1400B_2019": {
+      "title": "SWOG S1400B, a Phase II Study of GDC-0032 (Taselisib) for Previously Treated PI3K-Positive Patients With Stage IV Squamous Cell Lung Cancer (Lung-MAP Sub-Study)",
+      "year": 2019,
+      "journal": "Journal of Thoracic Oncology",
+      "population": "Previously treated squamous NSCLC; different molecular context",
+      "support_role": "negative_or_limited_activity_context",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22SWOG%20S1400B%2C%20a%20Phase%20II%20Study%20of%20GDC-0032%20%28Taselisib%29%20for%20Previously%20Treated%20PI3K-Positive%20Patients%20With%20Stage%20IV%20Squamous%20Cell%20Lung%20Cancer%20%28Lung-MAP%20Sub-Study%29%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "EVEROLIMUS_2021": {
+      "title": "Phase II Clinical Trial of Everolimus in a Pan-Cancer Cohort of Patients with mTOR Pathway Alterations",
+      "year": 2021,
+      "journal": "Clinical Cancer Research",
+      "population": "Pan-tumor mTOR-pathway selected cohort",
+      "support_role": "indirect_basket_with_limited_activity",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Phase%20II%20Clinical%20Trial%20of%20Everolimus%20in%20a%20Pan-Cancer%20Cohort%20of%20Patients%20with%20mTOR%20Pathway%20Alterations%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "PTEN_PI3KA_2020": {
+      "title": "PTEN Loss Mediates Clinical Cross-Resistance to CDK4/6 and PI3Kα Inhibitors in Breast Cancer",
+      "year": 2020,
+      "journal": "Cancer Discovery",
+      "population": "Breast cancer",
+      "support_role": "counterexample_to_PTEN_loss_equals_PI3Kalpha_sensitivity",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22PTEN%20Loss%20Mediates%20Clinical%20Cross-Resistance%20to%20CDK4/6%20and%20PI3K%CE%B1%20Inhibitors%20in%20Breast%20Cancer%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "CAPITELLO_2023": {
+      "title": "Capivasertib in Hormone Receptor–Positive Advanced Breast Cancer",
+      "year": 2023,
+      "journal": "New England Journal of Medicine",
+      "population": "HR-positive breast cancer with endocrine therapy",
+      "support_role": "nontransferable_randomized_treatment",
+      "doi": "10.1056/NEJMoa2214131",
+      "nct": null,
+      "url": "https://doi.org/10.1056/NEJMoa2214131",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "SOLAR1_2019": {
+      "title": "Alpelisib for PIK3CA-Mutated, Hormone Receptor–Positive Advanced Breast Cancer",
+      "year": 2019,
+      "journal": "New England Journal of Medicine",
+      "population": "HR-positive breast cancer with endocrine therapy",
+      "support_role": "nontransferable_randomized_treatment",
+      "doi": "10.1056/NEJMoa1813904",
+      "nct": null,
+      "url": "https://doi.org/10.1056/NEJMoa1813904",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "RICTOR_2015_BACKGROUND": {
+      "title": "RICTOR Amplification Defines a Novel Subset of Patients with Lung Cancer Who May Benefit from Treatment with mTORC1/2 Inhibitors",
+      "year": 2015,
+      "journal": "Cancer Discovery",
+      "population": "RICTOR-amplified lung cancer and models",
+      "support_role": "out_of_window_background_only",
+      "doi": "10.1158/2159-8290.CD-14-0971",
+      "nct": null,
+      "url": "https://doi.org/10.1158/2159-8290.CD-14-0971",
+      "source_type": "background_article",
+      "period_status": "outside_window",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "BRAF_FUSION_2019": {
+      "title": "Acquired BRAF Rearrangements Induce Secondary Resistance to EGFR Therapy in EGFR-Mutated Lung Cancers",
+      "year": 2019,
+      "journal": "Journal of Thoracic Oncology",
+      "population": "BRAF-rearranged EGFR-TKI resistance and models",
+      "support_role": "case_and_functional_mechanism",
+      "doi": "10.1016/j.jtho.2018.12.038",
+      "nct": null,
+      "url": "https://doi.org/10.1016/j.jtho.2018.12.038",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "RET_2018": {
+      "title": "Landscape of Acquired Resistance to Osimertinib in EGFR-Mutant NSCLC and Clinical Validation of Combined EGFR and RET Inhibition with Osimertinib and BLU-667",
+      "year": 2018,
+      "journal": "Cancer Discovery",
+      "population": "Osimertinib resistance and acquired RET fusion",
+      "support_role": "early_human_and_functional_mechanism",
+      "doi": "10.1158/2159-8290.CD-18-1022",
+      "nct": null,
+      "url": "https://doi.org/10.1158/2159-8290.CD-18-1022",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "ALK_RET_2018": {
+      "title": "Acquired ALK and RET Gene Fusions as Mechanisms of Resistance to Osimertinib in EGFR-Mutant Lung Cancers",
+      "year": 2018,
+      "journal": "JCO Precision Oncology",
+      "population": "Rare acquired ALK/RET fusions after osimertinib",
+      "support_role": "case_series",
+      "doi": "10.1200/PO.18.00170",
+      "nct": null,
+      "url": "https://doi.org/10.1200/PO.18.00170",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "AXL_2019": {
+      "title": "AXL confers intrinsic resistance to osimertinib and advances the emergence of tolerant cells",
+      "year": 2019,
+      "journal": "Nature Communications",
+      "population": "Intrinsic tolerance models and translational work",
+      "support_role": "preclinical_cell_state",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22AXL%20confers%20intrinsic%20resistance%20to%20osimertinib%20and%20advances%20the%20emergence%20of%20tolerant%20cells%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "YAP_2020": {
+      "title": "Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway",
+      "year": 2020,
+      "journal": "Cancer Cell",
+      "population": "Treatment-induced dormancy models",
+      "support_role": "preclinical_cell_state",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Treatment-Induced%20Tumor%20Dormancy%20through%20YAP-Mediated%20Transcriptional%20Reprogramming%20of%20the%20Apoptotic%20Pathway%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "MARCOUX_2019": {
+      "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes",
+      "year": 2019,
+      "journal": "Journal of Clinical Oncology",
+      "population": "Histologically transformed EGFR-mutant cancers",
+      "support_role": "histology_context",
+      "doi": "10.1200/JCO.18.01585",
+      "nct": null,
+      "url": "https://doi.org/10.1200/JCO.18.01585",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "SKOULIDIS_2018": {
+      "title": "STK11/LKB1 Mutations and PD-1 Inhibitor Resistance in KRAS-Mutant Lung Adenocarcinoma",
+      "year": 2018,
+      "journal": "Cancer Discovery",
+      "population": "KRAS-mutant lung adenocarcinoma",
+      "support_role": "nontransferable_immune_context",
+      "doi": "10.1158/2159-8290.CD-18-0099",
+      "nct": null,
+      "url": "https://doi.org/10.1158/2159-8290.CD-18-0099",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "HANGAUER_2017": {
+      "title": "Drug-tolerant persister cancer cells are vulnerable to GPX4 inhibition",
+      "year": 2017,
+      "journal": "Nature",
+      "population": "Drug-tolerant persister models",
+      "support_role": "preclinical_metabolic_state",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Drug-tolerant%20persister%20cancer%20cells%20are%20vulnerable%20to%20GPX4%20inhibition%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "VISWANATHAN_2017": {
+      "title": "Dependency of a therapy-resistant state of cancer cells on a lipid peroxidase pathway",
+      "year": 2017,
+      "journal": "Nature",
+      "population": "Therapy-resistant cell-state models",
+      "support_role": "preclinical_metabolic_state",
+      "doi": null,
+      "nct": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Dependency%20of%20a%20therapy-resistant%20state%20of%20cancer%20cells%20on%20a%20lipid%20peroxidase%20pathway%22",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "MARIPOSA2_2024": {
+      "title": "Amivantamab plus chemotherapy with and without lazertinib in EGFR-mutant advanced NSCLC after disease progression on osimertinib: primary results from the phase III MARIPOSA-2 study",
+      "year": 2024,
+      "journal": "Annals of Oncology",
+      "population": "Progression on osimertinib; not established as failure of same concurrent chemo combination",
+      "support_role": "randomized_treatment_in_different_setting",
+      "doi": "10.1016/j.annonc.2023.10.117",
+      "nct": "NCT04988295",
+      "url": "https://doi.org/10.1016/j.annonc.2023.10.117",
+      "source_type": "primary_article",
+      "period_status": "within_target_years",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "SAVANNAH_LEAD": {
+      "title": "SAVANNAH: osimertinib plus savolitinib in MET-selected NSCLC",
+      "year": null,
+      "journal": null,
+      "population": "MET overexpression/amplification after osimertinib; exact publication/subgroups pending",
+      "support_role": "trial_locator_not_verified_publication",
+      "doi": null,
+      "nct": "NCT03778229",
+      "url": "https://clinicaltrials.gov/study/NCT03778229",
+      "source_type": "trial_registry_lead",
+      "period_status": "publication_date_unverified",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    },
+    "SACHI_LEAD": {
+      "title": "SACHI: savolitinib plus osimertinib versus chemotherapy",
+      "year": null,
+      "journal": null,
+      "population": "MET-amplified EGFR-TKI resistance; prior treatments require verification",
+      "support_role": "trial_locator_not_verified_publication",
+      "doi": null,
+      "nct": "NCT05015608",
+      "url": "https://clinicaltrials.gov/study/NCT05015608",
+      "source_type": "trial_registry_lead",
+      "period_status": "publication_date_unverified",
+      "verification_status": "not_online_verified",
+      "concurrent_combination_failure_evidence": "not_established_in_this_review"
+    }
+  },
+  "rules": [
+    {
+      "id": "MET_AMPLIFICATION",
+      "node_zh": "MET→GAB1/HER3→PI3K",
+      "genes": [
+        "MET"
+      ],
+      "alterations": [
+        "amplification"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "经确认的MET扩增可提供EGFR以外的信号输入；IHC高表达不等于扩增。",
+      "confirmation_zh": [
+        "核对实验室验证的拷贝数阈值、局灶性/多倍体、肿瘤含量；必要时MET/CEP7 FISH。",
+        "比较治疗前后并排查共存机制，不能只按NGS倍数开药。"
+      ],
+      "research_options_zh": [
+        "EGFR＋MET双抑制的人体研究线索：tepotinib/osimertinib、savolitinib/osimertinib；需逐项审查既往化疗与当地标签。"
+      ],
+      "source_ids": [
+        "FLAURA_RESISTANCE_2023",
+        "INSIGHT2_2024",
+        "TATTON_2023",
+        "SAVANNAH_LEAD",
+        "SACHI_LEAD"
+      ],
+      "mechanism_evidence": {
+        "level": "clinical_observation_and_functional_support",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "prospective_clinical_in_other_resistance_settings",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "FLAURA_RESISTANCE_2023": "observational_mechanism_other_setting",
+        "INSIGHT2_2024": "prospective_treatment_other_setting",
+        "TATTON_2023": "early_phase_treatment_other_setting",
+        "SAVANNAH_LEAD": "unverified_trial_locator",
+        "SACHI_LEAD": "unverified_trial_locator"
+      }
+    },
+    {
+      "id": "HER2_AMPLIFICATION",
+      "node_zh": "HER2扩增→PI3K",
+      "genes": [
+        "ERBB2"
+      ],
+      "alterations": [
+        "amplification"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "HER2扩增、突变及蛋白表达是不同标志物。",
+      "confirmation_zh": [
+        "确认局灶扩增、基线状态；IHC与拷贝数独立记录。"
+      ],
+      "research_options_zh": [
+        "HER2定向与EGFR组合、ADC序贯/联合为研究线索；不自动套用独立HER2突变或IHC3+标签。"
+      ],
+      "source_ids": [
+        "FLAURA_RESISTANCE_2023",
+        "BLAKELY_2017"
+      ],
+      "mechanism_evidence": {
+        "level": "clinical_observational_candidate",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "FLAURA_RESISTANCE_2023": "observational_mechanism_other_setting",
+        "BLAKELY_2017": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "HER2_ACTIVATING_VARIANT",
+      "node_zh": "HER2激活变异",
+      "genes": [
+        "ERBB2"
+      ],
+      "alterations": [
+        "activating_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "经变异级功能确认的HER2激活可能提供替代信号。",
+      "confirmation_zh": [
+        "确认具体插入/位点及功能；排除VUS、另一原发或基线共驱动。"
+      ],
+      "research_options_zh": [
+        "HER2突变定向TKI/ADC研究需专门审查继发EGFR背景；不从其他亚型标签推导联合。"
+      ],
+      "source_ids": [
+        "BLAKELY_2017"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "BLAKELY_2017": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "HER3_SIGNAL_OR_ANTIGEN",
+      "node_zh": "HER3信号/递送抗原线索",
+      "genes": [
+        "ERBB3"
+      ],
+      "alterations": [
+        "overexpression",
+        "phosphorylation"
+      ],
+      "assays": [
+        "IHC",
+        "RNA_EXPRESSION",
+        "PROTEOMICS",
+        "PHOSPHO_IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "HER3表达/磷酸化为不同层面的线索；HER3 ADC活性不证明HER3是致耐药因果。",
+      "confirmation_zh": [
+        "核对总蛋白与磷酸化、肿瘤细胞来源、检测位点及共受体。"
+      ],
+      "research_options_zh": [
+        "HER3-DXd研究属于抗原递送证据；不得由HER3高表达直接选ADC或判定PI3K依赖。"
+      ],
+      "source_ids": [
+        "HERTHENA_2023"
+      ],
+      "mechanism_evidence": {
+        "level": "biological_interpretation_only",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "ADC_activity_does_not_validate_signal_biomarker",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "signal_or_antigen_clue",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "source_roles": {
+        "HERTHENA_2023": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "IGF_IRS_ADAPTOR_SIGNAL",
+      "node_zh": "IGF1R/INSR–IRS/GAB1输入",
+      "genes": [
+        "IGF1R",
+        "INSR",
+        "IRS1",
+        "IRS2",
+        "GAB1"
+      ],
+      "alterations": [
+        "phosphorylation"
+      ],
+      "assays": [
+        "PHOSPHO_IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "受体/适配蛋白磷酸化的方向由具体位点决定；IRS丝氨酸位点可为抑制/反馈，不据任意pIRS判激活。",
+      "confirmation_zh": [
+        "核对抗体对INSR/杂合受体交叉反应、细胞来源、取样时用药和功能依赖。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "phospho_observation_direction_unknown",
+      "limitations_zh": [
+        "所引来源提供网络/MTOR背景，并非每个IRS/GAB1节点在组合耐药患者中的直接验证；节点专门证据待检索。"
+      ],
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "PIK3CA_HOTSPOT",
+      "node_zh": "PI3Kα催化节点",
+      "genes": [
+        "PIK3CA"
+      ],
+      "alterations": [
+        "activating_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "限定热点可维持PI3K信号，但基线共变异和伴随事件可与真正驱动不同。",
+      "confirmation_zh": [
+        "核对蛋白位点、检测质量和前后样本；需要时通过功能/克隆证据确认依赖。"
+      ],
+      "research_options_zh": [
+        "PI3K/AKT/mTOR定向篮式或EGFR联合研究；alpelisib乳腺癌证据不可迁移；copanlisib篮式为间接线索。"
+      ],
+      "source_ids": [
+        "FLAURA_RESISTANCE_2023",
+        "MATCH_PI3K_2022",
+        "S1400B_2019",
+        "SOLAR1_2019"
+      ],
+      "mechanism_evidence": {
+        "level": "clinical_observational_candidate",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "indirect_basket_and_other_cancer_evidence",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "variants": [
+        "E542K",
+        "E545K",
+        "E545G",
+        "H1047R",
+        "H1047L"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "FLAURA_RESISTANCE_2023": "observational_mechanism_other_setting",
+        "MATCH_PI3K_2022": "indirect_pan_tumor_treatment",
+        "S1400B_2019": "negative_or_limited_activity_different_histology",
+        "SOLAR1_2019": "nontransferable_other_cancer_treatment"
+      }
+    },
+    {
+      "id": "PI3K_REGULATORY_FUNCTION",
+      "node_zh": "PI3Kβ/调控亚基/PDPK1",
+      "genes": [
+        "PIK3CB",
+        "PIK3R1",
+        "PDPK1"
+      ],
+      "alterations": [
+        "activating_mutation",
+        "amplification",
+        "loss_of_function"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS",
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "此组事件需要具体变异/剂量级功能证明；不能按基因名判断同向激活。",
+      "confirmation_zh": [
+        "人工确认事件是否增加PI3K–AKT输出；PIK3R1失活与任意变异不可等同。"
+      ],
+      "research_options_zh": [
+        "亚型匹配和EGFR联合为研究方向；当前无目标人群已核验疗效。"
+      ],
+      "source_ids": [
+        "BLAKELY_2017",
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "来源为共变异/网络背景；这些具体节点的直接原始证据尚未完成检索。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "BLAKELY_2017": "biological_or_study_context_only",
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "AKT1_E17K",
+      "node_zh": "AKT1 E17K",
+      "genes": [
+        "AKT1"
+      ],
+      "alterations": [
+        "activating_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "AKT1 E17K为限定变异候选；不能泛化到AKT2/3或任意AKT变异。",
+      "confirmation_zh": [
+        "确认E17K与原EGFR肿瘤的关系、基线状态和共存机制。"
+      ],
+      "research_options_zh": [
+        "capivasertib的AKT1 E17K篮式研究为间接线索；不证明EGFR＋AKT联合或组合后标准。"
+      ],
+      "source_ids": [
+        "MATCH_AKT1_2021",
+        "CAPITELLO_2023"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "indirect_pan_tumor_not_target_combination",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "variants": [
+        "E17K"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "MATCH_AKT1_2021": "indirect_pan_tumor_treatment",
+        "CAPITELLO_2023": "nontransferable_other_cancer_treatment"
+      }
+    },
+    {
+      "id": "AKT2_AKT3_GAIN",
+      "node_zh": "AKT2/3剂量依赖线索",
+      "genes": [
+        "AKT2",
+        "AKT3"
+      ],
+      "alterations": [
+        "amplification"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "扩增须与同工型功能输出结合；不得借用AKT1 E17K证据。",
+      "confirmation_zh": [
+        "确认局灶扩增及同工型依赖，排除广泛染色体gain。"
+      ],
+      "research_options_zh": [
+        "仅考虑亚型与反馈明确的转化研究。"
+      ],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "来源提供通路背景，不构成AKT2/3组合进展临床证据。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "PTEN_BIALLELIC_LOSS",
+      "node_zh": "PTEN双等位失活",
+      "genes": [
+        "PTEN"
+      ],
+      "alterations": [
+        "biallelic_loss"
+      ],
+      "assays": [
+        "DNA_NGS"
+      ],
+      "mechanism_zh": "双等位失活可解除PI3K–AKT负调控；并不自动说明PI3Kα药敏感。",
+      "confirmation_zh": [
+        "核对纯度、等位状态/LOH和有内对照PTEN IHC；单等位缺失另列。"
+      ],
+      "research_options_zh": [
+        "PI3Kβ/AKT/mTOR方向需功能富集临床研究；不能由PTEN缺失直接匹配alpelisib。"
+      ],
+      "source_ids": [
+        "BLAKELY_2017",
+        "PTEN_PI3KA_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "PTEN/PI3Kα交叉耐药来源为乳腺癌，不证明EGFR肺癌对其他亚型抑制剂有效。"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "BLAKELY_2017": "biological_or_study_context_only",
+        "PTEN_PI3KA_2020": "counterexample_different_cancer"
+      }
+    },
+    {
+      "id": "PTEN_PROTEIN_LOSS",
+      "node_zh": "PTEN蛋白缺失",
+      "genes": [
+        "PTEN"
+      ],
+      "alterations": [
+        "protein_loss"
+      ],
+      "assays": [
+        "IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "有效肿瘤PTEN蛋白缺失与DNA删除不是同义；必须有内部阳性对照。",
+      "confirmation_zh": [
+        "同片正常组织/间质内对照与重复检测；结合DNA/等位状态。"
+      ],
+      "research_options_zh": [
+        "PTEN相关通路研究候选，不自动给PI3Kα/AKT处方。"
+      ],
+      "source_ids": [
+        "BLAKELY_2017",
+        "PTEN_PI3KA_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "functional_clue",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "source_roles": {
+        "BLAKELY_2017": "biological_or_study_context_only",
+        "PTEN_PI3KA_2020": "counterexample_different_cancer"
+      }
+    },
+    {
+      "id": "PTEN_SINGLE_COPY",
+      "node_zh": "PTEN单拷贝丢失待定",
+      "genes": [
+        "PTEN"
+      ],
+      "alterations": [
+        "single_copy_loss"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "单拷贝丢失不足以证明PTEN功能缺失或通路依赖。",
+      "confirmation_zh": [
+        "进一步明确第二击、肿瘤纯度和带内对照的蛋白结果。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "BLAKELY_2017"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "insufficient_for_functional_loss",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "BLAKELY_2017": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "PHOSPHATASE_LOSS",
+      "node_zh": "INPP4B/PHLPP负调控",
+      "genes": [
+        "INPP4B",
+        "PHLPP1",
+        "PHLPP2"
+      ],
+      "alterations": [
+        "biallelic_loss",
+        "loss_of_function"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "需变异级和功能证据判断去磷酸化调控方向，不能把所有丢失等同PTEN。",
+      "confirmation_zh": [
+        "确认底物/细胞背景、等位与蛋白/磷酸化功能；排除VUS。"
+      ],
+      "research_options_zh": [
+        "仅作为负调控依赖的模型或转化研究方向。"
+      ],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "这些节点的原始目标人群证据尚缺，所引来源仅通路背景，不是直接节点验证。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "TSC_BIALLELIC_LOSS",
+      "node_zh": "TSC1/2→RHEB→mTORC1",
+      "genes": [
+        "TSC1",
+        "TSC2"
+      ],
+      "alterations": [
+        "biallelic_loss"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "TSC功能失活可解除mTORC1抑制；单个变异不等于双等位失活或rapalog敏感。",
+      "confirmation_zh": [
+        "人工确认双等位/第二击和功能输出；pS6可由其他来源激活。"
+      ],
+      "research_options_zh": [
+        "everolimus或mTORC1/2方向只作试验线索；泛癌种有限活性不能推导普遍敏感。"
+      ],
+      "source_ids": [
+        "EVEROLIMUS_2021",
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "indirect_basket_limited_activity",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "EVEROLIMUS_2021": "indirect_basket_limited_activity",
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "MTOR_FUNCTIONAL_VARIANT",
+      "node_zh": "MTOR变异级激活",
+      "genes": [
+        "MTOR"
+      ],
+      "alterations": [
+        "activating_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "只有具体变异经功能确认后，才形成mTOR信号驱动候选；VUS不匹配。",
+      "confirmation_zh": [
+        "回到该变异原始功能实验、等位状态、前后样本及可达药物暴露。"
+      ],
+      "research_options_zh": [
+        "mTORC1/2、PI3K/mTOR或EGFR联合为研究方向；不能把rapalog与双复合体抑制剂视为等效。"
+      ],
+      "source_ids": [
+        "YU_MTOR_2018",
+        "EVEROLIMUS_2021"
+      ],
+      "mechanism_evidence": {
+        "level": "observational_and_functional_models",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "indirect_basket_and_models",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "YU_MTOR_2018": "observational_and_functional_node_other_setting",
+        "EVEROLIMUS_2021": "indirect_basket_limited_activity"
+      }
+    },
+    {
+      "id": "RICTOR_AMPLIFICATION",
+      "node_zh": "RICTOR–mTORC2",
+      "genes": [
+        "RICTOR"
+      ],
+      "alterations": [
+        "amplification"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "RICTOR局灶扩增和功能依赖需区分于低水平染色体gain。",
+      "confirmation_zh": [
+        "正交确认局灶性、蛋白与mTORC2输出；结合反馈和功能抑制实验。"
+      ],
+      "research_options_zh": [
+        "mTORC1/2方向仅作研究；mTORC1 rapalog不能自动替代mTORC2抑制。"
+      ],
+      "source_ids": [
+        "RICTOR_2015_BACKGROUND"
+      ],
+      "mechanism_evidence": {
+        "level": "out_of_window_background_only",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "唯一收录节点专门来源为2015年，明确在十年窗口外，不能计作近十年或目标联合进展临床证据。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "RICTOR_2015_BACKGROUND": "outside_window_background_only"
+      }
+    },
+    {
+      "id": "RHEB_RPTOR_FUNCTION",
+      "node_zh": "RHEB/RPTOR输入",
+      "genes": [
+        "RHEB",
+        "RPTOR"
+      ],
+      "alterations": [
+        "activating_mutation",
+        "amplification"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS",
+        "DNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "节点剂量或变异需具体功能确认；表达或增益不能直接建立mTOR依赖。",
+      "confirmation_zh": [
+        "核对复合体输出、克隆性及模型干预。"
+      ],
+      "research_options_zh": [
+        "仅限mTOR网络依赖研究，不自动匹配药物。"
+      ],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "原始目标节点/目标人群论文仍待专门检索，所引来源仅网络背景。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "AKT_PHOSPHORYLATION",
+      "node_zh": "AKT磷酸化输出",
+      "genes": [
+        "AKT",
+        "AKT1",
+        "AKT2",
+        "AKT3"
+      ],
+      "alterations": [
+        "phosphorylation"
+      ],
+      "assays": [
+        "PHOSPHO_IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "pAKT仅为通路活动线索；S473/T308、同工型与取样时抑制剂反馈需独立解释。",
+      "confirmation_zh": [
+        "核对位点、抗体、前处理、肿瘤细胞来源和取样时PI3K/AKT/mTOR抑制剂；分析下游底物。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "pathway_activity_only",
+      "limitations_zh": [
+        "pAKT阳性不能定位MET/PIK3CA/PTEN，也不能预测AKT药敏感；AKT抑制时pAKT可反馈升高。"
+      ],
+      "phosphosites_by_gene": {
+        "AKT": [
+          "S473",
+          "T308"
+        ],
+        "AKT1": [
+          "S473",
+          "T308"
+        ],
+        "AKT2": [
+          "S474",
+          "T309"
+        ],
+        "AKT3": [
+          "S472",
+          "T305"
+        ]
+      },
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "S6_OUTPUT",
+      "node_zh": "S6K/RPS6输出",
+      "genes": [
+        "RPS6",
+        "RPS6KB1"
+      ],
+      "alterations": [
+        "phosphorylation"
+      ],
+      "assays": [
+        "PHOSPHO_IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "S6/S6K输出可有mTOR或MAPK输入，单点读数不证明mTOR依赖。",
+      "confirmation_zh": [
+        "联合4EBP1、AKT/ERK底物及动态干预；分开S6与S6K抗体位点。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "pathway_activity_only",
+      "limitations_zh": [
+        "此规则为非特异性保护性解释，不是已验证治疗预测标志物。"
+      ],
+      "phosphosites_by_gene": {
+        "RPS6": [
+          "S235/236",
+          "S240/244",
+          "S235",
+          "S236",
+          "S240",
+          "S244"
+        ],
+        "RPS6KB1": [
+          "T389",
+          "T229"
+        ]
+      },
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "4EBP1_OUTPUT",
+      "node_zh": "4EBP1翻译输出",
+      "genes": [
+        "EIF4EBP1"
+      ],
+      "alterations": [
+        "phosphorylation"
+      ],
+      "assays": [
+        "PHOSPHO_IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "4EBP1磷酸化为翻译调控输出线索，不能单独定位上游或预测药敏。",
+      "confirmation_zh": [
+        "记录位点、总蛋白、eIF4E结合和取样前处理，必要时做功能翻译测量。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "pathway_activity_only",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "phosphosites": [
+        "T37/46",
+        "T37",
+        "T46",
+        "S65",
+        "T70"
+      ],
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "MTOR_PHOSPHO_OUTPUT",
+      "node_zh": "mTOR蛋白磷酸化",
+      "genes": [
+        "MTOR"
+      ],
+      "alterations": [
+        "phosphorylation"
+      ],
+      "assays": [
+        "PHOSPHO_IHC",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "p-mTOR单一位点不能等同mTORC1或mTORC2驱动或功能依赖。",
+      "confirmation_zh": [
+        "结合复合体、下游底物、总蛋白及动态抑制验证。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "pathway_activity_only",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "phosphosites": [
+        "S2448",
+        "S2481"
+      ],
+      "source_roles": {
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "RAS_HOTSPOT",
+      "node_zh": "RAS→MAPK/PI3K交叉",
+      "genes": [
+        "KRAS",
+        "NRAS",
+        "HRAS"
+      ],
+      "alterations": [
+        "activating_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "特定RAS热点可提供下游再激活；不同等位基因药物和SHP2依赖不同。",
+      "confirmation_zh": [
+        "确认蛋白位点、原EGFR关系和基线克隆；不能由pERK推定RAS突变。"
+      ],
+      "research_options_zh": [
+        "按等位基因开展RAS/MEK/ERK或SHP2/SOS1联合研究；G12C策略不能覆盖G12D/G12V/Q61。"
+      ],
+      "source_ids": [
+        "FLAURA_RESISTANCE_2023",
+        "BLAKELY_2017"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "pathogenic_required": true,
+      "variants": [
+        "G12C",
+        "G12D",
+        "G12V",
+        "G12A",
+        "G12S",
+        "G13D",
+        "Q61H",
+        "Q61K",
+        "Q61L",
+        "Q61R"
+      ],
+      "source_roles": {
+        "FLAURA_RESISTANCE_2023": "observational_mechanism_other_setting",
+        "BLAKELY_2017": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "BRAF_V600E",
+      "node_zh": "BRAF V600E交叉",
+      "genes": [
+        "BRAF"
+      ],
+      "alterations": [
+        "activating_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "V600E与融合或非V600变异不同，不可按BRAF阳性统一用药。",
+      "confirmation_zh": [
+        "确认位点、治疗前后与EGFR克隆背景；具体三药原始人体证据需另定位。"
+      ],
+      "research_options_zh": [
+        "EGFR＋BRAF/MEK的个案研究方向；独立BRAF驱动肺癌双药批准不等于三药标准。"
+      ],
+      "source_ids": [
+        "BLAKELY_2017"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "此处尚未收录已核验三药原始病例，所引共变异研究不能作为该疗法有效性背书。"
+      ],
+      "variants": [
+        "V600E"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "BLAKELY_2017": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "BRAF_FUSION",
+      "node_zh": "BRAF融合",
+      "genes": [
+        "BRAF"
+      ],
+      "alterations": [
+        "fusion"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "功能BRAF融合多涉及二聚体驱动；不等同V600E。",
+      "confirmation_zh": [
+        "RNA确认同框表达、激酶域、伙伴与断点，结合基线。"
+      ],
+      "research_options_zh": [
+        "EGFR＋MEK/RAF二聚体方向为研究；传统V600策略不能自动迁移。"
+      ],
+      "source_ids": [
+        "BRAF_FUSION_2019"
+      ],
+      "mechanism_evidence": {
+        "level": "case_and_functional_support",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "BRAF_FUSION_2019": "case_and_functional_node_other_setting"
+      }
+    },
+    {
+      "id": "RET_ALK_FUSION",
+      "node_zh": "RET/ALK旁路融合",
+      "genes": [
+        "RET",
+        "ALK"
+      ],
+      "alterations": [
+        "fusion"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "经功能确认的旁路融合可维持下游信号；共驱动、另一原发与DNA重排需鉴别。",
+      "confirmation_zh": [
+        "RNA确认同框、表达、保留激酶域；正交与基线对照。"
+      ],
+      "research_options_zh": [
+        "EGFR＋对应RET/ALK抑制的人体小系列线索；不能从独立驱动标签推出联合标准。"
+      ],
+      "source_ids": [
+        "RET_2018",
+        "ALK_RET_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "case_and_functional_support",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "early_human_evidence_in_other_setting",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "RET_2018": "early_human_and_functional_other_setting",
+        "ALK_RET_2018": "rare_case_series_other_setting"
+      }
+    },
+    {
+      "id": "OTHER_FUNCTIONAL_FUSION",
+      "node_zh": "FGFR/NTRK罕见输入",
+      "genes": [
+        "FGFR1",
+        "FGFR2",
+        "FGFR3",
+        "NTRK1",
+        "NTRK2",
+        "NTRK3"
+      ],
+      "alterations": [
+        "fusion"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "罕见功能融合可提供PI3K/MAPK输入，但需独立节点来源核验。",
+      "confirmation_zh": [
+        "RNA确认同框、表达、激酶域与具体伙伴；DNA无功能意义重排不算。"
+      ],
+      "research_options_zh": [
+        "按亚型的匹配联合仅作临床试验研究；其他癌种或泛癌种单药标签不能推出EGFR联合。"
+      ],
+      "source_ids": [
+        "SCHOENFELD_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "所引来源仅组织/旁路背景，具体FGFR/NTRK组合耐药病例和治疗来源待定位。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "SCHOENFELD_2020": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "AXL_STATE",
+      "node_zh": "AXL非基因组状态",
+      "genes": [
+        "AXL"
+      ],
+      "alterations": [
+        "phosphorylation",
+        "overexpression"
+      ],
+      "assays": [
+        "PHOSPHO_IHC",
+        "PROTEOMICS",
+        "IHC",
+        "RNA_EXPRESSION",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "AXL表达/激活与耐受状态相关，不能等同所有进展均AXL依赖。",
+      "confirmation_zh": [
+        "区别肿瘤/间质，核对磷酸化与EMT状态；用功能干预确认依赖。"
+      ],
+      "research_options_zh": [
+        "AXL/EGFR研究方向；不把早期探索当成标准或成熟预测标志物。"
+      ],
+      "source_ids": [
+        "AXL_2019"
+      ],
+      "mechanism_evidence": {
+        "level": "preclinical_and_translational",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "cell_state_clue",
+      "limitations_zh": [
+        "原始研究强调intrinsic/tolerant状态，不能当目标组合后获得耐药发生率。"
+      ],
+      "source_roles": {
+        "AXL_2019": "intrinsic_tolerance_model_not_combination_failure"
+      }
+    },
+    {
+      "id": "YAP_STATE",
+      "node_zh": "YAP/TAZ细胞可塑性",
+      "genes": [
+        "YAP1",
+        "WWTR1"
+      ],
+      "alterations": [
+        "overexpression"
+      ],
+      "assays": [
+        "IHC",
+        "RNA_EXPRESSION",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "总表达不能证明核转位/TEAD活性；状态与PI3K依赖不可互换。",
+      "confirmation_zh": [
+        "核定位、靶基因、组织学与功能干预互证；DNA阴性不排除状态变化。"
+      ],
+      "research_options_zh": [
+        "YAP/TEAD或凋亡状态干预为模型/早期研究，不能作为常规处方。"
+      ],
+      "source_ids": [
+        "YAP_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "preclinical_cell_state",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "cell_state_clue",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "source_roles": {
+        "YAP_2020": "preclinical_cell_state"
+      }
+    },
+    {
+      "id": "APOPTOSIS_STATE",
+      "node_zh": "BCL2家族/凋亡状态",
+      "genes": [
+        "BCL2",
+        "MCL1",
+        "BCL2L1",
+        "BCL2L11"
+      ],
+      "alterations": [
+        "overexpression",
+        "protein_loss"
+      ],
+      "assays": [
+        "IHC",
+        "RNA_EXPRESSION",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "BCL2家族表达或BIM缺失不等于功能依赖，不能自动选择BH3模拟物。",
+      "confirmation_zh": [
+        "明确蛋白、细胞来源和BH3功能依赖/动态；表达与凋亡阈值不等价。"
+      ],
+      "research_options_zh": [
+        "BH3/凋亡重编程研究；注意血小板、心脏与联合毒性，无目标人群自动药物匹配。"
+      ],
+      "source_ids": [
+        "YAP_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "preclinical_state_not_predictive_validation",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "cell_state_clue",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "source_roles": {
+        "YAP_2020": "preclinical_cell_state"
+      }
+    },
+    {
+      "id": "OXIDATIVE_METABOLIC_CONTEXT",
+      "node_zh": "KEAP1/NRF2/STK11代谢背景",
+      "genes": [
+        "KEAP1",
+        "NFE2L2",
+        "STK11"
+      ],
+      "alterations": [
+        "activating_mutation",
+        "loss_of_function",
+        "biallelic_loss"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "需变异级功能确认的代谢背景不等于PI3K或铁死亡药敏感。",
+      "confirmation_zh": [
+        "结合功能输出、克隆与原EGFR疾病；区分KEAP1失活与NRF2激活。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "SKOULIDIS_2018",
+        "HANGAUER_2017",
+        "VISWANATHAN_2017"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "context_only_not_treatment_biomarker",
+      "limitations_zh": [
+        "KRAS免疫队列与细胞铁死亡研究不能外推EGFR联合化疗人群的用药效应或排除免疫治疗。"
+      ],
+      "functional_required": true,
+      "pathogenic_required": true,
+      "source_roles": {
+        "SKOULIDIS_2018": "different_driver_immune_context",
+        "HANGAUER_2017": "preclinical_persister_state",
+        "VISWANATHAN_2017": "preclinical_cell_state"
+      }
+    },
+    {
+      "id": "CHEMO_EXPRESSION_NOT_PREDICTIVE",
+      "node_zh": "叶酸代谢/DNA修复表达线索",
+      "genes": [
+        "TYMS",
+        "DHFR",
+        "GART",
+        "SLC19A1",
+        "ERCC1"
+      ],
+      "alterations": [
+        "overexpression",
+        "protein_loss"
+      ],
+      "assays": [
+        "IHC",
+        "RNA_EXPRESSION",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "单项表达不足以确诊培美/铂耐药或指导更换化疗；方向与功能需逐节点判断。",
+      "confirmation_zh": [
+        "核对转运/多谷氨酸化、检测平台、功能药敏和临床暴露，禁止任意表达阈值匹配药物。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "FLAURA2_2023"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "unvalidated_chemo_association",
+      "limitations_zh": [
+        "FLAURA2仅作为方案背景，不提供TYMS/DHFR/ERCC1的预测标志物验证；节点原始来源待检索。"
+      ],
+      "source_roles": {
+        "FLAURA2_2023": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "STATIC_AUTOPHAGY",
+      "node_zh": "静态自噬读数",
+      "genes": [
+        "MAP1LC3B",
+        "SQSTM1"
+      ],
+      "alterations": [
+        "overexpression"
+      ],
+      "assays": [
+        "IHC",
+        "RNA_EXPRESSION",
+        "PROTEOMICS"
+      ],
+      "mechanism_zh": "LC3B/p62单点升高可来自通量增强或阻塞，不能证明自噬依赖。",
+      "confirmation_zh": [
+        "用动态通量和溶酶体条件实验验证，不能仅根据IHC/RNA打分。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "YAP_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "insufficient_for_flux_inference",
+      "limitations_zh": [
+        "所引状态研究不是自噬通量标志物临床验证；自噬抑制联合原始证据待检索。"
+      ],
+      "source_roles": {
+        "YAP_2020": "biological_or_study_context_only"
+      }
+    },
+    {
+      "id": "EGFR_ON_TARGET_DIFFERENTIAL",
+      "node_zh": "EGFR靶内鉴别",
+      "genes": [
+        "EGFR"
+      ],
+      "alterations": [
+        "resistance_mutation"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS"
+      ],
+      "mechanism_zh": "靶内改变须与旁路及转化并行鉴别，不能由通路输出替代。",
+      "confirmation_zh": [
+        "核对C797S等位背景、T790M/原EGFR驱动及克隆；不同结合位点不可统一处理。"
+      ],
+      "research_options_zh": [
+        "变异级EGFR临床试验检索；不因第四代药物概念推导可解决全部旁路。"
+      ],
+      "source_ids": [
+        "OXNARD_2018",
+        "SCHOENFELD_2020"
+      ],
+      "mechanism_evidence": {
+        "level": "clinical_observational_candidate",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "research_only_no_target_population_validation",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "molecular_candidate",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "variants": [
+        "C797S",
+        "L718Q",
+        "G724S"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "OXNARD_2018": "observational_mechanism_other_setting",
+        "SCHOENFELD_2020": "observational_mechanism_other_setting"
+      }
+    },
+    {
+      "id": "TSC_SINGLE_EVENT",
+      "node_zh": "TSC单一事件待定",
+      "genes": [
+        "TSC1",
+        "TSC2"
+      ],
+      "alterations": [
+        "loss_of_function",
+        "single_copy_loss"
+      ],
+      "assays": [
+        "DNA_NGS",
+        "RNA_NGS",
+        "FISH"
+      ],
+      "mechanism_zh": "单一TSC事件不等于双等位失活或mTOR依赖；需要第二击与功能解释。",
+      "confirmation_zh": [
+        "人工确认双等位/第二击和功能输出；pS6可由其他来源激活。"
+      ],
+      "research_options_zh": [],
+      "source_ids": [
+        "EVEROLIMUS_2021",
+        "YU_MTOR_2018"
+      ],
+      "mechanism_evidence": {
+        "level": "mechanistic_hypothesis",
+        "verification": "pending_source_review"
+      },
+      "treatment_evidence": {
+        "level": "indirect_basket_limited_activity",
+        "target_population_validation": "not_established",
+        "current_regulatory_label": "not_verified",
+        "doses_provided": false
+      },
+      "signal_level": "requires_allelic_confirmation",
+      "limitations_zh": [
+        "通路相连不证明耐药因果；目标联合进展人群适用性须原文核验。"
+      ],
+      "pathogenic_required": true,
+      "source_roles": {
+        "EVEROLIMUS_2021": "indirect_basket_limited_activity",
+        "YU_MTOR_2018": "biological_or_study_context_only"
+      }
+    }
+  ]
+}

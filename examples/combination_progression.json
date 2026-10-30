@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "context": {
+    "egfr_mutant_nsclc": true,
+    "progression_confirmed": true,
+    "treatment_setting": "concurrent_osimertinib_platinum_pemetrexed",
+    "treatment_phase": "maintenance",
+    "histology": "adenocarcinoma",
+    "transformation_confirmed": false,
+    "progression_pattern": "systemic"
+  },
+  "samples": [
+    {"id": "synthetic_baseline", "material": "tissue", "timepoint": "baseline", "quality": "adequate"},
+    {"id": "synthetic_progression", "material": "tissue", "timepoint": "progression", "quality": "adequate", "pathway_inhibitor_exposure": "no"}
+  ],
+  "findings": [
+    {"id": "pi3k_hotspot", "sample_id": "synthetic_progression", "gene": "PIK3CA", "alteration": "activating_mutation", "variant": "p.H1047R", "assay": "DNA_NGS", "significance": "pathogenic", "baseline_status": "absent", "baseline_sample_id": "synthetic_baseline", "baseline_comparable": true},
+    {"id": "pten_partial", "sample_id": "synthetic_progression", "gene": "PTEN", "alteration": "single_copy_loss", "assay": "DNA_NGS", "significance": "likely_pathogenic", "baseline_status": "present"},
+    {"id": "akt_output", "sample_id": "synthetic_progression", "gene": "AKT", "alteration": "phosphorylation", "phosphosite": "S473", "assay": "PHOSPHO_IHC", "significance": "unknown"},
+    {"id": "her2_copy", "sample_id": "synthetic_progression", "gene": "ERBB2", "alteration": "amplification", "assay": "DNA_NGS", "significance": "likely_pathogenic", "orthogonal_confirmation": false},
+    {"id": "pi3k_vus", "sample_id": "synthetic_progression", "gene": "PIK3CA", "alteration": "activating_mutation", "variant": "E999Q", "assay": "DNA_NGS", "significance": "vus"}
+  ]
+}

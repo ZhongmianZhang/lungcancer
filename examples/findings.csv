@@ -1,0 +1,3 @@
+id,sample_id,gene,alteration,assay,significance,variant,orthogonal_confirmation
+met_amp,synthetic_tissue,MET,amplification,FISH,pathogenic,,true
+akt_hotspot,synthetic_tissue,AKT1,activating_mutation,DNA_NGS,pathogenic,E17K,

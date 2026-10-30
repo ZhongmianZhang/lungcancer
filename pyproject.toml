@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lungcancer-resistance-research"
+version = "0.1.0"
+description = "Evidence-aware EGFR NSCLC pathway research support; not a clinical diagnostic tool"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+lung-resistance = "resistance.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["resistance*"]
+
+[tool.setuptools.package-data]
+"resistance.data" = ["*.json"]
