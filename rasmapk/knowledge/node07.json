@@ -1,0 +1,210 @@
+{
+  "node_id": "node07",
+  "title": "MEK1/2：MAP2K1/2等位变异、磷酸化与联合抑制的证据边界",
+  "genes": [
+    "MAP2K1",
+    "MAP2K2"
+  ],
+  "upstream": [
+    "RAF1",
+    "BRAF",
+    "ARAF"
+  ],
+  "downstream": [
+    "MAPK1",
+    "MAPK3"
+  ],
+  "mechanism_zh": [
+    "MEK1/2是RAF与ERK之间的双特异性激酶。不同的上游事件，包括RTK旁路、RAS激活或RAF结构改变，都可能使MEK磷酸化及ERK输出恢复，因此pMEK/pERK升高可以描述通路状态，却不能定位到MAP2K1/2 DNA变异，也不能单独证明某次进展主要由MEK驱动。治疗前后、采样时点、组织保存与检测方法会影响这一读数。",
+    "MAP2K1的具体等位突变比“基因阳性”更有解释力。2018年Cancer Discovery功能研究显示，MEK1突变有RAS/RAF依赖、部分依赖及RAF非依赖等不同属性；一部分变异放大RAF输入，另一部分脱离上游反馈。后者可能对偏好非活化构象的变构MEK药不敏感。基于这些功能分类的模型药敏，不能直接转化为临床处方；MAP2K2的罕见变异也不能自动套用MAP2K1的类别。",
+    "同一MAP2K1事件的含义取决于治疗序列。MAP2K1 K57N的已核病例是在furmonertinib、BRAF和MEK三药治疗后检出，提示下游适应或克隆选择，却不是奥希替尼加化疗后专门队列，也不是功能救援实验。判断获得性耐药需要配对基线、进展期同一病灶或可比较标本、变异可信度、肿瘤来源与共存克隆分析；单个VUS和表达升高均不宜判成确定耐药。",
+    "EGFR与MEK联合的临床结果具有明显场景差异。TATTON Part B提供了早期临床活性线索，但前治分层、小样本、单臂设计和毒性限制其外推。尤其不能把较少经治或早代TKI人群的总体应答率当作奥希替尼联合化疗耐药后的预期。",
+    "2026年ORCHARD BRAF模块为本节点的重要反向证据：即使检测到BRAF融合或V600E，奥希替尼加selumetinib也只有有限反应，且高等级不良事件常见，作者不支持继续评估这一具体组合。因而程序不应采用“MAPK激活→自动加MEK药”的规则，也不能因生物学合理性而忽略阴性临床结果。",
+    "跨癌种MAP2K1患者汇总及ATP竞争性MEK、ERK等实验策略可用于提出试验假说，但需要由耐药机制、可达药物暴露、EGFR是否仍为共同依赖及患者安全性共同约束。当前所核证据中没有专门验证MAP2K1/2分层在奥希替尼加化疗后指导治疗的随机试验。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "MAP2K1致病/可能致病等位变异",
+      "meaning": "可提出MEK层级异常的机制候选；应结合具体等位变异的功能与药敏证据。",
+      "limitations": "不同变异对RAF和变构MEK药的依赖不同；不得仅按基因名或通用“MEK class”给药。"
+    },
+    {
+      "marker": "MAP2K1 K57N",
+      "meaning": "在EGFR/BRAF/MEK治疗后有病例层面的获得性检出线索。",
+      "limitations": "核实病例使用的是furmonertinib；病例检出不等于已功能证实，也不是奥希替尼加化疗后直接证据。"
+    },
+    {
+      "marker": "MAP2K1/2扩增",
+      "meaning": "在方法可靠并排除非局灶倍性改变时可提出通路剂量效应假说。",
+      "limitations": "没有可跨平台通用的治疗匹配阈值，本节点未找到足以制定该场景处方规则的专门临床证据。"
+    },
+    {
+      "marker": "pMEK/pERK高表达",
+      "meaning": "提示取样时MAPK输出活跃，可支持进一步配对分子和功能检测。",
+      "limitations": "不能等同于MAP2K1/2突变、不能区分上游RTK/RAS/RAF来源，也不能单独证明MEK药敏。"
+    },
+    {
+      "marker": "MAP2K1/2 VUS或未确认低丰度事件",
+      "meaning": "保持为意义不明或待复核。",
+      "limitations": "不升级为耐药驱动，不自动生成治疗匹配。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "将确证MAP2K1/2异常交由分子肿瘤讨论，并优先考察等位变异和前治序列匹配的临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N07_E01",
+        "N07_E05"
+      ],
+      "setting": "机制确认后的研究分层",
+      "limitations": "跨癌/前临床药敏不是本治疗序列临床有效性的保证。"
+    },
+    {
+      "strategy": "不将奥希替尼加selumetinib作为BRAF/MAPK激活的默认匹配方案",
+      "status": "not_supported",
+      "evidence_ids": [
+        "N07_E03"
+      ],
+      "setting": "一线奥希替尼后BRAF异常ORCHARD模块",
+      "limitations": "该具体组合已有低反应及风险获益不支持进一步评估的临床结果；不等于否定所有未来MEK研究。"
+    },
+    {
+      "strategy": "ATP竞争性MEK或下游ERK抑制等机制匹配研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "N07_E01"
+      ],
+      "setting": "特定功能性MEK1等位变异的实验/临床试验探索",
+      "limitations": "不能依据模型结果在临床自行替换或拼接药物。"
+    },
+    {
+      "strategy": "EGFR与MEK联合的其他研究需采用专门队列和毒性监测",
+      "status": "investigational",
+      "evidence_ids": [
+        "N07_E02",
+        "N07_E03"
+      ],
+      "setting": "EGFR-TKI进展后的早期研究，非统一奥希替尼加化疗后",
+      "limitations": "既有单臂研究前治异质性大；必须保留负面ORCHARD结果，不能只引用较积极的TATTON整体结果。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N07_E01",
+      "title": "Allele-Specific Mechanisms of Activation of MEK1 Mutants Determine Their Properties.",
+      "authors": "Gao Y, Chang MT, McKay D, Na N, Zhou B, Yaeger R, Torres NM, Muniz K, Drosten M, Barbacid M, Caponigro G, Stuart D, Moebitz H, Solit DB, Abdel-Wahab O, Taylor BS, Yao Z, Rosen N.",
+      "year": 2018,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-17-1452",
+      "pmid": "29483135",
+      "publication_date": "2018-02-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29483135/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "17种MEK1肿瘤相关突变的功能研究显示，等位变异对RAS/RAF依赖、反馈响应及MEK抑制剂敏感性不同；部分RAF非依赖性突变对变构MEK抑制不敏感，ATP竞争性策略在模型中仍可抑制。",
+      "limitation_zh": "泛癌等位基因功能实验，不是EGFR突变肺癌奥希替尼加化疗后临床疗效证据；不能将每种MAP2K1或MAP2K2变异统一匹配同一种MEK药。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35735998+OR+EXT_ID%3A42202477+OR+EXT_ID%3A38617091+OR+EXT_ID%3A39869838+OR+TITLE%3A%22Allele-specific+mechanisms+of+activation+of+MEK1+mutants+determine+their+properties%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:34:18+00:00"
+      }
+    },
+    {
+      "id": "N07_E02",
+      "title": "Osimertinib plus Selumetinib in EGFR-Mutated Non-Small Cell Lung Cancer After Progression on EGFR-TKIs: A Phase Ib, Open-Label, Multicenter Trial (TATTON Part B).",
+      "authors": "Yang JC, Ohe Y, Chiu CH, Ou X, Cantarini M, Jänne PA, Hartmaier RJ, Ahn MJ.",
+      "year": 2022,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-21-4329",
+      "pmid": "35735998",
+      "publication_date": "2022-06-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35735998/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "TATTON Part B为47例MET阴性的EGFR突变NSCLC早期单臂队列；前治T790M靶向TKI组35例的ORR为22.9%、中位PFS2.8个月，整体34.0%和4.2个月，疗效与前治分层明显有关。",
+      "limitation_zh": "不是随机比较，也不是统一的一线奥希替尼联合化疗耐药队列；不能将整体ORR或早代TKI组较高活性直接用于奥希替尼加化疗后。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35735998+OR+EXT_ID%3A42202477+OR+EXT_ID%3A38617091+OR+EXT_ID%3A39869838+OR+TITLE%3A%22Allele-specific+mechanisms+of+activation+of+MEK1+mutants+determine+their+properties%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:34:18+00:00"
+      }
+    },
+    {
+      "id": "N07_E03",
+      "title": "Osimertinib plus selumetinib in patients with EGFR-mutated advanced NSCLC with BRAF alterations post-progression on first-line osimertinib: ORCHARD.",
+      "authors": "Piotrowska Z, Goldberg SB, Goldman JW, de Langen AJ, Le X, Okamoto I, Riess JW, Yu HA, Nishino K, Novello S, Ponce S, Ambrose H, Smith PE, Tang KH, Lehman JM, Cho BC.",
+      "year": 2026,
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "doi": "10.1016/j.ejca.2026.116807",
+      "pmid": "42202477",
+      "publication_date": "2026-05-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42202477/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "2026 ORCHARD BRAF模块纳入一线奥希替尼后有BRAF融合或V600E的16例；奥希替尼加selumetinib的ORR7%、中位PFS3.4个月，69%出现至少3级不良事件。作者认为风险获益不支持进一步评估该组合。",
+      "limitation_zh": "小样本非随机且BRAF异质性较高；阴性结果不能推出所有MEK策略均无效，但直接反对按BRAF/MAPK激活自动推荐这一具体组合；不是专门奥希替尼加化疗后队列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35735998+OR+EXT_ID%3A42202477+OR+EXT_ID%3A38617091+OR+EXT_ID%3A39869838+OR+TITLE%3A%22Allele-specific+mechanisms+of+activation+of+MEK1+mutants+determine+their+properties%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:34:18+00:00"
+      }
+    },
+    {
+      "id": "N07_E04",
+      "title": "MAP2K1 K57N Conferred an Acquired Resistance to Furmonertinib, Dabrafenib and Trametinib Combined Therapy in Advanced Lung Adenocarcinoma with EGFR Mutation and BRAF V600E.",
+      "authors": "Tan X, Wu Z, Chen M.",
+      "year": 2024,
+      "journal": "OncoTargets and therapy",
+      "doi": "10.2147/ott.s454902",
+      "pmid": "38617091",
+      "publication_date": "2024-04-09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38617091/",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "case_report",
+      "main_finding_zh": "报告EGFR突变并获得BRAF V600E的肺腺癌在伏美替尼、达拉非尼和曲美替尼组合后，再活检检出MAP2K1 K57N，提示通路下游变异可能参与组合后的再耐药。",
+      "limitation_zh": "单病例关联，EGFR药物为furmonertinib而不是osimertinib；不能把检出K57N当作已经完成因果功能验证，更不能将它解释成继续相同MEK抑制更有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35735998+OR+EXT_ID%3A42202477+OR+EXT_ID%3A38617091+OR+EXT_ID%3A39869838+OR+TITLE%3A%22Allele-specific+mechanisms+of+activation+of+MEK1+mutants+determine+their+properties%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:34:18+00:00"
+      }
+    },
+    {
+      "id": "N07_E05",
+      "title": "Clinical Activity of Mitogen-Activated Protein Kinase Inhibitors in Patients With MAP2K1 (MEK1)-Mutated Metastatic Cancers.",
+      "authors": "Dankner M, Rousselle E, Petrecca S, Fabi F, Nowakowski A, Lazaratos AM, Rajadurai CV, Stein AJB, Bian D, Tai P, Belaiche A, Li M, Quaiattini A, Normanno N, Arcila M, Elkrief A, Johnson DB, Ladanyi M, Rose AAN.",
+      "year": 2025,
+      "journal": "JCO precision oncology",
+      "doi": "10.1200/po.24.00199",
+      "pmid": "39869838",
+      "publication_date": "2025-01-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39869838/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "2025 JCO Precision Oncology系统汇总46例接受MAPK通路抑制治疗的MAP2K1突变跨癌患者，整体ORR28%、中位PFS3.9个月；不同功能类别与持续获益的关系支持进一步前瞻性验证。",
+      "limitation_zh": "来自已发表病例的跨癌种系统汇总，存在选择、发表偏倚及治疗异质性；不能直接提供EGFR突变、奥希替尼加化疗后耐药的应答概率或标准处方。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35735998+OR+EXT_ID%3A42202477+OR+EXT_ID%3A38617091+OR+EXT_ID%3A39869838+OR+TITLE%3A%22Allele-specific+mechanisms+of+activation+of+MEK1+mutants+determine+their+properties%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:34:18+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少奥希替尼联合化疗耐药后的MAP2K1/2生物标志物分层随机证据。",
+    "本次可核验材料以同行评议论文摘要为主，未把未能核验的国际会议报道写成既定结果。",
+    "需要建立具体等位变异、共存克隆与功能性药敏之间的联系，特别是MEK2及扩增事件。",
+    "应分开记录通路药物的原发不敏感与药物自身诱导的后续MEK耐药，避免治疗序列错配。"
+  ]
+}

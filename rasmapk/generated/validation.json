@@ -1,0 +1,62 @@
+{
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py' -v",
+    "executed": 37,
+    "passed": 37,
+    "failed": 0,
+    "skipped": 0
+  },
+  "metadata": {
+    "matched": 49,
+    "total": 49,
+    "fulltext_reviewed": false
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "10 nodes and unique evidence rendered",
+      "node filtering and expansion",
+      "evidence filters and duplicate-publication citation aliases",
+      "conference result restrictions and downloadable assets",
+      "390px mobile layout",
+      "no-JavaScript full content",
+      "synthetic case report and zero external requests or JS errors"
+    ],
+    "requests": [],
+    "errors": []
+  },
+  "agent_tasks": {
+    "requested": 10,
+    "completed": 10
+  },
+  "limitations": [
+    "Not clinically validated",
+    "Two conference citations are metadata only",
+    "No drug doses or response probabilities",
+    "Not an exhaustive systematic review"
+  ],
+  "source_hashes": {
+    "node01.json": "511190c9633ca12bcbef5e228146bfccf9e5d0f04195992d3279ba47f7e20c5c",
+    "node02.json": "fc36023d682debe741bde32d622ce064609bac90c8da5e44b9e62971b3c565ad",
+    "node03.json": "5ba5ca607e0b2246ec8df622491f03b0c5dc6b8fd21f33d8a7c6977ec275d482",
+    "node04.json": "19ab12fe0e53ae37d5fdbcaaf8c4055ddc7dd042b8d2d745b8020ad2a30f9e37",
+    "node05.json": "c974a01c22620a14f976bdaad8c7da19ca5a58f8a3722e458a7de578851921f8",
+    "node06.json": "da9187cfa295a0ecfa1f55dfed9e30ccbaf49d800ea41c330c6168fd916811dc",
+    "node07.json": "013e97a924f080e98884ddb4075a8f4d0c2c51c2fb6c878c082221d21d7c00d7",
+    "node08.json": "3ca944c1d78bdc4fbba5d71c5e7a62f6eee67ecd97aa0c81fdf604e69ad82d9e",
+    "node09.json": "b51e9781615b6155dac4e63de8e952d0492d01d04fceb7445f8b55da13072895",
+    "node10.json": "620f65d27294a62a4234793e668a42a5eb090af630c2317520a348f7356d0213"
+  },
+  "independent_rule_review": [
+    "BRAF node reviewer checked mutation classes, transformation and negative ORCHARD mapping",
+    "SHP2/SOS node reviewer checked NF1, phospho-readouts and safety; target-context gate corrected and regression-tested"
+  ],
+  "code_sha256": {
+    "__init__.py": "25db8fd79cd8547ae484875a54662c74d60576b57bdf7940886fd73ae1b8be7c",
+    "__main__.py": "ec886d4d294e8cf725d9f7c95ff25c2b3f618f906a00fad436e6fd0483af535d",
+    "engine.py": "559d525166bb6a0520c8b7aecdeab2cd63ea5effc354992f08f1a3662fcc0663",
+    "knowledge.py": "ff4b4a9a60543998aee4b3ac694f4ef89498f51283223565d8003ed4286fad9a",
+    "render.py": "95c7fa9b0316f905129847b48ead54bb9562570a7b9efa70bf07c359079410be",
+    "retrieve.py": "7582323a62a4ce2e317f1b3289c64a8e3a7e3ce8fe0161a2e696ed826d7e4cac"
+  }
+}

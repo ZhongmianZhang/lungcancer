@@ -45,6 +45,8 @@ def main() -> int:
         <a class="button secondary" href="./downloads/evidence_audit.json" download>查看证据审计</a>
       </nav>
 '''
+        if (args.output / "ras-mapk/index.html").is_file():
+            links = links.replace('      </nav>', '        <a class="button secondary" href="./ras-mapk/index.html">RAS/BRAF耐药证据工作台</a>\n      </nav>')
         content = content.replace(marker, links + marker, 1)
         extra_css = '.site-downloads{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}.site-downloads a{text-decoration:none}@media print{.site-downloads{display:none}}'
         content = content.replace("</style>", extra_css + "</style>", 1)
@@ -65,6 +67,9 @@ def main() -> int:
             "research_status": "文献与JCR期刊排名待核验的研究草稿",
             "files": ["index.html", *["downloads/" + name for name in assets]],
         }
+        extra_dir = output / "ras-mapk"
+        if extra_dir.is_dir():
+            manifest["files"].extend(str(p.relative_to(output)) for p in sorted(extra_dir.rglob("*")) if p.is_file())
         (output / "site-manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         args.archive.parent.mkdir(parents=True, exist_ok=True)
         with zipfile.ZipFile(args.archive, "w", zipfile.ZIP_DEFLATED) as archive:

@@ -1,0 +1,209 @@
+{
+  "node_id": "node06",
+  "title": "BRAF融合、RAF1/ARAF与RAF二聚体：结构变异和旁路依赖",
+  "genes": [
+    "BRAF",
+    "RAF1",
+    "ARAF"
+  ],
+  "upstream": [
+    "EGFR",
+    "RTK",
+    "RAS-GTP"
+  ],
+  "downstream": [
+    "MAP2K1",
+    "MAP2K2",
+    "MAPK1",
+    "MAPK3"
+  ],
+  "mechanism_zh": [
+    "BRAF融合与V600E点突变是不同的分子事件。典型致癌融合保留3端BRAF激酶结构域，并可能去除N端调控区域或借助融合伴侣改变二聚化和定位，使RAF–MEK–ERK在EGFR被抑制时仍保持活性。许多融合具有二聚体相关的生物学特征，但不能仅凭“BRAF融合”四字就判定所有伴侣、断点和RAS依赖性相同。Vojnic等的患者耐药样本、CRISPR和患者衍生模型支持AGK/PJA2-BRAF作为EGFR-TKI获得性耐药机制；其中奥希替尼联合MEK抑制、以及pan-RAF策略的关键支持来自实验模型。",
+    "程序判读必须先审查结构，而非把所有DNA rearrangement都作为可治疗融合。重要字段包括融合方向、精确断点、是否同框、是否保留完整激酶结构域，以及RNA表达和正交证实。DNA检测到间隔区断点、低支持读段或无法解释的伴侣时应输出待确认；RNA阴性也需结合样本质量及检测覆盖。进展时新增而基线足够敏感检测未见的融合，更支持获得性事件，但血浆中与EGFR同时存在不等于两者位于同一克隆。应结合组织、分时点ctDNA、肿瘤负荷和必要的克隆研究。",
+    "选择性BRAF V600单体抑制剂、II型RAF抑制剂、pan-RAF或二聚体抑制剂不能互换。在RAS活跃或二聚体背景中，某些单体选择性抑制方式可能引起旁路或反常MAPK激活；融合阳性不应自动触发de novo BRAF V600E肺癌的治疗模板。保持EGFR阻断并加MEK抑制、或研究能覆盖RAF二聚体的药物，均是有生物学依据的研究方向。2026年FIRELIGHT-1跨实体瘤II期亚研究显示RAF结构变异可成为药物研究靶点，但不是EGFR突变奥希替尼加化疗耐药的直接验证，也不能证明EGFR与RAF/MEK任意组合的可行性。",
+    "RAF1（CRAF）融合/扩增与ARAF改变应单独记录，不能并入BRAF V600E。ARAF扩增在EGFR-TKI耐药再活检中的小型回顾研究还与少数小细胞转化病例同时出现，这提示判读必须优先核实组织学：同一标本里的通路改变可能是转化背景的一部分，而非单一可逆旁路。拷贝数受纯度、倍体及检测平台影响，不能把低水平增益或染色体多体直接当作高水平局灶扩增。现有材料不足以按ARAF扩增输出标准RAF靶向处方。",
+    "就用户关心的奥希替尼加化疗之后而言，这些资料主要来自既往EGFR-TKI序贯、奥希替尼单药后、原发BRAF/RAF1结构变异或跨癌种研究。药物覆盖通路节点不等于已克服这一完整治疗序列的耐药。联合研究还要关注皮疹、腹泻、心脏功能、眼部和其他叠加毒性，需由分子肿瘤委员会及相应临床试验评估，程序不给剂量或自动处方。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "BRAF/RAF1 DNA融合或重排",
+      "meaning": "提示可能的MAPK旁路，需要按断点、方向、同框及激酶结构判断致癌潜力。",
+      "limitations": "DNA结构变异或未知伴侣不等于表达的功能性融合；优先补RNA及正交证据。"
+    },
+    {
+      "marker": "进展时新出现且RNA证实的同框BRAF融合，保留激酶结构",
+      "meaning": "在EGFR突变仍存在的背景下更支持获得性旁路候选。",
+      "limitations": "仍需基线检测敏感性、肿瘤来源和克隆性；不能仅凭共检出认定同一细胞或唯一驱动。"
+    },
+    {
+      "marker": "RAF1/ARAF扩增",
+      "meaning": "提示RAF家族剂量或网络重塑候选，需要结合拷贝数方法、纯度及局灶性。",
+      "limitations": "无跨平台统一阈值；低水平增益不等于已验证驱动，也无本场景通用标准靶向方案。"
+    },
+    {
+      "marker": "ARAF扩增并伴神经内分泌/小细胞转化线索",
+      "meaning": "需重新组织病理评估，避免只按EGFR肺腺癌旁路分类。",
+      "limitations": "扩增与转化关联不证明因果；血浆测序不能代替组织学。"
+    },
+    {
+      "marker": "pERK/pMEK升高",
+      "meaning": "可作为MAPK活性的功能支持，但不是某一RAF融合特异性证据。",
+      "limitations": "受样本采集、处理、药物暴露和其他上游激活影响；不能单凭蛋白磷酸化决定RAF药物。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "保留EGFR阻断并研究MEK联合",
+      "status": "investigational",
+      "evidence_ids": [
+        "N06_E01",
+        "N06_E04"
+      ],
+      "setting": "获得性BRAF融合且仍存在EGFR依赖的病例/模型；本场景须临床试验或MTB评估。",
+      "limitations": "主要实验和个别临床线索；奥希替尼加化疗后无随机验证，不能作为程序默认处方。"
+    },
+    {
+      "strategy": "研究RAF二聚体/II型或pan-RAF抑制策略",
+      "status": "investigational",
+      "evidence_ids": [
+        "N06_E01",
+        "N06_E02",
+        "N06_E05"
+      ],
+      "setting": "经过功能结构确认的BRAF或RAF1融合/扩增，按药物覆盖及试验入组筛选。",
+      "limitations": "跨实体瘤活性不等于EGFR旁路获得性耐药的疗效；不同药物不能按类别任意替换。"
+    },
+    {
+      "strategy": "ARAF扩增病例先复核组织学与通路功能，再设计研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "N06_E03"
+      ],
+      "setting": "ARAF拷贝数改变并进展，尤其伴转化疑点。",
+      "limitations": "无可据ARAF扩增单一结果自动匹配的标准治疗，转化性肿瘤需独立方案评估。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N06_E01",
+      "title": "Acquired BRAF Rearrangements Induce Secondary Resistance to EGFR therapy in EGFR-Mutated Lung Cancers.",
+      "authors": "Vojnic M, Kubota D, Kurzatkowski C, Offin M, Suzawa K, Benayed R, Schoenfeld AJ, Plodkowski AJ, Poirier JT, Rudin CM, Kris MG, Rosen NX, Yu HA, Riely GJ, Arcila ME, Somwar R, Ladanyi M.",
+      "year": 2019,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2018.12.038",
+      "pmid": "30831205",
+      "publication_date": "2019-03-01",
+      "url": "https://doi.org/10.1016/j.jtho.2018.12.038",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "design_detail": "患者耐药样本加CRISPR及患者衍生实验",
+      "main_finding_zh": "基于进展后患者样本、CRISPR模型及患者衍生细胞，证实获得性AGK/PJA2-BRAF融合能维持MEK/ERK信号并削弱奥希替尼抑制。EGFR加MEK或pan-RAF策略主要在模型中成立。",
+      "limitation_zh": "病例包括厄洛替尼后及厄洛替尼继奥希替尼后；不是奥希替尼联合化疗耐药的随机人群，体外协同不能替代临床有效性与安全性。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30831205&format=json&resultType=core&pageSize=3",
+        "checked_at": "2026-11-01T09:31:41+00:00"
+      }
+    },
+    {
+      "id": "N06_E02",
+      "title": "Tumor-Agnostic Genomic and Clinical Analysis of BRAF Fusions Identifies Actionable Targets.",
+      "authors": "Chen MF, Yang SR, Tao JJ, Desilets A, Diamond EL, Wilhelm C, Rosen E, Gong Y, Mullaney K, Torrisi J, Young RJ, Somwar R, Yu HA, Kris MG, Riely GJ, Arcila ME, Ladanyi M, Donoghue MTA, Rosen N, Yaeger R, Drilon A, Murciano-Goroff YR, Offin M.",
+      "year": 2024,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-23-3981",
+      "pmid": "38922339",
+      "publication_date": "2024-09-01",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-23-3981",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "retrospective",
+      "design_detail": "",
+      "main_finding_zh": "跨52种组织学的BRAF融合研究按同框、5端融合伴侣及完整激酶结构域评估致癌潜力；不同组织学的MAPK治疗表现不一，支持功能结构审查。",
+      "limitation_zh": "跨癌种基因组与临床回顾，疗效病例主要不是EGFR突变肺癌奥希替尼加化疗后；不能给本场景套用跨癌种缓解率。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A38922339&format=json&resultType=core&pageSize=100",
+        "checked_at": "2026-11-01T09:31:41+00:00"
+      }
+    },
+    {
+      "id": "N06_E03",
+      "title": "ARAF Amplification in Small-Cell Lung Cancer-Transformed Tumors Following Resistance to Epidermal Growth Factor Receptor-Tyrosine Kinase Inhibitors.",
+      "authors": "Kimura R, Adachi Y, Hirade K, Kisoda S, Yanase S, Shibata N, Ishii M, Fujiwara Y, Yamaguchi R, Fujita Y, Hosoda W, Ebi H.",
+      "year": 2024,
+      "journal": "Cancers",
+      "doi": "10.3390/cancers16203501",
+      "pmid": "39456595",
+      "publication_date": "2024-10-16",
+      "url": "https://doi.org/10.3390/cancers16203501",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "design_detail": "",
+      "main_finding_zh": "EGFR-TKI耐药再活检队列发现ARAF扩增，部分病例伴小细胞肺癌组织学转化；提示RAF通路线索与谱系转化可能并存。",
+      "limitation_zh": "单中心、少量病例和拷贝数检测关联；未证实ARAF扩增单独造成转化或耐药，也未验证ARAF扩增对应的标准治疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3AARAF+AND+%28TITLE%3Abelvarafenib+OR+TITLE%3Aresistance%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:31:41+00:00"
+      }
+    },
+    {
+      "id": "N06_E04",
+      "title": "BRAF fusions define therapeutic vulnerability and tyrosine kinase inhibitor resistance in non-small cell lung cancer.",
+      "authors": "Wang K, Yi C, Ning X, Xiong D, Wang S, Wu X, Bao H, Jiang Y, Deng H, Tang F.",
+      "year": 2026,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2026.109556",
+      "pmid": "42546514",
+      "publication_date": "2026-07-30",
+      "url": "https://doi.org/10.1016/j.lungcan.2026.109556",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "design_detail": "",
+      "main_finding_zh": "97例保留激酶结构域BRAF融合NSCLC回顾分析区分原发与获得性融合；获得性融合常在EGFR-TKI后检测到，个别EGFR共突变患者从EGFR加MEK阻断获临床获益。",
+      "limitation_zh": "包括原发及获得性、不同治疗史；个例获益和回顾性基因组特征不能证明奥希替尼加化疗耐药后普遍有效，亦不能当作前瞻性治疗标准。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A42546514&format=json&resultType=core&pageSize=100",
+        "checked_at": "2026-11-01T09:31:41+00:00"
+      }
+    },
+    {
+      "id": "N06_E05",
+      "title": "Type II RAF Inhibitor Tovorafenib in Recurrent/Refractory Melanoma or Other Solid Tumors With <i>BRAF</i> Fusions or <i>CRAF/RAF1</i> Fusions or Amplification: Phase II FIRELIGHT-1 Substudy.",
+      "authors": "Vieito M, Cabanas EG, Mehmi I, Gaudy-Marqueste C, O'Neil BH, Medina TM, Body AL, Arance A, Kummar S, Najjar YG, Bedard PL, Rankin A, Chu C, McKenna C, Hume S, Kopp LM, Lee J.",
+      "year": 2026,
+      "journal": "JCO precision oncology",
+      "doi": "10.1200/po-25-01187",
+      "pmid": "42826365",
+      "publication_date": "2026-10-02",
+      "url": "https://doi.org/10.1200/po-25-01187",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "prospective",
+      "design_detail": "",
+      "main_finding_zh": "FIRELIGHT-1 II期亚研究在23例携带BRAF或RAF1融合/扩增的复发难治实体瘤中评估II型RAF抑制剂tovorafenib，观察到单药临床活性。",
+      "limitation_zh": "这是跨实体瘤小样本、非随机单药研究，包含黑色素瘤及其他组织学；没有提供可直接应用于EGFR突变奥希替尼加化疗耐药队列的效果估计，不能把此类药物当作该场景已获批标准。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A42826365&format=json&resultType=core&pageSize=100",
+        "checked_at": "2026-11-01T09:31:41+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "尚无本模块核实到的、专门针对奥希替尼联合化疗耐药后BRAF/RAF1/ARAF结构变异人群的随机疗效证据。",
+    "RAF1融合与ARAF点突变/扩增在EGFR耐药中的功能和治疗证据量远低于BRAF融合，不能按同族基因互相推断。",
+    "需明确融合伴侣、断点、表达和二聚体依赖，建立可比较的人源模型及纵向患者样本。",
+    "本模块检索到的2026结果为已发表期刊论文，未伪装成ASCO/ESMO/WCLC会议原始报告；特定会议摘要尚需另外核验。"
+  ]
+}

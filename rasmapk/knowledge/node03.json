@@ -1,0 +1,215 @@
+{
+  "node_id": "node03",
+  "title": "KRAS：变体、扩增与耐药克隆来源",
+  "genes": [
+    "KRAS"
+  ],
+  "upstream": [
+    "EGFR",
+    "MET",
+    "GRB2",
+    "SOS1",
+    "PTPN11"
+  ],
+  "downstream": [
+    "RAF1",
+    "BRAF",
+    "MAP2K1",
+    "MAP2K2",
+    "MAPK1",
+    "MAPK3",
+    "PIK3CA"
+  ],
+  "mechanism_zh": [
+    "KRAS是受核苷酸状态控制的分子开关。EGFR等受体通过GRB2/SOS促进RAS由GDP态转向GTP态；活化RAS连接RAF二聚、MEK及ERK，从而维持增殖与存活。EGFR已被奥希替尼抑制时，获得性的致癌KRAS变体可以在下游重建通路输出。不同KRAS突变对核苷酸循环、上游输入和药物结合方式的依赖不同，不能把所有KRAS阳性事件合并为一个可用同一种药治疗的类别。N03_E01在真实奥希替尼耐药队列中发现非G12C变体的重要性，但其数据不来自奥希替尼联合化疗的独立验证队列。",
+    "关键变体必须按完整蛋白改变解释：G12C、G12D、G12V、G12R及其他位点的药理不能相互替代。G12C特异性抑制剂依赖该位点的半胱氨酸；检测到G12D或G12V不能转而推荐G12C药物。2026年Annals of Oncology的队列中，35/312是所有RAS改变的比例而非KRAS单基因比例，KRAS G12D比G12C更常见；G12D/G12R患者源模型中的奥希替尼组合结果支持研究特定选择性抑制和pan-RAS策略，不构成人体疗效保证。",
+    "KRAS扩增是与点突变不同的事件。部分耐药模型中，增加的KRAS剂量伴随ERK和AKT输出增强，KRAS敲低与RAF/EGFR联合干预可恢复药物作用；这仍主要是临床前证据。临床判读需区分局灶高水平扩增、染色体多倍体导致的拷贝数增益、肿瘤纯度影响及平台算法差异。不能用本程序设定一个适用于所有NGS、FISH和血浆检测的统一拷贝数阈值；应依据实验室经验证的判定、必要的组织正交检测和纵向变化。",
+    "检出并不等于已证明耐药因果。应比较治疗前与进展样本，保留原始EGFR驱动、KRAS变体、取样时间、检测平台、覆盖度及肿瘤来源证据。血浆中同时出现EGFR和KRAS不能证明两者来自同一个肿瘤细胞；不同病灶、第二原发、亚克隆及克隆性造血均可造成混合信号。N03_E05在EGFR突变肺癌中直接展示过血细胞来源的KRAS G12X，因此仅血液检出时应报告“候选旁路，来源待确认”，而不是直接宣布奥希替尼耐药机制已确定。",
+    "治疗解释必须保留情境。N03_E04证明以KRAS G12C为驱动的经治NSCLC存在成熟临床药物证据，但该证据不能自动成为EGFR肺癌获得性KRAS旁路中的单药或联合标准。奥希替尼和选择性KRAS、pan-RAS或RAF/MEK联合均需核对具体变体、临床试验纳入条件、脑部病灶和组合毒性；本模块不给药物剂量，也不以pERK升高或一次基因检测替代分子肿瘤讨论。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "KRAS G12C（进展时新增、肿瘤来源确认）",
+      "meaning": "支持获得性RAS旁路的候选机制，可考虑变体匹配试验讨论。",
+      "limitations": "需要基线可比检测及来源确认；de novoKRAS单药证据不证明EGFR/KRAS组合有效。"
+    },
+    {
+      "marker": "KRAS G12D/G12V/G12R或其他致癌非G12C变体",
+      "meaning": "支持变体特异的RAS旁路假说；非G12C在奥希替尼耐药队列有直接观察。",
+      "limitations": "不能匹配G12C专一药物；选择性G12D不能外推G12R/V；组合多为临床前或研究性证据。"
+    },
+    {
+      "marker": "KRAS局灶扩增／拷贝数增益",
+      "meaning": "可提高RAS信号剂量，机制与点突变需分开。",
+      "limitations": "平台阈值、纯度与非整倍体影响判读；需实验室确认扩增，而非程序按任意拷贝数自动定性。"
+    },
+    {
+      "marker": "仅血浆KRAS阳性、组织未证实",
+      "meaning": "检测到候选事件，但不能确认其来自耐药肿瘤。",
+      "limitations": "配对外周血细胞/组织或其他正交方法排除CHIP，考虑第二原发与病灶异质性。"
+    },
+    {
+      "marker": "KRAS VUS或仅RNA表达升高／pERK升高",
+      "meaning": "不能仅凭这些信息确定KRAS驱动或药物敏感性。",
+      "limitations": "功能性信号可能来自其他RTK/RAS/RAF节点；不应输出确定的KRAS耐药结论。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "经确认的获得性KRAS G12D：研究奥希替尼联合选择性G12D或pan-RAS抑制。",
+      "status": "investigational",
+      "evidence_ids": [
+        "N03_E01"
+      ],
+      "setting": "奥希替尼耐药患者源G12D模型，临床前组合。",
+      "limitations": "不是奥希替尼加化疗后人体疗效证据；不等于可常规处方，需核对具体研究方案。"
+    },
+    {
+      "strategy": "KRAS G12R/V等非G12C事件：按变体考虑pan-RAS或下游联合的机制匹配试验。",
+      "status": "investigational",
+      "evidence_ids": [
+        "N03_E01",
+        "N03_E02"
+      ],
+      "setting": "患者源及其他临床前RAS/RAF机制模型。",
+      "limitations": "不能以类别名推断所有变体均敏感；不使用G12C特异药物匹配非G12C变体。"
+    },
+    {
+      "strategy": "KRAS扩增：研究EGFR与RAF/MEK方向的联合干预。",
+      "status": "investigational",
+      "evidence_ids": [
+        "N03_E02"
+      ],
+      "setting": "KRAS扩增的奥希替尼耐药细胞及异种移植模型。",
+      "limitations": "仅临床前，扩增必须经合格检测确认，且组合可能存在额外毒性。"
+    },
+    {
+      "strategy": "KRAS G12C抑制剂在以KRAS G12C为驱动的经治NSCLC中有临床证据；不得自动迁移到EGFR旁路耐药。",
+      "status": "standard_other_setting",
+      "evidence_ids": [
+        "N03_E04"
+      ],
+      "setting": "KRAS G12C驱动型经治NSCLC，CodeBreaK100单臂II期。",
+      "limitations": "该状态仅指出其他场景的临床证据，不认证地区适应证/2026招募状态；EGFR阳性奥希替尼加化疗后单药或组合需独立验证。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N03_E01",
+      "title": "Therapeutic targeting of RAS-mediated resistance in oncogene-driven lung cancer.",
+      "authors": "Facchinetti F, Friboulet L, Liao L, Peroni M, Nakazawa S, Zullo L, Aldea M, Pecci F, Makarem M, Alonso Garcia I, Minari R, Tuladhar B, Ngo K, Da Silva A, Bigot L, Odintsov I, Koivu MKA, Leonetti A, Samaniego J, Bernard E, Kwiatkowski DJ, Ricciuti B, Rotow JK, Luo J, LoPiccolo J, Florez N, Awad MM, Remon J, Loriot Y, Besse B, Barlesi F, Italiano A, Barbie DA, Paweletz CP, Gokhale PC, Feng WW, Tiseo M, Planchard D, Shaw AT, Jänne PA.",
+      "year": 2026,
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "doi": "10.1016/j.annonc.2026.08.004",
+      "pmid": "42612796",
+      "publication_date": "2026-08-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42612796/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "在312例一线奥希替尼进展患者中发现35例RAS改变（11.2%，不是KRAS单基因频率），其中KRAS G12D为10例、G12C仅1例。两个获得性KRAS G12D/G12R患者源耐药模型显示奥希替尼与选择性KRAS G12D或pan-RAS抑制策略的协同，为临床试验提供依据。",
+      "limitation_zh": "临床队列主要是奥希替尼单药进展；摘要未给出奥希替尼联合化疗后独立队列结果。药物组合疗效证据来自患者源细胞/动物模型，不是患者联合治疗试验；不能将RAS 11.2%当作奥希替尼加化疗后KRAS耐药发生率。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Aosimertinib+AND+TITLE_ABS%3Aresistance+AND+TITLE_ABS%3AKRAS%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=12",
+        "checked_at": "2026-11-01T09:30:47+00:00"
+      }
+    },
+    {
+      "id": "N03_E02",
+      "title": "The combination of osimertinib with Raf inhibitor overcomes osimertinib resistance induced by KRAS amplification in EGFR-mutated lung cancer cells.",
+      "authors": "Lee TG, Kang HM, Kim SY, Kim HR, Kim CH.",
+      "year": 2023,
+      "journal": "Experimental cell research",
+      "doi": "10.1016/j.yexcr.2023.113722",
+      "pmid": "37442265",
+      "publication_date": "2023-07-12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37442265/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼耐药细胞出现KRAS扩增与ERK/AKT活化；KRAS敲低降低信号并增加药物诱导凋亡。RAF抑制剂LY3009120与奥希替尼在细胞和异种移植瘤中协同，建立扩增节点的功能性机制线索。",
+      "limitation_zh": "临床前细胞/鼠模型；不能把拷贝数增益直接等同于体内驱动，也不能将LY3009120组合视为EGFR耐药后临床标准。基于既往TKI后T790M模型，不代表所有一线奥希替尼联合化疗进展。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Aosimertinib+AND+%28TITLE_ABS%3A%22KRAS+amplification%22+OR+TITLE_ABS%3A%22KRAS+copy%22%29%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:30:47+00:00"
+      }
+    },
+    {
+      "id": "N03_E03",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31911548/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "配对肿瘤组织分析中，27例一线奥希替尼病例有5例旁路遗传事件，包括1例KRAS突变；同时发现组织学转化等机制，显示组织活检能补充血浆无法检出的进展机制。",
+      "limitation_zh": "小型回顾性选样队列；单个KRAS事件不能给出稳定频率或证明某种KRAS抑制联合临床有效。适用于奥希替尼后机制发现，非奥希替尼化疗后随机证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Tumor+Analyses+Reveal+Squamous+Transformation%22&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:47+00:00"
+      }
+    },
+    {
+      "id": "N03_E04",
+      "title": "Sotorasib for Lung Cancers with KRAS p.G12C Mutation.",
+      "authors": "Skoulidis F, Li BT, Dy GK, Price TJ, Falchook GS, Wolf J, Italiano A, Schuler M, Borghaei H, Barlesi F, Kato T, Curioni-Fontecedro A, Sacher A, Spira A, Ramalingam SS, Takahashi T, Besse B, Anderson A, Ang A, Tran Q, Mather O, Henary H, Ngarmchamnanrith G, Friberg G, Velcheti V, Govindan R.",
+      "year": 2021,
+      "journal": "The New England journal of medicine",
+      "doi": "10.1056/nejmoa2103695",
+      "pmid": "34096690",
+      "publication_date": "2021-06-04",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34096690/",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "prospective",
+      "main_finding_zh": "CodeBreaK100单臂II期证实sotorasib在经治KRAS G12C突变晚期NSCLC中的临床活性。该人群为以KRAS G12C为驱动的NSCLC，提供变体特异性药理与其他临床场景的治疗证据。",
+      "limitation_zh": "不是EGFR突变肺癌经奥希替尼或奥希替尼化疗后获得性KRAS旁路的验证；不能由单药试验推出EGFR加KRAS联合为获批标准。本文也不能用于认证2026年任何地区的适应证或招募状态。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Sotorasib+for+Lung+Cancers%22&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:47+00:00"
+      }
+    },
+    {
+      "id": "N03_E05",
+      "title": "False-Positive Plasma Genotyping Due to Clonal Hematopoiesis.",
+      "authors": "Hu Y, Ulrich BC, Supplee J, Kuang Y, Lizotte PH, Feeney NB, Guibert NM, Awad MM, Wong KK, Jänne PA, Paweletz CP, Oxnard GR.",
+      "year": 2018,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-18-0143",
+      "pmid": "29567812",
+      "publication_date": "2018-03-22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29567812/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "在58例EGFR突变NSCLC的血浆ddPCR研究中，2例检出的KRAS G12X均同时存在于外周血细胞；证明少数血浆KRAS可来自克隆性造血，而非肿瘤。",
+      "limitation_zh": "证明检测来源鉴别的必要性，不表示全部血浆KRAS均是假阳性；肿瘤来源需要组织、配对白细胞或其他正交证据，单靠VAF高低无法统一裁定。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22False-Positive+Plasma+Genotyping+Due+to+Clonal+Hematopoiesis%22&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:47+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "五篇所核对论文没有奥希替尼联合化疗后KRAS旁路的独立随机治疗比较；不得将奥希替尼单药队列比例直接外推。",
+    "RAS共同事件中哪些为主克隆、亚克隆或血细胞来源，需要进展组织、配对血细胞及纵向取样联合判断。",
+    "不同KRAS变体与扩增对选择性KRAS、pan-RAS、RAF/MEK联合的临床疗效和毒性尚需前瞻验证。",
+    "本模块未核实ASCO/ESMO/WCLC具体会议摘要；2026更新来自已收录期刊文章，不冒称会议报告。",
+    "本轮仅审读公开摘要及书目信息，未阅读全文；需要全文、补充材料、试验登记和地区监管信息完成最终临床证据审校。"
+  ]
+}

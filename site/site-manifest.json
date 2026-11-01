@@ -23,6 +23,10 @@
     "downloads/references.csv",
     "downloads/report_data.json",
     "downloads/evidence_audit.json",
-    "downloads/research_code.zip"
+    "downloads/research_code.zip",
+    "ras-mapk/README.md",
+    "ras-mapk/example_result.json",
+    "ras-mapk/index.html",
+    "ras-mapk/knowledge.json"
   ]
 }

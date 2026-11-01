@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_EXAMPLE_NOT_A_PATIENT",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "histology": "adenocarcinoma",
+    "histology_confirmed_at_progression": true,
+    "progression_pattern": "systemic",
+    "prior_additional_therapies": []
+  },
+  "findings": [
+    {
+      "gene": "BRAF",
+      "variant": "AGK::BRAF",
+      "alteration_type": "fusion",
+      "classification": "likely_pathogenic",
+      "sample_type": "tissue",
+      "tumor_origin": "confirmed",
+      "assay_validated": true,
+      "acquisition": "unknown",
+      "rna_confirmed": false,
+      "in_frame": true,
+      "kinase_domain_retained": true
+    }
+  ]
+}

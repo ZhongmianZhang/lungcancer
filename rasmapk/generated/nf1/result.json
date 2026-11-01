@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_only_not_clinically_validated",
+  "evidence_window": {
+    "start": "2016-11-01",
+    "end": "2026-11-01"
+  },
+  "target_sequence_confirmed_by_input": true,
+  "missing_context": [],
+  "alerts": [],
+  "findings": [
+    {
+      "index": 0,
+      "gene": "NF1",
+      "variant": "laboratory-confirmed biallelic loss",
+      "normalized_variant": "LABORATORY-CONFIRMEDBIALLELICLOSS",
+      "alteration_type": "loss_of_function",
+      "mechanism": "RAS_GAP_LOSS",
+      "status": "supported_mechanistic_hypothesis",
+      "rationale": "负调控缺失可能维持RAS-GTP；单个VUS或未经确认的单等位改变不足，NF1缺失也可能导致SHP2抑制抵抗。",
+      "validation_needed": [],
+      "cautions": [],
+      "acquired_supported_by_supplied_history": true,
+      "node_ids": [
+        "node04",
+        "node02"
+      ],
+      "evidence_ids": [
+        "N02_E01",
+        "N02_E02",
+        "N02_E03",
+        "N02_E04",
+        "N02_E05",
+        "N04_E01",
+        "N04_E02",
+        "N04_E03",
+        "N04_E04",
+        "N04_E05"
+      ],
+      "target_setting_abstract_evidence_ids": [],
+      "research_options": [
+        {
+          "id": "GAP_LOSS_RESEARCH",
+          "strategy": "负调控缺失的功能研究与试验评估",
+          "status": "investigational_mtb_or_trial_only",
+          "setting": "EGFR突变NSCLC奥希替尼+化疗后；此处均不是已验证自动治疗建议",
+          "limitation": "NF1篮式MEK研究有阴性结果；不能自动选择MEK或SHP2抑制。"
+        }
+      ],
+      "clinical_actionability": "not_established_for_this_sequence"
+    }
+  ],
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "blocked_automatic_mappings": [
+    "BRAF异常→奥希替尼+selumetinib：2026 ORCHARD队列不支持继续评估该组合。",
+    "NF1失活→MEK或SHP2敏感：NF1篮式阴性和SHP2抵抗机制反对该推断。",
+    "pERK高→ERK药、ERK越低越好：通路读出、反馈与持留使该规则不成立。",
+    "BRAF非V600/融合→ulixertinib标准：2026跨癌种研究不能支持此映射。",
+    "KRAS任意改变→G12C药：非G12C、扩增和血细胞来源不属于该模板。"
+  ],
+  "next_steps": [
+    "整合进展期组织病理、DNA/RNA测序、拷贝数和必要的血浆/白细胞对照；血浆阴性不排除。",
+    "与治疗前样本比较，核实遗传背景、获得性、克隆关系与并行耐药机制。",
+    "按全身、寡进展或中枢进展分类，进入分子肿瘤委员会讨论。",
+    "核实试验当前招募、地区标签、既往化疗/ADC入组限制和组合毒性；本工具不生成处方。"
+  ]
+}

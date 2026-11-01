@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_EXAMPLE_NOT_A_PATIENT",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "histology": "adenocarcinoma",
+    "histology_confirmed_at_progression": true,
+    "progression_pattern": "cns",
+    "prior_additional_therapies": []
+  },
+  "findings": []
+}

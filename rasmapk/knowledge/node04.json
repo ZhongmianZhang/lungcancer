@@ -1,0 +1,240 @@
+{
+  "node_id": "node04",
+  "title": "NRAS/HRAS与NF1/RASA1：RAS开关持续激活及负调控丢失",
+  "genes": [
+    "NRAS",
+    "HRAS",
+    "NF1",
+    "RASA1"
+  ],
+  "upstream": [
+    "EGFR",
+    "MET",
+    "GRB2",
+    "SOS1",
+    "SOS2"
+  ],
+  "downstream": [
+    "ARAF",
+    "BRAF",
+    "RAF1",
+    "MAP2K1",
+    "MAP2K2",
+    "MAPK1",
+    "MAPK3",
+    "PI3K/AKT"
+  ],
+  "mechanism_zh": [
+    "NRAS和HRAS是RAS小GTP酶。活化热区变异可延长GTP结合状态，使细胞在EGFR激酶被抑制后仍通过RAF-MEK-ERK维持增殖及存活。EGFR突变细胞发生NRAS Q61K等改变时，可以形成“原始EGFR驱动仍在、RAS旁路另行维持存活”的复合依赖。但NRAS热区点突变、基因扩增和mRNA表达升高是不同事件；扩增需要结合肿瘤纯度、倍性、检测平台和局灶性解释，不能用统一拷贝数阈值跨平台下结论。[N04_E01]",
+    "HRAS在奥希替尼耐药中的直接临床证据比KRAS少。PC9/AZDR细胞及动物模型同时发现HRAS G13R、MET表达升高和ERK持续活化，EGFR与MEK联用可恢复模型敏感性。这个结果支持下游MAPK活化的机制合理性，却没有排除MET等共同改变的贡献；程序应将其识别为候选旁路，不应将单个HRAS变异标成已经证实的患者耐药原因。[N04_E02]",
+    "NF1编码神经纤维瘤蛋白，RASA1编码另一类RAS GTP酶激活蛋白；二者使RAS-GTP向RAS-GDP转换，提供负调控。功能缺失会削弱RAS信号关闭。截断、经典剪接位点改变、明确功能缺失的变异或缺失可以提出RASGAP失活假说，但单个错义VUS不能这样归类；仅检测到一个致病等位基因也不自动证明完全功能丧失。拷贝数缺失、LOH、另一等位基因事件、RNA/蛋白表达和下游活性可帮助确认功能背景，但双等位基因失活仍不是现成的临床用药标志物。[N04_E03,N04_E04,N04_E05]",
+    "RASA1/NF1双失活研究必须保留人群边界：原始基因组研究中，该亚群多见于吸烟相关NSCLC，16例双截断病例缺少其他已知肺癌驱动。它建立的是另一种RAS/MAPK驱动模式及其模型药敏，不能直接证明EGFR突变肿瘤接受奥希替尼后获得RASA1/NF1改变就会出现相同机制。对进展样本应与治疗前样本配对，确认改变是获得、富集还是既存背景，同时考虑肿瘤异质性和其他可并存耐药机制。[N04_E03]",
+    "“通路活化”不能等同于“MEK抑制临床获益”。虽然NRAS相关耐药模型支持奥希替尼与MEK抑制组合，NCI-MATCH的NF1失活篮式队列总体缓解率仅4.3%，未达主要终点；2025年四例NF1改变NSCLC病例系列也未观察到明确临床获益。因此在奥希替尼加化疗耐药后的判读中，这些标志主要用于提出机制匹配试验、补充验证及分子肿瘤委员会讨论，不能自动生成MEK药物处方或剂量。[N04_E01,N04_E04,N04_E05]",
+    "血浆检出的NRAS、HRAS或NF1改变必须先确认来源。克隆性造血、另一原发肿瘤、低肿瘤含量及技术误差均可能干扰归属，不能仅凭ctDNA一次阳性或VAF升高认定为当前肺癌获得性耐药。需要结合组织病理、同一克隆的EGFR驱动、配对白细胞或正常样本、序列时间点及检测质量；血浆阴性也不能排除脑部或低释放病灶的耐药。NF1还需要区分肿瘤体细胞事件和可能的胚系事件，不能单凭接近50%的VAF作出胚系诊断。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展期NRAS Q61/G12/G13或HRAS G12/G13/Q61活化热区",
+      "meaning": "可提出EGFR非依赖性RAS-MAPK旁路候选；获得或治疗后富集并经肿瘤来源确认会增强机制可信度。",
+      "limitations": "变异功能、来源、基线及并存机制都需要核对；并非所有变异都致病，也不能从其他RAS亚型的药敏类推。"
+    },
+    {
+      "marker": "NRAS/HRAS扩增",
+      "meaning": "在明确局灶性扩增和相应信号背景下，可提示RAS剂量增加；与活化点突变分开记录。",
+      "limitations": "平台、肿瘤纯度、倍性、局灶扩增与整染色体增益不同；仅凭表达或弱拷贝数升高不能判定驱动。"
+    },
+    {
+      "marker": "NF1/RASA1单个VUS",
+      "meaning": "不应作为确定耐药机制或治疗靶点。",
+      "limitations": "需保持VUS分类，不得通过基因名称将所有变异自动转成失活。"
+    },
+    {
+      "marker": "NF1或RASA1致病LOF、缺失及LOH",
+      "meaning": "可提出RAS负调控丢失假说；配对等位基因、拷贝数及功能证据有助于增强判断。",
+      "limitations": "单等位基因事件与双失活需区分；双失活也不证明MEK抑制临床敏感。"
+    },
+    {
+      "marker": "NF1/RASA1双失活",
+      "meaning": "具有临床前RAS/MAPK依赖证据，可优先讨论机制匹配研究。",
+      "limitations": "主要临床前证据来自非EGFR驱动的吸烟相关NSCLC，不能当成奥希替尼加化疗后的标准策略。"
+    },
+    {
+      "marker": "pERK升高或MAPK转录签名",
+      "meaning": "支持通路活跃，适合与基因改变、时间和空间信息联合解释。",
+      "limitations": "不能区分RTK旁路、RAS改变、RAF改变、负反馈或其他来源；无通用临床阈值和单独处方价值。"
+    },
+    {
+      "marker": "仅ctDNA检出或基线缺失",
+      "meaning": "来源或获得性状态未确定，应输出补充验证需求。",
+      "limitations": "不把血液变异直接归属当前肺癌；缺少基线只能称“耐药时检出”，不能称“获得性”。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "EGFR与MEK联合抑制的机制匹配临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N04_E01",
+        "N04_E02"
+      ],
+      "setting": "经组织/配对检测支持NRAS或HRAS旁路且仍保留EGFR依赖的耐药病例，尤其适合具有明确既往奥希替尼加化疗入组条件的试验。",
+      "limitations": "有效性主要来自模型；并存RTK/PI3K或组织学转化可能改变依赖。不能自动开具组合或剂量，且需审查叠加毒性及脑转移入组要求。"
+    },
+    {
+      "strategy": "NF1/RASA1功能确认后参加MAPK通路试验，而非按NF1阳性常规使用MEK药物",
+      "status": "investigational",
+      "evidence_ids": [
+        "N04_E03",
+        "N04_E04",
+        "N04_E05"
+      ],
+      "setting": "有明确LOF/等位基因证据和机制合理性、经过分子肿瘤委员会审核的人群。",
+      "limitations": "NCI-MATCH总体未达主要疗效终点，2025年NSCLC小病例系列无明确临床获益；这些结果反对自动“NF1→曲美替尼”映射。"
+    },
+    {
+      "strategy": "RAS核苷酸循环／SOS1／SHP2依赖的功能研究及早期试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N04_E01",
+        "N04_E03"
+      ],
+      "setting": "探索RAS热区与RASGAP失活之间不同的上游依赖，须依据所入组方案直接证据分层。",
+      "limitations": "本节点文献未直接验证这些药物在奥希替尼加化疗后的临床疗效；只作研究方向，不提供确定药敏推断。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N04_E01",
+      "title": "Molecular landscape of osimertinib resistance in patients and patient-derived preclinical models.",
+      "authors": "Lim SM, Yang SD, Lim S, Heo SG, Daniel S, Markovets A, Minoo R, Pyo KH, Yun MR, Hong MH, Kim HR, Cho BC.",
+      "year": 2022,
+      "journal": "Therapeutic advances in medical oncology",
+      "doi": "10.1177/17588359221079125",
+      "pmid": "35251316",
+      "publication_date": "2022-02-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35251316/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "55例奥希替尼经治患者及患者来源模型的综合研究中，NRAS Q61K模型可对奥希替尼加曲美替尼产生再敏感，提示RAS旁路可维持EGFR被抑制后的存活。",
+      "limitation_zh": "临床样本图谱与耐药细胞/PDX功能实验混合；NRAS Q61K联合药物的恢复敏感来自模型，并非经奥希替尼加化疗后患者随机试验。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35251316+AND+SRC%3AMED&format=json&resultType=core&pageSize=2",
+        "checked_at": "2026-11-01T09:32:14+00:00"
+      }
+    },
+    {
+      "id": "N04_E02",
+      "title": "Acquired resistance to AZD9291 as an upfront treatment is dependent on ERK signaling in a preclinical model.",
+      "authors": "Ku BM, Choi MK, Sun JM, Lee SH, Ahn JS, Park K, Ahn MJ.",
+      "year": 2018,
+      "journal": "PloS one",
+      "doi": "10.1371/journal.pone.0194730",
+      "pmid": "29641535",
+      "publication_date": "2018-04-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29641535/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "PC9来源的AZD9291耐药模型出现持续ERK激活，伴HRAS G13R及MET表达升高；EGFR与MEK联用在体外和体内模型恢复药物敏感性。",
+      "limitation_zh": "是细胞与动物模型，HRAS改变与MET表达同时存在；不能据此断定HRAS G13R单独足以解释患者耐药，也没有验证奥希替尼加化疗之后的疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29641535+AND+SRC%3AMED&format=json&resultType=core&pageSize=2",
+        "checked_at": "2026-11-01T09:32:14+00:00"
+      }
+    },
+    {
+      "id": "N04_E03",
+      "title": "RASA1 and NF1 are Preferentially Co-Mutated and Define A Distinct Genetic Subset of Smoking-Associated Non-Small Cell Lung Carcinomas Sensitive to MEK Inhibition.",
+      "authors": "Hayashi T, Desmeules P, Smith RS, Drilon A, Somwar R, Ladanyi M.",
+      "year": 2018,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-17-2343",
+      "pmid": "29127119",
+      "publication_date": "2017-11-10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29127119/",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "preclinical",
+      "main_finding_zh": "大型NSCLC基因组数据与功能实验提示RASA1/NF1截断共突变可构成RAS/MAPK驱动背景；双RASGAP失活的细胞模型比单基因失活更敏感于MEK抑制。",
+      "limitation_zh": "该亚群多与吸烟相关；研究中16例RASA1/NF1双截断肿瘤均缺乏其他已知肺癌驱动，不能直接当作EGFR突变获得性奥希替尼耐药证据。其药敏结果是临床前结果。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29127119+AND+SRC%3AMED&format=json&resultType=core&pageSize=2",
+        "checked_at": "2026-11-01T09:32:14+00:00"
+      }
+    },
+    {
+      "id": "N04_E04",
+      "title": "Trametinib in Patients With NF1-, GNAQ-, or GNA11-Mutant Tumors: Results From the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocols S1 and S2.",
+      "authors": "Wisinski KB, Flamand Y, Wilson MA, Luke JJ, Tawbi HA, Hong F, Mitchell EP, Zwiebel JA, Chen H, Gray RJ, Li S, McShane LM, Rubinstein LV, Patton D, Williams PM, Hamilton SR, Behrens RJ, Pennington KP, Conley BA, Arteaga CL, Harris LN, O'Dwyer PJ, Chen AP, Flaherty KT.",
+      "year": 2023,
+      "journal": "JCO precision oncology",
+      "doi": "10.1200/po.22.00421",
+      "pmid": "37053535",
+      "publication_date": "2023-04-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37053535/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "NCI-MATCH S1队列46例NF1失活突变实体瘤接受曲美替尼，观察到2例部分缓解（ORR 4.3%），其中一例为晚期肺癌，但未达到主要疗效终点。",
+      "limitation_zh": "组织类型混合、单臂、人数少；个别肺癌缓解不能证明EGFR耐药后NF1突变群体获益，也不能建立NF1阳性即应使用MEK抑制剂的规则。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3Atrametinib+AND+TITLE_ABS%3ANF1+AND+%28TITLE_ABS%3AMATCH+OR+TITLE_ABS%3AEAY131%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=15",
+        "checked_at": "2026-11-01T09:32:14+00:00"
+      }
+    },
+    {
+      "id": "N04_E05",
+      "title": "Case Report: Trametinib in the treatment of patients with metastatic lung adenocarcinoma harboring <i>NF1</i> mutation: a case series and literature review.",
+      "authors": "Kim F, Borgeaud M, De Vito C, Tsantoulis P, Addeo A.",
+      "year": 2025,
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2025.1481284",
+      "pmid": "41170454",
+      "publication_date": "2025-10-15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41170454/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "case_series",
+      "main_finding_zh": "2025年四例NF1致病改变的NSCLC病例系列中，两例纯合LOF、两例杂合LOF，经分子肿瘤委员会讨论后接受曲美替尼；最佳疗效仅一例疾病稳定，作者认为未观察到临床获益。",
+      "limitation_zh": "四例均为高度经治且无对照的病例，不能精确估计亚群疗效；仍提示不能把NF1失活或双等位基因丢失机械地转化为MEK抑制治疗建议，且不属于奥希替尼加化疗后专门队列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3Atrametinib+AND+TITLE_ABS%3ANF1+AND+%28TITLE_ABS%3AMATCH+OR+TITLE_ABS%3AEAY131%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=15",
+        "checked_at": "2026-11-01T09:32:14+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "本次聚焦检索未获得专门验证“奥希替尼联合化疗后NRAS/HRAS或NF1/RASA1机制及干预”的随机证据；不能把奥希替尼单药后模型或非EGFR篮式研究外推为该序列后的标准。",
+    "需要配对治疗前、早期残留和进展样本，结合组织、ctDNA及配对白细胞，区分获得性事件、预存克隆选择和非肿瘤来源。",
+    "需要RAS突变、RAS扩增与RASGAP双失活分别建模，验证EGFR/MAPK/PI3K依赖及共变异，而非按基因名称统一药敏。",
+    "2025年NF1 NSCLC负面病例系列与早期临床前药敏之间存在明显转化落差，需试验明确生物标志物及持续获益终点。",
+    "本节点未独立核实ASCO/ESMO/WCLC大会摘要，不生成2026会议结论；所列证据为有可追溯元数据和已读摘要的期刊论文，非完成全文系统综述。"
+  ],
+  "search_audit": {
+    "window_start": "2016-11-01",
+    "window_end": "2026-11-01",
+    "provider": "Europe PMC",
+    "searches": [
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3ANRAS+AND+TITLE_ABS%3Aosimertinib+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=25",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3ANF1+AND+%28TITLE_ABS%3Aosimertinib+OR+TITLE_ABS%3AEGFR%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=25",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3ARASA1+AND+TITLE_ABS%3Alung+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=25",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3AHRAS+AND+TITLE_ABS%3Aosimertinib+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=25",
+      "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3Atrametinib+AND+TITLE_ABS%3ANF1+AND+%28TITLE_ABS%3AMATCH+OR+TITLE_ABS%3AEAY131%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=15"
+    ],
+    "search_status": "focused_metadata_and_abstract_review_completed",
+    "systematic_review_complete": false,
+    "conference_search_complete": false,
+    "checked_at": "2026-11-01T09:32:14+00:00"
+  }
+}

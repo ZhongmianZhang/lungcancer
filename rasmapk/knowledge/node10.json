@@ -1,0 +1,263 @@
+{
+  "node_id": "node10",
+  "title": "临床背景、纵向取样与克隆：将通路异常放回奥希替尼＋化疗后的人群",
+  "genes": [
+    "EGFR",
+    "KRAS",
+    "NRAS",
+    "BRAF",
+    "TP53",
+    "RB1"
+  ],
+  "upstream": [
+    "治疗序列",
+    "进展模式",
+    "取样部位与时间"
+  ],
+  "downstream": [
+    "肿瘤来源确认",
+    "纵向克隆解释",
+    "病理转化分流",
+    "临床试验匹配"
+  ],
+  "mechanism_zh": [
+    "耐药机制判读应从治疗序列开始：是否真正同时使用奥希替尼与铂类/培美曲塞、何时进展、既往是否已接受埃万妥单抗或ADC，都会改变能否外推研究结果。FLAURA2原始随机试验属于一线疗效证据，不是某个RAS/BRAF耐药事件的功能或匹配用药证据。既往接受过奥希替尼、之后再接受化疗，也不能自动标记成“一线奥希替尼＋化疗后”研究人群。",
+    "进展时尽量将病灶组织病理与DNA/RNA检测、血浆ctDNA以及基线资料放在同一时间轴。OSIRIS显示组织与血浆检测具有互补性；血浆阴性、没有检出EGFR创始突变或检测报告仅含低丰度信号，都可能反映低肿瘤释放、平台覆盖或取样问题，不能证明不存在RAS/BRAF旁路。拷贝数、融合和组织学状态尤其不能只依靠一次血浆面板排除。",
+    "组织学变化是独立的决策分支。Schoenfeld配对组织研究显示鳞状等转化可与新的离靶改变并存。TP53/RB1共改变只能提出转化风险，不能替代小细胞或其他组织学诊断；即便仍检出EGFR或MAPK相关变异，也不能忽略病理已转化这一更直接的治疗背景。程序应优先提示补取病理和多学科复核，不把所有进展都归结为同一个MAPK抑制问题。",
+    "同一次bulk测序中检测到EGFR与KRAS/BRAF，并不证明两者位于同一肿瘤克隆，也不证明后者一定为获得性事件。MATCH-R仅在其可分析的4份单细胞样本中证实双驱动共存，并展示显著异质性；这支持逐例验证的必要性。没有合格基线对照时应将acquired保留为unknown，不能仅因报告日期较晚就设为新出现；治疗前已有的改变还需区别原发耐受、克隆扩张和旁观事件。",
+    "进展模式同样影响解释。全身多部位进展、少数病灶寡进展、孤立脑实质或脑膜进展不能混用一套规则。中枢庇护区或局部耐药克隆可使血浆信号不能代表关键病灶；是否采用局部治疗、补充脑脊液或组织检测需依据临床指征和安全性由多学科团队讨论。pERK/pMEK升高只是通路输出，不定位到RAS、BRAF或某个上游受体；DNA/RNA、病理与取样语境必须共同解释。",
+    "本次确实检索到2023年的514MO及2026年的P2.237两条FLAURA2耐药探索分析会议题录，但Crossref不含摘要正文，会议官网又不可访问。因此不能写成“没有FLAURA2耐药研究”，也不能编写其RAS/BRAF发生率或宣称已核验大会结果。规则应将metadata_only证据限制为待补取的书目线索，不参与药物有效性或联合化疗后直接证据的自动升级。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "基线与进展配对DNA/RNA",
+      "meaning": "用于区分新检出、基线存在及可能克隆扩张，并核对融合表达和拷贝数。",
+      "limitations": "未检测基线不等于基线阴性；检测平台、样本含量及覆盖不一致可能制造假“获得性”。"
+    },
+    {
+      "marker": "血浆RAS/BRAF及EGFR创始变异",
+      "meaning": "可作为动态分子线索，需结合组织及必要的白细胞对照确认来源。",
+      "limitations": "血浆阴性不排除肿瘤机制；共检出不证明同克隆，单次VAF大小也不能完成肿瘤谱系判定。"
+    },
+    {
+      "marker": "进展病灶组织形态及免疫表型",
+      "meaning": "识别小细胞、鳞状等转化或第二原发，以确定是否应进入另一治疗研究路径。",
+      "limitations": "TP53/RB1变异不能替代病理诊断，单部位活检也可能漏掉其他克隆。"
+    },
+    {
+      "marker": "RNA支持的功能融合",
+      "meaning": "帮助判断DNA重排是否表达、同框并保留相关激酶结构域。",
+      "limitations": "DNA重排读数本身不是功能性旁路的充分证据，低质量RNA阴性也不能一概排除。"
+    },
+    {
+      "marker": "pERK/pMEK或表达增高",
+      "meaning": "提示MAPK输出或细胞状态，适合与基因改变和药效时间点联合分析。",
+      "limitations": "非特异读出、易受取样和治疗时间影响，不可直接推出BRAF类别或靶向药敏感性。"
+    },
+    {
+      "marker": "全身／寡进展／CNS进展",
+      "meaning": "决定何处取样最能代表当前失败的疾病，并为局部与系统策略讨论提供背景。",
+      "limitations": "模式分类不自动证明某一分子机制，也不自动指示停用或继续现有药物。"
+    },
+    {
+      "marker": "既往联合化疗、埃万妥单抗、ADC暴露",
+      "meaning": "用于核对研究人群与可参加临床试验的纳排条件。",
+      "limitations": "不能将单药奥希替尼后队列、初治BRAF驱动队列或单药获批适应证，自动迁移为完整经治序列后的标准方案。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "组织＋血浆＋必要RNA及病理的机制匹配临床试验路径",
+      "status": "investigational",
+      "evidence_ids": [
+        "N10_E02",
+        "N10_E03",
+        "N10_E04"
+      ],
+      "setting": "进展样本和治疗史足够、机制候选经确认后，由分子肿瘤讨论及试验纳排条件决定。",
+      "limitations": "取样与诊断本身并非试验性用药；此处标记的是机制匹配的后续治疗路线。没有发现可直接普遍适用于奥希替尼＋化疗后RAS/BRAF改变的标准组合。"
+    },
+    {
+      "strategy": "病理转化、第二原发及空间异质性单独分流",
+      "status": "investigational",
+      "evidence_ids": [
+        "N10_E02",
+        "N10_E04"
+      ],
+      "setting": "病理或影像提示转化、孤立新病灶或多克隆进展时。",
+      "limitations": "先核对病理再讨论相应表型的临床治疗与研究方案；不根据TP53/RB1、EGFR保留或pERK一个指标自动切换处方。"
+    },
+    {
+      "strategy": "会议题录补证后再讨论FLAURA2耐药亚组策略",
+      "status": "not_supported",
+      "evidence_ids": [
+        "N10_E05",
+        "N10_E06"
+      ],
+      "setting": "目前仅得到会议题名和DOI，未得到摘要结果。",
+      "limitations": "当前不支持将这两条题录用作药物推荐、发生率估计或直接联合化疗后疗效证据；需取得原始摘要/海报/全文后重新审校。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N10_E01",
+      "title": "Osimertinib with or without Chemotherapy in EGFR-Mutated Advanced NSCLC.",
+      "authors": "Planchard D, Jänne PA, Cheng Y, Yang JC, Yanagitani N, Kim SW, Sugawara S, Yu Y, Fan Y, Geater SL, Laktionov K, Lee CK, Valdiviezo N, Ahmed S, Maurel JM, Andrasina I, Goldman J, Ghiorghiu D, Rukazenkov Y, Todd A, Kobayashi K, FLAURA2 Investigators.",
+      "year": 2023,
+      "journal": "The New England journal of medicine",
+      "doi": "10.1056/nejmoa2306434",
+      "pmid": "37937763",
+      "publication_date": "2023-11-08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37937763/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "randomized",
+      "main_finding_zh": "FLAURA2随机试验建立一线奥希替尼联合铂类/培美曲塞的临床疗效背景；本条用于界定既往方案与队列，而不用于判定进展时的RAS/BRAF机制。",
+      "limitation_zh": "主报告的PFS和响应结局不提供可直接引用的RAS/BRAF进展样本分母、克隆关系或匹配治疗疗效；不能用其疗效结论证明联合化疗耐药后的某一旁路机制。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37937763+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "checked_at": "2026-11-01T09:40:54+00:00"
+      }
+    },
+    {
+      "id": "N10_E02",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31911548/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "配对治疗前后组织研究识别鳞状等组织学转化及MET、KRAS、RET、BRAF等离靶改变，直接说明只查血浆不足以完整解释奥希替尼耐药。",
+      "limitation_zh": "单中心、选择了可重复活检的病例；主要是奥希替尼单药背景，不是专门的一线奥希替尼加化疗后队列，不能把频率直接迁移。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31911548+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "checked_at": "2026-11-01T09:40:54+00:00"
+      }
+    },
+    {
+      "id": "N10_E03",
+      "title": "Combined analysis of circulating tumor DNA and tumor tissue to overcome osimertinib resistance (OSIRIS); the second line osimertinib cohort.",
+      "authors": "van der Wel JWT, Jebbink M, van den Broek D, Steinbusch LC, Theelen WSME, Ruiter G, Buikhuisen W, Burgers JA, Baas P, Vermeulen M, van der Noort V, Hashemi SMS, Bosch LJW, Monkhorst K, Smit EF, Boelens MC, de Langen AJ.",
+      "year": 2024,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2024.107972",
+      "pmid": "39556978",
+      "publication_date": "2024-09-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39556978/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "OSIRIS在二/三线奥希替尼进展后联合血浆、组织DNA/RNA及病理分析；两类取样捕获的机制互补，单一血浆检测有漏检风险。",
+      "limitation_zh": "51例特定后线队列及特定面板；研究内成功阈值不能作为所有平台的通用阈值，不能外推为联合化疗后每个RAS/BRAF事件的频率或药敏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39556978+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "checked_at": "2026-11-01T09:40:54+00:00"
+      }
+    },
+    {
+      "id": "N10_E04",
+      "title": "Single-cell DNA-seq depicts clonal evolution of multiple driver alterations in osimertinib-resistant patients.",
+      "authors": "Chen J, Facchinetti F, Braye F, Yurchenko AA, Bigot L, Ponce S, Planchard D, Gazzah A, Nikolaev S, Michiels S, Vasseur D, Lacroix L, Tselikas L, Nobre C, Olaussen KA, Andre F, Scoazec JY, Barlesi F, Soria JC, Loriot Y, Besse B, Friboulet L.",
+      "year": 2022,
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "doi": "10.1016/j.annonc.2022.01.004",
+      "pmid": "35066105",
+      "publication_date": "2022-01-21",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35066105/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "MATCH-R在奥希替尼耐药患者中以单细胞DNA测序检验第二驱动与EGFR是否共存；4份可分析冻存样本中证实共存，并显示克隆异质性与序贯事件。",
+      "limitation_zh": "仅有限可用样本得到单细胞结论；不能根据任一患者的bulk组织或血浆共检出就自动认定同克隆，患者源模型的联合敏感性也不是该完整治疗序列的随机临床疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35066105+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "checked_at": "2026-11-01T09:40:54+00:00"
+      }
+    },
+    {
+      "id": "N10_E05",
+      "title": "P2.237: Baseline Co-Mutations and Acquired Resistance Mechanisms in EGFR-Mutated Advanced NSCLC: FLAURA2 Exploratory Analysis",
+      "authors": "C.K. Lee; J. Robichaux; D. Planchard; J.C.-H. Yang; K. Kobayashi; K. Laktionov; Y. Yu; B. Biswas; J.-M. Maurel; S. Ahmed; K.H. Lee; J. Tan Chun Bing; D.A. Ezeife; G. Pinto; L. Koubkova; N. Valdiviezo; K. Barrett; A. Evans; R. Hartmaier; P.A. Jänne",
+      "year": 2026,
+      "journal": "Journal of Thoracic Oncology",
+      "doi": "10.1016/j.jtho.2026.105019",
+      "pmid": "",
+      "publication_date": "2026-10",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.jtho.2026.105019",
+      "verification": "metadata_only",
+      "scope": "mixed",
+      "design": "conference_abstract",
+      "main_finding_zh": "已从Crossref核实题名、作者、期刊、DOI及发表年月：这是一条真实的FLAURA2耐药探索分析会议摘要题录。仅据题录不提取任何RAS/BRAF发生率、分母、检测方式或治疗效果。",
+      "limitation_zh": "Crossref无摘要正文；会议/期刊官网访问受限，未核对报告正文、海报、具体会议归属及联合组/单药组分母。不能称为已审WCLC或ESMO大会结果，也不能作为自动用药匹配依据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2026.105019",
+        "checked_at": "2026-11-01T09:40:54+00:00"
+      },
+      "conference_abstract_id": "P2.237",
+      "conference_identity_verified": false,
+      "abstract_text_available": false,
+      "evidence_use": "bibliographic_lead_only"
+    },
+    {
+      "id": "N10_E06",
+      "title": "514MO Acquired mechanisms of resistance to first-line (1L) osimertinib with or without platinum-based chemotherapy (CT) in EGFR-mutated (EGFRm) advanced NSCLC: Preliminary data from FLAURA2",
+      "authors": "C.K. Lee; J.P. Robichaux; P.A. Jänne; S-W. Kim; T.M. Kim; K. Kobayashi; D. Planchard; S. Sugawara; N. Yanagitani; T-Y. Yang; A. Markovets; P. Bhetaryia; L. Poole; Y. Rukazenkov; R.J. Hartmaier; J.C-H. Yang",
+      "year": 2023,
+      "journal": "Annals of Oncology",
+      "doi": "10.1016/j.annonc.2023.10.593",
+      "pmid": "",
+      "publication_date": "2023-11",
+      "date_precision": "month",
+      "url": "https://doi.org/10.1016/j.annonc.2023.10.593",
+      "verification": "metadata_only",
+      "scope": "mixed",
+      "design": "conference_abstract",
+      "main_finding_zh": "已从Crossref核实题名、作者、期刊、DOI及发表年月：这是一条真实的FLAURA2耐药探索分析会议摘要题录。仅据题录不提取任何RAS/BRAF发生率、分母、检测方式或治疗效果。",
+      "limitation_zh": "Crossref无摘要正文；会议/期刊官网访问受限，未核对报告正文、海报、具体会议归属及联合组/单药组分母。不能称为已审WCLC或ESMO大会结果，也不能作为自动用药匹配依据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.annonc.2023.10.593",
+        "checked_at": "2026-11-01T09:40:54+00:00"
+      },
+      "conference_abstract_id": "514MO",
+      "conference_identity_verified": false,
+      "abstract_text_available": false,
+      "evidence_use": "bibliographic_lead_only"
+    }
+  ],
+  "research_gaps": [
+    "已发现FLAURA2耐药会议摘要题录，但正文与具体RAS/BRAF分析尚未取得；不能据此填造发生率或治疗疗效。",
+    "需要明确将奥希替尼＋铂类/培美曲塞耐药患者单列的组织—血浆—RNA纵向队列、各检测平台分母及样本失败率。",
+    "需要明确纳入既往埃万妥单抗/ADC者并报告其亚组，而非把奥希替尼单药后试验结果自动外推。",
+    "需要将血细胞来源、第二原发、同克隆双驱动、多克隆并存以及组织学转化分别验证；普通共检出或VAF排序不足以区分。",
+    "需要患者级临床结局验证和前瞻性决策影响评估；当前规则是可审计的研究判读框架，未经过临床效用验证。"
+  ],
+  "search_audit": {
+    "window_start": "2016-11-01",
+    "window_end": "2026-11-01",
+    "providers": [
+      "Europe PMC",
+      "Crossref"
+    ],
+    "conference_full_results_available": false,
+    "conference_official_identity_verified": false,
+    "clinical_drug_doses_provided": false
+  }
+}

@@ -1,0 +1,976 @@
+{
+  "checked_at": "2026-11-01T09:53:22+00:00",
+  "status": "complete",
+  "publication_count": 49,
+  "matched_count": 49,
+  "requests": [
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2239089305%22+OR+EXT_ID%3A%2240461383%22+OR+EXT_ID%3A%2230257958%22+OR+EXT_ID%3A%2241790029%22+OR+EXT_ID%3A%2242846034%22+OR+EXT_ID%3A%2241289356%22+OR+EXT_ID%3A%2240333694%22+OR+EXT_ID%3A%2236820830%22+OR+EXT_ID%3A%2237269335%22+OR+EXT_ID%3A%2242048384%22+OR+EXT_ID%3A%2242612796%22+OR+EXT_ID%3A%2237442265%22+OR+EXT_ID%3A%2231911548%22+OR+EXT_ID%3A%2234096690%22+OR+EXT_ID%3A%2229567812%22+OR+EXT_ID%3A%2235251316%22+OR+EXT_ID%3A%2229641535%22+OR+EXT_ID%3A%2229127119%22+OR+EXT_ID%3A%2237053535%22+OR+EXT_ID%3A%2241170454%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-01T09:53:18+00:00"
+    },
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2228783719%22+OR+EXT_ID%3A%2230224342%22+OR+EXT_ID%3A%2239268146%22+OR+EXT_ID%3A%2242202477%22+OR+EXT_ID%3A%2242751032%22+OR+EXT_ID%3A%2230831205%22+OR+EXT_ID%3A%2238922339%22+OR+EXT_ID%3A%2239456595%22+OR+EXT_ID%3A%2242546514%22+OR+EXT_ID%3A%2242826365%22+OR+EXT_ID%3A%2229483135%22+OR+EXT_ID%3A%2235735998%22+OR+EXT_ID%3A%2238617091%22+OR+EXT_ID%3A%2239869838%22+OR+EXT_ID%3A%2231821539%22+OR+EXT_ID%3A%2230475204%22+OR+EXT_ID%3A%2242578969%22+OR+EXT_ID%3A%2242919317%22+OR+EXT_ID%3A%2239297884%22+OR+EXT_ID%3A%2228416483%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-01T09:53:19+00:00"
+    },
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2230651547%22+OR+EXT_ID%3A%2240450112%22+OR+EXT_ID%3A%2242475177%22+OR+EXT_ID%3A%2234242789%22+OR+EXT_ID%3A%2237937763%22+OR+EXT_ID%3A%2239556978%22+OR+EXT_ID%3A%2235066105%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-01T09:53:21+00:00"
+    },
+    {
+      "request_url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2026.105019"
+    },
+    {
+      "request_url": "https://api.crossref.org/works/10.1016%2Fj.annonc.2023.10.593"
+    }
+  ],
+  "errors": [],
+  "records": [
+    {
+      "source_ids": [
+        "N01_E01"
+      ],
+      "pmid": "39089305",
+      "doi": "10.1016/s1470-2045(24)00270-5",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tepotinib plus osimertinib in patients with EGFR-mutated non-small-cell lung cancer with MET amplification following progression on first-line osimertinib (INSIGHT 2): a multicentre, open-label, phase 2 trial.",
+        "doi": "10.1016/s1470-2045(24)00270-5",
+        "first_publication_date": "2024-08-01",
+        "journal": "The Lancet. Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N01_E02"
+      ],
+      "pmid": "40461383",
+      "doi": "10.1016/j.annonc.2025.04.003",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Savolitinib plus osimertinib in epidermal growth factor receptor (EGFR)-mutated advanced non-small cell lung cancer with MET overexpression and/or amplification following disease progression on osimertinib: primary results from the phase II SAVANNAH study.",
+        "doi": "10.1016/j.annonc.2025.04.003",
+        "first_publication_date": "2025-06-02",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N01_E03"
+      ],
+      "pmid": "30257958",
+      "doi": "10.1158/2159-8290.cd-18-1022",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Landscape of Acquired Resistance to Osimertinib in <i>EGFR</i>-Mutant NSCLC and Clinical Validation of Combined EGFR and RET Inhibition with Osimertinib and BLU-667 for Acquired <i>RET</i> Fusion.",
+        "doi": "10.1158/2159-8290.cd-18-1022",
+        "first_publication_date": "2018-09-26",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N01_E04"
+      ],
+      "pmid": "41790029",
+      "doi": "10.1158/1078-0432.ccr-25-4540",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Genomic Profiling of Epidermal Growth Factor Receptor Mutation-Positive Non-Small Cell Lung Cancer after Progression on First-line Osimertinib: Phase II ORCHARD Study.",
+        "doi": "10.1158/1078-0432.ccr-25-4540",
+        "first_publication_date": "2026-09-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N01_E05"
+      ],
+      "pmid": "42846034",
+      "doi": "10.3389/fonc.2026.1921556",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "HER2 amplification as a resistance mechanism to osimertinib and its successful treatment with trastuzumab deruxtecan: a case report.",
+        "doi": "10.3389/fonc.2026.1921556",
+        "first_publication_date": "2026-09-23",
+        "journal": "Frontiers in oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N02_E01"
+      ],
+      "pmid": "41289356",
+      "doi": "10.1126/scisignal.aea2788",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "SOS1 inhibition suppresses the emergence of osimertinib resistance to generate a durable response in &lt;i&gt;EGFR&lt;/i&gt;-mutant lung cancer.",
+        "doi": "10.1126/scisignal.aea2788",
+        "first_publication_date": "2025-11-25",
+        "journal": "Science signaling",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N02_E02"
+      ],
+      "pmid": "40333694",
+      "doi": "10.1158/1078-0432.ccr-24-3691",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "JAB-3312, a Potent Allosteric SHP2 Inhibitor That Enhances the Efficacy of RTK/RAS/MAPK and PD-1 Blockade Therapies.",
+        "doi": "10.1158/1078-0432.ccr-24-3691",
+        "first_publication_date": "2025-07-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N02_E03"
+      ],
+      "pmid": "36820830",
+      "doi": "10.1084/jem.20221563",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Genome-wide CRISPR/Cas9 screens reveal shared and cell-specific mechanisms of resistance to SHP2 inhibition.",
+        "doi": "10.1084/jem.20221563",
+        "first_publication_date": "2023-02-23",
+        "journal": "The Journal of experimental medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N02_E04"
+      ],
+      "pmid": "37269335",
+      "doi": "10.1158/2159-8290.cd-23-0361",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "SHP2 Inhibition Sensitizes Diverse Oncogene-Addicted Solid Tumors to Re-treatment with Targeted Therapy.",
+        "doi": "10.1158/2159-8290.cd-23-0361",
+        "first_publication_date": "2023-08-01",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N02_E05"
+      ],
+      "pmid": "42048384",
+      "doi": "10.1158/1078-0432.ccr-25-3725",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "The SOS1 Inhibitor BI 1701963 as Monotherapy or in Combination with Trametinib in Patients with KRAS Mutation-Positive Solid Tumors.",
+        "doi": "10.1158/1078-0432.ccr-25-3725",
+        "first_publication_date": "2026-08-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N03_E01"
+      ],
+      "pmid": "42612796",
+      "doi": "10.1016/j.annonc.2026.08.004",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Therapeutic targeting of RAS-mediated resistance in oncogene-driven lung cancer.",
+        "doi": "10.1016/j.annonc.2026.08.004",
+        "first_publication_date": "2026-08-18",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N03_E02"
+      ],
+      "pmid": "37442265",
+      "doi": "10.1016/j.yexcr.2023.113722",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "The combination of osimertinib with Raf inhibitor overcomes osimertinib resistance induced by KRAS amplification in EGFR-mutated lung cancer cells.",
+        "doi": "10.1016/j.yexcr.2023.113722",
+        "first_publication_date": "2023-07-12",
+        "journal": "Experimental cell research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N03_E03",
+        "N10_E02"
+      ],
+      "pmid": "31911548",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in <i>EGFR</i>-Mutant Lung Cancer.",
+        "doi": "10.1158/1078-0432.ccr-19-3563",
+        "first_publication_date": "2020-01-07",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N03_E04"
+      ],
+      "pmid": "34096690",
+      "doi": "10.1056/nejmoa2103695",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Sotorasib for Lung Cancers with <i>KRAS</i> p.G12C Mutation.",
+        "doi": "10.1056/nejmoa2103695",
+        "first_publication_date": "2021-06-04",
+        "journal": "The New England journal of medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N03_E05"
+      ],
+      "pmid": "29567812",
+      "doi": "10.1158/1078-0432.ccr-18-0143",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "False-Positive Plasma Genotyping Due to Clonal Hematopoiesis.",
+        "doi": "10.1158/1078-0432.ccr-18-0143",
+        "first_publication_date": "2018-03-22",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N04_E01"
+      ],
+      "pmid": "35251316",
+      "doi": "10.1177/17588359221079125",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Molecular landscape of osimertinib resistance in patients and patient-derived preclinical models.",
+        "doi": "10.1177/17588359221079125",
+        "first_publication_date": "2022-02-26",
+        "journal": "Therapeutic advances in medical oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N04_E02"
+      ],
+      "pmid": "29641535",
+      "doi": "10.1371/journal.pone.0194730",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Acquired resistance to AZD9291 as an upfront treatment is dependent on ERK signaling in a preclinical model.",
+        "doi": "10.1371/journal.pone.0194730",
+        "first_publication_date": "2018-04-11",
+        "journal": "PloS one",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N04_E03"
+      ],
+      "pmid": "29127119",
+      "doi": "10.1158/1078-0432.ccr-17-2343",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "<i>RASA1</i> and <i>NF1</i> are Preferentially Co-Mutated and Define A Distinct Genetic Subset of Smoking-Associated Non-Small Cell Lung Carcinomas Sensitive to MEK Inhibition.",
+        "doi": "10.1158/1078-0432.ccr-17-2343",
+        "first_publication_date": "2017-11-10",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N04_E04"
+      ],
+      "pmid": "37053535",
+      "doi": "10.1200/po.22.00421",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Trametinib in Patients With <i>NF1-</i>, <i>GNAQ-</i>, or <i>GNA11</i>-Mutant Tumors: Results From the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocols S1 and S2.",
+        "doi": "10.1200/po.22.00421",
+        "first_publication_date": "2023-04-01",
+        "journal": "JCO precision oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N04_E05"
+      ],
+      "pmid": "41170454",
+      "doi": "10.3389/fonc.2025.1481284",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Case Report: Trametinib in the treatment of patients with metastatic lung adenocarcinoma harboring &lt;i&gt;NF1&lt;/i&gt; mutation: a case series and literature review.",
+        "doi": "10.3389/fonc.2025.1481284",
+        "first_publication_date": "2025-10-15",
+        "journal": "Frontiers in oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N05_E01"
+      ],
+      "pmid": "28783719",
+      "doi": "10.1038/nature23291",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumours with class 3 BRAF mutants are sensitive to the inhibition of activated RAS.",
+        "doi": "10.1038/nature23291",
+        "first_publication_date": "2017-08-02",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N05_E02"
+      ],
+      "pmid": "30224342",
+      "doi": "10.1158/1078-0432.ccr-18-2062",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Impact of BRAF Mutation Class on Disease Characteristics and Clinical Outcomes in BRAF-mutant Lung Cancer.",
+        "doi": "10.1158/1078-0432.ccr-18-2062",
+        "first_publication_date": "2018-09-17",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N05_E03"
+      ],
+      "pmid": "39268146",
+      "doi": "10.21037/jtd-23-629",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Efficacy and tolerability of osimertinib with dabrafenib and trametinib in <i>BRAF</i> V600E acquired <i>EGFR</i>-mutant non-small cell lung cancer: a case series.",
+        "doi": "10.21037/jtd-23-629",
+        "first_publication_date": "2024-06-21",
+        "journal": "Journal of thoracic disease",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N05_E04",
+        "N07_E03"
+      ],
+      "pmid": "42202477",
+      "doi": "10.1016/j.ejca.2026.116807",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Osimertinib plus selumetinib in patients with EGFR-mutated advanced NSCLC with BRAF alterations post-progression on first-line osimertinib: ORCHARD.",
+        "doi": "10.1016/j.ejca.2026.116807",
+        "first_publication_date": "2026-05-18",
+        "journal": "European journal of cancer (Oxford, England : 1990)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N05_E05"
+      ],
+      "pmid": "42751032",
+      "doi": "10.1016/j.jtocrr.2026.101056",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Triple-Targeted Therapy With Encorafenib, Binimetinib, and Osimertinib in &lt;i&gt;EGFR-&lt;/i&gt;Mutated NSCLC With Acquired &lt;i&gt;BRAF&lt;/i&gt; Alteration After Osimertinib: A Single-Center Experience.",
+        "doi": "10.1016/j.jtocrr.2026.101056",
+        "first_publication_date": "2026-07-24",
+        "journal": "JTO clinical and research reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N06_E01"
+      ],
+      "pmid": "30831205",
+      "doi": "10.1016/j.jtho.2018.12.038",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Acquired BRAF Rearrangements Induce Secondary Resistance to EGFR therapy in EGFR-Mutated Lung Cancers.",
+        "doi": "10.1016/j.jtho.2018.12.038",
+        "first_publication_date": "2019-03-01",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N06_E02"
+      ],
+      "pmid": "38922339",
+      "doi": "10.1158/1078-0432.ccr-23-3981",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumor-Agnostic Genomic and Clinical Analysis of BRAF Fusions Identifies Actionable Targets.",
+        "doi": "10.1158/1078-0432.ccr-23-3981",
+        "first_publication_date": "2024-09-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N06_E03"
+      ],
+      "pmid": "39456595",
+      "doi": "10.3390/cancers16203501",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "<i>ARAF</i> Amplification in Small-Cell Lung Cancer-Transformed Tumors Following Resistance to Epidermal Growth Factor Receptor-Tyrosine Kinase Inhibitors.",
+        "doi": "10.3390/cancers16203501",
+        "first_publication_date": "2024-10-16",
+        "journal": "Cancers",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N06_E04"
+      ],
+      "pmid": "42546514",
+      "doi": "10.1016/j.lungcan.2026.109556",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "BRAF fusions define therapeutic vulnerability and tyrosine kinase inhibitor resistance in non-small cell lung cancer.",
+        "doi": "10.1016/j.lungcan.2026.109556",
+        "first_publication_date": "2026-07-30",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N06_E05"
+      ],
+      "pmid": "42826365",
+      "doi": "10.1200/po-25-01187",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Type II RAF Inhibitor Tovorafenib in Recurrent/Refractory Melanoma or Other Solid Tumors With &lt;i&gt;BRAF&lt;/i&gt; Fusions or &lt;i&gt;CRAF/RAF1&lt;/i&gt; Fusions or Amplification: Phase II FIRELIGHT-1 Substudy.",
+        "doi": "10.1200/po-25-01187",
+        "first_publication_date": "2026-10-02",
+        "journal": "JCO precision oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N07_E01"
+      ],
+      "pmid": "29483135",
+      "doi": "10.1158/2159-8290.cd-17-1452",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Allele-Specific Mechanisms of Activation of MEK1 Mutants Determine Their Properties.",
+        "doi": "10.1158/2159-8290.cd-17-1452",
+        "first_publication_date": "2018-02-26",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N07_E02"
+      ],
+      "pmid": "35735998",
+      "doi": "10.1158/1078-0432.ccr-21-4329",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Osimertinib plus Selumetinib in EGFR-Mutated Non-Small Cell Lung Cancer After Progression on EGFR-TKIs: A Phase Ib, Open-Label, Multicenter Trial (TATTON Part B).",
+        "doi": "10.1158/1078-0432.ccr-21-4329",
+        "first_publication_date": "2022-06-23",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N07_E04"
+      ],
+      "pmid": "38617091",
+      "doi": "10.2147/ott.s454902",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "MAP2K1 K57N Conferred an Acquired Resistance to Furmonertinib, Dabrafenib and Trametinib Combined Therapy in Advanced Lung Adenocarcinoma with EGFR Mutation and BRAF V600E.",
+        "doi": "10.2147/ott.s454902",
+        "first_publication_date": "2024-04-09",
+        "journal": "OncoTargets and therapy",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N07_E05"
+      ],
+      "pmid": "39869838",
+      "doi": "10.1200/po.24.00199",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Clinical Activity of Mitogen-Activated Protein Kinase Inhibitors in Patients With MAP2K1 (MEK1)-Mutated Metastatic Cancers.",
+        "doi": "10.1200/po.24.00199",
+        "first_publication_date": "2025-01-27",
+        "journal": "JCO precision oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N08_E01"
+      ],
+      "pmid": "31821539",
+      "doi": "10.1002/cncr.32655",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "ERK inhibition effectively overcomes acquired resistance of epidermal growth factor receptor-mutant non-small cell lung cancer cells to osimertinib.",
+        "doi": "10.1002/cncr.32655",
+        "first_publication_date": "2019-12-10",
+        "journal": "Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N08_E02"
+      ],
+      "pmid": "30475204",
+      "doi": "10.7554/elife.33718",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Hyperactivation of ERK by multiple mechanisms is toxic to RTK-RAS mutation-driven lung adenocarcinoma cells.",
+        "doi": "10.7554/elife.33718",
+        "first_publication_date": "2018-11-26",
+        "journal": "eLife",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N08_E03"
+      ],
+      "pmid": "42578969",
+      "doi": "10.1158/1078-0432.ccr-24-0951",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "ERK1/2 Inhibitor Ulixertinib in Pan-cancer Patients with BRAF Fusions or Non-V600E/K Mutations: Results from the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1L.",
+        "doi": "10.1158/1078-0432.ccr-24-0951",
+        "first_publication_date": "2026-08-11",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N08_E04"
+      ],
+      "pmid": "42919317",
+      "doi": "10.1186/s13046-026-03792-6",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "ERK/GATAD2A/SAA1 axis drives osimertinib resistance via NF-κB and macrophage reprogramming in EGFR-mutated lung adenocarcinoma.",
+        "doi": "10.1186/s13046-026-03792-6",
+        "first_publication_date": "2026-07-28",
+        "journal": "Journal of experimental & clinical cancer research : CR",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N08_E05"
+      ],
+      "pmid": "39297884",
+      "doi": "10.1084/jem.20240435",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Inhibition of hTERT/telomerase/telomere mediates therapeutic efficacy of osimertinib in EGFR mutant lung cancer.",
+        "doi": "10.1084/jem.20240435",
+        "first_publication_date": "2024-09-19",
+        "journal": "The Journal of experimental medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N09_E01"
+      ],
+      "pmid": "28416483",
+      "doi": "10.1158/0008-5472.can-16-2300",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "SFK/FAK Signaling Attenuates Osimertinib Efficacy in Both Drug-Sensitive and Drug-Resistant Models of EGFR-Mutant Lung Cancer.",
+        "doi": "10.1158/0008-5472.can-16-2300",
+        "first_publication_date": "2017-04-17",
+        "journal": "Cancer research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N09_E02"
+      ],
+      "pmid": "30651547",
+      "doi": "10.1038/s41467-018-08074-0",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "AXL confers intrinsic resistance to osimertinib and advances the emergence of tolerant cells.",
+        "doi": "10.1038/s41467-018-08074-0",
+        "first_publication_date": "2019-01-16",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N09_E03"
+      ],
+      "pmid": "40450112",
+      "doi": "10.1038/s41388-025-03461-6",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Drug tolerance and persistence to EGFR inhibitor treatment are mediated by an ILK-SFK-YAP signaling axis in lung adenocarcinoma.",
+        "doi": "10.1038/s41388-025-03461-6",
+        "first_publication_date": "2025-05-31",
+        "journal": "Oncogene",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N09_E04"
+      ],
+      "pmid": "42475177",
+      "doi": "10.1016/j.celrep.2026.117717",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "AXL phosphosite mapping links FAK1 and YAP1 signaling to erlotinib resistance in EGFR-mutant lung cancer.",
+        "doi": "10.1016/j.celrep.2026.117717",
+        "first_publication_date": "2026-07-20",
+        "journal": "Cell reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N09_E05"
+      ],
+      "pmid": "34242789",
+      "doi": "10.1016/j.jtho.2021.06.013",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Acquired Resistance to Third-Generation EGFR Tyrosine Kinase Inhibitors in Patients With De Novo EGFR<sup>T790M</sup>-Mutant NSCLC.",
+        "doi": "10.1016/j.jtho.2021.06.013",
+        "first_publication_date": "2021-07-06",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N10_E01"
+      ],
+      "pmid": "37937763",
+      "doi": "10.1056/nejmoa2306434",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Osimertinib with or without Chemotherapy in <i>EGFR</i>-Mutated Advanced NSCLC.",
+        "doi": "10.1056/nejmoa2306434",
+        "first_publication_date": "2023-11-08",
+        "journal": "The New England journal of medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N10_E03"
+      ],
+      "pmid": "39556978",
+      "doi": "10.1016/j.lungcan.2024.107972",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Combined analysis of circulating tumor DNA and tumor tissue to overcome osimertinib resistance (OSIRIS); the second line osimertinib cohort.",
+        "doi": "10.1016/j.lungcan.2024.107972",
+        "first_publication_date": "2024-09-28",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N10_E04"
+      ],
+      "pmid": "35066105",
+      "doi": "10.1016/j.annonc.2022.01.004",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Single-cell DNA-seq depicts clonal evolution of multiple driver alterations in osimertinib-resistant patients.",
+        "doi": "10.1016/j.annonc.2022.01.004",
+        "first_publication_date": "2022-01-21",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N10_E05"
+      ],
+      "pmid": "",
+      "doi": "10.1016/j.jtho.2026.105019",
+      "provider": "Crossref",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "P2.237: Baseline Co-Mutations and Acquired Resistance Mechanisms in EGFR-Mutated Advanced NSCLC: FLAURA2 Exploratory Analysis",
+        "doi": "10.1016/j.jtho.2026.105019",
+        "first_publication_date": [
+          [
+            2026,
+            10
+          ]
+        ],
+        "journal": "Journal of Thoracic Oncology",
+        "abstract_available": false
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "N10_E06"
+      ],
+      "pmid": "",
+      "doi": "10.1016/j.annonc.2023.10.593",
+      "provider": "Crossref",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "514MO Acquired mechanisms of resistance to first-line (1L) osimertinib with or without platinum-based chemotherapy (CT) in EGFR-mutated (EGFRm) advanced NSCLC: Preliminary data from FLAURA2",
+        "doi": "10.1016/j.annonc.2023.10.593",
+        "first_publication_date": [
+          [
+            2023,
+            11
+          ]
+        ],
+        "journal": "Annals of Oncology",
+        "abstract_available": false
+      },
+      "full_text_reviewed": false
+    }
+  ],
+  "scope": "Bibliographic recheck only; node reviewers read abstracts; no claim of full-text or regulatory verification."
+}

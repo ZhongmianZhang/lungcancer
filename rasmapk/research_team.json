@@ -1,0 +1,87 @@
+{
+  "requested_agents": 10,
+  "completed_agents": 10,
+  "execution": "scheduled in waves under concurrent slot limits",
+  "tasks": [
+    {
+      "agent_number": 1,
+      "node_id": "node01",
+      "topic": "上游RTK旁路：EGFR/ERBB2/MET/RET/FGFR与RAS-RAF连接",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 2,
+      "node_id": "node02",
+      "topic": "SHP2–GRB2–SOS1/2适配层：受体旁路信号的整合与RAS核苷酸循环",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 3,
+      "node_id": "node03",
+      "topic": "KRAS：变体、扩增与耐药克隆来源",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 4,
+      "node_id": "node04",
+      "topic": "NRAS/HRAS与NF1/RASA1：RAS开关持续激活及负调控丢失",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 5,
+      "node_id": "node05",
+      "topic": "BRAF功能分型：class I、II与III决定不同的RAS依赖和联合治疗边界",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 6,
+      "node_id": "node06",
+      "topic": "BRAF融合、RAF1/ARAF与RAF二聚体：结构变异和旁路依赖",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 7,
+      "node_id": "node07",
+      "topic": "MEK1/2：MAP2K1/2等位变异、磷酸化与联合抑制的证据边界",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 8,
+      "node_id": "node08",
+      "topic": "ERK1/2、DUSP反馈与转录效应端：激活读出不等于药物适应证",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 9,
+      "node_id": "node09",
+      "topic": "交叉信号与持留细胞：MAPK、PI3K/AKT及AXL–SFK–YAP共同塑造耐药",
+      "completed": true,
+      "evidence_assertions": 5,
+      "scope": "independent_research_subagent"
+    },
+    {
+      "agent_number": 10,
+      "node_id": "node10",
+      "topic": "临床背景、纵向取样与克隆：将通路异常放回奥希替尼＋化疗后的人群",
+      "completed": true,
+      "evidence_assertions": 6,
+      "scope": "independent_research_subagent"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "node_id": "node02",
+  "title": "SHP2–GRB2–SOS1/2适配层：受体旁路信号的整合与RAS核苷酸循环",
+  "genes": [
+    "PTPN11",
+    "GRB2",
+    "SOS1",
+    "SOS2",
+    "NF1",
+    "LZTR1",
+    "PTEN"
+  ],
+  "upstream": [
+    "EGFR",
+    "MET",
+    "ERBB2",
+    "FGFR",
+    "RTK旁路"
+  ],
+  "downstream": [
+    "KRAS/NRAS/HRAS-GTP",
+    "RAF",
+    "MEK",
+    "ERK"
+  ],
+  "mechanism_zh": [
+    "EGFR被奥希替尼抑制后，其他受体酪氨酸激酶仍可经适配层维持RAS激活。GRB2是连接受体／支架蛋白与SOS的适配蛋白，SOS1/2促进RAS由GDP结合态转向GTP结合态；SHP2由PTPN11编码，参与建立完整的受体至RAS信号输出。这里的核心是多条上游信号可以汇入共享节点，而不是每一种旁路都必然依赖相同程度的SHP2或SOS1。",
+    "2025年Science Signaling研究直接考察EGFR突变肺癌的奥希替尼适应、持留及获得性耐药模型。SOS1敲除或药物抑制可减少肿瘤起始细胞并抑制适应性RAS输出，在小鼠中延缓停药后再生长。这是奥希替尼联合SOS1抑制的临床前依据；研究背景没有等同于已接受奥希替尼加化疗并在该组合上进展的临床患者，也不能把早期持留预防与进展后挽救混为同一终点。",
+    "2025年JAB-3312研究提供SHP2与奥希替尼联用在耐药NSCLC模型中的支持。临床前联合抑制可以限制RTK反馈重启ERK，但文中其他药物组合的患者代表性响应不能转记为EGFR人群的临床有效率。2023年PF-07284892临床概念验证显示某些其他驱动肿瘤在加回先前靶向药后响应，适合用作早期组合研究设计的参考，不能外推为本目标人群的成熟治疗方案。",
+    "负调控层决定上游阻断是否足够。NF1编码RAS-GAP，失活可能延长RAS-GTP状态；CRISPR筛查还显示NF1、PTEN、LZTR1等缺失可造成SHP2抑制抵抗。这意味着发现NF1缺失时，既可提出RAS通路激活假说，也必须警惕它削弱上游SHP2策略。RAS不同等位基因的核苷酸循环和上游依赖性并不相同，不能把所有KRAS、NRAS、HRAS改变套用为同一种SOS/SHP2药物敏感性。",
+    "生物标志物必须分层记录：SHP2蛋白／磷酸化升高不等于PTPN11致病活化突变；SOS1表达升高不等于已经验证的药物响应标志；pERK升高只说明下游输出，不能唯一定位到此适配层。变构SHP2药物对具体PTPN11突变的抑制作用须按药物及位点核查，不能由基因名或“致病”标签自动判断。血浆单独检出的PTPN11等变异应结合组织和必要时白细胞对照，确认肿瘤来源及与治疗相关的动态变化。",
+    "2026年Clinical Cancer Research的BI1701963±曲美替尼I期结果构成重要反证边界：机制合理不保证临床收益，摘要报告疗效有限并出现研究者判定与药物有关的致死间质性肺病。本节点因此只生成临床试验讨论与补充检测建议，不自动输出SHP2、SOS1或MEK抑制剂的个体联合处方、剂量或安全性保证。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "PTPN11致病／可能致病活化变异",
+      "meaning": "可能改变SHP2输出，需核查具体位点、肿瘤来源、基线及进展样本，作为RAS通路参与的候选线索。",
+      "limitations": "不能仅凭基因名自动推断对变构SHP2抑制剂敏感；血浆低VAF变异需考虑非肿瘤来源，且暂无本目标序列的经过验证响应模型。"
+    },
+    {
+      "marker": "SHP2表达、磷酸化或pERK上调",
+      "meaning": "可提示信号输出或适应性重激活，适合作为实验／空间证据层补充。",
+      "limitations": "相关性不等于突变或因果定位，不能用IHC升高替代分子分型，也不能直接选药。"
+    },
+    {
+      "marker": "SOS1/SOS2表达、扩增或功能依赖",
+      "meaning": "提示研究RAS核苷酸交换依赖的方向；SOS1抑制在EGFR模型已有机制依据。",
+      "limitations": "没有统一临床表达或拷贝阈值可判定本目标患者获益；SOS2补偿和下游自主性改变需另行研究。"
+    },
+    {
+      "marker": "NF1明确失活、双等位基因缺失或功能丢失",
+      "meaning": "支持RAS负调控减弱的候选机制，结合基因型、拷贝状态和功能读出提高可信度。",
+      "limitations": "VUS、单一未定意义错义或仅低表达不等于功能丢失；SHP2抑制药敏不能自动从NF1缺失推出，部分模型恰提示抵抗。"
+    },
+    {
+      "marker": "GRB2／适配蛋白改变",
+      "meaning": "作为受体至SOS信号连接的研究层信息。",
+      "limitations": "未找到可据本节点文献直接用于奥希替尼加化疗后临床选药的GRB2变异标准；不将一般表达变化升级为驱动耐药。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "经机制验证的EGFR持续阻断加SOS1抑制临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N02_E01",
+        "N02_E05"
+      ],
+      "setting": "仍保留EGFR／RTK依赖、具有RAS适应性输出的模型；临床需专门允许奥希替尼加化疗后经治人群的试验。",
+      "limitations": "直接证据以临床前为主。2026年不同KRAS实体瘤人群的I期结果疗效有限并有严重肺毒性，不支持常规组合处方。"
+    },
+    {
+      "strategy": "经机制验证的EGFR／旁路驱动抑制加SHP2抑制临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N02_E02",
+        "N02_E03",
+        "N02_E04"
+      ],
+      "setting": "上游依赖性旁路、SHP2抑制可阻断反馈的模型；需明确具体基因型、适配层依赖和既往治疗。",
+      "limitations": "未建立奥希替尼加化疗后随机临床获益；NF1/PTEN/LZTR1等改变可能削弱药物作用，其他肿瘤的少量响应病例不得外推。"
+    },
+    {
+      "strategy": "SHP2/SOS1加MEK等多节点组合的早期研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "N02_E03",
+        "N02_E05"
+      ],
+      "setting": "仅作为反馈阻断机制实验或规范临床试验，不由程序自行拼接多药。",
+      "limitations": "生物学冗余、通路补偿和叠加毒性均重要；已有早期临床结果不能保证有效或安全，且与本目标治疗序列不匹配。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N02_E01",
+      "title": "SOS1 inhibition suppresses the emergence of osimertinib resistance to generate a durable response in <i>EGFR</i>-mutant lung cancer.",
+      "authors": "Daley BR, Theard PL, Hughes JM, Finniff BA, Hofmann MH, Kostyrko K, Schenk RL, Vieira HM, Askew JW, Lewis RE, Kortum RL.",
+      "year": 2025,
+      "journal": "Science signaling",
+      "doi": "10.1126/scisignal.aea2788",
+      "pmid": "41289356",
+      "publication_date": "2025-11-25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41289356/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "SOS1抑制在EGFR突变NSCLC三维球体、药物耐受持留与获得性奥希替尼耐药模型中抑制适应性RAS效应器再激活，减少肿瘤起始细胞；联合治疗在小鼠停药后延缓再生长。",
+      "limitation_zh": "细胞与小鼠机制研究；未证明EGFR患者临床获益，也未专门验证奥希替尼加化疗后进展人群。小鼠联合与奥希替尼单药均可明显缩瘤，延缓停药后再生长不等于已建立临床耐药可逆转。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41289356+OR+EXT_ID%3A42048384+OR+EXT_ID%3A34217295+OR+EXT_ID%3A40333694&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "id": "N02_E02",
+      "title": "JAB-3312, a Potent Allosteric SHP2 Inhibitor That Enhances the Efficacy of RTK/RAS/MAPK and PD-1 Blockade Therapies.",
+      "authors": "Kang D, Wang Y, Lin Y, Ma WW, Morgensztern D, Leventakos K, Bi C, Ding Y, Xiong J, Yan M, Sun X, Wang P, Ma C, Wang Y.",
+      "year": 2025,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-24-3691",
+      "pmid": "40333694",
+      "publication_date": "2025-07-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40333694/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "变构SHP2抑制剂JAB-3312在RTK/RAS/MAPK靶向组合中抑制ERK再激活，奥希替尼联合在奥希替尼耐药NSCLC模型中显示活性。",
+      "limitation_zh": "该文关于奥希替尼联合的支持主要来自临床前模型；文中两项试验的代表性响应病例不能据摘要判定为EGFR奥希替尼耐药病例。未验证奥希替尼加化疗后疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41289356+OR+EXT_ID%3A42048384+OR+EXT_ID%3A34217295+OR+EXT_ID%3A40333694&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "id": "N02_E03",
+      "title": "Genome-wide CRISPR/Cas9 screens reveal shared and cell-specific mechanisms of resistance to SHP2 inhibition.",
+      "authors": "Wei W, Geer MJ, Guo X, Dolgalev I, Sanjana NE, Neel BG.",
+      "year": 2023,
+      "journal": "The Journal of experimental medicine",
+      "doi": "10.1084/jem.20221563",
+      "pmid": "36820830",
+      "publication_date": "2023-02-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36820830/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "SHP2位于SOS1/2上游。CRISPR筛查发现NF1、PTEN、LZTR1等缺失可造成SHP2抑制抵抗，部分改变通过ERK信号再激活发挥作用。",
+      "limitation_zh": "跨细胞模型的SHP2药物耐药图谱，不能直接量化EGFR患者的耐药概率；NF1缺失并不自动代表可从SHP2抑制剂获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37269335+OR+EXT_ID%3A36820830+OR+EXT_ID%3A29395910&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "id": "N02_E04",
+      "title": "SHP2 Inhibition Sensitizes Diverse Oncogene-Addicted Solid Tumors to Re-treatment with Targeted Therapy.",
+      "authors": "Drilon A, Sharma MR, Johnson ML, Yap TA, Gadgeel S, Nepert D, Feng G, Reddy MB, Harney AS, Elsayed M, Cook AW, Wong CE, Hinklin RJ, Jiang Y, Brown EN, Neitzel NA, Laird ER, Wu WI, Singh A, Wei P, Ching KA, Gaudino JJ, Lee PA, Hartley DP, Rothenberg SM.",
+      "year": 2023,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-23-0361",
+      "pmid": "37269335",
+      "publication_date": "2023-08-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37269335/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "case_series",
+      "main_finding_zh": "PF-07284892早期试验采用先SHP2单药、再加入先前失效靶向药的设计，展示部分其他驱动实体瘤病例在组合后出现肿瘤与ctDNA响应的概念验证。",
+      "limitation_zh": "摘要中的患者为ALK肺癌、BRAF结直肠癌、KRAS卵巢癌与ROS1胰腺癌，不能写成EGFR突变肺癌或奥希替尼加化疗后有效率证据。选择性病例无随机对照。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37269335+OR+EXT_ID%3A36820830+OR+EXT_ID%3A29395910&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "id": "N02_E05",
+      "title": "The SOS1 Inhibitor BI 1701963 as Monotherapy or in Combination with Trametinib in Patients with KRAS Mutation-Positive Solid Tumors.",
+      "authors": "Jänne PA, Johnson ML, Li J, Pant S, Dünzinger U, Ilia L, Möldner K, Soh JE, Yamamoto N.",
+      "year": 2026,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-25-3725",
+      "pmid": "42048384",
+      "publication_date": "2026-08-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42048384/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "2026年三项I期研究合计94名KRAS突变实体瘤患者接受SOS1抑制剂BI1701963单药或联合曲美替尼；摘要结论为单药疗效有限，同时报告剂量限制毒性和药物相关严重肺毒性。",
+      "limitation_zh": "人群不是奥希替尼加化疗耐药的EGFR肺癌。摘要报告3名单药患者在首周期出现间质性肺病并死亡，研究者认为与药物有关；因此不得将SOS1加MEK方案据机制推演为常规安全有效治疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41289356+OR+EXT_ID%3A42048384+OR+EXT_ID%3A34217295+OR+EXT_ID%3A40333694&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "未检索到可直接证明本适配层靶向组合在“奥希替尼加化疗后进展”EGFR肺癌中的成熟随机获益证据。",
+    "需要同一患者治疗前后组织／ctDNA、RAS-GTP或磷酸化读出，区分新获得驱动、早期持留与单纯伴随变化。",
+    "PTPN11具体突变、NF1功能丢失及SOS2补偿与每一种SHP2/SOS1药物敏感性的关系，需要药物／位点级实验和临床队列。",
+    "近10年查询得到2025与2026已发表论文，但本节点未独立核验ASCO/ESMO/WCLC会议摘要全文，不将其包装为本年度会议结论。"
+  ]
+}

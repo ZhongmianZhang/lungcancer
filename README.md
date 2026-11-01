@@ -21,6 +21,19 @@
 
 ## RAS–RAF–MEK–ERK 机制判读代码（2026-11-01）
 
-新增研究模块将分别解释通路各节点、证据人群与研究性干预，并保留阴性研究结果。见 [模块说明](rasmapk/README.md)；原有交互微环境报告及生成代码见 [TME报告使用指南](TME_REPORT_GUIDE.md)。
+新增研究模块由10个子智能体分工，整理49篇去重记录（47篇核题录并审读摘要、2条会议仅核题录）。程序分别解释通路各节点、证据人群与研究性干预，并保留阴性研究结果。
+
+- [判读模块说明与运行方法](rasmapk/README.md)
+- [可离线阅读的证据工作台HTML](site/ras-mapk/index.html)
+- [合成示例判读报告HTML](rasmapk/generated/example/result.html)
+- [49篇题录的独立实时复核审计](rasmapk/generated/metadata_audit.json)
+- [10个子智能体分工记录](rasmapk/research_team.json)
+
+```bash
+python3 -m rasmapk analyze --input rasmapk/examples/braf_v600e.json --output rasmapk/generated/example
+python3 -m rasmapk build
+```
+
+原有交互微环境报告及生成代码见 [TME报告使用指南](TME_REPORT_GUIDE.md)。GitHub文件浏览页显示HTML源码，下载后在浏览器打开；代码推送不等同于启用了GitHub Pages。
 
 原有综述文档和远程提交均予保留。新模块仅为研究与分子肿瘤委员会讨论提供可追溯线索，不是经过临床验证的自动处方工具。

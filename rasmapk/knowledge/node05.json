@@ -1,0 +1,201 @@
+{
+  "node_id": "node05",
+  "title": "BRAF功能分型：class I、II与III决定不同的RAS依赖和联合治疗边界",
+  "genes": [
+    "BRAF",
+    "KRAS",
+    "NRAS",
+    "NF1",
+    "RAF1"
+  ],
+  "upstream": [
+    "EGFR及其他RTK",
+    "SHP2–GRB2–SOS",
+    "RAS-GTP"
+  ],
+  "downstream": [
+    "RAF二聚体",
+    "MEK1/2",
+    "ERK1/2",
+    "增殖与残留存活"
+  ],
+  "mechanism_zh": [
+    "BRAF是RAS与MEK之间的RAF家族节点，但“检出BRAF改变”不能单独判定为同一种耐药。Class I中的典型BRAF V600E可作为RAS非依赖的活性单体输出MAPK信号，理论上在EGFR被抑制时继续激活MEK/ERK。与此不同，class II通常依赖组成性活性二聚体；class III则不是简单的强激酶激活，而是低活性或失活BRAF借助已有RAS-GTP与CRAF放大信号。这些差异使同一个BRAF基因上的不同变异不应共用一个药物规则。",
+    "功能分型必须基于具体蛋白变异和已验证的生物学，不可把所有G469、D594、所有非V600变异或未注释VUS仅按基因名自动归类。BRAF V600E与D594N同时存在时，可能涉及不同克隆、同一等位基因复合改变或不同病灶的混合信号；bulk测序不能自行完成相位与共克隆性判断。应保留基线阴性/阳性、进展组织DNA与必要时RNA、ctDNA肿瘤来源、肿瘤含量及多个病灶信息，才能评估这条通路是否是新的主导旁路而非既有亚克隆。",
+    "Class II的活性二聚体使针对单体BRAF的药物未必充分抑制，且部分RAF抑制背景可能出现反常MAPK激活；class III往往需要上游RTK、RAS激活或NF1缺失等共同条件。因此更合理的研究问题是识别RAS依赖来源、RAF二聚体及下游药敏，而不是将BRAF V600E驱动NSCLC的既有治疗经验推广到所有BRAF异常。Pan-RAF、RAF二聚体、MEK/ERK或上游适配蛋白等联合策略都需说明具体模型、临床阶段与毒性，不在此生成个体处方。",
+    "在获得性BRAF V600E的EGFR肺癌中，保留EGFR抑制并联合BRAF/MEK抑制的病例和小系列提供了可研究信号，但选择/发表偏倚较大。2026年ORCHARD研究给出重要反向证据：奥希替尼加selumetinib在BRAF异常队列中的反应低且毒性负担明显。另一项2026年5例三药系列虽有一例长期反应，总体仍有4例进展。因此程序应呈现正负证据、明确试验性地位，而不能把“获得性BRAF”直接映射为默认MEK联合治疗。",
+    "上述直接临床证据主要来自奥希替尼治疗后进展，不能自动表示已验证奥希替尼加化疗之后的同样疗效，更不能代表已用埃万妥单抗或ADC后的完整序列。对这类患者，应首先确认组织学未转化、EGFR及BRAF信号是否仍共存、是否有并行MET/RAS等机制，再由分子肿瘤委员会评估机制匹配试验与其他已验证后线方案。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "BRAF p.V600E，可信肿瘤来源，进展时新增",
+      "meaning": "可支持EGFR以外的MAPK旁路激活候选；需与基线、EGFR共存和其他耐药机制共同解释。",
+      "limitations": "不等同于已证明治疗因果或三药敏感；de novo BRAF驱动肺癌适应证不自动适用于EGFR获得性耐药。"
+    },
+    {
+      "marker": "BRAF非V600致病变异，功能类别已由可靠资料确认",
+      "meaning": "class II提示二聚体依赖，class III提示RAS依赖/上游共驱动；分型影响研究策略。",
+      "limitations": "VUS、未验证的class标签或基因级注释不能自动生成匹配结论；某些变异需功能研究与专家复核。"
+    },
+    {
+      "marker": "BRAF V600E与D594N或其他多个改变同时检出",
+      "meaning": "考虑复合变异、异质克隆或病灶混合，可能存在不同药物依赖。",
+      "limitations": "不能将整个样本简单归为class III，也不能用VAF大小直接证明克隆顺序；需相位及组织/纵向验证。"
+    },
+    {
+      "marker": "BRAF扩增、RNA表达升高或单独pERK升高",
+      "meaning": "分别提示拷贝数、表达或通路输出的不同层面；可提出进一步检测假说。",
+      "limitations": "不能视为BRAF V600E或功能类别；pERK非特异，需检测方法、对照及肿瘤细胞定位。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "对确认获得性BRAF V600E且仍保留EGFR依赖者，评估EGFR+BRAF+MEK抑制的机制匹配试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N05_E03",
+        "N05_E05"
+      ],
+      "setting": "奥希替尼进展后小病例系列；并非奥希替尼加化疗后随机证据。",
+      "limitations": "不能作为算法默认处方；需评估选择偏倚、肺炎、皮疹、发热、胃肠及叠加器官毒性，不能给出剂量。"
+    },
+    {
+      "strategy": "奥希替尼+selumetinib不作为BRAF异常的默认治疗映射；纳入ORCHARD负面证据",
+      "status": "investigational",
+      "evidence_ids": [
+        "N05_E04"
+      ],
+      "setting": "一线奥希替尼后，BRAF V600E或融合的小型前瞻队列。",
+      "limitations": "该组合总体风险获益不支持继续评估；不表示所有MEK/ERK策略都已被排除，但任何新组合必须有新证据。"
+    },
+    {
+      "strategy": "class II/III考虑功能分型后RAF二聚体、RAS依赖或MEK/ERK相关临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N05_E01",
+        "N05_E02"
+      ],
+      "setting": "功能实验与一般BRAF突变肺癌背景。",
+      "limitations": "不应套用V600E单体抑制策略；EGFR获得性class II/III及奥希替尼加化疗后直接临床证据不足。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N05_E01",
+      "title": "Tumours with class 3 BRAF mutants are sensitive to the inhibition of activated RAS.",
+      "authors": "Yao Z, Yaeger R, Rodrik-Outmezguine VS, Rodrik-Outmezguine VS, Tao A, Torres NM, Chang MT, Drosten M, Zhao H, Cecchi F, Hembrough T, Michels J, Baumert H, Miles L, Campbell NM, de Stanchina E, Solit DB, Barbacid M, Taylor BS, Rosen N.",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature23291",
+      "pmid": "28783719",
+      "publication_date": "2017-08-02",
+      "url": "https://doi.org/10.1038/nature23291",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "定义BRAF class I、II、III的不同RAS依赖性：class III低活性或失活BRAF可增强与RAS-GTP及CRAF的互作，肺癌/结直肠癌模型中的RAS信号常来自RTK。",
+      "limitation_zh": "以跨癌种机制实验为主；不是EGFR突变奥希替尼加化疗后患者疗效研究，不能据此为所有class III病例直接选择RTK药物。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A%2842202477+OR+42751032+OR+39268146+OR+28783719+OR+30224342%29+AND+SRC%3AMED&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-01T09:30:16+00:00"
+      }
+    },
+    {
+      "id": "N05_E02",
+      "title": "Impact of BRAF Mutation Class on Disease Characteristics and Clinical Outcomes in BRAF-mutant Lung Cancer.",
+      "authors": "Dagogo-Jack I, Martinez P, Yeap BY, Ambrogio C, Ferris LA, Lydon C, Nguyen T, Jessop NA, Iafrate AJ, Johnson BE, Lennerz JK, Shaw AT, Awad MM.",
+      "year": 2019,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-18-2062",
+      "pmid": "30224342",
+      "publication_date": "2018-09-17",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-18-2062",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "retrospective",
+      "main_finding_zh": "236例BRAF突变NSCLC按功能类别显示不同共变异和临床特征，支持按具体等位变异分层，class II/III更常伴RAS改变。",
+      "limitation_zh": "主要是BRAF驱动肺癌异质性回顾队列；不能替代EGFR治疗后获得性旁路BRAF的联合治疗证据。作者所用生存差异受分期与靶向治疗暴露等因素影响。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A%2842202477+OR+42751032+OR+39268146+OR+28783719+OR+30224342%29+AND+SRC%3AMED&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-01T09:30:16+00:00"
+      }
+    },
+    {
+      "id": "N05_E03",
+      "title": "Efficacy and tolerability of osimertinib with dabrafenib and trametinib in BRAF V600E acquired EGFR-mutant non-small cell lung cancer: a case series.",
+      "authors": "Lu K, Tse V, Altaie G, Husain H.",
+      "year": 2024,
+      "journal": "Journal of thoracic disease",
+      "doi": "10.21037/jtd-23-629",
+      "pmid": "39268146",
+      "publication_date": "2024-06-21",
+      "url": "https://doi.org/10.21037/jtd-23-629",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_series",
+      "main_finding_zh": "12例获得性BRAF V600E的三药经验由3例本中心患者加9例已发表病例组成，报告首评部分缓解及持续控制的信号，支持分子复检后开展前瞻验证。",
+      "limitation_zh": "不是12例独立连续入组的前瞻队列；文献病例选择/发表偏倚明显，不能与后续试验跨研究比较有效率。摘要报告5/12减量、2/12停药及肺炎；未单列奥希替尼加化疗耐药人群。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A%2842202477+OR+42751032+OR+39268146+OR+28783719+OR+30224342%29+AND+SRC%3AMED&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-01T09:30:16+00:00"
+      }
+    },
+    {
+      "id": "N05_E04",
+      "title": "Osimertinib plus selumetinib in patients with EGFR-mutated advanced NSCLC with BRAF alterations post-progression on first-line osimertinib: ORCHARD.",
+      "authors": "Piotrowska Z, Goldberg SB, Goldman JW, de Langen AJ, Le X, Okamoto I, Riess JW, Yu HA, Nishino K, Novello S, Ponce S, Ambrose H, Smith PE, Tang KH, Lehman JM, Cho BC.",
+      "year": 2026,
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "doi": "10.1016/j.ejca.2026.116807",
+      "pmid": "42202477",
+      "publication_date": "2026-05-18",
+      "url": "https://doi.org/10.1016/j.ejca.2026.116807",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "2026年ORCHARD BRAF模块最终分析：16例BRAF融合或V600E患者接受奥希替尼加selumetinib，ORR为7%，中位PFS为3.4个月，69%发生至少3级不良事件；作者认为总体风险获益不支持继续评估该组合。",
+      "limitation_zh": "单臂小队列且混合BRAF V600E与融合，不能证明所有MEK抑制策略均无效，也不能把这一负面结果写成有效标准方案。入组为一线奥希替尼进展，不是奥希替尼联合化疗后专属队列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A%2842202477+OR+42751032+OR+39268146+OR+28783719+OR+30224342%29+AND+SRC%3AMED&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-01T09:30:16+00:00"
+      }
+    },
+    {
+      "id": "N05_E05",
+      "title": "Triple-Targeted Therapy With Encorafenib, Binimetinib, and Osimertinib in EGFR-Mutated NSCLC With Acquired BRAF Alteration After Osimertinib: A Single-Center Experience.",
+      "authors": "Fan KY, Ku M, Munarriz BJ, Stockley T, Rabinovitch A, Liu G, Bradbury P, Leighl NB.",
+      "year": 2026,
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2026.101056",
+      "pmid": "42751032",
+      "publication_date": "2026-07-24",
+      "url": "https://doi.org/10.1016/j.jtocrr.2026.101056",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_series",
+      "main_finding_zh": "2026年单中心5例接受encorafenib、binimetinib和奥希替尼组合：1例部分缓解并持续较久，其余4例进展，中位PFS为2.8个月；提示可出现个体长反应，同时总体活性有限。",
+      "limitation_zh": "混合V600E、V600E合并D594N及G469A，样本极小、无随机对照；不能将单例长期缓解外推为所有BRAF获得性耐药有效，亦不能从摘要确认奥希替尼加化疗后的独立疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A%2842202477+OR+42751032+OR+39268146+OR+28783719+OR+30224342%29+AND+SRC%3AMED&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-01T09:30:16+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺乏专门纳入奥希替尼联合化疗进展、并按BRAF类别分层的成熟随机研究。",
+    "需要区分V600E、class II、class III、融合和复合变异，避免把不同依赖性混入单一BRAF队列。",
+    "需要纵向组织与血浆的克隆/相位数据，确认EGFR和BRAF是否处于同一耐药克隆及并行耐药机制。",
+    "应报告正负病例、停药及毒性，避免仅用选择性发表的长反应病例支持普适联合方案。",
+    "本节点已核对数据库元数据及摘要，未阅读全文；未取得可核验的ASCO/ESMO/WCLC原始摘要记录，不虚构2026会议结论。"
+  ]
+}

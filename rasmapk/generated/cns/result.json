@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_only_not_clinically_validated",
+  "evidence_window": {
+    "start": "2016-11-01",
+    "end": "2026-11-01"
+  },
+  "target_sequence_confirmed_by_input": true,
+  "missing_context": [],
+  "alerts": [
+    "中枢进展应独立评估药物暴露、影像/脑脊液及局部治疗；血浆阴性不能排除中枢机制。",
+    "未识别到足够支持的MAPK机制假说，不等于没有耐药机制；阴性血浆和检测盲区不能作为排除证据。"
+  ],
+  "findings": [],
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "blocked_automatic_mappings": [
+    "BRAF异常→奥希替尼+selumetinib：2026 ORCHARD队列不支持继续评估该组合。",
+    "NF1失活→MEK或SHP2敏感：NF1篮式阴性和SHP2抵抗机制反对该推断。",
+    "pERK高→ERK药、ERK越低越好：通路读出、反馈与持留使该规则不成立。",
+    "BRAF非V600/融合→ulixertinib标准：2026跨癌种研究不能支持此映射。",
+    "KRAS任意改变→G12C药：非G12C、扩增和血细胞来源不属于该模板。"
+  ],
+  "next_steps": [
+    "整合进展期组织病理、DNA/RNA测序、拷贝数和必要的血浆/白细胞对照；血浆阴性不排除。",
+    "与治疗前样本比较，核实遗传背景、获得性、克隆关系与并行耐药机制。",
+    "按全身、寡进展或中枢进展分类，进入分子肿瘤委员会讨论。",
+    "核实试验当前招募、地区标签、既往化疗/ADC入组限制和组合毒性；本工具不生成处方。"
+  ]
+}

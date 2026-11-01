@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_only_not_clinically_validated",
+  "evidence_window": {
+    "start": "2016-11-01",
+    "end": "2026-11-01"
+  },
+  "target_sequence_confirmed_by_input": true,
+  "missing_context": [],
+  "alerts": [
+    "多个事件共检出不证明同一细胞/克隆，需结合组织、纵向VAF与必要的克隆研究；不自动拼接所有匹配药物。"
+  ],
+  "findings": [
+    {
+      "index": 0,
+      "gene": "BRAF",
+      "variant": "p.V600E",
+      "normalized_variant": "V600E",
+      "alteration_type": "snv",
+      "mechanism": "BRAF_V600E_CLASS_I",
+      "status": "supported_mechanistic_hypothesis",
+      "rationale": "V600E支持class I机制候选；获得性旁路不同于de novo BRAF肺癌，临床组合证据有限且有阴性更新。",
+      "validation_needed": [],
+      "cautions": [],
+      "acquired_supported_by_supplied_history": true,
+      "node_ids": [
+        "node05"
+      ],
+      "evidence_ids": [
+        "N05_E01",
+        "N05_E02",
+        "N05_E03",
+        "N05_E04",
+        "N05_E05"
+      ],
+      "target_setting_abstract_evidence_ids": [],
+      "research_options": [
+        {
+          "id": "EGFR_BRAF_MEK",
+          "strategy": "EGFR+BRAF+MEK组合的分子肿瘤委员会／临床试验评估",
+          "status": "investigational_mtb_or_trial_only",
+          "setting": "EGFR突变NSCLC奥希替尼+化疗后；此处均不是已验证自动治疗建议",
+          "limitation": "病例系列有选择偏倚，2026系列活性有限；不属于本治疗序列的已验证标准。"
+        }
+      ],
+      "clinical_actionability": "not_established_for_this_sequence"
+    },
+    {
+      "index": 1,
+      "gene": "KRAS",
+      "variant": "p.G12C",
+      "normalized_variant": "G12C",
+      "alteration_type": "snv",
+      "mechanism": "KRAS_G12C",
+      "status": "requires_validation",
+      "rationale": "KRAS具体等位变异、来源与克隆关系必须分开。G12C或其他RAS药物在其他人群的证据不能直接迁移。",
+      "validation_needed": [
+        "尚未确认肿瘤来源；血浆RAS/PTPN11等需组织或必要的配对白细胞评估。"
+      ],
+      "cautions": [
+        "未证明为治疗后新获得事件；可能为基线共变异或克隆选择。"
+      ],
+      "acquired_supported_by_supplied_history": false,
+      "node_ids": [
+        "node03"
+      ],
+      "evidence_ids": [
+        "N03_E01",
+        "N03_E02",
+        "N03_E03",
+        "N03_E04",
+        "N03_E05"
+      ],
+      "target_setting_abstract_evidence_ids": [],
+      "research_options": [],
+      "clinical_actionability": "not_established_for_this_sequence"
+    },
+    {
+      "index": 2,
+      "gene": "MET",
+      "variant": "",
+      "normalized_variant": "",
+      "alteration_type": "amplification",
+      "mechanism": "UPSTREAM_RTK",
+      "status": "requires_validation",
+      "rationale": "RTK旁路可能同时驱动MAPK与PI3K；扩增、突变、融合、IHC和配体刺激必须分别确认。",
+      "validation_needed": [
+        "需按平台、倍体和肿瘤含量确认扩增；不使用统一拷贝数阈值。"
+      ],
+      "cautions": [
+        "未证明为治疗后新获得事件；可能为基线共变异或克隆选择。"
+      ],
+      "acquired_supported_by_supplied_history": false,
+      "node_ids": [
+        "node01",
+        "node02"
+      ],
+      "evidence_ids": [
+        "N01_E01",
+        "N01_E02",
+        "N01_E03",
+        "N01_E04",
+        "N01_E05",
+        "N02_E01",
+        "N02_E02",
+        "N02_E03",
+        "N02_E04",
+        "N02_E05"
+      ],
+      "target_setting_abstract_evidence_ids": [],
+      "research_options": [],
+      "clinical_actionability": "not_established_for_this_sequence"
+    },
+    {
+      "index": 3,
+      "gene": "MAPK1",
+      "variant": "",
+      "normalized_variant": "",
+      "alteration_type": "phosphoprotein",
+      "mechanism": "PATHWAY_READOUT_ONLY",
+      "status": "readout_only_not_driver",
+      "rationale": "表达或磷酸化是状态读出，不能指认RAS/BRAF突变或自动预测抑制剂敏感性；低ERK也可能伴随持留反馈。",
+      "validation_needed": [],
+      "cautions": [
+        "仅能形成待验证的通路状态假说；不得映射为加MEK/ERK药。",
+        "未证明为治疗后新获得事件；可能为基线共变异或克隆选择。"
+      ],
+      "acquired_supported_by_supplied_history": false,
+      "node_ids": [
+        "node08",
+        "node09"
+      ],
+      "evidence_ids": [
+        "N08_E01",
+        "N08_E02",
+        "N08_E03",
+        "N08_E04",
+        "N08_E05",
+        "N09_E01",
+        "N09_E02",
+        "N09_E03",
+        "N09_E04",
+        "N09_E05"
+      ],
+      "target_setting_abstract_evidence_ids": [],
+      "research_options": [],
+      "clinical_actionability": "not_established_for_this_sequence"
+    }
+  ],
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "blocked_automatic_mappings": [
+    "BRAF异常→奥希替尼+selumetinib：2026 ORCHARD队列不支持继续评估该组合。",
+    "NF1失活→MEK或SHP2敏感：NF1篮式阴性和SHP2抵抗机制反对该推断。",
+    "pERK高→ERK药、ERK越低越好：通路读出、反馈与持留使该规则不成立。",
+    "BRAF非V600/融合→ulixertinib标准：2026跨癌种研究不能支持此映射。",
+    "KRAS任意改变→G12C药：非G12C、扩增和血细胞来源不属于该模板。"
+  ],
+  "next_steps": [
+    "整合进展期组织病理、DNA/RNA测序、拷贝数和必要的血浆/白细胞对照；血浆阴性不排除。",
+    "与治疗前样本比较，核实遗传背景、获得性、克隆关系与并行耐药机制。",
+    "按全身、寡进展或中枢进展分类，进入分子肿瘤委员会讨论。",
+    "核实试验当前招募、地区标签、既往化疗/ADC入组限制和组合毒性；本工具不生成处方。"
+  ]
+}

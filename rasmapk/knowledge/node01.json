@@ -1,0 +1,211 @@
+{
+  "node_id": "node01",
+  "title": "上游RTK旁路：EGFR/ERBB2/MET/RET/FGFR与RAS-RAF连接",
+  "genes": [
+    "EGFR",
+    "ERBB2",
+    "MET",
+    "RET",
+    "FGFR1",
+    "FGFR2",
+    "FGFR3",
+    "AXL"
+  ],
+  "upstream": [
+    "HGF",
+    "FGF配体",
+    "RTK扩增",
+    "获得性RTK融合",
+    "受体磷酸化"
+  ],
+  "downstream": [
+    "GRB2",
+    "SOS1",
+    "PTPN11/SHP2",
+    "RAS-GTP",
+    "RAF-MEK-ERK",
+    "PI3K-AKT"
+  ],
+  "mechanism_zh": [
+    "EGFR被奥希替尼抑制后，细胞不一定失去所有上游生长信号。MET、ERBB2或获得性RET/FGFR等RTK改变可通过接头复合物重新加载RAS-GTP，进而维持RAF-MEK-ERK；部分RTK还同时激活PI3K-AKT。因此pERK升高是多个上游或下游机制的汇聚读数，不能据此直接指认KRAS或BRAF突变。应将受体DNA/RNA改变、配体环境、蛋白及磷酸化、原始EGFR保留情况和治疗时序一起解释。",
+    "MET拷贝数上升可包括局灶扩增或染色体多体性；血浆拷贝数还受肿瘤DNA比例影响。MET免疫组化过表达与DNA扩增检测的是不同层面，HGF配体刺激又是另一条非基因组激活途径。INSIGHT 2和SAVANNAH提供的是各自检测定义和富集人群下的联合治疗证据，不能把某个FISH、IHC或血浆阈值当作所有实验室通用的耐药确诊标准。存在低水平增益、IHC阳性或样本质量不足时，应请求方法学复核，而不是直接生成药物处方。",
+    "ERBB2激活突变、扩增和IHC蛋白表达必须拆分；它们不能互相替代HER2药物的适应证要求。获得性RET等融合要审查是否保留激酶结构域、是否为功能性融合及RNA支持，并排除另一原发肿瘤或独立克隆。RET的临床前因果与少量患者双靶反应仅支持机制匹配的试验方向；EGFR与旁路受体共存时，单独换到一个旁路靶向药也未必能覆盖全部克隆。",
+    "在奥希替尼联合化疗进展这一特定背景，以上研究多来自奥希替尼单药后的耐药人群。化疗可能改变克隆组成和组织学状态，血浆DNA也无法可靠排除小细胞转化；因此应优先对进展组织做病理、DNA及必要的RNA分析，并与治疗前样本对照。ORCHARD所示多重改变支持保留并列机制和证据不确定性，而不是让算法强行选出唯一耐药节点。FGFR/AXL等旁路在本模块仅作为待验证通路，未用下述MET或RET论文冒充其直接临床证据。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "MET amplification",
+      "meaning": "若为进展期、肿瘤来源明确且方法学确认的高可信扩增，支持MET旁路的候选机制。",
+      "limitations": "必须记录检测平台、组织纯度/血浆肿瘤分数、绝对拷贝数、MET/CEP7及局灶性等可用背景；无通用单一数值可跨研究确诊。"
+    },
+    {
+      "marker": "MET IHC overexpression / HGF increase",
+      "meaning": "分别提示蛋白层面或配体层面的MET活性可能改变。",
+      "limitations": "不能在算法内等同为MET DNA扩增；血清HGF或IHC单项不能证明耐药因果。"
+    },
+    {
+      "marker": "ERBB2 amplification vs activating mutation vs HER2 IHC",
+      "meaning": "三个独立的生物标志物维度，可能对应不同机制与研究队列。",
+      "limitations": "不能把HER2激活突变研究结果或某药标签自动外推给获得性扩增。"
+    },
+    {
+      "marker": "RET/FGFR fusion",
+      "meaning": "功能性受体激酶融合可成为持续RAS-ERK信号的旁路来源。",
+      "limitations": "融合伙伴、阅读框、激酶结构域、RNA表达及采样时序需要确认；RET少量病例不能证明所有FGFR融合均对同类策略有效。"
+    },
+    {
+      "marker": "phospho-ERK elevation",
+      "meaning": "提示MAPK信号活跃的功能读数。",
+      "limitations": "无特异性，不能据此自动认定BRAF/KRAS变异为驱动；需要基因组、病理及干预证据。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在MET驱动证据充分时，讨论EGFR+MET双重阻断的临床试验/多学科研究策略。",
+      "status": "investigational",
+      "evidence_ids": [
+        "N01_E01",
+        "N01_E02"
+      ],
+      "setting": "奥希替尼单药后MET富集人群的前瞻性II期研究；对奥希替尼+化疗后为间接外推。",
+      "limitations": "不自动输出联合处方或剂量；需重新核查本地监管状态、试验入组、肺炎/水肿/QT等安全性、共耐药及药物相互作用。"
+    },
+    {
+      "strategy": "经组织/RNA验证获得性RET融合后，讨论EGFR与RET双靶阻断研究。",
+      "status": "investigational",
+      "evidence_ids": [
+        "N01_E03"
+      ],
+      "setting": "少量患者与临床前概念验证。",
+      "limitations": "不得将de novo RET肺癌单药适应证视为EGFR/RET联合的已证实标准；缺少奥希替尼+化疗后直接队列。"
+    },
+    {
+      "strategy": "获得性ERBB2扩增时，按具体HER2生物标志物和既往治疗寻找ADC或HER2联合试验。",
+      "status": "investigational",
+      "evidence_ids": [
+        "N01_E05"
+      ],
+      "setting": "多线治疗后单病例，非前瞻性普遍证据。",
+      "limitations": "病例缓解不能构成ADC必然有效的判断；若有HER2表达或肿瘤泛适应证需另行核查最新标签及资格，不能仅凭扩增自动匹配。"
+    }
+  ],
+  "research_gaps": [
+    "缺少专门报告奥希替尼联合化疗进展后的MET/ERBB2/RET机制匹配干预人群；不能合并单药后与联合后疗效。",
+    "FGFR、AXL及HGF配体旁路需要直接的EGFR突变、治疗时序明确的人体和功能证据；当前列出的临床研究不能填补这些节点。",
+    "需要区分受体旁路导致的RAS/ERK依赖与并行PI3K/AKT存活；单个磷酸化读数不足以选择联合。",
+    "未直接核验ASCO/ESMO/WCLC会议摘要；本模块引用经Europe PMC匹配的论文，不将论文发表年冒充特定大会报告。",
+    "未核查各法域当前药品标签和实时试验招募状态；输出治疗假设必须保留研究/临床核查入口。"
+  ],
+  "evidence": [
+    {
+      "id": "N01_E01",
+      "title": "Tepotinib plus osimertinib in patients with EGFR-mutated non-small-cell lung cancer with MET amplification following progression on first-line osimertinib (INSIGHT 2): a multicentre, open-label, phase 2 trial.",
+      "authors": "Wu YL, Guarneri V, Voon PJ, Lim BK, Yang JJ, Wislez M, Huang C, Liam CK, Mazieres J, Tho LM, Hayashi H, Nhung NV, Chia PL, de Marinis F, Raskin J, Zhou Q, Finocchiaro G, Le AT, Wang J, Dooms C, Kato T, Nadal E, Hin HS, Smit EF, Wermke M, Tan D, Morise M, O'Brate A, Adrian S, Pfeiffer BM, Stroh C, Juraeva D, Strotmann R, Goteti K, Berghoff K, Ellers-Lenz B, Karachaliou N, Le X, Kim TM, INSIGHT 2 investigators.",
+      "year": 2024,
+      "journal": "The Lancet. Oncology",
+      "doi": "10.1016/s1470-2045(24)00270-5",
+      "pmid": "39089305",
+      "publication_date": "2024-08-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39089305/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "INSIGHT 2在一线奥希替尼进展、中心FISH确认MET扩增的主要分析人群中，联合tepotinib和奥希替尼的客观缓解率为50.0%（49/98）。",
+      "limitation_zh": "非奥希替尼联合化疗后专属队列；单臂II期结果，检测阈值依赖具体方法，不能自动外推为普遍标准方案。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22INSIGHT+2%22+AND+osimertinib+AND+tepotinib&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:59+00:00"
+      }
+    },
+    {
+      "id": "N01_E02",
+      "title": "Savolitinib plus osimertinib in epidermal growth factor receptor (EGFR)-mutated advanced non-small cell lung cancer with MET overexpression and/or amplification following disease progression on osimertinib: primary results from the phase II SAVANNAH study.",
+      "authors": "de Marinis F, Kim TM, Bonanno L, Cheng S, Kim SW, Tiseo M, Chu Q, Proto C, Sacher A, Luo YH, Novello S, Hao D, Baik C, Bazhenova L, Lee JS, Cho BC, Cadranel J, Diep TB, Metro G, Narayanan P, Yoneshima Y, de Castro Carpeño J, Baldotto C, Nyhus C, Yang JC, Sequist LV, Levy B, Hartmaier R, Igwegbe I, Poole L, Xu W, Ahn MJ.",
+      "year": 2025,
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "doi": "10.1016/j.annonc.2025.04.003",
+      "pmid": "40461383",
+      "publication_date": "2025-06-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40461383/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "SAVANNAH在奥希替尼进展并高MET表达和/或扩增的人群探索savolitinib联合奥希替尼，主要人群采用IHC3+≥90%和/或FISH10+，支持富集程度影响研究选择。",
+      "limitation_zh": "主要疗效队列为一线奥希替尼进展，标志物阈值在探索分析后调整；并非奥希替尼联合化疗后随机验证，IHC表达与扩增不可视作同一机制。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3ASAVANNAH+AND+osimertinib&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:59+00:00"
+      }
+    },
+    {
+      "id": "N01_E03",
+      "title": "Landscape of Acquired Resistance to Osimertinib in EGFR-Mutant NSCLC and Clinical Validation of Combined EGFR and RET Inhibition with Osimertinib and BLU-667 for Acquired RET Fusion.",
+      "authors": "Piotrowska Z, Isozaki H, Lennerz JK, Gainor JF, Lennes IT, Zhu VW, Marcoux N, Banwait MK, Digumarthy SR, Su W, Yoda S, Riley AK, Nangia V, Lin JJ, Nagy RJ, Lanman RB, Dias-Santagata D, Mino-Kenudson M, Iafrate AJ, Heist RS, Shaw AT, Evans EK, Clifford C, Ou SI, Wolf B, Hata AN, Sequist LV.",
+      "year": 2018,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-18-1022",
+      "pmid": "30257958",
+      "publication_date": "2018-09-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30257958/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_series",
+      "main_finding_zh": "41例耐药活检队列发现获得性RET融合；在EGFR突变模型表达CCDC6-RET可造成耐药，双靶阻断恢复敏感性；2例患者提供概念验证。",
+      "limitation_zh": "少量患者及临床前证据；不能将de novo RET肺癌单药标准套用为EGFR/RET联合已证实标准，也没有奥希替尼加化疗后专属结果。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=AUTH_FIRST%3APiotrowska+AND+osimertinib+AND+RET+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:59+00:00"
+      }
+    },
+    {
+      "id": "N01_E04",
+      "title": "Genomic Profiling of Epidermal Growth Factor Receptor Mutation-Positive Non-Small Cell Lung Cancer after Progression on First-line Osimertinib: Phase II ORCHARD Study.",
+      "authors": "Yu HA, Tang KH, Markovets A, Hartmaier R, Smith PE, Cho BC, De Langen AJ, Goldberg SB, Goldman JW, Le X, Iwama E, Cosaert J, Riess JW, Piotrowska Z.",
+      "year": 2026,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-25-4540",
+      "pmid": "41790029",
+      "publication_date": "2026-09-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41790029/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "ORCHARD探索一线奥希替尼进展后组织及血浆分子谱，显示多重耐药改变和组织学转化相关差异，支持再活检和并列机制判断。",
+      "limitation_zh": "预设探索性分子分析，并非特定RTK联合方案的随机证明；检测到改变不等于驱动因果；非奥希替尼联合化疗后队列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41790029+AND+SRC%3AMED&format=json&resultType=core&pageSize=3",
+        "checked_at": "2026-11-01T09:30:59+00:00"
+      }
+    },
+    {
+      "id": "N01_E05",
+      "title": "HER2 amplification as a resistance mechanism to osimertinib and its successful treatment with trastuzumab deruxtecan: a case report.",
+      "authors": "Sharma M, Choudhury R, Dewan A, Choudhary SK, Venkatraman P, Pasricha S, Mehta A, Chufal K, Darlong LM, Batra U.",
+      "year": 2026,
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2026.1921556",
+      "pmid": "42846034",
+      "publication_date": "2026-09-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42846034/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_report",
+      "main_finding_zh": "一例EGFR突变肺癌经奥希替尼及后续多线治疗后检测到ERBB2扩增，经IHC/FISH确认后接受HER2靶向ADC，报告系统和颅内缓解。",
+      "limitation_zh": "单病例、多线序贯治疗而非奥希替尼与化疗联合后的前瞻性证据；HER2扩增、激活突变和IHC不能互换，缓解不证明RAS/ERK为唯一驱动。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22HER2+amplification%22+AND+osimertinib+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:30:59+00:00"
+      }
+    }
+  ]
+}

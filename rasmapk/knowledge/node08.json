@@ -1,0 +1,205 @@
+{
+  "node_id": "node08",
+  "title": "ERK1/2、DUSP反馈与转录效应端：激活读出不等于药物适应证",
+  "genes": [
+    "MAPK1",
+    "MAPK3",
+    "DUSP6",
+    "DUSP1",
+    "SPRY2",
+    "RPS6KA1",
+    "ELK1",
+    "MYC"
+  ],
+  "upstream": [
+    "MEK1/MAP2K1",
+    "MEK2/MAP2K2",
+    "RAS/RAF",
+    "RTK"
+  ],
+  "downstream": [
+    "RSK",
+    "ELK1/AP-1",
+    "MYC相关转录程序",
+    "hTERT/端粒",
+    "GATAD2A/NuRD-SAA1",
+    "细胞增殖/凋亡阈值"
+  ],
+  "mechanism_zh": [
+    "ERK1/2是多种RTK、RAS和RAF输入汇合的输出节点。EGFR抑制后检测到pERK持续或反弹，提示MAPK输出没有被持续压低，但它本身不能区分MET旁路、RAS突变、RAF融合、MEK变异或非遗传反馈。单次免疫组化、Western blot或RNA表达还受取样时点、药物暴露、固定条件和细胞组成影响；在未找到上游病变时，应标为“通路输出异常待溯源”，而不是赋予某个RAS/BRAF基因型。MAPK1/MAPK3的扩增或变异也必须分别完成致病性、肿瘤来源和功能验证，不能因基因位于通路末端就直接视为可用药耐药驱动。",
+    "ERK负反馈使这一网络具有非线性。DUSP6等磷酸酶以及SPRY相关反馈可以限制上游或ERK信号；其表达变化既可能是高通路活性的反馈读出，也可能改变细胞耐受范围。2018 eLife肺腺癌实验显示，超过一定水平的ERK超激活本身具有毒性，DUSP6可帮助肿瘤保持在可存活的信号区间。因此“负调控丢失→一定耐药”“DUSP高表达→一定应抑制ERK”都不成立；DUSP1、DUSP6和Sprouty成员也不能视为同一分子替代指标。药物耐受持留与已建立耐药需要分时点分析。",
+    "模型研究支持在一部分奥希替尼耐药细胞和裸鼠肿瘤中继续EGFR抑制并联合ERK抑制，以增强凋亡和抑制生长。但从通路依赖到患者获益存在明确证据缺口。2026年NCI-MATCH Z1L在BRAF非V600及融合的跨癌种人群中未观察到ulixertinib客观缓解；这项单药篮式阴性结果既不能用来证明EGFR联合无效，也不能被早期机制合理性忽略。对奥希替尼加化疗后患者，本模块没有找到专属疗效证据，ERK药物匹配只能保留为有机制条件和安全审查的试验问题。",
+    "ERK还通过RSK、ELK1/AP-1及MYC等效应层改变增殖、凋亡和状态程序，但这些输出不是单一可互换的耐药标志。2024年JEM研究将c-Myc依赖的hTERT下调与奥希替尼效应联系起来，为端粒相关组合提供模型证据；它并不证明MYC的每一次维持均源于ERK再激活。2026年SAA1研究进一步显示相反方向的适应：奥希替尼抑制ERK后可降低GATAD2A磷酸化，解除SAA1的表观遗传抑制，从而通过NF-κB与巨噬细胞建立替代支持。这提示治疗后ERK降低也可能同时触发其他存活回路，需测定动态信号和因果干预，而非只追求一个磷酸化指标下降。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "pERK持续/反弹",
+      "meaning": "支持通路输出仍存在，适合追溯上游驱动并做时间分层。",
+      "limitations": "不是RAS/BRAF病变的特异检测；单次测量不能证明耐药因果或ERK药敏。"
+    },
+    {
+      "marker": "MAPK1/MAPK3扩增或非同义变异",
+      "meaning": "可能涉及输出层改变，需独立功能及拷贝数质量核查。",
+      "limitations": "本模块没有验证通用的患者级临床阈值或伴随诊断；VUS不得作为药物匹配。"
+    },
+    {
+      "marker": "DUSP6/DUSP1或SPRY表达变化",
+      "meaning": "可能反映负反馈、适应状态或细胞谱系构成。",
+      "limitations": "不是直接证明负调控功能丢失；成员、剂量和时间依赖性明显，不能统一按高/低解释。"
+    },
+    {
+      "marker": "MYC/hTERT或SAA1相关特征",
+      "meaning": "下游转录与替代存活程序的研究读出。",
+      "limitations": "不等同于ERK激活的特异标志；需要肿瘤细胞/免疫细胞来源及独立功能确认。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在功能证据支持持续MAPK依赖时，研究EGFR联合ERK抑制",
+      "status": "investigational",
+      "evidence_ids": [
+        "N08_E01"
+      ],
+      "setting": "奥希替尼耐药临床前模型，非奥希替尼加化疗后验证。",
+      "limitations": "需试验或分子肿瘤讨论；本模块不给剂量，不自动推荐，也不能由pERK单指标触发。"
+    },
+    {
+      "strategy": "仅凭BRAF非V600/融合将ulixertinib作为通用标准",
+      "status": "not_supported",
+      "evidence_ids": [
+        "N08_E03"
+      ],
+      "setting": "2026 NCI-MATCH Z1L跨癌种单药研究。",
+      "limitations": "研究未示明确活性，不能按通路位置直接生成处方。"
+    },
+    {
+      "strategy": "DUSP6超激活毒性、SAA1中和或MYC/hTERT效应端干预",
+      "status": "investigational",
+      "evidence_ids": [
+        "N08_E02",
+        "N08_E04",
+        "N08_E05"
+      ],
+      "setting": "机制与临床前模型；不同干预方向不能混用。",
+      "limitations": "尚无本场景临床疗效确认；不得把试验中的药物或模型用法写成患者标准治疗。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N08_E01",
+      "title": "ERK inhibition effectively overcomes acquired resistance of epidermal growth factor receptor-mutant non-small cell lung cancer cells to osimertinib.",
+      "authors": "Li Y, Zang H, Qian G, Owonikoko TK, Ramalingam SR, Sun SY.",
+      "year": 2020,
+      "journal": "Cancer",
+      "doi": "10.1002/cncr.32655",
+      "pmid": "31821539",
+      "publication_date": "2019-12-10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31821539/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼联合ERK抑制在部分耐药EGFR突变细胞和裸鼠移植瘤中增强凋亡、抑制生长，说明持续MEK/ERK输出可成为部分模型的脆弱点。",
+      "limitation_zh": "细胞与裸鼠模型，无患者疗效验证；不能作为奥希替尼加化疗耐药后的处方依据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31821539+OR+EXT_ID%3A32497272+OR+EXT_ID%3A42578969+OR+%28TITLE_ABS%3A%22Hyperactivation+of+ERK%22+AND+TITLE_ABS%3Alung%29&format=json&resultType=core&pageSize=12",
+        "checked_at": "2026-11-01T09:37:14+00:00"
+      }
+    },
+    {
+      "id": "N08_E02",
+      "title": "Hyperactivation of ERK by multiple mechanisms is toxic to RTK-RAS mutation-driven lung adenocarcinoma cells.",
+      "authors": "Unni AM, Harbourne B, Oh MH, Wild S, Ferrarone JR, Lockwood WW, Varmus H.",
+      "year": 2018,
+      "journal": "eLife",
+      "doi": "10.7554/elife.33718",
+      "pmid": "30475204",
+      "publication_date": "2018-11-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30475204/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "EGFR或KRAS驱动的肺腺癌细胞需要约束ERK活性；DUSP6负反馈可防止ERK过度激活的毒性，DUSP6干预在模型中使信号超过可耐受范围。",
+      "limitation_zh": "主要为癌基因驱动肺癌细胞机制，不是奥希替尼加化疗后临床队列；DUSP6抑制与ERK抑制方向不同，不可互换。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31821539+OR+EXT_ID%3A32497272+OR+EXT_ID%3A42578969+OR+%28TITLE_ABS%3A%22Hyperactivation+of+ERK%22+AND+TITLE_ABS%3Alung%29&format=json&resultType=core&pageSize=12",
+        "checked_at": "2026-11-01T09:37:14+00:00"
+      }
+    },
+    {
+      "id": "N08_E03",
+      "title": "ERK1/2 Inhibitor Ulixertinib in Pan-cancer Patients with BRAF Fusions or Non-V600E/K Mutations: Results from the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1L.",
+      "authors": "Subbiah V, Zhao F, Kudchadkar RR, Sullivan RJ, Chen HX, Gray RJ, Wang V, McShane LM, Rubinstein LV, Patton D, Williams PM, Hamilton SR, Sundaresan TK, Conley BA, Tricoli JV, Arteaga CL, Wright JJ, Harris LN, O'Dwyer PJ, Chen AP, Flaherty KT.",
+      "year": 2026,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-24-0951",
+      "pmid": "42578969",
+      "publication_date": "2026-08-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42578969/",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "prospective",
+      "main_finding_zh": "NCI-MATCH Z1L中，BRAF非V600或融合的重度经治跨癌种患者使用ulixertinib，未观察到完全或部分缓解；摘要报告ORR为0%，未显示明确临床活性。",
+      "limitation_zh": "单臂、小样本篮式人群，仅含少数肺癌，未研究EGFR驱动获得性耐药后的EGFR+ERK组合；阴性结果不支持按BRAF非V600/融合直接自动推荐ERK抑制剂。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31821539+OR+EXT_ID%3A32497272+OR+EXT_ID%3A42578969+OR+%28TITLE_ABS%3A%22Hyperactivation+of+ERK%22+AND+TITLE_ABS%3Alung%29&format=json&resultType=core&pageSize=12",
+        "checked_at": "2026-11-01T09:37:14+00:00"
+      }
+    },
+    {
+      "id": "N08_E04",
+      "title": "ERK/GATAD2A/SAA1 axis drives osimertinib resistance via NF-κB and macrophage reprogramming in EGFR-mutated lung adenocarcinoma.",
+      "authors": "Zhu J, Ren S, Cheng T, Shan G, Lin H, Huang X, Bian Y, Duan L, Hu Y, Wu Y, Zeng D, Ao Y, Liang J, Wang S, Zhan C.",
+      "year": 2026,
+      "journal": "Journal of experimental & clinical cancer research : CR",
+      "doi": "10.1186/s13046-026-03792-6",
+      "pmid": "42919317",
+      "publication_date": "2026-07-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42919317/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "机制研究发现奥希替尼抑制ERK依赖的GATAD2A磷酸化，解除NuRD对SAA1的抑制；SAA1通过肿瘤TLR4/NF-κB与SPP1阳性巨噬细胞提供存活支持，SAA1中和联合奥希替尼在多种模型有效。",
+      "limitation_zh": "临床关联加细胞/类器官及动物功能模型，非治疗性临床试验；没有专门奥希替尼加化疗后疗效队列，也不能据此直接预测某患者SAA1药敏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Aosimertinib+AND+%28TITLE_ABS%3AERK+OR+TITLE_ABS%3ADUSP+OR+TITLE_ABS%3AMYC%29%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=40",
+        "checked_at": "2026-11-01T09:37:14+00:00"
+      }
+    },
+    {
+      "id": "N08_E05",
+      "title": "Inhibition of hTERT/telomerase/telomere mediates therapeutic efficacy of osimertinib in EGFR mutant lung cancer.",
+      "authors": "Chen Z, Vallega KA, Wang D, Quan Z, Fan S, Wang Q, Leal T, Ramalingam SS, Sun SY.",
+      "year": 2024,
+      "journal": "The Journal of experimental medicine",
+      "doi": "10.1084/jem.20240435",
+      "pmid": "39297884",
+      "publication_date": "2024-09-19",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39297884/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼效应涉及c-Myc依赖的hTERT下调、端粒酶/端粒抑制及端粒损伤；端粒策略联合奥希替尼在耐药和患者源模型中有效，提供MYC下游效应端的研究线索。",
+      "limitation_zh": "该文不等于证明所有MYC维持均由ERK驱动；组合结果主要临床前，文中提及某药进入临床试验不等于该EGFR耐药组合已验证。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3Aosimertinib+AND+%28TITLE_ABS%3AERK+OR+TITLE_ABS%3ADUSP+OR+TITLE_ABS%3AMYC%29%29+AND+FIRST_PDATE%3A%5B2016-11-01+TO+2026-11-01%5D&format=json&resultType=core&pageSize=40",
+        "checked_at": "2026-11-01T09:37:14+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "尚缺奥希替尼与化疗联合方案耐药后的ERK节点专属前瞻性队列。",
+    "pERK动态变化、上游驱动与旁路并存需要配对组织、血浆/白细胞和功能实验，而不是单点表达分数。",
+    "ERK联合的有效治疗窗和毒性需临床验证；不能从单药篮式或细胞协同推导患者净获益。",
+    "本模块核验的是Europe PMC元数据及摘要，没有核验会议官网材料或阅读全文；不把2026期刊论文称为2026大会报告。"
+  ]
+}

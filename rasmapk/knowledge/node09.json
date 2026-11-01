@@ -1,0 +1,233 @@
+{
+  "node_id": "node09",
+  "title": "交叉信号与持留细胞：MAPK、PI3K/AKT及AXL–SFK–YAP共同塑造耐药",
+  "genes": [
+    "PIK3CA",
+    "PTEN",
+    "AKT1",
+    "MTOR",
+    "AXL",
+    "SRC",
+    "YES1",
+    "PTK2",
+    "ILK",
+    "YAP1",
+    "WWTR1",
+    "ERBB3"
+  ],
+  "upstream": [
+    "EGFR/ERBB3",
+    "AXL",
+    "整合素/ECM",
+    "SFK/FAK"
+  ],
+  "downstream": [
+    "RAS–RAF–MEK–ERK",
+    "PI3K–AKT–mTOR",
+    "YAP/TEAD转录",
+    "EMT/药物耐受持留",
+    "抗凋亡与克隆演化"
+  ],
+  "mechanism_zh": [
+    "RAS/BRAF并非独立封闭的串联开关。相同的受体或黏附信号可同时连接MAPK与PI3K–AKT存活分支：2017年的EGFR突变肺癌模型显示，SFK/FAK在持续EGFR抑制下仍可维持AKT和MAPK输出，且YES1扩增可参与奥希替尼耐药。因而pERK升高只是某时点的下游读出，不能唯一定位为KRAS、BRAF或MEK基因改变；同样，检测到一个MAPK事件也不能排除平行AKT存活轴。程序应分别记录DNA变异、拷贝数、蛋白磷酸化及功能证据，并检查它们是否来自同一病灶和治疗阶段。",
+    "AXL提供一个适应性网络范例。奥希替尼可通过解除负反馈增强AXL活性，AXL与EGFR/HER3相关的存活信号能够帮助耐受细胞出现；这既可能表现为无新增驱动DNA变异的状态，也可能与后续遗传耐药并存。AXL总蛋白、磷酸化、RNA及具体位点突变不是同一种检测结果。2026年的AXL位点图谱进一步把FAK1、SFK/ABL相关信号和YAP1连接起来，但其功能与临床关联主要来自厄洛替尼背景，不能以“均为EGFR-TKI”替代对奥希替尼加化疗后队列的验证。",
+    "整合素/ECM—ILK—SFK—YAP轴体现了细胞状态的另一层耐药。2025年研究用遗传与药理干预支持ILK参与EMT、YAP激活及药物耐受持留，并观察到人体标本关联。它说明持续存活可以早于明确的新增耐药驱动，并给后续克隆演化留下空间。然而早期持留、可逆状态与进展时稳定获得性耐药应分开判读；YAP核定位或EMT签名不能直接宣布某患者对YAP/TEAD药物敏感，更不构成把多条通路同时抑制的依据。",
+    "PI3K/AKT/mTOR也可能有独立遗传驱动：特殊de novo EGFR T790M病例系列及功能实验识别了MTOR L1433S，支持该特定改变经AKT旁路影响奥希替尼敏感性。该发现不能泛化成任意MTOR变异、单个PIK3CA意义未明变异或单纯pAKT升高。NF1/PTEN等改变还可能影响其他试验性抑制剂的响应方向。因此程序应保留位点、致病分级、双等位状态（适用时）、获得性和功能验证，不用“通路上游/下游”位置代替实际药敏证据。",
+    "总体判读必须允许多机制并存：血浆出现RAS/BRAF改变，组织中同时存在MET扩增、EMT或小细胞转化，并不证明所有异常在同一克隆内。需要治疗前后对照、同一进展病灶的病理与DNA/RNA、必要的蛋白和空间验证；脑部或寡进展还应评估药物暴露与取样代表性。这五篇均未提供专门针对奥希替尼联合化疗耐药后人群的随机疗效验证，故适合生成机制假设、补充检测和试验讨论路线，不适合自动处方。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "pERK / pMEK 与pAKT/pS6共同升高",
+      "meaning": "可能存在并行或反馈维持的通路输出，可用于设计功能验证。",
+      "limitations": "单次蛋白读出无特异性，受处理时间、缺血、治疗时点和细胞构成影响；不能确定致病节点、肿瘤克隆或匹配药物。"
+    },
+    {
+      "marker": "YES1扩增或SFK/FAK活性升高",
+      "meaning": "在模型中可维持AKT与MAPK，形成EGFR以外的存活支持。",
+      "limitations": "须区分局灶扩增与表达/磷酸化；模型证据不构成奥希替尼加化疗后标准治疗标志物。"
+    },
+    {
+      "marker": "AXL RNA/蛋白/磷酸化升高",
+      "meaning": "可能提示适应性旁路或持留状态。",
+      "limitations": "不是AXL致病突变，不足以单独推荐AXL抑制；RNA、IHC和位点磷酸化不能直接互换。"
+    },
+    {
+      "marker": "ILK高表达、YAP核定位、EMT签名",
+      "meaning": "提示细胞黏附与转录状态可塑性及持留细胞研究方向。",
+      "limitations": "通常为连续性或空间依赖特征；未建立该治疗序列中的临床药敏阈值，不能等同已证实获得性耐药。"
+    },
+    {
+      "marker": "MTOR L1433S或其他PI3K/AKT分支变异",
+      "meaning": "具体功能已验证的MTOR位点可产生与MAPK并行的旁路机制假设。",
+      "limitations": "MTOR L1433S来自小样本特殊基因型，不能推广到所有MTOR或PIK3CA/PTEN改变；VUS不判定耐药。"
+    },
+    {
+      "marker": "多病灶/血浆中并存MAPK与其他旁路异常",
+      "meaning": "可能反映异质性或多克隆耐药，应进行多机制评估。",
+      "limitations": "同一血液样本共检出不证明同细胞、同病灶或肿瘤来源；转化必须依靠组织病理。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在明确机制和功能证据支持下研究EGFR与SFK/FAK或AXL联合",
+      "status": "investigational",
+      "evidence_ids": [
+        "N09_E01",
+        "N09_E02",
+        "N09_E04"
+      ],
+      "setting": "EGFR肺癌功能模型；其中AXL位点研究为厄洛替尼背景。",
+      "limitations": "未证实奥希替尼加化疗后常规获益；不同抑制剂、靶谱、时机和联合毒性不能互换，不给剂量或自动处方。"
+    },
+    {
+      "strategy": "针对ILK–SFK–YAP/EMT状态的临床前干预或明确人群的早期试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "N09_E03",
+        "N09_E04"
+      ],
+      "setting": "耐受持留与细胞状态模型，不等同于进展后临床治疗。",
+      "limitations": "须分别验证预防持留和逆转既有耐药；没有成熟生物标志物阈值，不因YAP/EMT阳性直接匹配药物。"
+    },
+    {
+      "strategy": "特定位点和功能证据支持的EGFR+mTOR旁路联合研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "N09_E05"
+      ],
+      "setting": "MTOR L1433S特殊de novo T790M背景及功能模型。",
+      "limitations": "不可外推为任何PI3K/AKT/mTOR异常均敏感，更不能认定其在奥希替尼加化疗后为获批标准。"
+    },
+    {
+      "strategy": "同时抑制EGFR、RAS/RAF/MEK、PI3K/AKT/mTOR及YAP/AXL的经验性多药堆叠",
+      "status": "not_supported",
+      "evidence_ids": [
+        "N09_E01",
+        "N09_E02",
+        "N09_E03",
+        "N09_E05"
+      ],
+      "setting": "本模块不存在这一完整组合的目标人群验证。",
+      "limitations": "通路互作不是多药联用安全性与疗效证据；不能根据多标志物阳性自动推荐全通路联合。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "N09_E01",
+      "title": "SFK/FAK Signaling Attenuates Osimertinib Efficacy in Both Drug-Sensitive and Drug-Resistant Models of EGFR-Mutant Lung Cancer.",
+      "authors": "Ichihara E, Westover D, Meador CB, Yan Y, Bauer JA, Lu P, Ye F, Kulick A, de Stanchina E, McEwen R, Ladanyi M, Cross D, Pao W, Lovly CM.",
+      "year": 2017,
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.can-16-2300",
+      "pmid": "28416483",
+      "publication_date": "2017-04-17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28416483/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "SFK/FAK在持续EGFR抑制下可同时维持AKT与MAPK信号；干预SFK/FAK或两条下游轴可增强奥希替尼效应，模型中YES1扩增也可形成耐药旁路。",
+      "limitation_zh": "细胞和动物模型中的组合效果，不是奥希替尼联合化疗耐药后人体获益；YES1扩增与SFK激酶活性升高应分别记录，不能把所有pERK升高直接判为RAS/BRAF基因事件。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22SFK%2FFAK+signaling+attenuates+osimertinib+efficacy%22&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:39:00+00:00"
+      }
+    },
+    {
+      "id": "N09_E02",
+      "title": "AXL confers intrinsic resistance to osimertinib and advances the emergence of tolerant cells.",
+      "authors": "Taniguchi H, Yamada T, Wang R, Tanimura K, Adachi Y, Nishiyama A, Tanimoto A, Takeuchi S, Araujo LH, Boroni M, Yoshimura A, Shiotsu S, Matsumoto I, Watanabe S, Kikuchi T, Miura S, Tanaka H, Kitazaki T, Yamaguchi H, Mukae H, Uchino J, Uehara H, Takayama K, Yano S.",
+      "year": 2019,
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-018-08074-0",
+      "pmid": "30651547",
+      "publication_date": "2019-01-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30651547/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼可解除负反馈而激活AXL；AXL与EGFR/HER3关联维持细胞存活并推动耐受持留细胞出现；AXL抑制在初始或持留阶段改善模型抑瘤效果，临床样本高表达与低反应关联。",
+      "limitation_zh": "主体为功能模型并附人体表达关联；AXL表达不是AXL致病突变，也不能据此认定AXL抑制联合在奥希替尼加化疗后有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22AXL+confers+intrinsic+resistance+to+osimertinib%22&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:39:00+00:00"
+      }
+    },
+    {
+      "id": "N09_E03",
+      "title": "Drug tolerance and persistence to EGFR inhibitor treatment are mediated by an ILK-SFK-YAP signaling axis in lung adenocarcinoma.",
+      "authors": "Shi R, Farnsworth DA, Febres-Aldana CA, Chow JLM, Sheena R, Atwal T, Gomez Marti JL, Li S, Thomas KN, Lee CM, Awrey SJ, McDonald PC, Somwar R, Dedhar S, Ladanyi M, Bennewith KL, Lockwood WW.",
+      "year": 2025,
+      "journal": "Oncogene",
+      "doi": "10.1038/s41388-025-03461-6",
+      "pmid": "40450112",
+      "publication_date": "2025-05-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40450112/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "ILK促进EMT和药物耐受持留；抑制ILK通过削弱YAP激活提高奥希替尼敏感性。高ILK状态可在EGFR抑制期间持续存在并积累额外遗传和表型改变，人体样本有相关性。",
+      "limitation_zh": "功能证据主要来自模型，活检相关性不足以构成临床预测标志物；临床可用的ILK/YAP联用策略及化疗经治背景均未由该研究证实。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40450112+OR+EXT_ID%3A41880579+OR+EXT_ID%3A42475177&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:39:00+00:00"
+      }
+    },
+    {
+      "id": "N09_E04",
+      "title": "AXL phosphosite mapping links FAK1 and YAP1 signaling to erlotinib resistance in EGFR-mutant lung cancer.",
+      "authors": "Creixell M, Taylor SD, Gerritsen J, Jiang M, Bae SY, Augustin T, Loui M, Boixo C, Minamino S, Gong V, Creixell P, White FM, Meyer AS.",
+      "year": 2026,
+      "journal": "Cell reports",
+      "doi": "10.1016/j.celrep.2026.117717",
+      "pmid": "42475177",
+      "publication_date": "2026-07-20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42475177/",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "preclinical",
+      "main_finding_zh": "AXL磷酸位点模型把FAK1识别为近端底物，并将SFK/ABL相关信号与YAP1介导持留连接；在体外联合干预可消除部分持留细胞，临床相关性来自厄洛替尼治疗背景。",
+      "limitation_zh": "研究重点是厄洛替尼及PC9模型，不是奥希替尼加化疗后临床试验；某一AXL磷酸位点的网络效应不能泛化成所有AXL表达异常的统一药敏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40450112+OR+EXT_ID%3A41880579+OR+EXT_ID%3A42475177&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:39:00+00:00"
+      }
+    },
+    {
+      "id": "N09_E05",
+      "title": "Acquired Resistance to Third-Generation EGFR Tyrosine Kinase Inhibitors in Patients With De Novo EGFR<sup>T790M</sup>-Mutant NSCLC.",
+      "authors": "Park HR, Kim TM, Lee Y, Kim S, Park S, Ju YS, Kim M, Keam B, Jeon YK, Kim DW, Heo DS.",
+      "year": 2021,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2021.06.013",
+      "pmid": "34242789",
+      "publication_date": "2021-07-06",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34242789/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "case_series",
+      "main_finding_zh": "特殊de novo EGFR T790M背景的小系列中发现MTOR L1433S等耐药改变；CRISPR及细胞功能实验支持该特定MTOR变异经AKT信号形成奥希替尼旁路，mTOR抑制联合在模型中恢复敏感性。",
+      "limitation_zh": "只有少量特殊基因型患者且联合药敏来自模型；不能把任意MTOR/PIK3CA/PTEN改变、pAKT阳性或该四例背景外推为奥希替尼加化疗后mTOR组合标准。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22osimertinib%22+AND+TITLE_ABS%3A%22AKT%22+AND+TITLE_ABS%3A%22mTOR%22+AND+FIRST_PDATE%3A%5B2017-01-01+TO+2022-12-31%5D&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-01T09:39:00+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少奥希替尼联合化疗后，按MAPK与PI3K/AXL/YAP并行状态分层的前瞻性随机证据。",
+    "需要同一患者治疗前、早期残留和进展时的纵向DNA/RNA、病理及蛋白功能资料，以区分诱导性适应与稳定克隆选择。",
+    "需要确认多种旁路是否处于同一肿瘤克隆，而非血浆混合、不同病灶或非肿瘤来源。",
+    "应在临床可达暴露、完整免疫及基质背景中检验候选联合，并独立报告毒性和持久临床终点。",
+    "未取得可独立核对的本主题2026大会原始摘要；上述2026材料为正式期刊论文，不冒称会议报告。"
+  ]
+}
