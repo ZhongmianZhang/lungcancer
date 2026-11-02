@@ -1,0 +1,229 @@
+{
+  "node_id": "node04",
+  "title": "谱系可塑性：TP53/RB1风险背景、MYC–NOTCH状态与PRC2表观遗传重编程",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "MYC",
+    "NOTCH1",
+    "ASCL1",
+    "NEUROD1",
+    "POU2F3",
+    "YAP1",
+    "EED",
+    "EZH2"
+  ],
+  "upstream": [
+    "EGFR靶向治疗选择压力",
+    "TP53/RB1失活背景",
+    "原始细胞状态与克隆分支"
+  ],
+  "downstream": [
+    "PRC2/H3K27me3相关染色质调控",
+    "神经内分泌与非神经内分泌状态重排",
+    "EGFR表达/药物依赖改变",
+    "组织学转化及细胞间异质性"
+  ],
+  "mechanism_zh": [
+    "EGFR突变DNA保留可以记录肿瘤的谱系历史，却不保证转化后的细胞仍以EGFR信号维持生存。组织学表型、EGFR RNA/蛋白表达、下游网络与药物依赖属于不同层次。2026年患者衍生研究给出特别重要的反例：在转化SCLC的神经内分泌细胞中，EZH2相关抑制可使EGFR表达沉默；即使解除表观抑制或外源重表达突变EGFR，也未必恢复EGFR抑制剂敏感。因此程序不能使用“EGFR还在”或“EGFR重新表达”作为继续、重启或加量EGFR-TKI的充分条件。",
+    "TP53与RB1双失活可建立易发生谱系变化的背景，但风险标志物不是转化病理诊断。Offin等的临床回顾研究提示EGFR/TP53/RB1共变异亚群风险较高，然而多数三基因共变异者并未在该队列随访中转化；同样不能用TP53/RB1阴性完全排除转化。进展时若仅见这两个基因改变，应触发组织再取样与病理复核，而不是自动把NSCLC归为SCLC、生成发生概率或直接选择小细胞方案。",
+    "多组学分析支持：神经内分泌转化可由显著的转录与表观遗传重编程推动，而非一定需要更换最初的致癌DNA驱动。PRC2相关表达、PI3K/AKT和NOTCH网络变化与转化相伴；部分模型可通过干预这些通路延缓转化。但基因拷贝、表达签名、H3K27me3标记或PDX药物反应，分别回答不同层次的问题，不能凭单个标志物确认整个患者已转化，更不能把延缓模型转化等同于临床逆转已建立的转化。",
+    "MYC与NOTCH显示细胞状态调控的情境依赖性：一般SCLC模型中，MYC可促进从ASCL1相关神经内分泌状态向NEUROD1及YAP1相关状态的动态变化，POU2F3阳性肿瘤还可依赖不同细胞来源。这不代表EGFR转化病例都沿统一轨迹演化；ASCL1、NEUROD1、POU2F3或YAP1也不是独立诊断SCLC或分配治疗的标签。单一患者可同时存在多种状态，研究性转录分型不应替代完整形态和免疫表型。",
+    "2026年EED原始研究为表观遗传因果提供了较直接的模型证据：PRC2核心支架EED能维持SCLC身份，失活后可解除对部分肺腺癌相关信号及NEUROD1的抑制。在EGFR突变并伴Rb1/Trp53失活的模型中，肿瘤起始时失活EED可阻止撤除EGFR驱动后出现SCLC，复发偏向黏液性肺腺癌。这是预防性遗传模型，不能简化为已有小细胞转化患者接受EED/EZH2药物就会恢复腺癌或重新对奥希替尼敏感。",
+    "治疗研究必须对照细胞状态与时间：2026年转化SCLC衍生模型的NE与非NE成分有不同脆弱性，MEK抑制联合化疗在模型中可覆盖异质细胞，但没有提供奥希替尼加化疗后患者的临床有效率。是否保留EGFR-TKI应取决于是否仍有功能依赖的腺癌成分、病灶间异质性、当前病理和既往治疗，而不能从保留EGFR突变单独推导。表观遗传及状态特异策略均应作为研究路径，不能替代按确认病理进行的临床讨论。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "EGFR驱动DNA在进展标本中保留",
+      "meaning": "可能支持与原EGFR肿瘤的谱系关系；需结合配对组织及其他共同事件。",
+      "limitations": "不能单独证明同源转化，更不能证明RNA/蛋白仍表达、EGFR仍驱动或TKI仍敏感。"
+    },
+    {
+      "marker": "TP53/RB1共改变或双失活",
+      "meaning": "可提示较高谱系可塑性风险，支持进展时组织和病理复核。",
+      "limitations": "风险不是诊断；VUS、单等位改变和功能失活不同，阴性也不能排除转化，不生成个体概率。"
+    },
+    {
+      "marker": "ASCL1/NEUROD1/POU2F3/YAP1表达",
+      "meaning": "研究性细胞状态和异质性线索。",
+      "limitations": "不替代组织形态与综合免疫表型；不能凭单一转录因子诊断、判同源或选药。"
+    },
+    {
+      "marker": "EED/EZH2/PRC2、H3K27me3或表观遗传表达签名",
+      "meaning": "可能提示维持谱系身份的染色质调控，适合机制研究。",
+      "limitations": "表达或染色强度不等同于药物依赖或可逆转性；模型预防不等于已转化患者治疗。"
+    },
+    {
+      "marker": "EGFR表达恢复或实验性重表达",
+      "meaning": "说明部分表达抑制可解除。",
+      "limitations": "已有模型显示仍不恢复EGFR抑制敏感，表达恢复不能替代功能依赖和临床疗效。"
+    },
+    {
+      "marker": "NE与非NE混合转录/细胞群",
+      "meaning": "提示多个状态或病灶成分可能需要分别评估。",
+      "limitations": "单细胞解离和取样会影响比例；bulk共检出不证明同一细胞，模型联合不能自动变为临床处方。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "评估PRC2/EED/EZH2等表观遗传调控的状态特异性研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "L04_E02",
+        "L04_E04",
+        "L04_E05"
+      ],
+      "setting": "人体多组学关联及EGFR相关/一般SCLC模型。",
+      "limitations": "尚不能当作奥希替尼加化疗后已建立转化的标准药物；遗传敲除、预防性干预与可耐受药物治疗不同，也不保证恢复EGFR依赖。"
+    },
+    {
+      "strategy": "按NE与非NE成分探索覆盖异质性的MEK抑制联合化疗研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "L04_E03",
+        "L04_E05"
+      ],
+      "setting": "患者衍生转化SCLC细胞及体内外模型，非本治疗序列临床试验。",
+      "limitations": "不生成患者药物选择或剂量；必须验证病理、细胞状态、既往化疗及组合毒性，不能用前临床抑瘤推算临床获益。"
+    },
+    {
+      "strategy": "阻断“EGFR保留或重新表达即默认继续/重启TKI”的自动映射",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L04_E05"
+      ],
+      "setting": "转化SCLC神经内分泌细胞的EGFR表达解除抑制/外源重表达实验。",
+      "limitations": "不代表所有混合病灶都应停用TKI；有无仍依赖EGFR的腺癌克隆及病灶分布需单独评估。"
+    },
+    {
+      "strategy": "将TP53/RB1风险背景用于触发进展组织复核与纵向研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "L04_E01",
+        "L04_E02"
+      ],
+      "setting": "回顾性基因型风险研究与配对多组学研究。",
+      "limitations": "不以三基因共变异直接诊断转化或启动小细胞治疗，不以未检出双失活排除转化。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "L04_E01",
+      "title": "Concurrent RB1 and TP53 Alterations Define a Subset of EGFR-Mutant Lung Cancers at risk for Histologic Transformation and Inferior Clinical Outcomes.",
+      "authors": "Offin M, Chan JM, Tenet M, Rizvi HA, Shen R, Riely GJ, Rekhtman N, Daneshbod Y, Quintanal-Villalonga A, Penson A, Hellmann MD, Arcila ME, Ladanyi M, Pe'er D, Kris MG, Rudin CM, Yu HA.",
+      "year": 2019,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2019.06.002",
+      "pmid": "31228622",
+      "publication_date": "2019-06-19",
+      "url": "https://doi.org/10.1016/j.jtho.2019.06.002",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "EGFR/TP53/RB1共同改变可识别较高组织学转化风险的亚群，但研究中的多数三基因共变异患者并未在所观察随访中转化。",
+      "limitation_zh": "回顾队列中基线风险与最终病理是不同终点；不能将三基因共变异诊断为SCLC，也不能从该选择性队列生成个体概率。并非奥希替尼加化疗后专属队列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31228622+OR+EXT_ID%3A34155000+OR+EXT_ID%3A32473656+OR+EXT_ID%3A42611544+OR+EXT_ID%3A39150541+OR+EXT_ID%3A41574603%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:34:38+00:00"
+      }
+    },
+    {
+      "id": "L04_E02",
+      "title": "Multiomic Analysis of Lung Tumors Defines Pathways Activated in Neuroendocrine Transformation.",
+      "authors": "Quintanal-Villalonga A, Taniguchi H, Zhan YA, Hasan MM, Chavan SS, Meng F, Uddin F, Manoj P, Donoghue MTA, Won HH, Chan JM, Ciampricotti M, Chow A, Offin M, Chang JC, Ray-Kirton J, Tischfield SE, Egger J, Bhanot UK, Linkov I, Asher M, Sinha S, Silber J, Iacobuzio-Donahue CA, Roehrl MH, Hollmann TJ, Yu HA, Qiu J, de Stanchina E, Baine MK, Rekhtman N, Poirier JT, Loomis B, Koche RP, Rudin CM, Sen T.",
+      "year": 2021,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-20-1863",
+      "pmid": "34155000",
+      "publication_date": "2021-12-01",
+      "url": "https://doi.org/10.1158/2159-8290.cd-20-1863",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "组合组织与转化前后材料的多组学提示神经内分泌转化主要伴转录重编程；PRC2、PI3K/AKT和NOTCH等网络变化，PI3K/AKT抑制在EGFR突变PDX中延缓生长与转化。",
+      "limitation_zh": "患者关联与模型干预并存；PDX中的延缓不能等同于已建立转化病例的临床逆转，也不证明所有转化均无新遗传事件。不能外推为奥希替尼加化疗后标准联合。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31228622+OR+EXT_ID%3A34155000+OR+EXT_ID%3A32473656+OR+EXT_ID%3A42611544+OR+EXT_ID%3A39150541+OR+EXT_ID%3A41574603%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:34:38+00:00"
+      }
+    },
+    {
+      "id": "L04_E03",
+      "title": "MYC Drives Temporal Evolution of Small Cell Lung Cancer Subtypes by Reprogramming Neuroendocrine Fate.",
+      "authors": "Ireland AS, Micinski AM, Kastner DW, Guo B, Wait SJ, Spainhower KB, Conley CC, Chen OS, Guthrie MR, Soltero D, Qiao Y, Huang X, Tarapcsák S, Devarakonda S, Chalishazar MD, Gertz J, Moser JC, Marth G, Puri S, Witt BL, Spike BT, Oliver TG.",
+      "year": 2020,
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccell.2020.05.001",
+      "pmid": "32473656",
+      "publication_date": "2020-05-30",
+      "url": "https://doi.org/10.1016/j.ccell.2020.05.001",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "preclinical",
+      "main_finding_zh": "MYC可通过NOTCH驱动SCLC模型的ASCL1、NEUROD1及YAP1相关动态状态；POU2F3阳性肿瘤还可来自不同细胞背景，人SCLC具有亚型内异质性。",
+      "limitation_zh": "主要是一般SCLC小鼠/人模型，不是EGFR获得性转化队列；研究用状态不等于固定临床病理类别，也不能用单个转录因子选药或推定所有肿瘤沿同一顺序演化。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31228622+OR+EXT_ID%3A34155000+OR+EXT_ID%3A32473656+OR+EXT_ID%3A42611544+OR+EXT_ID%3A39150541+OR+EXT_ID%3A41574603%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:34:38+00:00"
+      }
+    },
+    {
+      "id": "L04_E04",
+      "title": "Polycomb scaffolding subunit EED supports the SCLC neuroendocrine identity and EGFR-mutant LUAD-to-SCLC transformation.",
+      "authors": "Li Y, Laimon YN, Cho H, Vivero M, De Oliveira GR, Seager MD, Delcea A, Savla V, Chen Y, Durmaz YT, Qiu X, Kukreja S, Li R, El Zarif T, Lu W, Van Orden M, Berchuck JE, Bronson RT, Li S, Ji H, Barbie DA, Politi K, Freedman ML, Long HW, Signoretti S, Oser MG.",
+      "year": 2026,
+      "journal": "The Journal of clinical investigation",
+      "doi": "10.1172/jci199454",
+      "pmid": "42611544",
+      "publication_date": "2026-08-18",
+      "url": "https://doi.org/10.1172/jci199454",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "EED/PRC2在免疫完整GEMM中维持SCLC神经内分泌身份。EGFR突变、Rb1/Trp53失活模型中，肿瘤起始时失活EED可阻止撤除EGFR致癌驱动后出现SCLC，并使复发偏向黏液性LUAD状态。",
+      "limitation_zh": "遗传性失活、肿瘤起始时预防与已建立转化后的药物治疗不是同一问题；模型通过EGFR致癌驱动撤除构建选择压力，非奥希替尼加化疗临床队列。药理性EED抑制仅为后续研究方向。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31228622+OR+EXT_ID%3A34155000+OR+EXT_ID%3A32473656+OR+EXT_ID%3A42611544+OR+EXT_ID%3A39150541+OR+EXT_ID%3A41574603%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:34:38+00:00"
+      }
+    },
+    {
+      "id": "L04_E05",
+      "title": "EGFR-mutant transformed small cell lung cancer harbors intratumoral heterogeneity targetable with MEK inhibitor combination therapy.",
+      "authors": "Ogino A, Vajdi A, Mu XJ, Mahadevan NR, Ngo K, Booker MA, Cejas P, Okoro JJ, Xu M, Springer BF, Eschle BK, Messier CM, Wang S, Syamala S, Tamen RM, Adeni AE, Chambers ES, Canadas I, Thai T, Christensen CL, Xu C, Lizotte PH, Oxnard GR, Watanabe H, Long HW, Gokhale PC, Paweletz CP, Sholl LM, Oser MG, Barbie DA, Tolstorukov MY, Jänne PA.",
+      "year": 2026,
+      "journal": "JCI insight",
+      "doi": "10.1172/jci.insight.197008",
+      "pmid": "41574603",
+      "publication_date": "2026-01-23",
+      "url": "https://doi.org/10.1172/jci.insight.197008",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "转化SCLC患者胸水的单细胞及衍生模型显示神经内分泌与间质非神经内分泌细胞并存。EZH2可调控NE细胞的EGFR沉默，但解除沉默或外源表达突变EGFR仍未恢复EGFR抑制剂敏感；MEK抑制加化疗在模型中覆盖不同状态。",
+      "limitation_zh": "人材料发现与体内外治疗实验须分开；没有证明奥希替尼加化疗后的临床获益。保留EGFR DNA、恢复RNA/蛋白与重新形成EGFR药物依赖不可互相替代。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31228622+OR+EXT_ID%3A34155000+OR+EXT_ID%3A32473656+OR+EXT_ID%3A42611544+OR+EXT_ID%3A39150541+OR+EXT_ID%3A41574603%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:34:38+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "奥希替尼同期联合铂类/培美曲塞后发生转化，是否与单独EGFR-TKI后具有相同谱系轨迹及依赖性？本节点未取得该专属人群的临床疗效证据。",
+    "如何在足够病灶和时间点区分既存NE祖先选择、真实状态转换、混合组织及取样偏差？",
+    "哪些表观遗传变化是可逆驱动而非伴随现象，干预已建立转化能否恢复有效依赖并达到可耐受临床暴露？",
+    "NE/非NE异质性和免疫/基质区室如何影响状态特异治疗及持续EGFR抑制的价值？"
+  ],
+  "retrieval_note": "Firecrawl未提供可用工具/CLI或现成凭据；本节点实际使用Europe PMC检索并审读摘要，未调用Firecrawl，未声称阅读全文。"
+}

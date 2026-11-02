@@ -16,11 +16,11 @@ def plain(value: str) -> str:
     return re.sub(r"<[^>]+>", "", html.unescape(html.unescape(value)))
 
 
-def date_in_window(value: str) -> bool | None:
+def date_in_window(value: str, start: dt.date = START, end: dt.date = END) -> bool | None:
     parts = value.split("-")
     if len(parts) == 3:
         day = dt.date.fromisoformat(value)
-        return START <= day <= END
+        return start <= day <= end
     if len(parts) == 2:
         year, month = map(int, parts)
         first = dt.date(year, month, 1)
@@ -29,16 +29,19 @@ def date_in_window(value: str) -> bool | None:
         first, last = dt.date(int(value), 1, 1), dt.date(int(value), 12, 31)
     else:
         raise ValueError("Invalid publication date: " + value)
-    if last < START or first > END:
+    if last < start or first > end:
         return False
-    return True if first >= START and last <= END else None
+    return True if first >= start and last <= end else None
 
 
-def load_knowledge(directory: Path | None = None) -> dict:
+def load_knowledge(directory: Path | None = None, *, expected_nodes: int = 10,
+                   start: dt.date = START, end: dt.date = END) -> dict:
     directory = directory or BASE / "knowledge"
     paths = sorted(directory.glob("node[0-9][0-9].json"))
-    if [p.stem for p in paths] != [f"node{i:02}" for i in range(1, 11)]:
-        raise ValueError("Exactly ten completed node modules (node01..node10) are required")
+    if expected_nodes < 1 or start > end:
+        raise ValueError("Invalid node count or evidence window")
+    if [p.stem for p in paths] != [f"node{i:02}" for i in range(1, expected_nodes + 1)]:
+        raise ValueError(f"Exactly {expected_nodes} completed node modules are required")
     nodes, evidence, seen = [], [], set()
     for path in paths:
         node = json.loads(path.read_text(encoding="utf-8"))
@@ -54,7 +57,7 @@ def load_knowledge(directory: Path | None = None) -> dict:
             seen.add(ref["id"]); local_ids.add(ref["id"])
             ref["title"] = plain(ref["title"])
             ref["node_id"] = node["node_id"]
-            ref["in_window"] = date_in_window(ref["publication_date"])
+            ref["in_window"] = date_in_window(ref["publication_date"], start, end)
             if ref["in_window"] is not True:
                 raise ValueError(f"Evidence outside or uncertain date window: {ref['id']}")
             if ref.get("full_text_reviewed") is not False:
@@ -78,9 +81,9 @@ def load_knowledge(directory: Path | None = None) -> dict:
         else:
             unique[key]["source_ids"].append(ref["id"])
             unique[key]["node_ids"].append(ref["node_id"])
-    return {"version": "1.0.0", "window": {"start": str(START), "end": str(END)},
+    return {"version": "1.0.0", "window": {"start": str(start), "end": str(end)},
             "nodes": nodes, "evidence": evidence, "unique_evidence": list(unique.values()),
-            "agent_count": 10,
+            "agent_count": expected_nodes,
             "counts": {"nodes": len(nodes), "evidence_assertions": len(evidence), "unique_publications": len(unique),
                        "abstract_checked": sum(r["verification"] == "metadata_abstract_checked" for r in unique.values()),
                        "metadata_only": sum(r["verification"] == "metadata_only" for r in unique.values()),

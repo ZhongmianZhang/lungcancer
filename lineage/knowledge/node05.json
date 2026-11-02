@@ -1,0 +1,232 @@
+{
+  "node_id": "node05",
+  "title": "转化SCLC的治疗证据：病理优先、EGFR保留与药物依赖分开",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "DLL3",
+    "BRCA2"
+  ],
+  "upstream": [
+    "病理证实的SCLC转化",
+    "既往EGFR-TKI及化疗暴露",
+    "原始EGFR克隆与残余NSCLC异质性"
+  ],
+  "downstream": [
+    "按转化病理讨论化疗骨架",
+    "分子肿瘤委员会与转化人群试验",
+    "动态复取样及中枢评估"
+  ],
+  "mechanism_zh": [
+    "小细胞转化后的治疗对象已经发生变化。原始EGFR驱动DNA可以继续存在，提示祖先克隆信息被保留，但不能仅据此断定转化细胞仍由EGFR信号维持存活。Marcoux等多中心队列中，可获得首次小细胞组织基因分型的59例均保留原始EGFR驱动，同时观察到部分患者后续再出现NSCLC克隆。这说明基因型连续性、当时病理类型和药物依赖是三个需要分别取证的问题，不能用其中一项代替另外两项。",
+    "经充分组织及病理会诊确认的小细胞转化，可讨论与该表型相符的系统治疗，铂类/依托泊苷和紫杉类在转化回顾队列中有观察性应答依据。但原先已用奥希替尼加铂类/培美曲塞，不意味着程序可以机械重复某个含铂方案：需结合转化发生的时间、先前对铂反应与停药间隔、病灶范围、体能和器官储备。原队列还混合了部分de novo和其他神经内分泌类型，不能将其反应率直接视为本目标治疗序列的个体预测。",
+    "继续或加回EGFR-TKI的理据主要来自可能残留的腺癌克隆、中枢控制需求或特殊联合研究，而不是EGFR DNA仍阳性这个事实本身。27例多中心回顾研究中，化疗加TKI的部分控制指标看似较好，组间PFS和OS却未显示显著差异，存在样本小和选择混杂。程序应允许标记混合/多克隆病灶并建议再次取样，而不输出“保留EGFR就必须继续奥希替尼”，也不反向宣称每位患者从此绝无EGFR相关治疗价值。",
+    "免疫治疗必须区分单药、化疗免疫联合与转化人群。较早的转化队列中，17例接受免疫治疗者没有观察到应答；但2026年59例真实世界队列显示化疗加免疫与较长转化后生存相关。这两类观察不能简单互相抵消，也不能将后者当作随机获益证据。应按既往治疗、方案组成、分子/免疫背景及并用或近序贯TKI的毒性风险分层，由临床团队核实适应证和试验资格。",
+    "DLL3提供了不同于EGFR的靶向研究方向，但靶点表达仍不是药敏判定。在有实际摘要的神经内分泌转化研究中，两例DLL3极高的小细胞转化患者接受tarlatamab单药均进展，一例后续加回奥希替尼后改善；这仅构成个别病例的联合假说。对于T细胞衔接器、ADC或其他新策略，应核对是否真正纳入转化性EGFR肺癌，不能把一般SCLC获批或注册试验人群直接替代本场景。",
+    "2026年转化SCLC专属的olaparib加durvalumab单臂II期研究仅招募4例且无客观缓解，尽管所有病例仍保留激活EGFR突变。这个负面结果提醒：表型、常见共突变或生物学合理性都不能自动产生可行动治疗。药物路径应同时呈现正反证据、既往暴露及样本限制，并把治疗策略讨论与剂量处方、应答概率预测分开。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "原始EGFR敏感突变在转化组织中仍检出",
+      "meaning": "支持祖先驱动被保留，可结合其他共享变异讨论克隆连续性。",
+      "limitations": "DNA保留不证明持续EGFR表达、磷酸化或依赖；不得自动触发继续/加回TKI。"
+    },
+    {
+      "marker": "进展病灶经形态、免疫及病理会诊证实SCLC",
+      "meaning": "转化病理可改变治疗讨论的主导分支。",
+      "limitations": "不能用TP53/RB1改变或一个神经内分泌标志物代替；LCNEC及混合病理需另行区分。"
+    },
+    {
+      "marker": "先前含铂治疗反应、末次治疗时间和目前器官/体能状态",
+      "meaning": "影响是否适合含铂再治疗及其他后线策略。",
+      "limitations": "不是由基因名或固定程序阈值即可确定的药敏；转化前铂/培美曲塞与转化后铂/依托泊苷的背景不同。"
+    },
+    {
+      "marker": "DLL3免疫组化阳性或高表达",
+      "meaning": "可为DLL3相关试验提供生物学线索。",
+      "limitations": "高表达不保证tarlatamab单药响应；不设虚构预测阈值，不自动证明当前标签或可入组。"
+    },
+    {
+      "marker": "PD-L1、TMB或其他免疫相关指标",
+      "meaning": "可作为免疫微环境研究的一部分。",
+      "limitations": "不能将de novo SCLC、EGFR肺腺癌或转化SCLC的免疫证据相互替代；免疫联合目前仍需按具体数据核查。"
+    },
+    {
+      "marker": "不同病灶或时点出现腺癌与SCLC成分",
+      "meaning": "提示混合病理或克隆异质性，可能影响局部/系统治疗目标。",
+      "limitations": "一次血浆或单灶基因检测不能确定所有病灶表型；需组织及影像整合，而不是自动叠加所有匹配药。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "组织确认转化SCLC后，讨论相应病理常用的铂类/依托泊苷骨架与其他后线系统治疗",
+      "status": "standard_other_setting",
+      "evidence_ids": [
+        "L05_E01"
+      ],
+      "setting": "SCLC常用治疗骨架及转化队列的回顾性支持；不是奥希替尼+化疗后专属随机证据。",
+      "limitations": "由临床团队结合既往铂暴露、间隔、耐受和病理决定，不输出剂量或个体应答率；LCNEC及混合类型不直接套用。"
+    },
+    {
+      "strategy": "不以EGFR DNA保留自动继续或加回奥希替尼；特殊混合克隆情境进入MTB/研究讨论",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L05_E01",
+        "L05_E02",
+        "L05_E05"
+      ],
+      "setting": "转化EGFR肺癌的回顾队列与个别组合病例。",
+      "limitations": "所列资料未随机证明“保留EGFR→继续TKI获益”；也不据此断言所有患者均应永久停用TKI。"
+    },
+    {
+      "strategy": "化疗免疫联合按转化性人群的专门试验/前瞻研究评估",
+      "status": "investigational",
+      "evidence_ids": [
+        "L05_E01",
+        "L05_E02",
+        "L05_E03"
+      ],
+      "setting": "既有单药低响应结果与2026组合真实世界关联并列。",
+      "limitations": "不把回顾性生存关联当随机效应或普遍标准，不将单药无效扩大为所有联合无效；需核查TKI并用/序贯毒性。"
+    },
+    {
+      "strategy": "DLL3 T细胞衔接器及相关联合仅作为机制匹配研究讨论",
+      "status": "investigational",
+      "evidence_ids": [
+        "L05_E05"
+      ],
+      "setting": "DLL3 IHC小队列与两例tarlatamab治疗病例，非该目标序列随机研究。",
+      "limitations": "DLL3高表达仍可进展，单例加TKI改善不形成通用组合处方；地区标签、招募和专门安全管理需独立核查。"
+    },
+    {
+      "strategy": "不按EGFR保留或一般DNA修复理据自动匹配olaparib+durvalumab",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L05_E04"
+      ],
+      "setting": "转化SCLC专属但极小、提前终止的II期研究。",
+      "limitations": "无客观缓解结果限制该组合的自动匹配；不代表其他PARP/免疫策略均被排除，新的组合需新的直接证据。"
+    }
+  ],
+  "research_gaps": [
+    "缺少明确限定于同期奥希替尼+铂/培美曲塞后转化患者的前瞻、比较性治疗证据。",
+    "需纵向分离小细胞与残余NSCLC克隆、EGFR表达/信号依赖及CNS病灶，确认哪些患者可能从EGFR相关联合获益。",
+    "需要转化人群专属的DLL3、T细胞衔接器、ADC和其他表型靶点研究，不能用靶抗原阳性替代临床预测验证。",
+    "免疫联合的正负观察需前瞻分层，明确选择偏倚、既往治疗和混合方案贡献。",
+    "检索发现2025 JCO Precision Oncology tarlatamab多机构研究（PMID41166675，DOI10.1200/po-25-00538）真实题录，但当前Europe PMC未提供摘要，本模块未从题名推断其疗效，未计入五篇结果已读的主证据。"
+  ],
+  "evidence": [
+    {
+      "id": "L05_E01",
+      "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes.",
+      "authors": "Marcoux N, Gettinger SN, O'Kane G, Arbour KC, Neal JW, Husain H, Evans TL, Brahmer JR, Muzikansky A, Bonomi PD, Del Prete S, Wurtz A, Farago AF, Dias-Santagata D, Mino-Kenudson M, Reckamp KL, Yu HA, Wakelee HA, Shepherd FA, Piotrowska Z, Sequist LV.",
+      "year": 2019,
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.18.01585",
+      "pmid": "30550363",
+      "publication_date": "2018-12-14",
+      "url": "https://doi.org/10.1200/jco.18.01585",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "混合纳入67例EGFR相关SCLC/高等级神经内分泌癌，包含9例起始即小细胞或混合病理；可获得转化组织基因分型的59例均保留原始EGFR驱动。转化后铂类/依托泊苷与紫杉类观察到应答，接受免疫治疗的17例均无应答，部分病例后续出现NSCLC克隆再现。",
+      "limitation_zh": "回顾队列且并非全部纯SCLC或一线奥希替尼背景；不能据此估计奥希替尼+化疗后的转化发生率，也不能把免疫单药/历史方案结果推广到所有现代免疫联合。EGFR保留没有证明继续TKI有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30550363+OR+EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42664544+OR+EXT_ID%3A40248685%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:37:33+00:00"
+      }
+    },
+    {
+      "id": "L05_E02",
+      "title": "Impact of Subsequent Treatment on Clinical Outcomes in Patients with EGFR-Mutant Non-Small Cell Lung Cancer Transformed to Small-Cell Lung Cancer.",
+      "authors": "Chen CY, Ko HW, Hu PW, Chang CY, Chen CY, Chang SC, Chiu YC, Wei YF.",
+      "year": 2025,
+      "journal": "Lung Cancer (Auckland, N.Z.)",
+      "doi": "10.2147/lctt.s516527",
+      "pmid": "40248685",
+      "publication_date": "2025-04-12",
+      "url": "https://doi.org/10.2147/lctt.s516527",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "27例EGFR-TKI后小细胞转化患者接受化疗、化疗+EGFR-TKI或化疗+免疫。联合组部分疾病控制和应答指标较高，但单因素和多因素分析未显示治疗组间PFS或OS显著差异；作者要求前瞻验证。",
+      "limitation_zh": "小样本、非随机、治疗选择及患者体能等混杂显著。不能把数值趋势改写为继续奥希替尼改善生存，也不是同期奥希替尼+化疗耐药后的专属随机研究。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30550363+OR+EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42664544+OR+EXT_ID%3A40248685%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:37:33+00:00"
+      }
+    },
+    {
+      "id": "L05_E03",
+      "title": "Adding immunotherapy to chemotherapy may improve survival after SCLC transformation in EGFR-mutant NSCLC: a multicenter real-world study.",
+      "authors": "Demir N, Kıkılı Cİ, Kemik F, Köylü B, Tural D, Laçin Ş, Gündüz Ş, Tunalı D, Mandel NM, Yumuk F, Inanc M, Cengiz AN, Uluç BO, Ersoy SA, Busery NS, Karakaya S, Erdem D, Akdoğan O, Yazıcı O, Kahraman E, Bilgetekin İ, Demirci U, Gür HB, Ökten İN, Karakaya G, Yıldız O, Eryılmaz MK, Canaslan K, Seyyar M, Kaplan MA, Çubukçu E, Akın G, Ersoy M, Sümbül AT, Özçelik H, Özel Bozdağ Dİ, Çiçek E, Oflas Ü, Turkoz FP, Garbioğlu DB, Selçukbiricik F.",
+      "year": 2026,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2026.109590",
+      "pmid": "42664544",
+      "publication_date": "2026-08-23",
+      "url": "https://doi.org/10.1016/j.lungcan.2026.109590",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "26中心59例转化SCLC真实世界队列中，化疗+免疫与较长转化后生存相关。研究提示以往免疫疗效差的结论不宜机械覆盖所有化疗免疫组合，仍需前瞻验证。",
+      "limitation_zh": "选择偏倚和治疗异质性显著；含不同EGFR-TKI、不同ICI，部分方案含奥希替尼，不能将关联当随机治疗效应或地区标准。化疗在转化后使用不等同于转化前已接受奥希替尼+化疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30550363+OR+EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42664544+OR+EXT_ID%3A40248685%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:37:33+00:00"
+      }
+    },
+    {
+      "id": "L05_E04",
+      "title": "Phase II study of olaparib plus durvalumab in EGFR-mutant NSCLC transformed to small cell lung cancer.",
+      "authors": "Mohindroo C, Takahashi N, Nichols S, Pinkiert D, Thomas A.",
+      "year": 2026,
+      "journal": "The oncologist",
+      "doi": "10.1093/oncolo/oyag328",
+      "pmid": "42605066",
+      "publication_date": "2026-08-01",
+      "url": "https://doi.org/10.1093/oncolo/oyag328",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "转化SCLC专属开放单臂II期研究因招募缓慢提前终止，仅4例；全部保留激活EGFR突变，olaparib+durvalumab最佳1例稳定、3例进展，ORR为0，显示即使存在生物学理据仍可能缺乏临床活性。",
+      "limitation_zh": "样本极小且无对照，不能排除所有PARP或免疫研究策略；但不支持因EGFR保留、常见TP53/RB1或一般DNA修复理据就自动选择该组合。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30550363+OR+EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42664544+OR+EXT_ID%3A40248685%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:37:33+00:00"
+      }
+    },
+    {
+      "id": "L05_E05",
+      "title": "DLL3 Immunohistochemical Expression in Neuroendocrine-Transformed EGFR-Mutant Lung Cancer and Two Cases of Tarlatamab Therapy.",
+      "authors": "Aredo JV, Singhal S, Berry GJ, Moradi F, Wakelee HA, Myall NJ, Ramchandran KJ, Das M, Suarez CJ, Neal JW, Riess JW.",
+      "year": 2025,
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2025.100913",
+      "pmid": "41256964",
+      "publication_date": "2025-09-30",
+      "url": "https://doi.org/10.1016/j.jtocrr.2025.100913",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "case_series",
+      "main_finding_zh": "12例EGFR相关神经内分泌肿瘤中DLL3表达有异质性。两例小细胞转化且肿瘤DLL3为100%的患者接受tarlatamab后均进展，其中一例随后加回奥希替尼出现多病灶改善。高靶抗原表达本身不保证单药敏感，个别联合信号仍需验证。",
+      "limitation_zh": "IHC队列与两例治疗病例，含不同起始病理。不能建立DLL3预测阈值，不能把单例联合改善当作EGFR依赖普遍保留或常规联合依据；地区标签、试验招募与安全管理未在本次核验。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41256964+OR+EXT_ID%3A41166675%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:37:33+00:00"
+      }
+    }
+  ],
+  "retrieval_note": "用户优先Firecrawl；主代理已确认本会话无Firecrawl工具/CLI/API绑定，本模块实际使用Europe PMC实时核题录并审读摘要。未核查全文、地区现行标签或试验实时招募。"
+}

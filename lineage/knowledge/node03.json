@@ -1,0 +1,236 @@
+{
+  "node_id": "node03",
+  "title": "鳞状与基底样转化：组织形态、克隆延续和EGFR依赖必须分开",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "CDKN2A",
+    "CDKN2B",
+    "NKX2-1",
+    "TP63",
+    "PIK3CA",
+    "PTEN",
+    "AKT1",
+    "MYC",
+    "MET",
+    "KRT5"
+  ],
+  "upstream": [
+    "EGFR-TKI选择压力",
+    "既有基底样亚克隆或状态可塑性",
+    "Rb/AKT/MYC及PI3K通路改变"
+  ],
+  "downstream": [
+    "基底样腺鳞混合程序",
+    "经病理确认的鳞状表型",
+    "旁路存活与病灶间异质性"
+  ],
+  "mechanism_zh": [
+    "鳞状转化首先是需要组织学确认的表型变化，不是发现EGFR突变保留、p40升高或血液肿瘤标志物变化后即可自动生成的诊断。进展期病灶应与初始腺癌并排审阅形态和免疫组化，整合p40、CK5/6与腺性标记TTF-1/Napsin A等，而不是以单一阳性或固定比例阈值替代呼吸病理判断。最初仅有少量针吸或穿刺时，需要考虑原始腺鳞癌中的鳞状成分被漏采样；不同病灶可能保留腺癌、鳞癌或其他转化成分。EMT标记变化、梭形表型或基底样转录程序均不等同于病理鳞癌。",
+    "2020配对组织队列支持鳞状等组织转化可参与奥希替尼耐药，且血浆检测无法显示组织形态。2019四例配对基因组分析保留初始EGFR，同时出现PTEN、PIK3CA、LKB1或RICTOR等改变，提示谱系演化与其他存活通路可以并存。原始EGFR突变是有用的克隆线索，但肿瘤仍携带该DNA并不证明当前由EGFR信号主导，也不证明继续同一EGFR方案有效。反过来也不能仅凭鳞状表型便断言所有EGFR抑制均无价值；必须结合具体次级改变、残余腺癌成分和功能依赖讨论。",
+    "2025类器官研究发现的basal-shift同时表达腺癌与鳞癌相关基因。NKX2-1敲除能驱动该状态并伴EGFR靶向抵抗，提供了非单纯新增驱动突变的因果模型。它仍不是把患者RNA签名直接换算成鳞癌确诊的依据。部分模型的CDKN2A/B缺失及CDK4/6敏感性属于实验性线索，不能将所有CDKN2A/B、Rb轴或鳞状标记异常一并视为CDK4/6药敏。",
+    "2026临床多组学和工程模型进一步将Rb通路失活，特别CDKN2A/B缺失，及AKT/MYC激活与鳞状特征联系起来。Rb轴受损并非小细胞转化专属，因此不能用RB1/TP53或Rb通路改变自动决定转化类型。该研究还观察到MET信号上调及转化PDX对EGFR/MET联合的反应；这些结果说明旁路与谱系状态能够共存，尚不能将模型结果外推为所有鳞状转化患者的标准组合。",
+    "区分同源转化与第二原发，需要综合发生部位、全身排查、原始与进展样本的共同罕见变异、拷贝数及必要的系统发育分析。共享一个常见EGFR突变只能增加同源性的支持，不能孤立地排除第二原发或肿瘤混合。2026病例同时保留EGFR与TP53并经系统排查支持转化，但它的化疗发生于奥希替尼进展之后、鳞癌确认之前，不应被标为同期奥希替尼加化疗后的直接证据。",
+    "治疗讨论应同时依据新的病理、既往铂类暴露、持续的腺癌克隆、器官功能和可入组试验。鳞状NSCLC常用方案的经验不能自动替代EGFR突变转化人群数据；免疫联合单病例的缓解也无法区分化疗与免疫的贡献。故本模块保留机制与研究路线，不根据EGFR持续阳性、PD-L1或任一单标记自动开药，更不提供个体剂量或应答概率。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "形态+p40/CK5/6及TTF-1/Napsin A",
+      "meaning": "与基线组织对照可支持腺性或鳞状分化状态。",
+      "limitations": "单一IHC阳性、腺性标记阴性或小活检不能独立确认真正转化；需病理审校、样本充分性及混合成分评估。"
+    },
+    {
+      "marker": "同一EGFR敏感突变持续检出",
+      "meaning": "支持与原始EGFR克隆的谱系联系。",
+      "limitations": "不能单独证明同源、同一克隆比例、当前EGFR信号依赖或继续奥希替尼药敏。"
+    },
+    {
+      "marker": "共享TP53等其他改变与配对多组学",
+      "meaning": "多条共同改变、时序和系统发育可增强共同来源的证据。",
+      "limitations": "须排除标本混合、独立原发和检测盲区；血浆共检出不证明两个表型来自同一个细胞。"
+    },
+    {
+      "marker": "NKX2-1丢失／basal-shift RNA程序",
+      "meaning": "提示腺性身份丢失及腺鳞混合状态的机制候选。",
+      "limitations": "转录程序不是形态学鳞癌；不能将类器官敲除实验直接当临床诊断或药敏。"
+    },
+    {
+      "marker": "Rb轴、CDKN2A/B与AKT/MYC改变",
+      "meaning": "可能参与鳞状可塑性及替代存活。",
+      "limitations": "Rb轴异常不专属于小细胞，CDKN2A/B缺失不同于RB1功能丢失，不能自动选择CDK4/6或判转化类型。"
+    },
+    {
+      "marker": "MET或PI3K/AKT/mTOR旁路与转化共存",
+      "meaning": "提示遗传旁路和谱系状态可同时贡献耐药。",
+      "limitations": "不能把MET蛋白上调、扩增、配体激活混为一谈，也不能经验性拼接全部匹配抑制剂。"
+    },
+    {
+      "marker": "EMT／PD-L1升高",
+      "meaning": "可能反映细胞状态或免疫生态变化。",
+      "limitations": "EMT不等于鳞状癌；PD-L1高不单独证明EGFR突变转化肿瘤对免疫药有效。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "先确认鳞状形态、同源性及混合克隆，再讨论按新表型分层的系统治疗／试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "L03_E01",
+        "L03_E04",
+        "L03_E05"
+      ],
+      "setting": "进展期组织已确认鳞状转化；需回顾既往奥希替尼、同期或序贯化疗及其他药物。",
+      "limitations": "鳞状转化专属随机证据不足，de novo鳞癌方案不能原样迁移；既往铂类暴露、器官功能和残余腺癌决定是否适合具体措施。"
+    },
+    {
+      "strategy": "验证MET依赖后研究EGFR/MET联合",
+      "status": "investigational",
+      "evidence_ids": [
+        "L03_E02"
+      ],
+      "setting": "EGFR相关鳞状转化的模型与机制匹配研究。",
+      "limitations": "证据为PDX及多组学，不能据鳞癌或MET表达就认定临床获益；不是奥希替尼加化疗后标准。"
+    },
+    {
+      "strategy": "basal-shift与CDK4/6脆弱性的功能验证",
+      "status": "investigational",
+      "evidence_ids": [
+        "L03_E03",
+        "L03_E02"
+      ],
+      "setting": "明确细胞状态与Rb功能背景的实验／临床试验研究。",
+      "limitations": "CDKN2A/B缺失本身不能自动给CDK4/6药；Rb轴不同层次异常须分开，类器官敏感不等于患者药敏。"
+    },
+    {
+      "strategy": "仅凭保留EGFR突变自动继续同一EGFR方案或判定所有EGFR抑制无效",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L03_E01",
+        "L03_E04",
+        "L03_E05"
+      ],
+      "setting": "需要区分克隆遗传保留与当前功能依赖。",
+      "limitations": "两种绝对判断均缺乏充分依据；应结合病理、特定次级变异、混合病灶及可验证的机制，而不是单一DNA结果。"
+    }
+  ],
+  "research_gaps": [
+    "缺少专门纳入同期奥希替尼加铂类／培美曲塞后进展、经病理确认鳞状转化的人群与对照研究。",
+    "需前瞻性配对组织和多病灶采样，区分真实转分化、既有腺鳞亚克隆选择及第二原发，量化小活检漏采样。",
+    "basal-shift、Rb/AKT/MYC、MET和PI3K模型提示可检验的脆弱性，但尚缺按状态与功能分层的临床验证。",
+    "EGFR保留、腺癌残留与可治疗EGFR依赖之间的关系，需要组织/空间/功能与纵向克隆研究，而非只看血浆EGFR持续阳性。",
+    "鳞状转化后免疫、靶向与化疗的组合或序贯疗效证据以病例为主，不能由单病例、PD-L1或短期影像反应建立标准。"
+  ],
+  "evidence": [
+    {
+      "id": "L03_E01",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-19-3563",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "配对进展前后组织的62例奥希替尼队列检出鳞状等组织转化及多种并行遗传改变，说明仅血浆基因检测会漏掉形态学耐药。",
+      "limitation_zh": "该组织重活检选择队列不是全部EGFR患者的发生率分母，所报转化比例不能直接外推FLAURA2；不是同期奥希替尼加化疗后专属研究。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A42308331+OR+EXT_ID%3A40350470+OR+EXT_ID%3A31319998+OR+EXT_ID%3A28939151%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:58+00:00"
+      }
+    },
+    {
+      "id": "L03_E02",
+      "title": "Clinicogenomic analysis of EGFR-mutant lung tumors identifies Rb pathway inactivation as a hallmark of squamous transformation.",
+      "authors": "Dymun A, Jeng MY, Elkrief A, Mehrotra H, Yang SR, Wilson C, Rekhtman N, Linkov I, Pupo A, Falcon C, Wilhelm CJ, Manoj P, Zhong H, Sridhar H, Kris MG, Socci ND, Qiu J, de Stanchina E, Richards AL, Donoghue MTA, Rudin CM, Yu HA, Quintanal-Villalonga Á.",
+      "year": 2026,
+      "journal": "Science translational medicine",
+      "doi": "10.1126/scitranslmed.aea4881",
+      "pmid": "42308331",
+      "publication_date": "2026-06-17",
+      "url": "https://doi.org/10.1126/scitranslmed.aea4881",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "临床多组学与工程模型提示Rb通路失活，特别CDKN2A/B缺失，结合AKT/MYC有利于鳞状特征形成；转化PDX中EGFR与MET联合抑制可抑制生长。",
+      "limitation_zh": "包含转化、腺鳞与de novo鳞癌，以及临床观察和模型；Rb轴异常不能自动诊断小细胞或鳞状转化，EGFR加MET结果仍是PDX而非本治疗序列的临床获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A42308331+OR+EXT_ID%3A40350470+OR+EXT_ID%3A31319998+OR+EXT_ID%3A28939151%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:58+00:00"
+      }
+    },
+    {
+      "id": "L03_E03",
+      "title": "Basal-shift transformation leads to EGFR therapy-resistance in human lung adenocarcinoma.",
+      "authors": "Shinozaki T, Togasaki K, Hamamoto J, Mitsuishi A, Fukushima T, Sugihara K, Ebisudani T, Okada M, Saito A, Shigematsu L, Takaoka H, Ito F, Ohgino K, Ishioka K, Watanabe K, Hishima T, Kurebayashi Y, Emoto K, Terai H, Ikemura S, Kawada I, Asakura K, Hishida T, Asamura H, Ohta Y, Takahashi S, Oda M, Saito M, Matano M, Soejima K, Fujii M, Fukunaga K, Yasuda H, Sato T.",
+      "year": 2025,
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-025-59623-3",
+      "pmid": "40350470",
+      "publication_date": "2025-05-11",
+      "url": "https://doi.org/10.1038/s41467-025-59623-3",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "患者源EGFR突变肺癌类器官发现腺癌与鳞癌基因混合的basal-shift状态；NKX2-1敲除可产生这一表型并伴EGFR靶向抵抗，部分模型有CDKN2A/B缺失及CDK4/6抑制敏感性。",
+      "limitation_zh": "基底样转录状态不等于形态学鳞癌确诊；模型药敏不能直接成为患者CDK4/6方案，CDKN2A/B缺失与RB1功能失活也不能互换。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A42308331+OR+EXT_ID%3A40350470+OR+EXT_ID%3A31319998+OR+EXT_ID%3A28939151%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:58+00:00"
+      }
+    },
+    {
+      "id": "L03_E04",
+      "title": "Paired genomic analysis of squamous cell carcinoma transformed from EGFR-mutated lung adenocarcinoma.",
+      "authors": "Park S, Shim JH, Lee B, Cho I, Park WY, Kim Y, Lee SH, Choi Y, Han J, Ahn JS, Ahn MJ, Park K, Sun JM.",
+      "year": 2019,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2019.05.024",
+      "pmid": "31319998",
+      "publication_date": "2019-05-24",
+      "url": "https://doi.org/10.1016/j.lungcan.2019.05.024",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "case_series",
+      "main_finding_zh": "4例转化患者的配对381基因测序保留初始EGFR，并出现PTEN、LKB1、PIK3CA或RICTOR等PI3K/AKT/mTOR相关改变；代表病例的亚克隆分析显示T790M消失与PTEN亚克隆演化。",
+      "limitation_zh": "主要为一二代TKI背景并含后续奥希替尼，样本仅4例；初始EGFR保留支持谱系延续但不直接证明当前EGFR依赖，拷贝数与亚克隆模型也不能单独替代功能因果。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A42308331+OR+EXT_ID%3A40350470+OR+EXT_ID%3A31319998+OR+EXT_ID%3A28939151%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:58+00:00"
+      }
+    },
+    {
+      "id": "L03_E05",
+      "title": "Case Report: squamous transformation after long-term osimertinib in EGFR-mutant lung adenocarcinoma with retained EGFR/TP53 alterations.",
+      "authors": "Xu L, Zhang D, Chen X, Wang L, Liu Q.",
+      "year": 2026,
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2026.1911851",
+      "pmid": "42609808",
+      "publication_date": "2026-08-03",
+      "url": "https://doi.org/10.3389/fonc.2026.1911851",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_report",
+      "main_finding_zh": "2026病例中，长期奥希替尼后腺癌再次活检为鳞癌，保留相同EGFR exon19缺失与TP53改变；系统排查及分子对照支持共同来源。随后铂类加紫杉类加免疫组合出现影像缓解。",
+      "limitation_zh": "时序为奥希替尼临床进展后先接受顺铂/培美曲塞，再确认鳞癌，并非同期奥希替尼加化疗后专属证据；单病例不能分离化疗与免疫的贡献，也不能把EGFR保留变成继续同一TKI的药敏证明。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A42609808+OR+EXT_ID%3A31316771+OR+EXT_ID%3A38361740%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:58+00:00"
+      }
+    }
+  ]
+}

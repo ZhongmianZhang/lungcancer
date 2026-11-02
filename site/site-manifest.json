@@ -27,6 +27,10 @@
     "ras-mapk/README.md",
     "ras-mapk/example_result.json",
     "ras-mapk/index.html",
-    "ras-mapk/knowledge.json"
+    "ras-mapk/knowledge.json",
+    "lineage/README.md",
+    "lineage/example_result.json",
+    "lineage/index.html",
+    "lineage/knowledge.json"
   ]
 }

@@ -37,3 +37,19 @@ python3 -m rasmapk build
 原有交互微环境报告及生成代码见 [TME报告使用指南](TME_REPORT_GUIDE.md)。GitHub文件浏览页显示HTML源码，下载后在浏览器打开；代码推送不等同于启用了GitHub Pages。
 
 原有综述文档和远程提交均予保留。新模块仅为研究与分子肿瘤委员会讨论提供可追溯线索，不是经过临床验证的自动处方工具。
+
+## 组织学转化与EGFR保留（2026-11-02）
+
+8个子智能体研究小细胞、鳞癌、谱系可塑性、克隆来源、取样和治疗证据。32条去重记录中31条核题录并审读摘要，1条仅题录，含实际取得摘要的2026 ASCO研究。**EGFR DNA保留、同源性、功能依赖和临床药敏分别判读。**
+
+- [程序说明与输入契约](lineage/README.md)
+- [离线研究工作台HTML](site/lineage/index.html)
+- [合成小细胞转化示例报告](lineage/generated/example/result.html)
+- [独立实时题录复核](lineage/generated/metadata_audit.json)
+
+```bash
+python3 -m lineage analyze --input lineage/examples/sclc_retained_egfr.json --output lineage/generated/example
+python3 -m lineage build
+```
+
+Firecrawl优先适配器已提供；本次无可用工具和凭据，实际文献核验通过Europe PMC/PubMed/Crossref完成。该研究代码不读取切片、不构建系统发育、不输出个体处方，临床使用需独立验证和专家审查。

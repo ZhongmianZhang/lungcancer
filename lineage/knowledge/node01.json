@@ -1,0 +1,208 @@
+{
+  "node_id": "node01",
+  "title": "同源克隆、分支进化与EGFR保留：谱系身份证不等于药物依赖",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "EZH2"
+  ],
+  "upstream": [
+    "EGFR驱动腺癌祖先克隆",
+    "基线谱系可塑性与混合组织学",
+    "治疗选择压力及空间异质性"
+  ],
+  "downstream": [
+    "小细胞/神经内分泌或鳞状表型",
+    "残余腺癌与其他共存克隆",
+    "转录及蛋白状态和治疗依赖改变"
+  ],
+  "mechanism_zh": [
+    "应把EGFR突变保留分成三个不同层次：DNA层面的创始突变、RNA/蛋白及通路活动、肿瘤对EGFR信号的功能依赖。Marcoux系列中有组织基因分型的59例均保留创始EGFR，支持转化癌与既往EGFR驱动肿瘤的联系；这不等于这些细胞仍需依赖EGFR存活，更不能直接推导继续或增加TKI一定有效。该系列还包括初诊小细胞/混合病例，不能把这个分母当作奥希替尼联合化疗后所有转化患者的保留率。",
+    "同源性证据应由配对组织、多个共享私有主干变异、拷贝数或结构变异模式及必要的系统发育重建共同支持。仅在两个病灶都看到常见L858R或19del，尤其只在混合血浆样本中检出，仍不足以单独证明两种组织来自同一克隆；第二原发、碰撞肿瘤、基线腺鳞混合成分和取样偏差需要结合病理与空间资料排查。共同起源和同一时间仍属于同一细胞状态也不是同一命题。",
+    "Lee等的多时点全基因组结果显示，部分小细胞祖先分支可在首次EGFR-TKI前就与腺癌分支分离。因此进展时第一次检测到小细胞，可能反映预存少量克隆被选择、低于原取样检出限的混合成分扩大，也可能涉及后续状态重编程。单次转化活检不能倒推每一步细胞演化，更不能把所有病例解释成药物新制造了一个无遗传关联的小细胞肿瘤。",
+    "EGFR保留与状态改变可以并行。2023小队列中，突变特异蛋白在部分转化组织仍可检出，提示不应一概声称转化后EGFR蛋白必然消失；但2026 JCI Insight模型进一步显示，NE细胞的EGFR沉默即使解除，或外源恢复突变EGFR，也未必恢复TKI敏感。这些不同模型共同支持逐病例、逐亚群评估依赖性，而非用一个DNA或IHC结果替代功能推断。",
+    "转化瘤可同时包含NE和非NE细胞状态，体内其他病灶也可能保留腺癌克隆；Marcoux系列有NSCLC再出现的观察。因此某一活检部位的小细胞结果不能自动代表全部病灶，血浆中EGFR阳性也无法定位信号来自转化小细胞、残余腺癌还是二者。对混合/不一致病灶，可考虑针对临床进展部位的再取样及多部位整合，随后按病理表型、克隆证据和既往治疗讨论方案。",
+    "本节点的核心证据主要来自早代EGFR-TKI、奥希替尼单药后的配对组织或模型，并无统一的奥希替尼加铂类/培美曲塞耐药后随机人群。程序应把同源性、转化病理确认和治疗依赖分别输出，不建立共享EGFR数目或VAF阈值的伪概率，也不把体外重新表达或通路富集当作已验证患者获益。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展组织保留原始EGFR 19del/L858R",
+      "meaning": "支持创始驱动的遗传连续性，是同源性线索之一。",
+      "limitations": "单一常见热点不能独立排除第二原发或混合成分；不能证明EGFR蛋白活性或TKI敏感。"
+    },
+    {
+      "marker": "配对组织共享多个私有主干变异及结构/拷贝模式",
+      "meaning": "与病理、时空关系及系统发育一致时，可加强共同祖先和分支进化的证据。",
+      "limitations": "需考虑测序误差、样本纯度与混合成分；没有临床验证的统一计数阈值，不输出自动同源概率。"
+    },
+    {
+      "marker": "血浆中EGFR仍阳性",
+      "meaning": "提示体内某些肿瘤克隆仍释放携带该事件的DNA。",
+      "limitations": "不能判定小细胞/鳞状组织学，也不能定位到哪一病灶或细胞亚群，更不能推断继续TKI获益。"
+    },
+    {
+      "marker": "突变特异EGFR蛋白或RNA保留",
+      "meaning": "说明部分肿瘤细胞仍表达相关分子，可能与未转化或混合亚群有关。",
+      "limitations": "表达、活化和功能依赖不是同一层次；IHC抗体/部位/肿瘤异质性影响结果，表达阳性不能替代药敏。"
+    },
+    {
+      "marker": "EGFR重新表达、通路富集或患者来源模型药敏",
+      "meaning": "可用于提出细胞状态与依赖性的研究假说。",
+      "limitations": "2026模型中恢复EGFR表达未恢复TKI敏感，且不同模型结论异质；临床前或回顾性组合结果不能等同本治疗序列标准。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "阻断“保留EGFR DNA→自动继续、换代或加量EGFR-TKI”的简化规则",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L01_E01",
+        "L01_E02",
+        "L01_E05"
+      ],
+      "setting": "病理疑似或已证实转化，但只有创始EGFR保留证据",
+      "limitations": "创始遗传标记不是治疗依赖；不据此自动保留或停用全部EGFR治疗，需结合残余腺癌、病灶分布和临床证据。"
+    },
+    {
+      "strategy": "混合/残余腺癌背景中的EGFR联合策略仅作MTB和研究性评估",
+      "status": "investigational",
+      "evidence_ids": [
+        "L01_E02",
+        "L01_E04",
+        "L01_E05"
+      ],
+      "setting": "进展组织证实转化，同时存在可信的未转化或不同细胞状态亚群",
+      "limitations": "小队列联合组包含TKI或贝伐珠单抗，非随机且可受选择偏倚影响；未证明仅因EGFR保留就应联合，MEK相关模型也不是临床用药依据。"
+    },
+    {
+      "strategy": "按进展部位病理、克隆关系及先前治疗综合选择转化后治疗研究分支",
+      "status": "investigational",
+      "evidence_ids": [
+        "L01_E01",
+        "L01_E02",
+        "L01_E03"
+      ],
+      "setting": "组织学已确认且需整合小细胞/鳞状、混合成分、全身或中枢进展",
+      "limitations": "同源性判断不等同选择某药；奥希替尼加化疗后专属证据不足，后续方案需要MTB及真实入组/毒性审查，不提供个体剂量。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "L01_E01",
+      "title": "Clonal History and Genetic Predictors of Transformation Into Small-Cell Carcinomas From Lung Adenocarcinomas.",
+      "authors": "Lee JK, Lee J, Kim S, Kim S, Youk J, Park S, An Y, Keam B, Kim DW, Heo DS, Kim YT, Kim JS, Kim SH, Lee JS, Lee SH, Park K, Ku JL, Jeon YK, Chung DH, Park PJ, Kim J, Kim TM, Ju YS.",
+      "year": 2017,
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.2016.71.9096",
+      "pmid": "28498782",
+      "publication_date": "2017-05-12",
+      "url": "https://doi.org/10.1200/jco.2016.71.9096",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "retrospective",
+      "main_finding_zh": "EGFR-TKI耐药后小细胞转化病例的全基因组分析显示腺癌与小细胞共享克隆来源、呈分支进化；部分小细胞祖先与腺癌分支的分离可早于首次TKI治疗。",
+      "limitation_zh": "仅部分患者有可重建的多时点全基因组样本；支持分支历史而非每次临床转化均为药物从零诱导。非统一奥希替尼联合化疗后队列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Clonal+History+and+Genetic+Predictors%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:41+00:00"
+      }
+    },
+    {
+      "id": "L01_E02",
+      "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes.",
+      "authors": "Marcoux N, Gettinger SN, O'Kane G, Arbour KC, Neal JW, Husain H, Evans TL, Brahmer JR, Muzikansky A, Bonomi PD, Del Prete S, Wurtz A, Farago AF, Dias-Santagata D, Mino-Kenudson M, Reckamp KL, Yu HA, Wakelee HA, Shepherd FA, Piotrowska Z, Sequist LV.",
+      "year": 2019,
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.18.01585",
+      "pmid": "30550363",
+      "publication_date": "2018-12-14",
+      "url": "https://doi.org/10.1200/jco.18.01585",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "八中心67例EGFR相关小细胞/高级别神经内分泌癌系列中，首次小细胞证据时做组织基因分型的59例均保留创始EGFR；同时观察到部分患者再次出现NSCLC克隆。",
+      "limitation_zh": "系列包含9例初诊小细胞或混合组织学病例，接受的既往TKI和后续治疗不统一；59例组织分型结果不能当作所有联合化疗后进展患者的无偏保留率。保留DNA不等于证明TKI疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22EGFR-Mutant+Adenocarcinomas+That+Transform+to+Small-Cell+Lung+Cancer%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:41+00:00"
+      }
+    },
+    {
+      "id": "L01_E03",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-19-3563",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "治疗前与奥希替尼进展后配对组织研究检出小细胞/鳞状等表型转化及其他分子耐药；血浆检测不能识别组织学转化。",
+      "limitation_zh": "组织再活检队列有选择偏倚，并非所有进展患者都获得组织；主要是奥希替尼治疗后，不是奥希替尼加化疗后专门人群，不能外推统一发生率。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Tumor+Analyses+Reveal+Squamous+Transformation%22&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:34:41+00:00"
+      }
+    },
+    {
+      "id": "L01_E04",
+      "title": "Expression of EGFR-mutant proteins and genomic evolution in EGFR-mutant transformed small cell lung cancer.",
+      "authors": "Zhang SL, Zhang CY, Chen YQ, Li YF, Xie Z, Zhang XC, Zhou Q, Zhong WZ, Huang J, Sun H, Zheng MY, Xiao FM, Yan HH, Lu DX, Lv ZY, Wu YL, Chen HJ, Yang JJ.",
+      "year": 2023,
+      "journal": "Journal of thoracic disease",
+      "doi": "10.21037/jtd-23-161",
+      "pmid": "37868836",
+      "publication_date": "2023-09-04",
+      "url": "https://doi.org/10.21037/jtd-23-161",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "配对组织、WES及突变特异蛋白研究提示部分转化小细胞/NEC仍保留突变EGFR蛋白并共享腺癌克隆起源；35例后续治疗比较及3个PDO提示联合策略可能有信号。",
+      "limitation_zh": "小样本、回顾性分组且联合组混合化疗加TKI或贝伐珠单抗，不能把效果归因于继续EGFR抑制；蛋白表达与富集分析不能替代依赖性证明，不能抵消其他模型的不同结果。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41574603+OR+EXT_ID%3A37868836%29&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-02T10:34:41+00:00"
+      }
+    },
+    {
+      "id": "L01_E05",
+      "title": "EGFR-mutant transformed small cell lung cancer harbors intratumoral heterogeneity targetable with MEK inhibitor combination therapy.",
+      "authors": "Ogino A, Vajdi A, Mu XJ, Mahadevan NR, Ngo K, Booker MA, Cejas P, Okoro JJ, Xu M, Springer BF, Eschle BK, Messier CM, Wang S, Syamala S, Tamen RM, Adeni AE, Chambers ES, Canadas I, Thai T, Christensen CL, Xu C, Lizotte PH, Oxnard GR, Watanabe H, Long HW, Gokhale PC, Paweletz CP, Sholl LM, Oser MG, Barbie DA, Tolstorukov MY, Jänne PA.",
+      "year": 2026,
+      "journal": "JCI insight",
+      "doi": "10.1172/jci.insight.197008",
+      "pmid": "41574603",
+      "publication_date": "2026-01-23",
+      "url": "https://doi.org/10.1172/jci.insight.197008",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "2026患者胸腔积液单细胞及患者来源模型揭示神经内分泌与间质样非神经内分泌亚群；NE细胞中EZH2相关EGFR沉默，而解除沉默或外源表达突变EGFR并未恢复EGFR抑制剂敏感性。",
+      "limitation_zh": "人体样本结合体外/体内模型，不是转化后临床随机试验。非NE细胞对MEK抑制及MEK加化疗的模型活性不能自动转化为奥希替尼加化疗后患者用药标准。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41574603+OR+EXT_ID%3A37868836%29&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-02T10:34:41+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少统一奥希替尼加化疗后、配对多部位组织和完整病史的转化队列，不能可靠给出该序列的EGFR保留率或同源性概率。",
+    "需要将基线少量混合成分、预存分支选择与治疗诱导可塑性在同一纵向设计中区分；仅一前一后活检不足。",
+    "尚需前瞻验证哪些转化亚群仍有功能性EGFR依赖，以及继续EGFR抑制的真实临床获益与毒性。",
+    "共同DNA主干、空间蛋白表达与单细胞功能读出应共同研究，但不应把任一组学相关替代为克隆或药敏诊断金标准。"
+  ]
+}

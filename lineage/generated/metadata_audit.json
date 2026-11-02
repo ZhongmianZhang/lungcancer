@@ -1,0 +1,647 @@
+{
+  "checked_at": "2026-11-02T10:48:54+00:00",
+  "status": "complete",
+  "publication_count": 32,
+  "matched_count": 32,
+  "requests": [
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2228498782%22+OR+EXT_ID%3A%2230550363%22+OR+EXT_ID%3A%2231911548%22+OR+EXT_ID%3A%2237868836%22+OR+EXT_ID%3A%2241574603%22+OR+EXT_ID%3A%2230572031%22+OR+EXT_ID%3A%2234808341%22+OR+EXT_ID%3A%2230154579%22+OR+EXT_ID%3A%2234663914%22+OR+EXT_ID%3A%2242308331%22+OR+EXT_ID%3A%2240350470%22+OR+EXT_ID%3A%2231319998%22+OR+EXT_ID%3A%2242609808%22+OR+EXT_ID%3A%2231228622%22+OR+EXT_ID%3A%2234155000%22+OR+EXT_ID%3A%2232473656%22+OR+EXT_ID%3A%2242611544%22+OR+EXT_ID%3A%2240248685%22+OR+EXT_ID%3A%2242664544%22+OR+EXT_ID%3A%2242605066%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-02T10:48:51+00:00"
+    },
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2241256964%22+OR+EXT_ID%3A%2230642539%22+OR+EXT_ID%3A%2230101911%22+OR+EXT_ID%3A%2238361740%22+OR+EXT_ID%3A%2239556978%22+OR+EXT_ID%3A%2235066105%22+OR+EXT_ID%3A%2232822576%22+OR+EXT_ID%3A%2238912901%22+OR+EXT_ID%3A%2241166675%22+OR+EXT_ID%3A%2242519408%22+OR+EXT_ID%3A%2242699526%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-02T10:48:54+00:00"
+    },
+    {
+      "request_url": "https://api.crossref.org/works/10.1200%2Fjco.2026.44.16_suppl.e23350"
+    }
+  ],
+  "errors": [],
+  "records": [
+    {
+      "source_ids": [
+        "L01_E01"
+      ],
+      "pmid": "28498782",
+      "doi": "10.1200/jco.2016.71.9096",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Clonal History and Genetic Predictors of Transformation Into Small-Cell Carcinomas From Lung Adenocarcinomas.",
+        "doi": "10.1200/jco.2016.71.9096",
+        "first_publication_date": "2017-05-12",
+        "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L01_E02",
+        "L05_E01"
+      ],
+      "pmid": "30550363",
+      "doi": "10.1200/jco.18.01585",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes.",
+        "doi": "10.1200/jco.18.01585",
+        "first_publication_date": "2018-12-14",
+        "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L01_E03",
+        "L02_E05",
+        "L03_E01",
+        "L07_E01"
+      ],
+      "pmid": "31911548",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in <i>EGFR</i>-Mutant Lung Cancer.",
+        "doi": "10.1158/1078-0432.ccr-19-3563",
+        "first_publication_date": "2020-01-07",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L01_E04"
+      ],
+      "pmid": "37868836",
+      "doi": "10.21037/jtd-23-161",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Expression of <i>EGFR</i>-mutant proteins and genomic evolution in <i>EGFR</i>-mutant transformed small cell lung cancer.",
+        "doi": "10.21037/jtd-23-161",
+        "first_publication_date": "2023-09-04",
+        "journal": "Journal of thoracic disease",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L01_E05",
+        "L04_E05"
+      ],
+      "pmid": "41574603",
+      "doi": "10.1172/jci.insight.197008",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "EGFR-mutant transformed small cell lung cancer harbors intratumoral heterogeneity targetable with MEK inhibitor combination therapy.",
+        "doi": "10.1172/jci.insight.197008",
+        "first_publication_date": "2026-01-23",
+        "journal": "JCI insight",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L02_E01"
+      ],
+      "pmid": "30572031",
+      "doi": "10.1016/j.jtho.2018.12.005",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Best Practices Recommendations for Diagnostic Immunohistochemistry in Lung Cancer.",
+        "doi": "10.1016/j.jtho.2018.12.005",
+        "first_publication_date": "2018-12-18",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L02_E02"
+      ],
+      "pmid": "34808341",
+      "doi": "10.1016/j.jtho.2021.11.003",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "The 2021 WHO Classification of Lung Tumors: Impact of Advances Since 2015.",
+        "doi": "10.1016/j.jtho.2021.11.003",
+        "first_publication_date": "2021-11-20",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L02_E03"
+      ],
+      "pmid": "30154579",
+      "doi": "10.1038/s41379-018-0122-7",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Insulinoma-associated protein 1 (INSM1) is a sensitive and highly specific marker of neuroendocrine differentiation in primary lung neoplasms: an immunohistochemical study of 345 cases, including 292 whole-tissue sections.",
+        "doi": "10.1038/s41379-018-0122-7",
+        "first_publication_date": "2018-08-28",
+        "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L02_E04"
+      ],
+      "pmid": "34663914",
+      "doi": "10.1038/s41379-021-00943-2",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Lung neuroendocrine neoplasms: recent progress and persistent challenges.",
+        "doi": "10.1038/s41379-021-00943-2",
+        "first_publication_date": "2021-10-18",
+        "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L03_E02",
+        "L06_E04"
+      ],
+      "pmid": "42308331",
+      "doi": "10.1126/scitranslmed.aea4881",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Clinicogenomic analysis of &lt;i&gt;EGFR&lt;/i&gt;-mutant lung tumors identifies Rb pathway inactivation as a hallmark of squamous transformation.",
+        "doi": "10.1126/scitranslmed.aea4881",
+        "first_publication_date": "2026-06-17",
+        "journal": "Science translational medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L03_E03"
+      ],
+      "pmid": "40350470",
+      "doi": "10.1038/s41467-025-59623-3",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Basal-shift transformation leads to EGFR therapy-resistance in human lung adenocarcinoma.",
+        "doi": "10.1038/s41467-025-59623-3",
+        "first_publication_date": "2025-05-11",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L03_E04"
+      ],
+      "pmid": "31319998",
+      "doi": "10.1016/j.lungcan.2019.05.024",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Paired genomic analysis of squamous cell carcinoma transformed from EGFR-mutated lung adenocarcinoma.",
+        "doi": "10.1016/j.lungcan.2019.05.024",
+        "first_publication_date": "2019-05-24",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L03_E05",
+        "L06_E05"
+      ],
+      "pmid": "42609808",
+      "doi": "10.3389/fonc.2026.1911851",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Case Report: squamous transformation after long-term osimertinib in EGFR-mutant lung adenocarcinoma with retained EGFR/TP53 alterations.",
+        "doi": "10.3389/fonc.2026.1911851",
+        "first_publication_date": "2026-08-03",
+        "journal": "Frontiers in oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L04_E01"
+      ],
+      "pmid": "31228622",
+      "doi": "10.1016/j.jtho.2019.06.002",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Concurrent RB1 and TP53 Alterations Define a Subset of EGFR-Mutant Lung Cancers at risk for Histologic Transformation and Inferior Clinical Outcomes.",
+        "doi": "10.1016/j.jtho.2019.06.002",
+        "first_publication_date": "2019-06-19",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L04_E02"
+      ],
+      "pmid": "34155000",
+      "doi": "10.1158/2159-8290.cd-20-1863",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Multiomic Analysis of Lung Tumors Defines Pathways Activated in Neuroendocrine Transformation.",
+        "doi": "10.1158/2159-8290.cd-20-1863",
+        "first_publication_date": "2021-12-01",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L04_E03"
+      ],
+      "pmid": "32473656",
+      "doi": "10.1016/j.ccell.2020.05.001",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "MYC Drives Temporal Evolution of Small Cell Lung Cancer Subtypes by Reprogramming Neuroendocrine Fate.",
+        "doi": "10.1016/j.ccell.2020.05.001",
+        "first_publication_date": "2020-05-30",
+        "journal": "Cancer cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L04_E04"
+      ],
+      "pmid": "42611544",
+      "doi": "10.1172/jci199454",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Polycomb scaffolding subunit EED supports the SCLC neuroendocrine identity and EGFR-mutant LUAD-to-SCLC transformation.",
+        "doi": "10.1172/jci199454",
+        "first_publication_date": "2026-08-18",
+        "journal": "The Journal of clinical investigation",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L05_E02"
+      ],
+      "pmid": "40248685",
+      "doi": "10.2147/lctt.s516527",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Impact of Subsequent Treatment on Clinical Outcomes in Patients with EGFR-Mutant Non-Small Cell Lung Cancer Transformed to Small-Cell Lung Cancer.",
+        "doi": "10.2147/lctt.s516527",
+        "first_publication_date": "2025-04-12",
+        "journal": "Lung Cancer (Auckland, N.Z.)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L05_E03"
+      ],
+      "pmid": "42664544",
+      "doi": "10.1016/j.lungcan.2026.109590",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Adding immunotherapy to chemotherapy may improve survival after SCLC transformation in EGFR-mutant NSCLC: a multicenter real-world study.",
+        "doi": "10.1016/j.lungcan.2026.109590",
+        "first_publication_date": "2026-08-23",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L05_E04",
+        "L08_E03"
+      ],
+      "pmid": "42605066",
+      "doi": "10.1093/oncolo/oyag328",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Phase II study of olaparib plus durvalumab in EGFR-mutant NSCLC transformed to small cell lung cancer.",
+        "doi": "10.1093/oncolo/oyag328",
+        "first_publication_date": "2026-08-01",
+        "journal": "The oncologist",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L05_E05"
+      ],
+      "pmid": "41256964",
+      "doi": "10.1016/j.jtocrr.2025.100913",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "DLL3 Immunohistochemical Expression in Neuroendocrine-Transformed &lt;i&gt;EGFR&lt;/i&gt;-Mutant Lung Cancer and Two Cases of Tarlatamab Therapy.",
+        "doi": "10.1016/j.jtocrr.2025.100913",
+        "first_publication_date": "2025-09-30",
+        "journal": "JTO clinical and research reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L06_E01"
+      ],
+      "pmid": "30642539",
+      "doi": "10.1016/j.lungcan.2018.11.016",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Outcome of EGFR-mutated adenocarcinoma NSCLC patients with changed phenotype to squamous cell carcinoma after tyrosine kinase inhibitors: A pooled analysis with an additional case.",
+        "doi": "10.1016/j.lungcan.2018.11.016",
+        "first_publication_date": "2018-11-13",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L06_E02"
+      ],
+      "pmid": "30101911",
+      "doi": "10.2169/internalmedicine.0999-18",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "An EGFR-mutated Lung Adenocarcinoma Undergoing Squamous Cell Carcinoma Transformation Exhibited a Durable Response to Afatinib.",
+        "doi": "10.2169/internalmedicine.0999-18",
+        "first_publication_date": "2018-08-10",
+        "journal": "Internal medicine (Tokyo, Japan)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L06_E03"
+      ],
+      "pmid": "38361740",
+      "doi": "10.1016/j.jtocrr.2024.100639",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Long-Term Efficacy of Immune Checkpoint Inhibitor for Squamous Cell Carcinoma Lesion Transformed From <i>EGFR</i>-Mutated Adenocarcinoma After Osimertinib Treatment: A Case Report.",
+        "doi": "10.1016/j.jtocrr.2024.100639",
+        "first_publication_date": "2024-01-20",
+        "journal": "JTO clinical and research reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L07_E02"
+      ],
+      "pmid": "39556978",
+      "doi": "10.1016/j.lungcan.2024.107972",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Combined analysis of circulating tumor DNA and tumor tissue to overcome osimertinib resistance (OSIRIS); the second line osimertinib cohort.",
+        "doi": "10.1016/j.lungcan.2024.107972",
+        "first_publication_date": "2024-09-28",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L07_E03"
+      ],
+      "pmid": "35066105",
+      "doi": "10.1016/j.annonc.2022.01.004",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Single-cell DNA-seq depicts clonal evolution of multiple driver alterations in osimertinib-resistant patients.",
+        "doi": "10.1016/j.annonc.2022.01.004",
+        "first_publication_date": "2022-01-21",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L07_E04"
+      ],
+      "pmid": "32822576",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+        "doi": "10.1016/j.cell.2020.07.017",
+        "first_publication_date": "2020-08-20",
+        "journal": "Cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L07_E05"
+      ],
+      "pmid": "38912901",
+      "doi": "10.1158/1078-0432.ccr-24-0466",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Detecting Small Cell Transformation in Patients with Advanced EGFR Mutant Lung Adenocarcinoma through Epigenomic cfDNA Profiling.",
+        "doi": "10.1158/1078-0432.ccr-24-0466",
+        "first_publication_date": "2024-09-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L08_E01"
+      ],
+      "pmid": "",
+      "doi": "10.1200/jco.2026.44.16_suppl.e23350",
+      "provider": "Crossref",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Real-world outcomes of tarlatamab across small cell carcinoma subtypes, including transformed and non-lung primary.",
+        "doi": "10.1200/jco.2026.44.16_suppl.e23350",
+        "first_publication_date": [
+          [
+            2026,
+            6,
+            1
+          ]
+        ],
+        "journal": "Journal of Clinical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L08_E02"
+      ],
+      "pmid": "41166675",
+      "doi": "10.1200/po-25-00538",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Multi-Institution Analysis of Tarlatamab for the Treatment of &lt;i&gt;EGFR&lt;/i&gt;-Mutant Transformed Small Cell Lung Cancer.",
+        "doi": "10.1200/po-25-00538",
+        "first_publication_date": "2025-10-30",
+        "journal": "JCO precision oncology",
+        "abstract_available": false
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L08_E04"
+      ],
+      "pmid": "42519408",
+      "doi": "10.1016/j.jtocrr.2026.101018",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "&lt;i&gt;EGFR&lt;/i&gt; Wild-Type Sarcomatoid Carcinoma as Acquired Resistance to Tarlatamab in Small Cell-Transformed &lt;i&gt;EGFR&lt;/i&gt;-Mutated Lung Adenocarcinoma: A Case Report.",
+        "doi": "10.1016/j.jtocrr.2026.101018",
+        "first_publication_date": "2026-05-18",
+        "journal": "JTO clinical and research reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "L08_E05"
+      ],
+      "pmid": "42699526",
+      "doi": "10.1016/j.jtocrr.2026.101050",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "&lt;i&gt;EGFR&lt;/i&gt;-Mutant Non-Small Cell Lung Cancer With Small Cell Transformation: Clinicopathological Features, Treatment Landscape, and Biomarker Profiles.",
+        "doi": "10.1016/j.jtocrr.2026.101050",
+        "first_publication_date": "2026-07-10",
+        "journal": "JTO clinical and research reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    }
+  ],
+  "scope": "Bibliographic recheck only; node reviewers read abstracts; no claim of full-text or regulatory verification."
+}

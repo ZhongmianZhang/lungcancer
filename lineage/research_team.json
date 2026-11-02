@@ -1,0 +1,62 @@
+{
+  "requested_agents": 8,
+  "completed_agents": 8,
+  "tasks": [
+    {
+      "agent_number": 1,
+      "node_id": "node01",
+      "topic": "同源克隆、分支进化与EGFR保留：谱系身份证不等于药物依赖",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 2,
+      "node_id": "node02",
+      "topic": "SCLC与LCNEC病理分型：形态、NE标志物和标本充分性",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 3,
+      "node_id": "node03",
+      "topic": "鳞状与基底样转化：组织形态、克隆延续和EGFR依赖必须分开",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 4,
+      "node_id": "node04",
+      "topic": "谱系可塑性：TP53/RB1风险背景、MYC–NOTCH状态与PRC2表观遗传重编程",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 5,
+      "node_id": "node05",
+      "topic": "转化SCLC的治疗证据：病理优先、EGFR保留与药物依赖分开",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 6,
+      "node_id": "node06",
+      "topic": "转化鳞癌的治疗证据：保留EGFR、混合病灶与个体化后线讨论",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 7,
+      "node_id": "node07",
+      "topic": "进展取样与多组学：把保留EGFR分配到真实病灶、成分和克隆",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 8,
+      "node_id": "node08",
+      "topic": "临床试验与重要会议：转化人群、靶抗原和治疗序列的证据边界",
+      "completed": true,
+      "evidence_assertions": 5
+    }
+  ]
+}

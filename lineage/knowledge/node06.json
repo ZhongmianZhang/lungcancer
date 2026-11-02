@@ -1,0 +1,219 @@
+{
+  "node_id": "node06",
+  "title": "转化鳞癌的治疗证据：保留EGFR、混合病灶与个体化后线讨论",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "CDKN2A",
+    "CDKN2B",
+    "PIK3CA",
+    "MET",
+    "CD274",
+    "TP63"
+  ],
+  "upstream": [
+    "EGFR-TKI治疗选择压力",
+    "原始腺癌/腺鳞癌取样与克隆异质性",
+    "Rb–AKT–MYC及基质信号"
+  ],
+  "downstream": [
+    "鳞状谱系与EGFR依赖改变",
+    "并行MET等旁路",
+    "病理指导的化疗/靶向/免疫研究讨论"
+  ],
+  "mechanism_zh": [
+    "在EGFR突变腺癌进展后检出鳞癌，首先是需要解释的组织学变化，而不是一个现成药物标签。确认应整合进展病灶形态与免疫组化、原始标本是否充分、病灶部位及配对分子信息，排除原始腺鳞癌漏采样、混合克隆、第二原发或不同病灶分别进展。EMT状态或单个p40/CK5/6指标改变不能独立替代鳞癌病理诊断。",
+    "保留原始EGFR改变支持肿瘤谱系关联，但常见EGFR突变单独并不能证明同一克隆，更不能证明当前仍以EGFR作为主要存活依赖。鳞状重编程可能伴随受体表达、信号连接和细胞状态改变；另一些病灶仍可能保留EGFR依赖。已发表转化SCC的病例汇总与个别阿法替尼响应病例同时说明两点：EGFR信号不应机械忽略，也不应仅凭EGFR DNA仍在就一律继续或重用TKI。",
+    "转化鳞癌后缺少经过随机比较验证的固定治疗顺序。系统治疗讨论需要以本次病理、疾病分布、原先含铂方案与进展时间、毒性及器官功能为依据。含铂或紫杉类等方案的病例经验可以提供研究线索，但一般鳞癌的治疗证据不能不加分层地替代EGFR转化SCC；已经接受奥希替尼加化疗的人群更不能机械重复既往方案。肿瘤委员会应保留局部进展与全身进展、纯转化成分与残留腺癌的区别。",
+    "免疫治疗也需要保留正反两面的证据边界。奥希替尼后转化SCC存在帕博利珠单抗长期响应的个案，因此不宜断言所有患者都无效；但PD-L1升高、CD274扩增或鳞癌病理并不自动构成EGFR转化肿瘤的免疫单药预测标志。2026年一个化疗免疫联合响应病例无法拆分各药物贡献，不能用来建立标准三药组合。联合及序贯的安全性仍需独立评估。",
+    "新的鳞状转化研究还提示Rb/AKT/MYC状态和MET等并行信号的重要性。2026年临床多组学与模型研究中，EGFR和MET联合抑制的抗肿瘤结果来自转化模型，是功能研究线索，不是患者临床标准。程序必须区分MET转录或蛋白上调、局灶扩增和真实药物依赖；即使识别到旁路，也需由同一进展病灶的病理与分子结果整合判断，不能自动叠加多种抑制剂。",
+    "当前纳入的治疗证据多为其他EGFR-TKI后或奥希替尼后的少量病例、病例汇总和模型，没有在这里得到核实的奥希替尼同期联合铂类/培美曲塞后转化SCC随机治疗证据。特别是“奥希替尼后先化疗、再发现鳞癌”的时间线，不等同于“奥希替尼加化疗同步治疗后发生转化”。输出应因此保留研究性质、病理复核和临床试验资格核查，而不生成个体处方或响应概率。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展组织确认鳞癌，并保留原始EGFR",
+      "meaning": "支持组织学变化与原EGFR肺癌有关，可进一步研究残留驱动依赖与克隆分布。",
+      "limitations": "需排除漏采样、混合腺鳞癌和第二原发；EGFR保留不能单独证明依赖，也不能自动决定继续奥希替尼。"
+    },
+    {
+      "marker": "高PD-L1或CD274扩增",
+      "meaning": "提示免疫表型改变，可作为分层研究信息。",
+      "limitations": "没有经验证的转化EGFR肺癌预测阈值；不能套用de novo鳞癌免疫试验，也不能由单病例推群体药敏。"
+    },
+    {
+      "marker": "MET通路上调、MET扩增或获得性其他驱动",
+      "meaning": "可能为与谱系转化并存的旁路或模型脆弱点。",
+      "limitations": "表达、拷贝数与依赖不是同一概念；需具体检测、细胞区室和功能证据，模型结果不等于患者联合标准。"
+    },
+    {
+      "marker": "不同病灶分别为腺癌和鳞癌",
+      "meaning": "提示疾病可能存在混合谱系与不同治疗敏感克隆。",
+      "limitations": "单次血浆或单病灶结果不能代表全部肿瘤；不能把多个结果当同一克隆或将所有匹配药物自动拼接。"
+    },
+    {
+      "marker": "原有T790M丢失而敏感型EGFR仍在",
+      "meaning": "可提示克隆构成和药物选择压力改变。",
+      "limitations": "不是“没有T790M就应使用阿法替尼”的规则，需与病理、其他耐药事件和既往药物共同审查。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "按转化病理和既往治疗讨论系统化疗，而非机械重复原方案",
+      "status": "standard_other_setting",
+      "evidence_ids": [
+        "L06_E01",
+        "L06_E05"
+      ],
+      "setting": "一般鳞癌经验及转化SCC个案；本目标治疗序列缺乏固定方案比较",
+      "limitations": "需整合已用铂类、间隔、器官功能、全身/局部进展；单病例的化疗免疫联合不能拆分疗效贡献，不输出药物剂量。"
+    },
+    {
+      "strategy": "保留/重用EGFR-TKI仅作为克隆和依赖性明确后的MDT研究讨论",
+      "status": "investigational",
+      "evidence_ids": [
+        "L06_E01",
+        "L06_E02"
+      ],
+      "setting": "部分转化病例仍可响应；其他EGFR-TKI后病例与奥希替尼加化疗后不同",
+      "limitations": "不支持“EGFR仍在即继续奥希替尼”；阿法替尼个案不是通用后线标准，也不能决定混合病灶整体方案。"
+    },
+    {
+      "strategy": "不根据鳞状病理或PD-L1高自动选择免疫单药",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L06_E03",
+        "L06_E05"
+      ],
+      "setting": "存在个体免疫响应报告，但非转化SCC群体级验证",
+      "limitations": "既不能宣称免疫一律无效，也不能借de novoSCC随机试验或单病例建立本序列药敏；适应证与组合安全须独立核查。"
+    },
+    {
+      "strategy": "MET等旁路与谱系的联合功能研究及临床试验匹配",
+      "status": "investigational",
+      "evidence_ids": [
+        "L06_E04"
+      ],
+      "setting": "转化SCC的临床多组学加遗传工程/PDX模型",
+      "limitations": "联合EGFR和MET抑制的治疗结果在模型中，尚不是奥希替尼加化疗后患者已验证治疗标准。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "L06_E01",
+      "title": "Outcome of EGFR-mutated adenocarcinoma NSCLC patients with changed phenotype to squamous cell carcinoma after tyrosine kinase inhibitors: A pooled analysis with an additional case.",
+      "authors": "Roca E, Pozzari M, Vermi W, Tovazzi V, Baggi A, Amoroso V, Nonnis D, Intagliata S, Berruti A.",
+      "year": 2019,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2018.11.016",
+      "pmid": "30642539",
+      "publication_date": "2018-11-13",
+      "url": "https://doi.org/10.1016/j.lungcan.2018.11.016",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "已发表病例汇总与新增病例提示，EGFR肺腺癌转为鳞状表型后可继续保留基线EGFR变异，但临床结局差异和治疗资料高度异质。",
+      "limitation_zh": "小规模病例汇总、发表与选择偏倚明显，包含不同代EGFR-TKI；不能估算现今患者的转化发生率或据此规定治疗顺序，更非奥希替尼同期化疗后专属证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30642539+OR+EXT_ID%3A30101911+OR+EXT_ID%3A38361740+OR+EXT_ID%3A42308331+OR+EXT_ID%3A42609808%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:35:53+00:00"
+      }
+    },
+    {
+      "id": "L06_E02",
+      "title": "An EGFR-mutated Lung Adenocarcinoma Undergoing Squamous Cell Carcinoma Transformation Exhibited a Durable Response to Afatinib.",
+      "authors": "Sato M, Matsui A, Shimoyama Y, Omote N, Morise M, Hase T, Tanaka I, Suzuki K, Hasegawa Y.",
+      "year": 2018,
+      "journal": "Internal medicine (Tokyo, Japan)",
+      "doi": "10.2169/internalmedicine.0999-18",
+      "pmid": "30101911",
+      "publication_date": "2018-08-10",
+      "url": "https://doi.org/10.2169/internalmedicine.0999-18",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "case_report",
+      "main_finding_zh": "一例早代EGFR-TKI后转为鳞癌的EGFR突变肺癌获得阿法替尼持续响应，说明部分转化肿瘤可能仍有可利用的EGFR依赖。",
+      "limitation_zh": "单病例且并非奥希替尼联合化疗耐药；不能从保留EGFR或一个成功病例推出所有转化SCC应重启阿法替尼、维持奥希替尼或使用某种固定组合。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30642539+OR+EXT_ID%3A30101911+OR+EXT_ID%3A38361740+OR+EXT_ID%3A42308331+OR+EXT_ID%3A42609808%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:35:53+00:00"
+      }
+    },
+    {
+      "id": "L06_E03",
+      "title": "Long-Term Efficacy of Immune Checkpoint Inhibitor for Squamous Cell Carcinoma Lesion Transformed From EGFR-Mutated Adenocarcinoma After Osimertinib Treatment: A Case Report.",
+      "authors": "Takahashi S, Sato Y, Sato Y, Hirabayashi R, Hara S, Takahashi Y, Tomii K.",
+      "year": 2024,
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2024.100639",
+      "pmid": "38361740",
+      "publication_date": "2024-01-20",
+      "url": "https://doi.org/10.1016/j.jtocrr.2024.100639",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_report",
+      "main_finding_zh": "奥希替尼后经组织确认的鳞状转化病灶保留EGFR L858R，报告了帕博利珠单抗单药的长期响应及较高PD-L1表达。",
+      "limitation_zh": "单病例只说明个体响应可能存在；没有对照、统一人群或经验证的预测阈值，不能把PD-L1高或转化为SCC当作免疫单药适应证，也不能宣称免疫一律无效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30642539+OR+EXT_ID%3A30101911+OR+EXT_ID%3A38361740+OR+EXT_ID%3A42308331+OR+EXT_ID%3A42609808%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:35:53+00:00"
+      }
+    },
+    {
+      "id": "L06_E04",
+      "title": "Clinicogenomic analysis of EGFR-mutant lung tumors identifies Rb pathway inactivation as a hallmark of squamous transformation.",
+      "authors": "Dymun A, Jeng MY, Elkrief A, Mehrotra H, Yang SR, Wilson C, Rekhtman N, Linkov I, Pupo A, Falcon C, Wilhelm CJ, Manoj P, Zhong H, Sridhar H, Kris MG, Socci ND, Qiu J, de Stanchina E, Richards AL, Donoghue MTA, Rudin CM, Yu HA, Quintanal-Villalonga Á.",
+      "year": 2026,
+      "journal": "Science translational medicine",
+      "doi": "10.1126/scitranslmed.aea4881",
+      "pmid": "42308331",
+      "publication_date": "2026-06-17",
+      "url": "https://doi.org/10.1126/scitranslmed.aea4881",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "临床多组学发现鳞状转化与Rb/AKT通路失活或激活背景相关；遗传工程和患者来源模型提示MET信号上调，联合EGFR与MET抑制在转化模型中抑制生长。",
+      "limitation_zh": "这是临床样本分析结合功能模型的转化研究，药物效果来自模型；MET通路上调不等于MET局灶扩增，不能据此确立患者EGFR+MET联合标准或证明所有鳞状转化均同一依赖。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30642539+OR+EXT_ID%3A30101911+OR+EXT_ID%3A38361740+OR+EXT_ID%3A42308331+OR+EXT_ID%3A42609808%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:35:53+00:00"
+      }
+    },
+    {
+      "id": "L06_E05",
+      "title": "Case Report: squamous transformation after long-term osimertinib in EGFR-mutant lung adenocarcinoma with retained EGFR/TP53 alterations.",
+      "authors": "Xu L, Zhang D, Chen X, Wang L, Liu Q.",
+      "year": 2026,
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2026.1911851",
+      "pmid": "42609808",
+      "publication_date": "2026-08-03",
+      "url": "https://doi.org/10.3389/fonc.2026.1911851",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "case_report",
+      "main_finding_zh": "病例在长期奥希替尼后先接受培美曲塞/顺铂，再由重复活检确认鳞癌并保留EGFR/TP53；随后含铂、白蛋白紫杉醇与替雷利珠单抗联合后出现影像响应。",
+      "limitation_zh": "奥希替尼后序贯化疗不等同于奥希替尼同期联合化疗后耐药；单病例不能区分化疗与免疫贡献，也不能建立转化SCC的标准三药方案。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A30642539+OR+EXT_ID%3A30101911+OR+EXT_ID%3A38361740+OR+EXT_ID%3A42308331+OR+EXT_ID%3A42609808%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:35:53+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "需要在奥希替尼同期联合化疗后的真实进展队列中，前瞻性配对组织、病灶、血浆与治疗结果，而不是将单药后和序贯化疗后合并。",
+    "需要比较由EGFR依赖、旁路驱动、纯谱系转化或混合克隆主导的转化SCC，建立治疗分层而非按一个EGFR阳性结果分组。",
+    "缺乏转化SCC中继续EGFR抑制与停止/更换策略的随机或可靠前瞻性比较；个案成功存在显著发表偏倚。",
+    "需要专门研究免疫治疗预测、MET等旁路的临床可行动性、以及不同病灶谱系的动态变化；不能以病理或PD-L1单变量代替。"
+  ]
+}

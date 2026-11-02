@@ -1,0 +1,111 @@
+{
+  "preferred_provider": "Firecrawl",
+  "provider_requested": "auto",
+  "searched_at": "2026-11-02T10:59:55+00:00",
+  "query": "TITLE_ABS:EGFR AND (TITLE_ABS:transformation OR TITLE_ABS:\"lineage plasticity\")",
+  "attempts": [
+    {
+      "provider": "Firecrawl",
+      "status": "unavailable_or_failed",
+      "kind": "missing_credential",
+      "http_status": null
+    },
+    {
+      "provider": "Europe PMC",
+      "status": "executed",
+      "retrieval": {
+        "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3AEGFR+AND+%28TITLE_ABS%3Atransformation+OR+TITLE_ABS%3A%22lineage+plasticity%22%29%29+AND+FIRST_PDATE%3A%5B2016-11-02+TO+2026-11-02%5D&format=json&resultType=core&pageSize=10&cursorMark=%2A",
+        "cached": false,
+        "retrieved_at": "2026-11-02T10:59:58+00:00"
+      }
+    }
+  ],
+  "results": [
+    {
+      "title": "Plasticity in EGFR-mutant NSCLC: SCLC transformation and subsequent re-emergence: case report.",
+      "pmid": "42494602",
+      "doi": "10.3389/fonc.2026.1902531",
+      "publication_date": "2026-07-09",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42494602/"
+    },
+    {
+      "title": "Lineage plasticity and immune invisibility in primary SCLC and LUAD-to-SCLC transformation: antigen presentation loss and therapeutic redirection.",
+      "pmid": "42761714",
+      "doi": "10.3389/fimmu.2026.1900927",
+      "publication_date": "2026-09-04",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42761714/"
+    },
+    {
+      "title": "Squamous transformation of EGFR-mutant lung adenocarcinoma after EGFR-TKI therapy: clonal continuity, tissue-based diagnosis, and therapeutic evidence gaps.",
+      "pmid": "42609500",
+      "doi": "10.3389/fonc.2026.1910407",
+      "publication_date": "2026-08-03",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42609500/"
+    },
+    {
+      "title": "Lineage Plasticity and Histologic Transformation in EGFR-TKI Resistant Lung Cancer.",
+      "pmid": "41516316",
+      "doi": "10.3390/ijms27010445",
+      "publication_date": "2025-12-31",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41516316/"
+    },
+    {
+      "title": "Adaptive lineage plasticity drives multidrug resistance to KRAS-EGFR targeted therapy.",
+      "pmid": "42055935",
+      "doi": "10.1016/j.drup.2026.101407",
+      "publication_date": "2026-04-27",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42055935/"
+    },
+    {
+      "title": "Single-cell profiling of tumor lineage plasticity and the immune microenvironment in transformed small cell lung cancer.",
+      "pmid": "41781968",
+      "doi": "10.1186/s12967-026-07940-6",
+      "publication_date": "2026-03-04",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41781968/"
+    },
+    {
+      "title": "EGFR Wild-Type Sarcomatoid Carcinoma as Acquired Resistance to Tarlatamab in Small Cell-Transformed EGFR-Mutated Lung Adenocarcinoma: A Case Report.",
+      "pmid": "42519408",
+      "doi": "10.1016/j.jtocrr.2026.101018",
+      "publication_date": "2026-05-18",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42519408/"
+    },
+    {
+      "title": "Prolonged survival in a 57-year-old female with RB1-wildtype transformed small-cell lung cancer treated with immunochemotherapy and antiangiogenic combined therapy: a case report.",
+      "pmid": "42871379",
+      "doi": "10.21037/acr-2026-0089",
+      "publication_date": "2026-07-16",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42871379/"
+    },
+    {
+      "title": "Lineage plasticity: a new dilemma in lung cancer treatment.",
+      "pmid": "41636935",
+      "doi": "10.1007/s11033-026-11516-4",
+      "publication_date": "2026-02-04",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41636935/"
+    },
+    {
+      "title": "PIK3CA in the transformation of EGFR ‑mutant lung adenocarcinoma to small cell lung cancer following acquired targeted therapy resistance.",
+      "pmid": "42624799",
+      "doi": "10.1097/cm9.0000000000004271",
+      "publication_date": "2026-08-21",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42624799/"
+    }
+  ],
+  "status": "complete",
+  "case_analysis_inputs_accessed": false,
+  "actual_provider": "Europe PMC",
+  "total_hits": 905,
+  "result_count": 10,
+  "truncated": true
+}

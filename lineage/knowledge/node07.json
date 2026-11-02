@@ -1,0 +1,227 @@
+{
+  "node_id": "node07",
+  "title": "进展取样与多组学：把保留EGFR分配到真实病灶、成分和克隆",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "KRAS",
+    "BRAF",
+    "RET",
+    "ALK",
+    "FGFR3"
+  ],
+  "upstream": [
+    "实际治疗序列",
+    "基线与进展组织的代表性",
+    "多病灶空间异质性",
+    "样本释放与检测覆盖"
+  ],
+  "downstream": [
+    "组织表型确认",
+    "同源克隆证据强度",
+    "EGFR功能依赖的独立验证",
+    "病理分层的治疗讨论"
+  ],
+  "mechanism_zh": [
+    "保留原始EGFR突变首先回答的是遗传背景问题，不能直接回答“目前哪一个病灶、哪一类细胞仍含该变异”。血浆ctDNA通常混合来自不同病灶和不同肿瘤成分的DNA；即使在进展时仍检出相同EGFR，信号也可能主要来自残留腺癌，而关键进展病灶已经发生神经内分泌或鳞状转化。将基线、进展病灶、血浆和影像放到同一时间轴，并确认取样确实代表失败部位，是从检出信号走向机制解释的第一步。",
+    "判断同源转化、原先漏采的混合/腺鳞成分或第二原发，需要比较基线与本次充分组织的形态、免疫表型及分子事件。共同的创始EGFR是支持线索，但常见驱动突变本身不构成唯一的谱系指纹；更多共享体细胞事件、拷贝结构或系统发育证据可以加强同源判断。反之，样本不足、肿瘤含量低、平台覆盖不一致或只测到另一病灶，也可能造成表面上的基因差异。不能因一个共同基因就排除第二原发，也不能因一次EGFR未检出就断言没有转化。",
+    "bulk组织或血浆中的多驱动共检出不能自动分配到同一细胞或同一克隆。MATCH-R只在4份充分可分析的单细胞样本中直接验证双驱动共存；其价值在于证明该现象可以发生，而不是赋予所有共检出样本同一结论。单细胞DNA可补充遗传共存和克隆结构，但仍须与组织形态、取样位置及临床演化整合，不能单靠DNA共存判定小细胞形态或EGFR药物依赖。",
+    "单细胞RNA、空间表达和多组学有助于区分残留、进展、谱系可塑性及微环境状态。Maynard的临床活检图谱说明细胞状态随治疗变化，却不能据某次表达簇或少数NE转录因子就补造SCLC确诊。解离选择、低丰度细胞、RNA掉落、批次和正常组织混入都可能影响表达；EGFR RNA下降不是DNA丢失的同义词，DNA仍在也不是持续信号成瘾的证明。需要病理和必要的功能干预来分别检验这些层面。",
+    "组织DNA/RNA与血浆具有互补性。OSIRIS在二/三线奥希替尼进展患者中将两种材料及组织学联合，可识别单一材料遗漏的机制；平台、检测范围、肿瘤含量与采样时间决定检出差异。因此血浆阴性不能排除组织转化或其他耐药，液体拷贝数/融合未检出也不能当作确定阴性。孤立CNS或寡进展时，全身血浆尤其可能不能代表关键部位；进一步脑脊液或组织取样应由临床指征、安全性和可行性决定，而不是由程序机械要求侵入性操作。",
+    "常规血浆DNA突变面板不能观察细胞形态，但不能据此否定全部液体表观组研究。2024年的cfDNA研究结合甲基化、染色质相关特征，在研究队列中显示区分EGFR突变LUAD与转化SCLC的可行性。这类分类器可以产生需要进一步取样的研究线索；其研究队列AUROC、阈值或分数不能直接移植为本治疗序列的确诊标准，更不能把一个液体分数自动变成SCLC治疗。当前应保留充分组织病理与临床整合的位置。",
+    "治疗判读应以当前主导进展的已证实表型为基础，再讨论多成分和多克隆背景，而非仅凭仍有EGFR选择继续或停用TKI。配对组织、成分分离的DNA/RNA和必要的患者匹配模型可为“哪一群细胞仍依赖EGFR”提供更强假说，但模型药敏仍不等于患者获益。奥希替尼后、随后再接受化疗与真正同期奥希替尼＋化疗后进展不同；本节点所列研究不提供该完整序列的统一转化发生率、诊断性能或标准组合用药。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展病灶组织＋基线组织的可比性",
+      "meaning": "将当前形态改变放回既往肿瘤背景，识别已报告表型改变及混合成分。",
+      "limitations": "原始小活检可能漏采腺鳞/NE成分；当前病灶也未必代表所有病灶。样本不足时应保留未定，不能由算法补全病理。"
+    },
+    {
+      "marker": "血浆仍检出创始EGFR",
+      "meaning": "支持体内仍有释放该EGFR变异的细胞群，适合动态跟踪。",
+      "limitations": "不能定位到转化病灶/成分，不能独立证明同源、同克隆、当前形态或EGFR功能依赖。"
+    },
+    {
+      "marker": "配对组织共享额外体细胞事件或拷贝结构",
+      "meaning": "可增强共同祖先及分支演化的解释。",
+      "limitations": "需要排除样本/肿瘤含量和检测差异；不能将共同常见EGFR本身当唯一谱系指纹。"
+    },
+    {
+      "marker": "单细胞DNA共驱动、RNA细胞状态或空间表达",
+      "meaning": "分别补充克隆遗传共存、转录状态和细胞位置关系。",
+      "limitations": "三类测量不能互相替代；表达聚类不能自动确诊转化，基因共存不直接证明依赖或药敏。"
+    },
+    {
+      "marker": "血浆DNA阴性或未发现新驱动",
+      "meaning": "仅描述本次平台和样本没有检出的结果。",
+      "limitations": "低释放、CNS病灶、覆盖不足及非遗传转化均可能解释，不能据此排除耐药或组织转化。"
+    },
+    {
+      "marker": "cfDNA甲基化/表观组转化分类器",
+      "meaning": "研究中能够提供不同于普通突变面板的谱系/表型线索。",
+      "limitations": "尚不能按研究性能或分数代替病理确诊；本模块不设置跨平台诊断阈值，也不由分类器结果直接配药。"
+    },
+    {
+      "marker": "进展模式与同期采样时间",
+      "meaning": "区分全身、寡进展及中枢失败，使取样对应真正的临床问题。",
+      "limitations": "不同病灶可有不同机制；额外取样须经临床安全与可行性评估，不能一律重复有创操作。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "先以代表性进展组织病理、配对DNA/RNA及必要液体补充完成表型和来源分流，再进入相应治疗讨论。",
+      "status": "standard_other_setting",
+      "evidence_ids": [
+        "L07_E01",
+        "L07_E02",
+        "L07_E03"
+      ],
+      "setting": "一般机制复核与病理整合实践；所列人群主要为奥希替尼进展，非同期联合化疗后专属治疗试验。",
+      "limitations": "补充诊断不等于已证实药物疗效；临床安全性和可行性决定是否再次活检，不能由单个血浆结果自动切换或延续TKI。"
+    },
+    {
+      "strategy": "对混合病灶/残留腺癌与转化成分分别研究克隆及功能依赖，讨论成分匹配的MTB或临床试验路径。",
+      "status": "investigational",
+      "evidence_ids": [
+        "L07_E01",
+        "L07_E03",
+        "L07_E04"
+      ],
+      "setting": "经充分病理与分子资料支持的多成分或多克隆进展。",
+      "limitations": "单细胞共存、RNA表达或患者模型信号不能直接构成组合处方，也不能保证本治疗序列获益。"
+    },
+    {
+      "strategy": "仅凭保留EGFR、一次ctDNA阴性、NE表达簇或液体表观组分数，直接判断SCLC/鳞转化并匹配治疗。",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L07_E01",
+        "L07_E02",
+        "L07_E04",
+        "L07_E05"
+      ],
+      "setting": "缺少充分当前病理或成分来源不明的样本。",
+      "limitations": "应阻断自动诊断和药物匹配；研究性液体分类器只作为复核线索，不能替代临床病理整合。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "L07_E01",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31911548/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "在奥希替尼治疗前后配对组织队列中发现鳞状等组织学转化及并行分子改变，说明仅血浆面板无法覆盖形态与全部耐药事件。",
+      "limitation_zh": "队列经过可获得治疗前后组织及测序的选择，不提供人群统一转化发生率；一线/后线奥希替尼后不等于同期奥希替尼＋化疗后专属证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A39556978+OR+EXT_ID%3A35066105+OR+EXT_ID%3A28498782%29&format=json&resultType=core&pageSize=100",
+        "checked_at": "2026-11-02T10:41:42+00:00"
+      }
+    },
+    {
+      "id": "L07_E02",
+      "title": "Combined analysis of circulating tumor DNA and tumor tissue to overcome osimertinib resistance (OSIRIS); the second line osimertinib cohort.",
+      "authors": "van der Wel JWT, Jebbink M, van den Broek D, Steinbusch LC, Theelen WSME, Ruiter G, Buikhuisen W, Burgers JA, Baas P, Vermeulen M, van der Noort V, Hashemi SMS, Bosch LJW, Monkhorst K, Smit EF, Boelens MC, de Langen AJ.",
+      "year": 2024,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2024.107972",
+      "pmid": "39556978",
+      "publication_date": "2024-09-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39556978/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "OSIRIS在51例二/三线奥希替尼进展患者中联合血浆、组织DNA/RNA及病理分析，发现两类样本识别耐药事件具有互补性。",
+      "limitation_zh": "不同平台覆盖和检出条件影响一致性；该研究的VAF定义不是通用阈值，血浆阴性不能排除机制，且本队列并非奥希替尼＋化疗同期联合后专属人群。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A39556978+OR+EXT_ID%3A35066105+OR+EXT_ID%3A28498782%29&format=json&resultType=core&pageSize=100",
+        "checked_at": "2026-11-02T10:41:42+00:00"
+      }
+    },
+    {
+      "id": "L07_E03",
+      "title": "Single-cell DNA-seq depicts clonal evolution of multiple driver alterations in osimertinib-resistant patients.",
+      "authors": "Chen J, Facchinetti F, Braye F, Yurchenko AA, Bigot L, Ponce S, Planchard D, Gazzah A, Nikolaev S, Michiels S, Vasseur D, Lacroix L, Tselikas L, Nobre C, Olaussen KA, Andre F, Scoazec JY, Barlesi F, Soria JC, Loriot Y, Besse B, Friboulet L.",
+      "year": 2022,
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "doi": "10.1016/j.annonc.2022.01.004",
+      "pmid": "35066105",
+      "publication_date": "2022-01-21",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35066105/",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "prospective",
+      "main_finding_zh": "MATCH-R在45例奥希替尼进展患者中识别第二驱动；仅4份充分可分析的单细胞样本实际证实两驱动可共存于同一个癌细胞，并揭示克隆异质性。",
+      "limitation_zh": "不能把4份可分析样本的结论推广成所有血浆/组织bulk共检出均属同一克隆；DNA共存也不能单独确定细胞形态或EGFR功能依赖。不是本联合化疗序列的直接治疗证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31911548+OR+EXT_ID%3A39556978+OR+EXT_ID%3A35066105+OR+EXT_ID%3A28498782%29&format=json&resultType=core&pageSize=100",
+        "checked_at": "2026-11-02T10:41:42+00:00"
+      }
+    },
+    {
+      "id": "L07_E04",
+      "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+      "authors": "Maynard A, McCoach CE, Rotow JK, Harris L, Haderk F, Kerr DL, Yu EA, Schenk EL, Tan W, Zee A, Tan M, Gui P, Lea T, Wu W, Urisman A, Jones K, Sit R, Kolli PK, Seeley E, Gesthalter Y, Le DD, Yamauchi KA, Naeger DM, Bandyopadhyay S, Shah K, Cech L, Thomas NJ, Gupta A, Gonzalez M, Do H, Tan L, Bacaltos B, Gomez-Sjoberg R, Gubens M, Jahan T, Kratz JR, Jablons D, Neff N, Doebele RC, Weissman J, Blakely CM, Darmanis S, Bivona TG.",
+      "year": 2020,
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "pmid": "32822576",
+      "publication_date": "2020-08-20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32822576/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "以30例患者49次临床活检的单细胞RNA图谱，描绘靶向治疗前、残留和进展阶段肿瘤及微环境的细胞状态差异。",
+      "limitation_zh": "人体观察性/转化样本分析并非随机干预，也不能假定每位患者都有完整纵向取样。RNA表达或聚类只能提出状态假说，不单独证明遗传谱系、形态转化或临床药敏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.cell.2020.07.017%22&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-02T10:41:42+00:00"
+      }
+    },
+    {
+      "id": "L07_E05",
+      "title": "Detecting Small Cell Transformation in Patients with Advanced EGFR Mutant Lung Adenocarcinoma through Epigenomic cfDNA Profiling.",
+      "authors": "El Zarif T, Meador CB, Qiu X, Seo JH, Davidsohn MP, Savignano H, Lakshminarayanan G, McClure HM, Canniff J, Fortunato B, Li R, Banwait MK, Semaan K, Eid M, Long H, Hung YP, Mahadevan NR, Barbie DA, Oser MG, Piotrowska Z, Choueiri TK, Baca SC, Hata AN, Freedman ML, Berchuck JE.",
+      "year": 2024,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-24-0466",
+      "pmid": "38912901",
+      "publication_date": "2024-09-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38912901/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "研究将PDX多组学与患者血浆cfDNA表观组结合，显示在研究队列中以甲基化、染色质相关特征区分EGFR突变LUAD与转化SCLC的可行性。",
+      "limitation_zh": "包含模型与患者比较的转化研究；分类器性能不等于在所有奥希替尼＋化疗后患者中经过前瞻临床验证。研究性cfDNA表观组提示不能替代充分组织的病理确认，也不能据其分数直接选药。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A38912901+OR+EXT_ID%3A41931739%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-02T10:41:42+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少针对真正同期奥希替尼＋化疗后进展人群、统一多病灶取样与中央病理审查的前瞻队列。",
+    "需要将纵向cfDNA表观组分类器与组织病理、空间成分及克隆测量前瞻比较，而非只报告研究队列AUROC。",
+    "仍需明确多部位异质性、CNS低释放和先后化疗对血浆信号的影响，避免把采样差异误判为谱系变化。",
+    "同源性、EGFR表达和功能依赖应独立测量，并由真正的转化后治疗队列验证临床可行动性。"
+  ],
+  "retrieval_note": "Firecrawl工具、CLI及现成API凭据在本会话不可用（由主代理核对）；本节点实际使用Europe PMC公开接口，保留代理与TLS验证。没有把题录下载称为全文审阅。"
+}

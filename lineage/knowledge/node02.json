@@ -1,0 +1,222 @@
+{
+  "node_id": "node02",
+  "title": "SCLC与LCNEC病理分型：形态、NE标志物和标本充分性",
+  "genes": [
+    "INSM1",
+    "SYP",
+    "CHGA",
+    "NCAM1",
+    "MKI67",
+    "NKX2-1",
+    "TP63",
+    "RB1",
+    "TP53",
+    "EGFR"
+  ],
+  "upstream": [
+    "治疗选择压力",
+    "谱系可塑性",
+    "进展病灶取样",
+    "治疗前病理与分子背景"
+  ],
+  "downstream": [
+    "神经内分泌形态",
+    "SCLC/LCNEC分类",
+    "转化后治疗分流",
+    "多病灶/混合组织复核"
+  ],
+  "mechanism_zh": [
+    "小细胞或大细胞神经内分泌转化首先是组织病理问题，而不是一组DNA变异或某个抗体阳性的同义词。应比较治疗前腺癌与本次进展病灶的形态，结合细胞大小、核质比例、染色质、核仁、核塑形、坏死和有丝分裂等整体表现，由胸部病理专业人员形成诊断。组织很少、明显挤压/坏死或缺乏肿瘤成分时，算法应输出样本不足/需要复核，而不是按快速进展、EGFR仍阳性或TP53/RB1改变自动诊断SCLC。WHO与IASLC资料都把形态放在免疫组化和分子证据之前。",
+    "INSM1、突触素SYP、嗜铬粒蛋白CHGA和CD56/NCAM1是NE分化的支持证据，各有敏感性、特异性和样本依赖。INSM1核染色有诊断价值，但它也可见于类癌、LCNEC，少量非NE肺癌亦能阳性，不能只凭一个阳性标志物赋予SCLC标签。相反，一些SCLC属于NE低/阴性表型，不能因为常规NE面板阴性就机械排除。TTF1/NKX2-1阳性并不独立证明仍是腺癌；p40等鳞状标志物也应在相应形态和背景中解释，必要时排查基底样鳞癌、其他小蓝细胞肿瘤及转移性肿瘤。",
+    "Ki67/MKI67反映增殖，不是跨标本、跨亚型通用的组织转化确诊开关。它对某些高增殖类癌与NE癌的鉴别有辅助价值，但挤压、标本大小、取样部位及计数方法会影响解释。SCLC与LCNEC之间仍需细胞学及结构特征的整合；LCNEC在小活检尤其困难。程序应记录病理会诊结论和样本可判读性，保留未定型的高级别NE癌类别，而不能预设一个Ki67阈值把所有病例切为SCLC/非SCLC。",
+    "转化后继续检测到原始EGFR突变，可以作为谱系或克隆背景的线索，却不能替代当前形态分类，也不能证明转化细胞仍在功能上依赖EGFR。TP53/RB1等改变可触发对转化风险的进一步评估，但并不是现存SCLC的病理诊断。进展组织中的NE成分、残存腺癌以及不同病灶可能并存，必要时要区分各成分的分子背景；血浆中同时出现的突变无法自动分配到某个组织成分。",
+    "临床上应先确认本次取样是否真正代表进展病灶、与基线是否可比较，以及是否存在混合/联合组织学或原先未取到的成分。小样本只见NE分化、只见高增殖或只见保留EGFR时，都应保留不确定性。经病理确认SCLC、LCNEC或其他转化后，才能进入对应的治疗讨论；不同病理类别、去新生NE癌和EGFR相关转化后的证据不能互换。所列奥希替尼配对活检研究并非奥希替尼加化疗后的统一队列，不能由其推断该联合序列的发生率或特定药物获益。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展期小细胞形态＋病理会诊",
+      "meaning": "在充分、可判读标本中提供SCLC诊断的核心依据。",
+      "limitations": "必须与治疗前病理、临床来源及鉴别诊断整合；样本不足或明显挤压时不能让算法补造确诊。"
+    },
+    {
+      "marker": "INSM1 / SYP / CHGA / CD56",
+      "meaning": "支持神经内分泌分化；组合及染色模式可帮助形态学鉴别。",
+      "limitations": "单阳性不等于SCLC；类癌/LCNEC及少数非NE肿瘤也可阳性，NE阴性SCLC也存在。"
+    },
+    {
+      "marker": "Ki67 / MKI67",
+      "meaning": "提供增殖背景，在特定鉴别中有辅助作用。",
+      "limitations": "不是SCLC或LCNEC的通用单阈值分类器；不能以一个百分比确诊组织转化或决定方案。"
+    },
+    {
+      "marker": "TTF1 / NKX2-1、p40 / TP63",
+      "meaning": "在形态和临床背景中帮助肺癌亚型与鉴别诊断。",
+      "limitations": "TTF1阳性不独立证明腺癌持续，p40或NE标志物单项不能替代完整分型。 p40免疫染色不是TP63基因序列变异，二者不能自动互换。"
+    },
+    {
+      "marker": "RB1/TP53异常及保留原始EGFR",
+      "meaning": "可辅助风险评估和纵向分子背景解释。",
+      "limitations": "不能独立确诊SCLC/LCNEC，不能由EGFR保留推断EGFR持续依赖或EGFR-TKI必然有效。"
+    },
+    {
+      "marker": "血浆ctDNA / 小量活检",
+      "meaning": "可补充分子信息或反映所取病灶的一部分。",
+      "limitations": "血浆不能观察形态；局部小样本也不能排除混合成分或其他病灶不同转化，需结合取样代表性。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "先以充分进展标本和胸部病理复核完成SCLC、LCNEC及其他类型分流，再进入对应治疗讨论。",
+      "status": "standard_other_setting",
+      "evidence_ids": [
+        "L02_E01",
+        "L02_E02",
+        "L02_E04",
+        "L02_E05"
+      ],
+      "setting": "一般肺癌病理分类实践，辅以奥希替尼进展配对组织研究；不是某药物的转化后疗效证明。",
+      "limitations": "病理确认与药物疗效分开，转化后具体方案须使用该组织类型及既往治疗序列的临床证据；没有足够组织时应先记录不确定性。"
+    },
+    {
+      "strategy": "仅凭NE标志物阳性、Ki67高、RB1/TP53改变或EGFR保留，直接按SCLC生成治疗。",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L02_E01",
+        "L02_E02",
+        "L02_E03",
+        "L02_E04"
+      ],
+      "setting": "诊断条件不足或只有分子/免疫标志物线索的病例。",
+      "limitations": "这些结果均不能独立替代形态与专业病理诊断，算法应阻断自动药物匹配并给出复核/补充取样要求。"
+    },
+    {
+      "strategy": "把LCNEC、NE低/阴性SCLC或高增殖类癌统一套用同一病理及治疗模板。",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L02_E02",
+        "L02_E04"
+      ],
+      "setting": "NE肿瘤分型不清、混合成分或小活检病例。",
+      "limitations": "不同类别及背景具有生物学和治疗证据差异，不应由共享NE分化或增殖读出进行自动外推。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "L02_E01",
+      "title": "Best Practices Recommendations for Diagnostic Immunohistochemistry in Lung Cancer.",
+      "authors": "Yatabe Y, Dacic S, Borczuk AC, Warth A, Russell PA, Lantuejoul S, Beasley MB, Thunnissen E, Pelosi G, Rekhtman N, Bubendorf L, Mino-Kenudson M, Yoshida A, Geisinger KR, Noguchi M, Chirieac LR, Bolting J, Chung JH, Chou TY, Chen G, Poleri C, Lopez-Rios F, Papotti M, Sholl LM, Roden AC, Travis WD, Hirsch FR, Kerr KM, Tsao MS, Nicholson AG, Wistuba I, Moreira AL.",
+      "year": 2019,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2018.12.005",
+      "pmid": "30572031",
+      "publication_date": "2018-12-18",
+      "url": "https://doi.org/10.1016/j.jtho.2018.12.005",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "IASLC病理委员会就肺癌免疫组化的诊断与陷阱提供专家建议，强调高效使用有限标本并把IHC放回形态、临床及原发/转移背景中解释。",
+      "limitation_zh": "一般肺癌诊断共识，不是EGFR转化后药敏试验；不能把单个NE或腺/鳞标志物当作自动诊断规则。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30572031+OR+EXT_ID%3A34808341+OR+EXT_ID%3A31911548&format=json&resultType=core&pageSize=15",
+        "checked_at": "2026-11-02T10:33:29+00:00"
+      }
+    },
+    {
+      "id": "L02_E02",
+      "title": "The 2021 WHO Classification of Lung Tumors: Impact of Advances Since 2015.",
+      "authors": "Nicholson AG, Tsao MS, Beasley MB, Borczuk AC, Brambilla E, Cooper WA, Dacic S, Jain D, Kerr KM, Lantuejoul S, Noguchi M, Papotti M, Rekhtman N, Scagliotti G, van Schil P, Sholl L, Yatabe Y, Yoshida A, Travis WD.",
+      "year": 2022,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2021.11.003",
+      "pmid": "34808341",
+      "publication_date": "2021-11-20",
+      "url": "https://doi.org/10.1016/j.jtho.2021.11.003",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "2021 WHO肺肿瘤分类相关综述明确形态先行，再由免疫组化及分子技术支持；更新小样本分类和神经内分泌肿瘤等概念。",
+      "limitation_zh": "分类综述不提供奥希替尼加化疗后特定方案的疗效证据；本模块未声称直接审阅完整WHO专著。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30572031+OR+EXT_ID%3A34808341+OR+EXT_ID%3A31911548&format=json&resultType=core&pageSize=15",
+        "checked_at": "2026-11-02T10:33:29+00:00"
+      }
+    },
+    {
+      "id": "L02_E03",
+      "title": "Insulinoma-associated protein 1 (INSM1) is a sensitive and highly specific marker of neuroendocrine differentiation in primary lung neoplasms: an immunohistochemical study of 345 cases, including 292 whole-tissue sections.",
+      "authors": "Mukhopadhyay S, Dermawan JK, Lanigan CP, Farver CF.",
+      "year": 2019,
+      "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+      "doi": "10.1038/s41379-018-0122-7",
+      "pmid": "30154579",
+      "publication_date": "2018-08-28",
+      "url": "https://doi.org/10.1038/s41379-018-0122-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "retrospective",
+      "main_finding_zh": "345例原发肺肿瘤IHC研究支持INSM1作为可靠的神经内分泌分化标志物，但其在SCLC、LCNEC及类癌中的检测表现不同，非神经内分泌癌也可出现少量阳性。",
+      "limitation_zh": "回顾性诊断性能研究，非EGFR转化专属；INSM1提示NE分化，不独立决定SCLC亚型或证明EGFR-TKI药敏。不同样本/抗体/肿瘤类型不可共用一个阳性率。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3AINSM1+AND+FIRST_PDATE%3A%5B2016-11-02+TO+2018-12-31%5D&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-02T10:33:29+00:00"
+      }
+    },
+    {
+      "id": "L02_E04",
+      "title": "Lung neuroendocrine neoplasms: recent progress and persistent challenges.",
+      "authors": "Rekhtman N.",
+      "year": 2022,
+      "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+      "doi": "10.1038/s41379-021-00943-2",
+      "pmid": "34663914",
+      "publication_date": "2021-10-18",
+      "url": "https://doi.org/10.1038/s41379-021-00943-2",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "综述肺类癌、SCLC和LCNEC的诊断进展与挑战，特别讨论Ki67、高增殖类癌、小活检LCNEC及NE低/阴性SCLC等鉴别问题。",
+      "limitation_zh": "说明分类与标志物的情境依赖性，不支持按Ki67单阈值自动诊断，也不支持LCNEC直接复制所有SCLC治疗证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE_ABS%3A%22neuroendocrine+neoplasms%22+AND+AUTH_LAST%3ARekhtman+AND+FIRST_PDATE%3A%5B2016-11-02+TO+2026-11-02%5D&format=json&resultType=core&pageSize=15",
+        "checked_at": "2026-11-02T10:33:29+00:00"
+      }
+    },
+    {
+      "id": "L02_E05",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-19-3563",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective",
+      "main_finding_zh": "配对治疗前与进展组织研究显示，奥希替尼耐药可伴鳞状等组织学转化；血浆检测不能发现组织形态变化。",
+      "limitation_zh": "组织再活检选择人群，不能把其发生率外推为所有患者；奥希替尼后不等于奥希替尼加化疗后，研究也不能证明EGFR保留即继续依赖EGFR。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30572031+OR+EXT_ID%3A34808341+OR+EXT_ID%3A31911548&format=json&resultType=core&pageSize=15",
+        "checked_at": "2026-11-02T10:33:29+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少以统一充分进展活检标准、专门纳入奥希替尼加化疗后患者的SCLC/LCNEC诊断及治疗验证队列；单药后队列不能填补该空缺。",
+    "需要对照不同病灶和同一病灶不同组织成分，区分真正新出现的谱系改变、既存混合成分的选择及取样偏差。",
+    "NE低/阴性和小活检LCNEC等困难场景需要专家病理审查，不适合用少数IHC或Ki67数值建立未经验证的自动分类器。",
+    "EGFR保留、细胞来源同源与EGFR信号依赖需分开研究；现有诊断性能论文不能提供继续EGFR抑制的临床药敏结论。",
+    "Firecrawl当前没有可调用工具/绑定，实际检索为Europe PMC；未取得ASCO/ESMO/WCLC原始会议结果，不将期刊发表年份冒称大会报告。"
+  ]
+}

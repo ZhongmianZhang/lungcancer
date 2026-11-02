@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_NOT_A_PATIENT",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "progression_pattern": "systemic",
+    "prior_additional_therapies": []
+  },
+  "baseline_pathology": {
+    "category": "adenocarcinoma",
+    "documented": true,
+    "components_reviewed": true
+  },
+  "progression_pathology": {
+    "category": "unknown",
+    "sample_type": "plasma",
+    "adequacy": "unknown",
+    "pathologist_reviewed": false,
+    "morphology_supports_category": false,
+    "integrated_diagnosis_confirmed": false,
+    "ihc_panel_reviewed": false,
+    "compared_with_baseline": false,
+    "ne_marker_positive": true,
+    "ki67_high": true,
+    "p40_positive": false,
+    "mixed_components": []
+  },
+  "molecular": {
+    "original_driver_retained": "yes",
+    "detection_source": "plasma",
+    "genomics_validated": true,
+    "matched_tissue_genomics": false,
+    "additional_shared_somatic_events": [],
+    "tp53_rb1_coaltered": true,
+    "egfr_protein_expression": "high",
+    "functional_egfr_dependence": "not_tested",
+    "dll3_expression": "positive",
+    "pdl1_high": true,
+    "research_liquid_signature": "sclc_like"
+  }
+}

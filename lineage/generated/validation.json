@@ -1,0 +1,61 @@
+{
+  "unit_tests": {
+    "executed": 62,
+    "passed": 62,
+    "failed": 0,
+    "skipped": 0,
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'"
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "eight modules and unique bibliography",
+      "module search and full detail expansion",
+      "filter reset and all duplicate-source citation anchors",
+      "390px mobile layout",
+      "full content without JavaScript",
+      "four-axis example and no JS errors or external requests"
+    ],
+    "errors": [],
+    "external_requests": []
+  },
+  "metadata": {
+    "matched": 32,
+    "total": 32,
+    "fulltext_reviewed": false
+  },
+  "research_agents": {
+    "requested": 8,
+    "completed": 8
+  },
+  "clinical_algorithm_validated": false,
+  "search": {
+    "preferred_provider": "Firecrawl",
+    "actual_provider": "Europe PMC",
+    "firecrawl_live_used": false,
+    "firecrawl_adapter_protocol_tests": "mock_only",
+    "credential_value_saved_in_code": false
+  },
+  "independent_rule_review": [
+    "Clonality node reviewer: private/structural evidence and progression-time gating strengthened and tested",
+    "SCLC-treatment node reviewer: pathology-led MTB routes and no automatic EGFR/DLL3/PDL1 treatment mapping"
+  ],
+  "source_hashes": {
+    "node01.json": "1ad5a98f7546bc546eb3753189070bb093042ba90e6a709a0e16038c0407f317",
+    "node02.json": "91d75c1885b2b7964414de0fad526f7fd187d1454e5c9a9caeb45f8e46379ea0",
+    "node03.json": "bc4d2debf046db91c6c7e74dfd70272944e43701cf9647681f9b4918a8c1c0d8",
+    "node04.json": "6318685ebd1a230e82f6eedfdc3f92cc5c3eaff2a75b1f88cb2f83f5dd2f74a2",
+    "node05.json": "f601cc4f949559aee2d76f60166828f20246c911464b15533e03aba5741711a8",
+    "node06.json": "b943c18281bc24fe9e2652c12c5c0af4cb2a8bd924a73197b068ab6a26afe965",
+    "node07.json": "80783d7336ca1b4cad27af4f44e1d3b123e5dc71b3ec1229027f3d664444e1c4",
+    "node08.json": "3babd4b785b2879d1b6c3761480817c99950d2b8bb9f0c0918490d3999624b39"
+  },
+  "code_hashes": {
+    "__init__.py": "7f2729a219563de74f5104f7e24f4f0eb3fccfe5613e417085fd4230dd290b06",
+    "__main__.py": "6e69a17f9fd36cdbbba559b1ed53104a43ce1f58605ea6041ccd74827d0f1a4e",
+    "engine.py": "473c959947665d623afe07d602fa4a012a2610d590f7a8e04dcef4c022a9cfd6",
+    "knowledge.py": "683db1abf4d3e9e3f3aafd93ce3b9ba20c0cde5eedd1c4d4dbb7ea446af08b64",
+    "render.py": "ac5becf72d2b47740240ff4f7a0bd0f07f6d550e2e4449a58433fcb6c9981457",
+    "search.py": "03d60e8e26981a11f0b647fd0f1a29a5f9f2e41b4e3afc17bc8cf110d153a00d"
+  }
+}

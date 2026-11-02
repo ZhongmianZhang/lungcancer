@@ -1,0 +1,218 @@
+{
+  "node_id": "node08",
+  "title": "临床试验与重要会议：转化人群、靶抗原和治疗序列的证据边界",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "RB1",
+    "DLL3",
+    "CD276",
+    "PARP1",
+    "CD274"
+  ],
+  "upstream": [
+    "组织学转化与谱系可塑性",
+    "既往EGFR-TKI及化疗选择",
+    "靶抗原与免疫生态"
+  ],
+  "downstream": [
+    "专门人群试验资格",
+    "DLL3/B7-H3靶向研究",
+    "序贯病理与克隆复核"
+  ],
+  "mechanism_zh": [
+    "临床试验首先要定义疾病状态与治疗时序。“转化SCLC”并非一个统一生物学亚型，可能包含治疗前已存在但未采到的小细胞成分、同源克隆重编程、不同病灶的分支选择和混合肿瘤。奥希替尼单药后转化、同期奥希替尼加铂类/培美曲塞后转化，以及转化后再接受化疗，是不同人群。后两种情况不能因都出现过奥希替尼与化疗就归入同一试验适用背景。",
+    "保留EGFR DNA提示与原驱动克隆存在联系，却不能保证转化后的细胞仍以EGFR信号维持生存。2026年olaparib加durvalumab专属转化SCLC研究中，全部病例保留激活性EGFR，仍未观察到客观缓解。这个反例说明，既不能按保留EGFR自动选择EGFR药物，也不能按一般SCLC的DNA修复或免疫理据直接推定新组合有效；应分别评估病理、功能依赖、既往暴露和具体试验结果。",
+    "DLL3/CD3衔接器等新策略需要针对转化人群单独验证。2026年JCO增刊e23350的真实会议摘要已可通过Crossref审读，但其7例转化/非肺原发混合亚组未分离出EGFR转化患者，不能提供该目标人群的应答概率。2025年多机构EGFR转化SCLC tarlatamab正式题录虽可识别，本次未取得摘要，必须保留为题录线索，不能据题名反推疗效。具体地区标签、当前招募、排除标准与神经毒性/CRS监测能力还需查官方材料。",
+    "表面抗原与谱系状态可以在治疗后再次改变。2026年tarlatamab后肉瘤样癌病例，基线本来就存在混合小细胞成分；后续DLL3阳性SCLC与DLL3阴性肉瘤样病灶的变化，支持对新进展部位再次取样的必要性。该病例中的EGFR等位变异未检出与共享TP53改变不能简化成“全身所有克隆丢失EGFR”或“单个共同突变证明全部病灶同源”，而应结合多标本基因组和病理解释。",
+    "回顾队列提示含铂/依托泊苷等SCLC框架及部分组合可能有临床价值，也提示DLL3、B7-H3和免疫空间结构值得研究，但治疗选择偏倚、合并用药和样本量限制不允许自动拆分各药贡献。新ADC、T细胞衔接器、表观遗传策略应被编码为需要核验试验适用性的研究路径；不能因基因或抗原存在就生成处方，也不能因某小样本阴性结果一概否定未来经过机制选择的研究。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "转化前奥希替尼/化疗的同期与先后顺序",
+      "meaning": "决定是否真正符合用户提出的目标序列及试验入组背景。",
+      "limitations": "转化后化疗或术后辅助化疗不是同期奥希替尼加铂/培美曲塞后耐药的替代证据。"
+    },
+    {
+      "marker": "DLL3或B7-H3表达",
+      "meaning": "可作为抗原靶向试验筛查和病灶异质性研究线索。",
+      "limitations": "阳性比例不能直接预测药敏；不同病灶、时间和细胞区室可变化，需核实实际试验检测和资格要求。"
+    },
+    {
+      "marker": "转化病灶仍有EGFR DNA",
+      "meaning": "支持原EGFR克隆遗传痕迹，但功能依赖仍需另证。",
+      "limitations": "保留不保证EGFR药物或任何生物学理据组合有效；全部保留EGFR的II期小队列仍可无客观缓解。"
+    },
+    {
+      "marker": "共同TP53等改变与原EGFR未检出",
+      "meaning": "可能反映共同祖先后的分支选择、混合成分或取样差异。",
+      "limitations": "单一共享事件不是绝对同源证明，某进展标本阴性不能代表全身克隆或排除检测盲区。"
+    },
+    {
+      "marker": "会议摘要或仅题录记录",
+      "meaning": "可证明研究存在并指向需要获取的原始资料。",
+      "limitations": "仅题录不允许提取疗效；即使有摘要，混合转化/非肺亚组也不提供EGFR专属或同期组合后证据。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "DLL3/CD3衔接器等专门转化人群试验筛查",
+      "status": "investigational",
+      "evidence_ids": [
+        "L08_E01",
+        "L08_E02",
+        "L08_E04",
+        "L08_E05"
+      ],
+      "setting": "病理与靶抗原复核后的转化SCLC；需验证本地区标签、当前试验是否实际接纳EGFR转化及既往治疗。",
+      "limitations": "会议混合亚组、仅题录多机构报告和个案均不能建立目标序列的标准单药或EGFR联合方案；不提供入组保证、剂量或个体处方。"
+    },
+    {
+      "strategy": "不将olaparib加durvalumab设为EGFR保留转化后的默认治疗",
+      "status": "not_supported",
+      "evidence_ids": [
+        "L08_E03"
+      ],
+      "setting": "EGFR突变NSCLC转化SCLC的专属小规模II期研究背景。",
+      "limitations": "4例无客观缓解且提前终止，无法支持常规映射；样本不足以否定所有经新生物标志物选择的PARP/免疫研究。"
+    },
+    {
+      "strategy": "B7-H3/新ADC与表观遗传方向按独立机制和实际试验核查",
+      "status": "investigational",
+      "evidence_ids": [
+        "L08_E05"
+      ],
+      "setting": "确认病理、样本和抗原/谱系状态后的研究设计。",
+      "limitations": "该队列只提供抗原和生态线索，并未验证ADC或表观遗传治疗疗效；不得借用其他SCLC或其他癌种获批直接推荐。"
+    },
+    {
+      "strategy": "新进展病灶再次活检并整合全身多克隆治疗讨论",
+      "status": "investigational",
+      "evidence_ids": [
+        "L08_E04",
+        "L08_E05"
+      ],
+      "setting": "转化后治疗期间出现新的病灶行为、靶抗原变化或组织不一致。",
+      "limitations": "组织再取样是临床评估路径；根据个案选择EGFR继续/停止或联合不应机械执行，应由病理与分子肿瘤委员会整合。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "L08_E01",
+      "title": "Real-world outcomes of tarlatamab across small cell carcinoma subtypes, including transformed and non-lung primary.",
+      "authors": "Vegel Andrew; Larson Aubriannah; Ryan Zoe; Yadukumar Lekha; Loeffler Bradley T.; Byrne Margaret",
+      "year": 2026,
+      "journal": "Journal of Clinical Oncology",
+      "doi": "10.1200/jco.2026.44.16_suppl.e23350",
+      "pmid": "",
+      "publication_date": "2026-06-01",
+      "url": "https://doi.org/10.1200/jco.2026.44.16_suppl.e23350",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "conference_abstract",
+      "main_finding_zh": "2026年JCO增刊e23350会议摘要的Crossref记录含实际摘要：单中心回顾37例接受tarlatamab的小细胞癌，7例为转化或非肺原发混合T/NL亚组。摘要报告这一混合亚组存在缓解信号，并呈现CNS进展与安全性信息，支持进一步专门研究。",
+      "limitation_zh": "不是随机试验；7例混合亚组无法区分EGFR转化、其他驱动转化和非肺原发，不可将该亚组缓解率移植到EGFR保留或奥希替尼加化疗后患者。ASCO为题录出版者，原始会议网站/全文未独立核验；仅会议摘要审读，不代表同行评议完整论文或当前获批/招募资格。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1200%2Fjco.2026.44.16_suppl.e23350",
+        "checked_at": "2026-11-02T10:41:32+00:00"
+      }
+    },
+    {
+      "id": "L08_E02",
+      "title": "Multi-Institution Analysis of Tarlatamab for the Treatment of EGFR-Mutant Transformed Small Cell Lung Cancer.",
+      "authors": "Cooper AJ, Herzberg B, Parma M, Wang K, Alder L, Weber UM, Patil T, Joshi U, Puri S, Saqi A, Clark P, Gay CM, Cascone T, Singhi EK, Blumenschein G, Skoulidis F, Tu J, Stinchcombe TE, Rudin CM, Shu CA, Byers LA, Yu H, Zhang B.",
+      "year": 2025,
+      "journal": "JCO precision oncology",
+      "doi": "10.1200/po-25-00538",
+      "pmid": "41166675",
+      "publication_date": "2025-10-30",
+      "url": "https://doi.org/10.1200/po-25-00538",
+      "verification": "metadata_only",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "存在2025年JCO Precision Oncology多机构tarlatamab治疗EGFR突变转化SCLC的正式题录，提示该专属问题已有临床报告。",
+      "limitation_zh": "本次Europe PMC未提供摘要，故仅核题录；没有提取疗效、安全性、入组人数或转化前治疗序列，也不能将题名当作该药已证有效或可入组的证明。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42519408+OR+EXT_ID%3A42699526%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:41:32+00:00"
+      }
+    },
+    {
+      "id": "L08_E03",
+      "title": "Phase II study of olaparib plus durvalumab in EGFR-mutant NSCLC transformed to small cell lung cancer.",
+      "authors": "Mohindroo C, Takahashi N, Nichols S, Pinkiert D, Thomas A.",
+      "year": 2026,
+      "journal": "The oncologist",
+      "doi": "10.1093/oncolo/oyag328",
+      "pmid": "42605066",
+      "publication_date": "2026-08-01",
+      "url": "https://doi.org/10.1093/oncolo/oyag328",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "2026年专门针对EGFR突变NSCLC转化SCLC的单臂II期研究评估olaparib加durvalumab，因入组缓慢提前终止；仅4例，最佳结果1例稳定、3例进展，ORR为0%。所有病例均保留激活性EGFR突变，提示强生物学理据和EGFR保留并不保证组合疗效。",
+      "limitation_zh": "样本极小、无对照且非统一奥希替尼与化疗同期联合后队列，不能排除经特定生物标志物选择的其他PARP/免疫研究；也不能把耐受性描述转为个体安全保证。试验登记号来自摘要，不代表已实时核验当前招募。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42519408+OR+EXT_ID%3A42699526%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:41:32+00:00"
+      }
+    },
+    {
+      "id": "L08_E04",
+      "title": "EGFR Wild-Type Sarcomatoid Carcinoma as Acquired Resistance to Tarlatamab in Small Cell-Transformed EGFR-Mutated Lung Adenocarcinoma: A Case Report.",
+      "authors": "Kunimasa K, Honma K, Tamiya M, Inoue T, Mamesaya N, Matsumoto K, Fukumoto Y, Minami S, Harima T, Nishino K.",
+      "year": 2026,
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2026.101018",
+      "pmid": "42519408",
+      "publication_date": "2026-05-18",
+      "url": "https://doi.org/10.1016/j.jtocrr.2026.101018",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "case_report",
+      "main_finding_zh": "2026年病例初始为含小细胞成分的EGFR突变腺癌，后复发小细胞病灶接受tarlatamab获得阶段性控制；进展肝病灶变为DLL3阴性的肉瘤样癌。序贯标本共享TP53改变，而复发SCLC和肉瘤样成分均未检出原EGFR等位变异，提示谱系、靶抗原与可检测驱动可动态改变。",
+      "limitation_zh": "单病例且基线已是混合病理，不能称为纯腺癌治疗后新发小细胞转化，更不是奥希替尼加培美曲塞/铂类后专属证据。共享单一改变不是绝对同源证明，病灶EGFR未检出也不代表全身肿瘤均失去该克隆。不得外推所有DLL3高者单药有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42519408+OR+EXT_ID%3A42699526%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:41:32+00:00"
+      }
+    },
+    {
+      "id": "L08_E05",
+      "title": "EGFR-Mutant Non-Small Cell Lung Cancer With Small Cell Transformation: Clinicopathological Features, Treatment Landscape, and Biomarker Profiles.",
+      "authors": "Chiang CL, Liao YT, Yeh YC, Sun RL, Huang HC, Luo YH, Shen CI, Chao HS, Tseng YH, Shiao TH, Wang R, Wang H, Schrump DS, Chen YM.",
+      "year": 2026,
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2026.101050",
+      "pmid": "42699526",
+      "publication_date": "2026-07-10",
+      "url": "https://doi.org/10.1016/j.jtocrr.2026.101050",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "2026年45例EGFR突变转化SCLC的临床病理回顾队列，含铂/依托泊苷及不同组合治疗，并检测DLL3/B7-H3、选择性开展空间转录组；提示神经内分泌重编程、免疫排斥及抗原表达，为专门试验提供线索。",
+      "limitation_zh": "回顾性治疗选择、组合混杂与样本选择限制因果解释；表面抗原常见不等于已建立药敏预测标志物。不同EGFR-TKI治疗史不等于统一奥希替尼加化疗耐药；不能从组合组关联获益认定EGFR-TKI或免疫药单独贡献。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A41166675+OR+EXT_ID%3A42605066+OR+EXT_ID%3A42519408+OR+EXT_ID%3A42699526%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-02T10:41:32+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺乏统一定义并独立报告同期奥希替尼加铂/培美曲塞后组织转化患者的前瞻随机治疗证据。",
+    "DLL3/B7-H3表达阈值、病灶间异质性与靶抗原消失能否预测转化人群疗效仍需验证。",
+    "2026会议混合T/NL亚组不能分离EGFR转化；2025专属多机构tarlatamab题录仍需取得摘要/全文并核对结果。",
+    "本次未实时核实全部地区现行药品标签、官方试验招募或会议全文；Firecrawl不可用，实际来源为Europe PMC与Crossref。",
+    "复合病理、转录亚型、功能性EGFR依赖与既往治疗相互作用，需要纵向多病灶样本及专门临床试验。"
+  ]
+}
