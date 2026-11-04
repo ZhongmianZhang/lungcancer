@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_NOT_A_PATIENT",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "histology": "adenocarcinoma",
+    "histology_confirmed_at_progression": true,
+    "progression_pattern": "systemic",
+    "prior_additional_therapies": [],
+    "egfr_driver_confirmed": true
+  },
+  "observations": [
+    {
+      "id": "serum_IL6",
+      "gene": "IL6",
+      "kind": "cytokine",
+      "level": "high",
+      "sample_type": "plasma",
+      "compartment": "serum",
+      "compartment_confirmed": true,
+      "tumor_origin": "unknown",
+      "classification": "unknown",
+      "assay_validated": true,
+      "acquisition": "unknown"
+    },
+    {
+      "id": "tumor_pSTAT3",
+      "gene": "STAT3",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "sample_type": "tissue",
+      "compartment": "tumor",
+      "compartment_confirmed": true,
+      "tumor_origin": "confirmed",
+      "classification": "unknown",
+      "assay_validated": true,
+      "acquisition": "unknown",
+      "site": "Y705"
+    },
+    {
+      "id": "blood_JAK2",
+      "gene": "JAK2",
+      "kind": "snv",
+      "level": "high",
+      "sample_type": "plasma",
+      "compartment": "tumor",
+      "compartment_confirmed": true,
+      "tumor_origin": "unconfirmed",
+      "classification": "pathogenic",
+      "assay_validated": true,
+      "acquisition": "unknown",
+      "variant": "p.V617F"
+    },
+    {
+      "id": "low_SOCS3",
+      "gene": "SOCS3",
+      "kind": "expression",
+      "level": "low",
+      "sample_type": "tissue",
+      "compartment": "tumor",
+      "compartment_confirmed": true,
+      "tumor_origin": "confirmed",
+      "classification": "unknown",
+      "assay_validated": true,
+      "acquisition": "unknown"
+    },
+    {
+      "id": "immune_STAT5",
+      "gene": "STAT5B",
+      "kind": "signature",
+      "level": "high",
+      "sample_type": "tissue",
+      "compartment": "immune",
+      "compartment_confirmed": true,
+      "tumor_origin": "unknown",
+      "classification": "unknown",
+      "assay_validated": true,
+      "acquisition": "unknown"
+    }
+  ],
+  "dependency_tests": []
+}

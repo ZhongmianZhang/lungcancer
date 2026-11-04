@@ -1,0 +1,265 @@
+{
+  "node_id": "node05",
+  "title": "负反馈刹车：SOCS1/3、PTPN1/2/11与PIAS的区室和方向依赖",
+  "genes": [
+    "SOCS1",
+    "SOCS3",
+    "PTPN1",
+    "PTPN2",
+    "PTPN11",
+    "PIAS1",
+    "PIAS2",
+    "PIAS3",
+    "PIAS4",
+    "JAK1",
+    "JAK2",
+    "STAT1",
+    "STAT3",
+    "STAT5A",
+    "STAT5B"
+  ],
+  "upstream": [
+    "IL6–IL6R–gp130及其他细胞因子受体",
+    "IFNγ与T细胞细胞因子刺激",
+    "STAT依赖的SOCS反馈转录",
+    "DNA变异/拷贝数、启动子DNA甲基化及转录后调控",
+    "EGFR/替代RTK对SHP2的募集"
+  ],
+  "downstream": [
+    "JAK/STAT磷酸化的幅度和持续时间",
+    "PIAS调节的STAT核内DNA结合与转录",
+    "SHP2–RAS–RAF–MEK–ERK",
+    "IFNγ介导的抗原呈递与生长抑制",
+    "T细胞STAT5、扩增、细胞毒性及TIL状态"
+  ],
+  "mechanism_zh": [
+    "SOCS1和SOCS3是细胞因子信号诱导的反馈制动器，但二者并非可互换。它们可借助SH2识别受体/激酶复合物，抑制JAK活性、竞争受体上的信号募集，并通过SOCS-box相关泛素化调控蛋白稳定性；其作用取决于受体背景、底物和细胞区室。SOCS转录本高有时反映上游STAT正在强烈驱动反馈，不能直接解释成通路已经关闭；SOCS低也不等于缺乏配体时仍有持续JAK活性。2019年综述为此提供跨癌种机制框架，而非奥希替尼加化疗后的验证标志物（J05_E01）。",
+    "DNA层面的失活、启动子甲基化与低表达必须分开记录。可信的DNA功能缺失需要评估截断/剪接/缺失的具体转录本与结构域、等位状态、拷贝数及肿瘤纯度；单个错义变异或VUS不能自动当作LOF，PTPN11还存在激活型变异。SOCS1/3启动子DNA高甲基化可以与沉默相关，但须实际测量相关启动子位点并与同一细胞群RNA/蛋白对应，不能从测序未见突变或bulk RNA低倒推出甲基化。RNA上的m6A等修饰也不是启动子DNA甲基化。低表达可由转录调控、RNA稳定性、蛋白降解、肿瘤/免疫比例和取样时序共同造成；因此这些检测层级不能在知识图谱中合并为同一事件（J05_E01）。",
+    "PTPN1编码PTP1B，PTPN2编码TC-PTP；二者均可限制细胞因子相关信号，但底物、定位与细胞区室决定最终效应。抑制肿瘤上皮细胞中的过强STAT生存信号，和保留T细胞所需的STAT5或肿瘤IFNγ应答，是不同的生物学目标。2017年小鼠黑色素瘤研究中，肿瘤细胞Ptpn2缺失增强IFNγ相关抗原呈递和生长抑制，提高免疫治疗效果；2022年研究则发现T细胞PTPN1缺失增强STAT5和细胞毒性。这些是其他模型中的区室特异证据，反对把“磷酸酶缺失→STAT增强→必然促癌→应当抑JAK”串成自动规则（J05_E02、J05_E03）。",
+    "SOCS1也体现肿瘤抑制与免疫解除抑制的方向差异：肿瘤细胞SOCS1恢复表达可能限制异常增殖，而在抗肿瘤T细胞中，SOCS1本身又是细胞因子反应的内在制动器。2023年SOCS1编辑TIL研究在临床前模型中增强了细胞因子敏感性及抗肿瘤功能；这不等同于患者肿瘤中检测到SOCS1缺失就适合TIL、免疫检查点或JAK药物。若同时抑制JAK，可能削弱希望保留的IFN或T细胞功能，净效应必须通过分区读出和组合实验来评估（J05_E01、J05_E04）。",
+    "PTPN11编码SHP2，不能仅因属于磷酸酶就归入单向“抑制JAK/STAT”的药敏节点。SHP2在某些组织可限制STAT3，但也是多种RTK向RAS–MAPK传递信号的重要正向组分；失活、激活、过表达和药理抑制四种事件的后果不能混用。2020年IACS-13909研究直接在EGFR突变奥希替尼耐药模型中支持抑制SHP2–MAPK支路，包含EGFR依赖及替代RTK机制。其治疗逻辑是切断特定RTK/RAS输出，不是证明患者的SHP2缺失造成JAK成瘾；需要同时观察pERK、pSTAT及功能补回（J05_E01、J05_E05）。",
+    "PIAS家族主要在核内调节转录，PIAS1/STAT1和PIAS3/STAT3是经典对应关系；它们可以阻碍STAT的DNA结合、募集转录抑制组分，并通过SUMO相关机制影响更多底物。故PIAS降低可改变转录输出而不必同步提高上游JAK或单点pSTAT；PIAS2/4也不能自动与PIAS3等同。PIAS还涉及DNA损伤反应及其他致癌/抑癌底物，某些癌种PIAS高表达同样与恶性行为有关。应通过靶基因、核定位及STAT依赖性验证，而不是按基因名称或总表达方向推定药物（J05_E01）。",
+    "对“EGFR肺癌接受奥希替尼加同期化疗后进展”这一限定场景，本节点五篇来源中仅SHP2论文直接涉及奥希替尼耐药，并且是临床前；其余为跨癌种综述、黑色素瘤或T细胞工程模型。化疗后炎症、细胞组成与克隆选择会改变反馈读出，本节点没有该特定序列下按SOCS/PTPN/PIAS分层的前瞻疗效证据。解释应依次确认事件来源和区室、证明持续信号、用正交干预及补回证明依赖，再将结果用于临床试验匹配；任何负调控缺失本身都不足以判定JAK抑制剂敏感。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "SOCS1/SOCS3/PTPN/PIAS的DNA疑似LOF或拷贝数缺失",
+      "meaning": "提示可能减弱特定调控层级，需确定具体变体、等位状态和发生细胞。",
+      "limitations": "VUS、单等位缺失及低纯度CN结果不等于双等位功能丧失；PTPN11激活型变异与LOF必须分开。血液来源变异也需排除非肿瘤来源，不能自动建立JAK药敏。"
+    },
+    {
+      "marker": "SOCS1/3启动子DNA甲基化",
+      "meaning": "若与同一肿瘤细胞群的RNA/蛋白下降一致，可支持表观遗传沉默假说。",
+      "limitations": "须有实际位点和检测方法；不能由低表达反推，也不能将RNA甲基化当作启动子甲基化。相关性不等于沉默为耐药驱动或去甲基化药物有效。"
+    },
+    {
+      "marker": "SOCS1/3或PIAS3 RNA/蛋白低表达",
+      "meaning": "反映取样时该细胞群的调控蛋白水平，可作为功能验证线索。",
+      "limitations": "bulk值受细胞组成、炎症、反馈时序及化疗影响；既不是DNA LOF，也不是已验证的奥希替尼加化疗后预测标志。"
+    },
+    {
+      "marker": "SOCS1/3高表达与pSTAT同时升高",
+      "meaning": "可能代表强烈上游刺激诱导反馈，反馈未必足以控制通路。",
+      "limitations": "不能以SOCS高排除通路活性，也不能仅凭共高证明肿瘤细胞依赖；须做时间序列和抑制/补回。"
+    },
+    {
+      "marker": "PTPN1/2在肿瘤细胞与T细胞中的分区变化",
+      "meaning": "帮助区分肿瘤内生存输出与IFNγ/STAT5相关抗肿瘤效应。",
+      "limitations": "免疫细胞的缺失/抑制可增强模型抗肿瘤免疫，不能转写为肿瘤JAK药敏或EGFR肺癌免疫治疗疗效预测。"
+    },
+    {
+      "marker": "PTPN11变体、SHP2活性与pERK/pSTAT联合读出",
+      "meaning": "有助于辨别SHP2向RAS–MAPK的正向传导及对STAT的情境性调节。",
+      "limitations": "单点表达或磷酸化不等于功能依赖；SHP2抑制的奥希替尼模型结果不支持按PTPN11缺失直接给SHP2或JAK抑制剂。"
+    },
+    {
+      "marker": "PIAS亚型、核内定位与STAT靶基因谱",
+      "meaning": "可检验核内转录调节是否改变。",
+      "limitations": "PIAS有SUMO及其他底物作用，pSTAT和JAK活性未必随之改变；不同PIAS亚型的功能不可合并。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "将负调控缺失直接映射为JAK/STAT药物敏感",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J05_E01",
+        "J05_E02",
+        "J05_E03",
+        "J05_E04"
+      ],
+      "setting": "生物标志物解释，尤其奥希替尼加同期化疗后进展。",
+      "limitations": "负调控事件可能影响免疫清除、RAS或核内转录；五篇来源均未建立该临床序列的JAK预测标志。应先证明肿瘤细胞对特定JAK/STAT输出的因果依赖。"
+    },
+    {
+      "strategy": "对经功能验证的肿瘤JAK/STAT生存依赖，探索机制匹配的JAK/STAT临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "J05_E01"
+      ],
+      "setting": "跨癌种机制假说；并非本治疗序列已证实治疗。",
+      "limitations": "需要等位/表达/细胞区室验证和功能补回；仅pSTAT升高或SOCS/PTPN低不足以选择药物，且需评估IFN及免疫区室的影响。"
+    },
+    {
+      "strategy": "在证实RTK–SHP2–MAPK依赖的奥希替尼耐药模型基础上，研究SHP2与EGFR抑制组合",
+      "status": "investigational",
+      "evidence_ids": [
+        "J05_E05"
+      ],
+      "setting": "EGFR突变奥希替尼耐药细胞及动物模型；无本节点所检出的同期化疗后专属临床疗效。",
+      "limitations": "不能把IACS-13909模型结果视为获批方案，不能将PTPN11缺失当作入选生物标志；不同变体、旁路和药物构象适配需另行验证。"
+    },
+    {
+      "strategy": "区分T细胞/PTPN1、肿瘤IFNγ/PTPN2与SOCS1编辑TIL的免疫增强研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "J05_E02",
+        "J05_E03",
+        "J05_E04"
+      ],
+      "setting": "其他癌种、小鼠与工程T细胞临床前研究。",
+      "limitations": "三类干预涉及不同细胞区室，不能合并为同一处方或由患者基因缺失直接预测；没有证实本场景临床获益，也不能据此常规加免疫检查点治疗。"
+    },
+    {
+      "strategy": "仅凭SOCS/PIAS低表达或SOCS启动子甲基化选择常规去甲基化/反馈恢复治疗",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J05_E01"
+      ],
+      "setting": "表观遗传与表达标志物的应用边界。",
+      "limitations": "沉默的因果性、可逆性和区室特异净效应尚需验证；跨癌种机制综述不能建立EGFR肺癌奥希替尼加化疗后的用药指征。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J05_E01",
+      "title": "Negative regulators of STAT3 signaling pathway in cancers.",
+      "authors": "Wu M, Song D, Li H, Yang Y, Ma X, Deng S, Ren C, Shu X.",
+      "year": 2019,
+      "journal": "Cancer management and research",
+      "doi": "10.2147/cmar.s206175",
+      "pmid": "31213912",
+      "publication_date": "2019-05-29",
+      "url": "https://doi.org/10.2147/cmar.s206175",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "综述SOCS、PIAS与蛋白酪氨酸磷酸酶对STAT3的负调控，以及SOCS启动子甲基化、PIAS的核内作用和SHP2的组织依赖性双向作用；负调控蛋白也可能与部分肿瘤恶性行为相关。",
+      "limitation_zh": "跨癌种综述，包含窗前基础研究的二级总结；本节点将其作为2019年机制综述引用，没有把被综述的早期实验当作2016–2026新原始证据。不能证明EGFR肺癌奥希替尼或同期化疗后药敏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31213912+OR+EXT_ID%3A28723893+OR+EXT_ID%3A34794959+OR+EXT_ID%3A38099496+OR+EXT_ID%3A32928921%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:08:10.084596+00:00"
+      }
+    },
+    {
+      "id": "J05_E02",
+      "title": "In vivo CRISPR screening identifies Ptpn2 as a cancer immunotherapy target.",
+      "authors": "Manguso RT, Pope HW, Zimmer MD, Brown FD, Yates KB, Miller BC, Collins NB, Bi K, LaFleur MW, Juneja VR, Weiss SA, Lo J, Fisher DE, Miao D, Van Allen E, Root DE, Sharpe AH, Doench JG, Haining WN.",
+      "year": 2017,
+      "journal": "Nature",
+      "doi": "10.1038/nature23270",
+      "pmid": "28723893",
+      "publication_date": "2017-07-19",
+      "url": "https://doi.org/10.1038/nature23270",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "小鼠可移植黑色素瘤的体内CRISPR筛选显示，肿瘤细胞Ptpn2缺失可增强IFNγ对抗原呈递和生长抑制的作用，提高免疫治疗效果；不是单纯“STAT增强即促癌”。",
+      "limitation_zh": "小鼠黑色素瘤为主的遗传干预研究；不是EGFR突变肺癌、不是奥希替尼加化疗后患者队列，也不证明PTPN2缺失预测JAK抑制剂敏感或免疫治疗临床获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31213912+OR+EXT_ID%3A28723893+OR+EXT_ID%3A34794959+OR+EXT_ID%3A38099496+OR+EXT_ID%3A32928921%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:08:10.084596+00:00"
+      }
+    },
+    {
+      "id": "J05_E03",
+      "title": "PTP1B Is an Intracellular Checkpoint that Limits T-cell and CAR T-cell Antitumor Immunity.",
+      "authors": "Wiede F, Lu KH, Du X, Zeissig MN, Xu R, Goh PK, Xirouchaki CE, Hogarth SJ, Greatorex S, Sek K, Daly RJ, Beavis PA, Darcy PK, Tonks NK, Tiganis T.",
+      "year": 2022,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-21-0694",
+      "pmid": "34794959",
+      "publication_date": "2022-03-01",
+      "url": "https://doi.org/10.1158/2159-8290.cd-21-0694",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "PTP1B/PTPN1作为T细胞内检查点：T细胞特异性缺失增强STAT5信号、CD8 T细胞扩增和细胞毒性；药理抑制及CAR-T模型也支持解除免疫抑制的研究方向。",
+      "limitation_zh": "实体瘤和CAR-T临床前模型，研究干预区室主要为T细胞；不能外推为肿瘤细胞PTPN1缺失的JAK药敏，也没有本治疗序列患者疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31213912+OR+EXT_ID%3A28723893+OR+EXT_ID%3A34794959+OR+EXT_ID%3A38099496+OR+EXT_ID%3A32928921%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:08:10.084596+00:00"
+      }
+    },
+    {
+      "id": "J05_E04",
+      "title": "Rational design of a SOCS1-edited tumor-infiltrating lymphocyte therapy using CRISPR/Cas9 screens.",
+      "authors": "Schlabach MR, Lin S, Collester ZR, Wrocklage C, Shenker S, Calnan C, Xu T, Gannon HS, Williams LJ, Thompson F, Dunbar PR, LaMothe RA, Garrett TE, Colletti N, Hohmann AF, Tubo NJ, Bullock CP, Le Mercier I, Sofjan K, Merkin JJ, Keegan S, Kryukov GV, Dugopolski C, Stegmeier F, Wong K, Sharp FA, Cadzow L, Benson MJ.",
+      "year": 2023,
+      "journal": "The Journal of clinical investigation",
+      "doi": "10.1172/jci163096",
+      "pmid": "38099496",
+      "publication_date": "2023-12-15",
+      "url": "https://doi.org/10.1172/jci163096",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "体内外CRISPR筛选识别SOCS1为T细胞增强靶点；SOCS1编辑TIL产品KSQ-001对细胞因子更敏感，并在小鼠模型增强抗肿瘤功能，说明SOCS1失活在免疫细胞可有不同于肿瘤抑制基因缺失的意义。",
+      "limitation_zh": "包含人TIL工程制造和小鼠功能研究；该论文未证明SOCS1编辑细胞治疗已改善患者结局，尤其无EGFR肺癌奥希替尼加同期化疗后临床证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31213912+OR+EXT_ID%3A28723893+OR+EXT_ID%3A34794959+OR+EXT_ID%3A38099496+OR+EXT_ID%3A32928921%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:08:10.084596+00:00"
+      }
+    },
+    {
+      "id": "J05_E05",
+      "title": "Allosteric SHP2 Inhibitor, IACS-13909, Overcomes EGFR-Dependent and EGFR-Independent Resistance Mechanisms toward Osimertinib.",
+      "authors": "Sun Y, Meyers BA, Czako B, Leonard P, Mseeh F, Harris AL, Wu Q, Johnson S, Parker CA, Cross JB, Di Francesco ME, Bivona BJ, Bristow CA, Burke JP, Carrillo CC, Carroll CL, Chang Q, Feng N, Gao G, Gera S, Giuliani V, Huang JK, Jiang Y, Kang Z, Kovacs JJ, Liu CY, Lopez AM, Ma X, Mandal PK, McAfoos T, Miller MA, Mullinax RA, Peoples M, Ramamoorthy V, Seth S, Spencer ND, Suzuki E, Williams CC, Yu SS, Zuniga AM, Draetta GF, Marszalek JR, Heffernan TP, Kohl NE, Jones P.",
+      "year": 2020,
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.can-20-1634",
+      "pmid": "32928921",
+      "publication_date": "2020-09-14",
+      "url": "https://doi.org/10.1158/0008-5472.can-20-1634",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "IACS-13909变构抑制SHP2并抑制MAPK输出；在具有EGFR依赖或替代RTK旁路机制的奥希替尼耐药NSCLC模型中，单药或联合奥希替尼抑制体外增殖并在体内产生肿瘤退缩。",
+      "limitation_zh": "直接涉及EGFR突变奥希替尼耐药，但仍为细胞/动物研究；不是奥希替尼加同期化疗后临床研究，也没有证明PTPN11缺失是SHP2或JAK抑制剂的预测标志。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31213912+OR+EXT_ID%3A28723893+OR+EXT_ID%3A34794959+OR+EXT_ID%3A38099496+OR+EXT_ID%3A32928921%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:08:10.084596+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少明确奥希替尼与化疗同期联合后进展、按SOCS/PTPN/PIAS事件分层的前瞻临床药敏或生存研究。",
+    "需在进展前后配对样本中同时测量DNA等位/拷贝数、位点特异DNA甲基化、RNA、蛋白与pSTAT/pERK，证明哪些缺失是驱动事件。",
+    "需用单细胞/空间及细胞特异性干预区分肿瘤、T细胞和髓系区室，避免把免疫增强信号当作肿瘤生存依赖。",
+    "PTPN11不同变体对STAT与RAS输出、以及对不同SHP2药物的反应仍需具体检验，不能按基因级正负标签推定。",
+    "PIAS亚型与STAT核内输出的临床检测阈值，以及JAK抑制对IFNγ抗原呈递和T细胞功能的净影响，均缺乏本场景验证。"
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:08:10.084596+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root confirmed no callable Firecrawl tool, CLI or configured credential; no Firecrawl request was made.",
+    "actual_verification_provider": "Europe PMC",
+    "verification": "Five source records and their abstracts checked through Europe PMC core API. Selected relevant body paragraphs of the 2019 review were checked via its fullTextXML endpoint; no complete full-text review, systematic search or clinical recommendation is claimed.",
+    "review_excerpt_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6549392/fullTextXML"
+  }
+}

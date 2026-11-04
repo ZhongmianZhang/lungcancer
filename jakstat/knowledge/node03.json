@@ -1,0 +1,284 @@
+{
+  "node_id": "node03",
+  "title": "STAT3功能状态：Y705、S727、核/线粒体与非磷酸化反例",
+  "genes": [
+    "STAT3",
+    "JAK1",
+    "JAK2",
+    "SRC",
+    "EGFR",
+    "IL6",
+    "IL6ST",
+    "IL4",
+    "SOCS3",
+    "TFAM",
+    "TNFSF10",
+    "TNFRSF10B"
+  ],
+  "upstream": [
+    "IL6–gp130–JAK1/2等细胞因子输入",
+    "EGFR/其他RTK与SRC家族候选激酶输入",
+    "激酶/磷酸酶和SOCS3负反馈",
+    "治疗时序及肿瘤、髓系等细胞区室"
+  ],
+  "downstream": [
+    "Y705相关经典核转录",
+    "STAT3 Y705–IL4–巨噬细胞极化",
+    "S727相关核/线粒体转录与TFAM代谢输出",
+    "非磷酸化STAT3–HP1/异染色质保护",
+    "IL6/STAT3–TRAIL–DR5促凋亡",
+    "SOCS3等负反馈读出"
+  ],
+  "mechanism_zh": [
+    "STAT3不是一个由单一“高/低”读数代表的开关。总STAT3的RNA或蛋白表达、Y705磷酸化、S727磷酸化、核定位、DNA占位和靶基因输出分别回答不同问题。Y705是经典SH2介导二聚与核内转录的重要读出，但核内存在STAT3并不能单独证明正在驱动某个耐药程序；非磷酸化STAT3也可进入细胞核。因此应同时记录位点、总蛋白、细胞区室及功能输出，而不能把核染色、总表达和pSTAT3合并为同一变量。[J03_E01,J03_E03,J03_E04]",
+    "IL6/gp130可通过JAK激活STAT3，但STAT3也可整合RTK及SRC家族等输入。pY705升高本身不能指认上游为JAK1或JAK2，更不能自动预测JAK抑制药敏；反过来，单次pY705降低也不排除S727相关或非磷酸化功能。若怀疑JAK依赖，应将配体/受体阻断、JAK遗传干预与SRC/RTK干预进行比较，并用靶点抑制、下游转录和存活补回建立因果。RTK改变伴随pSTAT3也不等于已经证明RTK直接磷酸化STAT3；直接激酶作用与经细胞因子回路间接激活需要分开验证。[J03_E01,J03_E02]",
+    "奥希替尼耐药的直接例子来自罕见EGFR T790M-cis-L792F背景。2022年研究在耐药ctDNA队列检出该组合，并在构建细胞和动物模型中显示STAT3 Y705磷酸化升高、STAT3结合IL4启动子、IL4分泌增强及巨噬细胞M2样极化；STAT3或IL4通路干预改善模型反应。这比“pSTAT3染色高”提供了更完整的靶基因及微环境因果链，但实验模型和罕见基因型不能代表所有奥希替尼耐药患者，该研究也没有证明此轴在每例中依赖JAK，或证明EGFR对STAT3的直接酶促作用。[J03_E02]",
+    "S727与Y705不能互换，也不能把S727阳性直接命名为“线粒体STAT3活化”。2021年在线、2022年卷期的Oncogene研究在KRAS突变肺腺癌模型中发现S727磷酸化缺失抑制肿瘤及增殖，并影响核与线粒体基因转录，线粒体输出涉及TFAM。这说明S727可牵涉代谢及转录依赖，并非单纯反映经典Y705信号；但证据背景是KRAS驱动肺癌，不是EGFR突变奥希替尼耐药。证明特定患者的线粒体依赖还需要定位、分馏纯度、呼吸/代谢读出及位点特异补回，不能由pS727免疫染色代替。[J03_E03]",
+    "非磷酸化STAT3不能一概称为休眠或无功能。2020年肺癌细胞与异种移植研究发现，uSTAT3促进异染色质形成，并抑制增殖及肿瘤生长，提供了STAT3可保护染色质和限制肿瘤的反例。实际检测必须写明“未磷酸化”所指位点；pY705阴性不能证明所有位点均无修饰，也不能证明功能消失。这些模型结果不表示所有uSTAT3均抑瘤，却足以反对把总STAT3消除、Y705抑制与保留非经典功能视作生物学等价操作。[J03_E04]",
+    "2025年EGFR突变NSCLC研究进一步提供与奥希替尼直接相关的促凋亡反例：奥希替尼诱导IL6、STAT3活化及STAT3依赖的TRAIL转录；STAT3降解或基因敲除阻断TRAIL上调。TRAIL敲低/敲除使敏感细胞在体内外对奥希替尼反应减弱，DR5敲低也削弱杀伤，而耐药细胞丧失这一TRAIL诱导反应。因此同样的IL6/STAT3读出可能参与药物杀伤，不能统一解释为促耐药适应。该研究没有证明所有临床JAK/STAT组合必然拮抗，也不构成在患者中刺激IL6/STAT3的治疗依据。[J03_E05]",
+    "解释治疗后STAT3动态时，应追问其激活的靶基因究竟偏向IL4等存活/免疫重塑，还是TRAIL/DR5等凋亡输出，并区分急性药物反应、持续耐受与已建立耐药。SOCS3等负反馈可使信号呈脉冲或回落，单个时间点不能还原回路方向；肿瘤上皮、巨噬细胞及其他免疫细胞的STAT3也可能承担不同作用。纵向配对标本、细胞区室分解、转录和凋亡读出比单次总pSTAT3更接近可解释的机制证据。[J03_E01,J03_E02,J03_E05]",
+    "本节点支持的是分位点、分区室及分输出研究STAT3，不能推出“STAT3越低越好”。这些证据中没有按STAT3状态选择治疗的奥希替尼加化疗后前瞻临床验证。Stattic、S3I-201、SH-4-54等研究工具的作用不能视为选择性已批准肺癌治疗；其药理学效应也需要遗传和正交实验核实。即使某药在其他疾病已获批，仍不能由pSTAT3高直接迁移为本治疗序列的标准联合策略。[J03_E01,J03_E02,J03_E04,J03_E05]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "总STAT3 RNA/蛋白表达",
+      "meaning": "反映表达量或细胞组成，可作为建立功能假说的起点。",
+      "limitations": "不能区分Y705/S727、核/线粒体或非磷酸化功能，也不等于肿瘤依赖、耐药或药敏；bulk信号须分解细胞来源。"
+    },
+    {
+      "marker": "pSTAT3-Y705，需注明细胞区室及取样时间",
+      "meaning": "支持存在经典STAT3磷酸化信号，可联合靶基因和动态响应研究。",
+      "limitations": "不能识别JAK与SRC/RTK来源；高值不能自动判定耐药或JAK/STAT抑制敏感，且STAT3依赖TRAIL可参与奥希替尼杀伤。固定、缺血和抗体等前处理也影响读数。"
+    },
+    {
+      "marker": "pSTAT3-S727",
+      "meaning": "提示另一位点修饰，可能涉及核转录、代谢或线粒体功能。",
+      "limitations": "不能替代Y705检测，也不能单独证明线粒体定位或依赖；直接功能证据主要来自KRAS驱动模型，未建立EGFR肺癌奥希替尼加化疗后预测阈值。"
+    },
+    {
+      "marker": "核内STAT3或核内pSTAT3",
+      "meaning": "给出亚细胞定位，比总体染色提供更明确的区室信息。",
+      "limitations": "核定位不等于特定靶基因占位或耐药性转录；uSTAT3也可有核功能，应结合位点、启动子结合、靶基因及扰动证据。"
+    },
+    {
+      "marker": "线粒体STAT3、TFAM及呼吸/代谢读出",
+      "meaning": "可用于检验线粒体相关STAT3功能及代谢依赖。",
+      "limitations": "分馏污染、整体代谢变化及细胞死亡均可混淆；需要可靠定位和功能补回，不能从S727高或核Y705低直接推导。KRAS结果不能直接外推EGFR耐药。"
+    },
+    {
+      "marker": "uSTAT3与HP1/异染色质状态",
+      "meaning": "提示可能保留染色质保护及抑制增殖的非经典功能。",
+      "limitations": "仅pY705阴性不足以鉴定全部uSTAT3状态；现有肺癌模型不能证明每种细胞状态均抑瘤，也不能构成临床选择STAT3激动或降解治疗的依据。"
+    },
+    {
+      "marker": "TRAIL/TNFSF10诱导、膜TRAIL与DR5反应",
+      "meaning": "在敏感EGFR突变模型中是奥希替尼诱导凋亡的一条STAT3相关输出，可帮助解释激活方向。",
+      "limitations": "未验证为患者的常规药敏伴随诊断；耐药细胞中的诱导缺失并不说明全部耐药均由该轴丧失导致，不能据此直接选择TRAIL或JAK/STAT药物。"
+    },
+    {
+      "marker": "EGFR T790M-cis-L792F伴STAT3 Y705/IL4及巨噬细胞表型",
+      "meaning": "罕见基因型模型中有较完整的STAT3–IL4微环境机制，支持进一步机制匹配研究。",
+      "limitations": "须确认cis关系、进展期样本及细胞来源；构建模型与少量患者ctDNA不等于临床疗效，亦未证明奥希替尼加化疗后JAK依赖。"
+    },
+    {
+      "marker": "SOCS3与pSTAT3纵向变化",
+      "meaning": "可辅助观察近期刺激及负反馈。",
+      "limitations": "SOCS3高或低都不能单独诊断依赖或耐药；需要结合细胞来源、配体/激酶输入、治疗时序和实际转录输出。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "仅在配体/受体及遗传干预共同支持JAK依赖时，考虑JAK抑制联合EGFR抑制的临床试验",
+      "status": "investigational",
+      "evidence_ids": [
+        "J03_E01",
+        "J03_E05"
+      ],
+      "setting": "机制匹配研究；没有本节点证据支持奥希替尼加化疗后常规采用。",
+      "limitations": "pY705高不是伴随诊断；应识别RTK/SRC旁路并评估TRAIL/DR5等促凋亡输出。2025模型提出潜在生物学冲突，尚未证明人体组合必然拮抗或获益。"
+    },
+    {
+      "strategy": "罕见T790M-cis-L792F背景下研究STAT3–IL4/IL4Rα与奥希替尼联合干预",
+      "status": "investigational",
+      "evidence_ids": [
+        "J03_E02"
+      ],
+      "setting": "奥希替尼耐药ctDNA关联及构建细胞/动物模型。",
+      "limitations": "SH-4-54属于实验工具；dupilumab阻断IL4Rα的其他疾病适应证不等于获批用于此肺癌场景。缺少按该基因型招募的前瞻疗效及联合安全性证据。"
+    },
+    {
+      "strategy": "研究位点或区室特异干预，保留非磷酸化染色质保护及必要的促凋亡输出",
+      "status": "investigational",
+      "evidence_ids": [
+        "J03_E03",
+        "J03_E04",
+        "J03_E05"
+      ],
+      "setting": "以KRAS肺癌、一般肺癌模型及EGFR突变细胞凋亡模型形成的研究假说。",
+      "limitations": "尚无经本治疗序列验证的S727/线粒体特异药物选择规则；肿瘤与正常组织效应、保留何种功能及真正治疗窗仍待实验和临床验证。"
+    },
+    {
+      "strategy": "不支持“pSTAT3高即耐药/药敏，或总STAT3越低越好”的自动治疗映射",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J03_E01",
+        "J03_E04",
+        "J03_E05"
+      ],
+      "setting": "临床标志物解释与程序规则边界。",
+      "limitations": "必须区分表达、位点、定位、靶基因和功能依赖；uSTAT3抑瘤与STAT3依赖TRAIL促凋亡均构成反例，不能把研究工具化合物视为选择性已批准治疗。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J03_E01",
+      "title": "STAT3: Versatile Functions in Non-Small Cell Lung Cancer.",
+      "authors": "Mohrherr J, Uras IZ, Moll HP, Casanova E.",
+      "year": 2020,
+      "journal": "Cancers",
+      "doi": "10.3390/cancers12051107",
+      "pmid": "32365499",
+      "publication_date": "2020-04-29",
+      "url": "https://doi.org/10.3390/cancers12051107",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "综述STAT3在NSCLC中的肿瘤细胞生存、促肿瘤炎症、免疫逃逸及某些情境下的抑瘤作用；讨论直接靶向与IL6/JAK上游抑制的利弊。",
+      "limitation_zh": "机制综述而非临床干预证据，不能据此判断单例pSTAT3高即依赖或药敏；不提供奥希替尼加化疗后前瞻验证。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32365499+OR+EXT_ID%3A35932642+OR+EXT_ID%3A34857889+OR+EXT_ID%3A32087696+OR+EXT_ID%3A40247082%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    },
+    {
+      "id": "J03_E02",
+      "title": "Blockade of STAT3/IL-4 overcomes EGFR T790M-cis-L792F-induced resistance to osimertinib via suppressing M2 macrophages polarization.",
+      "authors": "Sun Y, Dong Y, Liu X, Zhang Y, Bai H, Duan J, Tian Z, Yan X, Wang J, Wang Z.",
+      "year": 2022,
+      "journal": "EBioMedicine",
+      "doi": "10.1016/j.ebiom.2022.104200",
+      "pmid": "35932642",
+      "publication_date": "2022-08-03",
+      "url": "https://doi.org/10.1016/j.ebiom.2022.104200",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "耐药ctDNA队列发现罕见T790M-cis-L792F；构建模型显示STAT3 Tyr705磷酸化及IL4启动子结合增强，促进IL4分泌和巨噬细胞M2样极化。STAT3/IL4通路阻断改善模型中的奥希替尼反应。",
+      "limitation_zh": "主要因果与干预证据来自构建细胞和动物；不是按STAT3标志物分层的患者疗效研究。罕见基因型不能推广至全部耐药，也没有证明JAK必需或奥希替尼加化疗后临床获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32365499+OR+EXT_ID%3A35932642+OR+EXT_ID%3A34857889+OR+EXT_ID%3A32087696+OR+EXT_ID%3A40247082%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    },
+    {
+      "id": "J03_E03",
+      "title": "Oncogenic dependency on STAT3 serine phosphorylation in KRAS mutant lung cancer.",
+      "authors": "Alhayyani S, McLeod L, West AC, Balic JJ, Hodges C, Yu L, Smith JA, Prodanovic Z, Bozinovski S, Kumar B, Ruwanpura SM, Saad MI, Jenkins BJ.",
+      "year": 2022,
+      "journal": "Oncogene",
+      "doi": "10.1038/s41388-021-02134-4",
+      "pmid": "34857889",
+      "publication_date": "2021-12-03",
+      "url": "https://doi.org/10.1038/s41388-021-02134-4",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "KRAS G12D肺癌小鼠及KRAS突变人肺腺癌细胞中，S727磷酸化缺失抑制增殖及肿瘤。研究显示其影响核与线粒体转录，后者涉及TFAM，支持S727相关代谢依赖。",
+      "limitation_zh": "2021-12-03在线发表、2022年卷期；证据背景为KRAS驱动肺癌，不能作为EGFR突变奥希替尼耐药或联合化疗后的药敏证据，也不能由S727阳性单独推断线粒体定位。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32365499+OR+EXT_ID%3A35932642+OR+EXT_ID%3A34857889+OR+EXT_ID%3A32087696+OR+EXT_ID%3A40247082%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    },
+    {
+      "id": "J03_E04",
+      "title": "Unphosphorylated STAT3 in heterochromatin formation and tumor suppression in lung cancer.",
+      "authors": "Dutta P, Zhang L, Zhang H, Peng Q, Montgrain PR, Wang Y, Song Y, Li J, Li WX.",
+      "year": 2020,
+      "journal": "BMC cancer",
+      "doi": "10.1186/s12885-020-6649-2",
+      "pmid": "32087696",
+      "publication_date": "2020-02-22",
+      "url": "https://doi.org/10.1186/s12885-020-6649-2",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "通过成像、细胞实验及异种移植模型，发现uSTAT3促进肺癌细胞异染色质形成，并抑制体外增殖与体内肿瘤生长，提出非经典染色质保护机制。",
+      "limitation_zh": "非EGFR奥希替尼耐药专属研究；不证明所有uSTAT3均抑瘤，也不支持从pY705阴性直接确定功能。对总STAT3清除的临床净效应仍无法由该模型判定。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32365499+OR+EXT_ID%3A35932642+OR+EXT_ID%3A34857889+OR+EXT_ID%3A32087696+OR+EXT_ID%3A40247082%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    },
+    {
+      "id": "J03_E05",
+      "title": "Induction of IL6/STAT3-dependent TRAIL expression that contributes to the therapeutic efficacy of osimertinib in EGFR mutant NSCLC cells.",
+      "authors": "Oh YT, Chen Z, Wang D, Ramalingam SS, Sun SY.",
+      "year": 2025,
+      "journal": "Oncogene",
+      "doi": "10.1038/s41388-025-03381-5",
+      "pmid": "40247082",
+      "publication_date": "2025-04-17",
+      "url": "https://doi.org/10.1038/s41388-025-03381-5",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼诱导EGFR突变NSCLC细胞IL6/STAT3依赖的TRAIL转录；STAT3降解或敲除阻断诱导。TRAIL敲低/敲除降低体内外敏感性，DR5敲低削弱杀伤，而耐药细胞丧失TRAIL诱导。",
+      "limitation_zh": "细胞及体内模型中的促凋亡反例，未建立临床TRAIL预测阈值；不能断言JAK/STAT抑制在所有患者必然有害，也不能据此给患者激活STAT3。没有奥希替尼加化疗后前瞻疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32365499+OR+EXT_ID%3A35932642+OR+EXT_ID%3A34857889+OR+EXT_ID%3A32087696+OR+EXT_ID%3A40247082%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少明确奥希替尼加铂类/培美曲塞后进展、以STAT3位点和区室选择干预的前瞻研究；奥希替尼耐药不等于奥希替尼加化疗后耐药。",
+    "需要在同一纵向样本中同时测量总STAT3、Y705、S727、核/线粒体定位及靶基因输出，评估急性药物刺激与持续耐药的差异。",
+    "需用激酶来源的遗传上位性与补回实验分清JAK依赖、SRC/RTK作用和间接细胞因子反馈；相关磷酸化不能证明直接酶促关系。",
+    "STAT3–TRAIL/DR5促凋亡与STAT3–IL4等存活/微环境输出如何在同一EGFR突变肿瘤中切换，及JAK/STAT联合会否保留或削弱净杀伤，仍需患者样本和前瞻验证。",
+    "uSTAT3异染色质保护和S727代谢依赖在EGFR突变、组织学转化及免疫区室中的边界尚不明确；不能把KRAS模型直接迁移。",
+    "缺少标准化磷酸化IHC阈值、前处理规范、跨实验室重现性及临床伴随诊断；研究工具的非靶效应与系统免疫效应仍需分开。",
+    "2017年JNCI STAT3/YAP1研究(PMID 28376152)有2026年Editor’s Note(PMID 41729183)，需进一步审校说明内容；本节点没有把该原文纳入核心证据，且这不是穷尽的完整性筛查。"
+  ],
+  "integrity_notes": [
+    {
+      "original_pmid": "28376152",
+      "original_doi": "10.1093/jnci/djx014",
+      "notice_pmid": "41729183",
+      "notice_doi": "10.1093/jnci/djag009",
+      "notice_title": "Editor's Note: Co-activation of STAT3 and YES-Associated Protein 1 (YAP1) Pathway in EGFR-Mutant NSCLC.",
+      "notice_year": 2026,
+      "notice_url": "https://pubmed.ncbi.nlm.nih.gov/41729183/",
+      "verification": "metadata_only",
+      "interpretation_zh": "实际检索中读到原文摘要及Editor’s Note元数据；Europe PMC将关联索引为Erratum in/for，说明本身无摘要且未审阅全文。编辑说明不自动等于撤稿或研究失效，需审阅说明内容。为避免依赖未审校条目，本节点核心五篇未使用该研究；此检查非穷尽完整性筛查。",
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32087696+OR+EXT_ID%3A34857889+OR+EXT_ID%3A37703176+OR+EXT_ID%3A40247082+OR+EXT_ID%3A32365499+OR+EXT_ID%3A28376152+OR+EXT_ID%3A41729183+OR+EXT_ID%3A34703647+OR+EXT_ID%3A31671073+OR+EXT_ID%3A35932642+OR+EXT_ID%3A39721017%29&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    }
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:09:15.412247+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root confirmed no callable tool, CLI or injected credential; no Firecrawl request was made.",
+    "actual_verification_provider": "Europe PMC",
+    "verification": "Five core records have actual metadata and abstracts checked. Targeted review, not a systematic review or full-text review. Notice integrity check is metadata-only and not exhaustive.",
+    "publication_date_basis": "publication_date uses Europe PMC firstPublicationDate; year uses the bibliographic journal issue year, so the S727 paper has earliest online date in 2021 and issue year 2022."
+  }
+}

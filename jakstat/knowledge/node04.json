@@ -1,0 +1,313 @@
+{
+  "node_id": "node04",
+  "title": "STAT1/2–IFN与STAT5A/B–STAT6免疫网络：细胞区室、时序及保护/耐受双向性",
+  "genes": [
+    "STAT1",
+    "STAT2",
+    "IRF9",
+    "IFNAR1",
+    "IFNAR2",
+    "IFNGR1",
+    "IFNGR2",
+    "JAK1",
+    "JAK2",
+    "JAK3",
+    "TYK2",
+    "STAT5A",
+    "STAT5B",
+    "STAT6",
+    "IL4",
+    "IL13",
+    "IL4R",
+    "IL13RA1",
+    "IL2RG",
+    "IL2RB",
+    "TOX"
+  ],
+  "upstream": [
+    "I型IFNα/β–IFNAR1/2：主要经JAK1/TYK2",
+    "II型IFNγ–IFNGR1/2：主要经JAK1/JAK2",
+    "EGFR抑制后RIG-I–TBK1–IRF3/TRIM32或NF-κB应激分叉",
+    "IL2/IL7/IL15等γc细胞因子–淋巴细胞JAK1/JAK3",
+    "IL4–IL4Rα/γc或IL4Rα/IL13Rα1；IL13主要经II型受体",
+    "骨髓嗜碱/嗜酸性粒细胞IL4与早期髓系祖细胞受体状态",
+    "抗原持续暴露、T细胞状态及组织损伤/感染"
+  ],
+  "downstream": [
+    "I型IFN：STAT1–STAT2–IRF9/ISGF3与ISG程序",
+    "II型IFN：以STAT1同源二聚体为主，抗原呈递/趋化与免疫抑制配体并行",
+    "HLA/B2M/TAP、CXCL9/CXCL10、CD274等区室相关读出",
+    "STAT5A/B：效应淋巴细胞生存/功能与Treg维持等状态相关输出",
+    "STAT5A–TOX拮抗及耗竭CD8 T细胞状态转换",
+    "IL4/IL13–STAT6：II型免疫与髓系编程；受体层干预不等同直接STAT6依赖",
+    "慢性IFN适应程序与早期免疫募集可能方向不同"
+  ],
+  "mechanism_zh": [
+    "IFN不是单一输入。I型IFNα/β通常经IFNAR–JAK1/TYK2促成STAT1/STAT2/IRF9复合体ISGF3，II型IFNγ通常经IFNGR–JAK1/JAK2以STAT1同源二聚体为主要转录输出；两路可共享部分ISG，但不应把STAT2等同于IFNγ的必需同源输出。肿瘤细胞、抗原呈递细胞及T/NK细胞接受同一配体后，抗原呈递、趋化、存活及抑制配体输出均受细胞状态影响。bulk的IFN签名或总STAT表达既不能证明配体类型，也不能指定受影响区室。",
+    "必须区分急性/早期保护与持续适应。早期IFN反应可增加肿瘤可见性、趋化及效应细胞参与，而Benci等在ICI模型中证明持续肿瘤IFN信号可形成STAT1相关表观遗传与多种抑制配体程序，产生PD-L1依赖和非依赖抵抗[J04_E01]。因此“IFN高”同时可能包含有效免疫压力与被选择后的适应，单次活检不能辨别持续时间。慢性IFN适应也不等于所有宿主细胞已对IFN失去反应，更不能把小鼠ICI结果自动迁移为EGFR-TKI耐药。",
+    "本节点直接EGFR证据有限且方向冲突，不能形成统一药敏规则。Gong等观察到肿瘤内EGFR抑制诱导RIG-I–TBK1–IRF3/I型IFN适应，阻断IFN在模型中提高TKI敏感性[J04_E06]；Gurule等8例患者的治疗前/2周配对活检则显示IFN和效应细胞签名增加与较长进展时间正相关[J04_E05]。前者主要是模型因果干预，后者是小样本早期临床关联；IFN类型、时点、免疫完整性与肿瘤/宿主区室均可能改变净效应，尚不能凭这些摘要确定矛盾的唯一原因。本节点没有奥希替尼加化疗后按IFN状态选择JAK/STAT抑制的前瞻疗效证据。",
+    "JAK1/2失活属于另一种机制：肿瘤丢失IFNγ感知后，即便高突变负荷也可能无法形成正常的炎症诱导反应并抵抗PD1阻断。Shin等的关键临床例来自黑色素瘤和错配修复缺陷结肠癌，伴随细胞功能验证[J04_E02]。这与“持续但仍能响应IFN的适应程序”必须分开，且失活突变并非JAK过度活化；发现JAK1/2 LOF既不能确诊EGFR-TKI耐药，也不能推出添加JAK抑制剂。变异功能、拷贝状态和刺激后反应应先于任何信号解释。",
+    "STAT5A/B在肿瘤和宿主淋巴细胞中不具有统一致癌含义。IL2/IL7/IL15等输入可支持T/NK细胞生存与效应，但IL2–STAT5也参与Treg维持，因此无区室的STAT5抑制可能削弱抗肿瘤免疫，增强STAT5亦不保证净获益。Beltra等主要操控Stat5a，显示其拮抗Tox并把耗竭CD8 T细胞导向持久效应/NK样状态[J04_E04]；不能将该结果当作STAT5B在肺癌上皮中的依赖证明。需要分别测量肿瘤、效应CD8/NK与Treg中的活化和功能，而非将STAT5A与STAT5B表达合成统一用药标签。",
+    "IL4/IL13共享部分受体与STAT6输出，但其配体、受体类型和靶细胞不能互换。IL4可通过I型或II型IL4受体，IL13主要通过II型受体；阻断IL4Rα会影响共享信号，并不说明IL13在特定模型中已被证明为驱动。LaMarche等把NSCLC相关免疫抑制髓系编程定位到骨髓早期祖细胞IL4Rα：删除成熟髓系细胞受体无同等作用[J04_E03]。因此肿瘤内CD206/ARG1或pSTAT6升高不足以确认干预位置；“M1/M2”概括也不能取代连续髓系状态、来源及祖细胞时序分析。",
+    "治疗层面应先识别驱动区室，再区分肿瘤IFN适应、IFN感知丢失、效应淋巴细胞STAT5保护及IL4祖细胞编程。LaMarche研究的6例ICI进展NSCLC探索虽出现免疫变化及1例近完全反应，仍不足以把dupilumab或直接STAT6/JAK抑制作为EGFR突变患者的标准方案[J04_E03]。广泛JAK抑制同时触及多个IFN/γc通路，可能改变宿主防御和效应细胞；IFN、PD-L1、STAT5或STAT6单标记均不能替代机制匹配试验，尤其不能从奥希替尼单药或其他癌种的研究外推联合化疗后处置。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "bulk IFN/ISG签名，MX1/IFIT1/ISG15或CXCL10升高",
+      "meaning": "提示IFN或应激相关转录程序，可用于建立纵向、分区室研究。",
+      "limitations": "不能单独区分I型/II型IFN、感染或治疗损伤、免疫有效反应与肿瘤适应；EGFR模型与患者早期关联方向不同，没有治疗选择阈值。"
+    },
+    {
+      "marker": "肿瘤与免疫细胞pSTAT1、pSTAT2及IRF9/ISGF3读出",
+      "meaning": "结合刺激实验可支持不同IFN输入的信号完整性分析。",
+      "limitations": "总蛋白/转录不等于磷酸化与核内功能；需注明细胞、位点、采样时点和前处理，STAT2单阳性不能断定IFNγ依赖。"
+    },
+    {
+      "marker": "JAK1/JAK2失活变异与IFNγ刺激后无反应",
+      "meaning": "可能支持IFN感知丢失这一ICI抵抗机制，需变异与功能联合判读。",
+      "limitations": "非每个变异都是LOF，也非EGFR-TKI耐药伴随诊断；不能据LOF选JAK抑制剂，小系列非肺癌证据不能量化个体临床概率。"
+    },
+    {
+      "marker": "CD274/PD-L1诱导，HLA/B2M/TAP抗原呈递与CXCL9/10",
+      "meaning": "共同反映肿瘤可见性、免疫压力和适应输出的部分状态。",
+      "limitations": "PD-L1高可由多种原因造成，低也可能源自IFN感知缺陷；不能以单个PD-L1或ISG直接选择免疫、IFN或JAK药物。"
+    },
+    {
+      "marker": "STAT5A/B或pSTAT5：肿瘤、CD8/NK、FOXP3+Treg分区室",
+      "meaning": "帮助定位效应淋巴细胞支持、调节细胞维持或潜在肿瘤内信号。",
+      "limitations": "常用pSTAT5抗体可能不能区分A/B；细胞比例与激活均可改变读出，增强/抑制的净效应需要功能验证。"
+    },
+    {
+      "marker": "CD8 T细胞TOX、效应功能及STAT5A动态",
+      "meaning": "可检验耗竭状态与STAT5A再编程假说。",
+      "limitations": "TOX或PD1单表达不等同不可逆失能；Beltra为实验操控证据，无EGFR患者已验证的细胞状态阈值或治疗规则。"
+    },
+    {
+      "marker": "IL4/IL13、IL4Rα、IL13Rα1及pSTAT6空间/细胞来源",
+      "meaning": "可支持II型免疫受体通信假说，区分配体与靶细胞。",
+      "limitations": "共享受体不证明两配体等效驱动；受体阻断结果不等同直接STAT6或JAK依赖，肿瘤内取样可能遗漏骨髓祖细胞编程。"
+    },
+    {
+      "marker": "髓系CD206/ARG1、嗜碱/嗜酸性粒细胞及早期祖细胞状态",
+      "meaning": "可用于追踪IL4相关髓系编程的候选来源和阶段。",
+      "limitations": "CD206/ARG1不唯一代表免疫抑制或IL4依赖；物种、成熟阶段与髓系连续状态不同，不能由“M2多”直接选择IL4R/STAT6药物。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "以时序和区室明确的肿瘤IFN适应为入组依据，研究选择性IFN通路干预与EGFR-TKI的组合",
+      "status": "investigational",
+      "evidence_ids": [
+        "J04_E01",
+        "J04_E05",
+        "J04_E06"
+      ],
+      "setting": "临床前IFN适应模型；需与早期保护性IFN关联共同考虑。",
+      "limitations": "Gong模型效应与Gurule患者关联方向不同；广泛JAK抑制不能视为特定IFN干预的等价物，没有奥希替尼加化疗后已证实的临床获益。"
+    },
+    {
+      "strategy": "不支持由IFN/ISG高或PD-L1高自动添加JAK/STAT抑制剂",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J04_E01",
+        "J04_E05",
+        "J04_E06"
+      ],
+      "setting": "标志物解释及临床推断边界。",
+      "limitations": "需先确认输入、持续时间、细胞区室、依赖和宿主净效应；同一读出可关联抗肿瘤免疫或适应反应。"
+    },
+    {
+      "strategy": "不支持将JAK1/JAK2 LOF的ICI抵抗当作EGFR-TKI耐药或JAK抑制治疗依据",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J04_E02"
+      ],
+      "setting": "以黑色素瘤/错配修复缺陷结肠癌病例和功能验证为来源。",
+      "limitations": "LOF是信号能力丢失；不能从失活反向推出激酶过度依赖，亦非EGFR突变肺癌的已验证伴随诊断。"
+    },
+    {
+      "strategy": "IL4Rα阻断加免疫检查点阻断仅作为机制匹配临床研究线索",
+      "status": "investigational",
+      "evidence_ids": [
+        "J04_E03"
+      ],
+      "setting": "ICI进展NSCLC的极小样本探索和骨髓髓系编程模型。",
+      "limitations": "6例无对照结果不能建立标准或确定EGFR突变亚组效应；IL4Rα抗体、IL13阻断、STAT6抑制与泛JAK抑制不可互作疗效替代。"
+    },
+    {
+      "strategy": "以效应淋巴细胞为目标研究IL2–STAT5A状态重编程",
+      "status": "investigational",
+      "evidence_ids": [
+        "J04_E04"
+      ],
+      "setting": "慢性抗原及耗竭CD8 T细胞实验系统。",
+      "limitations": "正交IL2/受体和遗传Stat5a操控不等同全身常规治疗；需评估Treg、不同STAT5亚型与宿主影响，无EGFR-TKI耐药专属临床结果。"
+    },
+    {
+      "strategy": "不支持以bulk STAT5A/B或STAT6上调直接选择抑制剂",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J04_E03",
+        "J04_E04"
+      ],
+      "setting": "肿瘤、骨髓及效应/调节淋巴细胞混合样本。",
+      "limitations": "表达、磷酸化和因果依赖不同，且部分STAT5输出具有宿主保护作用；成熟髓系细胞读出不能替代祖细胞干预证据。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J04_E01",
+      "title": "Tumor Interferon Signaling Regulates a Multigenic Resistance Program to Immune Checkpoint Blockade.",
+      "authors": "Benci JL, Xu B, Qiu Y, Wu TJ, Dada H, Twyman-Saint Victor C, Cucolo L, Lee DSM, Pauken KE, Huang AC, Gangadhar TC, Amaravadi RK, Schuchter LM, Feldman MD, Ishwaran H, Vonderheide RH, Maity A, Wherry EJ, Minn AJ.",
+      "year": 2016,
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2016.11.022",
+      "pmid": "27912061",
+      "publication_date": "2016-12-01",
+      "url": "https://doi.org/10.1016/j.cell.2016.11.022",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "持续II型IFN信号使肿瘤获得STAT1相关表观遗传变化，增加ISG及多种T细胞抑制配体；I型和II型IFN共同维持PD-L1依赖及非依赖的ICI抵抗程序。遗传或药理干预在模型中可恢复应答，并有人体ICI进展相关标志物。",
+      "limitation_zh": "主要为非EGFR特异的免疫治疗模型及临床相关性；不能证明所有IFN升高均有害，不能外推为EGFR-TKI或奥希替尼联合化疗后耐药机制，亦未验证临床JAK抑制获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "id": "J04_E02",
+      "title": "Primary Resistance to PD-1 Blockade Mediated by JAK1/2 Mutations.",
+      "authors": "Shin DS, Zaretsky JM, Escuin-Ordinas H, Garcia-Diaz A, Hu-Lieskovan S, Kalbasi A, Grasso CS, Hugo W, Sandoval S, Torrejon DY, Palaskas N, Rodriguez GA, Parisi G, Azhdam A, Chmielowski B, Cherry G, Seja E, Berent-Maoz B, Shintaku IP, Le DT, Pardoll DM, Diaz LA, Tumeh PC, Graeber TG, Lo RS, Comin-Anduix B, Ribas A.",
+      "year": 2017,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-16-1223",
+      "pmid": "27903500",
+      "publication_date": "2016-11-30",
+      "url": "https://doi.org/10.1158/2159-8290.cd-16-1223",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "case_series",
+      "main_finding_zh": "在接受PD1阻断的黑色素瘤23例和错配修复缺陷结肠癌16例中，各识别1例JAK1/2失活且高突变负荷仍不应答；细胞实验显示IFNγ受体反应丢失，不能正常诱导PD-L1及其他ISG。",
+      "limitation_zh": "少量非肺癌病例加功能验证，首发2016-11-30而期刊卷年为2017。JAK失活的ICI抵抗属于IFN感知丢失，不代表EGFR-TKI耐药，也不构成给予JAK抑制剂的依据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "id": "J04_E03",
+      "title": "An IL-4 signalling axis in bone marrow drives pro-tumorigenic myelopoiesis.",
+      "authors": "LaMarche NM, Hegde S, Park MD, Maier BB, Troncoso L, Le Berichel J, Hamon P, Belabed M, Mattiuz R, Hennequin C, Chin T, Reid AM, Reyes-Torres I, Nemeth E, Zhang R, Olson OC, Doroshow DB, Rohs NC, Gomez JE, Veluswamy R, Hall N, Venturini N, Ginhoux F, Liu Z, Buckup M, Figueiredo I, Roudko V, Miyake K, Karasuyama H, Gonzalez-Kozlova E, Gnjatic S, Passegué E, Kim-Schulze S, Brown BD, Hirsch FR, Kim BS, Marron TU, Merad M.",
+      "year": 2024,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-023-06797-9",
+      "pmid": "38057662",
+      "publication_date": "2023-12-06",
+      "url": "https://doi.org/10.1038/s41586-023-06797-9",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "人和鼠NSCLC单细胞分析及条件敲除显示：骨髓嗜碱/嗜酸性粒细胞来源IL4作用于早期粒-单核祖细胞IL4Rα，编程免疫抑制髓系细胞；成熟髓系细胞受体敲除无同样效果。探索性6例ICI进展NSCLC中，dupilumab加继续PD1/PD-L1阻断改变免疫读出，1例近完全反应。",
+      "limitation_zh": "大量机制模型与极小样本、无对照的前瞻探索混合；在线首发2023-12-06、期刊卷年2024。并非EGFR突变或奥希替尼加化疗后专属队列，不证明IL13为同等驱动，也不证明直接STAT6/JAK抑制可复制IL4Rα阻断。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "id": "J04_E04",
+      "title": "Stat5 opposes the transcription factor Tox and rewires exhausted CD8&lt;sup&gt;+&lt;/sup&gt; T cells toward durable effector-like states during chronic antigen exposure.",
+      "authors": "Beltra JC, Abdel-Hakeem MS, Manne S, Zhang Z, Huang H, Kurachi M, Su L, Picton L, Ngiow SF, Muroyama Y, Casella V, Huang YJ, Giles JR, Mathew D, Belman J, Klapholz M, Decaluwe H, Huang AC, Berger SL, Garcia KC, Wherry EJ.",
+      "year": 2023,
+      "journal": "Immunity",
+      "doi": "10.1016/j.immuni.2023.11.005",
+      "pmid": "38091951",
+      "publication_date": "2023-12-01",
+      "url": "https://doi.org/10.1016/j.immuni.2023.11.005",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "慢性抗原模型中，Stat5a与Tox形成相互拮抗回路；增强Stat5a或使用正交IL2/IL2Rβ系统，可推动耗竭CD8 T细胞形成较持久的效应/NK样状态并增强模型抗肿瘤潜力。",
+      "limitation_zh": "以耗竭T细胞和实验操控为主；不能推断患者全身STAT5增强的净获益，不能把Stat5a结果直接归因于STAT5B，也不提供EGFR耐药患者的临床治疗证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "id": "J04_E05",
+      "title": "A tyrosine kinase inhibitor-induced interferon response positively associates with clinical response in EGFR-mutant lung cancer.",
+      "authors": "Gurule NJ, McCoach CE, Hinz TK, Merrick DT, Van Bokhoven A, Kim J, Patil T, Calhoun J, Nemenoff RA, Tan AC, Doebele RC, Heasley LE.",
+      "year": 2021,
+      "journal": "NPJ precision oncology",
+      "doi": "10.1038/s41698-021-00181-4",
+      "pmid": "34001994",
+      "publication_date": "2021-05-17",
+      "url": "https://doi.org/10.1038/s41698-021-00181-4",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "prospective",
+      "main_finding_zh": "8例EGFR突变患者治疗前及TKI开始2周后配对活检中，IFN转录程序、效应免疫细胞签名和T细胞增加与较长进展时间正相关。奥希替尼处理细胞也出现幅度各异的IFN程序，IL6/CXCL10诱导可受IKK与JAK-STAT干预影响。",
+      "limitation_zh": "小样本早期治疗关联，不能确立IFN导致延长控制；临床TKI与细胞奥希替尼实验不可混成奥希替尼后专属队列，更非奥希替尼加化疗后证据。没有经验证的IFN阈值或JAK药物治疗选择规则。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "id": "J04_E06",
+      "title": "EGFR inhibition triggers an adaptive response by co-opting antiviral signaling pathways in lung cancer.",
+      "authors": "Gong K, Guo G, Panchani N, Bender ME, Gerber DE, Minna JD, Fattah F, Gao B, Peyton M, Kernstine K, Mukherjee B, Burma S, Chiang CM, Zhang S, Amod Sathe A, Xing C, Dao KH, Zhao D, Akbay EA, Habib AA.",
+      "year": 2020,
+      "journal": "Nature cancer",
+      "doi": "10.1038/s43018-020-0048-0",
+      "pmid": "33269343",
+      "publication_date": "2020-04-06",
+      "url": "https://doi.org/10.1038/s43018-020-0048-0",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "EGFR突变NSCLC模型中，EGFR抑制通过RIG-I–TBK1–IRF3及TRIM32相关TBK1活化诱导I型IFN；EGFR野生型模型涉及NF-κB。阻断IFN信号在细胞、异种移植及免疫完整小鼠模型中提高EGFR-TKI敏感性。",
+      "limitation_zh": "涵盖EGFR突变与野生型/KRAS模型，主要是早期适应与临床前药敏；不同模型净效应不可等同患者获益。与J04_E05的患者早期正向关联需由时序、区室和IFN类型解释，不能据此常规抑制JAK或IFN，更非奥希替尼加化疗后试验证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少奥希替尼与铂类/培美曲塞同期联合后进展、按STAT1/2或STAT5/6区室与IFN时序分层的前瞻介入试验。",
+    "需要同一患者纵向、配对肿瘤/免疫/骨髓资料，解释肿瘤IFN-I适应模型与早期IFN临床正向关联的条件差异；现有摘要不足以确定唯一原因。",
+    "IFNγ–STAT1与IFNα/β–STAT1/2/IRF9的相互作用、急性与持续程序、未磷酸化STAT输出及治疗记忆仍需功能拆分。",
+    "JAK1/2变异需验证功能、双等位状态与诱导反应；其他癌种ICI抵抗的患病率与预测值不能移植为EGFR肺癌结论。",
+    "STAT5A与STAT5B在肿瘤上皮、CD8/NK与Treg中的独立作用及安全干预窗口尚缺EGFR相关验证。",
+    "IL4与IL13各自来源、I/II型受体、骨髓祖细胞及成熟髓系细胞的因果贡献需分开；IL4Rα证据不能替代直接STAT6/JAK药敏证据。",
+    "IL4Rα加ICI的小系列需扩大、设对照并报告EGFR亚组和既往TKI/化疗序列，现阶段不能估计该治疗序列的获益。",
+    "需要可重复的空间/单细胞蛋白和刺激后功能读出；尚无可由IFN/STAT标记自动映射抗IFN、JAK/STAT抑制或免疫联合的伴随诊断。"
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:11:04+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root confirmed no callable tool, CLI or injected credential; no Firecrawl request was made.",
+    "actual_verification_provider": "Europe PMC",
+    "verification": "Six primary-source metadata records and abstracts checked. Selection expanded from five to six by root to retain opposing direct EGFR findings. Not a systematic review or full-text review; canonical receptor biology is distinguished from the interventions tested."
+  }
+}

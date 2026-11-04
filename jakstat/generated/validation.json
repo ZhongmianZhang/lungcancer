@@ -1,0 +1,94 @@
+{
+  "checked_at": "2026-11-04T09:31:50+00:00",
+  "base_commit": "d36043f0e2deb7480d5877b1c931e4e0ec160333",
+  "unit_tests": {
+    "executed": 86,
+    "passed": 86,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "new_jakstat_tests": 24,
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'"
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "seven modules and unique bibliography",
+      "module filtering and expansion",
+      "all citation aliases and integrity notices",
+      "390px mobile layout",
+      "full content without JavaScript",
+      "readout and model reports; zero external requests or JS errors"
+    ],
+    "errors": [],
+    "external_requests": []
+  },
+  "metadata": {
+    "matched": 39,
+    "total": 39,
+    "status": "complete",
+    "full_text_systematically_reviewed": false
+  },
+  "bibliography_counts": {
+    "nodes": 7,
+    "evidence_assertions": 42,
+    "unique_publications": 39,
+    "abstract_checked": 39,
+    "metadata_only": 0,
+    "full_text_reviewed": 0
+  },
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "research_agents": {
+    "requested": 7,
+    "completed": 7
+  },
+  "clinical_algorithm_validated": false,
+  "search": {
+    "preferred_provider": "Firecrawl",
+    "actual_provider": "Europe PMC",
+    "requested_window": {
+      "start": "2016-11-04",
+      "end": "2026-11-04"
+    },
+    "firecrawl_live_used": false,
+    "firecrawl_adapter_protocol_tests": "mock_only",
+    "case_analysis_inputs_accessed": false,
+    "credential_value_saved_in_code": false,
+    "scope": "Curated literature with auditable discovery; not a systematic or exhaustive review."
+  },
+  "independent_rule_review": [
+    {
+      "reviewer_node": "node03",
+      "finding": "JAK3 must not substitute for JAK1/JAK2/TYK2 in gp130 ligand axes.",
+      "resolution": "Restricted canonical kinase gates; regression test passes."
+    },
+    {
+      "reviewer_node": "node07",
+      "finding": "Target context must require professionally confirmed EGFR driver.",
+      "resolution": "Explicit confirmation plus nonempty, non-wildtype annotation; missing or conflicting annotations tested."
+    }
+  ],
+  "source_hashes": {
+    "node01.json": "756028b20d100e42dfcd828efcd756ddde90cc2872729aa0c36f5de82ad6bf3d",
+    "node02.json": "e16d6fa9dd18b58cef471a8965a4d5008162a3606fae4be93c346b609b74cca1",
+    "node03.json": "038acb49531b04aaf6eaa654348d2924b38a36ad32aa84b4ce60a4a7110c18d7",
+    "node04.json": "f705df33ba7af22845e24361849a147b7ab19eec1db41816dfa5a3cf24578700",
+    "node05.json": "41ce3c7cddb09cef97d1ff67c010256cfc97b894d90c460b68510537049682e2",
+    "node06.json": "288341d4dd5fbecebaaf6ac6f0b2e83e017cf9fc19405089de6e10259d7a2f7c",
+    "node07.json": "f7f25bed495ac8c34e1d88c1b6fc40a14cc54d966653e2d2e6d6c364a3d78d63"
+  },
+  "code_hashes": {
+    "jakstat/__init__.py": "009ca5cc930f5ff62cf1e3f0134b4b20a621ed44131078ad41a2fe43616074f4",
+    "jakstat/__main__.py": "118043ef0f98ec028f57104d48e81cddebf55e8c708e6289e5b240759a6308ed",
+    "jakstat/engine.py": "c6dab24099427bcd52fea5f90a95c4c020f7130c47bffe7c62a5892887965fae",
+    "jakstat/knowledge.py": "dd88edf44aa47af28dcf8c2278697f3e552094cf1bf0c1772d6f6cd27f352850",
+    "jakstat/render.py": "04aed909487a4be5afb6083d7a88d420efa9dd4533151451ffe0180277807550",
+    "lineage/search.py": "dd40f7266160ff75a962357596dbbf6209f6d8265b0b427d3df4a876ba14ce3f",
+    "scripts/build_site.py": "310f8ccf8f3e01eaaf370b24bc23845851e6e3e6864b9eb4a9089b639cab2b63",
+    "tests/test_jakstat.py": "8795def4dfb423eab88941be36c1328213ec61b1f418701cd292dfedbf951bba",
+    "tests/browser_jakstat.py": "c05ddae2398a1a077fedd55fdf73f2b09de12fc01ebac9fa6452e18aed6e671a"
+  }
+}

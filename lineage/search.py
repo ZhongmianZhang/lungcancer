@@ -54,26 +54,28 @@ class FirecrawlClient:
         return safe
 
 
-def search(query: str, *, provider='auto', limit=10) -> dict:
+def search(query: str, *, provider='auto', limit=10, start='2016-11-02', end='2026-11-02') -> dict:
     if provider not in {'auto','firecrawl','europepmc'} or not isinstance(query,str) or not query.strip():
         raise ValueError('A nonempty literature query and supported provider are required')
     if not 1 <= limit <= 25:
         raise ValueError('limit must be between 1 and 25')
+    if dt.date.fromisoformat(start)>dt.date.fromisoformat(end):
+        raise ValueError('start must not be after end')
     out={'preferred_provider':'Firecrawl','provider_requested':provider,
          'searched_at':dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds'),
-         'query':query,'attempts':[],'results':[],'status':'not_run','case_analysis_inputs_accessed':False}
+         'query':query,'requested_window':{'start':start,'end':end},'attempts':[],'results':[],'status':'not_run','case_analysis_inputs_accessed':False}
     if provider in {'auto','firecrawl'}:
         try:
             out['results']=FirecrawlClient().search(query,limit)
             out['attempts'].append({'provider':'Firecrawl','status':'executed'})
-            out.update(status='complete',actual_provider='Firecrawl',result_count=len(out['results']))
+            out.update(status='complete',actual_provider='Firecrawl',result_count=len(out['results']),date_screening='Web discovery only; publication dates require bibliographic verification, not automatic inclusion.')
             return out
         except FirecrawlError as error:
             out['attempts'].append({'provider':'Firecrawl','status':'unavailable_or_failed','kind':error.kind,'http_status':error.http_status})
             if provider=='firecrawl':
                 out.update(status='blocked',actual_provider=None,result_count=0)
                 return out
-    bounded=f'({query}) AND FIRST_PDATE:[2016-11-02 TO 2026-11-02]'
+    bounded=f'({query}) AND FIRST_PDATE:[{start} TO {end}]'
     try:
         page=EuropePMCClient(timeout=30,retries=1).request(bounded,page_size=limit)
         records=page.get('resultList',{}).get('result',[])

@@ -31,6 +31,10 @@
     "lineage/README.md",
     "lineage/example_result.json",
     "lineage/index.html",
-    "lineage/knowledge.json"
+    "lineage/knowledge.json",
+    "jak-stat/README.md",
+    "jak-stat/example_result.json",
+    "jak-stat/index.html",
+    "jak-stat/knowledge.json"
   ]
 }

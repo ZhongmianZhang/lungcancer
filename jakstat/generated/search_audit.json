@@ -1,0 +1,115 @@
+{
+  "preferred_provider": "Firecrawl",
+  "provider_requested": "auto",
+  "searched_at": "2026-11-04T09:27:41+00:00",
+  "query": "TITLE_ABS:EGFR AND (TITLE_ABS:STAT3 OR TITLE_ABS:JAK) AND TITLE_ABS:resistance",
+  "requested_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "attempts": [
+    {
+      "provider": "Firecrawl",
+      "status": "unavailable_or_failed",
+      "kind": "missing_credential",
+      "http_status": null
+    },
+    {
+      "provider": "Europe PMC",
+      "status": "executed",
+      "retrieval": {
+        "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3AEGFR+AND+%28TITLE_ABS%3ASTAT3+OR+TITLE_ABS%3AJAK%29+AND+TITLE_ABS%3Aresistance%29+AND+FIRST_PDATE%3A%5B2016-11-04+TO+2026-11-04%5D&format=json&resultType=core&pageSize=10&cursorMark=%2A",
+        "cached": false,
+        "retrieved_at": "2026-11-04T09:27:45+00:00"
+      }
+    }
+  ],
+  "results": [
+    {
+      "title": "Breaking adaptive oncogenic resistance in glioblastoma via targeting the EGFR-STAT3 axis.",
+      "pmid": "42848171",
+      "doi": "10.1007/s12032-026-03459-4",
+      "publication_date": "2026-10-08",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42848171/"
+    },
+    {
+      "title": "Targeting the CAF-LPL-STAT3 axis mitigates osimertinib resistance associated with EGFR downregulation.",
+      "pmid": "42810632",
+      "doi": "10.1016/j.cellsig.2026.112911",
+      "publication_date": "2026-09-29",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42810632/"
+    },
+    {
+      "title": "IL‑6: A key player in the EGFR‑TKI‑resistant tumor microenvironment and its therapeutic implications (Review).",
+      "pmid": "41789586",
+      "doi": "10.3892/ijo.2026.5860",
+      "publication_date": "2026-03-06",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41789586/"
+    },
+    {
+      "title": "STAT3 signaling mediates EGFR-TKI resistance in non-small cell lung cancer by regulating stemness markers and telomerase, reversed by icaritin.",
+      "pmid": "42020777",
+      "doi": "10.1038/s41416-026-03433-x",
+      "publication_date": "2026-04-22",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42020777/"
+    },
+    {
+      "title": "Identification of STK35L1 as a potential prognostic biomarker in breast carcinoma, and its expression exhibits high correlation with EGFR activity.",
+      "pmid": "42696205",
+      "doi": "10.1007/s10142-026-02021-9",
+      "publication_date": "2026-09-04",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42696205/"
+    },
+    {
+      "title": "Integrated In Silico and In Vivo Evaluation of the Antiepileptic Potential of Chenopodium album L. in a Pentylenetetrazole-Induced Seizure Model",
+      "pmid": "",
+      "doi": "10.21203/rs.3.rs-10301958/v1",
+      "publication_date": "2026-08-14",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://europepmc.org/article/PPR/PPR1298376"
+    },
+    {
+      "title": "EGFR N-Glycosylation Catalyzed by NDST2 Promotes Lenvatinib Resistance in Hepatocellular Carcinoma.",
+      "pmid": "42329862",
+      "doi": "10.1158/0008-5472.can-25-4582",
+      "publication_date": "2026-09-01",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42329862/"
+    },
+    {
+      "title": "The STAT3-ZEB1 axis contributes to CCL2-mediated resistance to osimertinib in lung cancer.",
+      "pmid": "41800052",
+      "doi": "10.3389/fonc.2026.1699471",
+      "publication_date": "2026-02-20",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41800052/"
+    },
+    {
+      "title": "Targeting PLK1 potentiates the antitumor efficacy of EGFR-TKIs through inhibiting the JAK1/STAT3 pathway.",
+      "pmid": "41539998",
+      "doi": "10.1038/s41419-025-08220-9",
+      "publication_date": "2026-01-15",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41539998/"
+    },
+    {
+      "title": "CDDO-Me Overcomes Gefitinib Resistance in NSCLC by Targeting the Src/STAT3 Axis to Induce Apoptosis and Pyroptosis.",
+      "pmid": "42511824",
+      "doi": "10.3390/ijms27146481",
+      "publication_date": "2026-07-21",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42511824/"
+    }
+  ],
+  "status": "complete",
+  "case_analysis_inputs_accessed": false,
+  "actual_provider": "Europe PMC",
+  "total_hits": 442,
+  "result_count": 10,
+  "truncated": true
+}

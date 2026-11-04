@@ -1,0 +1,775 @@
+{
+  "checked_at": "2026-11-04T09:20:48+00:00",
+  "status": "complete",
+  "publication_count": 39,
+  "matched_count": 39,
+  "requests": [
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2235197546%22+OR+EXT_ID%3A%2239251588%22+OR+EXT_ID%3A%2236595561%22+OR+EXT_ID%3A%2229118262%22+OR+EXT_ID%3A%2228879441%22+OR+EXT_ID%3A%2237069261%22+OR+EXT_ID%3A%2228729401%22+OR+EXT_ID%3A%2227922075%22+OR+EXT_ID%3A%2239032875%22+OR+EXT_ID%3A%2234824210%22+OR+EXT_ID%3A%2232297743%22+OR+EXT_ID%3A%2240713600%22+OR+EXT_ID%3A%2229567812%22+OR+EXT_ID%3A%2227903500%22+OR+EXT_ID%3A%2238457493%22+OR+EXT_ID%3A%2232365499%22+OR+EXT_ID%3A%2235932642%22+OR+EXT_ID%3A%2234857889%22+OR+EXT_ID%3A%2232087696%22+OR+EXT_ID%3A%2240247082%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-04T09:20:43+00:00"
+    },
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2227912061%22+OR+EXT_ID%3A%2238057662%22+OR+EXT_ID%3A%2238091951%22+OR+EXT_ID%3A%2234001994%22+OR+EXT_ID%3A%2233269343%22+OR+EXT_ID%3A%2231213912%22+OR+EXT_ID%3A%2228723893%22+OR+EXT_ID%3A%2234794959%22+OR+EXT_ID%3A%2238099496%22+OR+EXT_ID%3A%2232928921%22+OR+EXT_ID%3A%2229405201%22+OR+EXT_ID%3A%2236969743%22+OR+EXT_ID%3A%2241634464%22+OR+EXT_ID%3A%2231319994%22+OR+EXT_ID%3A%2234773474%22+OR+EXT_ID%3A%2229681434%22+OR+EXT_ID%3A%2239792482%22+OR+EXT_ID%3A%2238900877%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-04T09:20:47+00:00"
+    },
+    {
+      "request_url": "https://api.crossref.org/works/10.1158%2F1538-7445.am2018-2938"
+    }
+  ],
+  "errors": [],
+  "records": [
+    {
+      "source_ids": [
+        "J01_E01",
+        "J06_E02"
+      ],
+      "pmid": "35197546",
+      "doi": "10.1038/s42003-022-03111-7",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Ibrutinib reverses IL-6-induced osimertinib resistance through inhibition of Laminin α5/FAK signaling.",
+        "doi": "10.1038/s42003-022-03111-7",
+        "first_publication_date": "2022-02-23",
+        "journal": "Communications biology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E02",
+        "J06_E03"
+      ],
+      "pmid": "39251588",
+      "doi": "10.1038/s41467-024-51831-7",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Defective N-glycosylation of IL6 induces metastasis and tyrosine kinase inhibitor resistance in lung cancer.",
+        "doi": "10.1038/s41467-024-51831-7",
+        "first_publication_date": "2024-09-09",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E03"
+      ],
+      "pmid": "36595561",
+      "doi": "10.1158/1078-0432.ccr-22-3379",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "IL6 Mediates Suppression of T- and NK-cell Function in EMT-associated TKI-resistant EGFR-mutant NSCLC.",
+        "doi": "10.1158/1078-0432.ccr-22-3379",
+        "first_publication_date": "2023-04-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E04"
+      ],
+      "pmid": "29118262",
+      "doi": "10.1126/scitranslmed.aao4307",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Stress hormones promote EGFR inhibitor resistance in NSCLC: Implications for combinations with β-blockers.",
+        "doi": "10.1126/scitranslmed.aao4307",
+        "first_publication_date": "2017-11-01",
+        "journal": "Science translational medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E05"
+      ],
+      "pmid": "28879441",
+      "doi": "10.1007/s12032-017-1031-1",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "EGFR and KRAS mutations do not enrich for the activation of IL-6, JAK1 or phosphorylated STAT3 in resected lung adenocarcinoma.",
+        "doi": "10.1007/s12032-017-1031-1",
+        "first_publication_date": "2017-09-06",
+        "journal": "Medical oncology (Northwood, London, England)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E06"
+      ],
+      "pmid": "37069261",
+      "doi": "10.1038/s41577-023-00856-y",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Targeting IL-6 trans-signalling: past, present and future prospects.",
+        "doi": "10.1038/s41577-023-00856-y",
+        "first_publication_date": "2023-04-17",
+        "journal": "Nature reviews. Immunology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E07"
+      ],
+      "pmid": "28729401",
+      "doi": "10.1158/1535-7163.mct-17-0148",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "JAK1/STAT3 Activation through a Proinflammatory Cytokine Pathway Leads to Resistance to Molecularly Targeted Therapy in Non-Small Cell Lung Cancer.",
+        "doi": "10.1158/1535-7163.mct-17-0148",
+        "first_publication_date": "2017-07-20",
+        "journal": "Molecular cancer therapeutics",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E08"
+      ],
+      "pmid": "27922075",
+      "doi": "10.1038/srep38408",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Cancer-associated fibroblasts treated with cisplatin facilitates chemoresistance of lung adenocarcinoma through IL-11/IL-11R/STAT3 signaling pathway.",
+        "doi": "10.1038/srep38408",
+        "first_publication_date": "2016-12-06",
+        "journal": "Scientific reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J01_E09"
+      ],
+      "pmid": "39032875",
+      "doi": "10.1016/j.ijbiomac.2024.133987",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Cancer-associated fibroblasts promote the malignant development of lung cancer through the FOXO1 protein/LIF signaling.",
+        "doi": "10.1016/j.ijbiomac.2024.133987",
+        "first_publication_date": "2024-07-19",
+        "journal": "International journal of biological macromolecules",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J02_E01"
+      ],
+      "pmid": "34824210",
+      "doi": "10.1038/s41392-021-00791-1",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "The JAK/STAT signaling pathway: from bench to clinic.",
+        "doi": "10.1038/s41392-021-00791-1",
+        "first_publication_date": "2021-11-26",
+        "journal": "Signal transduction and targeted therapy",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J02_E02"
+      ],
+      "pmid": "32297743",
+      "doi": "10.1021/acs.jmedchem.9b01392",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Discovery of (2<i>R</i>)-<i>N</i>-[3-[2-[(3-Methoxy-1-methyl-pyrazol-4-yl)amino]pyrimidin-4-yl]-1<i>H</i>-indol-7-yl]-2-(4-methylpiperazin-1-yl)propenamide (AZD4205) as a Potent and Selective Janus Kinase 1 Inhibitor.",
+        "doi": "10.1021/acs.jmedchem.9b01392",
+        "first_publication_date": "2020-04-28",
+        "journal": "Journal of medicinal chemistry",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J02_E03"
+      ],
+      "pmid": "40713600",
+      "doi": "10.1186/s12967-025-06874-9",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "MCAM interacts with integrin β1 to promote EGFR-TKI resistance in lung adenocarcinoma through the JAK3 signalling pathway.",
+        "doi": "10.1186/s12967-025-06874-9",
+        "first_publication_date": "2025-07-25",
+        "journal": "Journal of translational medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J02_E04"
+      ],
+      "pmid": "29567812",
+      "doi": "10.1158/1078-0432.ccr-18-0143",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "False-Positive Plasma Genotyping Due to Clonal Hematopoiesis.",
+        "doi": "10.1158/1078-0432.ccr-18-0143",
+        "first_publication_date": "2018-03-22",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J02_E05",
+        "J04_E02"
+      ],
+      "pmid": "27903500",
+      "doi": "10.1158/2159-8290.cd-16-1223",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Primary Resistance to PD-1 Blockade Mediated by JAK1/2 Mutations.",
+        "doi": "10.1158/2159-8290.cd-16-1223",
+        "first_publication_date": "2016-11-30",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J02_E06"
+      ],
+      "pmid": "38457493",
+      "doi": "10.1126/sciadv.adl2097",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Molecular basis of JAK2 activation in erythropoietin receptor and pathogenic JAK2 signaling.",
+        "doi": "10.1126/sciadv.adl2097",
+        "first_publication_date": "2024-03-08",
+        "journal": "Science advances",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J03_E01"
+      ],
+      "pmid": "32365499",
+      "doi": "10.3390/cancers12051107",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "STAT3: Versatile Functions in Non-Small Cell Lung Cancer.",
+        "doi": "10.3390/cancers12051107",
+        "first_publication_date": "2020-04-29",
+        "journal": "Cancers",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J03_E02"
+      ],
+      "pmid": "35932642",
+      "doi": "10.1016/j.ebiom.2022.104200",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Blockade of STAT3/IL-4 overcomes EGFR T790M-cis-L792F-induced resistance to osimertinib via suppressing M2 macrophages polarization.",
+        "doi": "10.1016/j.ebiom.2022.104200",
+        "first_publication_date": "2022-08-03",
+        "journal": "EBioMedicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J03_E03"
+      ],
+      "pmid": "34857889",
+      "doi": "10.1038/s41388-021-02134-4",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Oncogenic dependency on STAT3 serine phosphorylation in KRAS mutant lung cancer.",
+        "doi": "10.1038/s41388-021-02134-4",
+        "first_publication_date": "2021-12-03",
+        "journal": "Oncogene",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J03_E04"
+      ],
+      "pmid": "32087696",
+      "doi": "10.1186/s12885-020-6649-2",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Unphosphorylated STAT3 in heterochromatin formation and tumor suppression in lung cancer.",
+        "doi": "10.1186/s12885-020-6649-2",
+        "first_publication_date": "2020-02-22",
+        "journal": "BMC cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J03_E05"
+      ],
+      "pmid": "40247082",
+      "doi": "10.1038/s41388-025-03381-5",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Induction of IL6/STAT3-dependent TRAIL expression that contributes to the therapeutic efficacy of osimertinib in EGFR mutant NSCLC cells.",
+        "doi": "10.1038/s41388-025-03381-5",
+        "first_publication_date": "2025-04-17",
+        "journal": "Oncogene",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J04_E01"
+      ],
+      "pmid": "27912061",
+      "doi": "10.1016/j.cell.2016.11.022",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumor Interferon Signaling Regulates a Multigenic Resistance Program to Immune Checkpoint Blockade.",
+        "doi": "10.1016/j.cell.2016.11.022",
+        "first_publication_date": "2016-12-01",
+        "journal": "Cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J04_E03"
+      ],
+      "pmid": "38057662",
+      "doi": "10.1038/s41586-023-06797-9",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "An IL-4 signalling axis in bone marrow drives pro-tumorigenic myelopoiesis.",
+        "doi": "10.1038/s41586-023-06797-9",
+        "first_publication_date": "2023-12-06",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J04_E04"
+      ],
+      "pmid": "38091951",
+      "doi": "10.1016/j.immuni.2023.11.005",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Stat5 opposes the transcription factor Tox and rewires exhausted CD8&lt;sup&gt;+&lt;/sup&gt; T cells toward durable effector-like states during chronic antigen exposure.",
+        "doi": "10.1016/j.immuni.2023.11.005",
+        "first_publication_date": "2023-12-01",
+        "journal": "Immunity",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J04_E05"
+      ],
+      "pmid": "34001994",
+      "doi": "10.1038/s41698-021-00181-4",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "A tyrosine kinase inhibitor-induced interferon response positively associates with clinical response in EGFR-mutant lung cancer.",
+        "doi": "10.1038/s41698-021-00181-4",
+        "first_publication_date": "2021-05-17",
+        "journal": "NPJ precision oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J04_E06"
+      ],
+      "pmid": "33269343",
+      "doi": "10.1038/s43018-020-0048-0",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "EGFR inhibition triggers an adaptive response by co-opting antiviral signaling pathways in lung cancer.",
+        "doi": "10.1038/s43018-020-0048-0",
+        "first_publication_date": "2020-04-06",
+        "journal": "Nature cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J05_E01"
+      ],
+      "pmid": "31213912",
+      "doi": "10.2147/cmar.s206175",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Negative regulators of STAT3 signaling pathway in cancers.",
+        "doi": "10.2147/cmar.s206175",
+        "first_publication_date": "2019-05-29",
+        "journal": "Cancer management and research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J05_E02"
+      ],
+      "pmid": "28723893",
+      "doi": "10.1038/nature23270",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "In vivo CRISPR screening identifies Ptpn2 as a cancer immunotherapy target.",
+        "doi": "10.1038/nature23270",
+        "first_publication_date": "2017-07-19",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J05_E03"
+      ],
+      "pmid": "34794959",
+      "doi": "10.1158/2159-8290.cd-21-0694",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "PTP1B Is an Intracellular Checkpoint that Limits T-cell and CAR T-cell Antitumor Immunity.",
+        "doi": "10.1158/2159-8290.cd-21-0694",
+        "first_publication_date": "2022-03-01",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J05_E04"
+      ],
+      "pmid": "38099496",
+      "doi": "10.1172/jci163096",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Rational design of a SOCS1-edited tumor-infiltrating lymphocyte therapy using CRISPR/Cas9 screens.",
+        "doi": "10.1172/jci163096",
+        "first_publication_date": "2023-12-15",
+        "journal": "The Journal of clinical investigation",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J05_E05"
+      ],
+      "pmid": "32928921",
+      "doi": "10.1158/0008-5472.can-20-1634",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Allosteric SHP2 Inhibitor, IACS-13909, Overcomes EGFR-Dependent and EGFR-Independent Resistance Mechanisms toward Osimertinib.",
+        "doi": "10.1158/0008-5472.can-20-1634",
+        "first_publication_date": "2020-09-14",
+        "journal": "Cancer research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J06_E01"
+      ],
+      "pmid": "29405201",
+      "doi": "10.1038/nrclinonc.2018.8",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Targeting the IL-6/JAK/STAT3 signalling axis in cancer.",
+        "doi": "10.1038/nrclinonc.2018.8",
+        "first_publication_date": "2018-02-06",
+        "journal": "Nature reviews. Clinical oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J06_E04"
+      ],
+      "pmid": "36969743",
+      "doi": "10.1158/2767-9764.crc-22-0066",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Pharmaceutical Reactivation of Attenuated Apoptotic Pathways Leads to Elimination of Osimertinib Drug-Tolerant Cells.",
+        "doi": "10.1158/2767-9764.crc-22-0066",
+        "first_publication_date": "2022-10-31",
+        "journal": "Cancer research communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J06_E05"
+      ],
+      "pmid": "41634464",
+      "doi": "10.1038/s43587-025-01054-2",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Treatment resistance to platinum-based chemotherapy in lung and ovarian cancer is driven by a targetable TGFβ senescent secretome.",
+        "doi": "10.1038/s43587-025-01054-2",
+        "first_publication_date": "2026-02-03",
+        "journal": "Nature aging",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J07_E01"
+      ],
+      "pmid": "31319994",
+      "doi": "10.1016/j.lungcan.2019.05.030",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "A phase Ib study of the combination of afatinib and ruxolitinib in EGFR mutant NSCLC with progression on EGFR-TKIs.",
+        "doi": "10.1016/j.lungcan.2019.05.030",
+        "first_publication_date": "2019-05-28",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J07_E02"
+      ],
+      "pmid": "34773474",
+      "doi": "10.1007/s00280-021-04369-0",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "A phase 1b study of erlotinib and momelotinib for the treatment of EGFR-mutated, tyrosine kinase inhibitor-naive metastatic non-small cell lung cancer.",
+        "doi": "10.1007/s00280-021-04369-0",
+        "first_publication_date": "2021-11-13",
+        "journal": "Cancer chemotherapy and pharmacology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J07_E03"
+      ],
+      "pmid": "29681434",
+      "doi": "10.1016/j.cllc.2018.03.016",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "A Placebo-Controlled Phase II Study of Ruxolitinib in Combination With Pemetrexed and Cisplatin for First-Line Treatment of Patients With Advanced Nonsquamous Non-Small-Cell Lung Cancer and Systemic Inflammation.",
+        "doi": "10.1016/j.cllc.2018.03.016",
+        "first_publication_date": "2018-03-23",
+        "journal": "Clinical lung cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J07_E04"
+      ],
+      "pmid": "39792482",
+      "doi": "10.1158/1078-0432.ccr-24-2920",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Phase I Trial of TTI-101, a First-in-Class Oral Inhibitor of STAT3, in Patients with Advanced Solid Tumors.",
+        "doi": "10.1158/1078-0432.ccr-24-2920",
+        "first_publication_date": "2025-03-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J07_E05"
+      ],
+      "pmid": "38900877",
+      "doi": "10.1126/science.adf1329",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Combined JAK inhibition and PD-1 immunotherapy for non-small cell lung cancer patients.",
+        "doi": "10.1126/science.adf1329",
+        "first_publication_date": "2024-06-21",
+        "journal": "Science (New York, N.Y.)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "J07_E06"
+      ],
+      "pmid": null,
+      "doi": "10.1158/1538-7445.am2018-2938",
+      "provider": "Crossref",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Abstract 2938: In vivo assessment of the combination of the JAK1 selective inhibitor itacitinib with first- and second-generation EGFR inhibitors in models of non-small cell lung cancer",
+        "doi": "10.1158/1538-7445.am2018-2938",
+        "first_publication_date": [
+          [
+            2018,
+            7,
+            1
+          ]
+        ],
+        "journal": "Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    }
+  ],
+  "scope": "Bibliographic recheck only; node reviewers read abstracts; no claim of full-text or regulatory verification."
+}

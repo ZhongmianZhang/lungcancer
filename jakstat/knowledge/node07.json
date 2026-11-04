@@ -1,0 +1,327 @@
+{
+  "node_id": "node07",
+  "title": "JAK/STAT临床转化：EGFR-TKI联合的有限信号、阴性结果、会议边界与纵向采样",
+  "genes": [
+    "EGFR",
+    "IL6",
+    "IL6R",
+    "IL6ST",
+    "JAK1",
+    "JAK2",
+    "STAT3",
+    "TBK1",
+    "IFNAR1",
+    "STAT1",
+    "PDCD1",
+    "CD274"
+  ],
+  "upstream": [
+    "EGFR-TKI后候选IL6/JAK/STAT反馈",
+    "系统性炎症、CRP/白蛋白与mGPS",
+    "慢性IFN-I信号与免疫细胞分化",
+    "铂类/培美曲塞导致的组织损伤和细胞组成改变",
+    "药物暴露、取样时间及感染/糖皮质激素/G-CSF等混杂"
+  ],
+  "downstream": [
+    "肿瘤细胞STAT3生存输出与pY-STAT3药效学",
+    "外周血淋巴细胞pSTAT3与肿瘤局部抑制的分离",
+    "CD8 T细胞可塑性、效应/耗竭状态",
+    "客观缓解、PFS及临床获益的独立检验",
+    "骨髓抑制、腹泻和感染相关耐受性限制"
+  ],
+  "mechanism_zh": [
+    "本节点聚焦能否将机制转化为患者获益。IL6/JAK/STAT反馈为EGFR抑制后的残留生存提供合理研究靶点，但“通路被激活”“药物进入人体且压低pSTAT”与“改善耐药患者结局”是三个层次。纳入的五篇临床论文及一篇会议摘要均在2016-11-04至2026-11-04之间；未检出能够直接支持奥希替尼与同期铂/培美曲塞联合后进展人群的JAK/STAT靶向疗效。混合既往EGFR-TKI队列、EGFR-TKI初治队列和多癌种队列必须保留各自标签，不能补写为这一目标序列。",
+    "afatinib+ruxolitinib是窗内较直接的EGFR耐药临床尝试：30例既往EGFR-TKI进展患者中7例PR、ORR 23.3%、中位PFS 4.9个月，属于有限活性信号。20例T790M说明存在已知的EGFR获得性耐药背景，不能证明曾接受奥希替尼，更不是JAK依赖的选择标志。单臂设计也不能分清afatinib本身、ruxolitinib或病例选择各自贡献；安全可耐受与增量有效不能等同（J07_E01）。",
+    "erlotinib+momelotinib检验的是EGFR-TKI初治患者中的组合策略，而非耐药挽救。11例的ORR 54.5%与PFS 9.2个月没有显示超出erlotinib历史数据的获益，作者未继续计划中的随机扩展。此结果约束“所有EGFR突变都应预防性加JAK药”的想法，却不足以否定经充分功能选择的其他JAK/STAT组合；历史比较、小样本和未完成随机验证均限制结论。momelotinib还抑制TBK1，不宜据此把纯JAK1、JAK1/2和直接STAT3药物合并评价（J07_E02）。",
+    "ruxolitinib+顺铂/培美曲塞的随机Ⅱ期研究与化疗直接相关，但其人群是一线、系统炎症mGPS 1/2的晚期非鳞NSCLC，而非奥希替尼加化疗后的耐药患者。39例ruxolitinib组与37例安慰剂组ORR为31%与35%，没有观察到响应率改善信号；研究因与该试验无关原因早停，使生存和增量疗效解释不充分。不能把它写成充分检验并彻底否定JAK机制的试验，也不能把炎症筛选当成已验证的预测标志（J07_E03）。",
+    "直接STAT3抑制剂TTI-101已有真实人体Ⅰ期数据：64例治疗、41例疗效可评估者中5例确认PR，响应在肝癌、卵巢癌和胃癌。基线表虽有2例NSCLC，但这不构成EGFR肺癌疗效数据，更没有目标治疗序列分层。其配对活检提供药效学示范：10例可评估，8例基线pY-STAT3 H-score>30者约6周后均下降，中位下降55%。这里的H-score阈值属于该研究分析定义，下降说明靶点作用，尚不能证明STAT3抑制是缓解原因或可用此阈值选择肺癌患者（J07_E04）。",
+    "JAK也承担抗肿瘤IFN和T细胞功能，因此抑制的细胞区室与时序会影响净效应。itacitinib+pembrolizumabⅡ期研究在一线、PD-L1 TPS≥50%的转移性NSCLC中先用两个周期PD1治疗，再短期加入JAK1抑制剂，报告21例疗效可评估患者最佳响应率67%；主要12周ORR则为62%，两者不可混用。该研究支持研究慢性IFN相关免疫抑制与CD8状态，而非证明“抑JAK一定增强免疫”。无随机对照且人群不匹配，不能把该信号用作EGFR突变、奥希替尼加化疗后联合免疫或三药组合的依据（J07_E05）。",
+    "重要会议证据必须按证据类型解释。AACR 2018摘要2938是真实可核查的itacitinib/EGFR-TKI移植瘤研究；两个模型都有pSTAT3，但itacitinib单药效果不同，反而提示pSTAT3阳性不等于功能依赖。其提到NCT02917993是在当时的研究背景中标注osimertinib+itacitinib临床探索，不是公布患者结果。在本次Europe PMC/PubMed及Crossref核查中未找到该组合可核对的临床疗效报告；未实时核查注册状态、地区可及性和招募中心，不称其当前可用（J07_E06）。",
+    "采样设计应回答“何时出现、作用于谁、持续多久”，而不只比较两个bulk值。研究性纵向方案可保留联合治疗前标本、按化疗周期与末次TKI时间标准化的治疗中样本，以及影像进展且尚未开始下一方案时的样本；同步记录奥希替尼是否与铂/培美同期、末次给药、感染、发热、激素、G-CSF及放疗。化疗血细胞低谷或组织损伤可能同时改变IL6、CRP、细胞构成和pSTAT，使单次升高看似耐药驱动。这里是建议控制的研究变量，不是已验证的临床诊断时间表。",
+    "药效学采样还须区分给药前谷值、给药后峰值附近以及后续周期的持续抑制。momelotinib研究在治疗约两周时用全血IL6刺激淋巴细胞检测到短暂pSTAT3抑制，却没有治疗中肿瘤活检，展示了外周血读出与肿瘤依赖之间的证据断层。TTI-101约6周配对活检和itacitinib/PD1研究的序贯血液/组织取样则提供不同时间尺度示例，不能机械移植为另一个药物的合适时点。应分开肿瘤上皮、髓系及T细胞的pY-STAT3/IFN靶基因，并结合pERK等旁路及克隆耐药机制判读（J07_E02、J07_E04、J07_E05）。",
+    "联合的可行性受毒性限制：momelotinib组合发生G4中性粒细胞减少DLT，afatinib+ruxolitinib报告贫血及G3腹泻；所检momelotinib正文还列有严重感染/脓毒症等治疗期间事件，但并非所有事件都可归因为JAK药。铂/培美后骨髓储备、持续贫血或中性粒细胞下降，以及感染和免疫信号受抑，可能限制加用JAK药。小样本一线化疗组合“无新的安全信号”不能排除这一特定后线序列的叠加毒性；应在具体试验中评价血象、肝肾功能、感染与药物相互作用，而非由通路名推导经验性处方（J07_E01、J07_E02、J07_E03）。",
+    "临床可执行结论是把经证实的机制用于研究入组和分层，而非由单点IL6/pSTAT3升高或JAK/STAT相关基因异常直接选择常规药物。应优先核对进展期组织与血液检测、保留细胞区室和时序信息，排查已知的EGFR/MET等克隆机制与组织学转化，并要求候选组合具有对应人群的方案及安全评价。本节点未确认任何JAK/STAT方案已成为目标治疗序列的标准；本次未核查药物在各地区的其他适应证，也不把其他疾病获批等同于本场景获批。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展肿瘤上皮细胞pY-STAT3与核内定位",
+      "meaning": "提供通路输出及候选依赖的线索，配对治疗中标本可用于药效学。",
+      "limitations": "pSTAT3可由多种上游激酶驱动；阳性不等于JAK依赖或药敏。需控制固定/缺血、抗体和取样时点，并与髓系/T细胞区室分开。"
+    },
+    {
+      "marker": "外周血IL6刺激后的淋巴细胞pSTAT3抑制",
+      "meaning": "可反映系统药物暴露和刺激条件下的靶点作用。",
+      "limitations": "momelotinib研究只见短暂抑制，不能替代肿瘤药物覆盖或疗效；给药前后时间及刺激条件应一致。"
+    },
+    {
+      "marker": "血浆IL6、CRP、白蛋白及mGPS",
+      "meaning": "描述系统性炎症，可用于研究分层和纵向比较。",
+      "limitations": "感染、化疗损伤、营养及支持治疗影响明显；ruxolitinib化疗试验按mGPS入组仍未建立其预测JAK药获益的效力。"
+    },
+    {
+      "marker": "TTI-101研究的pY-STAT3 H-score>30及治疗后下降",
+      "meaning": "在该多癌种Ⅰ期研究中定义基线较高并评估药效学；约6周配对活检有下降。",
+      "limitations": "为研究内部定义；不是肺癌已验证阈值或伴随诊断，不能把10例配对样本中的关系当作临床预测规则。"
+    },
+    {
+      "marker": "IFN相关转录谱、CD8 T细胞状态与TCR克隆纵向变化",
+      "meaning": "可研究慢性炎症、T细胞可塑性与延后加入JAK抑制的免疫效应。",
+      "limitations": "来自PD-L1高表达一线NSCLC的探索性分析；区室与时序有关，没有目标序列的预测阈值或随机验证。"
+    },
+    {
+      "marker": "EGFR-TKI/化疗完整时间线与进展组织/ctDNA",
+      "meaning": "决定证据是否适用于患者，并帮助区别克隆性耐药与候选炎症适应。",
+      "limitations": "ctDNA通常不能完整评价组织学转化、空间细胞因子来源及pSTAT依赖；既往T790M并不证明曾用奥希替尼。"
+    },
+    {
+      "marker": "JAK/STAT相关变异、总STAT3或IL6高表达",
+      "meaning": "可提出进一步功能验证与试验分层假说。",
+      "limitations": "本节点临床研究没有建立这些单独读出的JAK/STAT药物选择规则；需区分激活、失活、VUS和肿瘤/血液免疫来源。"
+    },
+    {
+      "marker": "血象、感染状态、肝肾功能及既往化疗毒性",
+      "meaning": "用于评价联合治疗耐受性与试验入组风险。",
+      "limitations": "是安全性指标，不能当作抗肿瘤疗效预测标志；早期试验毒性不保证既往铂/培美后安全。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在有肿瘤区室功能依赖证据且具体方案匹配的人群中研究EGFR-TKI与JAK抑制组合",
+      "status": "investigational",
+      "evidence_ids": [
+        "J07_E01",
+        "J07_E02",
+        "J07_E06"
+      ],
+      "setting": "既往EGFR-TKI进展、初治或模型证据各自解释；目标序列需另行前瞻验证。",
+      "limitations": "现有单臂/历史比较只提供有限活性或未见增益；药物选择性、肿瘤覆盖、感染和骨髓毒性均不可合并。"
+    },
+    {
+      "strategy": "在奥希替尼加同期铂/培美曲塞后仅凭IL6或pSTAT3升高经验性加用ruxolitinib、momelotinib或itacitinib",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J07_E01",
+        "J07_E02",
+        "J07_E06"
+      ],
+      "setting": "本任务的特定耐药序列。",
+      "limitations": "未核实匹配人群的临床疗效、预测标志或安全性；AACR中提及试验编号不是患者结果或2026年招募信息。"
+    },
+    {
+      "strategy": "把ruxolitinib常规叠加于进展后的铂/培美曲塞方案以逆转耐药",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J07_E03"
+      ],
+      "setting": "已用奥希替尼加同期化疗后进展。",
+      "limitations": "可核实研究为一线炎症非鳞NSCLC，早停随机阶段ORR 31%对35%，不能提供本序列的增量疗效或叠加骨髓/感染风险保证。"
+    },
+    {
+      "strategy": "将直接STAT3抑制剂TTI-101用于符合具体方案的临床试验探索",
+      "status": "investigational",
+      "evidence_ids": [
+        "J07_E04"
+      ],
+      "setting": "多癌种Ⅰ期已有人体数据；EGFR肺癌与目标序列疗效尚未建立。",
+      "limitations": "确认PR主要见于其他癌种，不能转移总体ORR；未核查实时招募、地区准入或肺癌专门队列。"
+    },
+    {
+      "strategy": "研究延后、短期JAK1抑制与PD1治疗的时序及免疫分层",
+      "status": "investigational",
+      "evidence_ids": [
+        "J07_E05"
+      ],
+      "setting": "已报告研究为一线转移性、PD-L1 TPS≥50%的NSCLC。",
+      "limitations": "小样本单臂；最佳响应67%与12周62%应分开；临床增益和最佳时间窗仍需随机研究，不能替代EGFR耐药证据。"
+    },
+    {
+      "strategy": "将itacitinib/PD1的一线信号直接扩展为EGFR突变奥希替尼加化疗后常规免疫/JAK联合",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J07_E05"
+      ],
+      "setting": "目标耐药序列或同时继续奥希替尼的组合。",
+      "limitations": "没有对应EGFR突变治疗序列亚组验证；免疫区室作用和肿瘤STAT3作用不能合并，三药时序及安全性未经该研究证明。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J07_E01",
+      "title": "A phase Ib study of the combination of afatinib and ruxolitinib in EGFR mutant NSCLC with progression on EGFR-TKIs.",
+      "authors": "Park JS, Hong MH, Chun YJ, Kim HR, Cho BC.",
+      "year": 2019,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2019.05.030",
+      "pmid": "31319994",
+      "publication_date": "2019-05-28",
+      "url": "https://doi.org/10.1016/j.lungcan.2019.05.030",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "prospective",
+      "main_finding_zh": "开放标签Ⅰb期研究纳入既往至少一种EGFR-TKI进展的30例EGFR突变NSCLC，其中20例有T790M。afatinib与ruxolitinib联合的ORR为23.3%（7例PR），中位PFS 4.9个月（95%CI 2.4–7.5）；常见不良事件含腹泻、贫血、甲沟炎和皮疹，报告G3腹泻及贫血。作者将其活性描述为modest。",
+      "limitation_zh": "单臂、小样本、剂量探索研究，无法分离afatinib本身与ruxolitinib增益。摘要没有给出可验证的奥希替尼后专属疗效，更没有奥希替尼加同期铂/培美曲塞后队列；不得将20例T790M视为已接受第三代TKI或视为JAK通路选择标志。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31319994+OR+EXT_ID%3A34773474+OR+EXT_ID%3A29681434+OR+EXT_ID%3A39792482+OR+EXT_ID%3A38900877%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:17:34.195688+00:00"
+      }
+    },
+    {
+      "id": "J07_E02",
+      "title": "A phase 1b study of erlotinib and momelotinib for the treatment of EGFR-mutated, tyrosine kinase inhibitor-naive metastatic non-small cell lung cancer.",
+      "authors": "Padda SK, Reckamp KL, Koczywas M, Neal JW, Kawashima J, Kong S, Huang DB, Kowalski M, Wakelee HA.",
+      "year": 2022,
+      "journal": "Cancer chemotherapy and pharmacology",
+      "doi": "10.1007/s00280-021-04369-0",
+      "pmid": "34773474",
+      "publication_date": "2021-11-13",
+      "url": "https://doi.org/10.1007/s00280-021-04369-0",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "prospective",
+      "main_finding_zh": "Ⅰb期研究在11例EGFR突变、EGFR-TKI初治患者中联合erlotinib与兼抑JAK1/2及TBK1的momelotinib。ORR为54.5%（90%CI 27.1–80.0），中位PFS 9.2个月（90%CI 6.2–12.4）；DLT包括G4中性粒细胞减少及G3腹泻。作者认为相较erlotinib历史数据未见获益增强，未开展计划中的随机扩展。正文所检部分还显示，8例患者外周血IL6刺激淋巴细胞的pSTAT3仅在给药后短暂受抑，且无治疗中肿瘤活检可判断局部靶点抑制。",
+      "limitation_zh": "是初治EGFR-TKI联合，不是耐药挽救；实际报道为非随机剂量递增，历史比较不能证明严格的无效或等效。momelotinib另有TBK1活性，不能视为纯JAK1药物代表。数据库pubType含Randomized Controlled Trial标签不改变已报告队列为单臂Ⅰb期的事实。全文未完整审阅；仅核查摘要及相关正文、TEAE表格。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31319994+OR+EXT_ID%3A34773474+OR+EXT_ID%3A29681434+OR+EXT_ID%3A39792482+OR+EXT_ID%3A38900877%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:17:34.195688+00:00",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8739290/fullTextXML"
+      },
+      "publication_year_note": "Online 2021-11-13; print issue January 2022."
+    },
+    {
+      "id": "J07_E03",
+      "title": "A Placebo-Controlled Phase II Study of Ruxolitinib in Combination With Pemetrexed and Cisplatin for First-Line Treatment of Patients With Advanced Nonsquamous Non-Small-Cell Lung Cancer and Systemic Inflammation.",
+      "authors": "Giaccone G, Sanborn RE, Waqar SN, Martinez-Marti A, Ponce S, Zhen H, Kennealey G, Erickson-Viitanen S, Schaefer E.",
+      "year": 2018,
+      "journal": "Clinical lung cancer",
+      "doi": "10.1016/j.cllc.2018.03.016",
+      "pmid": "29681434",
+      "publication_date": "2018-03-23",
+      "url": "https://doi.org/10.1016/j.cllc.2018.03.016",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "randomized",
+      "main_finding_zh": "一线晚期非鳞NSCLC并有系统炎症（mGPS 1/2）的研究，先作15例安全导入，再随机给予ruxolitinib或安慰剂并联合顺铂/培美曲塞。随机阶段39例与37例，ORR分别31%与35%，均为PR；研究因与该试验无关原因提前终止，中位治疗时间仅43天。作者认为安全性可接受，但早停使疗效解释受到限制。",
+      "limitation_zh": "不是按EGFR突变/JAK依赖筛选的人群，不包含已验证的奥希替尼同期化疗耐药专属结果。不能把31%对35%写成充分检验的负性生存结论，也不能用小规模一线安全导入排除既往接受铂/培美后患者的骨髓抑制和感染叠加风险。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31319994+OR+EXT_ID%3A34773474+OR+EXT_ID%3A29681434+OR+EXT_ID%3A39792482+OR+EXT_ID%3A38900877%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:17:34.195688+00:00"
+      }
+    },
+    {
+      "id": "J07_E04",
+      "title": "Phase I Trial of TTI-101, a First-in-Class Oral Inhibitor of STAT3, in Patients with Advanced Solid Tumors.",
+      "authors": "Tsimberidou AM, Vining DJ, Arora SP, de Achaval S, Larson J, Kauh J, Cartwright C, Avritscher R, Alibhai I, Tweardy DJ, Kaseb AO.",
+      "year": 2025,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-24-2920",
+      "pmid": "39792482",
+      "publication_date": "2025-01-10",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-24-2920",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "TTI-101直接靶向STAT3的首次人体Ⅰ期试验共治疗64例晚期实体瘤患者；41例可评估疗效者中5例确认PR（12%），分别见于肝细胞癌3例、卵巢癌及胃癌各1例。未观察到DLT或致死性治疗相关不良事件，腹泻最常见，5例出现可缓解的G3治疗相关不良事件。所检正文基线表列有2例NSCLC，未报告可用于本场景的EGFR突变亚组结果。10例有配对药效学活检，8例基线pY-STAT3较高者在约6周随访均下降。",
+      "limitation_zh": "多癌种、非随机、不同制剂和剂量的早期研究；总体或肝癌响应率不能赋给肺癌，更不能赋给奥希替尼加同期化疗后耐药人群。pY-STAT3下降证明潜在靶点作用，尚非预测获益的已验证伴随诊断。发布日期采用Crossref明确标记的2025-01-10 online，区别于期刊卷期及Europe PMC字段；仅抽查相关全文段落。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31319994+OR+EXT_ID%3A34773474+OR+EXT_ID%3A29681434+OR+EXT_ID%3A39792482+OR+EXT_ID%3A38900877%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:17:34.195688+00:00",
+        "date_verification_url": "https://api.crossref.org/works/10.1158%2F1078-0432.CCR-24-2920",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11911802/fullTextXML"
+      }
+    },
+    {
+      "id": "J07_E05",
+      "title": "Combined JAK inhibition and PD-1 immunotherapy for non-small cell lung cancer patients.",
+      "authors": "Mathew D, Marmarelis ME, Foley C, Bauml JM, Ye D, Ghinnagow R, Ngiow SF, Klapholz M, Jun S, Zhang Z, Zorc R, Davis CW, Diehn M, Giles JR, Huang AC, Hwang WT, Zhang NR, Schoenfeld AJ, Carpenter EL, Langer CJ, Wherry EJ, Minn AJ.",
+      "year": 2024,
+      "journal": "Science (New York, N.Y.)",
+      "doi": "10.1126/science.adf1329",
+      "pmid": "38900877",
+      "publication_date": "2024-06-21",
+      "url": "https://doi.org/10.1126/science.adf1329",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "prospective",
+      "main_finding_zh": "Science报道itacitinib延后加入pembrolizumab的单臂Ⅱ期研究及免疫机制：治疗初治、PD-L1 TPS≥50%的转移性NSCLC，先给予两个周期PD1治疗，再在第3–4周期短期加入JAK1抑制剂。21例疗效可评估患者的12周ORR为62%，最佳总体响应率67%，中位PFS 23.8个月。配对血液/组织研究提示CD8 T细胞可塑性和分化状态改变，支持慢性IFN相关免疫抑制可受时序性JAK干预影响。",
+      "limitation_zh": "23例入组并接受至少一周期治疗，主要疗效分析为21例，不能混用分母；无随机对照，延迟的PD1效应与itacitinib增益不能完全分开。研究为一线PD-L1高表达背景，没有建立EGFR突变奥希替尼加化疗后亚组疗效；不能由其推导在本场景常规联合PD1、奥希替尼与JAK抑制剂。仅核查摘要和与临床时序、方法相关的部分全文。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31319994+OR+EXT_ID%3A34773474+OR+EXT_ID%3A29681434+OR+EXT_ID%3A39792482+OR+EXT_ID%3A38900877%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:17:34.195688+00:00",
+        "selected_sections_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=11327955"
+      }
+    },
+    {
+      "id": "J07_E06",
+      "title": "Abstract 2938: In vivo assessment of the combination of the JAK1 selective inhibitor itacitinib with first- and second-generation EGFR inhibitors in models of non-small cell lung cancer",
+      "authors": "Matthew C. Stubbs; Xiaoming Wen; Chu-Biao Xue; Taisheng Huang; Wenqing Yao; Brian Metcalf; Reid Huber; Peggy Scherle; Bruce Ruggeri",
+      "year": 2018,
+      "journal": "Cancer Research; AACR Annual Meeting 2018, abstract 2938",
+      "doi": "10.1158/1538-7445.am2018-2938",
+      "pmid": null,
+      "publication_date": "2018-07-01",
+      "url": "https://doi.org/10.1158/1538-7445.am2018-2938",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "conference_abstract",
+      "main_finding_zh": "AACR 2018会议摘要在HCC827及H1975移植瘤中测试itacitinib联合erlotinib或osimertinib；联合抑制肿瘤生长，但两个模型虽均可检测pSTAT3，对itacitinib单药的反应并不相同。摘要当时提及osimertinib+itacitinibⅠ/Ⅱ期研究NCT02917993；摘要本身没有患者疗效或安全性结果。",
+      "limitation_zh": "会议级临床前证据，不是临床试验结果，也不是奥希替尼获得性耐药加同期化疗后的模型。标题的“first- and second-generation”按原始元数据保留；摘要明确含第三代EGFR-TKI osimertinib。2018年提及试验进行中不能证明2026年仍招募、任何地区可用或已经有效。",
+      "full_text_reviewed": false,
+      "meeting": {
+        "name": "AACR Annual Meeting 2018",
+        "dates": "2018-04-14 to 2018-04-18",
+        "location": "Chicago, IL",
+        "abstract_number": "2938"
+      },
+      "retrieval": {
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1158%2F1538-7445.AM2018-2938",
+        "checked_at": "2026-11-04T09:17:34.195688+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少明确奥希替尼与铂/培美同期联合后进展、按肿瘤JAK/STAT功能依赖分层的前瞻临床研究及随机增益证据。",
+    "osimertinib+itacitinib的NCT02917993在2018会议摘要中被提及，但本次未查到可核实的患者疗效论文/会议结果；其当前招募、地区/中心、终止原因与结果公开状况未通过实时注册信息核实。",
+    "需要在基线、治疗中和进展时取得带有末次TKI/化疗及支持用药时间戳的配对样本，区别炎症应激、免疫细胞比例变化和稳定肿瘤依赖。",
+    "外周血pSTAT抑制与肿瘤内持续覆盖的关联尚缺；pY-STAT3、IL6、mGPS及IFN/CD8指标均未成为本场景经验证的伴随诊断。",
+    "需区分纯JAK1、JAK1/2、多靶点momelotinib和直接STAT3药物，不应以一项药物试验阳性或阴性替代整个通路。",
+    "后线骨髓储备不足、感染、免疫功能和化疗叠加毒性需要专门剂量探索及安全评价；本库不提供剂量处方。",
+    "会议摘要、动物模型、计划中试验和人体结果应分别编码；本次检索不构成系统综述，也不声称穷尽2026-11-04前的所有会议或尚未索引记录。"
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:17:34.195688+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root confirmed no callable Firecrawl tool, CLI or configured credential; no Firecrawl request was made.",
+    "actual_verification_provider": "Europe PMC core API; PubMed/PMC E-utilities; Crossref",
+    "verification": "Five journal metadata records and abstracts checked through Europe PMC; PubMed XML checked publication dates and report types. Selected relevant paragraphs/tables were checked for momelotinib, TTI-101 and the Science study, without claiming full-text review. AACR 2018 abstract 2938 metadata and full abstract checked through Crossref; TTI-101 online date cross-checked through Crossref.",
+    "registry_status_verified": false,
+    "clinical_recommendation": false,
+    "searches": [
+      {
+        "provider": "Europe PMC",
+        "query": "TITLE_ABS:(osimertinib AND itacitinib)",
+        "finding": "No title/abstract-indexed result returned during this check; this is not proof that no report exists."
+      },
+      {
+        "provider": "Crossref",
+        "query": "itacitinib lung cancer; osimertinib JAK inhibitor; osimertinib itacitinib phase trial",
+        "finding": "Retrieved AACR 2018 preclinical abstract and other nonmatching records; no verified patient outcome for osimertinib+itacitinib."
+      }
+    ]
+  }
+}

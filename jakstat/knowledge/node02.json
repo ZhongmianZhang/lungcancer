@@ -1,0 +1,308 @@
+{
+  "node_id": "node02",
+  "node_type": "kinase_dependency",
+  "module": "jakstat",
+  "parent_node": "node01",
+  "title": "JAK1/JAK2/TYK2/JAK3：受体配对、激活与失活、融合及JAK2克隆性造血来源",
+  "genes": [
+    "JAK1",
+    "JAK2",
+    "TYK2",
+    "JAK3",
+    "IL6ST",
+    "IFNAR1",
+    "IFNAR2",
+    "IFNGR1",
+    "IFNGR2",
+    "IL2RG",
+    "EPOR",
+    "MPL",
+    "MCAM",
+    "ITGB1"
+  ],
+  "upstream": [
+    "IL6家族–gp130受体复合物",
+    "IFN-I受体与IFNγ受体",
+    "IL12/IL23受体",
+    "共同γ链细胞因子受体",
+    "EPO/EPOR与TPO/MPL等造血受体",
+    "MCAM–integrinβ1及其他旁路信号",
+    "JAK激活变异、失活变异或候选融合"
+  ],
+  "downstream": [
+    "STAT3相关存活和适应反应",
+    "STAT1/STAT2干扰素应答与抗原呈递程序",
+    "STAT4/STAT5等免疫与造血输出",
+    "MCAM–JAK3模型中的AKT输出",
+    "SOCS等负反馈与免疫区室效应"
+  ],
+  "mechanism_zh": [
+    "四种JAK是与受体复合物耦联的非受体酪氨酸激酶，不能仅按“JAK家族”互换解释。典型配对包括IFNγ受体的JAK1/JAK2、I型干扰素受体的JAK1/TYK2、IL12/IL23受体的JAK2/TYK2和共同γ链受体的JAK1/JAK3；IL6家族/gp130则可动员多种JAK，其中JAK1在若干STAT3模型中居主要位置。受体表达、配体、细胞区室和负反馈共同决定输出。pSTAT3也可由EGFR、SRC等输入维持，所以“pSTAT3高”不能识别具体JAK，更不能证明对某一JAK抑制剂的依赖。[J02_E01,J02_E02]",
+    "应把通路激活、功能获得性变异（GOF）、失活（LOF）和意义未明变异分开。JAK2 V617F位于JH2假激酶调控区，可破坏正常自抑制并促进活化；2024年结构与单分子研究显示，不同JAK2致病变异的二聚和催化机制并不相同。V617F的配体非依赖性不等于不需要受体复合物：EpoR与JAK2的二聚构型、受体支架及细胞背景仍参与致病信号。不能把一个造血系统GOF机制当成肺上皮细胞中的既定旁路，也不能把所有JAK错义变异、扩增或表达升高都标为GOF。[J02_E01,J02_E06]",
+    "EGFR抑制后出现JAK介导的适应信号，可以没有JAK基因突变。AZD4205药化研究中，选择性JAK1抑制与奥希替尼在NCI-H1975移植瘤中增强抗肿瘤活性，为JAK1/STAT3联合研究提供依据；该实验不是奥希替尼加同期铂/培美曲塞后获得性耐药患者的疗效证据，H1975模型结果也不能直接证明每个奥希替尼耐药病灶均依赖JAK1。机制判断需要进展标本中的肿瘤细胞定位、动态信号抑制，以及遗传敲除/补回和旁路排查。[J02_E02]",
+    "JAK3通常与共同γ链受体和淋巴细胞功能密切相关，bulk RNA中JAK3升高可反映免疫细胞比例。与此同时，2025年研究在HCC827及其吉非替尼/奥希替尼耐药模型中提出肿瘤细胞MCAM–integrinβ1–JAK3轴，并观察到MCAM干预影响药物反应。该研究提示不能把所有JAK3信号都归为免疫来源；也不能反过来从总组织JAK3高就诊断此肿瘤轴。其主要下游实验还涉及AKT，不能自动写成JAK3–STAT3。药理实验使用tofacitinib，因其并非JAK3特异工具，联合反应不能独立排除JAK1/其他靶点贡献；论文未建立该联合的患者获益。[J02_E01,J02_E03]",
+    "血浆JAK2 V617F首先是来源判读问题。Hu等在NSCLC血浆分型研究中发现的5个JAK2 V617F均可追溯至外周血细胞，说明血浆检出可以来自克隆性造血（CH），不等同肺癌克隆。CHIP需要结合血象和是否存在髓系肿瘤等条件界定；不能把每个JAK2阳性结果一律命名为CHIP，也不能忽视已存在或尚未明确的骨髓增殖性肿瘤（MPN）。宜结合配对血细胞测序、进展组织的肿瘤富集/空间定位、检测下限和必要的血液学诊断。组织中的浸润血细胞也能带来污染；化疗后才检出、与EGFR变异VAF不同步或长期持续，只能提供线索，不能单独决定来源。即使最终确认肺癌细胞携带V617F，也只解决了来源，尚未证明驱动性或JAK药敏。[J02_E04]",
+    "JAK1/2 LOF的方向与促存活GOF相反。Shin等的窗内研究在黑色素瘤及错配修复缺陷结肠癌中联系到IFNγ应答不足和PD1阻断原发耐药；这支持免疫逃逸机制，不能作为EGFR-TKI耐药或JAK抑制剂敏感的证据。对截短、剪接、缺失或错义结果，应核实等位基因状态、是否影响完整蛋白、IFN刺激后的STAT1/抗原呈递反应及细胞来源，避免把单个未定功能变异或单等位事件直接判成完全失活。TYK2和JAK3失活同样可能削弱宿主免疫，不提供抑制这些激酶的正向治疗逻辑。[J02_E01,J02_E05]",
+    "若报告JAK1/JAK2/TYK2/JAK3融合，应先验证RNA层面的表达、读框、保留的激酶结构域、融合伙伴与蛋白定位，再判断其是否具备激活能力；DNA断点或保留激酶结构域本身不足以确立驱动。配对血细胞和病理区室也有助排除造血来源或另一个疾病过程。本次窗内定向检索未取得JAK自身融合构成“奥希替尼与铂/培美曲塞同期联合后耐药”并预测JAK抑制获益的直接证据；融合确认、肿瘤来源确认、功能依赖和临床药敏是四个需要分别验证的问题。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "血浆JAK2 p.V617F",
+      "meaning": "已知造血系统激活变异，但肺癌液体活检中需优先辨别CH/CHIP、MPN与肺癌来源。",
+      "limitations": "单次血浆VAF、持续检出或化疗后出现均不能定源。配对血细胞阳性支持造血来源；血细胞阴性也须考虑检测下限。肺癌组织检出仍需防范浸润白细胞污染，定源不等于药敏。"
+    },
+    {
+      "marker": "JAK1/JAK2/TYK2/JAK3错义变异、扩增或总蛋白升高",
+      "meaning": "提供潜在激活或细胞组成变化的线索，需按具体变异和区室分类。",
+      "limitations": "不能以基因名统一赋予GOF；VUS、表达升高和拷贝数增多不等于磷酸化、功能依赖或药物选择标志。"
+    },
+    {
+      "marker": "JAK1/2截短、剪接、缺失或经验证LOF",
+      "meaning": "可能削弱IFNγ–STAT1和免疫应答；与促存活通路激活含义不同。",
+      "limitations": "应评估双等位基因失活、蛋白及刺激反应；免疫逃逸证据主要来自其他肿瘤/免疫治疗场景，不证明EGFR-TKI耐药，也不构成JAK抑制剂敏感。"
+    },
+    {
+      "marker": "肿瘤细胞pJAK1/pJAK2/pSTAT3及刺激-抑制动态",
+      "meaning": "可帮助检验受体耦联与JAK依赖，尤其在持续EGFR抑制背景中。",
+      "limitations": "单点pSTAT3非JAK特异；需验证固定条件、抗体、肿瘤/免疫细胞定位及遗传或正交药理干预。没有本治疗序列验证的通用药敏阈值。"
+    },
+    {
+      "marker": "MCAM、ITGB1与肿瘤上皮区室pJAK3",
+      "meaning": "提示2025年耐药模型提出的候选肿瘤细胞轴。",
+      "limitations": "须与CD45阳性免疫细胞、内皮等区室分开。该研究缺少患者敏感/耐药标本验证，tofacitinib非JAK3特异，模型联合反应不能当作伴随诊断。"
+    },
+    {
+      "marker": "TYK2变异或表达、IFN-I/IL12/IL23相关输出",
+      "meaning": "需要结合受体配对、变异功能与免疫细胞分布解释。",
+      "limitations": "不能由TYK2高推断JAK1/STAT3依赖，亦未建立奥希替尼加化疗后TYK2药敏；失活还可能降低保护性免疫反应。"
+    },
+    {
+      "marker": "JAK候选融合及RNA转录本",
+      "meaning": "需要独立确认读框、表达、结构域和细胞来源，再进行功能研究。",
+      "limitations": "本节点无此治疗序列的直接临床药敏证据；DNA重排、RNA表达、肿瘤来源、功能GOF与临床获益不能互相替代。"
+    },
+    {
+      "marker": "受体、配体与JAK2 V617F共表达",
+      "meaning": "有助检验配体非依赖和受体支架依赖是否并存。",
+      "limitations": "EpoR/JAK2结构研究来自重构/造血机制，不能要求所有细胞只依赖同一个受体，也不能直接外推至肺癌的受体或药物依赖。"
+    }
+  ],
+  "validation_workflow": [
+    "核实样本时间、病理与肿瘤细胞比例；血浆JAK2 V617F需配对血细胞与组织来源分析，并结合血象/血液学背景。",
+    "对每个JAK变异分别给出GOF、LOF或未定功能，不把基因名当作方向；候选融合补做RNA/结构域确认。",
+    "在肿瘤与免疫区室分别测量受体、pJAK和相应STAT/AKT输出，结合配体刺激及EGFR抑制时间序列。",
+    "使用基因敲除或敲低、野生型/变异体补回及不同选择性的药理工具，排查多靶点作用和并存旁路，再提出临床研究假说。"
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "确认肿瘤JAK1依赖后，选择性JAK1抑制与EGFR抑制联合的临床研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "J02_E01",
+        "J02_E02"
+      ],
+      "setting": "AZD4205与奥希替尼的NSCLC移植瘤模型；不是奥希替尼加同期化疗后已证实方案。",
+      "limitations": "药化/模型研究不建立患者选择标志或临床获益；需验证真实进展病灶依赖、免疫区室影响及组合安全性。"
+    },
+    {
+      "strategy": "在MCAM–integrinβ1–JAK3肿瘤细胞依赖得到独立验证后开展匹配研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "J02_E03"
+      ],
+      "setting": "HCC827吉非替尼/奥希替尼耐药细胞及MCAM相关移植瘤研究。",
+      "limitations": "没有敏感/耐药患者标本验证；JAK抑制联合的体内协同和临床获益尚未建立。tofacitinib反应不能单独证明JAK3特异依赖，且全身抑制可能影响T/NK细胞。"
+    },
+    {
+      "strategy": "不支持以血浆JAK2 V617F、JAK扩增或单次pSTAT3高自动选择JAK抑制剂",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J02_E01",
+        "J02_E04",
+        "J02_E06"
+      ],
+      "setting": "液体活检来源解释、变异注释及临床决策边界。",
+      "limitations": "先分清造血与肿瘤来源，再分别验证GOF、受体环境和功能依赖；即使定为肿瘤来源，仍没有本治疗序列的临床药敏证据。"
+    },
+    {
+      "strategy": "不支持把JAK1/2 LOF免疫逃逸解释为EGFR-TKI耐药或JAK抑制剂敏感",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J02_E05"
+      ],
+      "setting": "黑色素瘤/错配修复缺陷结肠癌PD1治疗和功能研究的外推边界。",
+      "limitations": "抑制已失活的节点没有被该研究证明有效；也不能依据这篇小样本跨癌种研究对所有EGFR肺癌患者断言免疫治疗必然无效。"
+    },
+    {
+      "strategy": "若独立证实MPN，按其血液学疾病路径评估治疗",
+      "status": "standard_other_setting",
+      "evidence_ids": [
+        "J02_E01",
+        "J02_E04"
+      ],
+      "setting": "已确诊的MPN，与肺癌耐药处置分开。",
+      "limitations": "JAK抑制剂在部分血液病的应用不能转化为肺癌疗效；JAK2阳性CH/CHIP本身也不能等同于已确诊MPN或自动启动治疗。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J02_E01",
+      "title": "The JAK/STAT signaling pathway: from bench to clinic.",
+      "authors": "Hu X, Li J, Fu M, Zhao X, Wang W.",
+      "year": 2021,
+      "journal": "Signal transduction and targeted therapy",
+      "doi": "10.1038/s41392-021-00791-1",
+      "pmid": "34824210",
+      "publication_date": "2021-11-26",
+      "url": "https://doi.org/10.1038/s41392-021-00791-1",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "综述四种JAK的受体耦联、STAT输出、调控及疾病作用，支持区分JAK1/JAK2/TYK2/JAK3和细胞背景。",
+      "limitation_zh": "跨疾病综述，不是EGFR耐药疗效试验；不能把既有血液病或炎症病治疗外推为肺癌方案。仅核查摘要与选定机制段落，未完整审阅全文。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+EXT_ID%3A34824210&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:08:38.185358+00:00"
+      }
+    },
+    {
+      "id": "J02_E02",
+      "title": "Discovery of (2R)-N-[3-[2-[(3-Methoxy-1-methyl-pyrazol-4-yl)amino]pyrimidin-4-yl]-1H-indol-7-yl]-2-(4-methylpiperazin-1-yl)propenamide (AZD4205) as a Potent and Selective Janus Kinase 1 Inhibitor.",
+      "authors": "Su Q, Banks E, Bebernitz G, Bell K, Borenstein CF, Chen H, Chuaqui CE, Deng N, Ferguson AD, Kawatkar S, Grimster NP, Ruston L, Lyne PD, Read JA, Peng X, Pei X, Fawell S, Tang Z, Throner S, Vasbinder MM, Wang H, Winter-Holt J, Woessner R, Wu A, Yang W, Zinda M, Kettle JG.",
+      "year": 2020,
+      "journal": "Journal of medicinal chemistry",
+      "doi": "10.1021/acs.jmedchem.9b01392",
+      "pmid": "32297743",
+      "publication_date": "2020-04-28",
+      "url": "https://doi.org/10.1021/acs.jmedchem.9b01392",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "报告选择性JAK1抑制剂AZD4205的药化优化及临床前性质；与奥希替尼联合在NCI-H1975 NSCLC移植瘤增强抗肿瘤活性。",
+      "limitation_zh": "该模型结果并非奥希替尼加化疗后获得性耐药患者证据；不应把H1975联合活性自动表述为已逆转所有奥希替尼耐药。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A40713600+OR+EXT_ID%3A41539998+OR+EXT_ID%3A32297743+OR+EXT_ID%3A29567812+OR+EXT_ID%3A27903500+OR+EXT_ID%3A31319994+OR+EXT_ID%3A34773474%29&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:08:12.633506+00:00"
+      }
+    },
+    {
+      "id": "J02_E03",
+      "title": "MCAM interacts with integrin β1 to promote EGFR-TKI resistance in lung adenocarcinoma through the JAK3 signalling pathway.",
+      "authors": "Zhang S, Chen Y, Li C, Zhao J, Jiao M, Zhang M, Ma C, Wang A, Li J, Zeng Y, Zhu J, Mu C, Huang JA, Liu Z.",
+      "year": 2025,
+      "journal": "Journal of translational medicine",
+      "doi": "10.1186/s12967-025-06874-9",
+      "pmid": "40713600",
+      "publication_date": "2025-07-25",
+      "url": "https://doi.org/10.1186/s12967-025-06874-9",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "在吉非替尼/奥希替尼耐药HCC827等模型中提出MCAM与integrinβ1互作激活JAK3，MCAM敲低或相关干预改善药物反应；STAT2促进MCAM转录。",
+      "limitation_zh": "主要模型依赖HCC827，缺少患者敏感/耐药标本验证；正文提示JAK3下游AKT。tofacitinib并非JAK3特异工具，JAK抑制加奥希替尼的体内协同与患者获益未建立。抽样核查方法/结果/局限段落，非完整全文审阅。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A40713600+OR+EXT_ID%3A41539998+OR+EXT_ID%3A32297743+OR+EXT_ID%3A29567812+OR+EXT_ID%3A27903500+OR+EXT_ID%3A31319994+OR+EXT_ID%3A34773474%29&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:08:12.633506+00:00"
+      }
+    },
+    {
+      "id": "J02_E04",
+      "title": "False-Positive Plasma Genotyping Due to Clonal Hematopoiesis.",
+      "authors": "Hu Y, Ulrich BC, Supplee J, Kuang Y, Lizotte PH, Feeney NB, Guibert NM, Awad MM, Wong KK, Jänne PA, Paweletz CP, Oxnard GR.",
+      "year": 2018,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-18-0143",
+      "pmid": "29567812",
+      "publication_date": "2018-03-22",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-18-0143",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "main_finding_zh": "NSCLC液体活检研究在122例患者143次血浆NGS中识别5个来自外周血细胞的JAK2 V617F；说明造血克隆可造成血浆肿瘤基因型的错误归因。",
+      "limitation_zh": "这是来源验证而非药敏或疗效研究；不能据此认定所有JAK2变异都来自造血，也不能仅由血浆阳性区分CHIP与MPN。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A40713600+OR+EXT_ID%3A41539998+OR+EXT_ID%3A32297743+OR+EXT_ID%3A29567812+OR+EXT_ID%3A27903500+OR+EXT_ID%3A31319994+OR+EXT_ID%3A34773474%29&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:08:12.633506+00:00"
+      }
+    },
+    {
+      "id": "J02_E05",
+      "title": "Primary Resistance to PD-1 Blockade Mediated by JAK1/2 Mutations.",
+      "authors": "Shin DS, Zaretsky JM, Escuin-Ordinas H, Garcia-Diaz A, Hu-Lieskovan S, Kalbasi A, Grasso CS, Hugo W, Sandoval S, Torrejon DY, Palaskas N, Rodriguez GA, Parisi G, Azhdam A, Chmielowski B, Cherry G, Seja E, Berent-Maoz B, Shintaku IP, Le DT, Pardoll DM, Diaz LA, Tumeh PC, Graeber TG, Lo RS, Comin-Anduix B, Ribas A.",
+      "year": 2017,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-16-1223",
+      "pmid": "27903500",
+      "publication_date": "2016-11-30",
+      "url": "https://doi.org/10.1158/2159-8290.cd-16-1223",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "retrospective",
+      "main_finding_zh": "黑色素瘤23例及错配修复缺陷结肠癌16例PD1治疗队列各有1例JAK1/2失活且未应答；配合细胞实验支持IFNγ信号和反应性PDL1表达缺失的免疫逃逸机制。",
+      "limitation_zh": "小样本跨癌种及功能研究，研究对象不是EGFR-TKI耐药或奥希替尼加化疗后肺癌；不预测JAK抑制剂敏感。首发2016-11-30在本证据窗内，正式刊期2017。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A40713600+OR+EXT_ID%3A41539998+OR+EXT_ID%3A32297743+OR+EXT_ID%3A29567812+OR+EXT_ID%3A27903500+OR+EXT_ID%3A31319994+OR+EXT_ID%3A34773474%29&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:08:12.633506+00:00"
+      }
+    },
+    {
+      "id": "J02_E06",
+      "title": "Molecular basis of JAK2 activation in erythropoietin receptor and pathogenic JAK2 signaling.",
+      "authors": "Abraham BG, Haikarainen T, Vuorio J, Girych M, Virtanen AT, Kurttila A, Karathanasis C, Heilemann M, Sharma V, Vattulainen I, Silvennoinen O.",
+      "year": 2024,
+      "journal": "Science advances",
+      "doi": "10.1126/sciadv.adl2097",
+      "pmid": "38457493",
+      "publication_date": "2024-03-08",
+      "url": "https://doi.org/10.1126/sciadv.adl2097",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "结合定量超分辨显微、晶体学、激酶实验和模拟，解析EpoR–JAK2活化；V617F、K539L、R683S通过不同二聚/自抑制机制致病，V617F活性由二聚驱动。",
+      "limitation_zh": "重构受体/造血致病机制研究，不是EGFR肺癌研究；支持区分配体与受体支架依赖，不证明任何肺癌变异的可治疗性。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A38457493+OR+EXT_ID%3A42926027+OR+EXT_ID%3A40332017%29&format=json&resultType=core&pageSize=30",
+        "checked_at": "2026-11-04T09:09:32.534049+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少明确奥希替尼与铂/培美曲塞同期联合后进展、按肿瘤JAK依赖分层的前瞻治疗证据。",
+    "缺少此治疗序列中JAK1/JAK2/TYK2/JAK3激活变异或融合的发生率、克隆归属与纵向功能验证；本次未找到直接JAK融合药敏证据。",
+    "JAK2血浆阳性需要统一的血细胞配对、肿瘤纯度和临床血液学归因流程，特别要区分CH、CHIP、MPN与真正肺癌来源。",
+    "需要在原代进展标本中验证MCAM–integrinβ1–JAK3及其AKT输出，并以遗传补回和更选择性的工具区分JAK1/JAK3贡献。",
+    "需要区分肿瘤细胞促存活信号与IFN依赖的免疫保护作用，评估抑制JAK后T/NK及髓系区室的净效应。",
+    "肿瘤来源、变异GOF、受体耦联、功能依赖和临床获益之间均缺少可直接替代的已验证标志；需要逐层连接。"
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04",
+    "date_basis": "Europe PMC firstPublicationDate；year保留正式书目信息的pubYear"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:12:11.809403+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root检查未发现可调用工具、CLI或注入密钥；本节点未发出Firecrawl请求。",
+    "actual_verification_provider": "Europe PMC",
+    "verification": "6篇主证据均真实检索并核对元数据与摘要；另抽样核查2021综述和2025 MCAM论文的相关全文段落。未完整审阅各篇全文，非系统综述。",
+    "search_queries": [
+      "TITLE_ABS:(JAK1 OR JAK2 OR TYK2 OR JAK3) AND TITLE_ABS:(osimertinib OR AZD9291 OR \"EGFR-TKI\") AND FIRST_PDATE:[2016-11-04 TO 2026-11-04]",
+      "TITLE_ABS:(JAK1 OR JAK2 OR TYK2 OR JAK3) AND TITLE_ABS:(fusion) AND TITLE_ABS:(lung) AND FIRST_PDATE:[2016-11-04 TO 2026-11-04]",
+      "TITLE_ABS:(JAK2 AND V617F) AND TITLE_ABS:(receptor OR dimer OR scaffold) AND FIRST_PDATE:[2016-11-04 TO 2026-11-04]",
+      "SRC:MED AND (EXT_ID:40713600 OR EXT_ID:32297743 OR EXT_ID:29567812 OR EXT_ID:27903500 OR EXT_ID:34824210 OR EXT_ID:38457493)"
+    ]
+  }
+}

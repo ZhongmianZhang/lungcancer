@@ -1,0 +1,56 @@
+{
+  "requested_agents": 7,
+  "completed_agents": 7,
+  "updated_at": "2026-11-04T09:31:50+00:00",
+  "tasks": [
+    {
+      "agent_number": 1,
+      "node_id": "node01",
+      "topic": "gp130配体网络：IL6信号模式、OSM/LIF/IL11受体分叉与非经典耐药",
+      "completed": true,
+      "evidence_assertions": 9
+    },
+    {
+      "agent_number": 2,
+      "node_id": "node02",
+      "topic": "JAK1/JAK2/TYK2/JAK3：受体配对、激活与失活、融合及JAK2克隆性造血来源",
+      "completed": true,
+      "evidence_assertions": 6
+    },
+    {
+      "agent_number": 3,
+      "node_id": "node03",
+      "topic": "STAT3功能状态：Y705、S727、核/线粒体与非磷酸化反例",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 4,
+      "node_id": "node04",
+      "topic": "STAT1/2–IFN与STAT5A/B–STAT6免疫网络：细胞区室、时序及保护/耐受双向性",
+      "completed": true,
+      "evidence_assertions": 6
+    },
+    {
+      "agent_number": 5,
+      "node_id": "node05",
+      "topic": "负反馈刹车：SOCS1/3、PTPN1/2/11与PIAS的区室和方向依赖",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 6,
+      "node_id": "node06",
+      "topic": "JAK/STAT交叉网络：RTK–SRC、MAPK/AKT、YAP与凋亡/衰老持留的分叉",
+      "completed": true,
+      "evidence_assertions": 5
+    },
+    {
+      "agent_number": 7,
+      "node_id": "node07",
+      "topic": "JAK/STAT临床转化：EGFR-TKI联合的有限信号、阴性结果、会议边界与纵向采样",
+      "completed": true,
+      "evidence_assertions": 6
+    }
+  ]
+}

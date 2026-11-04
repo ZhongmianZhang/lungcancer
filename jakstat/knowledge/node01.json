@@ -1,0 +1,408 @@
+{
+  "node_id": "node01",
+  "title": "gp130配体网络：IL6信号模式、OSM/LIF/IL11受体分叉与非经典耐药",
+  "genes": [
+    "IL6",
+    "IL6R",
+    "IL6ST",
+    "ADAM17",
+    "OSM",
+    "OSMR",
+    "LIF",
+    "LIFR",
+    "IL11",
+    "IL11RA",
+    "FOXO1",
+    "LAMA5",
+    "PTK2",
+    "BCL2",
+    "BIRC5"
+  ],
+  "upstream": [
+    "EMT肿瘤状态与肿瘤细胞IL6分泌",
+    "应激/β2-AR–LKB1/CREB",
+    "NSCLC–CAF旁分泌串扰（OSM模型）",
+    "顺铂刺激CAF–IL11；CAF FOXO1–LIF（不同研究背景）",
+    "CAF/TAM等IL6候选来源须分区室验证",
+    "IL6糖基化、IL6R剪切与可溶性受体"
+  ],
+  "downstream": [
+    "IL6R/gp130–JAK/STAT3与classic/trans/cluster信号",
+    "OSM受体–JAK1–STAT3与EMT（靶向药耐药模型）",
+    "IL11RA/gp130–STAT3–BCL2/BIRC5（顺铂模型；具体JAK必要性未证）",
+    "LIFR相关输出（CAF–FOXO1/LIF摘要未证明JAK/STAT依赖）",
+    "IL6–LAMA5–FAK",
+    "去N糖基化IL6–SRC–YAP–SOX2",
+    "T/NK抑制与Treg/Th17状态"
+  ],
+  "mechanism_zh": [
+    "IL6经典信号需要靶细胞膜IL6Rα与IL6ST/gp130；trans-signaling则由IL6与可溶性IL6R复合物激活靶细胞gp130，因此膜IL6R低不能排除trans反应。cluster模式又涉及邻近细胞间呈递。这些是受体生物学框架，不能仅凭IL6ST表达或血中sIL6R水平判定某个患者正由哪种模式耐药；应结合受体区室、可溶性受体、选择性阻断与下游动态测量。",
+    "共享gp130不等于共享配体或相同受体依赖。受体生物学背景中，IL11通过IL11RA与gp130组装信号复合体，LIF通过LIFR/gp130；人OSM可以使用LIFR/gp130型受体或OSMR/gp130型受体。IL6R阻断不能因此被假定同时覆盖OSM、LIF和IL11，LIFR表达也不是LIF专属来源标志；人鼠配体与受体配对差异会影响跨物种模型解释。这些受体框架不证明某位患者的进展由该配体驱动，需确认配体、完整受体组合、靶细胞区室及功能干预。",
+    "在EGFR突变耐药微环境中，EMT肿瘤细胞可增多IL6分泌；CAF、巨噬细胞与其他细胞也可能参与旁分泌，但来源须逐项证明。本库直接EGFR证据较明确地来自肿瘤细胞和实验模型，不能把bulk RNA中的IL6升高或CAF/TAM丰度等同于已确认的细胞来源。空间RNA/蛋白定位、来源特异性敲低、条件培养基转移及配体补回，比单次相关性更能分清谁提供了存活信号。",
+    "2017年OSM研究提供了比“IL6家族普遍升高”更具体的因果链：OSM诱导EMT并保护NSCLC细胞免于靶向药诱导凋亡，依赖OSM受体/JAK1/STAT3；癌细胞与CAF串扰也偏向激活OSM/STAT3，模型中的联合JAK1干预可恢复药敏。但该摘要没有将其限定为奥希替尼联合化疗后的病人，切除肿瘤OSMR高与较差预后也不能转化成临床JAK抑制剂选择规则。应把OSM功能依赖与IL6表达、一般CAF丰度分别测量。",
+    "IL11的关键治疗应激证据来自2016年顺铂模型：顺铂刺激CAF上调IL11，随后癌细胞IL11Rα/STAT3、BCL2和Survivin相关抗凋亡输出增强；沉默癌细胞IL11Rα或抑制STAT3磷酸化可削弱保护效应。这里的来源是受顺铂刺激的CAF，接受信号的是癌细胞，两者不可由bulk RNA合并。该实验没有检验培美曲塞、奥希替尼或两者与铂类同期给予后的获得性耐药，也没有在摘要中确定哪个JAK成员必需，因此只能提出组合治疗后应检查的候选旁分泌机制。",
+    "2024年CAF–FOXO1/LIF研究显示CAF的FOXO1促进LIF转录，癌细胞LIFR下调可消除FOXO1过表达CAF的促恶性作用，支持配体来源与接受细胞之间的功能联系。摘要同时报告CAF和癌细胞LIF升高，故来源并非天然单一；更不能因LIF属于gp130家族就替研究补写JAK/STAT3必要性。该证据属于一般肺癌CAF模型，不能当作EGFR突变、奥希替尼耐药或同期铂/培美曲塞后耐药的直接验证。",
+    "IL6增高并不必然意味着耐药细胞依赖JAK/STAT3。2022年研究将IL6诱导的奥希替尼耐药与LAMA5/FAK联系起来；2024年Nature Communications进一步提示IL6去N糖基化可缩短STAT3激活而转向SRC–YAP–SOX2，推动EMT、迁移和耐药。因此“总IL6高→JAK抑制剂敏感”是过度简化，应比较配体状态、受体干预以及JAK与SRC/FAK支路的功能依赖。",
+    "IL6还可通过免疫区室影响抗肿瘤清除。2023年CCR在EGFR耐药模型中观察到IL6相关T/NK抑制，清除IL6改善模型免疫及PD1策略效应；这是后续临床试验的理由，不能当作该组合已经改善患者结局。肿瘤上皮细胞pSTAT3、髓系细胞pSTAT3与外周血免疫细胞信号的意义不同，抑制一个区室也可能改变宿主防御和毒性。",
+    "IL6可受感染、慢性炎症、治疗相关组织损伤、药物及应激状态影响，血清数值应与病程、取样时间和对照一起解释。早期切除肺腺癌队列中EGFR/KRAS突变没有富集IL6/JAK1/pSTAT3，说明“EGFR突变”本身不构成此通路依赖的替代标志。联合化疗后的炎症与细胞构成变化更复杂，不能把奥希替尼单药耐药模型直接迁移到该序列。",
+    "判读顺序宜为：先确认奥希替尼与铂类/培美曲塞是否同期给予、进展时间及进展期标本，再分别定位配体来源、膜受体与可溶性受体以及接受信号的细胞区室；随后用来源特异性干预、受体沉默、配体补回与JAK/STAT、SRC/YAP、FAK等正交读出检验依赖。IL6、OSM、LIF和IL11共用gp130只是网络背景，不能把一种配体模型的药敏移给另一种。本节点九篇文献中没有为奥希替尼加同期铂/培美曲塞后进展建立抗配体、JAK抑制或免疫联合的前瞻临床疗效。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "血清/血浆IL6升高",
+      "meaning": "提示系统性炎症或潜在配体信号，可用于提出纵向研究假说。",
+      "limitations": "不能确定肿瘤来源、受体模式、细胞依赖或药敏；需评估感染、炎症、治疗损伤与取样时序。"
+    },
+    {
+      "marker": "肿瘤细胞IL6、IL6R及gp130空间共定位",
+      "meaning": "比bulk表达更接近潜在局部受体通信。",
+      "limitations": "共定位仍非功能证明；需区分mIL6R、sIL6R、不同细胞区室及来源特异性干预。"
+    },
+    {
+      "marker": "sIL6R与gp130、选择性trans阻断反应",
+      "meaning": "支持检验trans-signaling的可能性。",
+      "limitations": "没有通用临床阈值或在本治疗序列已验证的伴随诊断；sgp130策略在其他疾病的结果不可直接外推。"
+    },
+    {
+      "marker": "pSTAT3动态、IL6糖基化与SRC/YAP/FAK读出",
+      "meaning": "帮助区分经典JAK/STAT3输出与非经典支路。",
+      "limitations": "单点pSTAT3高或低均不足；需验证采样、抗体、细胞区室和刺激/抑制对照，不能以低pSTAT3排除IL6耐药。"
+    },
+    {
+      "marker": "CAF/TAM中IL6与EMT肿瘤细胞IL6",
+      "meaning": "候选细胞来源，需要进行来源分解。",
+      "limitations": "本库没有证明每种CAF/TAM状态都为EGFR耐药驱动；细胞比例变化和表达相关性不等于因果。"
+    },
+    {
+      "marker": "IL6升高且pSTAT3未持续升高",
+      "meaning": "不能排除IL6相关耐药；可检验去糖IL6–SRC/YAP/SOX2或LAMA5/FAK等非经典输出。",
+      "limitations": "这是2016–2026窗内模型与人体关联提出的鉴别假说；不能仅由两个读出选择SRC、FAK、JAK或抗IL6药物，更非奥希替尼+化疗后前瞻临床药敏。"
+    },
+    {
+      "marker": "IL6ST/gp130升高或gp130阳性",
+      "meaning": "提示具备共享信号亚基，可作为IL6家族受体网络研究入口。",
+      "limitations": "不能鉴别IL6、OSM、LIF或IL11；必须同时检查各自受体组合、来源区室与功能。受体表达不等于配体占用或JAK药物依赖。"
+    },
+    {
+      "marker": "OSM配体与OSMR/LIFR、gp130空间关系及刺激后pSTAT3",
+      "meaning": "可用于检验OSM受体–JAK1/STAT3旁分泌与EMT假说，依据为靶向药耐药NSCLC–CAF模型。",
+      "limitations": "OSMR或LIFR单独升高均非配体特异性证据；切除肿瘤预后相关性不能作为联合治疗后药敏。需核实物种、完整受体配对并进行来源与受体干预。"
+    },
+    {
+      "marker": "顺铂暴露后CAF中IL11、癌细胞IL11RA与pSTAT3/BCL2/Survivin",
+      "meaning": "与2016年顺铂诱导CAF–IL11/IL11R/STAT3抗凋亡模型对应，适合提出来源与时序明确的研究假说。",
+      "limitations": "不能把CAF IL11高等同于癌细胞IL11依赖；未在EGFR突变或奥希替尼加同期铂/培美曲塞后前瞻验证，也没有验证特定JAK抑制剂。"
+    },
+    {
+      "marker": "CAF FOXO1/LIF与癌细胞LIFR",
+      "meaning": "提示一般肺癌中CAF–LIF/LIFR的候选通信；来源特异性FOXO1干预及癌细胞LIFR沉默提供模型功能证据。",
+      "limitations": "该摘要没有证明JAK/STAT依赖或EGFR/奥希替尼耐药背景；CAF和癌细胞均可表达LIF，bulk表达或单个LIFR阳性不足以判定来源及治疗敏感。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "有完整配体/受体与功能依赖证据后，讨论抗IL6/IL6R或选择性trans-signaling研究",
+      "status": "investigational",
+      "evidence_ids": [
+        "J01_E03",
+        "J01_E06"
+      ],
+      "setting": "EGFR耐药相关机制模型；未建立奥希替尼加化疗后标准疗效。",
+      "limitations": "抗炎适应证或其他疾病研究不代表NSCLC获批治疗；需核实试验、宿主免疫影响及组合安全性，不从血清IL6直接开药。"
+    },
+    {
+      "strategy": "IL6相关但JAK依赖未证实时，优先验证LAMA5/FAK与SRC/YAP分叉",
+      "status": "investigational",
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02"
+      ],
+      "setting": "奥希替尼耐药细胞/动物及患者关联研究。",
+      "limitations": "ibrutinib或SRC/FAK抑制的模型结果不是患者疗效；需通过正交干预避免把多靶药反应当作特定JAK依赖。"
+    },
+    {
+      "strategy": "IL6抑制联合PD1或其他免疫策略仅作为机制匹配临床试验线索",
+      "status": "investigational",
+      "evidence_ids": [
+        "J01_E03"
+      ],
+      "setting": "EGFR突变GEMM及人细胞免疫实验。",
+      "limitations": "尚不能将T/NK改善等同于EGFR患者生存获益，尤其非奥希替尼加化疗后专属临床证据。"
+    },
+    {
+      "strategy": "不支持“EGFR突变或血中IL6高即选择JAK/STAT药物”的自动映射",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02",
+        "J01_E05"
+      ],
+      "setting": "标志物解释与程序规则边界。",
+      "limitations": "基因型、系统炎症和下游信号模式相互不能替代；IL6有非JAK耐药支路。"
+    },
+    {
+      "strategy": "对证实OSM受体/JAK1/STAT3依赖的模型研究OSM/受体阻断或与致癌通路联合干预",
+      "status": "investigational",
+      "evidence_ids": [
+        "J01_E07"
+      ],
+      "setting": "获得性靶向药耐药NSCLC细胞与CAF旁分泌模型；并非明确奥希替尼加同期铂/培美曲塞后临床队列。",
+      "limitations": "JAK1抑制在模型中有效不代表患者疗效；需先证明OSM而非其他配体驱动，受体表达或预后关联不足以选药。"
+    },
+    {
+      "strategy": "研究治疗应激后CAF–IL11/IL11RA–STAT3旁分泌阻断能否减少铂类抗凋亡保护",
+      "status": "investigational",
+      "evidence_ids": [
+        "J01_E08"
+      ],
+      "setting": "顺铂相关肺腺癌细胞与体内模型；没有奥希替尼、培美曲塞或同期组合后耐药验证。",
+      "limitations": "尚无本治疗序列前瞻获益，摘要未确立具体JAK成员依赖；不从CAF IL11升高自动选择JAK药物。"
+    },
+    {
+      "strategy": "将CAF–FOXO1/LIF与癌细胞LIFR作为来源与受体匹配的机制研究靶点",
+      "status": "investigational",
+      "evidence_ids": [
+        "J01_E09"
+      ],
+      "setting": "一般肺癌CAF、癌细胞与移植瘤模型。",
+      "limitations": "不是EGFR/奥希替尼或联合化疗后耐药证据；该摘要没有确定JAK/STAT3为必要中介，不能据此推荐JAK抑制。"
+    },
+    {
+      "strategy": "不支持从gp130、OSMR、LIFR或单个家族配体高表达直接推断统一JAK依赖",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02",
+        "J01_E05",
+        "J01_E07",
+        "J01_E08",
+        "J01_E09"
+      ],
+      "setting": "配体与受体分叉、细胞来源及研究场景的解释边界。",
+      "limitations": "每个配体需要独立功能证明；IL6存在SRC/YAP与LAMA5/FAK输出，LIF/IL11论文亦不能补写未检验的JAK药敏或同期组合后疗效。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J01_E01",
+      "title": "Ibrutinib reverses IL-6-induced osimertinib resistance through inhibition of Laminin α5/FAK signaling.",
+      "authors": "Li L, Li Z, Lu C, Li J, Zhang K, Lin C, Tang X, Liu Z, Zhang Y, Han R, Wang Y, Feng M, Zhuang Y, Hu C, He Y.",
+      "year": 2022,
+      "journal": "Communications biology",
+      "doi": "10.1038/s42003-022-03111-7",
+      "pmid": "35197546",
+      "publication_date": "2022-02-23",
+      "url": "https://doi.org/10.1038/s42003-022-03111-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "在奥希替尼耐药患者关联、细胞和异种移植模型中，IL6可诱导耐药；LAMA5/FAK干预恢复敏感，ibrutinib联合仅有模型支持。",
+      "limitation_zh": "混合临床关联与临床前功能证据；没有奥希替尼加化疗后随机疗效。该轴重点为LAMA5/FAK，不能反推JAK抑制必然有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E02",
+      "title": "Defective N-glycosylation of IL6 induces metastasis and tyrosine kinase inhibitor resistance in lung cancer.",
+      "authors": "Hung CH, Wu SY, Yao CD, Yeh HH, Lin CC, Chu CY, Huang TY, Shen MR, Lin CH, Su WC.",
+      "year": 2024,
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-024-51831-7",
+      "pmid": "39251588",
+      "publication_date": "2024-09-09",
+      "url": "https://doi.org/10.1038/s41467-024-51831-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "IL6 N糖基化状态改变信号偏好：糖基化IL6支持较持久JAK/STAT3，去糖基化IL6转向SRC–YAP–SOX2；奥希替尼耐药细胞出现后一状态。",
+      "limitation_zh": "结合细胞、动物与临床标本关联，尚无按IL6糖基化选择治疗的前瞻验证；总IL6或单次pSTAT3不能识别该分叉。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E03",
+      "title": "IL6 Mediates Suppression of T- and NK-cell Function in EMT-associated TKI-resistant EGFR-mutant NSCLC.",
+      "authors": "Patel SA, Nilsson MB, Yang Y, Le X, Tran HT, Elamin YY, Yu X, Zhang F, Poteete A, Ren X, Shen L, Wang J, Moghaddam SJ, Cascone T, Curran M, Gibbons DL, Heymach JV.",
+      "year": 2023,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-22-3379",
+      "pmid": "36595561",
+      "publication_date": "2023-04-01",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-22-3379",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "EMT相关EGFR-TKI耐药模型增强IL6分泌并抑制T/NK功能；IL6清除改善模型抗肿瘤免疫，支持组合研究。",
+      "limitation_zh": "以EGFR转基因小鼠、细胞和患者标本为主；不能据此把抗IL6加PD1视为EGFR突变肺癌、特别联合化疗后已证实的治疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E04",
+      "title": "Stress hormones promote EGFR inhibitor resistance in NSCLC: Implications for combinations with β-blockers.",
+      "authors": "Nilsson MB, Sun H, Diao L, Tong P, Liu D, Li L, Fan Y, Poteete A, Lim SO, Howells K, Haddad V, Gomez D, Tran H, Pena GA, Sequist LV, Yang JC, Wang J, Kim ES, Herbst R, Lee JJ, Hong WK, Wistuba I, Hung MC, Sood AK, Heymach JV.",
+      "year": 2017,
+      "journal": "Science translational medicine",
+      "doi": "10.1126/scitranslmed.aao4307",
+      "pmid": "29118262",
+      "publication_date": "2017-11-01",
+      "url": "https://doi.org/10.1126/scitranslmed.aao4307",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "preclinical",
+      "main_finding_zh": "应激激素通过β2肾上腺素受体、LKB1/CREB调节IL6并促进EGFR抑制剂耐药；患者用β阻滞剂/IL6水平的关联提示假说。",
+      "limitation_zh": "功能模型与观察性关联不能证明β阻滞剂联合奥希替尼加化疗后的临床获益；神经内分泌刺激只是IL6潜在来源之一。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E05",
+      "title": "EGFR and KRAS mutations do not enrich for the activation of IL-6, JAK1 or phosphorylated STAT3 in resected lung adenocarcinoma.",
+      "authors": "Clay TD, Russell PA, Do H, Sundararajan V, Conron M, Wright GM, Solomon B, Dobrovic A, McLachlan SA, Moore MM.",
+      "year": 2017,
+      "journal": "Medical oncology (Northwood, London, England)",
+      "doi": "10.1007/s12032-017-1031-1",
+      "pmid": "28879441",
+      "publication_date": "2017-09-06",
+      "url": "https://doi.org/10.1007/s12032-017-1031-1",
+      "verification": "metadata_abstract_checked",
+      "scope": "de_novo_other",
+      "design": "retrospective",
+      "main_finding_zh": "143例切除肺腺癌中IL6、JAK1与pSTAT3之间有关联，但EGFR/KRAS突变没有富集这些标记，亦未见所测染色与生存相关。",
+      "limitation_zh": "早期切除肿瘤而非晚期耐药队列；阴性富集不排除个别晚期患者激活，但反对以EGFR基因型直接预测IL6/JAK/STAT依赖。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E06",
+      "title": "Targeting IL-6 trans-signalling: past, present and future prospects.",
+      "authors": "Rose-John S, Jenkins BJ, Garbers C, Moll JM, Scheller J.",
+      "year": 2023,
+      "journal": "Nature reviews. Immunology",
+      "doi": "10.1038/s41577-023-00856-y",
+      "pmid": "37069261",
+      "publication_date": "2023-04-17",
+      "url": "https://doi.org/10.1038/s41577-023-00856-y",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "综述classic、trans及cluster三种IL6信号模式，说明mIL6R与sIL6R/gp130的区别，以及选择性trans阻断的生物学依据。",
+      "limitation_zh": "跨疾病综述；炎症性肠病等背景下sgp130Fc研究不能当作EGFR肺癌奥希替尼加化疗后疗效或现行适应证。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E07",
+      "title": "JAK1/STAT3 Activation through a Proinflammatory Cytokine Pathway Leads to Resistance to Molecularly Targeted Therapy in Non-Small Cell Lung Cancer.",
+      "authors": "Shien K, Papadimitrakopoulou VA, Ruder D, Behrens C, Shen L, Kalhor N, Song J, Lee JJ, Wang J, Tang X, Herbst RS, Toyooka S, Girard L, Minna JD, Kurie JM, Wistuba II, Izzo JG.",
+      "year": 2017,
+      "journal": "Molecular cancer therapeutics",
+      "doi": "10.1158/1535-7163.mct-17-0148",
+      "pmid": "28729401",
+      "publication_date": "2017-07-20",
+      "url": "https://doi.org/10.1158/1535-7163.mct-17-0148",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "靶向药获得性耐药NSCLC细胞出现IL6家族信号、STAT3及EMT；OSM通过OSM受体/JAK1/STAT3依赖机制促进EMT并减少药物诱导凋亡。NSCLC–CAF旁分泌串扰偏向激活OSM/STAT3；JAK1抑制与致癌通路共靶向在模型中逆转耐药，切除肺腺癌OSMR表达与较差预后相关。",
+      "limitation_zh": "功能结论主要来自细胞及CAF模型；摘要仅称oncogene-driven NSCLC和molecularly targeted drugs，不能确认奥希替尼或同期铂/培美曲塞特定背景。切除肿瘤预后相关性不等于耐药患者JAK1抑制药敏；也不能把所有gp130配体或所有CAF状态泛化为OSM依赖。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A28729401+OR+EXT_ID%3A27922075+OR+EXT_ID%3A39032875+OR+EXT_ID%3A34386085+OR+EXT_ID%3A38696655%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E08",
+      "title": "Cancer-associated fibroblasts treated with cisplatin facilitates chemoresistance of lung adenocarcinoma through IL-11/IL-11R/STAT3 signaling pathway.",
+      "authors": "Tao L, Huang G, Wang R, Pan Y, He Z, Chu X, Song H, Chen L.",
+      "year": 2016,
+      "journal": "Scientific reports",
+      "doi": "10.1038/srep38408",
+      "pmid": "27922075",
+      "publication_date": "2016-12-06",
+      "url": "https://doi.org/10.1038/srep38408",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "顺铂处理的CAF上调IL11，增强肺腺癌细胞对顺铂诱导凋亡的抵抗。体内外IL11刺激伴随STAT3磷酸化与BCL2、Survivin升高；抑制STAT3磷酸化或沉默癌细胞IL11Rα可消除该效应，支持治疗应激下CAF–IL11/IL11RA–STAT3旁分泌机制。",
+      "limitation_zh": "这是顺铂相关肺腺癌临床前机制，未建立EGFR突变选择性，也没有奥希替尼、培美曲塞或同期联合后进展队列。摘要没有证明特定JAK成员是必要中介；STAT3依赖不能直接改写为某一JAK药物有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A28729401+OR+EXT_ID%3A27922075+OR+EXT_ID%3A39032875+OR+EXT_ID%3A34386085+OR+EXT_ID%3A38696655%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E09",
+      "title": "Cancer-associated fibroblasts promote the malignant development of lung cancer through the FOXO1 protein/LIF signaling.",
+      "authors": "Shen J, Wu W, Zhang X, Xie X, Shen W, Wang Q.",
+      "year": 2024,
+      "journal": "International journal of biological macromolecules",
+      "doi": "10.1016/j.ijbiomac.2024.133987",
+      "pmid": "39032875",
+      "publication_date": "2024-07-19",
+      "url": "https://doi.org/10.1016/j.ijbiomac.2024.133987",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "CAF中FOXO1升高并正向调节LIF转录，LIF在CAF与肺癌细胞中均升高。沉默CAF的FOXO1减弱其对癌细胞和移植瘤的作用；下调癌细胞LIFR消除FOXO1过表达CAF对癌细胞行为的影响，支持CAF–FOXO1/LIF与癌细胞LIFR之间的功能联系。",
+      "limitation_zh": "摘要没有提供EGFR突变、奥希替尼或同期铂/培美曲塞耐药证据，也没有证明JAK1/JAK2或STAT3是此模型的必要环节。CAF与肿瘤细胞均表达LIF不能由bulk信号判定单一来源；LIFR干预结果不能独自证明任意LIFR配体均可靶向治疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A28729401+OR+EXT_ID%3A27922075+OR+EXT_ID%3A39032875+OR+EXT_ID%3A34386085+OR+EXT_ID%3A38696655%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少明确奥希替尼与铂类/培美曲塞同期联合后进展、同时记录配体来源与受体模式的配对组织/纵向血液及前瞻功能研究；既往分别暴露与同期联合必须分开编码。",
+    "需分开研究肿瘤、CAF与髓系来源及IL6 classic/trans/cluster模式；OSM、LIF与IL11也需分别确认完整受体组合，不能用gp130或bulk表达替代整个回路因果。",
+    "OSM研究的靶向药耐药模型、IL11顺铂CAF模型和LIF一般肺癌CAF模型能否复现于EGFR突变同期奥希替尼加化疗后的进展标本，尚未建立。",
+    "IL6糖基化、LAMA5/FAK与SRC/YAP分叉是否可形成可靠伴随诊断仍需独立验证；JAK/STAT与这些支路须并行功能比较。",
+    "LIF–LIFR与IL11–IL11RA功能证据不能自动指定JAK成员；需通过遗传与药理正交干预确认必要中介，防止把多靶药反应当作单一JAK依赖。",
+    "治疗引起的炎症、配体代偿与免疫区室效应，以及临床获益与毒性，需要与肿瘤细胞存活机制分别测量。"
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:10:18+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root confirmed no callable tool, CLI or injected credential; no Firecrawl request was made.",
+    "actual_verification_provider": "Europe PMC",
+    "verification": "All six existing records were preserved and rechecked against metadata and original abstracts; three primary OSM/IL11/LIF papers were added after metadata and abstract review. Nine included records were checked. This is not a systematic or full-text review.",
+    "included_evidence_count": 9,
+    "preserved_existing_evidence_count": 6,
+    "added_primary_evidence_count": 3
+  }
+}

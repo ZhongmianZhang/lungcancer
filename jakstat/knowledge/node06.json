@@ -1,0 +1,342 @@
+{
+  "node_id": "node06",
+  "title": "JAK/STAT交叉网络：RTK–SRC、MAPK/AKT、YAP与凋亡/衰老持留的分叉",
+  "genes": [
+    "IL6",
+    "IL6R",
+    "IL6ST",
+    "JAK1",
+    "JAK2",
+    "STAT3",
+    "EGFR",
+    "MET",
+    "AXL",
+    "SRC",
+    "YES1",
+    "LAMA5",
+    "PTK2",
+    "KRAS",
+    "NRAS",
+    "MAP2K1",
+    "MAPK1",
+    "PIK3CA",
+    "AKT1",
+    "MTOR",
+    "YAP1",
+    "WWTR1",
+    "SOX2",
+    "ZEB1",
+    "CDH1",
+    "VIM",
+    "BCL2L1",
+    "MCL1",
+    "BCL2L11",
+    "BIRC2",
+    "BIRC3",
+    "TGFB1",
+    "TGFBR1",
+    "CDKN1A"
+  ],
+  "upstream": [
+    "EGFR及候选MET/AXL旁路；需分别证实基因事件与功能活化",
+    "IL6–IL6R/gp130及配体糖基化状态",
+    "LAMA5/整合素–FAK与SRC家族信号",
+    "治疗应激、肿瘤/基质分泌表型与铂类诱导衰老"
+  ],
+  "downstream": [
+    "STAT3转录输出；pSTAT3不特异指向JAK",
+    "RAS–RAF–MEK–ERK与PI3K–AKT–mTOR并行存活",
+    "SRC–YAP/TAZ–SOX2及EMT/干性状态",
+    "BIM与BCL-xL/MCL1、cIAP控制的凋亡阈值",
+    "SASP旁分泌、持留细胞存活与再次增殖"
+  ],
+  "mechanism_zh": [
+    "JAK/STAT是交叉网络的一部分。IL6受体复合物可通过JAK激活STAT3；在一般通路生物学中，EGFR等受体酪氨酸激酶和SRC等非受体酪氨酸激酶也可参与STAT3磷酸化，部分背景可不依赖JAK。因此pSTAT3 Tyr705阳性不能反推JAK依赖。MET/AXL与STAT3、MAPK或AKT之间是否形成某个耐药样本的有效回路，须逐一验证；本节点没有证明这些边在奥希替尼加同期化疗后全部成立。跨疾病综述仅提供判读框架，不是该治疗序列的药敏证据。[J06_E01]",
+    "EGFR、MET、AXL等RTK可与RAS–MAPK及PI3K–AKT并联或反馈连接。即使抑制JAK后pSTAT3降低，pERK、pAKT或YAP输出仍可能维持生存；反之，下游输出同步下降也不能由相关性识别唯一上游。应在进展期样本中结合基因改变、蛋白定位、时间序列与正交遗传/药理干预，区分JAK依赖、RTK/SRC驱动与共同应激反应。AXL高表达、EMT标记或MET RNA升高不能替代MET扩增或其他可解释事件的独立核实。[J06_E01,J06_E04]",
+    "IL6高不等于JAK/STAT3主导。2022年奥希替尼耐药研究通过LAMA5或PTK2敲低支持IL6–LAMA5/FAK依赖，并在细胞/异种移植中观察到多靶药ibrutinib联合的作用；这不能把药物效果归因为JAK抑制。2024年研究进一步发现IL6去N糖基化会缩短STAT3活化而偏向SRC–YAP–SOX2，促进EMT、迁移与耐药。两者是对“总IL6高→JAK抑制敏感”映射的直接反例。[J06_E02,J06_E03]",
+    "YAP/TAZ核定位与SOX2、ZEB1、VIM或CDH1变化可描述干性/EMT状态，但状态标记不等于治疗依赖。去糖IL6模型中针对SRC、YAP或SOX2的干预提供因果支持；其外推范围仍是相应模型与患者相关性。持留细胞研究也提示TEAD干预的凋亡效应可能需要同时维持EGFR抑制，说明“下游可干预”不代表单药足够，更不能据此经验叠加JAK、SRC、YAP及多个RTK药物。[J06_E03,J06_E04]",
+    "BCL2L1编码BCL-xL，MCL1与BCL-xL可提高凋亡阈值；STAT3转录输出只是其潜在调控来源之一，蛋白稳定性和其他存活通路也参与。奥希替尼持留模型中BIM反而升高，但细胞仍能依靠BCL-xL/MCL1及cIAP存活，且BCL-xL与MCL1可相互补偿。该文指出相关BH3药敏不由靶蛋白表达量单独决定；BCL2选择性抑制不能自动替代BCL-xL/MCL1策略。因此高MCL1、BCL2L1或pSTAT3不构成可直接开药的伴随诊断。[J06_E04]",
+    "同一持留研究在MEK敏感耐药克隆、PIK3CA突变模型及MET扩增模型中研究了驱动抑制与凋亡再激活的交叉，支持研究“存活驱动＋凋亡阈值”的机制关系；其中MET扩增细胞来自厄洛替尼耐药，不能改写为奥希替尼耐药患者。MCL1抑制在PC9小鼠模型的再生长效应未达到统计显著，而cIAP策略效应也弱于体外。这些差异限制了由体外协同推断患者疗效。[J06_E04]",
+    "化疗可造成组织损伤、衰老及SASP，但SASP不是IL6/JAK/STAT的同义词。2026年经PubMed与Crossref确认的研究在顺铂相关NSCLC等模型中发现TGFβ富集的SASP通过TGFBR1–AKT/mTOR促进增殖，并有新辅助铂类患者标本关联；不是EGFR突变、奥希替尼加同期化疗后专属研究，也没有证明JAK是必需节点。SASP、持续静止、可逆持留和能在药物中增殖的获得性耐药应分开定义及纵向跟踪。[J06_E05]",
+    "本节点的应用顺序是先明确进展标本、取样时间和细胞区室，再测量JAK/STAT、RTK/SRC、MAPK/AKT与YAP的动态响应，最后用补回、敲低和独立抑制剂检验因果。当前五篇核心文献没有提供奥希替尼与铂类/培美曲塞同期治疗后进展、按此网络选择JAK或多通路联合的前瞻疗效证据；因此以下均为研究假说或不支持的映射规则，不提供经验拼药处方。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "肿瘤细胞pSTAT3 Tyr705升高",
+      "meaning": "提示该细胞区室存在STAT3磷酸化输出，可用于动态研究。",
+      "limitations": "不特异识别JAK；可能涉及RTK/SRC等上游。单次IHC不能证明持续活化或药物依赖，须与pJAK、受体干预及磷酸化时间序列配对。"
+    },
+    {
+      "marker": "pSTAT3 Ser727、总STAT3或STAT3靶基因评分",
+      "meaning": "提供补充信号/转录状态信息。",
+      "limitations": "不能与Tyr705、核内STAT3或JAK活性互换；评分还受细胞构成及其他转录因子影响，没有该治疗序列已验证的临床阈值。"
+    },
+    {
+      "marker": "MET/AXL表达、拷贝数与pMET/pAXL/pSRC",
+      "meaning": "用于提出RTK/SRC旁路及交叉机制假说。",
+      "limitations": "RNA/蛋白高表达不等于驱动基因事件或可治疗依赖；MET扩增须独立核实。共现pSTAT3不能判定信号方向，AXL与EMT的相关性也非药敏。"
+    },
+    {
+      "marker": "JAK干预后pSTAT3下降而pERK/pAKT或核YAP持续",
+      "meaning": "提示平行或补偿性存活支路值得检验。",
+      "limitations": "需确认药物选择性、靶点占有、细胞存活和时间效应；不能仅据这一图谱选择多药联用。"
+    },
+    {
+      "marker": "IL6高伴LAMA5/pFAK，或去糖IL6伴pSRC/核YAP/SOX2",
+      "meaning": "分别提示LAMA5/FAK或SRC–YAP–SOX2等非经典IL6输出。",
+      "limitations": "目前主要为模型/人体关联证据；血液总IL6无法识别配体状态、来源或支路，低/短暂pSTAT3也不能排除IL6相关耐药。"
+    },
+    {
+      "marker": "BCL2L1/MCL1蛋白、BIM及动态BH3/凋亡反应",
+      "meaning": "可研究抗凋亡缓冲与线粒体凋亡准备度。",
+      "limitations": "单基因或蛋白表达不能预测BH3药敏；BCL-xL与MCL1可补偿，BCL2选择性药物非可互换替代。本治疗序列未确立临床选择标准。"
+    },
+    {
+      "marker": "EMT/干性标记与YAP/TAZ核定位",
+      "meaning": "支持描述耐药细胞状态及转录程序。",
+      "limitations": "不是JAK依赖性、稳定遗传克隆或单一药物敏感性的证明；应结合功能干预、组织类型和肿瘤细胞身份。"
+    },
+    {
+      "marker": "SASP因子、p21/p16、SA-β-gal与持留/复苏实验",
+      "meaning": "联合检测可区分治疗损伤、衰老分泌与可逆存活状态。",
+      "limitations": "任何单标记均不充分；SASP可能由TGFβ–AKT/mTOR等通路驱动，不能因有IL6或炎症就归因于JAK/STAT。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "仅在证明JAK依赖且排查平行存活支路后，研究EGFR与JAK/STAT靶向的机制匹配组合",
+      "status": "investigational",
+      "evidence_ids": [
+        "J06_E01",
+        "J06_E02",
+        "J06_E03"
+      ],
+      "setting": "通路框架及奥希替尼耐药模型；没有奥希替尼加同期化疗后验证。",
+      "limitations": "需进入有明确标志物、药效和安全性终点的研究；pSTAT3或IL6阳性不能代替依赖性。其他疾病已批准用途不构成本序列疗效证明。"
+    },
+    {
+      "strategy": "若功能证据指向IL6–LAMA5/FAK或去糖IL6–SRC/YAP，研究相应支路而非自动映射JAK",
+      "status": "investigational",
+      "evidence_ids": [
+        "J06_E02",
+        "J06_E03"
+      ],
+      "setting": "耐奥希替尼细胞/动物及患者相关性。",
+      "limitations": "ibrutinib等多靶药体外/动物作用不能识别唯一靶点，更非NSCLC标准适应证；SRC、FAK、YAP策略均需单独临床验证。"
+    },
+    {
+      "strategy": "对有明确RTK、MAPK或PI3K驱动的模型，研究驱动阻断与凋亡再激活的关系",
+      "status": "investigational",
+      "evidence_ids": [
+        "J06_E04"
+      ],
+      "setting": "含获得性奥希替尼耐药、工程化PIK3CA及厄洛替尼耐药MET扩增等不同模型。",
+      "limitations": "不同模型和治疗序列必须分开；体外三联协同及TEAD作用不能当作患者用药组合。未建立同期化疗后的获益/毒性平衡。"
+    },
+    {
+      "strategy": "按功能凋亡依赖研究BCL-xL/MCL1或cIAP策略",
+      "status": "investigational",
+      "evidence_ids": [
+        "J06_E04"
+      ],
+      "setting": "奥希替尼持留及耐药临床前模型。",
+      "limitations": "表达量不是药敏；BCL2选择性抑制不能替代BCL-xL/MCL1。MCL1动物再生长效应未显著，不能将持留细胞减少等同于患者生存获益。"
+    },
+    {
+      "strategy": "化疗后按实际分泌轴研究SASP干预，不预设其由JAK驱动",
+      "status": "investigational",
+      "evidence_ids": [
+        "J06_E05"
+      ],
+      "setting": "顺铂相关NSCLC/卵巢癌模型及新辅助铂类标本；非目标联合治疗序列。",
+      "limitations": "TGFBR1抑制或清除衰老细胞只有机制/临床前依据；不能从SASP表型直接选择JAK、TGFβ或senolytic药物。"
+    },
+    {
+      "strategy": "不支持按“IL6高或pSTAT3阳性→JAK敏感→多通路全覆盖”的经验拼药规则",
+      "status": "not_supported",
+      "evidence_ids": [
+        "J06_E01",
+        "J06_E02",
+        "J06_E03",
+        "J06_E04",
+        "J06_E05"
+      ],
+      "setting": "知识库自动映射与临床推断边界。",
+      "limitations": "交叉关系不证明多靶依赖，同一标记可能对应不同分叉；叠加RTK、JAK、MEK、PI3K、SRC或凋亡药物不能由网络图推出有效性及可耐受性。"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "J06_E01",
+      "title": "Targeting the IL-6/JAK/STAT3 signalling axis in cancer.",
+      "authors": "Johnson DE, O'Keefe RA, Grandis JR.",
+      "year": 2018,
+      "journal": "Nature reviews. Clinical oncology",
+      "doi": "10.1038/nrclinonc.2018.8",
+      "pmid": "29405201",
+      "publication_date": "2018-02-06",
+      "url": "https://doi.org/10.1038/nrclinonc.2018.8",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "review",
+      "main_finding_zh": "跨疾病综述总结IL6/JAK/STAT3对肿瘤存活、侵袭及免疫区室的作用，区分已批准的炎症/骨髓增殖性疾病用途与癌症研究。",
+      "limitation_zh": "综述不是目标治疗序列的试验；本次核验元数据和摘要，未阅读全文，不能据此主张某位患者的RTK/SRC或JAK依赖。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC (core metadata and abstract), cross-checked with PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fnrclinonc.2018.8&format=json&resultType=core",
+        "checked_at": "2026-11-04T09:15:20+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=29405201&retmode=xml"
+      }
+    },
+    {
+      "id": "J06_E02",
+      "title": "Ibrutinib reverses IL-6-induced osimertinib resistance through inhibition of Laminin α5/FAK signaling.",
+      "authors": "Li L, Li Z, Lu C, Li J, Zhang K, Lin C, Tang X, Liu Z, Zhang Y, Han R, Wang Y, Feng M, Zhuang Y, Hu C, He Y.",
+      "year": 2022,
+      "journal": "Communications biology",
+      "doi": "10.1038/s42003-022-03111-7",
+      "pmid": "35197546",
+      "publication_date": "2022-02-23",
+      "url": "https://doi.org/10.1038/s42003-022-03111-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "患者血浆相关性结合细胞及异种移植：IL6可诱导奥希替尼耐药，LAMA5/PTK2敲低可逆转，多靶药ibrutinib在相应模型中有联合效应。",
+      "limitation_zh": "以模型因果和患者关联为主；核心为LAMA5/FAK，不能解释为JAK抑制已获临床验证，也没有同期化疗后疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC (core metadata and abstract), cross-checked with PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A35197546+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-04T09:15:20+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=35197546&retmode=xml"
+      }
+    },
+    {
+      "id": "J06_E03",
+      "title": "Defective N-glycosylation of IL6 induces metastasis and tyrosine kinase inhibitor resistance in lung cancer.",
+      "authors": "Hung CH, Wu SY, Yao CD, Yeh HH, Lin CC, Chu CY, Huang TY, Shen MR, Lin CH, Su WC.",
+      "year": 2024,
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-024-51831-7",
+      "pmid": "39251588",
+      "publication_date": "2024-09-09",
+      "url": "https://doi.org/10.1038/s41467-024-51831-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "IL6 N糖基化影响下游偏好：去糖IL6缩短STAT3活化并偏向SRC–YAP–SOX2，促进EMT、迁移及耐药；有抑制剂、shRNA和人体相关性支持。",
+      "limitation_zh": "非按IL6糖基化选择治疗的前瞻研究；总体IL6或一次pSTAT3不能识别此分叉，更非奥希替尼加同期化疗后药敏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC (core metadata and abstract), cross-checked with PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39251588+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-04T09:15:20+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39251588&retmode=xml"
+      }
+    },
+    {
+      "id": "J06_E04",
+      "title": "Pharmaceutical Reactivation of Attenuated Apoptotic Pathways Leads to Elimination of Osimertinib Drug-Tolerant Cells.",
+      "authors": "Martin MJ, Floc'h N, Pfeifer M, Criscione S, Delpuech O, Gagrica S, Yao Y, McDermott U, Smith PD.",
+      "year": 2022,
+      "journal": "Cancer research communications",
+      "doi": "10.1158/2767-9764.crc-22-0066",
+      "pmid": "36969743",
+      "publication_date": "2022-10-31",
+      "url": "https://doi.org/10.1158/2767-9764.crc-22-0066",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼持留细胞可有BIM升高但仍逃避凋亡；BH3及cIAP/SMAC策略可促进细胞死亡。定点结果段亦显示BCL-xL/MCL1代偿，及MEK、MET、PIK3CA、TEAD与凋亡的交叉。",
+      "limitation_zh": "临床前且不同耐药模型混合，MET扩增模型来自厄洛替尼耐药。定点读结果发现MCL1抑制在PC9小鼠再生长效应未显著，不能沿用摘要的较强概括；cIAP动物效应也较体外弱。未验证目标联合治疗序列。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC (core metadata and abstract), cross-checked with PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A36969743+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-04T09:15:20+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36969743&retmode=xml",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10035388/fullTextXML"
+      },
+      "selected_full_text_sections_reviewed": [
+        "Results: BH3 mimetics and DTP survival",
+        "Results: in vivo regrowth and acquired-resistance models",
+        "Discussion: BCL-xL/MCL1 compensation and expression versus sensitivity"
+      ]
+    },
+    {
+      "id": "J06_E05",
+      "title": "Treatment resistance to platinum-based chemotherapy in lung and ovarian cancer is driven by a targetable TGFβ senescent secretome.",
+      "authors": "González-Gualda E, Reinius MAV, Macias D, Morsli S, Ge J, Olan I, Martín JE, Ou HL, Hartono M, Puerto-Camacho MP, Denholm M, Kieran R, Hoffmann R, Dane M, Veroutis D, Medrano G, Mulero F, Jimenez-Linan M, Fruk L, Martins CP, Barbacid M, Gorgoulis V, Korkola JE, Rassl DM, Doherty GJ, Rintoul RC, Narita M, Brenton JD, Muñoz-Espín D.",
+      "year": 2026,
+      "journal": "Nature aging",
+      "doi": "10.1038/s43587-025-01054-2",
+      "pmid": "41634464",
+      "publication_date": "2026-02-03",
+      "url": "https://doi.org/10.1038/s43587-025-01054-2",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "顺铂在NSCLC模型诱导促肿瘤衰老分泌表型；富集TGFβ的SASP通过TGFBR1–AKT/mTOR促进增殖，有动物干预及新辅助铂类NSCLC/卵巢癌标本关联。",
+      "limitation_zh": "含KRAS驱动模型和其他肿瘤背景，非EGFR突变奥希替尼加同期化疗后研究；未证明SASP依赖JAK。人体关联及动物改善不能替代患者随机疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC (core metadata and abstract), cross-checked with PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41634464+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-04T09:15:20+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41634464&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038/s43587-025-01054-2"
+      }
+    }
+  ],
+  "research_gaps": [
+    "缺少明确奥希替尼与铂类/培美曲塞同期联合后进展的纵向活检队列及机制分层前瞻试验；奥希替尼单药、其他EGFR-TKI和新辅助化疗证据不能合并成该序列证据。",
+    "需用肿瘤/CAF/髓系等细胞区室、药效时间序列及正交干预，区分真正JAK依赖、RTK/SRC相关STAT3与IL6的FAK/YAP分叉。",
+    "MET/AXL、RAS–MAPK及PI3K–AKT与JAK/STAT在同一患者中的因果方向、克隆共存和替代机制尚不明；不能由共表达或单次磷酸化确认。",
+    "需区分DTP、治疗诱导衰老、SASP受体细胞和重新增殖的耐药克隆，并研究同期化疗如何改变这些状态及免疫清除。",
+    "BCL-xL/MCL1、cIAP及YAP/TEAD依赖缺少可重复临床阈值；体外强效、动物效应不一致与靶点代偿必须在转化研究中保留。",
+    "临床应分别验证抑制上游驱动、降低凋亡阈值与控制SASP的获益及组合毒性，不能把网络连线数量作为联合治疗的证据强度。"
+  ],
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04",
+    "date_rule": "纳入窗按可核实首次发表日期；2026年SASP论文线上日期另经PubMed和Crossref复核。"
+  },
+  "integrity_notes": [
+    {
+      "original_title": "Co-activation of STAT3 and YES-Associated Protein 1 (YAP1) Pathway in EGFR-Mutant NSCLC.",
+      "original_pmid": "28376152",
+      "original_doi": "10.1093/jnci/djx014",
+      "note_title": "Editor's Note: Co-activation of STAT3 and YES-Associated Protein 1 (YAP1) Pathway in EGFR-Mutant NSCLC.",
+      "note_pmid": "41729183",
+      "note_doi": "10.1093/jnci/djag009",
+      "note_url": "https://doi.org/10.1093/jnci/djag009",
+      "note_online_publication_date": "2026-02-23",
+      "note_issue_date": "2026-04-01",
+      "finding_zh": "编辑说明涉及Figure 3A的pPaxillin两条泳道相似，原始数据不可用；作者重做实验，更正图仅载于说明。重做未确认原先对照条件的Paxillin高磷酸化；编辑明确表示主要结论不因更改而改变。这是编辑说明，不是撤稿，也不等于主要结论无效。",
+      "handling_zh": "原研究及说明只保留为已筛查的历史背景，不列入五篇核心证据，不承担本节点治疗策略的证据映射。",
+      "use_for_treatment_mapping": false,
+      "original_full_text_reviewed": false,
+      "note_full_text_reviewed": true,
+      "retrieval": {
+        "provider": "Europe PMC full-text XML",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13064497/fullTextXML",
+        "checked_at": "2026-11-04T09:15:20+00:00"
+      }
+    }
+  ],
+  "review_provenance": {
+    "updated_at": "2026-11-04T09:15:20+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Parent verified no callable Firecrawl tool, CLI or injected credential; no Firecrawl request was made.",
+    "actual_verification_provider": [
+      "Europe PMC",
+      "PubMed",
+      "Crossref"
+    ],
+    "verification": "Five core records and abstracts checked against Europe PMC and PubMed. The 2026 SASP online publication date was additionally checked with Crossref. Selected results/discussion excerpts of the 2022 persister article and the full 2026 editorial note were read; this is not a systematic review or full review of every core article.",
+    "target_sequence_direct_evidence_found": false,
+    "automatic_treatment_mapping_supported": false
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_only_not_clinically_validated",
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "target_sequence_confirmed_by_input": true,
+  "egfr_driver_confirmed_by_input": true,
+  "clinical_context_gate_passed": true,
+  "signals": [
+    {
+      "id": "JAK1_loss",
+      "gene": "JAK1",
+      "kind": "loss_of_function",
+      "level": "high",
+      "site": "",
+      "compartment": "tumor",
+      "status": "loss_is_not_pathway_activation",
+      "cautions": [
+        "JAK/STAT正向成分失活不能按激活或JAK药敏解释；IFN免疫逃逸与EGFR耐药终点不同。"
+      ],
+      "node_id": "node02",
+      "evidence_ids": [
+        "J02_E01",
+        "J02_E02",
+        "J02_E03",
+        "J02_E04",
+        "J02_E05",
+        "J02_E06"
+      ]
+    },
+    {
+      "id": "STAT1",
+      "gene": "STAT1",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "site": "Y701",
+      "compartment": "tumor",
+      "status": "signal_readout_not_dependency",
+      "cautions": [],
+      "node_id": "node04",
+      "evidence_ids": [
+        "J04_E01",
+        "J04_E02",
+        "J04_E03",
+        "J04_E04",
+        "J04_E05",
+        "J04_E06"
+      ]
+    }
+  ],
+  "dependency_assessments": [],
+  "research_options": [],
+  "alerts": [
+    "尚无可追溯功能依赖实验；读出与变异仅形成待验证线索，不等于没有耐药机制。",
+    "当前不生成本场景的研究性干预匹配；先补齐病理、时序、来源和功能证据，仍需评估常规后线/局部治疗。"
+  ],
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "blocked_shortcuts": [
+    "IL6高→JAK/STAT依赖：IL6可走LAMA5/FAK或SRC/YAP。",
+    "pSTAT3高或STAT3表达高→JAK药敏：上游/区室/位点与功能需分别证明。",
+    "JAK2 V617F血浆阳性→NSCLC驱动：先定源血细胞克隆/血液病等。",
+    "JAK1/2失活或IFN高低→加JAK药：免疫终点和方向不等同于EGFR耐药。",
+    "SOCS/PTP失活或BCL2家族表达高→直接选药：反馈与BH3药敏不由基因名/表达量决定。"
+  ],
+  "next_steps": [
+    "确认进展病理、治疗时序、病灶及基线；区分转化、寡进展/CNS与全身进展。",
+    "分区检查肿瘤/免疫/基质信号，明确pSTAT3位点、动态与下游；细胞因子需评估炎症/感染/激素及化疗混杂。",
+    "血液JAK/STAT变异按需要采用组织/配对白细胞等定源，不能靠VAF或与EGFR共检出。",
+    "用研究性患者匹配模型、选择性靶点作用、正交干预/救援及耐药表型检测区分JAK依赖与并行分叉。",
+    "由MTB核查专属人群临床证据、负面试验、现行标签与组合毒性；不从本工具生成处方。"
+  ]
+}

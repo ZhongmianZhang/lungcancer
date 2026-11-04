@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_only_not_clinically_validated",
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "target_sequence_confirmed_by_input": true,
+  "egfr_driver_confirmed_by_input": true,
+  "clinical_context_gate_passed": true,
+  "signals": [
+    {
+      "id": "IL6R",
+      "gene": "IL6R",
+      "kind": "expression",
+      "level": "high",
+      "site": "",
+      "compartment": "tumor",
+      "status": "signal_readout_not_dependency",
+      "cautions": [],
+      "node_id": "node01",
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02",
+        "J01_E03",
+        "J01_E04",
+        "J01_E05",
+        "J01_E06",
+        "J01_E07",
+        "J01_E08",
+        "J01_E09"
+      ]
+    },
+    {
+      "id": "JAK1",
+      "gene": "JAK1",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "site": "",
+      "compartment": "tumor",
+      "status": "signal_readout_not_dependency",
+      "cautions": [],
+      "node_id": "node02",
+      "evidence_ids": [
+        "J02_E01",
+        "J02_E02",
+        "J02_E03",
+        "J02_E04",
+        "J02_E05",
+        "J02_E06"
+      ]
+    },
+    {
+      "id": "STAT3_Y705",
+      "gene": "STAT3",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "site": "Y705",
+      "compartment": "tumor",
+      "status": "signal_readout_not_dependency",
+      "cautions": [
+        "Y705/S727、核/线粒体/非磷酸化STAT3不可互换；pSTAT3不指认JAK来源，低STAT3也不排除其他耐药分叉。"
+      ],
+      "node_id": "node03",
+      "evidence_ids": [
+        "J03_E01",
+        "J03_E02",
+        "J03_E03",
+        "J03_E04",
+        "J03_E05"
+      ]
+    }
+  ],
+  "dependency_assessments": [
+    {
+      "id": "dep_001",
+      "axis": "IL6_JAK_STAT3",
+      "status": "patient_model_hypothesis_not_clinical_validation",
+      "validation_needed": [],
+      "observation_ids": [
+        "IL6R",
+        "JAK1",
+        "STAT3_Y705"
+      ],
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02",
+        "J01_E03",
+        "J01_E04",
+        "J01_E05",
+        "J01_E06",
+        "J01_E07",
+        "J01_E08",
+        "J01_E09",
+        "J02_E01",
+        "J02_E02",
+        "J02_E03",
+        "J02_E04",
+        "J02_E05",
+        "J02_E06",
+        "J03_E01",
+        "J03_E02",
+        "J03_E03",
+        "J03_E04",
+        "J03_E05",
+        "J07_E01",
+        "J07_E02",
+        "J07_E03",
+        "J07_E04",
+        "J07_E05",
+        "J07_E06"
+      ],
+      "clinical_actionability": "not_established_for_target_sequence"
+    }
+  ],
+  "research_options": [
+    {
+      "id": "JAK_STAT_RESEARCH_REVIEW",
+      "dependency_test": "dep_001",
+      "strategy": "讨论受体/JAK/STAT3分层研究与EGFR背景的机制匹配试验；不把已获批血液病/炎症用途迁移为NSCLC标准。",
+      "status": "investigational_mtb_or_trial_review_only",
+      "limitations": "患者模型不能证明临床获益；需核对已用化疗/抗体、当前试验资格、现行地区标签以及感染/骨髓抑制等组合安全性。",
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02",
+        "J01_E03",
+        "J01_E04",
+        "J01_E05",
+        "J01_E06",
+        "J01_E07",
+        "J01_E08",
+        "J01_E09",
+        "J02_E01",
+        "J02_E02",
+        "J02_E03",
+        "J02_E04",
+        "J02_E05",
+        "J02_E06",
+        "J03_E01",
+        "J03_E02",
+        "J03_E03",
+        "J03_E04",
+        "J03_E05",
+        "J07_E01",
+        "J07_E02",
+        "J07_E03",
+        "J07_E04",
+        "J07_E05",
+        "J07_E06"
+      ]
+    }
+  ],
+  "alerts": [],
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "blocked_shortcuts": [
+    "IL6高→JAK/STAT依赖：IL6可走LAMA5/FAK或SRC/YAP。",
+    "pSTAT3高或STAT3表达高→JAK药敏：上游/区室/位点与功能需分别证明。",
+    "JAK2 V617F血浆阳性→NSCLC驱动：先定源血细胞克隆/血液病等。",
+    "JAK1/2失活或IFN高低→加JAK药：免疫终点和方向不等同于EGFR耐药。",
+    "SOCS/PTP失活或BCL2家族表达高→直接选药：反馈与BH3药敏不由基因名/表达量决定。"
+  ],
+  "next_steps": [
+    "确认进展病理、治疗时序、病灶及基线；区分转化、寡进展/CNS与全身进展。",
+    "分区检查肿瘤/免疫/基质信号，明确pSTAT3位点、动态与下游；细胞因子需评估炎症/感染/激素及化疗混杂。",
+    "血液JAK/STAT变异按需要采用组织/配对白细胞等定源，不能靠VAF或与EGFR共检出。",
+    "用研究性患者匹配模型、选择性靶点作用、正交干预/救援及耐药表型检测区分JAK依赖与并行分叉。",
+    "由MTB核查专属人群临床证据、负面试验、现行标签与组合毒性；不从本工具生成处方。"
+  ]
+}

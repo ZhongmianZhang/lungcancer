@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_MODEL_NOT_CLINICAL_VALIDATION",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "histology": "adenocarcinoma",
+    "histology_confirmed_at_progression": true,
+    "progression_pattern": "systemic",
+    "prior_additional_therapies": [],
+    "egfr_driver_confirmed": true
+  },
+  "observations": [
+    {
+      "id": "SRC",
+      "gene": "SRC",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "sample_type": "tissue",
+      "compartment": "tumor",
+      "compartment_confirmed": true,
+      "tumor_origin": "confirmed",
+      "classification": "unknown",
+      "assay_validated": true,
+      "acquisition": "unknown"
+    },
+    {
+      "id": "STAT3_Y705",
+      "gene": "STAT3",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "sample_type": "tissue",
+      "compartment": "tumor",
+      "compartment_confirmed": true,
+      "tumor_origin": "confirmed",
+      "classification": "unknown",
+      "assay_validated": true,
+      "acquisition": "unknown",
+      "site": "Y705"
+    }
+  ],
+  "dependency_tests": [
+    {
+      "id": "dep_001",
+      "axis": "STAT3_JAK_INDEPENDENT",
+      "observation_ids": [
+        "SRC",
+        "STAT3_Y705"
+      ],
+      "model_source": "patient_matched_progression",
+      "result": "supports_dependency",
+      "validated": true,
+      "compartment_resolved": true,
+      "selective_target_engagement": true,
+      "orthogonal_perturbation": true,
+      "rescue_or_reconstitution": true,
+      "resistance_phenotype_measured": true,
+      "downstream_axis_measured": true,
+      "description": "Synthetic complete protocol only; no real patient or clinical efficacy implied.",
+      "jak_independence_tested": true
+    }
+  ]
+}

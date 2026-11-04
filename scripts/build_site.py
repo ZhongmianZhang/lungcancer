@@ -49,6 +49,8 @@ def main() -> int:
             links = links.replace('      </nav>', '        <a class="button secondary" href="./ras-mapk/index.html">RAS/BRAF耐药证据工作台</a>\n      </nav>')
         if (args.output / "lineage/index.html").is_file():
             links = links.replace('      </nav>', '        <a class="button secondary" href="./lineage/index.html">细胞类型转化与EGFR保留</a>\n      </nav>')
+        if (args.output / "jak-stat/index.html").is_file():
+            links = links.replace('      </nav>', '        <a class="button secondary" href="./jak-stat/index.html">JAK/STAT机制研究工作台</a>\n      </nav>')
         content = content.replace(marker, links + marker, 1)
         extra_css = '.site-downloads{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}.site-downloads a{text-decoration:none}@media print{.site-downloads{display:none}}'
         content = content.replace("</style>", extra_css + "</style>", 1)
@@ -69,7 +71,7 @@ def main() -> int:
             "research_status": "文献与JCR期刊排名待核验的研究草稿",
             "files": ["index.html", *["downloads/" + name for name in assets]],
         }
-        for folder in ("ras-mapk", "lineage"):
+        for folder in ("ras-mapk", "lineage", "jak-stat"):
             extra_dir = output / folder
             if extra_dir.is_dir():
                 manifest["files"].extend(str(p.relative_to(output)) for p in sorted(extra_dir.rglob("*")) if p.is_file())

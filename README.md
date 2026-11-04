@@ -53,3 +53,20 @@ python3 -m lineage build
 ```
 
 Firecrawl优先适配器已提供；本次无可用工具和凭据，实际文献核验通过Europe PMC/PubMed/Crossref完成。该研究代码不读取切片、不构建系统发育、不输出个体处方，临床使用需独立验证和专家审查。
+
+## JAK/STAT及上下游机制判读（2026-11-04）
+
+按7个子智能体分工补齐IL6/gp130配体、JAK、STAT3、IFN/其他STAT免疫网络、负反馈、交叉通路和临床/会议证据。39条去重记录均核题录并审读摘要；部分结果及编辑说明另作定点核对。**信号读出、来源/区室、功能依赖和临床药敏分别处理。**
+
+- [代码与输入契约](jakstat/README.md)
+- [离线研究工作台HTML](site/jak-stat/index.html)
+- [仅有临床读出的合成示例](jakstat/generated/example/result.html)
+- [患者匹配模型的合成示例](jakstat/generated/model/result.html)
+- [独立题录复核](jakstat/generated/metadata_audit.json)
+
+```bash
+python3 -m jakstat analyze --input jakstat/examples/readouts_only.json --output jakstat/generated/example
+python3 -m jakstat build
+```
+
+pSTAT3/IL6升高、VUS、血液克隆或负调控失活均不会自动映射药物；只有满足完整模型与临床场景门控才列出研究路线，不提供个体处方。Firecrawl优先接口沿用共享适配器，当前无凭据的真实回退保存在检索审计。

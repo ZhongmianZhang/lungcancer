@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_only_not_clinically_validated",
+  "evidence_window": {
+    "start": "2016-11-04",
+    "end": "2026-11-04"
+  },
+  "target_sequence_confirmed_by_input": true,
+  "egfr_driver_confirmed_by_input": true,
+  "clinical_context_gate_passed": true,
+  "signals": [
+    {
+      "id": "serum_IL6",
+      "gene": "IL6",
+      "kind": "cytokine",
+      "level": "high",
+      "site": "",
+      "compartment": "serum",
+      "status": "systemic_or_microenvironment_signal",
+      "cautions": [
+        "非肿瘤区室的信号可能参与TME，但需与肿瘤接收和耐药表型建立功能联系，不能简单忽略或当作肿瘤驱动。"
+      ],
+      "node_id": "node01",
+      "evidence_ids": [
+        "J01_E01",
+        "J01_E02",
+        "J01_E03",
+        "J01_E04",
+        "J01_E05",
+        "J01_E06",
+        "J01_E07",
+        "J01_E08",
+        "J01_E09"
+      ]
+    },
+    {
+      "id": "tumor_pSTAT3",
+      "gene": "STAT3",
+      "kind": "phosphoprotein",
+      "level": "high",
+      "site": "Y705",
+      "compartment": "tumor",
+      "status": "signal_readout_not_dependency",
+      "cautions": [
+        "Y705/S727、核/线粒体/非磷酸化STAT3不可互换；pSTAT3不指认JAK来源，低STAT3也不排除其他耐药分叉。"
+      ],
+      "node_id": "node03",
+      "evidence_ids": [
+        "J03_E01",
+        "J03_E02",
+        "J03_E03",
+        "J03_E04",
+        "J03_E05"
+      ]
+    },
+    {
+      "id": "blood_JAK2",
+      "gene": "JAK2",
+      "kind": "snv",
+      "level": "high",
+      "site": "",
+      "compartment": "tumor",
+      "status": "molecular_origin_requires_validation",
+      "cautions": [
+        "JAK2/STAT等血浆变异需组织或必要的配对白细胞等定源；VAF或与EGFR共检出不足。"
+      ],
+      "node_id": "node02",
+      "evidence_ids": [
+        "J02_E01",
+        "J02_E02",
+        "J02_E03",
+        "J02_E04",
+        "J02_E05",
+        "J02_E06"
+      ]
+    },
+    {
+      "id": "low_SOCS3",
+      "gene": "SOCS3",
+      "kind": "expression",
+      "level": "low",
+      "site": "",
+      "compartment": "tumor",
+      "status": "signal_readout_not_dependency",
+      "cautions": [],
+      "node_id": "node05",
+      "evidence_ids": [
+        "J05_E01",
+        "J05_E02",
+        "J05_E03",
+        "J05_E04",
+        "J05_E05"
+      ]
+    },
+    {
+      "id": "immune_STAT5",
+      "gene": "STAT5B",
+      "kind": "signature",
+      "level": "high",
+      "site": "",
+      "compartment": "immune",
+      "status": "systemic_or_microenvironment_signal",
+      "cautions": [
+        "非肿瘤区室的信号可能参与TME，但需与肿瘤接收和耐药表型建立功能联系，不能简单忽略或当作肿瘤驱动。"
+      ],
+      "node_id": "node04",
+      "evidence_ids": [
+        "J04_E01",
+        "J04_E02",
+        "J04_E03",
+        "J04_E04",
+        "J04_E05",
+        "J04_E06"
+      ]
+    }
+  ],
+  "dependency_assessments": [],
+  "research_options": [],
+  "alerts": [
+    "尚无可追溯功能依赖实验；读出与变异仅形成待验证线索，不等于没有耐药机制。",
+    "当前不生成本场景的研究性干预匹配；先补齐病理、时序、来源和功能证据，仍需评估常规后线/局部治疗。"
+  ],
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "blocked_shortcuts": [
+    "IL6高→JAK/STAT依赖：IL6可走LAMA5/FAK或SRC/YAP。",
+    "pSTAT3高或STAT3表达高→JAK药敏：上游/区室/位点与功能需分别证明。",
+    "JAK2 V617F血浆阳性→NSCLC驱动：先定源血细胞克隆/血液病等。",
+    "JAK1/2失活或IFN高低→加JAK药：免疫终点和方向不等同于EGFR耐药。",
+    "SOCS/PTP失活或BCL2家族表达高→直接选药：反馈与BH3药敏不由基因名/表达量决定。"
+  ],
+  "next_steps": [
+    "确认进展病理、治疗时序、病灶及基线；区分转化、寡进展/CNS与全身进展。",
+    "分区检查肿瘤/免疫/基质信号，明确pSTAT3位点、动态与下游；细胞因子需评估炎症/感染/激素及化疗混杂。",
+    "血液JAK/STAT变异按需要采用组织/配对白细胞等定源，不能靠VAF或与EGFR共检出。",
+    "用研究性患者匹配模型、选择性靶点作用、正交干预/救援及耐药表型检测区分JAK依赖与并行分叉。",
+    "由MTB核查专属人群临床证据、负面试验、现行标签与组合毒性；不从本工具生成处方。"
+  ]
+}
