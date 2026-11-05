@@ -1,0 +1,714 @@
+{
+  "node_id": "node01",
+  "node_type": "detection_platforms",
+  "module": "omniresist",
+  "title": "国际肺癌检测平台：靶向panel与真正WGS、RNA及表观组的已验证能力和盲区",
+  "genes": [
+    "EGFR",
+    "MET",
+    "ERBB2",
+    "KRAS",
+    "NRAS",
+    "BRAF",
+    "MAP2K1",
+    "PIK3CA",
+    "RET",
+    "ALK",
+    "ROS1",
+    "NTRK1",
+    "NTRK2",
+    "NTRK3",
+    "TP53",
+    "RB1",
+    "PTEN",
+    "NF1"
+  ],
+  "genes_scope_note_zh": "所列为机制研究可检测轴，不表示每个平台、每个版本均覆盖全部基因、全部外显子/内含子或全部变异类型；实际范围须核验当次检测设计与报告。",
+  "mechanism_zh": [
+    "“未发现机制”至少有四种不同含义：样本中肿瘤成分不足；事件在检测设计之外；事件虽检出但未建立因果或药敏；或耐药由谱系、转录、表观遗传和微环境状态改变驱动。单份靶向DNA panel阴性不能排除这些情况，更不能推出基因组完全正常。平台选择应从需要回答的问题、标本和可检出变异类别出发。[O01_E01,O01_E02,O01_E04,O01_E08]",
+    "MSK-IMPACT原始2015年验证是341基因、全部外显子加选定内含子的组织杂交捕获深测序，配对正常样本有助区分体细胞与胚系。其热点约2%、非热点约5%的低频检出限只属于该研究的组织版本与分析条件；不能转写为当前所有版本或所有拷贝数/重排的统一性能。它不是WGS，也没有直接测量RNA、甲基化或染色质状态。[O01_E01]",
+    "MSK-ACCESS原始2021年版本为129基因cfDNA检测；配对正常/白细胞信息可过滤胚系与克隆性造血来源。de-novo检出与已知位点a-priori追踪是不同任务：后者性能不能用来保证未知耐药事件的发现。本节点不会默认其他商业血浆产品每例均具有相同的患者配对白细胞设计，应核实实际实验室流程。[O01_E02]",
+    "FoundationOne CDx组织324基因CGP报告短变异、CNV、选定重排及部分复合标志物；FoundationOne Liquid CDx是另一套324基因血浆检测。即使基因数相同，标本、覆盖、肿瘤分数要求、分析流程与伴随诊断标签也不同，不能把组织性能转给血浆。CGP是临床服务概念，并不使靶向panel变成WGS。[O01_E03,O01_E04]",
+    "血浆分析中，小变异VAF与样本肿瘤分数不可混用。2020年FoundationOne Liquid CDx验证中选定SNV/indel的95%LoD为0.40% VAF，选定重排0.37% VAF，而扩增和缺失所需肿瘤分数分别为21.7%与30.4%。因此低肿瘤分数血浆未检出MET/ERBB2扩增，不能按小变异LoD将扩增排除。[O01_E04]",
+    "普通Guardant360的2018年数字测序验证与2023年电子公开、2024年刊出的Guardant360 CDx验证须分开。后者摘要的panel范围LoD 0.1%-0.5%不是普通Guardant360及后续所有版本的通用参数，前者更低的可检出VAF也不等于全部事件的95%LoD。两研究均不构成与其他品牌在同样标本、浓度和事件上的直接优劣比较。[O01_E05,O01_E06]",
+    "肺癌耐药检测必须保留组织病理这一独立通道。Schoenfeld等奥希替尼前后配对组织队列检出鳞状等转化，以及MET扩增、KRAS变异、RET/BRAF融合等多类事件。血浆无法直接观察肿瘤形态，且对CNV与重排敏感度不同；仅用血浆panel会把部分转化归入未知机制。该队列不能提供同期奥希替尼加铂/培美曲塞进展后的机制发生率。[O01_E08]",
+    "真正肿瘤-正常配对WGS覆盖编码与非编码基因组，可统一研究SNV/indel、CNV、结构变异、全基因组加倍及双等位失活等。Hartwig原始队列含2520对转移瘤/正常样本，中位深度106×/38×；它证明大规模组织WGS的可实施性与广泛遗传发现能力，不证明所有稀有亚克隆均能检出，也不说明62%的潜在匹配线索均产生临床获益。[O01_E07]",
+    "WES集中于编码外显子，适合较广编码变异与部分负荷/拷贝数研究，但不能等同于对复杂内含子断点、调控区或全基因组结构的完整搜索。WGS扩大了搜索空间，仍受肿瘤纯度、深度、读长、重复序列、亚克隆比例和计算流程限制。常规短读长DNA WES/WGS不自动证明变异的表达、融合读框、细胞来源或药物依赖。[O01_E01,O01_E07]",
+    "RNA检测回答表达与剪接问题：可用于候选融合是否形成表达、读框可保留的转录本以及MET外显子跳跃的正交确认；全转录组还可研究谱系或适应状态。靶向RNA panel与全转录组不是同一检测。RNA阴性可能受降解、低表达和样本构成影响；表达改变也不是耐药因果或药敏的充分条件。本节点未把RNA研究外推为同期联合治疗后已验证选择标志。",
+    "表观组需要专门测量：WGBS/酶法甲基化测序、靶向甲基化、ATAC-seq及组蛋白标记分析分别回答不同问题。普通DNA panel/WES/WGS不会自动产生这些数据；靶向甲基化检测也不等同于全表观组。癌症检出或组织来源分类器即使准确，也不能独自确定耐药旁路、组织学转化或表观遗传药物敏感性。此处是方法边界说明，所选8篇原始证据未对本治疗序列的表观组策略作临床验证。",
+    "实际报告应同时记录标本类型和取样病灶、采样相对治疗/进展的时间、组织肿瘤比例或血浆肿瘤分数、DNA/RNA质控、panel确切版本、每类变异覆盖及阈值、阴性是否可解释、是否配对白细胞和正常样本。将治疗前与进展时样本配对，有助区分原有共变异、克隆选择与新出现事件，但时间相关仍需进一步的因果和药敏验证。[O01_E01,O01_E02,O01_E04,O01_E07,O01_E08]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "血浆未检出EGFR及其他肿瘤相关变异",
+      "meaning": "可能没有可检出的ctDNA，或肿瘤脱落/浓度低；需结合肿瘤分数与质控。",
+      "limitations": "不能据此排除肿瘤、耐药机制或判定组织为野生型；不同事件的阴性解释不同。组织学转化不能由血浆阴性排除。"
+    },
+    {
+      "marker": "EGFR二次/复合变异",
+      "meaning": "在实际覆盖与质控合格时提供靶点内改变线索。",
+      "limitations": "按具体等位基因、克隆性和治疗时序解释；存在变异不自动证明其为唯一耐药原因。复杂顺反式关系未必可由短读长panel或WGS完整解决。"
+    },
+    {
+      "marker": "MET或ERBB2扩增",
+      "meaning": "可提供旁路激活候选；应区分局灶高水平扩增与多倍体/染色体增益。",
+      "limitations": "CNV对组织纯度和血浆肿瘤分数敏感，小变异VAF阈值不能作为CNV阈值；视临床问题用组织CNV/FISH等正交方法确认，基因扩增本身不保证匹配治疗获益。"
+    },
+    {
+      "marker": "RET/BRAF/ALK/ROS1/NTRK等候选融合或DNA重排",
+      "meaning": "提示潜在表达融合与旁路驱动，需要逐事件分析。",
+      "limitations": "DNA内含子覆盖和断点复杂度可造成漏检；建议验证RNA表达、读框、结构域及来源。DNA断点不等于功能融合，RNA阴性也须先排除质量问题。"
+    },
+    {
+      "marker": "TP53/RB1改变或神经内分泌/鳞状表达线索",
+      "meaning": "可触发谱系转化的病理研究，但不是组织形态学诊断。",
+      "limitations": "不能仅由基因共变异、RNA特征或cfDNA甲基化分类器诊断小细胞/鳞状转化；应以进展组织形态和适当免疫组化确认。"
+    },
+    {
+      "marker": "血浆中可能与克隆性造血有关的改变",
+      "meaning": "来源可能为白细胞而非肺癌；配对白细胞有助归因。",
+      "limitations": "不能按基因名将所有结果一律删除或一律认作肿瘤来源；需结合配对白细胞深度、组织和克隆频率。商业平台是否逐例配对正常样本应向实验室核实。"
+    },
+    {
+      "marker": "TMB、MSI及潜在可作用变异",
+      "meaning": "是按检测方法和适用场景解释的复合或分层标志。",
+      "limitations": "panel与WGS的估计流程/阈值不能自动通用，潜在可作用不等于耐药因果或临床应答；需符合癌种、药物、治疗线和当地区域标签。"
+    },
+    {
+      "marker": "甲基化、开放染色质或转录状态异常",
+      "meaning": "可提出谱系、应激、细胞组成或调控状态假说。",
+      "limitations": "必须有相应实验数据及细胞类型/病理定位；普通DNA测序未测量不等于无异常，分类器信号也不等于可药靶耐药机制。"
+    }
+  ],
+  "platforms": [
+    {
+      "platform_id": "MSK_IMPACT_2015",
+      "name": "MSK-IMPACT",
+      "institution": "Memorial Sloan Kettering Cancer Center",
+      "assay_class": "targeted_tissue_DNA_panel",
+      "specimen": "FFPE肿瘤与患者配对正常样本",
+      "studied_version": "2015年原始341基因版本",
+      "gene_count": 341,
+      "validated_capabilities_zh": [
+        "SNV和小indel",
+        "覆盖区域内拷贝数改变",
+        "选定内含子/断点支持的结构重排",
+        "配对正常辅助体细胞归因"
+      ],
+      "assay_specific_performance_zh": "原始研究低频热点约2%、非热点约5%；不是当前版本或所有变异类别的统一LoD。",
+      "blind_spots_zh": [
+        "覆盖外调控区/内含子或复杂结构事件",
+        "RNA表达、剪接与甲基化未直接测量",
+        "不能以DNA独自判断组织学转化"
+      ],
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E01"
+      ]
+    },
+    {
+      "platform_id": "MSK_ACCESS_2021",
+      "name": "MSK-ACCESS",
+      "institution": "Memorial Sloan Kettering Cancer Center",
+      "assay_class": "targeted_plasma_cfDNA_panel_with_paired_normal",
+      "specimen": "血浆cfDNA与配对正常/白细胞",
+      "studied_version": "2021年129基因版本",
+      "gene_count": 129,
+      "validated_capabilities_zh": [
+        "低频体细胞改变检出",
+        "已知位点追踪",
+        "配对正常过滤胚系与克隆性造血"
+      ],
+      "assay_specific_performance_zh": "de-novo在0.5%等位基因频率敏感度92%；a-priori已知变异追踪敏感度99%，不得混为同一种任务的性能。",
+      "blind_spots_zh": [
+        "低ctDNA及覆盖外事件",
+        "不能替代组织病理",
+        "不测全基因组/表观组"
+      ],
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E02"
+      ]
+    },
+    {
+      "platform_id": "F1CDX_2022",
+      "name": "FoundationOne CDx",
+      "institution": "Foundation Medicine",
+      "assay_class": "targeted_tissue_DNA_CGP_panel",
+      "specimen": "肿瘤组织",
+      "studied_version": "2022年原始验证论文所述324基因版本",
+      "gene_count": 324,
+      "validated_capabilities_zh": [
+        "短变异",
+        "拷贝数改变",
+        "选定重排",
+        "按适应证报告TMB、MSI及卵巢癌gLOH"
+      ],
+      "assay_specific_performance_zh": "摘要确认分类LoD/LoB/精密度/一致性验证；未给统一数值，本节点不作统一LoD声明。",
+      "blind_spots_zh": [
+        "基因组设计外的事件",
+        "非遗传状态及完整表观组",
+        "发表时CDx标签不能视为当前各地区全部适应证"
+      ],
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E03"
+      ]
+    },
+    {
+      "platform_id": "F1LIQUIDCDX_2020",
+      "name": "FoundationOne Liquid CDx",
+      "institution": "Foundation Medicine",
+      "assay_class": "targeted_plasma_cfDNA_CGP_panel",
+      "specimen": "血浆cfDNA",
+      "studied_version": "2020年324基因验证版本",
+      "gene_count": 324,
+      "validated_capabilities_zh": [
+        "SNV/indel",
+        "选定重排",
+        "拷贝数扩增和缺失",
+        "MSI、血液TMB及肿瘤分数"
+      ],
+      "assay_specific_performance_zh": "选定SNV/indel 95%LoD 0.40% VAF；选定重排0.37% VAF；扩增21.7%、缺失30.4%肿瘤分数。VAF和肿瘤分数必须区分。",
+      "blind_spots_zh": [
+        "低肿瘤分数时CNV阴性不可可靠排除",
+        "不能直接观察组织转化",
+        "RNA/甲基化未自动包含"
+      ],
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E04"
+      ]
+    },
+    {
+      "platform_id": "GUARDANT360_2018",
+      "name": "Guardant360（原版数字测序研究）",
+      "institution": "Guardant Health与研究协作中心",
+      "assay_class": "targeted_plasma_cfDNA_panel",
+      "specimen": "血浆cfDNA",
+      "studied_version": "Odegaard等2018年验证的原版研究设计",
+      "gene_count": null,
+      "gene_count_note_zh": "所核原始摘要未列完整基因数；不以当前营销版本倒填。",
+      "validated_capabilities_zh": [
+        "四类可靶向基因组改变的分析/临床验证",
+        "与ddPCR及肺癌组织检测结果正交比较"
+      ],
+      "assay_specific_performance_zh": "摘要报告其测试条件下95%LoD汇总≤0.3%等位基因分数；0.02%-0.04%最低可检出水平不能误当全部事件95%LoD。",
+      "blind_spots_zh": [
+        "不能将2018年性能转给CDx或后续版本",
+        "不能替代组织病理",
+        "摘要无法证明每例与MSK-ACCESS相同的配对白细胞流程"
+      ],
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E05"
+      ]
+    },
+    {
+      "platform_id": "GUARDANT360_CDX_2023_2024",
+      "name": "Guardant360 CDx",
+      "institution": "Guardant Health与FLAURA/AURA3研究协作中心",
+      "assay_class": "targeted_plasma_cfDNA_CDx_panel",
+      "specimen": "血浆cfDNA",
+      "studied_version": "2023-11-18电子公开、2024年刊出的分析验证与EGFR临床桥接版本",
+      "gene_count": null,
+      "gene_count_note_zh": "所核摘要未给完整基因数和每类事件覆盖，需取得当次实验室设计；不与原版或当前产品互换。",
+      "validated_capabilities_zh": [
+        "泛肿瘤分析验证",
+        "治疗前EGFR阳性NSCLC奥希替尼用药的临床桥接"
+      ],
+      "assay_specific_performance_zh": "该研究摘要panel范围LoD 0.1%-0.5%、单样本特异度98%-100%；不据此推断所有事件或当前版本。",
+      "blind_spots_zh": [
+        "临床桥接不是耐药后机制发现/再挑战验证",
+        "低ctDNA阴性仍需组织路径",
+        "不是WGS或表观组"
+      ],
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E06"
+      ]
+    },
+    {
+      "platform_id": "HARTWIG_WGS_2019",
+      "name": "Hartwig Medical Foundation相关肿瘤-正常配对WGS研究平台",
+      "institution": "Hartwig Medical Foundation及荷兰多中心研究网络",
+      "assay_class": "paired_tumor_normal_whole_genome_sequencing",
+      "specimen": "转移瘤组织及配对正常样本",
+      "studied_version": "Priestley等2019年2520对样本研究",
+      "gene_count": null,
+      "validated_capabilities_zh": [
+        "全基因组体细胞变异分析",
+        "拷贝数/结构与全基因组加倍",
+        "双等位失活和克隆性研究"
+      ],
+      "assay_specific_performance_zh": "肿瘤与正常样本中位深度106×/38×；这是覆盖深度，不是低VAF检出限。",
+      "blind_spots_zh": [
+        "单个取样病灶仍有空间/亚克隆偏差",
+        "标准DNA WGS不自动测RNA、甲基化或开放染色质",
+        "62%潜在匹配线索不是治疗应答率"
+      ],
+      "is_wgs": true,
+      "evidence_ids": [
+        "O01_E07"
+      ]
+    }
+  ],
+  "modality_comparison": [
+    {
+      "modality": "靶向DNA panel",
+      "answers_zh": "已知癌症基因及设计内断点的高深度检测，可按平台验证报告CNV/TMB/MSI。",
+      "blind_spots_zh": "设计外调控区/内含子、复杂结构、表型与表观调控；每类事件LoD独立。",
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E01",
+        "O01_E02",
+        "O01_E03",
+        "O01_E04",
+        "O01_E05",
+        "O01_E06"
+      ]
+    },
+    {
+      "modality": "WES",
+      "answers_zh": "较广编码外显子变异，部分负荷及拷贝数分析。",
+      "blind_spots_zh": "捕获不均及编码外断点/调控区；不能把“外显子组”写成全基因组。常规DNA流程不直接测表观组或RNA。",
+      "validation_note_zh": "本节点为方法比较，未纳入WES专门平台验证或宣称本治疗序列临床效用。",
+      "is_wgs": false,
+      "evidence_ids": []
+    },
+    {
+      "modality": "肿瘤-正常WGS",
+      "answers_zh": "编码与非编码SNV/indel、较广CNV/SV、倍体/克隆架构和复杂基因组事件。",
+      "blind_spots_zh": "纯度/深度、低频亚克隆及重复区域；分子发现不自动确立功能或药敏；常规WGS未直接测表观组。",
+      "is_wgs": true,
+      "evidence_ids": [
+        "O01_E07"
+      ]
+    },
+    {
+      "modality": "靶向RNA或全转录组",
+      "answers_zh": "表达融合、剪接/MET外显子跳跃，或在全转录组中分析谱系与细胞状态。",
+      "blind_spots_zh": "靶向RNA不是全转录组；RNA质量、表达量与细胞组成影响结果；表达不等于依赖。",
+      "validation_note_zh": "机制研究用途描述；所选8篇未验证本同期联合治疗后RNA分层的临床效用。",
+      "is_wgs": false,
+      "evidence_ids": []
+    },
+    {
+      "modality": "靶向甲基化/WGBS/酶法甲基化测序",
+      "answers_zh": "测定所覆盖CpG/区域的甲基化状态；WGBS才是专门的全基因组甲基化测量，仍不同于全部表观组。",
+      "blind_spots_zh": "靶向甲基化或癌症组织来源分类不等于耐药机制检测；细胞组成和处理影响解释，不能由分类信号选表观遗传药。",
+      "validation_note_zh": "本节点无此治疗序列的甲基化伴随诊断验证，不声明商业DNA panel自动包含甲基化。",
+      "is_wgs": false,
+      "evidence_ids": []
+    },
+    {
+      "modality": "ATAC-seq/组蛋白标记/单细胞或空间表观组",
+      "answers_zh": "研究染色质开放、调控元件与细胞类型/空间状态，可辅助提出非遗传耐药假说。",
+      "blind_spots_zh": "样本制备、细胞质量和类型构成显著影响结果；当前节点无临床统一阈值或治疗获益验证。",
+      "validation_note_zh": "研究级假说生成能力，不等于已经完成临床平台验证。",
+      "is_wgs": false,
+      "evidence_ids": []
+    },
+    {
+      "modality": "组织病理与适当免疫组化",
+      "answers_zh": "直接评估肿瘤形态与谱系转化，补足血浆测序的关键盲区。",
+      "blind_spots_zh": "单部位活检可能遗漏空间异质性；分子与病理应共同解释。",
+      "is_wgs": false,
+      "evidence_ids": [
+        "O01_E08"
+      ]
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "将机制匹配治疗或临床试验建立在进展组织/血浆检出事件的正交确认和临床解释之上",
+      "status": "investigational_in_requested_setting",
+      "setting": "EGFR突变肺癌同期奥希替尼加铂/培美曲塞进展后，机制尚未确定。",
+      "limitations": "平台发现仅提出候选；所引组织奥希替尼耐药队列不验证本治疗序列的组合疗效。还需区别克隆来源、功能驱动、组织学转化和实际药物适用性。",
+      "evidence_ids": [
+        "O01_E01",
+        "O01_E02",
+        "O01_E03",
+        "O01_E04",
+        "O01_E05",
+        "O01_E06",
+        "O01_E07",
+        "O01_E08"
+      ]
+    },
+    {
+      "strategy": "若进展组织确认谱系转化，依据新的病理类型评估后续治疗或相应研究",
+      "status": "pathology_guided_evaluation",
+      "setting": "进展病灶组织已取得并完成病理复核。",
+      "limitations": "不能只凭TP53/RB1、血浆分子结果或甲基化分类器宣告转化；Schoenfeld队列不是同期奥希替尼加化疗后的治疗试验，不提供具体药物获益保证。",
+      "evidence_ids": [
+        "O01_E08"
+      ]
+    },
+    {
+      "strategy": "不以治疗前EGFR伴随诊断桥接结果支持已耐药后继续或再挑战同一方案",
+      "status": "not_supported_by_these_data",
+      "setting": "Guardant360 CDx的FLAURA/AURA3桥接与本患者进展后决策的适用性边界。",
+      "limitations": "桥接研究验证治疗前筛选EGFR阳性患者；未验证本次同期联合治疗后耐药场景的继续治疗、再挑战或机制匹配组合。",
+      "evidence_ids": [
+        "O01_E06"
+      ]
+    },
+    {
+      "strategy": "不以panel阴性或WGS可作用线索比例，直接选择经验性靶向/免疫/表观遗传治疗",
+      "status": "not_supported_by_these_data",
+      "setting": "耐药机制不明且检测完整性/来源尚需核实。",
+      "limitations": "阴性可由覆盖与样本不足造成；潜在可作用变异不等于耐药驱动或应答预测。所引平台验证不提供本治疗序列的表观遗传药物选择证据。",
+      "evidence_ids": [
+        "O01_E01",
+        "O01_E02",
+        "O01_E03",
+        "O01_E04",
+        "O01_E05",
+        "O01_E06",
+        "O01_E07",
+        "O01_E08"
+      ]
+    }
+  ],
+  "research_gaps": [
+    "缺少专门针对同期奥希替尼加铂/培美曲塞后进展、以配对组织/血浆/WBC和纵向病灶采样进行的同样本多平台头对头比较。",
+    "需要在真实进展标本中量化各平台对低肿瘤分数MET/ERBB2扩增、复杂融合/重排及低频亚克隆的敏感度，不能将小变异LoD作为所有事件性能。",
+    "需要建立从panel阴性到病理复核、RNA、配对WGS和表观组的增量发现率、周转时间、标本需求及临床获益证据，区分发现更多事件与改善患者结局。",
+    "需要纵向验证非编码/结构候选事件、转录/甲基化/染色质状态变化与功能耐药的因果连接，避免将治疗后状态改变或细胞组成差异直接叫作驱动。",
+    "缺少在本治疗序列中经过独立验证的表观组药敏阈值和分层临床试验；MCED组织来源分类性能不能替代这些验证。",
+    "需要公开当次panel基因/区域版本、各类事件LoD与阴性可解释性，以及血细胞配对和克隆性造血归因流程；原始平台论文不能代替每例实际检测质控。",
+    "尚无提供2025版JCR三指定学科原始排名表，无法完成前80名的可复现筛选；所有入选期刊均保持ranking_pending。"
+  ],
+  "evidence": [
+    {
+      "id": "O01_E01",
+      "title": "Memorial Sloan Kettering-Integrated Mutation Profiling of Actionable Cancer Targets (MSK-IMPACT): A Hybridization Capture-Based Next-Generation Sequencing Clinical Assay for Solid Tumor Molecular Oncology.",
+      "authors": "Cheng DT, Mitchell TN, Zehir A, Shah RH, Benayed R, Syed A, Chandramohan R, Liu ZY, Won HH, Scott SN, Brannon AR, O'Reilly C, Sadowska J, Casanova J, Yannes A, Hechtman JF, Yao J, Song W, Ross DS, Oultache A, Dogan S, Borsu L, Hameed M, Nafa K, Arcila ME, Ladanyi M, Berger MF.",
+      "year": 2015,
+      "journal": "The Journal of molecular diagnostics : JMD",
+      "issn": "1525-1578",
+      "eissn": "1943-7811",
+      "doi": "10.1016/j.jmoldx.2014.12.006",
+      "pmid": "25801821",
+      "publication_date": "2015-03-20",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1016/j.jmoldx.2014.12.006",
+      "verification": "metadata_abstract_checked",
+      "scope": "platform_validation",
+      "design": "analytical_validation",
+      "main_finding_zh": "原始MSK-IMPACT为341个癌症相关基因的全部外显子及部分内含子杂交捕获深度测序；使用FFPE肿瘤与患者配对正常样本。284个已知变异肿瘤样本验证中准确检出已知SNV/indel，也验证拷贝数及结构重排；摘要报告低频热点约2%、非热点约5%的检出限。",
+      "limitation_zh": "这是2015年341基因组织版本的分析验证，不是WGS、甲基化或转录组检测。2%/5%不能套用到后续MSK-IMPACT版本、cfDNA、每个CNV/SV或所有临床样本；覆盖外的断点、非编码改变及非遗传耐药仍可遗漏。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E02",
+      "title": "Enhanced specificity of clinical high-sensitivity tumor mutation profiling in cell-free DNA via paired normal sequencing using MSK-ACCESS.",
+      "authors": "Rose Brannon A, Jayakumaran G, Diosdado M, Patel J, Razumova A, Hu Y, Meng F, Haque M, Sadowska J, Murphy BJ, Baldi T, Johnson I, Ptashkin R, Hasan M, Srinivasan P, Rema AB, Rijo I, Agarunov A, Won H, Perera D, Brown DN, Samoila A, Jing X, Gedvilaite E, Yang JL, Stephens DP, Dix JM, DeGroat N, Nafa K, Syed A, Li A, Lebow ES, Bowman AS, Ferguson DC, Liu Y, Mata DA, Sharma R, Yang SR, Bale T, Benhamida JK, Chang JC, Dogan S, Hameed MR, Hechtman JF, Moung C, Ross DS, Vakiani E, Vanderbilt CM, Yao J, Razavi P, Smyth LM, Chandarlapaty S, Iyer G, Abida W, Harding JJ, Krantz B, O'Reilly E, Yu HA, Li BT, Rudin CM, Diaz L, Solit DB, Arcila ME, Ladanyi M, Loomis B, Tsui D, Berger MF, Zehir A, Benayed R.",
+      "year": 2021,
+      "journal": "Nature communications",
+      "issn": "2041-1723",
+      "eissn": "2041-1723",
+      "doi": "10.1038/s41467-021-24109-5",
+      "pmid": "34145282",
+      "publication_date": "2021-06-18",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1038/s41467-021-24109-5",
+      "verification": "metadata_abstract_checked",
+      "scope": "platform_validation",
+      "design": "analytical_validation_and_prospective_clinical_implementation",
+      "main_finding_zh": "2021年MSK-ACCESS为129基因cfDNA检测，分析验证报告de-novo检出在0.5%等位基因频率时敏感度92%，已知变异a-priori追踪敏感度99%；681份前瞻临床血样中73%检出体细胞改变，阳性样本中56%有临床可作用改变。配对正常样本测序过滤逾1万个胚系及克隆性造血变异。",
+      "limitation_zh": "99%已知位点追踪不等于未知耐药变异的de-novo检出能力，摘要没有给出可用于所有变异类别的单一LoD。样本检出率和可作用率不是本患者的耐药解释率或治疗应答率；129基因panel不能检验全基因组、全转录组或表观组。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E03",
+      "title": "Clinical and analytical validation of FoundationOne®CDx, a comprehensive genomic profiling assay for solid tumors.",
+      "authors": "Milbury CA, Creeden J, Yip WK, Smith DL, Pattani V, Maxwell K, Sawchyn B, Gjoerup O, Meng W, Skoletsky J, Concepcion AD, Tang Y, Bai X, Dewal N, Ma P, Bailey ST, Thornton J, Pavlick DC, Frampton GM, Lieber D, White J, Burns C, Vietz C.",
+      "year": 2022,
+      "journal": "PloS one",
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "doi": "10.1371/journal.pone.0264138",
+      "pmid": "35294956",
+      "publication_date": "2022-03-16",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1371/journal.pone.0264138",
+      "verification": "metadata_abstract_checked",
+      "scope": "platform_validation",
+      "design": "analytical_and_clinical_validation",
+      "main_finding_zh": "2022年F1CDx原始验证研究描述324基因组织CGP；报告短变异、拷贝数改变、部分重排及TMB、MSI，卵巢癌场景另报告gLOH。超过3万次测试形成对不同变异类别LoD、空白限、精密度和正交一致性的验证资料。",
+      "limitation_zh": "CGP或324基因不等于WGS。摘要未提供可概括全panel的统一LoD，本节点不制造该数值；重排只限设计覆盖范围。发表时伴随诊断适应证、TMB/MSI/gLOH用途不能泛化为所有肺癌耐药的药敏证据，也不代表2026年所有版本或地区标签。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E04",
+      "title": "Clinical and analytical validation of FoundationOne Liquid CDx, a novel 324-Gene cfDNA-based comprehensive genomic profiling assay for cancers of solid tumor origin.",
+      "authors": "Woodhouse R, Li M, Hughes J, Delfosse D, Skoletsky J, Ma P, Meng W, Dewal N, Milbury C, Clark T, Donahue A, Stover D, Kennedy M, Dacpano-Komansky J, Burns C, Vietz C, Alexander B, Hegde P, Dennis L.",
+      "year": 2020,
+      "journal": "PloS one",
+      "issn": "1932-6203",
+      "eissn": "1932-6203",
+      "doi": "10.1371/journal.pone.0237802",
+      "pmid": "32976510",
+      "publication_date": "2020-09-25",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1371/journal.pone.0237802",
+      "verification": "metadata_abstract_checked",
+      "scope": "platform_validation",
+      "design": "analytical_and_clinical_validation",
+      "main_finding_zh": "2020年FoundationOne Liquid CDx为324基因cfDNA CGP；逾7500次测试、逾3万独特变异的验证中，选定SNV/indel的95%LoD为0.40% VAF，选定重排0.37% VAF；拷贝数扩增和缺失则分别为21.7%与30.4%肿瘤分数。研究也验证MSI、血液TMB及肿瘤分数。",
+      "limitation_zh": "VAF与肿瘤分数不是同一量，不能把0.40%套用于MET/ERBB2扩增、所有融合或低脱落血浆。上述数值限定研究版本、样本条件及所测变异，不是本患者任意耐药事件的检出保证；血浆不能直接判断组织学转化。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E05",
+      "title": "Validation of a Plasma-Based Comprehensive Cancer Genotyping Assay Utilizing Orthogonal Tissue- and Plasma-Based Methodologies.",
+      "authors": "Odegaard JI, Vincent JJ, Mortimer S, Vowles JV, Ulrich BC, Banks KC, Fairclough SR, Zill OA, Sikora M, Mokhtari R, Abdueva D, Nagy RJ, Lee CE, Kiedrowski LA, Paweletz CP, Eltoukhy H, Lanman RB, Chudova DI, Talasaz A.",
+      "year": 2018,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "issn": "1078-0432",
+      "eissn": "1557-3265",
+      "doi": "10.1158/1078-0432.ccr-17-3831",
+      "pmid": "29691297",
+      "publication_date": "2018-04-24",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-17-3831",
+      "verification": "metadata_abstract_checked",
+      "scope": "platform_validation",
+      "design": "analytical_and_clinical_validation",
+      "main_finding_zh": "2018年原版Guardant360相关数字测序研究进行了分析验证，并与222份标志物阳性血样的ddPCR、543例连续肺癌患者的组织结果作比较；另报告10593份临床样本经验。摘要支持四类可靶向基因组改变的检测，并报告其测试条件下95%LoD汇总为不高于0.3%等位基因分数。",
+      "limitation_zh": "原版研究不等于2023/24年Guardant360 CDx版本验证。摘要内更低的0.02%-0.04%是可检出水平，不可误写为所有位点95%LoD；全队列85.9%临床敏感度也不是每个基因、变异类型或本耐药场景敏感度。摘要未列完整基因/内含子设计，故本节点不填写未经核验的当前基因数。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E06",
+      "title": "Pan-Tumor Analytical Validation and Osimertinib Clinical Validation in EGFR Mutant Non-Small-Cell Lung Cancer, Supporting the First Next-Generation Sequencing Liquid Biopsy in Vitro Diagnostic.",
+      "authors": "Gray JE, Han JY, Telaranta-Keerie A, Huang X, Kohlmann A, Hodge R, Rukazenkov Y, Chmielecki J, Espenschied CR, Lefterova M, Wu YL, Ramalingam SS, Barrett JC, Odegaard JI.",
+      "year": 2024,
+      "journal": "The Journal of molecular diagnostics : JMD",
+      "issn": "1525-1578",
+      "eissn": "1943-7811",
+      "doi": "10.1016/j.jmoldx.2023.10.002",
+      "pmid": "37981090",
+      "publication_date": "2023-11-18",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1016/j.jmoldx.2023.10.002",
+      "verification": "metadata_abstract_checked",
+      "scope": "platform_validation_egfr_lung",
+      "design": "analytical_validation_and_retrospective_trial_bridging",
+      "main_finding_zh": "Guardant360 CDx研究用FLAURA治疗前441例和AURA3治疗前450例血浆/试验资料进行临床桥接：血浆EGFR阳性人群接受奥希替尼的PFS获益与原试验组织筛选人群相近。分析验证摘要报告panel范围LoD为0.1%-0.5%，单样本特异度98%-100%。",
+      "limitation_zh": "正式刊期2024年，首次正式电子公开为2023-11-18；不能只按2024刊期判断时间窗。LoD范围是该CDx研究的摘要汇总，不能移植给原版Guardant360、所有CNV/SV或后续产品。临床桥接支持治疗前EGFR选药，不证明奥希替尼与铂/培美曲塞同期联合后继续或再挑战奥希替尼获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E07",
+      "title": "Pan-cancer whole-genome analyses of metastatic solid tumours.",
+      "authors": "Priestley P, Baber J, Lolkema MP, Steeghs N, de Bruijn E, Shale C, Duyvesteyn K, Haidari S, van Hoeck A, Onstenk W, Roepman P, Voda M, Bloemendal HJ, Tjan-Heijnen VCG, van Herpen CML, Labots M, Witteveen PO, Smit EF, Sleijfer S, Voest EE, Cuppen E.",
+      "year": 2019,
+      "journal": "Nature",
+      "issn": "0028-0836",
+      "eissn": "1476-4687",
+      "doi": "10.1038/s41586-019-1689-y",
+      "pmid": "31645765",
+      "publication_date": "2019-10-23",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1038/s41586-019-1689-y",
+      "verification": "metadata_abstract_checked",
+      "scope": "metastatic_pan_cancer_wgs",
+      "design": "observational_paired_tumor_normal_whole_genome_sequencing",
+      "main_finding_zh": "Hartwig相关研究对2520对转移实体瘤与正常样本实施真正WGS，中位深度分别106×和38×，检视逾7000万个体细胞变异，并分析全基因组加倍、双等位失活和克隆性。62%患者存在可用于已批准药物或临床试验分层的遗传线索。",
+      "limitation_zh": "跨癌种观察队列，不是奥希替尼加化疗耐药专门队列。62%是潜在治疗分层线索，不是62%应答或已找到耐药原因；106×肿瘤组织WGS也不能视作超深cfDNA panel的低VAF检出能力。常规DNA WGS没有自动测量甲基化、染色质开放性或RNA表达。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    },
+    {
+      "id": "O01_E08",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "authors": "Schoenfeld AJ, Chan JM, Kubota D, Sato H, Rizvi H, Daneshbod Y, Chang JC, Paik PK, Offin M, Arcila ME, Davare MA, Shinde U, Pe'er D, Rekhtman N, Kris MG, Somwar R, Riely GJ, Ladanyi M, Yu HA.",
+      "year": 2020,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "issn": "1078-0432",
+      "eissn": "1557-3265",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "pmid": "31911548",
+      "publication_date": "2020-01-07",
+      "publication_date_basis": "Europe PMC firstPublicationDate；已与PubMed ArticleDate DateType=Electronic逐篇核对；year保留正式书目刊年",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-19-3563",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "retrospective_paired_tissue_clinical_cohort_with_functional_follow_up",
+      "main_finding_zh": "62例奥希替尼前后具有组织测序的EGFR突变肺癌患者中，组织学转化在一线病例为15%、后线为14%，以鳞状转化为主；一线27例中5例出现MET扩增、KRAS变异、RET或BRAF融合等脱靶事件。研究直接指出血浆不能检测组织学转化，CNV和重排敏感度也有差异。",
+      "limitation_zh": "回顾性、单中心、能获得前后配对组织的选择性队列，人数有限；一线或后线奥希替尼结果不能作为同期奥希替尼加铂/培美曲塞后的发生率。分子改变与病理转化均需在进展标本中确认，不能仅由血浆或基因名替代诊断。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC MED/core",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A25801821+OR+EXT_ID%3A34145282+OR+EXT_ID%3A35294956+OR+EXT_ID%3A32976510+OR+EXT_ID%3A29691297+OR+EXT_ID%3A37981090+OR+EXT_ID%3A31645765+OR+EXT_ID%3A31911548%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:14:04+00:00"
+      },
+      "additional_verification_urls": [
+        "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml"
+      ],
+      "jcr_2025_status": "ranking_pending",
+      "rank_status": "ranking_pending",
+      "rank_year": 2025,
+      "journal_rank": null,
+      "jif_2025": null,
+      "rank_eligible": null,
+      "jcr_eligibility_note_zh": "尚无2025版JCR原始排名表，未证明该刊进入Oncology、Immunology或Genetics & Heredity任一学科前80；作为平台/机制基础证据暂存，不能宣传为已满足排名条件。"
+    }
+  ],
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04",
+    "date_basis": "首次正式电子公开日期；8篇均由Europe PMC firstPublicationDate与PubMed Electronic ArticleDate核对；不采用预印本日期替代正式发表。"
+  },
+  "journal_selection": {
+    "jcr_edition": 2025,
+    "categories": [
+      "Oncology",
+      "Immunology",
+      "Genetics & Heredity"
+    ],
+    "top_n_per_category": 80,
+    "status": "ranking_pending",
+    "ranks_supplied": false,
+    "note_zh": "没有JCR原表，不能声称任何引用已满足前80条件，也不虚构影响因子。综合期刊或方法学基础文献不可自动视为三类期刊前80。"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T10:14:04+00:00",
+    "review_type": "定向原始平台验证与耐药检测边界研究；非完成的系统综述",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "主智能体已枚举工具并检查CLI/密钥条件，未发现可调用Firecrawl能力；本节点没有发出Firecrawl请求。",
+    "actual_verification_providers": [
+      "Europe PMC MED/core（8篇元数据与摘要）",
+      "PubMed EFetch（8篇正式电子日期）",
+      "Crossref（部分入选论文的元数据和刊期交叉检查）"
+    ],
+    "verified_evidence_count": 8,
+    "metadata_abstract_checked_count": 8,
+    "full_text_reviewed_count": 0,
+    "verification_note_zh": "逐篇核对原始记录标题、作者、DOI、PMID、摘要及正式电子日期；未获取并完整审阅全文。细分覆盖、当前基因数或摘要缺失的LoD不填造。Cheng的Crossref请求遇429，未将其标为Crossref核验成功；该篇仍已由Europe PMC摘要及PubMed日期核验。",
+    "date_crosscheck_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25801821,34145282,35294956,32976510,29691297,37981090,31645765,31911548&retmode=xml",
+    "search_queries": [
+      "\"MSK-IMPACT\" AND AUTH_FIRST:Cheng AND FIRST_PDATE:[2011-11-04 TO 2026-11-04]",
+      "TITLE_ABS:\"MSK-ACCESS\" AND AUTH_FIRST:Brannon",
+      "DOI:10.1371/journal.pone.0264138",
+      "TITLE:\"Clinical and analytical validation of FoundationOne Liquid CDx\"",
+      "TITLE:\"Validation of a Plasma-Based Comprehensive Cancer Genotyping Assay\"",
+      "TITLE_ABS:\"Guardant360 CDx\" AND TITLE_ABS:validation",
+      "TITLE:\"Pan-cancer whole-genome analyses of metastatic solid tumours\"",
+      "TITLE:\"Tumor Analyses Reveal Squamous Transformation\"",
+      "SRC:MED AND (EXT_ID:25801821 OR EXT_ID:34145282 OR EXT_ID:35294956 OR EXT_ID:32976510 OR EXT_ID:29691297 OR EXT_ID:37981090 OR EXT_ID:31645765 OR EXT_ID:31911548)"
+    ],
+    "supplementary_screening_note_zh": "另核查Benayed等2019年MSK-Fusion RNA研究及Liu等2020年CCGA靶向甲基化摘要，但为保留6项关键panel原始验证并控制本节点8篇主证据，未将其作为本节点效用或药敏证据；RNA/表观组内容只作方法边界比较。",
+    "jcr_status": "ranking_pending",
+    "credentials_exposed": false,
+    "proxy_and_tls": "沿用环境HTTPS代理与TLS校验，未绕过代理。"
+  }
+}

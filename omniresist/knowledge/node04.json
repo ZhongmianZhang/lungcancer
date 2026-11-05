@@ -1,0 +1,396 @@
+{
+  "node_id": "node04",
+  "title": "表观遗传耐药：DNA甲基化、染色质重塑、持留细胞与谱系可塑性",
+  "genes": [
+    "EGFR",
+    "TET1",
+    "CEBPA",
+    "KDM5A",
+    "KDM5B",
+    "KDM1A",
+    "YAP1",
+    "TEAD1",
+    "SNAI2",
+    "BMF",
+    "EZH2",
+    "EED",
+    "SUZ12",
+    "SMARCA4",
+    "SMARCA2",
+    "MET",
+    "AKT1",
+    "RB1",
+    "TP53"
+  ],
+  "mechanism_zh": [
+    "耐受持留细胞（drug-tolerant persister，DTP）是药物暴露后仍能存活的一类操作性状态，其中一部分在撤药后可恢复药敏，另一部分可在持续药压下增殖并成为后续耐药的来源。非遗传状态不等于没有任何遗传变异，也不等于所有状态都可逆；晚期稳定耐药还可叠加新克隆改变。谱系追踪显示增殖与不增殖persister有不同起源和程序，因此不能把DTP、衰老、EMT和小细胞转化视为同一种现象。[O04_E02,O04_E04,O04_E06]",
+    "DNA甲基化存在可检验的因果链：致癌EGFR可经C/EBPα抑制TET1，维持多个抑癌基因的甲基化相关沉默；EGFR抑制后TET1介导主动去甲基化及表达恢复，而TET1敲低使肺癌细胞耐受EGFR抑制。该模型解释了基因序列之外的转录调控，却不证明任何甲基化高的患者都依赖同一位点，更不证明全局去甲基化药可复制TET1的局部功能。[O04_E01]",
+    "组蛋白赖氨酸修饰与DNA 5mC是不同层面的读出。KDM5家族去除H3K4甲基化；研究抑制剂CPI-455提高H3K4me3并减少多模型中的DTP，提示治疗早期残存状态可能依赖染色质调节。该研究的预处理和DTP计数不能直接外推为已建立耐药的缓解率，KDM5表达高也不是经验证的药敏阈值。[O04_E02]",
+    "低氧可将微环境压力连接到染色质和EMT。HCC827模型中长期中度低氧诱导吉非替尼耐药，伴E-cadherin下降和N-cadherin、fibronectin、vimentin升高；LSD1/KDM1A与PLU-1/KDM5B敲低可预防及逆转该状态。因果证据限定于相应低氧和药物背景，LSD1与KDM5B也不是可互换的酶；单次EMT染色或低氧签名不能证明患者依赖这条轴。[O04_E03]",
+    "YAP/TEAD可通过招募SLUG/SNAI2压制促凋亡BMF，使EGFR/MEK双抑制后的肿瘤细胞进入衰老样休眠。遗传或药理干预能减少模型中的休眠残存细胞，说明一种存活程序可能来自转录重编程，而非新增EGFR突变。该实验诱导条件包括MEK抑制，不能当作同期奥希替尼加铂/培美曲塞后的直接机制证明；衰老样表型也不能单独证明永久停滞。[O04_E04]",
+    "奥希替尼耐药的直接染色质证据来自mSWI/SNF研究：敏感与耐药模型的可及性及调控谱发生重排，SMARCA4/SMARCA2 ATPase遗传或药理抑制使其中一部分重新增敏，涉及EMT、上皮分化、NRF2及增殖程序。mSWI/SNF在不同背景可兼有肿瘤抑制和状态维持作用，基因失活、蛋白缺失与抑制剩余ATPase功能不能视为同一干预；需要功能和亚基依赖验证。[O04_E07]",
+    "PRC2/EZH2不能解释成统一的“越高越耐药”。2020年NSCLC研究中，EZH2敲低或抑制反而解除MET表达限制、激活MET/AKT并促进EGFR-TKI耐药；这是简单EZH2抑制增敏规则的直接反例。2026年小鼠研究则显示PRC2支架亚基EED支持神经内分泌身份，其起始期失活可阻止EGFR撤除后的SCLC组织学出现，但复发肿瘤转向黏液性LUAD。两者分别研究不同亚基、时序和谱系，不能把基因敲除、EZH2催化抑制、EED药理抑制及治疗已形成转化瘤混为一谈。[O04_E05,O04_E08]",
+    "常规短读长WGS主要读出碱基序列、拷贝数和结构变异；它不直接测量DNA甲基化、染色质可及性、组蛋白修饰或当前转录状态。没有检出遗传耐药机制，只能支持继续寻找，不能证明已经发生表观遗传耐药。DNA甲基化需使用专门的甲基化实验；部分保留原生修饰信号的长读长平台可结合经验证的修饰调用分析。ATAC-seq测可及性，ChIP-seq/CUT&Tag等测特定组蛋白或因子占位，这些信息应与配对WGS、RNA和病理整合。[O04_E01,O04_E07,O04_E08]",
+    "甲基化或可及性改变既可能驱动状态，也可能是治疗选择、细胞组成或谱系转化的结果。bulk检测应控制肿瘤纯度和免疫/间质成分；单细胞状态与同一克隆的关系需要联合遗传信息或谱系追踪。cfDNA甲基化可作为癌症存在、组织来源、肿瘤负荷或状态的研究信号，但信号本身不证明存在可用药的耐药依赖；癌检或监测用途不能自动转成去甲基化药适应证。[O04_E01,O04_E06,O04_E07]",
+    "本节点8篇核心证据均未证明在同期奥希替尼加铂类/培美曲塞进展后，按甲基化、ATAC、KDM5、LSD1、EZH2/EED或mSWI/SNF状态选药可改善患者结局。持留期干预、稳定耐药后的救援和已发生组织学转化后的治疗属于不同临床问题，模型药效不应被标记为本治疗序列的已验证策略。[O04_E01,O04_E02,O04_E03,O04_E04,O04_E05,O04_E06,O04_E07,O04_E08]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "常规WGS中的TET1、KDM5、KDM1A、PRC2或mSWI/SNF编码/结构改变",
+      "meaning": "可识别候选调控因子的遗传背景，并与克隆演化和其他耐药改变整合。",
+      "limitations": "DNA基因型不等于酶活性、组蛋白修饰、可及性或药物依赖；阴性也不排除非遗传状态。常规WGS不直接输出甲基化或ATAC结果。"
+    },
+    {
+      "marker": "肿瘤DNA甲基化谱与候选抑癌基因启动子/增强子甲基化",
+      "meaning": "定位表观调控状态，可与TET1定位、RNA恢复及药物扰动共同检验因果。",
+      "limitations": "全局均值不能替代具体位点、细胞来源及功能；部分亚硫酸氢盐方法不能区分5mC和5hmC，需要匹配检测。未建立同期联合治疗后临床阈值。"
+    },
+    {
+      "marker": "TET1 RNA/蛋白及核/胞质定位",
+      "meaning": "可帮助检验EGFR–C/EBPα–TET1去甲基化轴是否被压制或在治疗后恢复。",
+      "limitations": "表达、定位与催化功能不是同一变量；低表达可由细胞组成造成。不能单独预测DNMT抑制剂或其他表观遗传药敏。"
+    },
+    {
+      "marker": "KDM5家族状态及H3K4me3",
+      "meaning": "CPI-455模型中H3K4me3增加是靶点作用相关读出，可结合DTP数量和撤药再挑战研究。",
+      "limitations": "KDM5亚型不应混并；全局H3K4me3无法反映每个调控位点，药物作用读出也不等于患者疗效预测。"
+    },
+    {
+      "marker": "LSD1/KDM1A、PLU-1/KDM5B、低氧及EMT联合读出",
+      "meaning": "在相应模型中把微环境、染色质与EMT相关耐药连接起来。",
+      "limitations": "EMT是连续且异质的细胞状态，单一vimentin或E-cadherin染色不能确认功能依赖；吉非替尼低氧模型不能直接迁移至奥希替尼加化疗后。"
+    },
+    {
+      "marker": "YAP/TEAD活性、SLUG/SNAI2和BMF抑制",
+      "meaning": "可用于研究EGFR/MEK双抑制后的抗凋亡休眠程序。",
+      "limitations": "核YAP或基因表达相关性不能替代靶基因占位、凋亡读出和遗传补回；不是本治疗序列的伴随诊断。"
+    },
+    {
+      "marker": "ATAC可及性、mSWI/SNF定位及SMARCA4/SMARCA2 ATPase功能",
+      "meaning": "提供候选增强子/转录因子程序与染色质依赖信息；对一部分奥希替尼耐药模型有功能支持。",
+      "limitations": "开放位点不等于因子实际占位，基序富集不证明因子必需；应控制细胞组成，并区分亚基突变、蛋白缺失与保留复合物依赖。"
+    },
+    {
+      "marker": "EZH2/EED/PRC2、H3K27me3与H3K4me3双价状态、MET/AKT及组织学",
+      "meaning": "可共同研究转录抑制、旁路反馈与神经内分泌谱系维持。",
+      "limitations": "单次EZH2高或H3K27me3高不能决定抑制方向；EED起始期失活不是已建立转化的逆转。必须结合当前病理与相应功能模型。"
+    },
+    {
+      "marker": "cfDNA甲基化或其他血浆表观组信号",
+      "meaning": "可作为肿瘤存在、来源、负荷或状态的候选监测指标。",
+      "limitations": "检测/监测信号不是耐药用药靶点；需排除血细胞及肿瘤负荷混杂，单次阳性不能证明LSD1、KDM5或PRC2依赖，也不能替代组织学确认转化。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在机制匹配研究中抑制KDM5，比较治疗前/早期持留期与稳定耐药后的给药时序",
+      "status": "preclinical",
+      "setting": "靶向药或化疗暴露后的DTP模型。",
+      "limitations": "CPI-455为研究化合物；预处理减少DTP不等于进展后救援有效。应验证亚型、靶点作用和撤药后再生能力，未建立同期奥希替尼加化疗后获益。",
+      "evidence_ids": [
+        "O04_E02",
+        "O04_E06"
+      ]
+    },
+    {
+      "strategy": "在低氧–EMT–LSD1/PLU-1依赖已获遗传验证的模型中研究LSD1联合EGFR抑制",
+      "status": "preclinical",
+      "setting": "主要为HCC827低氧诱导的吉非替尼耐药模型。",
+      "limitations": "SP2509为研究工具，需正交遗传与药理验证；不能由EMT或LSD1表达直接处方，也没有同期奥希替尼加化疗后临床结果。",
+      "evidence_ids": [
+        "O04_E03"
+      ]
+    },
+    {
+      "strategy": "在mSWI/SNF功能依赖的奥希替尼耐药亚群中研究SMARCA4/SMARCA2 ATPase干预",
+      "status": "preclinical",
+      "setting": "奥希替尼耐药细胞及患者来源模型。",
+      "limitations": "仅部分模型重新增敏，基因突变不是已验证的选择规则；需明确保留复合物和亚基依赖，并评估给药顺序与联合安全性。",
+      "evidence_ids": [
+        "O04_E07"
+      ]
+    },
+    {
+      "strategy": "研究YAP/TEAD–SLUG–BMF抗凋亡程序干预以清除休眠残存细胞",
+      "status": "investigational",
+      "setting": "本节点支持来自EGFR/MEK联合抑制后的临床前休眠模型。",
+      "limitations": "现有实验不能直接代表EGFR加化疗条件；需要区分细胞杀伤与暂时增殖抑制，未证明该机制分层可带来患者获益。",
+      "evidence_ids": [
+        "O04_E04"
+      ]
+    },
+    {
+      "strategy": "在明确谱系和时间窗的研究中检验PRC2/EED干预，同时监测MET/AKT反馈与替代谱系",
+      "status": "preclinical",
+      "setting": "EED起始期遗传失活及EGFR撤除后的LUAD-to-SCLC小鼠模型；EZH2–MET反馈模型提供方向相反的限制。",
+      "limitations": "EED失活仍可产生黏液性LUAD复发；不能等同EZH2催化抑制，也未证明药物能逆转已形成SCLC。任何“EZH2高即加EZH2抑制剂”规则均缺少本场景验证。",
+      "evidence_ids": [
+        "O04_E05",
+        "O04_E08"
+      ]
+    },
+    {
+      "strategy": "以位点和功能恢复为终点研究TET1/DNA甲基化调控，而不将全局甲基化或cfDNA阳性直接映射为去甲基化治疗",
+      "status": "hypothesis_only",
+      "setting": "EGFR–C/EBPα–TET1抑癌基因沉默模型及方法学边界。",
+      "limitations": "TET1遗传恢复不等于广谱DNMT抑制；甲基化检测的癌检/监测价值不能证明耐药靶点或临床药效。未建立同期奥希替尼加铂/培美曲塞后的用药依据。",
+      "evidence_ids": [
+        "O04_E01"
+      ]
+    }
+  ],
+  "research_gaps": [
+    "缺少同期奥希替尼加铂类/培美曲塞治疗前、早期残留及进展时的纵向配对多组学队列；单药TKI耐药和特定药物组合模型不能视为该治疗序列的机制已被证明。",
+    "需将匹配正常的WGS、拷贝数/结构变异、组织学、RNA、DNA甲基化、ATAC及特定组蛋白标记整合，并使用多区域或单细胞信息区分克隆演化、状态变化和细胞组成改变。",
+    "需要撤药再挑战、长期再生和谱系追踪来区分可逆耐受、预存易感谱系、治疗诱导状态及稳定遗传耐药；不能由“未检出已知突变”或单次EMT签名定义非遗传耐药。",
+    "甲基化及染色质改变是否为驱动而非伴随结果，需要位点或亚基特异扰动、靶点作用、补回和功能读出；bulk相关性不能回答因果，也不能确定每种程序的患者发生率。",
+    "PRC2/EZH2/EED的方向、支架与催化功能、干预时序及谱系背景必须分开；预防转化不等于逆转已形成转化，改变复发谱系也不等于清除肿瘤。",
+    "尚缺经独立队列验证的甲基化、ATAC、组蛋白或DTP临床阈值与伴随诊断；需证明超出病理、肿瘤负荷及已知基因耐药机制的增量价值。",
+    "模型中的表观遗传药物组合需要明确选择性、可达暴露、给药顺序及联合安全性；对持留细胞数量、肿瘤回缩和患者生存的终点不能互换。",
+    "本次为针对性原始研究核查，非系统综述；2025版JCR三学科前80资格仍待原始排名表核验，不能以名刊印象或影响因子替代。"
+  ],
+  "evidence": [
+    {
+      "id": "O04_E01",
+      "title": "Oncogenic EGFR Represses the TET1 DNA Demethylase to Induce Silencing of Tumor Suppressors in Cancer Cells.",
+      "authors": "Forloni M, Gupta R, Nagarajan A, Sun LS, Dong Y, Pirazzoli V, Toki M, Wurtz A, Melnick MA, Kobayashi S, Homer RJ, Rimm DL, Gettinger SJ, Politi K, Dogra SK, Wajapeyee N.",
+      "year": 2016,
+      "journal": "Cell reports",
+      "doi": "10.1016/j.celrep.2016.05.087",
+      "pmid": "27346347",
+      "publication_date": "2016-06-23",
+      "url": "https://doi.org/10.1016/j.celrep.2016.05.087",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "致癌EGFR经C/EBPα抑制TET1，促使多个抑癌基因发生DNA甲基化相关沉默；抑制EGFR后TET1进入相关启动子并促进主动去甲基化与重新表达。TET1过表达抑制模型肿瘤，TET1敲低使肺癌细胞对EGFR抑制剂耐受。",
+      "limitation_zh": "主要因果证据来自细胞和肿瘤模型；人体样本TET1表达/定位异常是相关支持。不是同期奥希替尼加铂/培美曲塞后配对研究，也未证明临床DNMT抑制剂能复制TET1恢复的作用。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    },
+    {
+      "id": "O04_E02",
+      "title": "An inhibitor of KDM5 demethylases reduces survival of drug-tolerant cancer cells.",
+      "authors": "Vinogradova M, Gehling VS, Gustafson A, Arora S, Tindell CA, Wilson C, Williamson KE, Guler GD, Gangurde P, Manieri W, Busby J, Flynn EM, Lan F, Kim HJ, Odate S, Cochran AG, Liu Y, Wongchenko M, Yang Y, Cheung TK, Maile TM, Lau T, Costa M, Hegde GV, Jackson E, Pitti R, Arnott D, Bailey C, Bellon S, Cummings RT, Albrecht BK, Harmange JC, Kiefer JR, Trojer P, Classon M.",
+      "year": 2016,
+      "journal": "Nature chemical biology",
+      "doi": "10.1038/nchembio.2085",
+      "pmid": "27214401",
+      "publication_date": "2016-05-23",
+      "url": "https://doi.org/10.1038/nchembio.2085",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "KDM5家族去除H3K4甲基化；选择性研究抑制剂CPI-455提高整体H3K4me3，并在多种接受靶向药或化疗的癌细胞模型中减少药物耐受持留细胞。实验采用的预处理策略提示残存细胞形成阶段可能具有可干预窗口。",
+      "limitation_zh": "结构、生化与癌细胞模型证据；CPI-455为研究化合物，减少DTP数量不等于在已进展患者中获得缓解。未证明KDM5表达或单次H3K4me3能作为临床用药阈值，也没有同期奥希替尼加化疗后的前瞻疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    },
+    {
+      "id": "O04_E03",
+      "title": "Hypoxia Promotes Resistance to EGFR Inhibition in NSCLC Cells via the Histone Demethylases, LSD1 and PLU-1.",
+      "authors": "Lu Y, Liu Y, Oeck S, Glazer PM.",
+      "year": 2018,
+      "journal": "Molecular cancer research : MCR",
+      "doi": "10.1158/1541-7786.mcr-17-0637",
+      "pmid": "29934325",
+      "publication_date": "2018-06-22",
+      "url": "https://doi.org/10.1158/1541-7786.mcr-17-0637",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "EGFR突变HCC827细胞长期处于中度低氧后出现EMT和吉非替尼耐药；敲低LSD1或PLU-1可预防及逆转该表型。LSD1遗传干预或SP2509在相应体内模型中抑制肿瘤并改善吉非替尼反应。",
+      "limitation_zh": "以一种主要细胞背景、低氧和吉非替尼模型为主；不能推广为所有EGFR耐药均依赖LSD1。SP2509的模型药效不构成选择性、人体联合安全性或奥希替尼加化疗后有效性的证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    },
+    {
+      "id": "O04_E04",
+      "title": "Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway.",
+      "authors": "Kurppa KJ, Liu Y, To C, Zhang T, Fan M, Vajdi A, Knelson EH, Xie Y, Lim K, Cejas P, Portell A, Lizotte PH, Ficarro SB, Li S, Chen T, Chen T, Haikala HM, Wang H, Bahcall M, Gao Y, Shalhout S, Boettcher S, Shin BH, Thai T, Wilkens MK, Tillgren ML, Mushajiang M, Xu M, Choi J, Bertram AA, Ebert BL, Beroukhim R, Bandopadhayay P, Awad MM, Gokhale PC, Kirschmeier PT, Marto JA, Camargo FD, Haq R, Paweletz CP, Wong KK, Barbie DA, Long HW, Gray NS, Jänne PA.",
+      "year": 2020,
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccell.2019.12.006",
+      "pmid": "31935369",
+      "publication_date": "2020-01-13",
+      "url": "https://doi.org/10.1016/j.ccell.2019.12.006",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "EGFR/MEK联合抑制在EGFR突变NSCLC模型中产生高YAP/TEAD活性的衰老样休眠细胞；YAP/TEAD招募EMT转录因子SLUG直接抑制促凋亡BMF。药理或YAP1遗传干预增强凋亡并减少休眠细胞。",
+      "limitation_zh": "研究诱导条件包括EGFR与MEK双抑制，不能等同于EGFR抑制加化疗。休眠或衰老样标志不证明不可逆衰老；未建立患者YAP/TEAD或SLUG/BMF的伴随诊断和临床受益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table",
+      "publication_date_note": "PubMed JournalIssue/PubDate为2020-01-13；Europe PMC firstPublicationDate为2020-01-01、Crossref仅到月份。采用可核实到日的论文发表日期，未将缺失日补作01。"
+    },
+    {
+      "id": "O04_E05",
+      "title": "Loss of histone lysine methyltransferase EZH2 confers resistance to tyrosine kinase inhibitors in non-small cell lung cancer.",
+      "authors": "Quan C, Chen Y, Wang X, Yang D, Wang Q, Huang Y, Petersen RB, Liu X, Zheng L, Li Y, Huang K.",
+      "year": 2020,
+      "journal": "Cancer letters",
+      "doi": "10.1016/j.canlet.2020.09.003",
+      "pmid": "32920200",
+      "publication_date": "2020-09-10",
+      "url": "https://doi.org/10.1016/j.canlet.2020.09.003",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "NSCLC细胞与临床样本中EZH2表达与MET活化、EGFR-TKI耐药负相关；敲低或抑制EZH2反而提高MET表达/磷酸化、增殖和耐药。MET或PI3K/AKT抑制可提高EZH2并恢复模型药敏，提示MET–AKT–EZH2反馈。",
+      "limitation_zh": "临床样本相关性结合细胞/异种移植功能证据，非前瞻标志物分层试验。它提供EZH2抑制可能促耐药的情境反例，不能推出所有患者抑制EZH2均有害，也不能据此推荐EZH2激动策略。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    },
+    {
+      "id": "O04_E06",
+      "title": "Cycling cancer persister cells arise from lineages with distinct programs.",
+      "authors": "Oren Y, Tsabar M, Cuoco MS, Amir-Zilberstein L, Cabanos HF, Hütter JC, Hu B, Thakore PI, Tabaka M, Fulco CP, Colgan W, Cuevas BM, Hurvitz SA, Slamon DJ, Deik A, Pierce KA, Clish C, Hata AN, Zaganjor E, Lahav G, Politi K, Brugge JS, Regev A.",
+      "year": 2021,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-03796-6",
+      "pmid": "34381210",
+      "publication_date": "2021-08-11",
+      "url": "https://doi.org/10.1038/s41586-021-03796-6",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "Watermelon高复杂度条形码结合克隆、增殖和转录状态追踪，发现持续药压下增殖与不增殖的persister来自不同细胞谱系，具有不同转录/代谢程序；抗氧化及脂肪酸氧化程序与增殖性持留相关，相关程序也出现在多种靶向治疗后的患者微小残留病灶。",
+      "limitation_zh": "跨癌种的谱系追踪与模型因果证据，并有患者MRD转录关联；不是每个持留细胞都进入同一种休眠/EMT状态，也未证明这些程序在同期奥希替尼加化疗后具有已验证的临床靶点价值。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    },
+    {
+      "id": "O04_E07",
+      "title": "Mammalian SWI/SNF chromatin remodeling complexes promote tyrosine kinase inhibitor resistance in EGFR-mutant lung cancer.",
+      "authors": "de Miguel FJ, Gentile C, Feng WW, Silva SJ, Sankar A, Exposito F, Cai WL, Melnick MA, Robles-Oteiza C, Hinkley MM, Tsai JA, Hartley AV, Wei J, Wurtz A, Li F, Toki MI, Rimm DL, Homer R, Wilen CB, Xiao AZ, Qi J, Yan Q, Nguyen DX, Jänne PA, Kadoch C, Politi KA.",
+      "year": 2023,
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccell.2023.07.005",
+      "pmid": "37541244",
+      "publication_date": "2023-08-03",
+      "url": "https://doi.org/10.1016/j.ccell.2023.07.005",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "在奥希替尼敏感/耐药EGFR突变细胞及患者来源模型中描绘染色质可及性和基因调控谱，发现mSWI/SNF复合物支持耐药程序。遗传或药理抑制SMARCA4/SMARCA2 ATPase使部分耐药模型重新对奥希替尼敏感，涉及增殖、EMT、上皮分化及NRF2程序。",
+      "limitation_zh": "只在部分模型重新增敏，不能把SMARCA4/SMARCA2突变或表达直接当作药敏标志；患者来源模型仍非患者干预试验。未验证奥希替尼加铂/培美曲塞后使用mSWI/SNF抑制剂的疗效、安全性或筛选阈值。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    },
+    {
+      "id": "O04_E08",
+      "title": "Polycomb scaffolding subunit EED supports the SCLC neuroendocrine identity and EGFR-mutant LUAD-to-SCLC transformation.",
+      "authors": "Li Y, Laimon YN, Cho H, Vivero M, De Oliveira GR, Seager MD, Delcea A, Savla V, Chen Y, Durmaz YT, Qiu X, Kukreja S, Li R, El Zarif T, Lu W, Van Orden M, Berchuck JE, Bronson RT, Li S, Ji H, Barbie DA, Politi K, Freedman ML, Long HW, Signoretti S, Oser MG.",
+      "year": 2026,
+      "journal": "The Journal of clinical investigation",
+      "doi": "10.1172/jci199454",
+      "pmid": "42611544",
+      "publication_date": "2026-08-18",
+      "url": "https://doi.org/10.1172/jci199454",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "CRISPR构建的免疫完整自发肺癌小鼠显示PRC2支架亚基EED维持SCLC神经内分泌身份。EED失活解除部分H3K27me3/H3K4me3双价基因抑制；在伴Rb1/Trp53失活的EGFR驱动LUAD模型，肿瘤起始时失活EED阻止EGFR撤除后出现SCLC组织学，并使复发肿瘤转向黏液性LUAD状态、减少自发转移。",
+      "limitation_zh": "关键转化实验为肿瘤起始时EED遗传失活与EGFR癌基因撤除，并非已建立转化瘤的药物逆转；复发仍可沿其他谱系发生。不能将EED失活等同EZH2催化抑制、人体EED药物效果，或同期奥希替尼加化疗后临床获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:28+00:00"
+      },
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_source_table"
+    }
+  ],
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T10:13:28+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "主智能体已核查当前无可调用Firecrawl MCP、CLI或注入凭据；本节点未发送Firecrawl请求。",
+    "actual_verification_provider": [
+      "Europe PMC",
+      "PubMed E-utilities",
+      "Crossref"
+    ],
+    "verification": "8篇核心条目的真实元数据及原摘要已通过Europe PMC检索阅读；另核对PubMed发表日期、文章类型和关联说明，以及Crossref标题/日期元数据。所有核心条目为原始研究，未审阅全文。",
+    "full_text_reviewed": false,
+    "primary_retrieval": {
+      "provider": "Europe PMC",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27346347+OR+EXT_ID%3A27214401+OR+EXT_ID%3A29934325+OR+EXT_ID%3A31935369+OR+EXT_ID%3A32920200+OR+EXT_ID%3A34381210+OR+EXT_ID%3A37541244+OR+EXT_ID%3A42611544%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+      "checked_at": "2026-11-04T10:13:28+00:00"
+    },
+    "pubmed_metadata_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27346347,27214401,28781121,29934325,31935369,32920200,37541244,42611544&retmode=xml",
+    "additional_pubmed_metadata_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34381210&retmode=xml",
+    "crossref_metadata_urls": [
+      "https://api.crossref.org/works/10.1016%2Fj.celrep.2016.05.087",
+      "https://api.crossref.org/works/10.1038%2Fnchembio.2085",
+      "https://api.crossref.org/works/10.1158%2F1541-7786.mcr-17-0637",
+      "https://api.crossref.org/works/10.1016%2Fj.ccell.2019.12.006",
+      "https://api.crossref.org/works/10.1016%2Fj.canlet.2020.09.003",
+      "https://api.crossref.org/works/10.1038%2Fs41586-021-03796-6",
+      "https://api.crossref.org/works/10.1016%2Fj.ccell.2023.07.005",
+      "https://api.crossref.org/works/10.1172%2Fjci199454"
+    ],
+    "publication_date_basis": "publication_date为纳入的同行评议论文首次可核实公开日期，优先PubMed电子发表日期并与Europe PMC/Crossref交叉检查，不使用接收或入库日期。Kurppa论文的Europe PMC日期仅到月份后显示01，已改用PubMed精确刊期日2020-01-13。Oren论文有更早预印本，2021-08-11为本节点引用的同行评议论文首次发表日。",
+    "integrity_check": "所查8篇核心论文的PubMed文章类型和关联记录未见撤稿/勘误标记；Kurppa与Oren的CommentIn为评论链接。该元数据检查不是穷尽的出版社完整性审查。",
+    "historical_boundary": "Sharma等2010年Cell的经典可逆药物耐受论文早于2011-11-04，未列核心证据。",
+    "journal_ranking": {
+      "edition": 2025,
+      "categories": [
+        "Oncology",
+        "Genetics & Heredity",
+        "Immunology"
+      ],
+      "required_rank_max": 80,
+      "status": "pending",
+      "reason_zh": "未获得2025版JCR三学科原始排名表，所有条目journal_rank为null。本节点为机制原始研究候选集，未声称全部满足对应学科前80。"
+    },
+    "review_scope": "定向机制综述；不得解释为针对同期奥希替尼加铂/培美曲塞后进展的治疗建议或已验证伴随诊断。"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "checked_at": "2026-11-05T10:04:50+00:00",
+  "base_commit": "4193669ee2eab343af129aa545161d32bec95352",
+  "unit_tests": {
+    "executed": 122,
+    "passed": 122,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "new_multiomics_tests": 36,
+    "command": "python3 -m unittest discover -s tests -p 'test_*.py'"
+  },
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "seven research modules, seven versioned platforms, unique bibliography",
+      "platform and mechanism filtering; full expansion",
+      "citation aliases, filter reset, JCR uncertainty and metadata-only conference labels",
+      "390px mobile layout without page overflow",
+      "complete bibliography and mechanisms without JavaScript",
+      "synthetic negative and RET reports; zero JavaScript errors or external requests"
+    ],
+    "errors": [],
+    "external_requests": []
+  },
+  "metadata": {
+    "matched": 52,
+    "total": 52,
+    "scope": "Independent title/DOI metadata recheck; authoring reviewers read the indicated abstracts.",
+    "full_text_systematically_reviewed": false
+  },
+  "bibliography_counts": {
+    "nodes": 7,
+    "evidence_assertions": 55,
+    "unique_publications": 52,
+    "abstract_checked": 51,
+    "metadata_only": 1,
+    "full_text_reviewed": 0
+  },
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04"
+  },
+  "research_agents": {
+    "requested": 7,
+    "dispatched_for_task": 7,
+    "integrated_modules": 7,
+    "recovered_written_artifacts": 6,
+    "completed_current_resume_agent": 1,
+    "all_agent_turns_successful_not_claimed": true
+  },
+  "journal_selection": {
+    "jcr_edition": 2025,
+    "jif_year": 2024,
+    "metric": "JIF category rank",
+    "rank_at_most": 80,
+    "categories": [
+      "Oncology",
+      "Immunology",
+      "Genetics & Heredity"
+    ],
+    "policy": "Union of the three within-category top-80 sets; conference evidence assessed separately.",
+    "table": {
+      "status": "not_supplied",
+      "authenticated_by_program": false
+    },
+    "passed_unique_journal_records": 0,
+    "not_claimed_satisfied_without_matching_table": true
+  },
+  "journal_top80_requirement_completed": false,
+  "clinical_algorithm_validated": false,
+  "search": {
+    "preferred_provider": "Firecrawl MCP",
+    "actual_provider": "Europe PMC",
+    "firecrawl_mcp_used": false,
+    "firecrawl_rest_live_used": false,
+    "adapter_protocol_test": "mock_only",
+    "fallback_reason": "missing_credential",
+    "requested_window": {
+      "start": "2011-11-04",
+      "end": "2026-11-04"
+    },
+    "result_count": 15,
+    "total_hits": 2160,
+    "truncated": true,
+    "case_analysis_inputs_accessed": false,
+    "credential_values_saved_in_code": false
+  },
+  "independent_rule_review": [
+    {
+      "reviewer": "o7_07_clinical",
+      "finding": "General interpretation guidelines passing JCR cannot make a mechanism-specific treatment direction pass.",
+      "resolution": "Explicit primary-publication bindings; journal-screened and conference evidence separated; generic-guideline regression check passes."
+    },
+    {
+      "reviewer": "o7_07_clinical",
+      "finding": "Other EGFR events such as L718/G796 must not all be labelled retained original driver.",
+      "resolution": "Explicit original-driver annotation; other alleles held for review; regression check passes."
+    }
+  ],
+  "source_hashes": {
+    "node01.json": "fc3ab04083219dd2fe6f6081701284ec2bb6b8a7b8ed6f6af65ad7afe16ded26",
+    "node02.json": "aee88d6b9281b8f7b4192ff6912c5d323d0a54158170aa86547ec378838e7a6f",
+    "node03.json": "5330322014bca607042893a43fc4a12e91b4afffaa490c8d79c6b84270024962",
+    "node04.json": "1797d2a855704ad3c85a49af5c2036b28be0708f4b18879bc9f9d791693792dd",
+    "node05.json": "981e5be461d60d5fe20326c32e712f91f8510c93154e0d79e1c7c26298b3932c",
+    "node06.json": "d95aff5b7bc5746a0c2f3893a22201bed3244b78b081003d0bb6fcddc6af09d4",
+    "node07.json": "90d8f647fd0bf2d1295aa542297a35d7f70621d0d3ba5679f3e4e4c259f228c0"
+  },
+  "code_hashes": {
+    "omniresist/__init__.py": "1f8aa6bd45b7071d19ac8cd7183861faaf46cce1ffca113cc5d71406d38eecb4",
+    "omniresist/__main__.py": "a74666106d9b7070ea1db632cbe6b05ac624b86ec7c28507b860d8da5b8cee73",
+    "omniresist/engine.py": "7be7196bd17def119c5559e1ad94bb0a35b0786eb17e3683945339f3d1fcd271",
+    "omniresist/knowledge.py": "18e577289d0d0e41095b26afd0a4da4b38771cf7a5aa426cefdc3b6f0ab092a7",
+    "omniresist/ranking.py": "025a16ab7a92f1a1134becc8b457a587cd1d99c46b6604c2e9f5ea10aee93f85",
+    "omniresist/render.py": "68545ff51ea6328c016dfaf692c88824140e9af5fe5f92060aa9d5601f759572",
+    "omniresist/schema.py": "54bee8dcf80f3feef1d6188620985c60da45ee1681026e4a5b80d0a6fd76245a",
+    "tests/test_omniresist.py": "4cb0dd4932a7b531de02cbedec822857d385ffd6184df4f6c5d5da163e84248c",
+    "tests/browser_omniresist.py": "1c95dfb2f3080163145113c406fff1b21a3e8f818560c39b3a91ec6460017ec4",
+    "scripts/build_site.py": "4a20009d0a15c68623891c8ec0e5c36f77623eac51e6ad8eda4332be40341243"
+  },
+  "csv_export": {
+    "records": 52,
+    "line_endings": "LF",
+    "browser_checked_html_unchanged": true
+  }
+}

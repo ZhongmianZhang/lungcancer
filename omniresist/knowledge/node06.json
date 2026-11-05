@@ -1,0 +1,381 @@
+{
+  "node_id": "node06",
+  "node_type": "liquid_biopsy_interpretability",
+  "module": "omniresist",
+  "parent_node": "node01",
+  "title": "液体活检：LoD与肿瘤分数、低脱落/CNS/CSF、UMI/双链、CHIP定源和ctDNA多模态动态",
+  "genes": [
+    "EGFR",
+    "TP53",
+    "DNMT3A",
+    "TET2",
+    "ASXL1",
+    "JAK2",
+    "PPM1D"
+  ],
+  "mechanism_zh": [
+    "本节点讨论“为什么液体活检未检出或难以归因”，不把检测阴性命名为一种生物学耐药机制。研究对象是EGFR突变NSCLC在同期奥希替尼加铂/培美曲塞后进展、机制未明者；下列8篇主证据提供检测学、其他治疗序列或跨癌种依据，均不是这一精确人群的耐药机制比例调查。应先区分没有足量肿瘤DNA、覆盖/方法未能捕获事件、检出但来源未明，以及在充分可评估样本中仍无已知机制。[O06_E01,O06_E02,O06_E03,O06_E05]",
+    "分析灵敏度指在限定输入、变异类型、背景、覆盖与判定规则下检出已知分析物的能力；临床灵敏度还受真实肿瘤脱落、病灶区室、治疗时点和参考标准影响。LoD通常应连同验证所用检出概率与置信区间、适用变异类别及输入条件解释，SNV、indel、融合和拷贝数改变不共用一个阈值。Oxnard 2016的70%是该早期BEAMing方案对组织参照T790M的临床灵敏度；Newman 2016的4/10万cfDNA分子是iDES研究设定的监测能力；两者不能互换，也不能套用到另一平台。[O06_E02,O06_E03]",
+    "低肿瘤分数和分子抽样限制会使超深测序仍然阴性：重复读取同一模板不能产生原本未进入文库的肿瘤分子。报告应记录血浆体积、cfDNA输入量、独立分子覆盖、有效双链分子数、可报告区间及失败位点；同样的原始测序深度不代表相同的有效证据量。总cfDNA浓度不等于ctDNA肿瘤分数，最大VAF也仅在特定拷贝数、等位基因状态、克隆组成和来源假设下近似反映肿瘤含量。该质量清单属于依据分子计数原理的检测学建议，不是一个通用商业平台合格线。[O06_E01,O06_E03,O06_E05]",
+    "UMI/单链一致序列可抑制PCR和测序错误；真正的双链一致序列要求同一原始DNA双链的两条互补链均支持改变，不应把所有带UMI的检测都称为双链测序。Schmitt的理论背景错误率并非临床LoD；iDES的分子条形码加计算背景抑制也不能消除有限输入、结构事件设计盲区或低脱落。技术错误降低不能解决克隆性造血或其他生物来源混淆。[O06_E01,O06_E03,O06_E05]",
+    "血浆阴性应附可解释性分层：若已知肿瘤EGFR敏感变异及其他可信肿瘤信号也均未检出，优先记为肿瘤DNA不足/未证实可评估；若已证实存在足量肿瘤DNA，但未检出特定事件，只能在该事件覆盖与类别性能范围内增强阴性证据；输入不足、失败位点或质控失败则属于检测受限。检出原始EGFR敏感变异不保证每个耐药亚克隆均超过LoD。不能把“未检出已知突变”写成“没有耐药机制”或“排除组织学转化”，后者仍需要进展组织病理。[O06_E02,O06_E03]",
+    "CNS为主或孤立进展时，血浆可能因低脱落和区室限制而缺少肿瘤信号。de Mattos-Arruda等显示CSF在研究的脑肿瘤背景中可较血浆更完整反映基因组改变；若临床怀疑软脑膜病变等、且取样适宜，可考虑CSF与同期血浆/白细胞配对，结合MRI、细胞学和组织病理判断。不能由此要求每个脑转移病例常规腰穿；CSF阴性也不排除CNS病变或耐药，CSF所代表的克隆不能直接等同全部颅外病灶。[O06_E04]",
+    "血浆变异来源必须核查造血区室。Razavi等的53.2%是其癌症队列cfDNA变异中具有克隆性造血特征的比例，既不是53.2%的患者有CHIP，更不是53.2%的联合治疗后耐药。典型CH相关基因及也可发生于实体瘤的TP53等都应结合配对白细胞、组织与各检测LoD判源，不宜仅用基因黑名单全删或把白细胞阴性一律视为肺癌来源。CH是来源概念，CHIP还需满足克隆大小及无明确血液肿瘤等临床定义；必要时结合血象和血液学评估。[O06_E05]",
+    "ctDNA动态必须比较同一分析物、平台、处理流程和明确治疗时点，并记录治疗暴露及影像。基线本来未检出者不能归为“治疗后清除”；清除是降到该检测阈值以下，并非肿瘤根除。Gray 2023在AURA3/FLAURA观察到第3/6周EGFR信号清除与PFS关联，但AURA3的奥希替尼和化疗是独立治疗臂，不能写成同期联合治疗证据；这一关联不能单独证明应据持续阳性加药、据清除减药或据分子升高提前换药。[O06_E06]",
+    "fragmentomics可从全基因组片段长度分布等特征识别肿瘤相关信号；靶向甲基化模型可识别癌症信号并预测来源。Cristiano 2019和Klein 2021分别证明这些任务的可行性，但癌症分类、来源推断、具体耐药机制识别和治疗选择是不同终点。片段/甲基化分值阳性不直接等于EGFR新耐药突变、旁路激活、组织学转化或药物靶点；两类算法的分值、阈值、灵敏度和特异度不能跨平台互换。[O06_E07,O06_E08]",
+    "WGS覆盖广度与罕见克隆检测深度需分别评估：用于全基因组片段特征或大尺度拷贝数信号的浅层数据，不能自动承担低VAF耐药SNV/融合的检出任务；高深度靶向UMI检测则有预设区域及事件类型边界。肿瘤知情追踪、肿瘤非知情分型、片段和甲基化模型应分别验证其任务。治疗后的正常cfDNA/造血组成、炎症、分期及建库流程可能带来分布变化，研究应使用锁定模型、患者层面独立划分和外部治疗后队列评估校准、特异度及临床效用。这是方法学外推与验证要求，不代表已有该精确联合治疗后人群的临床效用证据。[O06_E01,O06_E03,O06_E05,O06_E07,O06_E08]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "血浆NGS阴性，已知EGFR驱动及其他肿瘤信号也未检出",
+      "meaning": "尚未证实血浆中有足量可评估肿瘤DNA；低脱落、低分子数或治疗时点均可能造成未检出。",
+      "limitations": "不能排除耐药、CNS克隆或组织学转化；应审查输入/覆盖/失败区间，并考虑可取的进展组织及场景合适的区室样本。"
+    },
+    {
+      "marker": "血浆有可信肿瘤信号，但目标耐药事件阴性",
+      "meaning": "在该平台覆盖与变异类别性能允许范围内，为该事件提供有限阴性证据。",
+      "limitations": "主克隆可检出不保证小耐药亚克隆可检出；SNV的LoD不代表融合或拷贝数性能，也不能外推到未覆盖非编码/表观机制。"
+    },
+    {
+      "marker": "cfDNA浓度、最大VAF或估算肿瘤分数",
+      "meaning": "用于评估肿瘤信号及样本可解释性，应保留算法、假设与置信范围。",
+      "limitations": "总cfDNA受非肿瘤组织与白细胞释放影响；拷贝数、LOH、亚克隆和CH可影响VAF，不能把不同算法肿瘤分数或阈值直接互用。"
+    },
+    {
+      "marker": "UMI/双链一致序列与原始深度",
+      "meaning": "分别说明错误抑制策略和读段规模；独立模板数及有效双链数更接近可用分子证据。",
+      "limitations": "UMI不自动等于双链；重复读段不能弥补无模板；理论错误率、实验LoD与真实患者临床灵敏度含义不同。"
+    },
+    {
+      "marker": "CNS进展时血浆阴性、CSF变异或ctDNA动态",
+      "meaning": "可能反映中枢区室克隆，适合在临床指征下补充影像/细胞学/病理。",
+      "limitations": "CSF不是所有CNS病变均可评估；阴性不能排除，阳性也不能代表全部颅外克隆，取样方式和局部治疗可改变动态。"
+    },
+    {
+      "marker": "血浆与白细胞共同检出的变异；典型CH相关基因或TP53等",
+      "meaning": "支持核查造血来源；配对白细胞可减少把CH变异误判为肺癌耐药。",
+      "limitations": "需比较双方LoD、VAF及肿瘤组织；仅基因名、化疗后出现或动态不一致均不能定源。CH/CHIP/血液肿瘤需另行临床区分。"
+    },
+    {
+      "marker": "治疗后ctDNA清除、持续阳性或再次升高",
+      "meaning": "可作为风险与疗效研究的动态标志，并触发临床复核和机制取样。",
+      "limitations": "基线未检出不属于清除；阈值以下不等于治愈；预后关联未证明单凭结果调整同期奥希化疗后治疗能改善结局。"
+    },
+    {
+      "marker": "fragmentomics或cfDNA甲基化算法阳性",
+      "meaning": "可提供突变以外的肿瘤相关信号及来源线索。",
+      "limitations": "不是具体耐药驱动或用药指征；早检病例对照性能不代表已治疗EGFR肺癌性能，需要治疗后独立验证与决策试验。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "机制未明进展时，联合审查液体活检可解释性并获取适宜的进展组织；血浆结果配对白细胞定源，组织结合病理与适用DNA/RNA检测。",
+      "status": "诊断与研究路径；不构成特定药物疗效证据",
+      "setting": "同期奥希替尼加铂/培美曲塞后进展，血浆阴性、肿瘤分数不足或变异来源不明",
+      "limitations": "这是根据检测学与其他治疗队列证据提出的路径；组织可及性、单部位异质性及平台盲区仍存在。必须在确认机制和适用证据后另行评估治疗。",
+      "evidence_ids": [
+        "O06_E02",
+        "O06_E03",
+        "O06_E05"
+      ]
+    },
+    {
+      "strategy": "CNS为主/孤立进展时，结合MRI和临床指征评估CSF分型，并与同期血浆及可用组织比较区室差异。",
+      "status": "场景限定的补充分型；非所有脑转移的常规腰穿方案",
+      "setting": "疑似软脑膜病变等CSF取样有临床意义且适宜的患者",
+      "limitations": "CSF阳性不能代表所有病灶，阴性不能排除CNS肿瘤；所引研究不是精确联合治疗后人群，具体治疗仍需整合影像、病理和药物CNS证据。",
+      "evidence_ids": [
+        "O06_E04"
+      ]
+    },
+    {
+      "strategy": "将持续ctDNA或再升高用于预设时间点复测、影像复核和耐药取样研究；以干预试验验证是否能指导治疗。",
+      "status": "预后/监测研究依据；未确立单凭ctDNA加药、减药或换药",
+      "setting": "有可追踪基线肿瘤信号，并能按统一平台纵向采样者",
+      "limitations": "现有AURA3/FLAURA探索分析未检验ctDNA指导决策，且不是同期奥希替尼加化疗后人群；需控制取样时点、保证存活至检测的偏倚和基线负荷等混杂。",
+      "evidence_ids": [
+        "O06_E06"
+      ]
+    },
+    {
+      "strategy": "在低肿瘤分数或突变阴性的研究样本中，评估UMI突变、片段组学、甲基化及组织多组学的互补性。",
+      "status": "研究性多模态策略；不是经过验证的耐药用药算法",
+      "setting": "锁定模型、预设终点及独立外部验证的前瞻性治疗后队列",
+      "limitations": "检测到肿瘤信号与识别可干预耐药机制仍有距离；需报告假阳性、无法评估率、患者层面数据划分、成本及结果是否改善临床决策，不能套用早检灵敏度。",
+      "evidence_ids": [
+        "O06_E01",
+        "O06_E03",
+        "O06_E07",
+        "O06_E08"
+      ]
+    }
+  ],
+  "research_gaps": [
+    "缺少精确定义同期奥希替尼加铂/培美曲塞后机制未明进展人群、全员按同一取样与检测流程评估的前瞻性数据；不能由本节点文献计算该人群耐药机制或液体活检检出率。",
+    "缺少在相同患者/时点/输入条件下，对不同平台的SNV、indel、融合和拷贝数事件逐类别比较；需要共同参考物、独立分子计数和按实际输入分层的性能报告。",
+    "需要预设血浆未检出的可解释性类别，报告肿瘤信号不足、技术失败、充分可评估但未发现已知机制各自分母；不能把不可评估者并入生物学未知机制。",
+    "需要同期进展组织—血浆—配对白细胞与适用CNS/CSF的纵向配对，区分病灶异质性、低脱落、造血来源与真正新生耐药克隆。",
+    "需要验证配对白细胞不同深度/LoD对CH定源的影响；化疗暴露、血象、克隆演化及潜在血液疾病应分开记录。",
+    "需要在该联合治疗后人群验证ctDNA清除/再升高的独立预后价值，并通过随机或其他可靠干预设计检验据此提前改变治疗是否改善临床结局。",
+    "片段组学和甲基化应在治疗后低肿瘤分数、CNS为主及非肿瘤炎症/造血背景中外部验证；必须区分癌症检测、机制分型、疗效预测与临床效用四种终点。",
+    "2025版JCR指定三学科前80的授权榜单尚未提供；本节点期刊排名/影响因子筛选待核实，不能宣称已符合该筛选，也不填造IF。"
+  ],
+  "evidence": [
+    {
+      "title": "Detection of ultra-rare mutations by next-generation sequencing.",
+      "authors": "Schmitt MW, Kennedy SR, Salk JJ, Fox EJ, Hiatt JB, Loeb LA.",
+      "year": 2012,
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "doi": "10.1073/pnas.1208715109",
+      "pmid": "22853953",
+      "url": "https://doi.org/10.1073/pnas.1208715109",
+      "id": "O06_E01",
+      "publication_date": "2012-08-01",
+      "publication_date_basis": "PubMed ArticleDate/Electronic与Europe PMC一致；Crossref在线日期仅精确到2012-08。",
+      "verification": "metadata_abstract_checked",
+      "scope": "technical_foundation",
+      "design": "method_development",
+      "main_finding_zh": "提出Duplex Sequencing，对同一DNA双链的两条互补链独立标记并建立一致序列，以两链共同支持区分真实变异与PCR/测序错误；摘要报告理论背景错误率低于每十亿核苷酸1个，并以人细胞线粒体DNA演示。",
+      "limitation_zh": "这是方法开发和线粒体DNA应用，非肺癌ctDNA临床验证。每碱基理论背景错误率不是患者样本LoD、每个位点可用模板数或临床灵敏度，不能据此宣称检出十亿分之一肿瘤DNA。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=22853953&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1073%2Fpnas.1208715109"
+      }
+    },
+    {
+      "title": "Association Between Plasma Genotyping and Outcomes of Treatment With Osimertinib (AZD9291) in Advanced Non-Small-Cell Lung Cancer.",
+      "authors": "Oxnard GR, Thress KS, Alden RS, Lawrance R, Paweletz CP, Cantarini M, Yang JC, Barrett JC, Jänne PA.",
+      "year": 2016,
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.2016.66.7162",
+      "pmid": "27354477",
+      "url": "https://doi.org/10.1200/jco.2016.66.7162",
+      "id": "O06_E02",
+      "publication_date": "2016-06-27",
+      "publication_date_basis": "PubMed ArticleDate/Electronic与Europe PMC均为2016-06-27；Crossref仅给正式刊期2016-10-01。",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki_resistance",
+      "design": "retrospective_biomarker_analysis",
+      "main_finding_zh": "在早期奥希替尼试验的既往EGFR-TKI耐药人群中，以BEAMing进行血浆分型、组织分型为参照，T790M血浆临床检测灵敏度为70%；血浆T790M阴性者中组织仍可识别阳性、且奥希替尼结局较好的一组，支持阴性血浆后补组织检测。",
+      "limitation_zh": "70%与相应30%假阴性率属于该人群、标志物、参照和BEAMing方案，既非分析LoD，也非奥希替尼同期铂/培美曲塞后耐药机制的发生率，不能迁移到现代NGS、ddPCR、其他变异类别或CSF。单部位组织也有异质性局限。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27354477&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1200%2Fjco.2016.66.7162"
+      }
+    },
+    {
+      "title": "Integrated digital error suppression for improved detection of circulating tumor DNA.",
+      "authors": "Newman AM, Lovejoy AF, Klass DM, Kurtz DM, Chabon JJ, Scherer F, Stehr H, Liu CL, Bratman SV, Say C, Zhou L, Carter JN, West RB, Sledge GW, Shrager JB, Loo BW, Neal JW, Wakelee HA, Diehn M, Alizadeh AA.",
+      "year": 2016,
+      "journal": "Nature biotechnology",
+      "doi": "10.1038/nbt.3520",
+      "pmid": "27018799",
+      "url": "https://doi.org/10.1038/nbt.3520",
+      "id": "O06_E03",
+      "publication_date": "2016-03-28",
+      "publication_date_basis": "Europe PMC、PubMed Electronic和Crossref published-online一致。",
+      "verification": "metadata_abstract_checked",
+      "scope": "nsclc_assay_validation",
+      "design": "method_development_and_validation",
+      "main_finding_zh": "iDES把分子条形码与背景错误的计算抑制结合，较原CAPP-Seq的灵敏度改善约15倍；在研究NSCLC样本中EGFR激酶区变异检出报告了变异层面92%灵敏度及患者层面90%灵敏度，并在研究设定中监测到每10万cfDNA分子4个肿瘤分子的水平。",
+      "limitation_zh": "4/10万即0.004%是该研究条件下的监测能力，不是所有标本、基因、融合、拷贝数事件或商业平台的统一LoD。变异层面和患者层面分母不同；即使错误减少，有限输入和低脱落仍可造成假阴性。该队列不是同期奥希替尼加化疗后机制未明队列。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27018799&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fnbt.3520"
+      }
+    },
+    {
+      "title": "Cerebrospinal fluid-derived circulating tumour DNA better represents the genomic alterations of brain tumours than plasma.",
+      "authors": "De Mattos-Arruda L, Mayor R, Ng CKY, Weigelt B, Martínez-Ricarte F, Torrejon D, Oliveira M, Arias A, Raventos C, Tang J, Guerini-Rocco E, Martínez-Sáez E, Lois S, Marín O, de la Cruz X, Piscuoglio S, Towers R, Vivancos A, Peg V, Ramon y Cajal S, Carles J, Rodon J, González-Cao M, Tabernero J, Felip E, Sahuquillo J, Berger MF, Cortes J, Reis-Filho JS, Seoane J.",
+      "year": 2015,
+      "journal": "Nature communications",
+      "doi": "10.1038/ncomms9839",
+      "pmid": "26554728",
+      "url": "https://doi.org/10.1038/ncomms9839",
+      "id": "O06_E04",
+      "publication_date": "2015-11-10",
+      "publication_date_basis": "Europe PMC、PubMed Electronic和Crossref published-online一致。",
+      "verification": "metadata_abstract_checked",
+      "scope": "cns_liquid_biopsy_other",
+      "design": "translational_paired_compartment_study",
+      "main_finding_zh": "对中枢神经系统肿瘤开展配对区室分析，发现CSF中的肿瘤DNA较血浆更丰富、可更完整反映脑肿瘤基因组改变；纵向CSF ctDNA随脑肿瘤负荷变化，并可补充软脑膜癌病诊断。",
+      "limitation_zh": "研究含不同脑肿瘤背景，不是奥希替尼同期化疗后的EGFR突变NSCLC专门队列；不能推断每个脑转移病例均CSF阳性。取样部位、肿瘤与CSF交通及低负荷可影响结果；CSF不能全面替代颅外组织和血浆。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=26554728&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fncomms9839"
+      }
+    },
+    {
+      "title": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants.",
+      "authors": "Razavi P, Li BT, Brown DN, Jung B, Hubbell E, Shen R, Abida W, Juluru K, De Bruijn I, Hou C, Venn O, Lim R, Anand A, Maddala T, Gnerre S, Vijaya Satya R, Liu Q, Shen L, Eattock N, Yue J, Blocker AW, Lee M, Sehnert A, Xu H, Hall MP, Santiago-Zayas A, Novotny WF, Isbell JM, Rusch VW, Plitas G, Heerdt AS, Ladanyi M, Hyman DM, Jones DR, Morrow M, Riely GJ, Scher HI, Rudin CM, Robson ME, Diaz LA, Solit DB, Aravanis AM, Reis-Filho JS.",
+      "year": 2019,
+      "journal": "Nature medicine",
+      "doi": "10.1038/s41591-019-0652-7",
+      "pmid": "31768066",
+      "url": "https://doi.org/10.1038/s41591-019-0652-7",
+      "id": "O06_E05",
+      "publication_date": "2019-11-25",
+      "publication_date_basis": "Europe PMC、PubMed Electronic和Crossref published-online一致。",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_cfDNA_source_validation",
+      "design": "prospective_paired_plasma_white_cell_tissue_study",
+      "main_finding_zh": "在124例转移癌患者和47例无癌对照中，结合血浆cfDNA、配对白细胞和同期肿瘤组织，以508基因约2 Mb、原始深度超过60000倍的研究测序分析来源；患者cfDNA变异中53.2%、对照中81.6%具有与克隆性造血一致的特征，强调配对白细胞对归因的重要性。",
+      "limitation_zh": "53.2%和81.6%的分母是该研究检出的cfDNA变异，并非患者比例，更非同期奥希替尼加化疗后耐药比例。克隆性造血特征不自动等于符合CHIP诊断，也不排除血液肿瘤；原始深度不是独立分子深度，白细胞阴性需考虑其自身LoD。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31768066&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41591-019-0652-7"
+      }
+    },
+    {
+      "title": "Early Clearance of Plasma Epidermal Growth Factor Receptor Mutations as a Predictor of Outcome on Osimertinib in Advanced Non-Small Cell Lung Cancer; Exploratory Analysis from AURA3 and FLAURA.",
+      "authors": "Gray JE, Ahn MJ, Oxnard GR, Shepherd FA, Imamura F, Cheng Y, Okamoto I, Cho BC, Lin MC, Wu YL, Majem M, Gautschi O, Boyer M, Bulusu KC, Markovets A, Barrett JC, Hodge R, McKeown A, Hartmaier RJ, Chmielecki J, Papadimitrakopoulou VA, Ramalingam SS.",
+      "year": 2023,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-22-3146",
+      "pmid": "37379430",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-22-3146",
+      "id": "O06_E06",
+      "publication_date": "2023-06-28",
+      "publication_date_basis": "Crossref published-online=2023-06-28，PubMed入库亦为2023-06-28；Europe PMC firstPublicationDate=2023-09-01为正式刊期，本节点采用明确在线日期。",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_osimertinib_and_separate_chemotherapy_arms",
+      "design": "retrospective_exploratory_analysis_of_phase3_trials",
+      "main_finding_zh": "AURA3与FLAURA回顾性探索分析以ddPCR检测基线及第3/6周血浆EGFR ex19del/L858R。基线未检出及治疗后清除与更长PFS相关；FLAURA第3周清除与未清除者的奥希替尼组中位PFS分别为19.8与11.3个月。AURA3包括独立的铂/培美曲塞对照臂，化疗臂也观察到清除与较好结局关联。",
+      "limitation_zh": "各治疗臂未按ctDNA结果随机分配干预，故不能证明根据清除/持续阳性加药、停药或换药能改善生存。AURA3为奥希替尼与化疗分开比较，FLAURA为奥希替尼与其他EGFR-TKI比较，均非同期奥希替尼加铂/培美曲塞；清除只是该时间点在该ddPCR阈值下未检出。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37379430&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1158%2F1078-0432.ccr-22-3146"
+      }
+    },
+    {
+      "title": "Genome-wide cell-free DNA fragmentation in patients with cancer.",
+      "authors": "Cristiano S, Leal A, Phallen J, Fiksel J, Adleff V, Bruhm DC, Jensen SØ, Medina JE, Hruban C, White JR, Palsgrove DN, Niknafs N, Anagnostou V, Forde P, Naidoo J, Marrone K, Brahmer J, Woodward BD, Husain H, van Rooijen KL, Ørntoft MW, Madsen AH, van de Velde CJH, Verheij M, Cats A, Punt CJA, Vink GR, van Grieken NCT, Koopman M, Fijneman RJA, Johansen JS, Nielsen HJ, Meijer GA, Andersen CL, Scharpf RB, Velculescu VE.",
+      "year": 2019,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-019-1272-6",
+      "pmid": "31142840",
+      "url": "https://doi.org/10.1038/s41586-019-1272-6",
+      "id": "O06_E07",
+      "publication_date": "2019-05-29",
+      "publication_date_basis": "Europe PMC、PubMed Electronic和Crossref published-online一致。",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_fragmentomics_proof_of_concept",
+      "design": "case_control_method_development",
+      "main_finding_zh": "在236例七类癌症患者与245例健康者中，以全基因组cfDNA片段特征建立机器学习模型；各癌种在98%特异度下检出灵敏度为57%至超过99%，整体AUC为0.94，并展示与突变分析互补的可能。",
+      "limitation_zh": "癌症/健康对照的分类表现不是耐药克隆检出LoD，也不是治疗后机制未明EGFR肺癌的临床灵敏度。模型识别癌症信号和来源不直接识别具体耐药驱动；需要治疗后、低肿瘤分数和外部队列验证，不能把筛查准确性迁移为可指导换药的临床效用。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31142840&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41586-019-1272-6"
+      }
+    },
+    {
+      "title": "Clinical validation of a targeted methylation-based multi-cancer early detection test using an independent validation set.",
+      "authors": "Klein EA, Richards D, Cohn A, Tummala M, Lapham R, Cosgrove D, Chung G, Clement J, Gao J, Hunkapiller N, Jamshidi A, Kurtzman KN, Seiden MV, Swanton C, Liu MC.",
+      "year": 2021,
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "doi": "10.1016/j.annonc.2021.05.806",
+      "pmid": "34176681",
+      "url": "https://doi.org/10.1016/j.annonc.2021.05.806",
+      "id": "O06_E08",
+      "publication_date": "2021-06-24",
+      "publication_date_basis": "PubMed ArticleDate/Electronic与Europe PMC均为2021-06-24；Crossref正式刊期仅为2021-09。",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_methylation_early_detection",
+      "design": "prespecified_independent_validation_case_control_study",
+      "main_finding_zh": "CCGA预设独立验证集4077人（癌症2823、非癌1254）检验靶向cfDNA甲基化与机器学习多癌种检测；总体癌症信号灵敏度51.5%、特异度99.5%，灵敏度随分期升高，阳性样本的癌症信号来源预测准确率88.7%。",
+      "limitation_zh": "这是多癌种早检验证，不是治疗后肺癌耐药分型或甲基化指导治疗试验。总体灵敏度、特异度及来源准确率的分母和任务不同，不能转用为同期奥希替尼化疗后检出率。甲基化阳性不能单独证明具体突变、组织学转化或可用药靶点。",
+      "full_text_reviewed": false,
+      "journal_rank_status": "pending_2025_JCR_category_rank_verification",
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A22853953+OR+EXT_ID%3A27354477+OR+EXT_ID%3A27018799+OR+EXT_ID%3A26554728+OR+EXT_ID%3A31768066+OR+EXT_ID%3A37379430+OR+EXT_ID%3A31142840+OR+EXT_ID%3A34176681%29&format=json&resultType=core&pageSize=20&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:51+00:00",
+        "pubmed_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=34176681&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.annonc.2021.05.806"
+      }
+    }
+  ],
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04",
+    "date_basis": "优先明确首次在线公开日期；PubMed ArticleDate/Electronic或Crossref published-online，Europe PMC辅助核对；Gray 2023显式纠正Europe PMC正式刊期。"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T10:12:51+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "主智能体已确认当前无可调用Firecrawl MCP、CLI或密钥；本节点未调用Firecrawl，也未将其他检索称作Firecrawl。",
+    "actual_verification_provider": [
+      "Europe PMC",
+      "PubMed E-utilities",
+      "Crossref"
+    ],
+    "verification": "8篇原始论文的标题、作者、年、期刊、DOI、PMID及原摘要已真实核查；PubMed XML用于核对完整摘要和电子日期，Crossref用于交叉核对日期。未完整审阅全文，定向证据汇总并非系统综述。",
+    "full_text_reviewed": false,
+    "original_research_count": 8,
+    "direct_post_concurrent_osimertinib_platinum_pemetrexed_evidence_count": 0,
+    "journal_filter": {
+      "jcr_edition": 2025,
+      "requested_category_count": 3,
+      "requested_top_n_per_category": 80,
+      "status": "pending_authoritative_ranking_input",
+      "impact_factors_invented": false,
+      "limitation": "未提供指定三学科的2025版JCR权威榜单，暂不能核实入选资格；不以经验声誉替代排名。"
+    },
+    "search_queries": [
+      "FIRST_PDATE:[2011-11-04 TO 2026-11-04] AND TITLE_ABS:(osimertinib AND chemotherapy AND (\"circulating tumor DNA\" OR ctDNA) AND (clearance OR dynamics))",
+      "TITLE_ABS:(FLAURA2 AND (ctDNA OR \"circulating tumor DNA\" OR \"plasma\")) AND FIRST_PDATE:[2011-11-04 TO 2026-11-04]",
+      "TITLE_ABS:(osimertinib AND chemotherapy AND (\"ctDNA clearance\" OR \"molecular clearance\")) AND FIRST_PDATE:[2011-11-04 TO 2026-11-04]",
+      "TITLE:\"Integrated digital error suppression for improved detection of circulating tumor DNA\"",
+      "TITLE:\"Association Between Plasma Genotyping and Outcomes of Treatment With Osimertinib\"",
+      "TITLE_ABS:(\"cerebrospinal fluid-derived circulating tumour DNA\" AND \"plasma\")",
+      "TITLE:\"High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants\"",
+      "TITLE:\"Detection of ultra-rare mutations by next-generation sequencing\"",
+      "TITLE:\"Genome-wide cell-free DNA fragmentation in patients with cancer\"",
+      "TITLE:\"Clinical validation of a targeted methylation-based multi-cancer early detection test using an independent validation set\"",
+      "SRC:MED AND (EXT_ID:22853953 OR EXT_ID:27354477 OR EXT_ID:27018799 OR EXT_ID:26554728 OR EXT_ID:31768066 OR EXT_ID:37379430 OR EXT_ID:31142840 OR EXT_ID:34176681)"
+    ],
+    "quantitative_interpretation_rule": "保留原研究人群、平台、分析任务、分母与比较组；不将LoD、理论错误率、变异层面比例、早检性能或ctDNA动态关联改写为精确联合治疗后耐药比例。",
+    "date_exception": {
+      "pmid": "37379430",
+      "europe_pmc_firstPublicationDate": "2023-09-01",
+      "selected_first_online_date": "2023-06-28",
+      "basis": "Crossref published-online与PubMed公开收录日期交叉支持；非以接受稿日期替代。"
+    }
+  }
+}

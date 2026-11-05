@@ -1,0 +1,419 @@
+{
+  "node_id": "node02",
+  "title": "WGS与隐藏耐药：结构变异、扩增架构、非编码事件及克隆演化的解释边界",
+  "genes": ["EGFR", "MET", "ERBB2", "KRAS", "BRAF", "TP53", "RB1", "MYC", "TERT", "NFKBIZ", "TOB1", "BRD4"],
+  "mechanism_zh": [
+    "本节点的八篇原始论文没有直接验证EGFR突变肺癌在奥希替尼与铂类/培美曲塞同期联合后进展的最佳WGS检查或按WGS选药策略。PCAWG和Hartwig是跨癌种WGS资源，TRACERx是以可手术NSCLC为主的多区域演化队列，C797S论文主要是先有T790M的耐药细胞模型；这些证据须与目标治疗序列分开。[O02_E01,O02_E02,O02_E05,O02_E06,O02_E08]",
+    "WGS能够同时研究编码/非编码SNV和小indel、拷贝数、杂合性丢失以及基因组断点，提供捕获范围外的融合断点、基因破坏、复杂重排和扩增子结构线索。PCAWG的2,658个配对癌基因组说明这种研究价值，但约5%的病例仍未找到驱动事件；全基因组范围不保证每个样本都能找到耐药原因。[O02_E01,O02_E02,O02_E03]",
+    "覆盖范围与低丰度检出能力是不同维度。肿瘤纯度、局部有效深度、DNA质量、比对难区、亚克隆比例和分析算法共同决定检出限，不能由“WGS”名称推断比深度panel更敏感。Hartwig2019明确承认低纯度和检测设置可漏掉亚克隆，且局限性取芯取样会降低表观异质性。其肿瘤中位106×、正常38×是该研究条件，不是其他平台保证值。[O02_E02]",
+    "组织WGS也不是把所有计算分析默认做完：需要明确是否运行结构变异、等位特异拷贝数、纯度/倍体估计、扩增子重建和非编码解释；仅分析虚拟基因panel仍可忽略已测序区域。DNA断点提示的融合应核查读段、阅读框和RNA表达/剪接；复杂重排的存在不证明生成可靶向的功能蛋白。[O02_E01,O02_E02,O02_E08]",
+    "MET总拷贝数应放在纯度、平均倍体、染色体7背景、局灶性及亚克隆结构中解释。全基因组加倍后约4拷贝可接近新的基线；染色体7多体也能抬高MET绝对拷贝数。Hartwig使用结合B等位频率、测序深度与SV的PURPLE估计纯度/倍体；MET2025研究用CN相对样本倍体的AmpRatio和扩增子大小细化分类。该研究的入组定义CN≥倍体+4或CN/倍体≥3不能当成所有WGS/panel、FISH和药物试验通用阈值。[O02_E02,O02_E07]",
+    "低纯度会压低未经校正的拷贝数幅度；纯度/倍体模型不确定或扩增只在少数细胞时，平均CN还可能掩盖局部高扩增。应保留模型质量、局部拷贝数与扩增范围，并按临床问题用组织FISH等方法复核。MET2025配对组织MET扩增样本中血浆仅8/30检出，且检出与肿瘤分数、AmpRatio相关；这说明血浆阴性不能排除组织扩增，不是某一WGS产品与另一panel的直接敏感度比较。[O02_E02,O02_E07]",
+    "ecDNA是一类扩增架构，不是高拷贝数的同义词。Kim等用3,212例癌症WGS计算重建扩增子，并以细胞系FISH/中期图像作正交验证；环状扩增与更高转录和较差生存相关。算法的环状断点图是推断，重复区及线性BFB结构会影响分类。个体样本若需确认染色体外定位，可研究中期FISH等独立证据；不能将每个EGFR/MET扩增都称为ecDNA，也不能从ecDNA阳性推出已确立的专属治疗。[O02_E04]",
+    "WGD、染色体不稳定和亚克隆选择可帮助解释同一进展样本的多个拷贝数事件。TRACERx421的1,644个肿瘤区域使用的是WES，中位深度413×，并非WGS疗效试验；19%的肿瘤有亚克隆WGD，亚克隆而非主干WGD与较短无病生存相关。多区域设计支持“单个活检会漏掉空间克隆”的解释，但不能将早期术后复发关联外推成同期联合治疗后的预测标志物。[O02_E05]",
+    "C797S的意义依赖T790M及其他EGFR等位背景。2015年细胞研究显示，T790M与C797S在不同等位基因时，对当时一代加三代EGFR-TKI组合有模型敏感性；同一等位基因时该组合不能抑制；T790M野生型背景下又不同。这是特定模型结果，不是所有现代EGFR药物的结论。两相邻位点的定相可由跨位点的同一分子测序支持，深度靶向检测也可完成，并非WGS独有功能。[O02_E06]",
+    "在bulk样本中，两个突变分别出现在不同read或VAF相近都不足以证明它们在同一细胞内处于trans；还可能是不同克隆或扩增拷贝的混合。应报告支持cis/trans的原始分子证据、局部CN和不确定性；需要连接远处的激活突变或解析多克隆时，可补充靶向长读长/单细胞等研究。目标序列常为一线奥希替尼联合化疗，不能预设存在先前一代药后获得的T790M，也不能见C797S即自动映射为一代加三代治疗。[O02_E02,O02_E06]",
+    "非编码或深内含子变化可能影响启动子、调控元件或剪接，但“测到”不等于“致耐药”。PCAWG非编码研究识别TP53的5′区域、NFKBIZ/TOB1的3′UTR及部分结构事件，同时指出此类驱动较编码驱动少且若干既往候选受到质疑。它们是跨癌种发现，不能改写成EGFR联合治疗后的既定耐药位点。新VUS需要与匹配正常、重复性、RNA/剪接、表达及功能干预等证据共同解释；非编码位置、低频或数据库少见本身不构成药敏。[O02_E03]",
+    "2026年单中心常规诊断研究已将配对WGS用于888例实体瘤：793例成功出报告，中位6个工作日从测序机构收样计至报告。该研究说明实际工作流可行性，并揭示低纯度/DNA量等失败原因；50/523基因panel比较来自WGS数据内的覆盖模拟，不能据此声称真实检测头对头敏感度更高。生存分析为观察性治疗选择关联；本文及2026-04-01图1更正均不证明WGS本身延长目标序列患者生存。[O02_E08]",
+    "WGS阴性后的解释应区分未覆盖/未报告的变异、低丰度或难比对事件、未取到的克隆，以及缺乏明确DNA驱动的组织学或细胞状态改变。WGS不能直接替代形态学、RNA、蛋白磷酸化或功能药敏；即使找到SV、ecDNA、WGD或非编码候选，也应区分检测真实性、机制因果性和治疗可操作性。[O02_E01,O02_E02,O02_E03,O02_E04,O02_E05]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "WGS报告中的SNV/indel、SV和CNV",
+      "meaning": "可将多个变异类别放在统一的基因组背景下研究，并识别原检测捕获范围之外的事件。",
+      "limitations": "须检查实际分析范围、有效覆盖、报告阈值与组织纯度；覆盖广度不等于低VAF敏感度，常规报告也未必包含全部非编码/SV候选。"
+    },
+    {
+      "marker": "MET绝对CN、CN/样本倍体、局灶扩增范围及染色体7背景",
+      "meaning": "联合解释可区分局灶相对扩增、广泛增益、多体及WGD背景，提出MET旁路假说。",
+      "limitations": "平台CN、MET/CEP7比值及IHC不是可互换指标；需纯度/倍体模型与局部亚克隆信息。2025研究的AmpRatio阈值为其定义，尚非通用伴随诊断。"
+    },
+    {
+      "marker": "血浆MET扩增阴性或低拷贝数",
+      "meaning": "描述此次血样与该分析条件下未检出或低幅度的拷贝数信号。",
+      "limitations": "受ctDNA分数、扩增幅度、取样部位和算法影响，不能排除组织局灶扩增；组织/血浆差异不能直接归因为平台质量优劣。"
+    },
+    {
+      "marker": "环状扩增子预测/疑似ecDNA",
+      "meaning": "提示致癌基因扩增的结构及异质性来源可能不同于线性染色体扩增。",
+      "limitations": "环状重建属于计算推断，高CN不自动等于ecDNA；如定位结论影响研究需正交验证。总体不良预后关联不是单个药物预测标志物。"
+    },
+    {
+      "marker": "全基因组加倍、等位特异CN及亚克隆WGD",
+      "meaning": "为拷贝数阈值、突变多重性和肿瘤演化时间顺序提供背景。",
+      "limitations": "需要模型质量与足够数据支持；TRACERx复发关联来自早期多区域WES队列，不能据此选择同期联合治疗后的WGD靶向药。"
+    },
+    {
+      "marker": "EGFR C797S/T790M cis、trans或未定相",
+      "meaning": "可区分原始三代EGFR抑制剂细胞模型中不同的耐药等位背景。",
+      "limitations": "应有跨位点分子支持；bulk中不同克隆可模拟trans。先确认T790M是否存在，报告远端激活突变的相位局限；不能单凭两个VAF或C797S阳性开出一代加三代方案。"
+    },
+    {
+      "marker": "DNA层面融合断点、基因破坏或复杂重排",
+      "meaning": "可提出融合旁路、抑癌基因失活和扩增子重塑等候选机制。",
+      "limitations": "须检查断点支持、方向、阅读框及RNA表达/剪接；可能是无功能乘客或同一事件的多个断点，不能按断点数量推断多个药物靶点。"
+    },
+    {
+      "marker": "启动子、增强子、UTR或深内含子VUS",
+      "meaning": "提供调控、剪接或表达改变的研究线索。",
+      "limitations": "非编码位置不证明调控作用；PCAWG候选不能直接套用为EGFR耐药。需要独立分子/功能支持，且致病性确认仍不等于已有有效药物。"
+    },
+    {
+      "marker": "同一进展样本中多个低VAF事件或基因组CN增益",
+      "meaning": "可能涉及多个亚克隆、局部CN变化或取样混合。",
+      "limitations": "VAF不能直接等于癌细胞比例；正常细胞混入、局部倍体、突变多重性及CHIP/胚系背景会干扰。匹配正常与多区域/纵向数据有助于澄清，但仍受采样限制。"
+    },
+    {
+      "marker": "WGS未发现可解释/可操作耐药事件",
+      "meaning": "说明该标本在本流程与当前知识解释范围内没有得到充分机制解释。",
+      "limitations": "不能证明没有耐药、没有可靶点或只剩遗传以外机制；应复核组织学、样本充分性及RNA/蛋白/功能层面的独立问题。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "确认MET局灶相对扩增及克隆背景后，按既有临床证据或试验研究EGFR/MET匹配策略",
+      "status": "investigational_in_target_sequence",
+      "setting": "MET2025为NSCLC混合人群的NGS/真实世界研究；不能视为同期奥希替尼加化疗后的专属队列。",
+      "limitations": "WGS/panel CN须结合倍体、纯度、局灶性及必要正交确认。39例MET抑制剂患者中AmpRatio≥3的rwPFS关联HR为0.53，95%CI 0.21–1.3，未形成确证预测阈值；不能据此自动开组合药。",
+      "evidence_ids": ["O02_E02", "O02_E07"]
+    },
+    {
+      "strategy": "对C797S按T790M存在与否、cis/trans及共存机制选择可检验的EGFR治疗假说",
+      "status": "investigational_in_target_sequence",
+      "setting": "主要依据2015年先有T790M背景的三代EGFR抑制剂耐药细胞模型。",
+      "limitations": "不同等位背景在模型中的药敏不能替代患者试验；bulk中的trans解释可能受克隆混合影响。C797S单独阳性或WGS可定相均不构成一代加三代方案的普遍临床指征。",
+      "evidence_ids": ["O02_E06"]
+    },
+    {
+      "strategy": "对WGS新发现的可疑融合或抑癌基因事件，完成RNA/断点/等位状态验证后再进入相应证据分层与分子肿瘤讨论",
+      "status": "validation_before_actionability",
+      "setting": "泛癌WGS及常规诊断平台的变异发现能力；目标序列的治疗获益仍须独立证据。",
+      "limitations": "DNA事件可以不表达或不具功能；可检出、可解释、可匹配试验与可改善结局是不同终点。2026模拟panel覆盖比较和观察性治疗采用率不能替代前瞻疗效。",
+      "evidence_ids": ["O02_E01", "O02_E02", "O02_E08"]
+    },
+    {
+      "strategy": "不支持仅凭非编码VUS、疑似ecDNA、WGD或广泛CN增益映射未经证实的治疗",
+      "status": "not_supported",
+      "setting": "研究性机制解释及知识库自动推荐规则。",
+      "limitations": "这些发现可提示机制、演化或预后，但尚未在目标同期治疗序列建立独立药敏阈值；发现更多异常也不能证明覆盖更多通路的联合更有效或可耐受。",
+      "evidence_ids": ["O02_E03", "O02_E04", "O02_E05"]
+    }
+  ],
+  "research_gaps": [
+    "缺少针对奥希替尼与铂类/培美曲塞同期联合后机制未明病例的前瞻配对WGS/深度DNA panel/RNA比较；应分别报告技术成功率、增量机制发现、可操作性、治疗采用率与患者结局。",
+    "需要治疗前、治疗中及多部位进展的配对肿瘤/正常样本，匹配RNA及组织学，以区分预存克隆、同期化疗选择、EGFR抑制选择和无明显DNA驱动的细胞状态。",
+    "WGS与panel比较须控制或报告纯度、有效覆盖、样本损伤、变异类别及各类检出限，不能将虚拟panel覆盖模拟变成真实头对头分析敏感度。",
+    "需建立可复现的MET局灶性、倍体校正、亚克隆拷贝数和ecDNA定量流程；各平台与试验的CN/FISH/蛋白阈值不能无验证互换。",
+    "bulk定相需要与克隆分配区分；远距离EGFR激活/耐药突变、多个扩增拷贝及不同克隆共存时，短读长相位可能不足。",
+    "非编码和复杂重排候选需要患者相关RNA/表达及可重复功能验证；发现队列中的统计驱动不能直接作为个体耐药药敏。",
+    "ecDNA与WGD目前主要提供结构/演化与预后信息；在目标治疗序列中是否预测特定干预获益尚待验证。",
+    "2026 WGS平台数据来自有成熟取材、分析与肿瘤讨论流程的单中心；成功率与收样后6工作日周转不能自动外推为其他机构、血浆WGS或当前可预约服务能力。",
+    "2025版JCR三学科前80原表未提供，所有期刊的精确排名与入选资格待核；基础研究的科学相关性不等于满足该排名筛选。"
+  ],
+  "evidence": [
+    {
+      "id": "O02_E01",
+      "title": "Pan-cancer analysis of whole genomes.",
+      "authors": "ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium.",
+      "year": 2020,
+      "journal": "Nature",
+      "issn": ["0028-0836", "1476-4687"],
+      "doi": "10.1038/s41586-020-1969-6",
+      "pmid": "32025007",
+      "publication_date": "2020-02-05",
+      "url": "https://doi.org/10.1038/s41586-020-1969-6",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_WGS_foundation",
+      "design": "WGS_observational_cohort",
+      "main_finding_zh": "PCAWG整合38个肿瘤类型的2,658份肿瘤/正常配对全基因组，联合研究编码与非编码驱动、SV、染色体碎裂和演化；约5%病例仍未找到驱动。",
+      "limitation_zh": "基础跨癌种资源，不是EGFR同期奥希替尼加化疗后耐药队列，也不提供WGS相对深度panel的低VAF检出优势或按WGS选药的随机获益。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32025007+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32025007&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41586-020-1969-6",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E02",
+      "title": "Pan-cancer whole-genome analyses of metastatic solid tumours.",
+      "authors": "Priestley P, Baber J, Lolkema MP, et al.",
+      "year": 2019,
+      "journal": "Nature",
+      "issn": ["0028-0836", "1476-4687"],
+      "doi": "10.1038/s41586-019-1689-y",
+      "pmid": "31645765",
+      "publication_date": "2019-10-23",
+      "url": "https://doi.org/10.1038/s41586-019-1689-y",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_metastatic_WGS",
+      "design": "WGS_observational_cohort",
+      "main_finding_zh": "Hartwig分析2,520份合格转移瘤配对样本（每患者最高纯度样本用于下游分析后为2,399例），肿瘤/正常中位106×/38×，56%有WGD；PURPLE结合B等位频率、深度及SV估计纯度/倍体。62%有潜在获批或试验匹配改变，不能读成62%患者获益。",
+      "limitation_zh": "泛癌、既往治疗异质；潜在可操作性不是实际治疗疗效。单个局部取芯与检测限均影响亚克隆检出，不能据其96%驱动为克隆性认定整个人体肿瘤均质。",
+      "full_text_reviewed": false,
+      "selected_full_text_sections_reviewed": ["Methods: Purity, ploidy and copy number calling", "Methods: Sample selection for downstream analyses", "Methods: Clonality and biallelic status of point mutations", "Methods: Significantly mutated driver genes", "Results: Clonality of variants"],
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC metadata/abstract and selected methods/results; PubMed and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31645765+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31645765&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41586-019-1689-y",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6872491/fullTextXML",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E03",
+      "title": "Analyses of non-coding somatic drivers in 2,658 cancer whole genomes.",
+      "authors": "Rheinbay E, Nielsen MM, Abascal F, et al.; PCAWG Consortium.",
+      "year": 2020,
+      "journal": "Nature",
+      "issn": ["0028-0836", "1476-4687"],
+      "doi": "10.1038/s41586-020-1965-x",
+      "pmid": "32025015",
+      "publication_date": "2020-02-05",
+      "url": "https://doi.org/10.1038/s41586-020-1965-x",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_noncoding_foundation",
+      "design": "WGS_driver_discovery",
+      "main_finding_zh": "对2,658个PCAWG基因组的非编码点变异与SV作驱动发现，提出TP53的5′区域、NFKBIZ/TOB1的3′UTR及部分结构候选，确认部分既往驱动并质疑另一些；非编码驱动总体较编码区域少。",
+      "limitation_zh": "统计驱动发现与候选效应不是该治疗序列的机制因果或临床药敏；未证明上述非编码例子导致EGFR联合治疗后耐药，也不能将任意调控区VUS升级为可治疗靶点。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32025015+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32025015&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41586-020-1965-x",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E04",
+      "title": "Extrachromosomal DNA is associated with oncogene amplification and poor outcome across multiple cancers.",
+      "authors": "Kim H, Nguyen NP, Turner K, et al.",
+      "year": 2020,
+      "journal": "Nature genetics",
+      "issn": ["1061-4036", "1546-1718"],
+      "doi": "10.1038/s41588-020-0678-2",
+      "pmid": "32807987",
+      "publication_date": "2020-08-17",
+      "url": "https://doi.org/10.1038/s41588-020-0678-2",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_ecDNA_foundation",
+      "design": "WGS_observational_and_cell_line_validation",
+      "main_finding_zh": "对3,212例癌症WGS计算重建扩增子；ecDNA富集癌基因，较匹配CN的线性DNA有更高转录，并与较差生存相关。方法以断点图分类环状/BFB/复杂/线性扩增，44个细胞系中并行FISH验证。",
+      "limitation_zh": "环状图为结构推断，存在重复区屏蔽及BFB分类限制；临床个案未必都有中期定位验证。并非EGFR同期联合治疗后队列，没有确立ecDNA专属药物选择。",
+      "full_text_reviewed": false,
+      "selected_full_text_sections_reviewed": ["Methods: AmpliconArchitect", "Methods: Breakage-fusion-bridge", "Methods: Amplicon and sample classification", "Methods: Cell line validation"],
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC metadata/abstract; PubMed/Crossref metadata; NCBI PMC selected methods",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32807987+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32807987&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41588-020-0678-2",
+        "selected_sections_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=7484012",
+        "europe_pmc_fulltext_attempt": "Two HTTP 500 responses; selected sections retrieved through NCBI PMC instead.",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E05",
+      "title": "The evolution of lung cancer and impact of subclonal selection in TRACERx.",
+      "authors": "Frankell AM, Dietzen M, Al Bakir M, et al.",
+      "year": 2023,
+      "journal": "Nature",
+      "issn": ["0028-0836", "1476-4687"],
+      "doi": "10.1038/s41586-023-05783-5",
+      "pmid": "37046096",
+      "publication_date": "2023-04-12",
+      "url": "https://doi.org/10.1038/s41586-023-05783-5",
+      "verification": "metadata_abstract_checked",
+      "scope": "early_stage_NSCLC_evolution_not_target_sequence",
+      "design": "prospective_multiregion_WES_cohort",
+      "main_finding_zh": "TRACERx421分析1,644个肿瘤区域；定点方法核实为中位413×的WES。19%肿瘤有亚克隆WGD，10%有多个平行亚克隆WGD；近期亚克隆扩张、亚克隆WGD和CN异质性与复发结局相关。",
+      "limitation_zh": "以早期可手术患者为主，非WGS、非同期奥希替尼加化疗后研究，也非按WGD或异质性选择治疗的试验。多区域观察不能替代个体多部位进展取样。",
+      "full_text_reviewed": false,
+      "selected_full_text_sections_reviewed": ["Results: Prospective recruitment of 421 patients into TRACERx", "Methods: Sample collection and sequencing"],
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC metadata/abstract and selected sequencing sections; PubMed/Crossref metadata",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37046096+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=37046096&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41586-023-05783-5",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10115649/fullTextXML",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E06",
+      "title": "The Allelic Context of the C797S Mutation Acquired upon Treatment with Third-Generation EGFR Inhibitors Impacts Sensitivity to Subsequent Treatment Strategies.",
+      "authors": "Niederst MJ, Hu H, Mulvey HE, Lockerman EL, Garcia AR, Piotrowska Z, Sequist LV, Engelman JA.",
+      "year": 2015,
+      "journal": "Clinical Cancer Research",
+      "issn": ["1078-0432", "1557-3265"],
+      "doi": "10.1158/1078-0432.ccr-15-0560",
+      "pmid": "25964297",
+      "publication_date": "2015-05-11",
+      "url": "https://doi.org/10.1158/1078-0432.CCR-15-0560",
+      "verification": "metadata_abstract_checked",
+      "scope": "third_generation_EGFR_TKI_preclinical_allelic_context",
+      "design": "preclinical",
+      "main_finding_zh": "T790M阳性、厄洛替尼耐药来源细胞再对三代EGFR抑制剂耐药后获得C797S；实验表明C797S/T790M在cis、trans或T790野生型背景时，对当时EGFR-TKI策略的响应不同。",
+      "limitation_zh": "主要为细胞模型且依赖既往治疗/等位背景；不是WGS诊断研究，也不是C797S分层的患者疗效试验。不可据此概括所有现代EGFR抑制剂或同期联合治疗后的临床策略。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "date_resolution": "PubMed Electronic ArticleDate及Europe PMC首发为2015-05-11；Crossref published-online为2015-08-31。按较早可核实的PubMed电子首发日期纳入，不以Crossref较晚日期覆盖。",
+      "retrieval": {
+        "provider": "Europe PMC and PubMed metadata/abstract; Crossref metadata with date discrepancy retained",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A25964297+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=25964297&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1158%2F1078-0432.ccr-15-0560",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E07",
+      "title": "Genomic analysis of comprehensive next generation sequencing data to explore the criteria for MET amplification as an actionable biomarker in NSCLC.",
+      "authors": "Tsui DCC, Lee JK, Tambaoan CFB, Hughes J, Fendler B, Decker B, Frampton GM, Schrock AB, Camidge DR.",
+      "year": 2025,
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "issn": ["0169-5002"],
+      "doi": "10.1016/j.lungcan.2025.108081",
+      "pmid": "39793324",
+      "publication_date": "2025-01-04",
+      "url": "https://doi.org/10.1016/j.lungcan.2025.108081",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed_NSCLC_MET_amplification_not_WGS",
+      "design": "retrospective_clinico_genomic_association",
+      "main_finding_zh": "混合捕获NGS分析88,547份组织及12,428份血液NSCLC样本，研究MET CN/倍体、扩增范围和共驱动；30例配对组织MET扩增者仅8例血浆检出。39例MET抑制剂治疗者中AmpRatio≥3与较长rwPFS呈趋势（4.9比1.7月，HR0.53，95%CI0.21–1.3）。",
+      "limitation_zh": "该研究不是WGS，也非指定同期治疗序列；回顾性治疗者少且HR区间跨1。研究中的CN≥倍体+4或AmpRatio≥3为其筛选定义，不能当作所有检测/药物试验通用临床阈值。Europe PMC抽象文本在小于号处有截断风险，关键结果逐段以PubMed XML复核。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC metadata/abstract; complete PubMed XML abstract checked; Crossref metadata",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39793324+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39793324&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.lungcan.2025.108081",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    },
+    {
+      "id": "O02_E08",
+      "title": "Real-world clinical utility of tumor whole-genome sequencing in solid cancers.",
+      "authors": "van Putten J, Snaebjornsson P, Bosch LJW, et al.",
+      "year": 2026,
+      "journal": "Nature medicine",
+      "issn": ["1078-8956", "1546-170X"],
+      "doi": "10.1038/s41591-026-04280-2",
+      "pmid": "41862707",
+      "publication_date": "2026-03-20",
+      "url": "https://doi.org/10.1038/s41591-026-04280-2",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_routine_WGS_diagnostics",
+      "design": "single_center_real_world_WGS_diagnostic_cohort",
+      "main_finding_zh": "888例实体瘤配对WGS有793例出报告（89%），测序机构收样到报告中位6工作日。模拟50/523基因panel在723例可评估样本中分别检出352/505例的可操作标志物。有报销治疗标志物者63/159接受相应治疗，有实验治疗标志物者71/373接受相应治疗；两比例不是全队列的40%加19%。",
+      "limitation_zh": "单中心泛癌观察性研究，未单独证明同期奥希替尼加铂/培美曲塞后WGS的增量价值。panel比较为模拟覆盖，临床可操作性不等于实际获益；接受标志物指导治疗与更长生存的关联受治疗选择和随访限制，不能作WGS疗效因果。图1计数更正已核，见integrity_notes。",
+      "full_text_reviewed": false,
+      "selected_full_text_sections_reviewed": ["Results: Feasibility in routine cancer diagnostics", "Results: Clinical actionability and simulation of panel-based testing", "Results: Biomarker-informed treatment in patients with known primary tumors", "Results: Improvement of OS", "Discussion: implementation and follow-up limitations"],
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC metadata/abstract and selected results/discussion; PubMed and Crossref metadata",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41862707+AND+SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41862707&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41591-026-04280-2",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099640/fullTextXML",
+        "checked_at": "2026-11-04T10:12:40+00:00"
+      }
+    }
+  ],
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04",
+    "date_rule": "所引正式期刊版本采用可核实的首次线上公开日期；未将较早前印本作为独立期刊证据计数。C797S的PubMed与Crossref日期冲突已在该条保留。"
+  },
+  "journal_selection": {
+    "jcr_edition": 2025,
+    "jif_year": 2024,
+    "categories": ["Oncology", "Immunology", "Genetics & Heredity"],
+    "rank_at_most": 80,
+    "status": "pending_2025_JCR_table",
+    "ranking_source": null,
+    "note_zh": "未获得原始排名表，未宣称任一期刊满足三学科前80；所列期刊可能不属于指定学科，须经ISSN和学科排名精确核实。"
+  },
+  "integrity_notes": [
+    {
+      "original_evidence_id": "O02_E01",
+      "note_title": "Author Correction: Pan-cancer analysis of whole genomes.",
+      "note_pmid": "36697834",
+      "note_doi": "10.1038/s41586-022-05598-w",
+      "note_date": "2023-02-01",
+      "finding_zh": "更正说明为PCAWG成员/机构列表中的少量机构错误；本次已读更正正文说明，未逐项审读长成员名单。",
+      "note_full_text_reviewed": false,
+      "selected_correction_paragraphs_reviewed": true,
+      "use_for_treatment_mapping": false,
+      "retrieval": {"provider": "Europe PMC correction metadata and selected body paragraphs", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9931570/fullTextXML", "checked_at": "2026-11-04T10:12:40+00:00"}
+    },
+    {
+      "original_evidence_id": "O02_E03",
+      "note_title": "Author Correction: Analyses of non-coding somatic drivers in 2,658 cancer whole genomes.",
+      "note_pmid": "36697832",
+      "note_doi": "10.1038/s41586-022-05599-9",
+      "note_date": "2023-02-01",
+      "finding_zh": "更正为将PCAWG成员从补充材料纳入主文及机构信息增改；本次已读更正正文说明，未逐项审读长成员/机构名单。",
+      "note_full_text_reviewed": false,
+      "selected_correction_paragraphs_reviewed": true,
+      "use_for_treatment_mapping": false,
+      "retrieval": {"provider": "Europe PMC correction metadata and selected body paragraphs", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9931557/fullTextXML", "checked_at": "2026-11-04T10:12:40+00:00"}
+    },
+    {
+      "original_evidence_id": "O02_E05",
+      "note_title": "Author Correction: The evolution of lung cancer and impact of subclonal selection in TRACERx.",
+      "note_pmid": "38965439",
+      "note_doi": "10.1038/s41586-024-07738-w",
+      "note_date": "2024-07-01",
+      "finding_zh": "更正图1中死亡（x）与删失（>）符号交换；HTML和PDF图已修正。更正未说明修改WGD/亚克隆结论。",
+      "note_full_text_reviewed": true,
+      "use_for_treatment_mapping": false,
+      "retrieval": {"provider": "Europe PMC correction full-text body", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11269168/fullTextXML", "checked_at": "2026-11-04T10:12:40+00:00"}
+    },
+    {
+      "original_evidence_id": "O02_E08",
+      "note_title": "Author Correction: Real-world clinical utility of tumor whole-genome sequencing in solid cancers.",
+      "note_pmid": "41928039",
+      "note_doi": "10.1038/s41591-026-04379-6",
+      "note_date": "2026-04-01",
+      "finding_zh": "因版本错误，图1右侧无可操作标志物203改为196；仅模拟523基因panel和WGS检出142改为153；模拟50/523基因panel及WGS均检出344改为352。HTML/PDF已更正。本文使用更正后的计数，不从图1模拟比较推断真实检测敏感度或治疗因果。",
+      "note_full_text_reviewed": true,
+      "use_for_treatment_mapping": false,
+      "retrieval": {"provider": "Europe PMC correction full-text body and PubMed metadata", "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13099383/fullTextXML", "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41928039&retmode=xml", "checked_at": "2026-11-04T10:12:40+00:00"}
+    }
+  ],
+  "review_provenance": {
+    "updated_at": "2026-11-04T10:12:40+00:00",
+    "preferred_provider": "Firecrawl MCP",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Parent enumerated the available tools and found no callable Firecrawl MCP, CLI or injected credential. No Firecrawl request was made; this node used permitted Europe PMC, PubMed/NCBI PMC and Crossref endpoints with inherited proxy and TLS settings.",
+    "actual_verification_provider": ["Europe PMC", "PubMed", "NCBI PMC", "Crossref"],
+    "verification": "Eight original records and abstracts checked. DOI/title/date cross-checks used PubMed and Crossref. Selected methods/results/discussion were read for Hartwig2019, ecDNA2020, TRACERx2023 and routineWGS2026; these excerpts do not constitute full-text review of those originals. Four linked corrections were inspected as described separately.",
+    "original_papers_count": 8,
+    "core_full_text_reviewed_count": 0,
+    "target_sequence_direct_evidence_found": false,
+    "automatic_treatment_mapping_supported": false,
+    "systematic_review": false,
+    "jcr_rank_eligibility": "pending_original_2025_JCR_table",
+    "date_conflict_preserved_for": ["O02_E06"],
+    "scope_boundary_zh": "WGS广度不等于敏感度；TRACERx WES不标成WGS；泛癌可操作率不等于肺癌或目标序列疗效；MET回顾性趋势、ecDNA/WGD预后关联与非编码候选均不直接等于药敏。"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "scope": "Discovery records kept separate; metadata alone does not permit result interpretation.",
+  "records": [
+    {
+      "title": "MA12.03 FLAURA2: Resistance, and Impact of Baseline TP53 Alterations in Patients Treated With 1L Osimertinib ± Platinum-Pemetrexed",
+      "doi": "10.1016/j.jtho.2024.09.184",
+      "publication_date": "2024-10",
+      "verification": "metadata_only",
+      "core_evidence_id": "O07_E02",
+      "original_abstract_available": false,
+      "result_interpretation_allowed": false,
+      "provider": "Crossref",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2024.09.184",
+      "checked_at": "2026-11-05T09:57:26+00:00"
+    },
+    {
+      "title": "P2.237: Baseline Co-Mutations and Acquired Resistance Mechanisms in EGFR-Mutated Advanced NSCLC: FLAURA2 Exploratory Analysis",
+      "doi": "10.1016/j.jtho.2026.105019",
+      "publication_date": "2026-10",
+      "verification": "metadata_only",
+      "core_evidence_id": null,
+      "original_abstract_available": false,
+      "result_interpretation_allowed": false,
+      "provider": "Crossref",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2026.105019",
+      "limitation_zh": "只核验真实题录，未核验会议报告内容、样本数、分母或原摘要；确切活动名称/报告日也未由原活动页复核。",
+      "checked_at": "2026-11-05T09:57:26+00:00"
+    },
+    {
+      "title": "514MO Acquired mechanisms of resistance to first-line (1L) osimertinib with or without platinum-based chemotherapy (CT) in EGFR-mutated (EGFRm) advanced NSCLC: Preliminary data from FLAURA2",
+      "doi": "10.1016/j.annonc.2023.10.593",
+      "publication_date": "2023-11",
+      "verification": "metadata_only",
+      "core_evidence_id": null,
+      "original_abstract_available": false,
+      "result_interpretation_allowed": false,
+      "provider": "Crossref",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.annonc.2023.10.593",
+      "checked_at": "2026-11-05T09:57:26+00:00"
+    }
+  ]
+}

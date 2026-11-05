@@ -1,0 +1,530 @@
+{
+  "node_id": "node07",
+  "title": "临床解释与证据分层：机制未明的分母、MET/RET匹配研究、组织转化及变异可操作性",
+  "genes": [
+    "EGFR",
+    "MET",
+    "RET",
+    "TP53",
+    "RB1",
+    "PIK3CA",
+    "KRAS",
+    "BRAF"
+  ],
+  "mechanism_zh": [
+    "“同期奥希替尼+铂/培美曲塞后进展”应作为独立治疗序列记录；先用奥希单药、再用化疗或再联用，与一线同期联合不是同一个人群。本节点核验的MET/RET治疗报告没有提供该同期联合后人群的独立确证疗效，因此研究方向必须保留适用序列限制。[O07_E03,O07_E04,O07_E05,O07_E06]",
+    "单药FLAURA耐药分析的分母不是全部279名奥希替尼随机患者：137名有基线与进展/停药配对血浆，其中109名基线血浆EGFR可检出而进入获得性耐药分析。38/109（35%）检出候选获得性机制，71/109（65%）未检出。65%是特定筛选血浆亚组的未检出比例，不能称为所有患者真正没有机制，也不能转用为同期联合后概率。[O07_E01]",
+    "上述FLAURA分析含进展和/或停药样本，并非所有样本都在同一进展时间点；血浆可低估扩增，未评估组织学转化和蛋白表达等非DNA机制，且排除了基线血浆EGFR不可检出的患者。比较机制未明比例时，必须并列报告治疗序列、取材时间、可取材率、QC成功率、血浆/组织、分析范围及有无基线配对。[O07_E01]",
+    "已核验FLAURA2的2024年MA12.03原始会议题录及DOI，但当前来源无原摘要，故不能引用其机制频率、检测分母或与单药的差异。2026年P2.237及2023年514MO另有真实题录，见会议检索审计；同样未核验原始结果。本节点不支持“同期联合后约一半机制未明”等统一比例声明。[O07_E02]",
+    "进展组织病理与基线形态比较优先用于确认小细胞/神经内分泌或其他组织学改变。Marcoux多中心队列67例包括58例原NSCLC后转化及9例初诊小细胞/混合组织学；59例有小细胞组织基因分型者均保留最初EGFR突变。因此保留EGFR不能排除转化，TP53/RB1异常只能提示风险，不能代替病理诊断。[O07_E07]",
+    "MET证据必须区分蛋白过表达、组织FISH扩增和血浆NGS拷贝数。SAVANNAH主要疗效人群为一线奥希进展且IHC3+/≥90%和/或研究定义FISH10+的80例；IHC高表达不等同于DNA扩增。该人群研究者确认ORR为56.3%，中央复核55.0%，不能把所有MET表达升高或任意平台CN升高都映射为相同药敏。[O07_E04]",
+    "INSIGHT 2入组允许组织FISH（MET基因拷贝数≥5或MET/CEP7≥2）或研究定义血浆NGS（MET拷贝数≥2.3），但主要疗效分母是中央FISH确认且随访充分的98例，ORR为49/98（50.0%），不是全部128例治疗人群。SAVANNAH、INSIGHT 2及其他平台的阈值与分母不可互换。[O07_E04,O07_E05]",
+    "MET临床证据不应只停留在单臂Ⅱ期：已核验ASCO 2025 SACHI随机Ⅲ期预设中期原摘要，211例EGFR-TKI后MET扩增患者的研究者PFS为8.2比4.5个月（savolitinib+奥希替尼比化疗；HR 0.34），OS未成熟。既往三代TKI亚组PFS为6.9比3.0个月（HR 0.32），但这是亚组且不是同期奥希+化疗后独立队列。该记录是会议摘要，不能冒称已核验完整期刊论文。[O07_E03]",
+    "SACHI按既往TKI代际使用不同MET入组阈值：一/二代后为FISH拷贝数≥5或MET/CEP7≥2，三代后为FISH拷贝数≥10；一/二代后还要求T790M阴性。其分层和化疗对照说明“MET阳性”不是跨研究统一标签；不能忽略既往治疗、扩增程度及对照治疗，再套用总体效应量。[O07_E03]",
+    "获得性RET融合的联合证据来自14例奥希替尼后接受奥希替尼+selpercatinib的扩展用药/同情用药队列，12例可评价患者的ORR为50%，中位用药持续时间7.9个月；后者不是中位PFS。病例存在复杂的后续EGFR、RET及旁路耐药，不能将其写成所有RET融合、所有融合或同期化疗后人群的确证标准。[O07_E06]",
+    "检出变异、肿瘤来源、耐药因果和临床可操作性是不同判断。ESCAT按具体分子改变及临床背景的证据分层；AMP/ASCO/CAP的临床意义还包含诊断与预后。致病/可能致病不自动等于可选药，某基因已有药也不代表该等位、该肿瘤和该既往治疗序列均有获益证据。[O07_E08,O07_E09]",
+    "AMP/ASCO/CAP将未知临床意义变异列为Tier III，要求持续复核及清楚报告检测限制；未知意义不是已建立药敏。WGS、表观组、RNA或功能研究的新候选可进入验证及重分类流程，但不能仅凭VUS、表达/甲基化签名或通路相关性自动选药、叠加靶药。ESCAT的临床/临床前层级也不能被算法压缩成一个“可治疗”标记。[O07_E08,O07_E09]",
+    "奥希单药FLAURA除C797S外还检出L718Q（2例，其中1例并L718V）、G796S等EGFR新事件。原激活突变保留与新增EGFR等位候选应分开审查；不能把所有非C797S的EGFR改变都叫作原驱动保留，更不能从一个耐药位点直接生成组合用药。[O07_E01,O07_E08,O07_E09]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "71/109（65%）未检出候选机制",
+      "meaning": "单药FLAURA中，基线血浆EGFR可检出且有配对血浆的耐药分析亚组的检测结果。",
+      "limitations": "不是279名随机患者的普遍生物学发生率；样本还含停药时点，不能用于估算同期奥希+化疗后患者的个体概率。[O07_E01]"
+    },
+    {
+      "marker": "进展组织小细胞/神经内分泌形态；TP53/RB1异常；保留EGFR",
+      "meaning": "组织形态可建立转化诊断；TP53/RB1可为背景或风险线索；转化肿瘤仍可保留初始EGFR。",
+      "limitations": "单独DNA或血浆信号不能诊断转化。67例描述性队列包含9例初诊小细胞/混合组织学，不可将67当作全为获得性转化的分母。[O07_E07]"
+    },
+    {
+      "marker": "MET IHC3+/≥90%和/或FISH10+（SAVANNAH）",
+      "meaning": "该研究富集高MET人群的主要疗效分层，80例的研究者ORR为56.3%。",
+      "limitations": "IHC过表达与扩增不是同一读出；FISH10+的具体定义、组织质量及试验人群应按原方案核对，不能换算为任意WGS/panel CN阈值。[O07_E04]"
+    },
+    {
+      "marker": "MET FISH GCN≥5或MET/CEP7≥2；血浆GCN≥2.3（INSIGHT 2）",
+      "meaning": "研究定义的备选入组条件；主要疗效分析以中央FISH确认的98例为分母。",
+      "limitations": "血浆阈值是该实验/试验的条件，不是所有平台的通用扩增线。128例安全性分母与98例ORR分母不同。[O07_E05]"
+    },
+    {
+      "marker": "SACHI既往三代TKI后MET FISH GCN≥10",
+      "meaning": "随机Ⅲ期会议原摘要对既往三代TKI人群采用的扩增门槛；既往一/二代人群阈值另行定义。",
+      "limitations": "不能用一/二代后较低阈值套用于三代TKI后，更不能把亚组PFS效应当作同期化疗后独立确证结果。[O07_E03]"
+    },
+    {
+      "marker": "奥希替尼后新检出的RET融合",
+      "meaning": "在明确EGFR病史及获得性融合背景下，可形成EGFR/RET共同抑制的临床研究假说。",
+      "limitations": "需复核基线、功能性转录本/断点、肿瘤来源及克隆关系；bulk共检出不能证明所有肿瘤细胞均同时依赖两者。14例联合队列不是de novo RET肺癌单药试验，也不是同期化疗后专属试验。[O07_E06]"
+    },
+    {
+      "marker": "原EGFR激活突变保留；新增非C797S EGFR变异",
+      "meaning": "前者表明原驱动仍可检出；后者需按精确等位及配对样本评价可能的靶内耐药。",
+      "limitations": "保留EGFR不证明继续EGFR单药有效，也不排除组织学转化。非C797S事件不能一律当作背景，更不能自动套用C797S等位治疗策略。[O07_E01,O07_E07]"
+    },
+    {
+      "marker": "致病性注释、AMP/ASCO/CAP临床意义层级及ESCAT层级",
+      "meaning": "分别回答功能/致病性和特定临床意义、治疗证据的问题，必须保留适用肿瘤及治疗背景。",
+      "limitations": "诊断或预后意义不能变成预测药敏；指南分层本身不是MET、RET或同期化疗后某治疗的疗效证据。[O07_E08,O07_E09]"
+    },
+    {
+      "marker": "VUS／未知意义非编码或多组学候选",
+      "meaning": "当前证据不足以确定临床意义，可记录并随知识更新复核。",
+      "limitations": "不支持据此直接选药或经验性多靶叠加；功能研究、重分类和临床可操作性需要各自独立证据。[O07_E08,O07_E09]"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在充分确认MET机制及研究匹配条件后，讨论EGFR/MET联合的临床证据与试验",
+      "status": "investigational_in_target_sequence",
+      "setting": "SAVANNAH和INSIGHT 2为奥希替尼后MET选择人群的Ⅱ期报告；SACHI为EGFR-TKI后MET扩增随机Ⅲ期的ASCO 2025中期原摘要。",
+      "limitations": "这些研究不能互换MET阈值、分母或既往TKI背景，且没有核验同期奥希+铂/培美后专属疗效。INSIGHT 2报告严重及潜在治疗相关致死事件；组合的适应证、可及性和安全性应独立核查，不能由CN阳性自动生成方案。",
+      "evidence_ids": [
+        "O07_E03",
+        "O07_E04",
+        "O07_E05"
+      ]
+    },
+    {
+      "strategy": "对明确获得性RET融合者，讨论EGFR/RET双靶研究",
+      "status": "investigational_in_target_sequence",
+      "setting": "奥希替尼后14例扩展用药/同情用药联合队列，12例可评价，属于少见旁路机制的临床信号。",
+      "limitations": "样本小、无随机对照、治疗背景异质；50% ORR不能外推为个体概率，7.9个月为用药持续时间而非PFS；不能据此扩展到任意融合或证明同期化疗后获益。",
+      "evidence_ids": [
+        "O07_E06"
+      ]
+    },
+    {
+      "strategy": "若进展组织确认小细胞/神经内分泌转化，按病理及既往治疗重新评估研究/治疗路径",
+      "status": "histology_directed_review_not_genotype_automatic",
+      "setting": "Marcoux多中心回顾队列显示转化后对铂/依托泊苷及紫杉类可有反应。",
+      "limitations": "非随机且包括初诊小细胞/混合病例；不能凭TP53/RB1、EGFR保留或血浆推断转化。既往同期铂/培美后的铂敏感性、耐受及方案选择不能由这份队列直接确定。17例免疫治疗无反应也不是所有患者必然无效的证明。",
+      "evidence_ids": [
+        "O07_E07"
+      ]
+    },
+    {
+      "strategy": "对新增EGFR精确等位及新多组学候选先完成机制和临床证据分层",
+      "status": "validation_before_actionability",
+      "setting": "血浆耐药观察及ESCAT、AMP/ASCO/CAP解释框架。",
+      "limitations": "候选机制不等于已建立药敏；应区分原激活变异、真正新增事件、等位/克隆关系和并存机制。框架指南不能作为任一特定药物组合有效的替代证据。",
+      "evidence_ids": [
+        "O07_E01",
+        "O07_E08",
+        "O07_E09"
+      ]
+    },
+    {
+      "strategy": "不支持仅凭“机制未明”、VUS、通路签名或未读到原结果的会议题录选择药物或叠加靶药",
+      "status": "not_supported",
+      "setting": "当前机制发现与知识库输出的边界。",
+      "limitations": "未检出可来自取样、分析范围或非DNA状态；缺乏解释不构成任一药物敏感性。FLAURA2题录仅能证明该研究报告存在，不能作为频率或治疗结果证据。",
+      "evidence_ids": [
+        "O07_E01",
+        "O07_E02",
+        "O07_E08",
+        "O07_E09"
+      ]
+    }
+  ],
+  "research_gaps": [
+    "需在同期奥希替尼+铂/培美曲塞后进展人群，前瞻比较组织病理、DNA/RNA及研究性WGS/表观组的增量解释；报告临床获益而不只增加异常数量。",
+    "不同研究应分别公开全部治疗者、进展者、可取材者、QC合格者、基线EGFR血浆可检出者、配对分析者、检出机制者、可操作者及实际接受匹配治疗者的分母。",
+    "FLAURA2 2024及2026会议原始摘要、具体检测平台/分母/事件阈值尚未在当前可访问来源核验；不能从题名或二手报道补齐数字。定向数据库查询不是对2026 ASCO/ESMO/WCLC全部会议的系统检索。",
+    "SACHI ASCO 2025原摘要的OS未成熟；需要完整出版物、后续更新及既往三代TKI亚组的完整统计和入组细节。会议原摘要结果不等同于完整同行评议论文。",
+    "需要把同期化疗既往暴露、累积毒性、器官功能及后续方案可行性纳入MET/RET研究，避免把先奥希单药后机制匹配联合的结果直接外推。",
+    "高MET IHC、局灶扩增、染色体多体及血浆CN的互认需独立分析验证；不同试验的入组阈值不能作为通用检测标准。",
+    "需以进展组织及临床病史区分转化、第二原发、混合组织学和空间克隆；TP53/RB1或保留EGFR都不是组织学诊断。",
+    "需评估新候选是否与EGFR克隆共存并造成耐药；bulk共检出、统计相关、功能模型支持、临床预测效度是不同层级。",
+    "2025版JCR（2024 JIF）Oncology、Immunology、Genetics & Heredity各前80原表尚未提供；本节点不编造IF或排名，也不以期刊知名度或JCO/JTO收录会议摘要代替排名认证。",
+    "AMP指南首次在线公开日期未从本次来源核定，记录按已核验刊期月保留；FLAURA2会议日期亦仅按题录精度保留，均不可伪造首次公开日。"
+  ],
+  "evidence": [
+    {
+      "id": "O07_E01",
+      "title": "Candidate mechanisms of acquired resistance to first-line osimertinib in EGFR-mutated advanced non-small cell lung cancer.",
+      "authors": "Chmielecki J, Gray JE, Cheng Y, Ohe Y, Imamura F, Cho BC, Lin MC, Majem M, Shah R, Rukazenkov Y, Todd A, Markovets A, Barrett JC, Hartmaier RJ, Ramalingam SS.",
+      "year": 2023,
+      "journal": "Nature Communications",
+      "issn": [
+        "2041-1723"
+      ],
+      "doi": "10.1038/s41467-023-35961-y",
+      "pmid": "36849494",
+      "publication_date": "2023-02-27",
+      "publication_date_basis": "Electronic publication date confirmed by PubMed/PMC and Crossref.",
+      "url": "https://doi.org/10.1038/s41467-023-35961-y",
+      "verification": "metadata_abstract_checked",
+      "scope": "first_line_osimertinib_monotherapy_plasma_resistance_not_concurrent_chemotherapy",
+      "design": "prespecified_exploratory_paired_plasma_analysis",
+      "main_finding_zh": "FLAURA奥希单药组279例中137例有配对基线与进展/停药血浆；109例基线血浆EGFR可检出而进入耐药分析。38/109（35%）检出候选获得性机制，71/109（65%）未检出；MET扩增17例（16%），EGFR C797S 7例（6%），未见获得性T790M。另检出L718Q等非C797S靶内候选。",
+      "limitation_zh": "筛选的血浆亚组而非全部随机/进展患者；样本时点包括停药。血浆可低估扩增，无法评估病理转化/蛋白等非DNA机制，且排除基线血浆EGFR不可检出者。65%不能移作同期奥希+化疗后比例或个体无机制概率。",
+      "full_text_reviewed": false,
+      "selected_full_text_sections_reviewed": [
+        "Results: Patient disposition and acquired resistance analysis subset",
+        "Results: Candidate mechanisms in osimertinib arm",
+        "Discussion: Limitations",
+        "Methods: Plasma analysis eligibility"
+      ],
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract and selected PMC Results/Discussion/Methods; PubMed and Crossref date/title cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A36849494%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36849494&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038%2Fs41467-023-35961-y",
+        "selected_sections_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9971254/fullTextXML",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E02",
+      "title": "MA12.03 FLAURA2: Resistance, and Impact of Baseline TP53 Alterations in Patients Treated With 1L Osimertinib ± Platinum-Pemetrexed",
+      "authors": "Yang JC, Robichaux J, Planchard D, Kobayashi K, Lee CK, Sugawara S, Yang TY, Kim TM, Kim SW, Yanagitani N, Markovets A, Bhetariya PJ, Poole L, Rukazenkov Y, Hartmaier R, Jänne PA.",
+      "year": 2024,
+      "journal": "Journal of Thoracic Oncology",
+      "issn": [
+        "1556-0864"
+      ],
+      "doi": "10.1016/j.jtho.2024.09.184",
+      "pmid": null,
+      "publication_date": "2024-10",
+      "publication_date_precision": "month",
+      "publication_date_basis": "Crossref journal-supplement publication month. Exact first conference release date and event page not verified.",
+      "first_public_release_date_verified": false,
+      "url": "https://doi.org/10.1016/j.jtho.2024.09.184",
+      "verification": "metadata_only",
+      "scope": "FLAURA2_target_sequence_conference_record_only",
+      "design": "conference_abstract",
+      "main_finding_zh": "Crossref核验题名、作者、期刊及DOI，确认FLAURA2一线奥希替尼±铂/培美曲塞的耐药与基线TP53分析原始会议题录存在；未获取原摘要，故没有提取机制频率、分母或比较结果。",
+      "limitation_zh": "题录存在不验证报告内容。不得由题名推断机制未明比例、MET频率、TP53预测性或同期联合与单药的差异；确切会议活动/报告日未由原活动页复核。此记录不允许结果解释。",
+      "full_text_reviewed": false,
+      "result_interpretation_allowed": false,
+      "journal_rank": null,
+      "rank_status": "conference_separate_from_JCR",
+      "retrieval": {
+        "provider": "Crossref publisher-deposited metadata; abstract field absent",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2024.09.184",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E03",
+      "title": "Savolitinib (Savo) combined with osimertinib (osi) versus chemotherapy (chemo) in EGFR-mutant (EGFRm) and MET-amplification (METamp) advanced NSCLC after disease progression (PD) on EGFR tyrosine kinase inhibitor (TKI): Results from a randomized phase 3 SACHI study.",
+      "authors": "Lu S, Wang J, Yang N, Lv D, Chen L, Wu L, Li X, Sun L, Yu Y, Jin B, Yang L, Guo Y, Xu H, Yi T, Zeng A, Dong X, Chen J, Wang Z, Mok TSK, Su W, et al.",
+      "year": 2025,
+      "journal": "Journal of Clinical Oncology",
+      "issn": [
+        "0732-183X",
+        "1527-7755"
+      ],
+      "doi": "10.1200/jco.2025.43.17_suppl.lba8505",
+      "pmid": null,
+      "publication_date": "2025-06-10",
+      "publication_date_basis": "Crossref abstract journal publication date; earlier ASCO embargo release/online posting day not independently verified.",
+      "first_public_release_date_verified": false,
+      "url": "https://doi.org/10.1200/JCO.2025.43.17_suppl.LBA8505",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_EGFR_TKI_MET_amplified_phase3_interim_conference_not_concurrent_chemotherapy_specific",
+      "design": "conference_abstract",
+      "conference": "ASCO 2025, LBA8505",
+      "trial_registration": "NCT05015608",
+      "underlying_study_design": "randomized_open_label_phase3_prespecified_interim_analysis",
+      "main_finding_zh": "Crossref收录的原摘要及表格：211例随机至savolitinib+奥希替尼（106）或铂/培美曲塞（105）。ITT研究者PFS 8.2比4.5个月，HR 0.34；主要终点按既往未用三代TKI人群再至ITT层级检验。既往三代TKI亚组PFS 6.9比3.0个月，HR 0.32。OS未成熟；化疗组可交叉。既往三代后需MET FISH CN≥10，一/二代后为CN≥5或MET/CEP7≥2并要求T790M阴性。",
+      "limitation_zh": "本次核验的是预设中期会议原摘要，不是完整期刊论文/全文。纳入EGFR-TKI后不同代际人群，三代亚组不是同期奥希+铂/培美后专属分析；不能忽略不同扩增门槛或用总体/亚组HR预测个体疗效。未证实OS获益。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "conference_separate_from_JCR",
+      "retrieval": {
+        "provider": "Crossref publisher-deposited original ASCO abstract including interim results table; DOI-level author/title/date verification",
+        "url": "https://api.crossref.org/works/10.1200%2Fjco.2025.43.17_suppl.lba8505",
+        "search_url": "https://api.crossref.org/works?query.bibliographic=savolitinib+osimertinib+SACHI&rows=15",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E04",
+      "title": "Savolitinib plus osimertinib in epidermal growth factor receptor (EGFR)-mutated advanced non-small cell lung cancer with MET overexpression and/or amplification following disease progression on osimertinib: primary results from the phase II SAVANNAH study.",
+      "authors": "de Marinis F, Kim TM, Bonanno L, Cheng S, Kim SW, Tiseo M, Chu Q, Proto C, Sacher A, Luo YH, Novello S, Hao D, Baik C, Bazhenova L, Lee JS, Cho BC, Cadranel J, Diep TB, Metro G, Narayanan P, Yoneshima Y, de Castro Carpeño J, Baldotto C, Nyhus C, Yang JC, Sequist LV, Levy B, Hartmaier R, Igwegbe I, Poole L, Xu W, Ahn MJ.",
+      "year": 2025,
+      "journal": "Annals of Oncology",
+      "issn": [
+        "0923-7534",
+        "1569-8041"
+      ],
+      "doi": "10.1016/j.annonc.2025.04.003",
+      "pmid": "40461383",
+      "publication_date": "2025-06-02",
+      "publication_date_basis": "PubMed electronic publication date, earlier than Crossref print issue month 2025-08.",
+      "url": "https://doi.org/10.1016/j.annonc.2025.04.003",
+      "verification": "metadata_abstract_checked",
+      "scope": "MET_selected_post_osimertinib_phase2_not_concurrent_chemotherapy_specific",
+      "design": "phase2_biomarker_selected_primary_analysis",
+      "trial_registration": "NCT03778229",
+      "main_finding_zh": "365例接受研究治疗，其中341例接受savolitinib+奥希替尼。主效人群80例为一线奥希后进展且MET IHC3+/≥90%和/或FISH10+；研究者确认ORR 56.3%（95%CI 44.7–67.3），中位PFS 7.4个月。中央复核ORR 55.0%，中位PFS 7.5个月。常见任意级别事件包括周围水肿（46.0%）、恶心（40.5%）及腹泻（23.2%）。",
+      "limitation_zh": "主效分母是80例高MET选择人群，不能对全部341/365例或任意MET表达升高者套用ORR。初始IHC/FISH入组门槛后经预分析提高；IHC与扩增不是同一标志物。主要结果不是该人群的随机对照确证，也没有核验同期奥希+铂/培美后独立结果。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed electronic date and Crossref title/author/DOI cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40461383%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=40461383&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.annonc.2025.04.003",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E05",
+      "title": "Tepotinib plus osimertinib in patients with EGFR-mutated non-small-cell lung cancer with MET amplification following progression on first-line osimertinib (INSIGHT 2): a multicentre, open-label, phase 2 trial.",
+      "authors": "Wu YL, Guarneri V, Voon PJ, Lim BK, Yang JJ, Wislez M, Huang C, Liam CK, Mazieres J, Tho LM, Hayashi H, Nhung NV, Chia PL, de Marinis F, Raskin J, Zhou Q, Finocchiaro G, Le AT, Wang J, Dooms C, Kato T, Nadal E, Hin HS, Smit EF, Wermke M, Tan D, Morise M, O'Brate A, Adrian S, Pfeiffer BM, Stroh C, Juraeva D, Strotmann R, Goteti K, Berghoff K, Ellers-Lenz B, Karachaliou N, Le X, Kim TM; INSIGHT 2 investigators.",
+      "year": 2024,
+      "journal": "The Lancet Oncology",
+      "issn": [
+        "1470-2045",
+        "1474-5488"
+      ],
+      "doi": "10.1016/s1470-2045(24)00270-5",
+      "pmid": "39089305",
+      "publication_date": "2024-08-01",
+      "publication_date_basis": "Europe PMC first publication date; PubMed/Crossref confirm August 2024 issue but do not provide a separate earlier electronic date.",
+      "url": "https://doi.org/10.1016/S1470-2045(24)00270-5",
+      "verification": "metadata_abstract_checked",
+      "scope": "MET_amplified_after_first_line_osimertinib_phase2_not_concurrent_chemotherapy_specific",
+      "design": "multicentre_open_label_phase2",
+      "trial_registration": "NCT03940703",
+      "main_finding_zh": "128例接受tepotinib+奥希替尼；主要疗效分母为中央FISH确认MET扩增、既往一线奥希且随访至少9个月的98例，独立评价确认ORR为49/98（50.0%，95%CI 39.7–60.3）。入组允许组织FISH CN≥5或MET/CEP7≥2，或血浆NGS CN≥2.3。16/128（13%）有严重治疗相关事件，4例死亡被研究者判断可能与任一研究药有关。",
+      "limitation_zh": "单臂Ⅱ期；98例ORR与128例安全性分母不同。研究特定血浆/组织扩增阈值不能跨平台互换；安全性并非无风险。没有核验同期奥希+铂/培美后独立获益，也不能由低CN或孤立MET高表达代入该ORR。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed and Crossref bibliographic cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39089305%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=39089305&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fs1470-2045(24)00270-5",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E06",
+      "title": "Osimertinib and Selpercatinib Efficacy, Safety, and Resistance in a Multicenter, Prospectively Treated Cohort of EGFR-Mutant and RET Fusion-Positive Lung Cancers.",
+      "authors": "Rotow J, Patel JD, Hanley MP, Yu H, Awad M, Goldman JW, Nechushtan H, Scheffler M, Kuo CS, Rajappa S, Harada G, Clifford S, Santucci A, Silva L, Tupper R, Oxnard GR, Kherani J, Drilon A.",
+      "year": 2023,
+      "journal": "Clinical Cancer Research",
+      "issn": [
+        "1078-0432",
+        "1557-3265"
+      ],
+      "doi": "10.1158/1078-0432.ccr-22-2189",
+      "pmid": "36996322",
+      "publication_date": "2023-03-30",
+      "publication_date_basis": "Crossref published-online 2023-03-30; Europe PMC firstPublicationDate 2023-08-01 reflects later issue dating and is preserved as a source discrepancy.",
+      "catalog_first_publication_date": "2023-08-01",
+      "url": "https://doi.org/10.1158/1078-0432.CCR-22-2189",
+      "verification": "metadata_abstract_checked",
+      "scope": "acquired_RET_fusion_after_osimertinib_expanded_access_not_concurrent_chemotherapy_specific",
+      "design": "multicentre_prospectively_treated_expanded_access_compassionate_use_cohort",
+      "trial_registration": "NCT03906331",
+      "main_finding_zh": "14例EGFR突变、奥希后获得RET融合的肺癌患者接受奥希替尼+selpercatinib，来自5国的前瞻扩展用药及个体同情用药。12例可评价者ORR为50%（95%CI 25–75），疾病控制率83%，中位用药持续时间7.9个月；后续耐药可涉及EGFR C797S、RET G810S、其他旁路、RET融合丢失或多克隆。",
+      "limitation_zh": "小样本、无随机对照、既往治疗异质；7.9个月不是中位PFS，ORR分母不是全部14例。不能替代de novo RET肺癌证据，也未提供同期奥希+化疗后独立效应；共检出改变不能证明每个克隆双依赖。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; Crossref original abstract and published-online date; PubMed cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A36996322%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36996322&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1158%2F1078-0432.ccr-22-2189",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E07",
+      "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes.",
+      "authors": "Marcoux N, Gettinger SN, O'Kane G, Arbour KC, Neal JW, Husain H, Evans TL, Brahmer JR, Muzikansky A, Bonomi PD, Del Prete S, Wurtz A, Farago AF, Dias-Santagata D, Mino-Kenudson M, Reckamp KL, Yu HA, Wakelee HA, Shepherd FA, Piotrowska Z, Sequist LV.",
+      "year": 2019,
+      "journal": "Journal of Clinical Oncology",
+      "issn": [
+        "0732-183X",
+        "1527-7755"
+      ],
+      "doi": "10.1200/jco.18.01585",
+      "pmid": "30550363",
+      "publication_date": "2018-12-14",
+      "publication_date_basis": "PubMed electronic publication date; journal issue year 2019.",
+      "url": "https://doi.org/10.1200/JCO.18.01585",
+      "verification": "metadata_abstract_checked",
+      "scope": "EGFR_mutant_small_cell_neuroendocrine_transformation_and_de_novo_mixed_cohort_not_concurrent_chemotherapy_specific",
+      "design": "eight_institution_retrospective_clinical_cohort",
+      "main_finding_zh": "67例EGFR突变小细胞/高级别神经内分泌队列中，58例初诊NSCLC后转化、9例初诊小细胞或混合；转化中位时间17.8个月。59例有小细胞组织分型者均保留最初EGFR突变；铂/依托泊苷及紫杉类有反应，17例接受免疫治疗者无反应；转化后中位生存10.9个月。",
+      "limitation_zh": "描述性回顾病例集合，不能估计所有EGFR患者的转化发生率，且不能把67例全算获得性转化。无随机方案比较，治疗时序和既往TKI异质；不是同期奥希+铂/培美后专属疗效研究。TP53/RB1异常及EGFR保留不能代替病理。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed electronic publication date",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30550363%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=30550363&retmode=xml",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E08",
+      "title": "A framework to rank genomic alterations as targets for cancer precision medicine: the ESMO Scale for Clinical Actionability of molecular Targets (ESCAT).",
+      "authors": "Mateo J, Chakravarty D, Dienstmann R, Jezdic S, Gonzalez-Perez A, Lopez-Bigas N, Ng CKY, Bedard PL, Tortora G, Douillard JY, Van Allen EM, Schultz N, Swanton C, André F, Pusztai L.",
+      "year": 2018,
+      "journal": "Annals of Oncology",
+      "issn": [
+        "0923-7534",
+        "1569-8041"
+      ],
+      "doi": "10.1093/annonc/mdy263",
+      "pmid": "30137196",
+      "publication_date": "2018-08-21",
+      "publication_date_basis": "PMC original article front metadata pub-type=epub, iso-8601-date=2018-08-21. Europe PMC/PubMed issue date 2018-09-01 is later.",
+      "catalog_first_publication_date": "2018-09-01",
+      "url": "https://doi.org/10.1093/annonc/mdy263",
+      "verification": "metadata_abstract_checked",
+      "scope": "pan_cancer_clinical_actionability_framework_not_drug_efficacy",
+      "design": "ESMO_expert_consensus_framework",
+      "main_finding_zh": "ESCAT定义六类临床可操作性证据：I为可用于常规临床决策，II为很可能获益但需进一步证据的研究靶点，III为其他肿瘤/相似靶点获益外推，IV为临床前，V为共同靶向思路，X为缺乏可操作性证据；用于区分分子发现与按证据选择靶向治疗。",
+      "limitation_zh": "通用解释框架，不是任何MET/RET组合或同期奥希+化疗后疗效的原始证据。应对具体改变、肿瘤及治疗背景分层，不能按基因名称把所有变异升级；层级会随证据更新。",
+      "full_text_reviewed": false,
+      "selected_full_text_sections_reviewed": [
+        "PMC article front metadata only: electronic publication date"
+      ],
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed/Crossref title/DOI; NCBI PMC front metadata electronic publication date",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30137196%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=30137196&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1093%2Fannonc%2Fmdy263",
+        "date_metadata_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5707196%2C6158764&retmode=xml",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    },
+    {
+      "id": "O07_E09",
+      "title": "Standards and Guidelines for the Interpretation and Reporting of Sequence Variants in Cancer: A Joint Consensus Recommendation of the Association for Molecular Pathology, American Society of Clinical Oncology, and College of American Pathologists.",
+      "authors": "Li MM, Datto M, Duncavage EJ, Kulkarni S, Lindeman NI, Roy S, Tsimberidou AM, Vnencak-Jones CL, Wolff DJ, Younes A, Nikiforova MN.",
+      "year": 2017,
+      "journal": "The Journal of Molecular Diagnostics",
+      "issn": [
+        "1525-1578",
+        "1943-7811"
+      ],
+      "doi": "10.1016/j.jmoldx.2016.10.002",
+      "pmid": "27993330",
+      "publication_date": "2017-01",
+      "publication_date_precision": "month",
+      "publication_date_basis": "Verified journal issue month only; true first online publication day not established from retrieved records. PubMed public record already existed on 2016-12-21, so 2017-01 is explicitly not claimed as the first public availability.",
+      "first_online_publication_date": null,
+      "first_online_publication_date_status": "unverified_preserved_instead_of_invented",
+      "earliest_verified_pubmed_public_record_date": "2016-12-21",
+      "url": "https://doi.org/10.1016/j.jmoldx.2016.10.002",
+      "verification": "metadata_abstract_checked",
+      "scope": "somatic_variant_interpretation_reporting_consensus_not_drug_efficacy",
+      "design": "AMP_ASCO_CAP_multidisciplinary_consensus_guideline",
+      "main_finding_zh": "提出体细胞变异四层临床意义分类：Tier I强临床意义、Tier II潜在临床意义、Tier III未知临床意义、Tier IV良性/可能良性；要求持续重估治疗、诊断和预后意义，报告标准命名、检测方法及限制，并联系病理和临床背景。",
+      "limitation_zh": "层级包含诊断和预后，不等于药物敏感性。VUS不能据其未知意义直接选药；基因已有靶药或致病性标签不能替代具体临床证据。本次来源未核验首次在线发布日期，刊期月仅用于保留可核验题录及时间窗，不伪造首次公开日。",
+      "full_text_reviewed": false,
+      "journal_rank": null,
+      "rank_status": "pending_2025_JCR_table",
+      "retrieval": {
+        "provider": "Europe PMC core metadata/abstract; PubMed history and Crossref issue-month/DOI cross-check; PMC front metadata/abstract only (body unavailable through retrieved endpoint)",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A27993330%20AND%20SRC%3AMED&format=json&resultType=core&pageSize=1",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=27993330&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.jmoldx.2016.10.002",
+        "date_metadata_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5707196%2C6158764&retmode=xml",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    }
+  ],
+  "review_provenance": {
+    "updated_at": "2026-11-05T09:57:26+00:00",
+    "evidence_window": {
+      "start": "2011-11-04",
+      "end": "2026-11-04"
+    },
+    "preferred_provider": "Firecrawl MCP",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Parent checked available tools, CLI and configured credential readiness and found no callable Firecrawl path. This node made no Firecrawl request.",
+    "actual_verification_provider": [
+      "Europe PMC",
+      "PubMed",
+      "NCBI PMC front metadata/selected sections",
+      "Crossref publisher-deposited metadata and original meeting abstract"
+    ],
+    "verification": "Seven journal records and abstracts checked, including five original clinical reports and two interpretation frameworks; one original ASCO meeting abstract including its table checked in Crossref. One FLAURA2 conference record is metadata-only. Selected FLAURA Results/Discussion/Methods excerpts were read to verify denominators and assay limitations. ESCAT PMC front metadata was read to verify its electronic publication date. These checks do not constitute full-text review.",
+    "core_evidence_count": 9,
+    "original_clinical_journal_reports_count": 5,
+    "interpretation_frameworks_count": 2,
+    "conference_records_count": 2,
+    "metadata_abstract_checked_count": 8,
+    "metadata_only_count": 1,
+    "core_full_text_reviewed_count": 0,
+    "target_sequence_specific_treatment_benefit_verified": false,
+    "automatic_treatment_mapping_supported": false,
+    "systematic_review": false,
+    "conference_search_complete": false,
+    "conference_scope_zh": "以Europe PMC和Crossref对FLAURA2及SACHI进行定向检索；没有逐届完整访问ASCO/ESMO/WCLC会议官网或原始报告页。不得声称已完成2026全部重要会议检索。FLAURA2的2024/2026题录没有原摘要，未推断机制频率；SACHI有Crossref所收录原摘要及表格，按会议证据处理。",
+    "conference_search_audit": [
+      {
+        "title": "MA12.03 FLAURA2: Resistance, and Impact of Baseline TP53 Alterations in Patients Treated With 1L Osimertinib ± Platinum-Pemetrexed",
+        "doi": "10.1016/j.jtho.2024.09.184",
+        "publication_date": "2024-10",
+        "verification": "metadata_only",
+        "core_evidence_id": "O07_E02",
+        "original_abstract_available": false,
+        "result_interpretation_allowed": false,
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2024.09.184",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      },
+      {
+        "title": "P2.237: Baseline Co-Mutations and Acquired Resistance Mechanisms in EGFR-Mutated Advanced NSCLC: FLAURA2 Exploratory Analysis",
+        "doi": "10.1016/j.jtho.2026.105019",
+        "publication_date": "2026-10",
+        "verification": "metadata_only",
+        "core_evidence_id": null,
+        "original_abstract_available": false,
+        "result_interpretation_allowed": false,
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2026.105019",
+        "limitation_zh": "只核验真实题录，未核验会议报告内容、样本数、分母或原摘要；确切活动名称/报告日也未由原活动页复核。",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      },
+      {
+        "title": "514MO Acquired mechanisms of resistance to first-line (1L) osimertinib with or without platinum-based chemotherapy (CT) in EGFR-mutated (EGFRm) advanced NSCLC: Preliminary data from FLAURA2",
+        "doi": "10.1016/j.annonc.2023.10.593",
+        "publication_date": "2023-11",
+        "verification": "metadata_only",
+        "core_evidence_id": null,
+        "original_abstract_available": false,
+        "result_interpretation_allowed": false,
+        "provider": "Crossref",
+        "url": "https://api.crossref.org/works/10.1016%2Fj.annonc.2023.10.593",
+        "checked_at": "2026-11-05T09:57:26+00:00"
+      }
+    ],
+    "representative_queries": [
+      "(TITLE_ABS:FLAURA2 AND (TITLE_ABS:resistan* OR TITLE_ABS:progression)) AND FIRST_PDATE:[2011-11-04 TO 2026-11-04]",
+      "Crossref query.bibliographic=FLAURA2 resistance mechanisms 2024 2025 2026; publication filter 2023-01-01 to 2026-11-04",
+      "Crossref query.bibliographic=savolitinib osimertinib SACHI",
+      "Europe PMC exact DOI/title lookups for SAVANNAH, INSIGHT 2, FLAURA, RET cohort, Marcoux, ESCAT and AMP/ASCO/CAP"
+    ],
+    "retrieval_limitations_zh": "部分Europe PMC检索/全文接口返回500/503、个别PubMed/Crossref并发请求出现429；已用获准的PubMed批量记录、Crossref原题录/摘要及可用的Europe PMC记录核对核心证据。保留原代理与TLS，无网络绕行。未成功获得的原会议摘要不补写结果。",
+    "jcr_rank_eligibility": "pending_original_2025_JCR_table",
+    "jif_values_invented": false,
+    "date_conflict_preserved_for": [
+      "O07_E02",
+      "O07_E03",
+      "O07_E06",
+      "O07_E08",
+      "O07_E09"
+    ],
+    "publication_date_policy_zh": "尽可能采用已核验最早电子发表日期；会议采用Crossref给出的期刊摘要日期并声明实际首发日未核验；AMP仅核验到刊期月份，明确不把它冒充首次在线日。"
+  }
+}

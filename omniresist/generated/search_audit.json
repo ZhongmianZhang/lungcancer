@@ -1,0 +1,155 @@
+{
+  "preferred_provider": "Firecrawl",
+  "provider_requested": "auto",
+  "searched_at": "2026-11-05T09:59:05+00:00",
+  "query": "(TITLE_ABS:EGFR OR TITLE_ABS:osimertinib) AND (TITLE_ABS:resistan* OR TITLE_ABS:FLAURA2) AND (TITLE_ABS:\"whole genome\" OR TITLE_ABS:methylation OR TITLE_ABS:sequencing OR TITLE_ABS:epigen*)",
+  "requested_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04"
+  },
+  "attempts": [
+    {
+      "provider": "Firecrawl",
+      "status": "unavailable_or_failed",
+      "kind": "missing_credential",
+      "http_status": null
+    },
+    {
+      "provider": "Europe PMC",
+      "status": "executed",
+      "retrieval": {
+        "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%28TITLE_ABS%3AEGFR+OR+TITLE_ABS%3Aosimertinib%29+AND+%28TITLE_ABS%3Aresistan%2A+OR+TITLE_ABS%3AFLAURA2%29+AND+%28TITLE_ABS%3A%22whole+genome%22+OR+TITLE_ABS%3Amethylation+OR+TITLE_ABS%3Asequencing+OR+TITLE_ABS%3Aepigen%2A%29%29+AND+FIRST_PDATE%3A%5B2011-11-04+TO+2026-11-04%5D&format=json&resultType=core&pageSize=15&cursorMark=%2A",
+        "cached": false,
+        "retrieved_at": "2026-11-05T09:59:08+00:00"
+      }
+    }
+  ],
+  "results": [
+    {
+      "title": "The methylation pattern of osimertinib resistance: prospects for diagnosis and treatment of NSCLC.",
+      "pmid": "42840625",
+      "doi": "10.3389/fonc.2026.1943703",
+      "publication_date": "2026-09-22",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42840625/"
+    },
+    {
+      "title": "Pragmatic Management of EGFR-Mutant NSCLC After Progression on Osimertinib: Canadian Expert Perspectives.",
+      "pmid": "42645370",
+      "doi": "10.3390/curroncol33080465",
+      "publication_date": "2026-08-05",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42645370/"
+    },
+    {
+      "title": "Circulating epigenetic and epitranscriptomic biomarkers identify EGFR status, predict TKI response and reveal therapeutic vulnerabilities in NSCLC.",
+      "pmid": "42477403",
+      "doi": "10.1038/s41598-026-62035-y",
+      "publication_date": "2026-07-20",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42477403/"
+    },
+    {
+      "title": "RRBP1 promotes osimertinib resistance by activating fatty acid oxidation-dependent metabolic and immune reprogramming in EGFR-Mutant lung adenocarcinoma.",
+      "pmid": "42285369",
+      "doi": "10.1016/j.bcp.2026.118158",
+      "publication_date": "2026-06-12",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42285369/"
+    },
+    {
+      "title": "Recent advances in EGFR-targeted therapies for non-small cell lung cancer.",
+      "pmid": "42489649",
+      "doi": "10.1080/14656566.2026.2702380",
+      "publication_date": "2026-07-28",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42489649/"
+    },
+    {
+      "title": "Osimertinib-Associated Severe Aplastic Anemia: A Case Report",
+      "pmid": "",
+      "doi": "10.21203/rs.3.rs-9617372/v1",
+      "publication_date": "2026-09-23",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://europepmc.org/article/PPR/PPR1325503"
+    },
+    {
+      "title": "Transcriptomic and network analyses identify epigenetic regulators of drug-tolerant persister (DTP) subsets in EGFR-mutant HCC827 non-small cell lung cancer.",
+      "pmid": "42742903",
+      "doi": "10.1007/s13258-026-01801-8",
+      "publication_date": "2026-09-15",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42742903/"
+    },
+    {
+      "title": "MMP14-mediated proteolytic cleavage of LAMC2 domain III fragment drives osimertinib resistance in EGFR-mutant non-small cell lung cancer.",
+      "pmid": "42897224",
+      "doi": "10.1038/s41401-026-01901-x",
+      "publication_date": "2026-10-19",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42897224/"
+    },
+    {
+      "title": "Mechanisms of Acquired Resistance Following Dual EGFR/MET Inhibition in MET-Amplified EGFR TKI-Resistant Lung Cancer.",
+      "pmid": "42008741",
+      "doi": "10.1158/1535-7163.mct-25-1214",
+      "publication_date": "2026-11-01",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42008741/"
+    },
+    {
+      "title": "Rethinking Molecular Profiling after First-line Osimertinib.",
+      "pmid": "42430304",
+      "doi": "10.1158/1078-0432.ccr-26-0749",
+      "publication_date": "2026-09-01",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42430304/"
+    },
+    {
+      "title": "Clinical Significance of EGFR Amplification in Patients with EGFR-Mutated Metastatic Non-Small Cell Lung Cancer Receiving First-line Osimertinib.",
+      "pmid": "42446521",
+      "doi": "10.1158/1078-0432.ccr-26-0924",
+      "publication_date": "2026-09-01",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42446521/"
+    },
+    {
+      "title": "Treatment-Emergent Isolated EGFR C797S Mutation Following First-Line Osimertinib-Based Combination Therapy: A Case Report and Literature Review.",
+      "pmid": "42466433",
+      "doi": "10.1002/rcr2.70673",
+      "publication_date": "2026-07-15",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42466433/"
+    },
+    {
+      "title": "The methylation pattern of osimertinib resistance: prospects for diagnosis and treatment of NSCLC",
+      "pmid": "",
+      "doi": "",
+      "publication_date": "2026-10-07",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://europepmc.org/article/PMC/PMC13640450"
+    },
+    {
+      "title": "Ascomycin enhances the antitumor activity of osimertinib in EGFR-TKI-resistant non-small cell lung cancer.",
+      "pmid": "42688003",
+      "doi": "10.3389/fonc.2026.1867321",
+      "publication_date": "2026-08-19",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42688003/"
+    },
+    {
+      "title": "HDAC6 promotes osimertinib resistance evolution in non-small cell lung cancer by activating EGFR degradation through the ubiquitin-proteasome pathway.",
+      "pmid": "42502066",
+      "doi": "10.3724/abbs.2026084",
+      "publication_date": "2026-06-23",
+      "verification": "retrieved_candidate_metadata_not_screened",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42502066/"
+    }
+  ],
+  "status": "complete",
+  "case_analysis_inputs_accessed": false,
+  "actual_provider": "Europe PMC",
+  "total_hits": 2160,
+  "result_count": 15,
+  "truncated": true
+}

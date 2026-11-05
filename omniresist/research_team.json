@@ -1,0 +1,67 @@
+{
+  "requested_agents": 7,
+  "dispatched_agents_for_this_task": 7,
+  "integrated_modules": 7,
+  "recovered_modules_from_previous_turn": 6,
+  "completed_agent_turns_confirmed_in_current_resume": 1,
+  "updated_at": "2026-11-05T10:02:50+00:00",
+  "execution_note": "Six written research artifacts were recovered after the previous turn; some prior agents reported usage-limit errors after writing. Module completion and parent validation do not imply every agent turn exited successfully. The seventh agent completed in this resume.",
+  "tasks": [
+    {
+      "agent": "o7_01_platforms",
+      "node_id": "node01",
+      "topic": "国际肺癌检测平台：靶向panel与真正WGS、RNA及表观组的已验证能力和盲区",
+      "artifact_status": "recovered_and_parent_validated",
+      "known_prior_usage_limit_error": false,
+      "evidence_assertions": 8
+    },
+    {
+      "agent": "o7_02_wgs",
+      "node_id": "node02",
+      "topic": "WGS与隐藏耐药：结构变异、扩增架构、非编码事件及克隆演化的解释边界",
+      "artifact_status": "recovered_and_parent_validated",
+      "known_prior_usage_limit_error": false,
+      "evidence_assertions": 8
+    },
+    {
+      "agent": "o7_03_rna",
+      "node_id": "node03",
+      "topic": "RNA测序与DNA联合补盲：获得性融合、MET exon14跳跃及表达读出的判读边界",
+      "artifact_status": "recovered_and_parent_validated",
+      "known_prior_usage_limit_error": true,
+      "evidence_assertions": 7
+    },
+    {
+      "agent": "o7_04_epigenetics",
+      "node_id": "node04",
+      "topic": "表观遗传耐药：DNA甲基化、染色质重塑、持留细胞与谱系可塑性",
+      "artifact_status": "recovered_and_parent_validated",
+      "known_prior_usage_limit_error": true,
+      "evidence_assertions": 8
+    },
+    {
+      "agent": "o7_05_singlecell",
+      "node_id": "node05",
+      "topic": "单细胞与空间多组学：残留细胞状态、谱系可塑性及恶性细胞/TME区分",
+      "artifact_status": "recovered_and_parent_validated",
+      "known_prior_usage_limit_error": true,
+      "evidence_assertions": 7
+    },
+    {
+      "agent": "o7_06_liquid",
+      "node_id": "node06",
+      "topic": "液体活检：LoD与肿瘤分数、低脱落/CNS/CSF、UMI/双链、CHIP定源和ctDNA多模态动态",
+      "artifact_status": "recovered_and_parent_validated",
+      "known_prior_usage_limit_error": true,
+      "evidence_assertions": 8
+    },
+    {
+      "agent": "o7_07_clinical",
+      "node_id": "node07",
+      "topic": "临床解释与证据分层：机制未明的分母、MET/RET匹配研究、组织转化及变异可操作性",
+      "artifact_status": "completed_by_agent_and_parent_validated",
+      "known_prior_usage_limit_error": false,
+      "evidence_assertions": 9
+    }
+  ]
+}

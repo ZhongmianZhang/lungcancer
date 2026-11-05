@@ -1,0 +1,363 @@
+{
+  "node_id": "node03",
+  "title": "RNA测序与DNA联合补盲：获得性融合、MET exon14跳跃及表达读出的判读边界",
+  "genes": [
+    "EGFR",
+    "RET",
+    "CCDC6",
+    "NCOA4",
+    "ALK",
+    "PLEKHA7",
+    "EML4",
+    "STRN",
+    "ROS1",
+    "NTRK1",
+    "NTRK2",
+    "NTRK3",
+    "LMNA",
+    "TPM3",
+    "MET",
+    "BRAF",
+    "FGFR3",
+    "TACC3",
+    "AXL",
+    "VIM",
+    "CDH1"
+  ],
+  "mechanism_zh": [
+    "机制未明时，RNA与肿瘤DNA测序提供互补信息：DNA用于突变、拷贝数与重排背景，RNA用于检验是否产生表达的融合接头或异常剪接产物。DNA panel阴性只表示在其覆盖、样本质量和检出限内未发现异常；某些长或复杂内含子、非典型断点及引物结合区缺失可能漏检。靶向RNA融合panel与全转录组RNA-seq的覆盖、表达分析能力及检出限不同，应在报告中注明具体方法。[O03_E01,O03_E02,O03_E03]",
+    "DNA无驱动肺腺癌中RNA有可重复的增益，但不能直接套用于本问题：Benayed队列254例可做RNA的DNA无驱动病例新增36例异常，33例可靶向；Owen队列5570例联合检出491例、DNA单独426例，相对增加15.3%、绝对约1.17个百分点。前者人群不是已知EGFR驱动的获得性耐药，后者也没有证明本目标序列的结局改善。[O03_E01,O03_E02]",
+    "融合应与表达升高分开：能维持阅读框、保留相关激酶功能域并有可靠RNA接头支持的RET、ALK或NTRK融合，才构成需要进一步解释的结构性候选事件；单纯RET/ALK/NTRK总RNA升高不是融合。非典型伙伴、低支持读段、相邻基因或非典型方向的call必须审查比对、剪接结构和伪影，必要时用独立取样/建库、RT-PCR并测序、FISH或经过验证的IHC进行适合该事件的正交确认。阅读框及表达支持仍不能单独证明耐药依赖或药敏。[O03_E01,O03_E04,O03_E07]",
+    "获得性旁路需要治疗时序与克隆证据。Schrock队列31例EGFR与激酶融合共存病例中，只有12例有治疗前未检出融合的配对样本；这一差异不能省略。进展期融合可能代表真正新获得、基线低频亚克隆被选择、另一原发肿瘤或空间异质性；基线阴性的检测覆盖和灵敏度也应相当。保留EGFR敏感突变并共检出融合不证明二者在同一细胞，血浆中的共现尤其需要结合进展病灶组织与病理。[O03_E04,O03_E07]",
+    "RET是目前本节点中获得性融合因果与匹配联合证据较完整的例子：CCDC6-RET在EGFR突变细胞中可造成EGFR-TKI耐药，联合阻断在模型及少数患者中有效；14例奥希替尼后RET融合队列也出现临床活性，但不是随机比较。ALK证据主要来自回顾队列和病例；NTRK1极罕见且共现调查只能提示潜在旁路。不能把针对原发单驱动融合肿瘤的治疗经验自动套到仍有EGFR驱动的获得性双驱动背景。[O03_E04,O03_E05,O03_E06,O03_E07]",
+    "MET exon14跳跃是特定剪接产物，应报告exon13–exon15接头、转录本/读段支持及对应DNA剪接区域变异；它不同于MET扩增，也不同于MET总RNA或蛋白升高。Davies研究的286份双平台样本中，RNA检出10例MET跳跃，6例DNA扩增子平台未检出；但另有2份DNA阳性样本因RNA质量差而无信息。因此RNA可补DNA剪接位点检测的盲区，质量差的RNA阴性不能排除事件；本诊断证据不证明MET exon14在目标联合治疗后新获得或具有足以支配治疗的克隆占比。[O03_E01,O03_E02,O03_E03]",
+    "RNA表达层用于提出和描述状态假说：MET/AXL表达、EMT或谱系相关转录程序需结合肿瘤细胞比例、基质/免疫细胞构成、病理及治疗时间点。高表达不等同于扩增、融合、激酶活化或药物依赖；全转录组相关评分也不能由靶向融合panel替代。表达异常与明确结构事件必须分别记录，不能以表达读出补齐不存在的DNA/RNA致病证据。上述诊断研究支持检测互补性，没有建立这类表达签名在本治疗序列中的用药阈值。[O03_E01,O03_E02,O03_E03]",
+    "对于奥希替尼与铂类/培美曲塞同期治疗后的进展，本节点没有找到可直接应用的、按RNA融合或异常剪接选择挽救方案的前瞻验证。应保留基线、治疗中和进展期样本及每次治疗的确切时序，先确认可解释且可重复的结构事件，再由分子肿瘤讨论或机制分层研究评估；任何fusion call均不能自动触发靶向药添加、替换或多靶叠加。[O03_E01,O03_E02,O03_E03,O03_E04,O03_E05,O03_E06,O03_E07]"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "进展组织DNA未检出明确耐药机制，RNA材料合格",
+      "meaning": "在保留组织病理与DNA信息的同时，增加适当覆盖的靶向RNA融合/剪接检测可补盲；是否需要全转录组取决于问题。",
+      "limitations": "DNA无驱动初诊队列的14%增益不能直接作为EGFR阳性耐药患者的预期；足量、足质样本与特定检测设计决定增益，检测更多不等于改善结局。"
+    },
+    {
+      "marker": "框内RET/ALK/NTRK融合接头及保留激酶域",
+      "meaning": "支持存在表达的候选激酶融合，值得结合基因组断点、独立证实及时间序列判读。",
+      "limitations": "必须核对方向、外显子结构、支持读段和肿瘤来源；融合表达不证明驱动依赖。非典型/低支持call不可自动选药，NTRK1队列不能外推NTRK2/3的获得性耐药证据。"
+    },
+    {
+      "marker": "MET exon13–exon15 RNA接头，及MET exon14邻近DNA剪接变异",
+      "meaning": "二者可互相补充，分别描述实际跳跃产物与潜在基因组原因。",
+      "limitations": "RNA质控、异常接头相对支持量与具体转录本应保留；某DNA splice-site变异是否导致跳跃需解释。不是MET扩增或高表达的替代指标，也不自动证明获得性MET依赖。"
+    },
+    {
+      "marker": "RNA阴性、低RNA量、降解、低有效reads或肿瘤含量不足",
+      "meaning": "需将合格样本内未检出与检测失败/无信息明确分开，并记录检出限、覆盖及质控原因。",
+      "limitations": "低质量RNA阴性不能排除融合或剪接；血浆DNA阴性同样不能排除未脱落或低占比病灶。可根据实际问题利用其他组织、独立方法或经验证的DNA覆盖补充。"
+    },
+    {
+      "marker": "基线阴性、进展时融合阳性且仍保留原EGFR变异",
+      "meaning": "在样本与检测可比时支持治疗选择相关的候选旁路。",
+      "limitations": "基线低频未检出不等于不存在；共现不等于同一细胞。须核对其他原发肿瘤、病理转化、取样位置及既往TKI/化疗顺序，避免把后出现写成已证明新获得。"
+    },
+    {
+      "marker": "MET/AXL或RET/ALK/NTRK总RNA升高；EMT/谱系表达评分",
+      "meaning": "提供细胞状态、组织成分或候选活化程序的研究读出。",
+      "limitations": "不能替代基因拷贝数、明确融合/剪接、蛋白活化及功能依赖；缺少目标同期治疗后经验证的临床阈值，不能由高表达直接匹配抑制剂。"
+    },
+    {
+      "marker": "DNA异常重排但RNA未检出对应产物",
+      "meaning": "可能为不表达/非生产性重排，也可能因RNA覆盖、降解或低克隆比例而未检出。",
+      "limitations": "不能立即判为假阳性或无意义；需同时审查DNA结构解释与RNA质控，并选择适合该事件的独立方法。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在可靠确认获得性RET融合且EGFR驱动仍具相关性时，研究维持EGFR阻断并匹配选择性RET抑制",
+      "status": "investigational",
+      "setting": "奥希替尼后RET融合的模型、概念验证病例及14例非随机前瞻给药队列；非目标同期化疗后已验证策略。",
+      "limitations": "既有队列提供临床活性信号，不能证明相对获益或适用于所有融合；需核对共同耐药事件、患者器官功能及组合相互作用/毒性。分子call或RET高表达不能自动处方。",
+      "evidence_ids": [
+        "O03_E05",
+        "O03_E06"
+      ]
+    },
+    {
+      "strategy": "对经正交确认并有时序支持的获得性ALK融合，考虑机制匹配的EGFR/ALK联合临床研究",
+      "status": "investigational",
+      "setting": "混合EGFR-TKI耐药回顾队列中的病例信号，含奥希替尼后PLEKHA7-ALK病例。",
+      "limitations": "未建立随机疗效、适用融合结构或同期化疗后安全性；ALK表达阳性、共检出或病例缓解不足以支持普遍联合。",
+      "evidence_ids": [
+        "O03_E04"
+      ]
+    },
+    {
+      "strategy": "将可信NTRK融合列入分子讨论与机制分层研究，先验证是否为功能性获得旁路再评估TRK靶向方向",
+      "status": "investigational",
+      "setting": "罕见EGFR/NTRK1共现与既往EGFR-TKI暴露的回顾性调查。",
+      "limitations": "尚不能把共现调查当作EGFR/TRK联合有效证据，不能自动移植原发融合肿瘤的单药证据；需解释NTRK具体成员、伙伴、结构、表达与竞争耐药克隆。",
+      "evidence_ids": [
+        "O03_E04",
+        "O03_E07"
+      ]
+    },
+    {
+      "strategy": "不支持仅凭MET总RNA升高、DNA剪接候选变异或一次RNA跳跃call直接添加MET抑制剂",
+      "status": "not_supported",
+      "setting": "MET exon14诊断补盲与目标治疗序列的证据边界。",
+      "limitations": "本节点相关研究证明的是检测增益，未验证奥希替尼同期铂/培美后MET exon14的获得性频率及匹配疗效。须分开确认跳跃、扩增、表达与功能依赖，再讨论临床研究。",
+      "evidence_ids": [
+        "O03_E01",
+        "O03_E02",
+        "O03_E03"
+      ]
+    },
+    {
+      "strategy": "不支持按RNA融合面板阴性排除全部旁路，或按任意fusion call自动叠加靶向治疗",
+      "status": "not_supported",
+      "setting": "机制未明耐药的自动治疗映射。",
+      "limitations": "样本失败、面板盲区及非生产性重排都可能影响解读；检出更多结构事件尚不等于结局改善，尤其缺少目标同期治疗后前瞻效用与毒性证据。",
+      "evidence_ids": [
+        "O03_E01",
+        "O03_E02",
+        "O03_E03",
+        "O03_E04",
+        "O03_E05",
+        "O03_E06",
+        "O03_E07"
+      ]
+    }
+  ],
+  "research_gaps": [
+    "需在明确奥希替尼与铂/培美曲塞同期治疗人群建立基线、治疗中及进展期配对组织DNA/RNA队列，单独报告既往TKI、维持治疗和各药暴露时序；目前原始研究不能给出该序列融合/剪接耐药发生率。",
+    "需比较高质量组织DNA/RNA、不同RNA方法和血浆DNA的真实增益，并把RNA失败、组织不足和不可评价者纳入流程分母；建立适用于FFPE、低肿瘤量及转移部位的质控与再取样规则。",
+    "需用相同检测灵敏度、同病灶/单细胞或其他克隆证据区分真正新获得、既有亚克隆选择、空间混合和第二原发；配对基线阴性仍有检测限。",
+    "需对非典型RET/ALK/NTRK伙伴与MET异常剪接建立RNA结构、蛋白活化及功能依赖的一致判据，避免将非生产性、read-through、比对伪影或低比例跳跃作为耐药驱动。",
+    "需在分子机制可靠分层后验证治疗效用、疗效持续时间及联合毒性；RET小队列、ALK病例及NTRK共现调查的证据强度不同，不能统一映射为同级推荐。",
+    "需将MET扩增、MET exon14跳跃及MET高表达分别量化，并与其他共存耐药机制比较；检测出异常产物不等同于MET依赖。",
+    "需区分肿瘤细胞表达状态与基质/免疫组成，研究化疗诱导损伤、可逆持留和谱系改变如何影响RNA读出；表达评分是否有预测而非仅描述价值尚待验证。"
+  ],
+  "evidence": [
+    {
+      "title": "High Yield of RNA Sequencing for Targetable Kinase Fusions in Lung Adenocarcinomas with No Mitogenic Driver Alteration Detected by DNA Sequencing and Low Tumor Mutation Burden.",
+      "authors": "Benayed R, Offin M, Mullaney K, Sukhadia P, Rios K, Desmeules P, Ptashkin R, Won H, Chang J, Halpenny D, Schram AM, Rudin CM, Hyman DM, Arcila ME, Berger MF, Zehir A, Kris MG, Drilon A, Ladanyi M.",
+      "year": 2019,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-0225",
+      "pmid": "31028088",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-19-0225",
+      "id": "O03_E01",
+      "publication_date": "2019-04-26",
+      "scope": "mixed",
+      "design": "clinical_genomic_cohort_with_reflex_targeted_RNA_testing",
+      "main_finding_zh": "在2522例肺腺癌临床基因组检测中，对DNA未发现明确促增殖驱动且有可用组织的275例进一步筛查，254例材料足够进行靶向RNA检测；新增36例异常（14%），其中33例为可靶向异常（27例框内融合、6例MET exon14异常）。低TMB的DNA无驱动亚组更富集融合；接受匹配治疗的10例中8例获临床获益。",
+      "limitation_zh": "这是选择性DNA无驱动肺腺癌人群，不能把14%外推到已知EGFR突变、奥希替尼与同期铂/培美曲塞后机制未明患者。治疗获益仅为10例描述性结果，RNA材料不足者不在增益分母内；靶向RNA panel并非全转录组测序。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31028088+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:59+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1158%2F1078-0432.ccr-19-0225",
+        "publication_date_source": "PubMed ArticleDate Electronic; corroborated by Europe PMC firstPublicationDate"
+      }
+    },
+    {
+      "title": "Actionable Structural Variant Detection via RNA-NGS and DNA-NGS in Patients With Advanced Non-Small Cell Lung Cancer.",
+      "authors": "Owen D, Ben-Shachar R, Feliciano J, Gai L, Beauchamp KA, Rivers Z, Hockenberry AJ, Harrison G, Guittar J, Catela C, Parsons J, Cohen E, Sasser K, Nimeiri H, Guinney J, Patel J, Morgensztern D.",
+      "year": 2024,
+      "journal": "JAMA network open",
+      "doi": "10.1001/jamanetworkopen.2024.42970",
+      "pmid": "39495511",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2024.42970",
+      "id": "O03_E02",
+      "publication_date": "2024-11-04",
+      "scope": "mixed",
+      "design": "multisite_retrospective_paired_DNA_RNA_cohort",
+      "main_finding_zh": "5570例具备足量组织、可评价的晚期肺腺癌中，DNA/RNA联合检出491例可干预结构变异，DNA单独检出426例；相对增加15.3%，绝对增加65/5570，约1.17个百分点。融合检出376比329例，MET exon14异常115比97例；检测平台与靶向治疗采用或临床结局无显著关联。",
+      "limitation_zh": "回顾性商业多模态数据库且要求两类检测材料充足；15.3%是相对检出增益，不能写成总人群增加15.3个百分点，也不能写成生存改善。未建立目标同期治疗后亚组的检出率或处方效用。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39495511+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:59+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1001%2Fjamanetworkopen.2024.42970",
+        "publication_date_source": "PubMed ArticleDate Electronic; corroborated by Europe PMC firstPublicationDate"
+      }
+    },
+    {
+      "title": "DNA-Based versus RNA-Based Detection of MET Exon 14 Skipping Events in Lung Cancer.",
+      "authors": "Davies KD, Lomboy A, Lawrence CA, Yourshaw M, Bocsi GT, Camidge DR, Aisner DL.",
+      "year": 2019,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2018.12.020",
+      "pmid": "30639620",
+      "url": "https://doi.org/10.1016/j.jtho.2018.12.020",
+      "id": "O03_E03",
+      "publication_date": "2019-01-09",
+      "scope": "mixed",
+      "design": "diagnostic_comparison_of_amplicon_DNA_and_anchored_RNA_NGS",
+      "main_finding_zh": "DNA扩增子检测在856份NSCLC样本中检出11例MET exon14变异，RNA锚定多重PCR检测在404份中检出17例跳跃。在286份双平台检测样本中，RNA检出10例阳性，其中6例DNA未检出；DNA引物结合区域缺失是可能漏检原因。2份DNA阳性样本因RNA质量差而在RNA平台无信息。",
+      "limitation_zh": "非完全相同的总样本人群，不能仅比较11/856与17/404就推定任意RNA平台均优于任意DNA平台；结论与扩增子设计、覆盖和RNA质量相关。诊断研究不证明MET exon14是目标序列获得性耐药，也不比较MET药物疗效。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30639620+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:57+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2018.12.020",
+        "publication_date_source": "PubMed ArticleDate Electronic; corroborated by Europe PMC firstPublicationDate"
+      }
+    },
+    {
+      "title": "Receptor Tyrosine Kinase Fusions and BRAF Kinase Fusions are Rare but Actionable Resistance Mechanisms to EGFR Tyrosine Kinase Inhibitors.",
+      "authors": "Schrock AB, Zhu VW, Hsieh WS, Madison R, Creelan B, Silberberg J, Costin D, Bharne A, Bonta I, Bosemani T, Nikolinakos P, Ross JS, Miller VA, Ali SM, Klempner SJ, Ou SI.",
+      "year": 2018,
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2018.05.027",
+      "pmid": "29883838",
+      "url": "https://doi.org/10.1016/j.jtho.2018.05.027",
+      "id": "O03_E04",
+      "publication_date": "2018-06-05",
+      "scope": "post_egfr_tki",
+      "design": "retrospective_clinical_genomic_cohort_with_paired_subset_and_cases",
+      "main_finding_zh": "3505例独立EGFR突变NSCLC中31例检出共存激酶融合，包括BRAF 10例、ALK 7例、RET 6例、FGFR3 6例、EGFR和NTRK1各1例。27例有既往EGFR突变诊断或EGFR-TKI治疗史，其中12例有治疗前配对样本且未检出该融合；部分匹配联合病例获益，包括获得PLEKHA7-ALK后的奥希替尼联合alectinib持续部分缓解。",
+      "limitation_zh": "回顾性检测队列、不同EGFR-TKI和取样背景混合；31/3505是共检出比例，不是奥希替尼或目标同期方案的获得性融合发生率。只有部分患者有配对基线；融合共存不能单独证明同一细胞、因果作用或每一种融合的药敏。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A29883838+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:57+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2018.05.027",
+        "publication_date_source": "PubMed ArticleDate Electronic; corroborated by Europe PMC firstPublicationDate"
+      }
+    },
+    {
+      "title": "Landscape of Acquired Resistance to Osimertinib in EGFR-Mutant NSCLC and Clinical Validation of Combined EGFR and RET Inhibition with Osimertinib and BLU-667 for Acquired RET Fusion.",
+      "authors": "Piotrowska Z, Isozaki H, Lennerz JK, Gainor JF, Lennes IT, Zhu VW, Marcoux N, Banwait MK, Digumarthy SR, Su W, Yoda S, Riley AK, Nangia V, Lin JJ, Nagy RJ, Lanman RB, Dias-Santagata D, Mino-Kenudson M, Iafrate AJ, Heist RS, Shaw AT, Evans EK, Clifford C, Ou SI, Wolf B, Hata AN, Sequist LV.",
+      "year": 2018,
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-18-1022",
+      "pmid": "30257958",
+      "url": "https://doi.org/10.1158/2159-8290.cd-18-1022",
+      "id": "O03_E05",
+      "publication_date": "2018-09-26",
+      "scope": "post_osimertinib",
+      "design": "translational_resistance_biopsy_cohort_functional_models_and_two_treated_cases",
+      "main_finding_zh": "41例奥希替尼耐药活检队列中发现2例获得性CCDC6-RET。将CCDC6-RET引入EGFR突变细胞可造成EGFR-TKI耐药；RET抑制可恢复对EGFR阻断的敏感性。2例RET相关耐药患者接受奥希替尼与BLU-667联合后均有快速影像学缓解，支持RET旁路的机制概念验证。",
+      "limitation_zh": "细胞功能证据加极小临床病例数；不能估计比较疗效、耐药融合整体频率或长期毒性。未验证奥希替尼与铂/培美曲塞同期治疗后人群，也不能据RET转录本表达量直接选药。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30257958+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:58+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1158%2F2159-8290.cd-18-1022",
+        "publication_date_source": "PubMed ArticleDate Electronic; corroborated by Europe PMC firstPublicationDate"
+      }
+    },
+    {
+      "title": "Osimertinib and Selpercatinib Efficacy, Safety, and Resistance in a Multicenter, Prospectively Treated Cohort of EGFR-Mutant and RET Fusion-Positive Lung Cancers.",
+      "authors": "Rotow J, Patel JD, Hanley MP, Yu H, Awad M, Goldman JW, Nechushtan H, Scheffler M, Kuo CS, Rajappa S, Harada G, Clifford S, Santucci A, Silva L, Tupper R, Oxnard GR, Kherani J, Drilon A.",
+      "year": 2023,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-22-2189",
+      "pmid": "36996322",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-22-2189",
+      "id": "O03_E06",
+      "publication_date": "2023-03-30",
+      "scope": "post_osimertinib",
+      "design": "multicenter_prospectively_treated_expanded_access_and_compassionate_use_cohort",
+      "main_finding_zh": "跨5国汇总14例在奥希替尼后进展且组织或血浆检出RET融合的EGFR突变NSCLC，接受奥希替尼与selpercatinib联合。12例可评价患者的客观缓解率为50%（95%CI 25%–75%），疾病控制率83%，14例中位治疗持续时间7.9个月；后续耐药可涉及EGFR/RET靶内、ALK/KRAS/BRAF等旁路或多克隆变化。",
+      "limitation_zh": "前瞻性给药的扩大使用/单患者同情使用汇总，不是随机试验；样本小且选择偏倚明显，治疗持续时间不能当作PFS。没有明确奥希替尼同期铂/培美后亚组验证；摘要的安全可行描述不能证明所有患者组合可耐受。首次公开日期按Crossref线上2023-03-30，Europe PMC的2023-08-01为刊期相关日期。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A36996322+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:13:01+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1158%2F1078-0432.ccr-22-2189",
+        "publication_date_source": "Crossref published-online"
+      }
+    },
+    {
+      "title": "Evidence of NTRK1 Fusion as Resistance Mechanism to EGFR TKI in EGFR+ NSCLC: Results From a Large-Scale Survey of NTRK1 Fusions in Chinese Patients With Lung Cancer.",
+      "authors": "Xia H, Xue X, Ding H, Ou Q, Wu X, Nagasaka M, Shao YW, Hu X, Ou SI.",
+      "year": 2020,
+      "journal": "Clinical lung cancer",
+      "doi": "10.1016/j.cllc.2019.09.004",
+      "pmid": "31761448",
+      "url": "https://doi.org/10.1016/j.cllc.2019.09.004",
+      "id": "O03_E07",
+      "publication_date": "2019-09-26",
+      "scope": "post_egfr_tki",
+      "design": "retrospective_large_scale_NTRK1_genomic_survey",
+      "main_finding_zh": "21155例中国肺癌的回顾性分子检测中检出12例NTRK1融合，含10例肺腺癌；共7类融合伙伴，另有一例非典型BCL9上游区域与NTRK1 exon12重排。12例中6例伴EGFR活化突变和/或既往EGFR-TKI治疗，提示NTRK1可能构成罕见耐药旁路。",
+      "limitation_zh": "共现和治疗史不能确认这6例全部为新获得融合，且不等同于奥希替尼耐药或同一克隆。DNA重排尤其非典型伙伴仍需RNA与结构解释；没有提供按NTRK1融合选择EGFR/TRK联合的前瞻疗效。卷年2020，首次电子发表2019-09-26。",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC core metadata and abstract; PubMed XML and Crossref metadata cross-check",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A31761448+AND+SRC%3AMED&format=json&resultType=core&pageSize=3&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:12:58+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=31028088%2C39495511%2C30639620%2C29883838%2C30257958%2C36996322%2C31761448&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1016%2Fj.cllc.2019.09.004",
+        "publication_date_source": "PubMed ArticleDate Electronic; corroborated by Europe PMC firstPublicationDate"
+      }
+    }
+  ],
+  "review_provenance": {
+    "updated_at": "2026-11-04T10:13:01+00:00",
+    "evidence_window": {
+      "start": "2011-11-04",
+      "end": "2026-11-04",
+      "date_rule": "按首次公开电子发表日期纳入，保留卷年；PubMed Electronic日期优先，RET队列另以Crossref published-online 2023-03-30纠正Europe PMC刊期日期。"
+    },
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Parent verified that no callable Firecrawl MCP tool, CLI or injected credential was available; no Firecrawl request was made in this task.",
+    "actual_verification_provider": [
+      "Europe PMC",
+      "PubMed",
+      "Crossref"
+    ],
+    "verification": "七篇均为原始研究，实际读取Europe PMC核心题录与摘要，PubMed XML复核题名、摘要存在性、文献类型和电子日期，Crossref核对DOI/题名/日期。仅元数据与摘要审阅，未阅读全文；不是系统综述或可保证穷尽的检索。",
+    "search_topics": [
+      "osimertinib acquired fusion and resistance",
+      "DNA driver-negative lung adenocarcinoma incremental RNA sequencing",
+      "paired DNA/RNA actionable structural variant detection",
+      "DNA versus RNA MET exon14 skipping",
+      "NTRK1 fusion EGFR-TKI resistance"
+    ],
+    "journal_screening": {
+      "edition": 2025,
+      "categories": [
+        "Oncology",
+        "Immunology",
+        "Genetics & Heredity"
+      ],
+      "top_n_per_category": 80,
+      "rank_status": "pending",
+      "rankings_supplied": false,
+      "journal_ranks": null,
+      "eligibility": "pending",
+      "note_zh": "未获得可核验的2025版JCR分类与排名原表；七篇为题录/摘要已核验的候选证据，不宣称任何期刊已满足三个类别任一前80，亦不编造类别、名次、JIF或分区。JAMA Network Open等综合期刊的分类资格同样待查。"
+    },
+    "publication_integrity_check": "PubMed XML publication types and CommentsCorrections checked for all seven PMIDs; no indexed retraction/correction notice observed in these records. CommentIn links for E01 and E06 are commentaries, not retractions. This limited check does not guarantee absence of later editorial action.",
+    "full_text_reviewed": false,
+    "original_research_count": 7,
+    "knowledge_status": "candidate_evidence_pending_JCR_eligibility",
+    "clinical_sequence": "EGFR-mutant NSCLC progressing after concurrent osimertinib plus platinum/pemetrexed",
+    "target_sequence_direct_evidence_found": false,
+    "automatic_treatment_mapping_supported": false,
+    "outcome_evidence_boundary": "RNA/DNA检测增益与匹配治疗效用分开。原发驱动阴性人群、EGFR-TKI混合耐药、奥希替尼后耐药及目标同期化疗序列分别标记，不互相替代。"
+  }
+}

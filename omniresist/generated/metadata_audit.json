@@ -1,0 +1,1035 @@
+{
+  "checked_at": "2026-11-05T09:59:10+00:00",
+  "status": "complete",
+  "publication_count": 52,
+  "matched_count": 52,
+  "requests": [
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2225801821%22+OR+EXT_ID%3A%2234145282%22+OR+EXT_ID%3A%2235294956%22+OR+EXT_ID%3A%2232976510%22+OR+EXT_ID%3A%2229691297%22+OR+EXT_ID%3A%2237981090%22+OR+EXT_ID%3A%2231645765%22+OR+EXT_ID%3A%2231911548%22+OR+EXT_ID%3A%2232025007%22+OR+EXT_ID%3A%2232025015%22+OR+EXT_ID%3A%2232807987%22+OR+EXT_ID%3A%2237046096%22+OR+EXT_ID%3A%2225964297%22+OR+EXT_ID%3A%2239793324%22+OR+EXT_ID%3A%2241862707%22+OR+EXT_ID%3A%2231028088%22+OR+EXT_ID%3A%2239495511%22+OR+EXT_ID%3A%2230639620%22+OR+EXT_ID%3A%2229883838%22+OR+EXT_ID%3A%2230257958%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-05T09:59:08+00:00"
+    },
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2236996322%22+OR+EXT_ID%3A%2231761448%22+OR+EXT_ID%3A%2227346347%22+OR+EXT_ID%3A%2227214401%22+OR+EXT_ID%3A%2229934325%22+OR+EXT_ID%3A%2231935369%22+OR+EXT_ID%3A%2232920200%22+OR+EXT_ID%3A%2234381210%22+OR+EXT_ID%3A%2237541244%22+OR+EXT_ID%3A%2242611544%22+OR+EXT_ID%3A%2232822576%22+OR+EXT_ID%3A%2226828195%22+OR+EXT_ID%3A%2226891683%22+OR+EXT_ID%3A%2232707077%22+OR+EXT_ID%3A%2232707078%22+OR+EXT_ID%3A%2239150541%22+OR+EXT_ID%3A%2222853953%22+OR+EXT_ID%3A%2227354477%22+OR+EXT_ID%3A%2227018799%22+OR+EXT_ID%3A%2226554728%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-05T09:59:09+00:00"
+    },
+    {
+      "request_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A%2231768066%22+OR+EXT_ID%3A%2237379430%22+OR+EXT_ID%3A%2231142840%22+OR+EXT_ID%3A%2234176681%22+OR+EXT_ID%3A%2236849494%22+OR+EXT_ID%3A%2240461383%22+OR+EXT_ID%3A%2239089305%22+OR+EXT_ID%3A%2230550363%22+OR+EXT_ID%3A%2230137196%22+OR+EXT_ID%3A%2227993330%22%29&format=json&resultType=core&pageSize=100&cursorMark=%2A",
+      "cached": false,
+      "retrieved_at": "2026-11-05T09:59:09+00:00"
+    },
+    {
+      "request_url": "https://api.crossref.org/works/10.1016%2Fj.jtho.2024.09.184"
+    },
+    {
+      "request_url": "https://api.crossref.org/works/10.1200%2Fjco.2025.43.17_suppl.lba8505"
+    }
+  ],
+  "errors": [],
+  "records": [
+    {
+      "source_ids": [
+        "O01_E01"
+      ],
+      "pmid": "25801821",
+      "doi": "10.1016/j.jmoldx.2014.12.006",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Memorial Sloan Kettering-Integrated Mutation Profiling of Actionable Cancer Targets (MSK-IMPACT): A Hybridization Capture-Based Next-Generation Sequencing Clinical Assay for Solid Tumor Molecular Oncology.",
+        "doi": "10.1016/j.jmoldx.2014.12.006",
+        "first_publication_date": "2015-03-20",
+        "journal": "The Journal of molecular diagnostics : JMD",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E02"
+      ],
+      "pmid": "34145282",
+      "doi": "10.1038/s41467-021-24109-5",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Enhanced specificity of clinical high-sensitivity tumor mutation profiling in cell-free DNA via paired normal sequencing using MSK-ACCESS.",
+        "doi": "10.1038/s41467-021-24109-5",
+        "first_publication_date": "2021-06-18",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E03"
+      ],
+      "pmid": "35294956",
+      "doi": "10.1371/journal.pone.0264138",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Clinical and analytical validation of FoundationOne®CDx, a comprehensive genomic profiling assay for solid tumors.",
+        "doi": "10.1371/journal.pone.0264138",
+        "first_publication_date": "2022-03-16",
+        "journal": "PloS one",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E04"
+      ],
+      "pmid": "32976510",
+      "doi": "10.1371/journal.pone.0237802",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Clinical and analytical validation of FoundationOne Liquid CDx, a novel 324-Gene cfDNA-based comprehensive genomic profiling assay for cancers of solid tumor origin.",
+        "doi": "10.1371/journal.pone.0237802",
+        "first_publication_date": "2020-09-25",
+        "journal": "PloS one",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E05"
+      ],
+      "pmid": "29691297",
+      "doi": "10.1158/1078-0432.ccr-17-3831",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Validation of a Plasma-Based Comprehensive Cancer Genotyping Assay Utilizing Orthogonal Tissue- and Plasma-Based Methodologies.",
+        "doi": "10.1158/1078-0432.ccr-17-3831",
+        "first_publication_date": "2018-04-24",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E06"
+      ],
+      "pmid": "37981090",
+      "doi": "10.1016/j.jmoldx.2023.10.002",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Pan-Tumor Analytical Validation and Osimertinib Clinical Validation in EGFR Mutant Non-Small-Cell Lung Cancer, Supporting the First Next-Generation Sequencing Liquid Biopsy in Vitro Diagnostic.",
+        "doi": "10.1016/j.jmoldx.2023.10.002",
+        "first_publication_date": "2023-11-18",
+        "journal": "The Journal of molecular diagnostics : JMD",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E07",
+        "O02_E02"
+      ],
+      "pmid": "31645765",
+      "doi": "10.1038/s41586-019-1689-y",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Pan-cancer whole-genome analyses of metastatic solid tumours.",
+        "doi": "10.1038/s41586-019-1689-y",
+        "first_publication_date": "2019-10-23",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O01_E08"
+      ],
+      "pmid": "31911548",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in <i>EGFR</i>-Mutant Lung Cancer.",
+        "doi": "10.1158/1078-0432.ccr-19-3563",
+        "first_publication_date": "2020-01-07",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E01"
+      ],
+      "pmid": "32025007",
+      "doi": "10.1038/s41586-020-1969-6",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Pan-cancer analysis of whole genomes.",
+        "doi": "10.1038/s41586-020-1969-6",
+        "first_publication_date": "2020-02-05",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E03"
+      ],
+      "pmid": "32025015",
+      "doi": "10.1038/s41586-020-1965-x",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Analyses of non-coding somatic drivers in 2,658 cancer whole genomes.",
+        "doi": "10.1038/s41586-020-1965-x",
+        "first_publication_date": "2020-02-05",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E04"
+      ],
+      "pmid": "32807987",
+      "doi": "10.1038/s41588-020-0678-2",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Extrachromosomal DNA is associated with oncogene amplification and poor outcome across multiple cancers.",
+        "doi": "10.1038/s41588-020-0678-2",
+        "first_publication_date": "2020-08-17",
+        "journal": "Nature genetics",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E05"
+      ],
+      "pmid": "37046096",
+      "doi": "10.1038/s41586-023-05783-5",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "The evolution of lung cancer and impact of subclonal selection in TRACERx.",
+        "doi": "10.1038/s41586-023-05783-5",
+        "first_publication_date": "2023-04-12",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E06"
+      ],
+      "pmid": "25964297",
+      "doi": "10.1158/1078-0432.ccr-15-0560",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "The Allelic Context of the C797S Mutation Acquired upon Treatment with Third-Generation EGFR Inhibitors Impacts Sensitivity to Subsequent Treatment Strategies.",
+        "doi": "10.1158/1078-0432.ccr-15-0560",
+        "first_publication_date": "2015-05-11",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E07"
+      ],
+      "pmid": "39793324",
+      "doi": "10.1016/j.lungcan.2025.108081",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Genomic analysis of comprehensive next generation sequencing data to explore the criteria for MET amplification as an actionable biomarker in NSCLC.",
+        "doi": "10.1016/j.lungcan.2025.108081",
+        "first_publication_date": "2025-01-04",
+        "journal": "Lung cancer (Amsterdam, Netherlands)",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O02_E08"
+      ],
+      "pmid": "41862707",
+      "doi": "10.1038/s41591-026-04280-2",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Real-world clinical utility of tumor whole-genome sequencing in solid cancers.",
+        "doi": "10.1038/s41591-026-04280-2",
+        "first_publication_date": "2026-03-20",
+        "journal": "Nature medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E01"
+      ],
+      "pmid": "31028088",
+      "doi": "10.1158/1078-0432.ccr-19-0225",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "High Yield of RNA Sequencing for Targetable Kinase Fusions in Lung Adenocarcinomas with No Mitogenic Driver Alteration Detected by DNA Sequencing and Low Tumor Mutation Burden.",
+        "doi": "10.1158/1078-0432.ccr-19-0225",
+        "first_publication_date": "2019-04-26",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E02"
+      ],
+      "pmid": "39495511",
+      "doi": "10.1001/jamanetworkopen.2024.42970",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Actionable Structural Variant Detection via RNA-NGS and DNA-NGS in Patients With Advanced Non-Small Cell Lung Cancer.",
+        "doi": "10.1001/jamanetworkopen.2024.42970",
+        "first_publication_date": "2024-11-04",
+        "journal": "JAMA network open",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E03"
+      ],
+      "pmid": "30639620",
+      "doi": "10.1016/j.jtho.2018.12.020",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "DNA-Based versus RNA-Based Detection of MET Exon 14 Skipping Events in Lung Cancer.",
+        "doi": "10.1016/j.jtho.2018.12.020",
+        "first_publication_date": "2019-01-09",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E04"
+      ],
+      "pmid": "29883838",
+      "doi": "10.1016/j.jtho.2018.05.027",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Receptor Tyrosine Kinase Fusions and BRAF Kinase Fusions are Rare but Actionable Resistance Mechanisms to EGFR Tyrosine Kinase Inhibitors.",
+        "doi": "10.1016/j.jtho.2018.05.027",
+        "first_publication_date": "2018-06-05",
+        "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E05"
+      ],
+      "pmid": "30257958",
+      "doi": "10.1158/2159-8290.cd-18-1022",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Landscape of Acquired Resistance to Osimertinib in <i>EGFR</i>-Mutant NSCLC and Clinical Validation of Combined EGFR and RET Inhibition with Osimertinib and BLU-667 for Acquired <i>RET</i> Fusion.",
+        "doi": "10.1158/2159-8290.cd-18-1022",
+        "first_publication_date": "2018-09-26",
+        "journal": "Cancer discovery",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E06",
+        "O07_E06"
+      ],
+      "pmid": "36996322",
+      "doi": "10.1158/1078-0432.ccr-22-2189",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Osimertinib and Selpercatinib Efficacy, Safety, and Resistance in a Multicenter, Prospectively Treated Cohort of EGFR-Mutant and RET Fusion-Positive Lung Cancers.",
+        "doi": "10.1158/1078-0432.ccr-22-2189",
+        "first_publication_date": "2023-08-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O03_E07"
+      ],
+      "pmid": "31761448",
+      "doi": "10.1016/j.cllc.2019.09.004",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Evidence of NTRK1 Fusion as Resistance Mechanism to EGFR TKI in EGFR+ NSCLC: Results From a Large-Scale Survey of NTRK1 Fusions in Chinese Patients With Lung Cancer.",
+        "doi": "10.1016/j.cllc.2019.09.004",
+        "first_publication_date": "2019-09-26",
+        "journal": "Clinical lung cancer",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E01"
+      ],
+      "pmid": "27346347",
+      "doi": "10.1016/j.celrep.2016.05.087",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Oncogenic EGFR Represses the TET1 DNA Demethylase to Induce Silencing of Tumor Suppressors in Cancer Cells.",
+        "doi": "10.1016/j.celrep.2016.05.087",
+        "first_publication_date": "2016-06-23",
+        "journal": "Cell reports",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E02"
+      ],
+      "pmid": "27214401",
+      "doi": "10.1038/nchembio.2085",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "An inhibitor of KDM5 demethylases reduces survival of drug-tolerant cancer cells.",
+        "doi": "10.1038/nchembio.2085",
+        "first_publication_date": "2016-05-23",
+        "journal": "Nature chemical biology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E03"
+      ],
+      "pmid": "29934325",
+      "doi": "10.1158/1541-7786.mcr-17-0637",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Hypoxia Promotes Resistance to EGFR Inhibition in NSCLC Cells via the Histone Demethylases, LSD1 and PLU-1.",
+        "doi": "10.1158/1541-7786.mcr-17-0637",
+        "first_publication_date": "2018-06-22",
+        "journal": "Molecular cancer research : MCR",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E04"
+      ],
+      "pmid": "31935369",
+      "doi": "10.1016/j.ccell.2019.12.006",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway.",
+        "doi": "10.1016/j.ccell.2019.12.006",
+        "first_publication_date": "2020-01-01",
+        "journal": "Cancer cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E05"
+      ],
+      "pmid": "32920200",
+      "doi": "10.1016/j.canlet.2020.09.003",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Loss of histone lysine methyltransferase EZH2 confers resistance to tyrosine kinase inhibitors in non-small cell lung cancer.",
+        "doi": "10.1016/j.canlet.2020.09.003",
+        "first_publication_date": "2020-09-10",
+        "journal": "Cancer letters",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E06",
+        "O05_E04"
+      ],
+      "pmid": "34381210",
+      "doi": "10.1038/s41586-021-03796-6",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Cycling cancer persister cells arise from lineages with distinct programs.",
+        "doi": "10.1038/s41586-021-03796-6",
+        "first_publication_date": "2021-08-11",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E07"
+      ],
+      "pmid": "37541244",
+      "doi": "10.1016/j.ccell.2023.07.005",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Mammalian SWI/SNF chromatin remodeling complexes promote tyrosine kinase inhibitor resistance in EGFR-mutant lung cancer.",
+        "doi": "10.1016/j.ccell.2023.07.005",
+        "first_publication_date": "2023-08-03",
+        "journal": "Cancer cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O04_E08"
+      ],
+      "pmid": "42611544",
+      "doi": "10.1172/jci199454",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Polycomb scaffolding subunit EED supports the SCLC neuroendocrine identity and EGFR-mutant LUAD-to-SCLC transformation.",
+        "doi": "10.1172/jci199454",
+        "first_publication_date": "2026-08-18",
+        "journal": "The Journal of clinical investigation",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O05_E01"
+      ],
+      "pmid": "32822576",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+        "doi": "10.1016/j.cell.2020.07.017",
+        "first_publication_date": "2020-08-20",
+        "journal": "Cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O05_E02"
+      ],
+      "pmid": "26828195",
+      "doi": "10.1038/nm.4040",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tumor cells can follow distinct evolutionary paths to become resistant to epidermal growth factor receptor inhibition.",
+        "doi": "10.1038/nm.4040",
+        "first_publication_date": "2016-02-01",
+        "journal": "Nature medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O05_E03"
+      ],
+      "pmid": "26891683",
+      "doi": "10.1038/ncomms10690",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Diverse drug-resistance mechanisms can emerge from drug-tolerant cancer persister cells.",
+        "doi": "10.1038/ncomms10690",
+        "first_publication_date": "2016-02-19",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O05_E05"
+      ],
+      "pmid": "32707077",
+      "doi": "10.1016/j.ccell.2020.06.012",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Emergence of a High-Plasticity Cell State during Lung Cancer Evolution.",
+        "doi": "10.1016/j.ccell.2020.06.012",
+        "first_publication_date": "2020-07-23",
+        "journal": "Cancer cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O05_E06"
+      ],
+      "pmid": "32707078",
+      "doi": "10.1016/j.ccell.2020.06.006",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Epigenomic State Transitions Characterize Tumor Progression in Mouse Lung Adenocarcinoma.",
+        "doi": "10.1016/j.ccell.2020.06.006",
+        "first_publication_date": "2020-07-23",
+        "journal": "Cancer cell",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O05_E07"
+      ],
+      "pmid": "39150541",
+      "doi": "10.1158/1078-0432.ccr-24-0160",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Transcriptomic Heterogeneity of EGFR-Mutant Non-Small Cell Lung Cancer Evolution Toward Small-Cell Lung Cancer.",
+        "doi": "10.1158/1078-0432.ccr-24-0160",
+        "first_publication_date": "2024-10-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E01"
+      ],
+      "pmid": "22853953",
+      "doi": "10.1073/pnas.1208715109",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Detection of ultra-rare mutations by next-generation sequencing.",
+        "doi": "10.1073/pnas.1208715109",
+        "first_publication_date": "2012-08-01",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E02"
+      ],
+      "pmid": "27354477",
+      "doi": "10.1200/jco.2016.66.7162",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Association Between Plasma Genotyping and Outcomes of Treatment With Osimertinib (AZD9291) in Advanced Non-Small-Cell Lung Cancer.",
+        "doi": "10.1200/jco.2016.66.7162",
+        "first_publication_date": "2016-06-27",
+        "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E03"
+      ],
+      "pmid": "27018799",
+      "doi": "10.1038/nbt.3520",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Integrated digital error suppression for improved detection of circulating tumor DNA.",
+        "doi": "10.1038/nbt.3520",
+        "first_publication_date": "2016-03-28",
+        "journal": "Nature biotechnology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E04"
+      ],
+      "pmid": "26554728",
+      "doi": "10.1038/ncomms9839",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Cerebrospinal fluid-derived circulating tumour DNA better represents the genomic alterations of brain tumours than plasma.",
+        "doi": "10.1038/ncomms9839",
+        "first_publication_date": "2015-11-10",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E05"
+      ],
+      "pmid": "31768066",
+      "doi": "10.1038/s41591-019-0652-7",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants.",
+        "doi": "10.1038/s41591-019-0652-7",
+        "first_publication_date": "2019-11-25",
+        "journal": "Nature medicine",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E06"
+      ],
+      "pmid": "37379430",
+      "doi": "10.1158/1078-0432.ccr-22-3146",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Early Clearance of Plasma Epidermal Growth Factor Receptor Mutations as a Predictor of Outcome on Osimertinib in Advanced Non-Small Cell Lung Cancer; Exploratory Analysis from AURA3 and FLAURA.",
+        "doi": "10.1158/1078-0432.ccr-22-3146",
+        "first_publication_date": "2023-09-01",
+        "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E07"
+      ],
+      "pmid": "31142840",
+      "doi": "10.1038/s41586-019-1272-6",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Genome-wide cell-free DNA fragmentation in patients with cancer.",
+        "doi": "10.1038/s41586-019-1272-6",
+        "first_publication_date": "2019-05-29",
+        "journal": "Nature",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O06_E08"
+      ],
+      "pmid": "34176681",
+      "doi": "10.1016/j.annonc.2021.05.806",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Clinical validation of a targeted methylation-based multi-cancer early detection test using an independent validation set.",
+        "doi": "10.1016/j.annonc.2021.05.806",
+        "first_publication_date": "2021-06-24",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E01"
+      ],
+      "pmid": "36849494",
+      "doi": "10.1038/s41467-023-35961-y",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Candidate mechanisms of acquired resistance to first-line osimertinib in EGFR-mutated advanced non-small cell lung cancer.",
+        "doi": "10.1038/s41467-023-35961-y",
+        "first_publication_date": "2023-02-27",
+        "journal": "Nature communications",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E02"
+      ],
+      "pmid": null,
+      "doi": "10.1016/j.jtho.2024.09.184",
+      "provider": "Crossref",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "MA12.03 FLAURA2: Resistance, and Impact of Baseline TP53 Alterations in Patients Treated With 1L Osimertinib ± Platinum-Pemetrexed",
+        "doi": "10.1016/j.jtho.2024.09.184",
+        "first_publication_date": [
+          [
+            2024,
+            10
+          ]
+        ],
+        "journal": "Journal of Thoracic Oncology",
+        "abstract_available": false
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E03"
+      ],
+      "pmid": null,
+      "doi": "10.1200/jco.2025.43.17_suppl.lba8505",
+      "provider": "Crossref",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Savolitinib (Savo) combined with osimertinib (osi) versus chemotherapy (chemo) in EGFR-mutant (EGFRm) and\n                    <i>MET</i>\n                    -amplification (\n                    <i>MET</i>\n                    amp) advanced NSCLC after disease progression (PD) on EGFR tyrosine kinase inhibitor (TKI): Results from a randomized phase 3 SACHI study.",
+        "doi": "10.1200/jco.2025.43.17_suppl.lba8505",
+        "first_publication_date": [
+          [
+            2025,
+            6,
+            10
+          ]
+        ],
+        "journal": "Journal of Clinical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E04"
+      ],
+      "pmid": "40461383",
+      "doi": "10.1016/j.annonc.2025.04.003",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Savolitinib plus osimertinib in epidermal growth factor receptor (EGFR)-mutated advanced non-small cell lung cancer with MET overexpression and/or amplification following disease progression on osimertinib: primary results from the phase II SAVANNAH study.",
+        "doi": "10.1016/j.annonc.2025.04.003",
+        "first_publication_date": "2025-06-02",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E05"
+      ],
+      "pmid": "39089305",
+      "doi": "10.1016/s1470-2045(24)00270-5",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Tepotinib plus osimertinib in patients with EGFR-mutated non-small-cell lung cancer with MET amplification following progression on first-line osimertinib (INSIGHT 2): a multicentre, open-label, phase 2 trial.",
+        "doi": "10.1016/s1470-2045(24)00270-5",
+        "first_publication_date": "2024-08-01",
+        "journal": "The Lancet. Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E07"
+      ],
+      "pmid": "30550363",
+      "doi": "10.1200/jco.18.01585",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes.",
+        "doi": "10.1200/jco.18.01585",
+        "first_publication_date": "2018-12-14",
+        "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E08"
+      ],
+      "pmid": "30137196",
+      "doi": "10.1093/annonc/mdy263",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "A framework to rank genomic alterations as targets for cancer precision medicine: the ESMO Scale for Clinical Actionability of molecular Targets (ESCAT).",
+        "doi": "10.1093/annonc/mdy263",
+        "first_publication_date": "2018-09-01",
+        "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    },
+    {
+      "source_ids": [
+        "O07_E09"
+      ],
+      "pmid": "27993330",
+      "doi": "10.1016/j.jmoldx.2016.10.002",
+      "provider": "Europe PMC",
+      "status": "matched",
+      "title_match": true,
+      "doi_match": true,
+      "canonical": {
+        "title": "Standards and Guidelines for the Interpretation and Reporting of Sequence Variants in Cancer: A Joint Consensus Recommendation of the Association for Molecular Pathology, American Society of Clinical Oncology, and College of American Pathologists.",
+        "doi": "10.1016/j.jmoldx.2016.10.002",
+        "first_publication_date": "2017-01-01",
+        "journal": "The Journal of molecular diagnostics : JMD",
+        "abstract_available": true
+      },
+      "full_text_reviewed": false
+    }
+  ],
+  "scope": "Bibliographic recheck only; node reviewers read abstracts; no claim of full-text or regulatory verification."
+}

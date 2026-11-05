@@ -35,6 +35,13 @@
     "jak-stat/README.md",
     "jak-stat/example_result.json",
     "jak-stat/index.html",
-    "jak-stat/knowledge.json"
+    "jak-stat/knowledge.json",
+    "multiomics/README.md",
+    "multiomics/conference_discovery.json",
+    "multiomics/example/result.html",
+    "multiomics/example/result.json",
+    "multiomics/index.html",
+    "multiomics/knowledge.json",
+    "multiomics/references.csv"
   ]
 }

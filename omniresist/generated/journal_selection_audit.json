@@ -1,0 +1,18 @@
+{
+  "jcr_edition": 2025,
+  "jif_year": 2024,
+  "metric": "JIF category rank",
+  "rank_at_most": 80,
+  "categories": [
+    "Oncology",
+    "Immunology",
+    "Genetics & Heredity"
+  ],
+  "policy": "Union of the three within-category top-80 sets; conference evidence assessed separately.",
+  "table": {
+    "status": "not_supplied",
+    "authenticated_by_program": false
+  },
+  "passed_unique_journal_records": 0,
+  "not_claimed_satisfied_without_matching_table": true
+}

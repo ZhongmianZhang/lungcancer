@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "intended_use": "research_not_clinically_validated",
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04"
+  },
+  "journal_selection": {
+    "jcr_edition": 2025,
+    "jif_year": 2024,
+    "metric": "JIF category rank",
+    "rank_at_most": 80,
+    "categories": [
+      "Oncology",
+      "Immunology",
+      "Genetics & Heredity"
+    ],
+    "policy": "Union of the three within-category top-80 sets; conference evidence assessed separately.",
+    "table": {
+      "status": "not_supplied",
+      "authenticated_by_program": false
+    },
+    "passed_unique_journal_records": 0,
+    "not_claimed_satisfied_without_matching_table": true
+  },
+  "target_sequence_confirmed_by_input": true,
+  "clinical_context_gate_passed": true,
+  "assay_assessments": [
+    {
+      "id": "dna1",
+      "platform_name": "SYNTHETIC_RESEARCH_ASSAY_NOT_A_PRODUCT",
+      "platform_version": "synthetic-v1",
+      "modality": "target_dna",
+      "sample_type": "tissue",
+      "target_scope": "SYNTHETIC specified design only; no real product coverage or claim of all loci.",
+      "validated_classes": [
+        "fusion",
+        "snv",
+        "indel"
+      ],
+      "status": "within_declared_scope_only",
+      "negative_interpretation": "only_within_declared_assay_scope_never_all_resistance",
+      "limitations": [],
+      "caution": "平台品牌/检测广度不自动证明该版本对每类事件的灵敏度；DNA阴性不能排除RNA、表观、病理或其他病灶机制。"
+    }
+  ],
+  "mechanism_hypotheses": [
+    {
+      "id": "ret1",
+      "gene": "RET",
+      "variant": "CCDC6::RET",
+      "assay_id": "dna1",
+      "mechanism": "KINASE_FUSION",
+      "status": "event_specific_validation_needed",
+      "source_status": "curated_observation_not_causality",
+      "explanation": "RNA与结构确认后的融合是旁路候选；de novo融合肺癌与EGFR获得性融合证据不能混用。",
+      "validation_needed": [
+        "需可追溯的进展期合格RNA支持、同框及激酶域保留；DNA断点或融合名称不能替代。"
+      ],
+      "cautions": [],
+      "node_ids": [
+        "node03",
+        "node07"
+      ],
+      "acquisition_status": "acquired",
+      "evidence_ids": [
+        "O03_E01",
+        "O03_E02",
+        "O03_E03",
+        "O03_E04",
+        "O03_E05",
+        "O03_E06",
+        "O03_E07",
+        "O07_E01",
+        "O07_E02",
+        "O07_E03",
+        "O07_E04",
+        "O07_E05",
+        "O07_E06",
+        "O07_E07",
+        "O07_E08",
+        "O07_E09"
+      ],
+      "clinical_predictive_validity": "not_established_for_target_sequence"
+    }
+  ],
+  "functional_assessments": [],
+  "research_directions": [],
+  "strict_rank_screened_directions": [],
+  "unresolved_dimensions": [
+    {
+      "code": "RNA_FUSION_SPLICE",
+      "reason": "未完整评估合格RNA融合/剪接；DNA panel或WGS不能替代真实转录本。",
+      "node_ids": [
+        "node03"
+      ],
+      "evidence_ids": [
+        "O03_E01",
+        "O03_E02",
+        "O03_E03",
+        "O03_E04",
+        "O03_E05",
+        "O03_E06",
+        "O03_E07"
+      ]
+    },
+    {
+      "code": "GENOME_STRUCTURE_NONCODING",
+      "reason": "复杂SV/非编码区域仍有范围或验证缺口；是否补WGS/长读应按临床价值评估，不能预设更敏感。",
+      "node_ids": [
+        "node02"
+      ],
+      "evidence_ids": [
+        "O02_E01",
+        "O02_E02",
+        "O02_E03",
+        "O02_E04",
+        "O02_E05",
+        "O02_E06",
+        "O02_E07",
+        "O02_E08"
+      ]
+    },
+    {
+      "code": "EPIGENOME_STATE",
+      "reason": "普通DNA测序未直接测量甲基化/染色质；相关研究检测没有自动用药价值。",
+      "node_ids": [
+        "node04",
+        "node05"
+      ],
+      "evidence_ids": [
+        "O04_E01",
+        "O04_E02",
+        "O04_E03",
+        "O04_E04",
+        "O04_E05",
+        "O04_E06",
+        "O04_E07",
+        "O04_E08",
+        "O05_E01",
+        "O05_E02",
+        "O05_E03",
+        "O05_E04",
+        "O05_E05",
+        "O05_E06",
+        "O05_E07"
+      ]
+    },
+    {
+      "code": "CELL_AND_SPATIAL_CONTEXT",
+      "reason": "肿瘤、免疫、CAF及病灶异质性未充分分区；不等于每人必须做单细胞/空间检测。",
+      "node_ids": [
+        "node05"
+      ],
+      "evidence_ids": [
+        "O05_E01",
+        "O05_E02",
+        "O05_E03",
+        "O05_E04",
+        "O05_E05",
+        "O05_E06",
+        "O05_E07"
+      ]
+    }
+  ],
+  "alerts": [
+    "当前仍属机制未明；需区分未检出、未测量、已检出未解释及非遗传状态，不等于没有可研究机制。",
+    "不能由“近一半未明”推算个体概率；检出率、可行动比例、实际用药比例与临床获益使用不同分母。",
+    "2025版JCR三学科前80筛选尚未完成：缺少可核验原表，当前文献为排名待核验研究集合。"
+  ],
+  "coverage_caveat": "补检提示仅按所供检测声明生成；某维度没有提示不等于所有基因、区域、病灶或机制均已排除。",
+  "treatment_recommendations": [],
+  "doses": [],
+  "response_probabilities": null,
+  "patient_inputs_sent_to_network": false
+}

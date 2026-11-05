@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_DNA_BREAKPOINT_REQUIRES_RNA",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "egfr_driver_confirmed": true,
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "histology": "adenocarcinoma",
+    "histology_confirmed_at_progression": true,
+    "progression_pattern": "systemic",
+    "prior_additional_therapies": []
+  },
+  "assays": [
+    {
+      "id": "dna1",
+      "platform_name": "SYNTHETIC_RESEARCH_ASSAY_NOT_A_PRODUCT",
+      "platform_version": "synthetic-v1",
+      "modality": "target_dna",
+      "sample_type": "tissue",
+      "collection_timing": "at_progression",
+      "status": "passed",
+      "validated_classes": [
+        "fusion",
+        "snv",
+        "indel"
+      ],
+      "negative_result": false,
+      "sensitivity_characterized": true,
+      "compartment_resolved": true,
+      "quality_notes": "All values and confirmation statements are synthetic, not a real laboratory specification.",
+      "genome_coverage_evaluated": true,
+      "target_scope": "SYNTHETIC specified design only; no real product coverage or claim of all loci."
+    }
+  ],
+  "findings": [
+    {
+      "id": "ret1",
+      "assay_id": "dna1",
+      "gene": "RET",
+      "alteration_type": "fusion",
+      "variant": "CCDC6::RET",
+      "classification": "likely_pathogenic",
+      "tumor_origin": "confirmed",
+      "tumor_origin_evidence": "SYNTHETIC matched tissue review; no actual patient.",
+      "compartment": "malignant",
+      "compartment_confirmed": true,
+      "orthogonal_confirmed": true,
+      "locus_coverage_confirmed": true,
+      "egfr_clonal_link_confirmed": true,
+      "egfr_clonal_link_evidence": "SYNTHETIC progression specimen clone review, not inferred from plasma co-detection.",
+      "acquisition": "acquired",
+      "functional_direction": "gain",
+      "supporting_assay_ids": [],
+      "rna_confirmed": false,
+      "in_frame": true,
+      "kinase_domain_retained": true,
+      "baseline_comparison_confirmed": true
+    }
+  ],
+  "functional_tests": []
+}

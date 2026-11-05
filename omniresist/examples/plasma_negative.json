@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "case_label": "SYNTHETIC_PLASMA_NEGATIVE_NOT_EXCLUSION",
+  "context": {
+    "egfr_driver": "EGFR exon19 deletion",
+    "egfr_driver_confirmed": true,
+    "prior_osimertinib": true,
+    "prior_platinum_pemetrexed": true,
+    "concurrent_osi_chemo": true,
+    "progressed_after_combination": true,
+    "baseline_available": true,
+    "collection_timing": "at_progression",
+    "histology": "unknown",
+    "histology_confirmed_at_progression": false,
+    "progression_pattern": "systemic",
+    "prior_additional_therapies": []
+  },
+  "assays": [
+    {
+      "id": "plasma1",
+      "platform_name": "SYNTHETIC_RESEARCH_ASSAY_NOT_A_PRODUCT",
+      "platform_version": "synthetic-v1",
+      "modality": "target_dna",
+      "sample_type": "plasma",
+      "collection_timing": "at_progression",
+      "status": "passed",
+      "validated_classes": [
+        "snv",
+        "indel",
+        "amplification",
+        "fusion"
+      ],
+      "negative_result": true,
+      "sensitivity_characterized": true,
+      "compartment_resolved": true,
+      "quality_notes": "All values and confirmation statements are synthetic, not a real laboratory specification.",
+      "tumor_fraction": 0.001,
+      "tumor_fraction_method": "SYNTHETIC fraction estimate",
+      "validated_min_tumor_fraction": 0.02,
+      "lod_vaf": 0.0025,
+      "genome_coverage_evaluated": true,
+      "target_scope": "SYNTHETIC specified design only; no real product coverage or claim of all loci."
+    }
+  ],
+  "findings": [],
+  "functional_tests": []
+}

@@ -1,0 +1,292 @@
+{
+  "node_id": "node05",
+  "title": "单细胞与空间多组学：残留细胞状态、谱系可塑性及恶性细胞/TME区分",
+  "genes": [
+    "EGFR", "EPCAM", "KRT8", "KRT18", "NKX2-1", "SFTPC", "MKI67",
+    "PTPRC", "CD3D", "CD8A", "LST1", "CD68", "COL1A1", "DCN",
+    "ASCL1", "NEUROD1", "SYP", "CHGA", "RUNX1", "RUNX2", "RUNX3",
+    "BCL2L1", "BCL2"
+  ],
+  "mechanism_zh": [
+    "WGS未发现已知耐药驱动，不能排除低丰度耐药克隆、转录/染色质状态或微环境保护。低肿瘤纯度会稀释DNA变异及肿瘤细胞内的bulk RNA/表观组信号，免疫或成纤维细胞比例变化也会改变bulk通路评分。单细胞和空间技术可定位信号来自恶性细胞还是TME，但恶性判定应综合病理、原有驱动/其他DNA证据、拷贝数及细胞身份；EPCAM单阳性或单阴性均不足以定性，表达推断CNV阴性也不能排除近二倍体肿瘤。scRNA未检出EGFR转录本不等于DNA突变丢失。",
+    "Maynard等分析30名转移性肺癌患者的49份治疗前/治疗中活检、超过20,000个肿瘤与TME单细胞，发现残留病灶中的恶性细胞具有肺泡再生样程序，而治疗中进展细胞富集犬尿氨酸、纤溶酶原及缝隙连接相关程序；残留病灶伴活跃T细胞与较少巨噬细胞，进展伴免疫抑制状态[O05_E01]。这些结果支持分开研究恶性细胞状态和生态系统变化，但临床队列为混合靶向治疗背景，不能解释为同期奥希替尼加铂/培美曲塞后特异机制。研究中的组织残留病灶也不能直接等同于血浆ctDNA定义的微小残留病。",
+    "持续细胞可构成后续遗传耐药的储库，且起点不止一种。Hata等证明T790M耐药既可来自既存阳性克隆的选择，也可由最初T790M阴性的耐受细胞进一步演化；不同路径的终末克隆有不同凋亡反应[O05_E02]。Ramirez等从单个EGFR依赖肺癌细胞建立厄洛替尼持续细胞后，通过大规模药筛和全外显子组分析发现多种后续耐药机制[O05_E03]。因此未见驱动的残留状态、既存罕见克隆和后来的遗传耐药不能互相替代；检测阴性只说明在给定样本和检测限内未检出。",
+    "持续细胞不全是静息细胞。Oren等用Watermelon表达条形码同步追踪克隆起源、增殖和转录状态，发现持续用药下可增殖与不增殖的持续细胞来自不同谱系，并具有不同转录/代谢程序；抗氧化和脂肪酸氧化相关程序与增殖能力相关，模型中的应激/代谢干预改变可增殖持续细胞比例[O05_E04]。这提供了超出单次表达快照的谱系证据，但并不建立患者中的通用持续细胞标记、药物选择阈值或同期化疗后的有效治疗。",
+    "谱系可塑性和已确诊组织学转化应分别判定。Marjanovic等在小鼠肺肿瘤七个演进阶段观察到高可塑性细胞状态HPCS，分选的鼠肿瘤和人PDX细胞显示较强分化与增殖能力，鼠模型中伴化疗耐受[O05_E05]。HPCS、肺泡再生样程序、EMT样表达或少量神经内分泌转录因子表达可以提出状态转换假说，却不能独自确诊小细胞转化。拟时序不是真实谱系追踪，既存状态选择与治疗诱导重编程需要纵向样本及功能/谱系实验拆分。",
+    "LaFave等用单细胞表观组研究小鼠肺腺癌，描绘细胞身份逐渐丢失、向转移状态推进的染色质连续体，以及RUNX相关的转移前细胞外基质重塑程序[O05_E06]。scATAC的可及性、共可及峰及motif富集有助于提出调控因子和增强子假说，但不能单独证明转录因子实际结合、增强子靶基因关系或耐药依赖。与同细胞RNA、蛋白、适当的结合/修饰读出相互印证后，仍需有靶点干预、救援及相关药物背景下的存活/复发终点。该研究是肿瘤进展模型，不是EGFR突变或奥希替尼联合化疗耐药试验。",
+    "空间分析可暴露同一肿瘤中转化与未转化区域的差别。Oh等在10名患者的59个FFPE组织ROI中比较腺癌、混合成分及转化SCLC；摘要报告EGFR-TKI后15/16个t-SCLC成分为神经内分泌高表达亚型，并有EGFR mRNA/蛋白下降，模型中fimepinostat与奥希替尼协同[O05_E07]。ROI不是单细胞或独立患者，该比例不是15/16名患者；RNA/蛋白下降也不是EGFR DNA丢失或必然丧失所有EGFR依赖的证明。表达神经内分泌程序不能代替病理诊断，模型协同不能直接变为转化患者或联合化疗后患者的常规方案。",
+    "多组学的一致关联仍不等于因果。空间邻近或配体–受体共表达只能提出细胞通信假说，RNA–ATAC相关和拟时序只能提出候选调控/转变关系；治疗杀伤、细胞组成变化、采样部位和技术选择都可能造成共同变化。应优先设计治疗前、反应残留期及进展期的配对取样，记录每一时点具体药物、剂量和取样病灶，并保留病理空间定位。分析需处理解离偏倚、环境RNA、双细胞、掉落、批次及低丰度群体漏采；统计重复以患者为主，不能把同一患者的细胞或ROI当作独立临床重复。"
+  ],
+  "biomarker_interpretation": [
+    {
+      "marker": "恶性细胞身份：驱动突变/DNA拷贝数、病理与上皮/肺泡身份联合",
+      "meaning": "为肿瘤内在程序与免疫/间质程序建立区室，减少正常肺泡上皮或TME被误判为耐药细胞。",
+      "limitations": "scRNA推断CNV及突变检出均受覆盖、掉落和参考细胞影响；单一EPCAM、SFTPC或EGFR转录本不能定性恶性，也不能以CNV阴性排除近二倍体肿瘤。"
+    },
+    {
+      "marker": "残留恶性细胞的肺泡再生样转录程序",
+      "meaning": "Maynard临床图谱中的治疗中组织残留状态，可作为纵向比较候选读出。",
+      "limitations": "正常肺泡细胞混入可产生相似信号；没有通用临床阈值，不能由一次签名区分既存选择和诱导转换，也不等同ctDNA微小残留病。"
+    },
+    {
+      "marker": "持续药物暴露下的增殖状态、克隆条形码与抗氧化/脂肪酸氧化程序",
+      "meaning": "可检验持续细胞中可增殖和停滞谱系的差异，以及应激代谢适应假说。",
+      "limitations": "MKI67或细胞周期分数本身既不能证明持续耐受，也不能证明药物已充分抑制靶点；条形码模型和人肿瘤关联未建立治疗选择规则。"
+    },
+    {
+      "marker": "HPCS或其他高可塑性/EMT样程序",
+      "meaning": "提示细胞身份不稳定及可能的分化、增殖和耐受能力，适合提出功能验证问题。",
+      "limitations": "模型、时间及组织背景相关；不是小细胞癌或鳞癌转化的伴随诊断，也不能从表达簇确定细胞来源和演化方向。"
+    },
+    {
+      "marker": "scATAC共可及性、RUNX motif及RNA–染色质一致性",
+      "meaning": "为候选调控程序、身份丢失和转移相关状态提供研究线索。",
+      "limitations": "可及不等于被结合或必需；同家族motif相似、稀疏覆盖和细胞组成可影响推断，LaFave证据不能直接归入EGFR联合方案耐药。"
+    },
+    {
+      "marker": "ASCL1/NEUROD1、SYP/CHGA及EGFR RNA/蛋白下降的空间分布",
+      "meaning": "结合形态和免疫组化可定位候选神经内分泌区域及混合组织成分。",
+      "limitations": "少量标记阳性不等于已转化SCLC；ROI可含多种细胞，表达变化不等同DNA改变，需组织病理确诊及必要的谱系关联证据。"
+    },
+    {
+      "marker": "分区室的T细胞/巨噬细胞丰度、活化与免疫抑制状态",
+      "meaning": "可区分恶性细胞适应和治疗中生态变化，并确定后续研究的细胞来源。",
+      "limitations": "细胞比例与单细胞内状态不同；活检部位、炎症和解离会影响比例，不能从巨噬细胞或T细胞增多直接选择免疫联合。"
+    },
+    {
+      "marker": "空间邻近、配体–受体预测及多组学相关网络",
+      "meaning": "可将潜在保护性细胞互作定位到候选区域，指导蛋白和功能验证。",
+      "limitations": "邻近不等于配体分泌、受体激活或耐药因果；转录共表达、技术混合和共同上游刺激均可解释相关。"
+    },
+    {
+      "marker": "低纯度bulk WGS/RNA/表观组阴性或弱信号",
+      "meaning": "提示先复核肿瘤含量、检测限、取材部位和不同检测层面的覆盖，再决定补充单细胞/空间研究。",
+      "limitations": "阴性不能排除低丰度克隆或状态机制；单细胞/空间也会漏采，不能把增加检测维度等同于已经找到了可治疗依赖。"
+    }
+  ],
+  "treatment_hypotheses": [
+    {
+      "strategy": "在凋亡缺陷持续细胞模型中研究BCL-2/BCL-xL干预与EGFR抑制的组合",
+      "status": "investigational",
+      "setting": "Hata的EGFR-TKI演化模型及患者来源培养物；研究第三代抑制剂反应差异。",
+      "limitations": "navitoclax在模型中恢复敏感性不构成联合化疗后临床获益证据；BCL2/BCL2L1转录量不能代替功能依赖或安全性评估。",
+      "evidence_ids": ["O05_E02"]
+    },
+    {
+      "strategy": "在谱系追踪的持续细胞模型中检验抗氧化/脂肪酸氧化及可增殖持续细胞的脆弱性",
+      "status": "investigational",
+      "setting": "Oren的条形码和转录/代谢研究及不同癌种模型。",
+      "limitations": "模型干预改变细胞比例尚不能确定患者复发获益；没有经验证的单细胞分数、剂量或同期铂/培美曲塞组合方案。",
+      "evidence_ids": ["O05_E04"]
+    },
+    {
+      "strategy": "针对高可塑性及候选染色质调控程序开展机制匹配功能筛选",
+      "status": "investigational",
+      "setting": "HPCS和小鼠肺腺癌单细胞表观组的候选调控网络。",
+      "limitations": "HPCS或RUNX motif富集本身不足以选药；需先证明目标细胞及依赖，并在相同EGFR基因型和同期联合暴露中验证。",
+      "evidence_ids": ["O05_E05", "O05_E06"]
+    },
+    {
+      "strategy": "fimepinostat与奥希替尼只作为病理确诊转化模型中的探索性组合线索",
+      "status": "investigational",
+      "setting": "Oh的转化SCLC细胞、类器官和体内模型。",
+      "limitations": "空间转录关联及模型协同不能建立临床标准，也不能由神经内分泌签名或EGFR表达下降自动选择该组合；缺少同期奥希替尼加化疗后专属前瞻验证。",
+      "evidence_ids": ["O05_E07"]
+    },
+    {
+      "strategy": "不支持依据单细胞簇、空间邻近或TME比例直接添加表观遗传、代谢或免疫药物",
+      "status": "not_supported",
+      "setting": "临床标志物解释及多组学转化研究。",
+      "limitations": "相关读出可能反映组成、采样或应激，尚未证明因果依赖与该治疗序列中的临床净获益。",
+      "evidence_ids": ["O05_E01", "O05_E04", "O05_E06", "O05_E07"]
+    }
+  ],
+  "research_gaps": [
+    "缺少同期奥希替尼加铂/培美曲塞患者治疗前、残留期和进展期配对的scRNA/scATAC/空间队列；EGFR-TKI单药、序贯治疗及其他驱动癌的状态不能直接迁移。",
+    "需要在同一患者多个病灶及同一病灶多个区域结合病理和DNA克隆结构，量化低纯度、稀有群体漏采及取样异质性；目前不能把某一活检中的比例视为全身耐药构成。",
+    "需拆分既存克隆选择、可逆持续细胞状态与稳定遗传演化；单次scRNA或计算拟时序无法提供真实祖先–后代关系。",
+    "需建立恶性细胞身份与TME归属的多证据判定，尤其关注近二倍体、上皮标记下降、正常肺泡再生细胞及混合组织学中的误判。",
+    "需要区分RNA变化、染色质可及性、组蛋白修饰、蛋白活化与真正依赖，并通过干预/救援和相同治疗背景中的复发终点验证因果。",
+    "持续细胞不等于静息细胞；可增殖和停滞群体在化疗暴露下的相对贡献、转变时序及稳定性缺少专属患者证据。",
+    "空间ROI、单细胞和不同区域不能作为独立患者重复；需要按患者配对、充分记录治疗与部位、建立外部验证并预设临床终点。",
+    "尚无肺泡再生样、HPCS、RUNX motif、持续细胞代谢或空间通信分数能够直接决定奥希替尼联合化疗后用药的已验证阈值。"
+  ],
+  "evidence": [
+    {
+      "id": "O05_E01",
+      "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+      "authors": "Maynard A, McCoach CE, Rotow JK, Harris L, Haderk F, Kerr DL, Yu EA, Schenk EL, Tan W, Zee A, Tan M, Gui P, Lea T, Wu W, Urisman A, Jones K, Sit R, Kolli PK, Seeley E, Gesthalter Y, Le DD, Yamauchi KA, Naeger DM, Bandyopadhyay S, Shah K, Cech L, Thomas NJ, Gupta A, Gonzalez M, Do H, Tan L, Bacaltos B, Gomez-Sjoberg R, Gubens M, Jahan T, Kratz JR, Jablons D, Neff N, Doebele RC, Weissman J, Blakely CM, Darmanis S, Bivona TG.",
+      "year": 2020,
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "pmid": "32822576",
+      "publication_date": "2020-08-20",
+      "url": "https://doi.org/10.1016/j.cell.2020.07.017",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "clinical_biopsy_atlas",
+      "main_finding_zh": "30名患者49份靶向治疗前/治疗中活检产生超过20,000个肿瘤及TME单细胞图谱；残留恶性细胞呈肺泡再生样程序，进展细胞有犬尿氨酸、纤溶酶原和缝隙连接相关程序，TME随残留/进展出现不同状态。",
+      "limitation_zh": "临床观察图谱与独立队列结局关联，不是每名患者完整配对的因果实验；治疗背景混合，不能视为同期奥希替尼加铂/培美曲塞后研究，也不能把组织残留直接当作ctDNA微小残留病。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32822576+OR+EXT_ID%3A26828195+OR+EXT_ID%3A26891683+OR+EXT_ID%3A34381210+OR+EXT_ID%3A32707077+OR+EXT_ID%3A32707078+OR+EXT_ID%3A39150541%29&format=json&resultType=core&pageSize=7&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:09:48+00:00"
+      }
+    },
+    {
+      "id": "O05_E02",
+      "title": "Tumor cells can follow distinct evolutionary paths to become resistant to epidermal growth factor receptor inhibition.",
+      "authors": "Hata AN, Niederst MJ, Archibald HL, Gomez-Caraballo M, Siddiqui FM, Mulvey HE, Maruvka YE, Ji F, Bhang HE, Krishnamurthy Radhakrishna V, Siravegna G, Hu H, Raoof S, Lockerman E, Kalsy A, Lee D, Keating CL, Ruddy DA, Damon LJ, Crystal AS, Costa C, Piotrowska Z, Bardelli A, Iafrate AJ, Sadreyev RI, Stegmeier F, Getz G, Sequist LV, Faber AC, Engelman JA.",
+      "year": 2016,
+      "journal": "Nature medicine",
+      "doi": "10.1038/nm.4040",
+      "pmid": "26828195",
+      "publication_date": "2016-02-01",
+      "url": "https://doi.org/10.1038/nm.4040",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "preclinical_patient_derived_validation",
+      "main_finding_zh": "T790M耐药可以由既存阳性克隆选择或最初阴性的持续细胞进一步遗传演化形成；后一路径产生的细胞对第三代EGFR抑制剂凋亡反应较弱，navitoclax在模型中恢复敏感性，并有患者耐药肿瘤来源培养物支持。",
+      "limitation_zh": "模型和患者来源培养物的机制研究，非同期奥希替尼联合化疗后临床队列；不能把T790M检出阴性解释为克隆绝对不存在，也不能由模型凋亡恢复推断临床组合净获益。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32822576+OR+EXT_ID%3A26828195+OR+EXT_ID%3A26891683+OR+EXT_ID%3A34381210+OR+EXT_ID%3A32707077+OR+EXT_ID%3A32707078+OR+EXT_ID%3A39150541%29&format=json&resultType=core&pageSize=7&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:09:48+00:00"
+      }
+    },
+    {
+      "id": "O05_E03",
+      "title": "Diverse drug-resistance mechanisms can emerge from drug-tolerant cancer persister cells.",
+      "authors": "Ramirez M, Rajaram S, Steininger RJ, Osipchuk D, Roth MA, Morinishi LS, Evans L, Ji W, Hsu CH, Thurley K, Wei S, Zhou A, Koduru PR, Posner BA, Wu LF, Altschuler SJ.",
+      "year": 2016,
+      "journal": "Nature communications",
+      "doi": "10.1038/ncomms10690",
+      "pmid": "26891683",
+      "publication_date": "2016-02-19",
+      "url": "https://doi.org/10.1038/ncomms10690",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "preclinical",
+      "main_finding_zh": "比较来自单个EGFR依赖肺癌细胞的持续细胞衍生厄洛替尼耐药克隆，大规模药筛和全外显子组测序显示多种异质耐药机制可以从同一持续细胞瓶颈后出现。",
+      "limitation_zh": "单细胞起源培养系统，不是患者单细胞图谱，也不是全基因组或奥希替尼联合化疗研究；不能据此量化患者中持续细胞导致耐药的发生率。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32822576+OR+EXT_ID%3A26828195+OR+EXT_ID%3A26891683+OR+EXT_ID%3A34381210+OR+EXT_ID%3A32707077+OR+EXT_ID%3A32707078+OR+EXT_ID%3A39150541%29&format=json&resultType=core&pageSize=7&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:09:48+00:00"
+      }
+    },
+    {
+      "id": "O05_E04",
+      "title": "Cycling cancer persister cells arise from lineages with distinct programs.",
+      "authors": "Oren Y, Tsabar M, Cuoco MS, Amir-Zilberstein L, Cabanos HF, Hütter JC, Hu B, Thakore PI, Tabaka M, Fulco CP, Colgan W, Cuevas BM, Hurvitz SA, Slamon DJ, Deik A, Pierce KA, Clish C, Hata AN, Zaganjor E, Lahav G, Politi K, Brugge JS, Regev A.",
+      "year": 2021,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-03796-6",
+      "pmid": "34381210",
+      "publication_date": "2021-08-11",
+      "url": "https://doi.org/10.1038/s41586-021-03796-6",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "lineage_tracing_preclinical_with_human_correlates",
+      "main_finding_zh": "Watermelon表达条形码联合追踪克隆起源、增殖与转录状态，显示可增殖和停滞持续细胞来自不同谱系；抗氧化和脂肪酸氧化程序关联增殖持续细胞，相关模型干预改变该群体比例，人靶向治疗残留肿瘤中有相应程序。",
+      "limitation_zh": "跨癌种模型加人样本关联；未建立患者单细胞伴随诊断或临床代谢干预获益，也未证明相同程序在同期奥希替尼/铂/培美曲塞后的贡献。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32822576+OR+EXT_ID%3A26828195+OR+EXT_ID%3A26891683+OR+EXT_ID%3A34381210+OR+EXT_ID%3A32707077+OR+EXT_ID%3A32707078+OR+EXT_ID%3A39150541%29&format=json&resultType=core&pageSize=7&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:09:48+00:00"
+      }
+    },
+    {
+      "id": "O05_E05",
+      "title": "Emergence of a High-Plasticity Cell State during Lung Cancer Evolution.",
+      "authors": "Marjanovic ND, Hofree M, Chan JE, Canner D, Wu K, Trakala M, Hartmann GG, Smith OC, Kim JY, Evans KV, Hudson A, Ashenberg O, Porter CBM, Bejnood A, Subramanian A, Pitter K, Yan Y, Delorey T, Phillips DR, Shah N, Chaudhary O, Tsankov A, Hollmann T, Rekhtman N, Massion PP, Poirier JT, Mazutis L, Li R, Lee JH, Amon A, Rudin CM, Jacks T, Regev A, Tammela T.",
+      "year": 2020,
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccell.2020.06.012",
+      "pmid": "32707077",
+      "publication_date": "2020-07-23",
+      "url": "https://doi.org/10.1016/j.ccell.2020.06.012",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical_single_cell_with_functional_validation",
+      "main_finding_zh": "小鼠肺肿瘤七个阶段的单细胞转录组显示状态多样性增加及候选高可塑性过渡状态；分选鼠肿瘤/人PDX的HPCS细胞有较强分化与增殖能力，HPCS程序与人癌较差生存相关，并在小鼠中表现化疗耐受。",
+      "limitation_zh": "主要是小鼠肺癌发生/进展及PDX研究；不是EGFR抑制后的患者谱系追踪，不能将HPCS签名当成特定组织学转化诊断或联合化疗后治疗规则。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32822576+OR+EXT_ID%3A26828195+OR+EXT_ID%3A26891683+OR+EXT_ID%3A34381210+OR+EXT_ID%3A32707077+OR+EXT_ID%3A32707078+OR+EXT_ID%3A39150541%29&format=json&resultType=core&pageSize=7&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:09:48+00:00"
+      }
+    },
+    {
+      "id": "O05_E06",
+      "title": "Epigenomic State Transitions Characterize Tumor Progression in Mouse Lung Adenocarcinoma.",
+      "authors": "LaFave LM, Kartha VK, Ma S, Meli K, Del Priore I, Lareau C, Naranjo S, Westcott PMK, Duarte FM, Sankar V, Chiang Z, Brack A, Law T, Hauck H, Okimoto A, Regev A, Buenrostro JD, Jacks T.",
+      "year": 2020,
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccell.2020.06.006",
+      "pmid": "32707078",
+      "publication_date": "2020-07-23",
+      "url": "https://doi.org/10.1016/j.ccell.2020.06.006",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical_single_cell_epigenomics",
+      "main_finding_zh": "小鼠肺腺癌单细胞表观组描绘细胞身份丢失和转移相关状态连续体，通过共可及调控程序推断关键调控因子；RUNX相关转移前程序涉及细胞外基质重塑，并与人肺腺癌生存关联。",
+      "limitation_zh": "研究肿瘤进展及转移，非EGFR突变TKI或同期联合化疗耐药；共可及性和motif不单独构成结合/靶基因/必需性证明，不能据此直接选表观遗传药。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32822576+OR+EXT_ID%3A26828195+OR+EXT_ID%3A26891683+OR+EXT_ID%3A34381210+OR+EXT_ID%3A32707077+OR+EXT_ID%3A32707078+OR+EXT_ID%3A39150541%29&format=json&resultType=core&pageSize=7&cursorMark=%2A",
+        "checked_at": "2026-11-04T10:09:48+00:00"
+      }
+    },
+    {
+      "id": "O05_E07",
+      "title": "Transcriptomic Heterogeneity of EGFR-Mutant Non-Small Cell Lung Cancer Evolution Toward Small-Cell Lung Cancer.",
+      "authors": "Oh S, Koh J, Kim TM, Kim S, Youk J, Kim M, Keam B, Jeon YK, Ku JL, Kim DW, Chung DH, Heo DS.",
+      "year": 2024,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-24-0160",
+      "pmid": "39150541",
+      "publication_date": "2024-08-16",
+      "url": "https://doi.org/10.1158/1078-0432.ccr-24-0160",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "spatial_case_series_with_preclinical_validation",
+      "main_finding_zh": "10名患者59个FFPE空间ROI覆盖腺癌22、混合SCLC/NSCLC 7及转化SCLC 30个区域；摘要报告TKI后15/16个t-SCLC成分为SCLC-A/N神经内分泌高表达亚型，EGFR mRNA/蛋白下降；fimepinostat与奥希替尼在相关体外/体内模型中协同。",
+      "limitation_zh": "小系列空间区域分析，ROI不是单细胞或独立患者；EPMC firstPublicationDate为2024-10-01卷期月，采用Crossref published-online核实的2024-08-16。完整摘要由PubMed XML核对，模型组合不能建立临床标准或归入同期奥希替尼联合化疗后证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC; PubMed; Crossref",
+        "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32822576%2C26828195%2C26891683%2C34381210%2C32707077%2C32707078%2C39150541&retmode=xml",
+        "checked_at": "2026-11-04T10:09:48+00:00",
+        "date_verification_url": "https://api.crossref.org/works/10.1158%2F1078-0432.CCR-24-0160"
+      }
+    }
+  ],
+  "evidence_window": {
+    "start": "2011-11-04",
+    "end": "2026-11-04"
+  },
+  "review_provenance": {
+    "updated_at": "2026-11-04T10:09:48+00:00",
+    "preferred_provider": "Firecrawl",
+    "firecrawl_used": false,
+    "firecrawl_unavailability": "Root confirmed no callable Firecrawl MCP tool, CLI or injected credential. No Firecrawl request was made.",
+    "actual_verification_provider": "Europe PMC; PubMed E-utilities; Crossref",
+    "verification": "Seven original research records and abstracts checked against Europe PMC and PubMed XML. Crossref additionally checked titles and online dates for selected records; Oh 2024 online date was corrected using Crossref. No full text was reviewed. General sampling and causal-inference cautions are distinguished from findings directly tested by these studies.",
+    "publication_date_rule": "Earliest verified online publication date of the cited journal article; earlier preprint versions were not systematically traced. PubMed electronic ArticleDate used where available; Oh 2024 uses Crossref published-online.",
+    "selection_scope": "Targeted foundational and method-relevant primary-source selection, not a systematic review or exhaustive literature search. Mixed targeted-treatment, other EGFR-TKI and non-EGFR lung-model evidence are kept separate from concurrent osimertinib/platinum/pemetrexed evidence, which none of these seven sources establishes.",
+    "journal_ranking": {
+      "edition": 2025,
+      "requested_filter": "各指定三学科排名前80",
+      "status": "pending",
+      "reason": "No verifiable 2025 JCR ranking table for the three requested categories was supplied. No rank eligibility or impact-factor value is asserted."
+    },
+    "full_text_reviewed": false
+  }
+}

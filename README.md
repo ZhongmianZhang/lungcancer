@@ -70,3 +70,20 @@ python3 -m jakstat build
 ```
 
 pSTAT3/IL6升高、VUS、血液克隆或负调控失活均不会自动映射药物；只有满足完整模型与临床场景门控才列出研究路线，不提供个体处方。Firecrawl优先接口沿用共享适配器，当前无凭据的真实回退保存在检索审计。
+
+## 机制未明与多组学检测解释（2026-11-05）
+
+新增7个研究模块，比较MSK、Foundation、Guardant与Hartwig发表时检测版本，结合WGS结构/非编码、RNA融合/剪接、表观遗传、单细胞/空间、液体活检和临床证据。区分未检出、未覆盖、检出未解释和机制未连接治疗；不把“近一半”作为通用比例。
+
+- [代码、输入契约及JCR筛选口径](omniresist/README.md)
+- [离线HTML工作台](site/multiomics/index.html)
+- [血浆阴性的合成示例](omniresist/generated/plasma/result.html)
+- [RET融合的合成示例](omniresist/generated/ret/result.html)
+- [独立题录复核](omniresist/generated/metadata_audit.json)
+
+```bash
+python3 -m omniresist analyze --input omniresist/examples/plasma_negative.json --output omniresist/generated/plasma
+python3 -m omniresist build
+```
+
+用户指定2025版JCR（2024 JIF）Oncology、Immunology、Genetics & Heredity各前80名并集。**未取得可核验原表，当前筛选尚未完成**；提供本地CSV导入及严格书目筛选，不编造IF/排名。Firecrawl MCP无可用工具或凭据，真实核验使用Europe PMC/PubMed/Crossref，记录透明回退。本程序没有患者级验证，不输出个体处方。
