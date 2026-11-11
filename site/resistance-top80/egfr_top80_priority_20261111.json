@@ -1,0 +1,2204 @@
+{
+  "meta": {
+    "created_date": "2026-11-11",
+    "evidence_cutoff": "2026-11-11",
+    "scope": "Primarily acquired resistance after osimertinib +/- platinum/pemetrexed. Older-generation TKIs and chemotherapy-only, pharmacological or host evidence explicitly distinguished. No claim of universal incidence across sequences.",
+    "ranking_method": "Qualitative research/checklist priority, not a statistical top-80 prevalence ranking. Most model mechanisms have no established population frequency. Adjacent ranks do not establish comparative importance. Fifty prior items plus thirty additional items re-ordered by clinical evidence, causal support and practical verification value; model and contextual factors grouped for interpretation. No calculated or validated medical score.",
+    "jev_tool": "JEV ultrafast is a browser automation agent, not a validated medical ranking model. No live JEV/model call executed; required runtime credential bindings remain absent.",
+    "patient_data": "No real patient assay report provided; prior examples are synthetic.",
+    "journal_top80_filter": "Unmet pending authoritative 2025 JCR table; no claim all sources meet the requested three-category top80 filter.",
+    "overlap": "Rows include phenotypes, genes, signaling and epigenetic states. These eighty items overlap biologically and are not mutually exclusive mechanisms; frequencies cannot be summed.",
+    "screening": "Indexed titles, metadata and abstracts/relevant excerpts inspected; not a systematic full-text review or exhaustive integrity screen.",
+    "context_gate": "If only first/second-generation EGFR TKIs were used, acquired EGFR T790M should be prioritized separately. Third-generation and antibody/ADC sequences require their own exposure-specific evidence."
+  },
+  "items": [
+    {
+      "priority": 1,
+      "mechanism": "MET局灶扩增",
+      "evidence_type": "临床反复检出",
+      "frequency_context": "FLAURA血浆17/109（16%）；ORCHARD进展组织71/400（约18%）。",
+      "reason": "最成熟的EGFR非依赖旁路之一，可维持MAPK/PI3K；先排除染色体多体和低肿瘤分数误判。",
+      "interpretation_limit": "本场景治疗仍须独立核验；不能跨平台套同一CN阈值。",
+      "pmids": [
+        "36849494",
+        "41790029",
+        "39089305",
+        "40461383"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 2,
+      "mechanism": "EGFR C797S/C797X",
+      "evidence_type": "临床反复检出",
+      "frequency_context": "FLAURA C797S为7/109（6%）；线次和取样会改变检出率。",
+      "reason": "改变奥希替尼共价结合位点；精确变体及与T790M的相位影响后续机制解释。",
+      "interpretation_limit": "不能自动选择一代加三代TKI；保留EGFR原驱动不等于仍对原药敏感。",
+      "pmids": [
+        "36849494",
+        "25964297"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 3,
+      "mechanism": "小细胞/高级别神经内分泌转化",
+      "evidence_type": "临床重要表型",
+      "frequency_context": "ORCHARD进展组织13/400为SCLC；所有组织学转化合计19/400。",
+      "reason": "细胞谱系改变可削弱EGFR依赖，即使原EGFR突变仍存在；会直接改变病理和治疗路径。",
+      "interpretation_limit": "必须进展组织病理确认；TP53/RB1异常不能代替诊断。",
+      "pmids": [
+        "41790029",
+        "30550363"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 4,
+      "mechanism": "鳞状/基底样及腺鳞转化",
+      "evidence_type": "临床重要表型",
+      "frequency_context": "多个进展组织队列报道；不同队列、纯鳞与腺鳞定义不宜合并。",
+      "reason": "谱系及调控网络改变，血浆DNA无法确认；常伴RB、PI3K及3q/SOX2相关改变。",
+      "interpretation_limit": "需排除原有混合成分、第二原发和取样差异。",
+      "pmids": [
+        "31911548",
+        "42308331",
+        "40350470"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 5,
+      "mechanism": "ERBB2/HER2扩增",
+      "evidence_type": "低频临床",
+      "frequency_context": "ORCHARD进展组织13/400（约3%）。",
+      "reason": "另一个RTK可绕开EGFR维持存活信号；有必要同时看拷贝、蛋白和克隆归属。",
+      "interpretation_limit": "HER2表达、扩增、激活突变是不同标志物；不能直接互换ADC适应证。",
+      "pmids": [
+        "41790029",
+        "42846034"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 6,
+      "mechanism": "KRAS激活变异",
+      "evidence_type": "低频临床",
+      "frequency_context": "ORCHARD RAS突变组8/400（2%）；该数不是KRAS单独发生率。",
+      "reason": "G12等精确激活变体可直接维持RAS-MAPK；须确认肿瘤来源及与EGFR克隆的联系。",
+      "interpretation_limit": "血浆KRAS也可能来自造血克隆；G12C与其他等位变异不能共用药敏模板。",
+      "pmids": [
+        "41790029",
+        "35066105",
+        "42612796",
+        "29567812"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 7,
+      "mechanism": "PIK3CA激活变异/PI3K支路改变",
+      "evidence_type": "临床候选",
+      "frequency_context": "在进展和转化组织中反复检出；暂无本同期联合序列统一频率。",
+      "reason": "PI3K-AKT存活支路可在EGFR阻断后继续输出，并与谱系转化并存。",
+      "interpretation_limit": "基线共突变、获得性改变和单次pAKT升高须分开；不直接预测PI3K药敏。",
+      "pmids": [
+        "41790029",
+        "31911548"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 8,
+      "mechanism": "BRAF V600E",
+      "evidence_type": "低频临床",
+      "frequency_context": "ORCHARD进展组织11/400（约3%）。",
+      "reason": "class I RAF激活能在EGFR下游持续传递信号，有机制和小样本组合研究。",
+      "interpretation_limit": "获得性旁路不同于de novo BRAF肺癌；组合疗效和毒性不能由单药标签推断。",
+      "pmids": [
+        "41790029",
+        "39268146",
+        "42202477"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 9,
+      "mechanism": "BRAF融合/重排",
+      "evidence_type": "低频临床",
+      "frequency_context": "ORCHARD进展组织19/400（约5%）；是该选择性队列的检出率。",
+      "reason": "结构性激活RAF二聚体相关信号，常规DNA panel可能漏断点。",
+      "interpretation_limit": "RNA、同框与结构域确认重要；不能按V600E单体抑制模板选药。",
+      "pmids": [
+        "41790029",
+        "30831205",
+        "42546514"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 10,
+      "mechanism": "获得性RET融合",
+      "evidence_type": "罕见临床、机制明确",
+      "frequency_context": "小队列及跨国扩展用药队列；不能外推统一频率。",
+      "reason": "可形成与EGFR并存的第二激酶驱动，已有遗传模型与机制匹配人体信号。",
+      "interpretation_limit": "须RNA/结构与克隆审查；小样本非随机结果不是同期化疗后标准。",
+      "pmids": [
+        "30257958",
+        "36996322"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 11,
+      "mechanism": "ERBB2/HER2激活突变",
+      "evidence_type": "低频临床候选",
+      "frequency_context": "ORCHARD进展组织6/400（约2%）。",
+      "reason": "需与HER2扩增分开，具体激活等位变异可能建立另一RTK驱动。",
+      "interpretation_limit": "基线或新获得、独立原发或同克隆需核清；不能照搬de novo HER2证据。",
+      "pmids": [
+        "41790029"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 12,
+      "mechanism": "EGFR L718Q/V",
+      "evidence_type": "罕见临床",
+      "frequency_context": "二位点大数据库中L718占该二位点亚组约15%，不是全部耐药者的15%。",
+      "reason": "改变药物结合环境，在L858R背景较集中；必须记录复合突变。",
+      "interpretation_limit": "具体复合基因型影响药敏，不能按单一位点自动更换TKI。",
+      "pmids": [
+        "36849494",
+        "37806383",
+        "38836187"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 13,
+      "mechanism": "EGFR G724S",
+      "evidence_type": "罕见临床",
+      "frequency_context": "有进展组织、病例系列及二位点数据库证据，常与exon19del背景相关。",
+      "reason": "改变P-loop构象，是应从未知EGFR事件中单独识别的精确位点。",
+      "interpretation_limit": "病例药效不能变为普遍治疗规则；需要完整共变异及既往治疗背景。",
+      "pmids": [
+        "31911548",
+        "37806383",
+        "38836187"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 14,
+      "mechanism": "EGFR L792H/F等",
+      "evidence_type": "罕见临床",
+      "frequency_context": "小队列/病例与构建模型；缺少稳定的同期联合后频率。",
+      "reason": "改变结合区域；L792F还可伴STAT3/IL4及微环境变化。",
+      "interpretation_limit": "顺反式和复合变异影响解释，不能用一个残基名预测统一药敏。",
+      "pmids": [
+        "37806383",
+        "35932642",
+        "33937055"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 15,
+      "mechanism": "EGFR G796S/R/D等",
+      "evidence_type": "罕见临床",
+      "frequency_context": "FLAURA与二位点研究有报告，不能视为常见独立机制。",
+      "reason": "靠近药物结合区域；应与其他EGFR复合改变一起做精确等位审查。",
+      "interpretation_limit": "不同替换及激活背景不可互换，模型结果不等于临床获益。",
+      "pmids": [
+        "36849494",
+        "37806383"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 16,
+      "mechanism": "ALK融合",
+      "evidence_type": "罕见临床",
+      "frequency_context": "获得性融合队列与少量单细胞研究报道。",
+      "reason": "可与原EGFR驱动共存并形成旁路；仅凭血浆共检出不能确认同一克隆。",
+      "interpretation_limit": "需进展期合格RNA、同框和激酶域支持；不照搬初治ALK肺癌。",
+      "pmids": [
+        "29883838",
+        "35066105"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 17,
+      "mechanism": "FGFR1/2/3融合，尤其FGFR3-TACC3",
+      "evidence_type": "罕见临床",
+      "frequency_context": "ORCHARD FGFR融合组6/400（约2%），不是FGFR3单独率。",
+      "reason": "可维持RTK下游MAPK与存活信号，RNA对设计外融合有补盲价值。",
+      "interpretation_limit": "融合、扩增及FGF配体升高不同；须结构和克隆验证。",
+      "pmids": [
+        "41790029",
+        "35066105"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 18,
+      "mechanism": "NTRK1融合",
+      "evidence_type": "罕见临床",
+      "frequency_context": "主要来自调查与少量耐药病例，无稳定发生率。",
+      "reason": "可能引入新的TRK激酶旁路，值得DNA阴性后RNA复查。",
+      "interpretation_limit": "需要表达、同框、结构域及EGFR克隆关系；不能只按靶向药存在而判为因果。",
+      "pmids": [
+        "31761448"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 19,
+      "mechanism": "MET精确激活变异，如H1094Y",
+      "evidence_type": "罕见临床＋模型",
+      "frequency_context": "ORCHARD三例MET激酶域变异；其中不同变体的因果不能一概而论。",
+      "reason": "H1094Y已有耐药模型验证，须与MET扩增分开编码。",
+      "interpretation_limit": "其他MET位点可能与既往MET药暴露有关，不能把所有MET变异视为同一药敏。",
+      "pmids": [
+        "31911548",
+        "41790029"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 20,
+      "mechanism": "PTEN失活及AKT/MTOR支路",
+      "evidence_type": "低频临床＋模型",
+      "frequency_context": "临床检出与模型支持并存，无统一频率。",
+      "reason": "解除PI3K-AKT制动或特定MTOR激活，可提高细胞在EGFR阻断下的存活。",
+      "interpretation_limit": "双等位失活、精确功能、细胞区室和背景必要；不是任意pAKT阳性即可选药。",
+      "pmids": [
+        "41790029",
+        "34242789"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 21,
+      "mechanism": "KRAS扩增",
+      "evidence_type": "少量临床/模型",
+      "frequency_context": "发生率未定；药物联合证据主要为模型。",
+      "reason": "增加RAS通路剂量而非产生G12C位点；常规点突变解释流程易忽略。",
+      "interpretation_limit": "须排除倍体、纯度影响；不能套用KRAS G12C药物标签。",
+      "pmids": [
+        "37442265",
+        "42612796"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 22,
+      "mechanism": "NRAS/HRAS激活改变",
+      "evidence_type": "少量临床/模型",
+      "frequency_context": "病例/患者来源模型，未建立同期联合后发生率。",
+      "reason": "可绕过EGFR持续激活RAS；NRAS Q61等已有模型功能证据。",
+      "interpretation_limit": "需排除造血来源及不确定功能变体；模型联合不等于人体有效。",
+      "pmids": [
+        "35251316",
+        "29641535"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 23,
+      "mechanism": "MAP2K1/MEK1激活变异",
+      "evidence_type": "罕见临床/模型",
+      "frequency_context": "等位特异研究及少量耐药病例，无统一频率。",
+      "reason": "可从较下游恢复ERK输出，某些等位变异不再依赖上游RAF。",
+      "interpretation_limit": "不能用MEK基因名推断MEK抑制剂敏感；部分已有负面临床更新。",
+      "pmids": [
+        "29483135",
+        "38617091",
+        "42202477"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 24,
+      "mechanism": "BRAF非V600：class II/III",
+      "evidence_type": "低频/背景依赖",
+      "frequency_context": "需精确变体分型，不能给统一发生率。",
+      "reason": "class II偏二聚体，class III偏RAS依赖，与V600E的机制不同。",
+      "interpretation_limit": "错误归为V600E会产生错误治疗推断；需核上游依赖及阴性组合试验。",
+      "pmids": [
+        "28783719",
+        "30224342",
+        "42202477"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 25,
+      "mechanism": "YES1局灶扩增",
+      "evidence_type": "罕见临床＋功能模型",
+      "frequency_context": "原始研究在EGFR抑制剂获得性耐药中发现5例；不是总体统一发生率。",
+      "reason": "DNA剂量变化可驱动SFK旁路，转座筛选、临床基因组及遗传干预形成连续证据。",
+      "interpretation_limit": "需确认局灶扩增及克隆关系；不能由YES1表达或泛SFK药物反应单独定因果。",
+      "pmids": [
+        "29875142"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 26,
+      "mechanism": "ARAF扩增",
+      "evidence_type": "小型临床队列候选",
+      "frequency_context": "单中心研究奥希替尼耐药48例中4例检出；存在选择偏倚。",
+      "reason": "可连接RAS–RAF信号，少量病例与小细胞转化并存。",
+      "interpretation_limit": "并存和转化关联不等于已证明独立因果或ARAF专属药敏。",
+      "pmids": [
+        "39456595"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 27,
+      "mechanism": "MAPK1/ERK2扩增",
+      "evidence_type": "个例＋功能模型",
+      "frequency_context": "早期研究有厄洛替尼耐药个例；不能转用为奥希加化疗后频率。",
+      "reason": "在下游直接增加ERK输出，可逃过上游EGFR抑制。",
+      "interpretation_limit": "经典模型药物包括WZ4002，不能把实验增敏结果当成人体MEK/ERK获益。",
+      "pmids": [
+        "22961667"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 28,
+      "mechanism": "NF1/RASA1负调控缺失",
+      "evidence_type": "探索性基因候选",
+      "frequency_context": "EGFR场景频率未定；部分依据来自其他肺癌背景。",
+      "reason": "减少RAS-GTP关闭，可能维持MAPK信号，解释中容易被归作非热点而漏掉。",
+      "interpretation_limit": "单等位VUS不足；跨癌种NF1-MEK试验有阴性证据，不能自动选药。",
+      "pmids": [
+        "29127119",
+        "37053535",
+        "36820830"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 29,
+      "mechanism": "NKX2-1/TTF-1及其增强子扩增",
+      "evidence_type": "高检出、因果需分层",
+      "frequency_context": "ORCHARD进展组织82/400（约21%）。",
+      "reason": "高剂量谱系转录因子及增强子可维持肺腺癌身份与EGFR抑制后的持留，值得WGS/调控层分析。",
+      "interpretation_limit": "21%是进展时检出，不证明全为新获得或当前耐药主因；尚非验证用药标志。",
+      "pmids": [
+        "41790029",
+        "40139189",
+        "22439932"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 30,
+      "mechanism": "RBM10失活与BCL-X异常剪接",
+      "evidence_type": "临床关联＋功能模型",
+      "frequency_context": "ORCHARD进展组织25/400（约6%）；可为基线共异常。",
+      "reason": "降低促凋亡BCL-XS与抗凋亡BCL-XL比例，使EGFR抑制后的细胞凋亡不足。",
+      "interpretation_limit": "不是每个RBM10变异都为失活，也不能直接等同BH3药物敏感。",
+      "pmids": [
+        "41790029",
+        "35579943"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 31,
+      "mechanism": "EGFR拷贝数增加：高检出但因果待定",
+      "evidence_type": "高检出、独立原因未确立",
+      "frequency_context": "ORCHARD进展组织138/400（约35%）；其讨论指出ELIOS治疗前后比例相近。",
+      "reason": "列入是为了避免遗漏剂量信息并防止误判；不能因为检出很高就排成最强获得性原因。",
+      "interpretation_limit": "原EGFR驱动伴扩增可为背景；须纵向、纯度/倍体及功能审查，不能直接选更高剂量。",
+      "pmids": [
+        "41790029"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 32,
+      "mechanism": "EGFR T790M获得/丢失：依既往线序解释",
+      "evidence_type": "临床；条件性机制/克隆标志",
+      "frequency_context": "早代TKI耐药155例中98例检出T790M；二线奥希耐药可完成组织NGS的41例中28例丢失。均非一线奥希加化疗后发生率。",
+      "reason": "早代TKI后T790M是重要耐药位点；二线奥希后其丢失可提示替代克隆竞争和非EGFR旁路。",
+      "interpretation_limit": "T790M丢失本身不是单一驱动机制；须排除低肿瘤含量和检测限，不能据其有无自动重用旧药。",
+      "pmids": [
+        "23470965",
+        "30073261"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 33,
+      "mechanism": "TP53/RB1共同失活背景",
+      "evidence_type": "风险/谱系背景",
+      "frequency_context": "转化群富集；不是已确认转化或获得性耐药率。",
+      "reason": "提示细胞周期和谱系可塑性风险，在EGFR保留时尤其需要进展病理。",
+      "interpretation_limit": "TP53常见共变异不能单独当作主耐药原因，双失活也不能替代组织学。",
+      "pmids": [
+        "31228622",
+        "41790029",
+        "28498782"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 34,
+      "mechanism": "CDKN2A/B–RB通路失活",
+      "evidence_type": "谱系/风险背景",
+      "frequency_context": "鳞状转化研究支持RB通路异常；无统一频率。",
+      "reason": "通过细胞周期刹车及谱系网络影响表型演化，可能解释RB1未直接突变的RB通路失活。",
+      "interpretation_limit": "删除不等于必然鳞变或CDK药敏，需结合病理和功能。",
+      "pmids": [
+        "42308331",
+        "40350470"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 35,
+      "mechanism": "MYC/SOX2–NOTCH神经内分泌重编程",
+      "evidence_type": "临床关联＋模型",
+      "frequency_context": "转化组织有富集，缺少可合并的一般频率。",
+      "reason": "有助解释非突变型谱系选择和状态转换，与PRC2等表观网络协同。",
+      "interpretation_limit": "MYC、SOX2及NOTCH作用有方向/背景差异，不能由表达一项确认转化。",
+      "pmids": [
+        "41790029",
+        "34155000",
+        "32473656"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 36,
+      "mechanism": "AXL激活与EMT程序",
+      "evidence_type": "模型＋患者关联",
+      "frequency_context": "机制重要，尚无统一、经验证的临床发生率。",
+      "reason": "可在反馈解除后维持EGFR/HER3相关生存并促进持留状态，DNA检测可能无新驱动。",
+      "interpretation_limit": "AXL表达不是致病突变或已证实药敏；EMT需细胞区室和动态确认。",
+      "pmids": [
+        "30651547",
+        "42475177"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 37,
+      "mechanism": "BCL-XL/MCL1与BIM凋亡阈值失衡",
+      "evidence_type": "主要功能模型",
+      "frequency_context": "未建立本序列临床发生率或表达选药阈值。",
+      "reason": "EGFR信号被抑制后细胞仍可逃避死亡，可与多种DNA旁路并存。",
+      "interpretation_limit": "需功能性凋亡依赖验证；MCL1动物再生长结果并非均显著。",
+      "pmids": [
+        "36969743",
+        "35579943"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 38,
+      "mechanism": "ERBB3/HER3受体协同与转激活",
+      "evidence_type": "功能模型＋患者关联",
+      "frequency_context": "EGFR突变耐药人群的独立贡献率未定。",
+      "reason": "HER3可连接EGFR、MET、AXL等输入与PI3K/STAT3，是无新热点变异时的信号接点。",
+      "interpretation_limit": "HER3表达可为谱系背景或ADC靶抗原；不能据表达高证明当前耐药。",
+      "pmids": [
+        "30651547",
+        "22439932",
+        "38092140"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 39,
+      "mechanism": "SRC/YES1–FAK旁路",
+      "evidence_type": "主要功能模型",
+      "frequency_context": "发生率未定；YES1扩增与激酶活性升高应分开。",
+      "reason": "整合黏附、RTK和存活信号，可同时支持MAPK与AKT。",
+      "interpretation_limit": "pSRC/pFAK不能确认唯一驱动，多靶药反应也不能证明特定靶点依赖。",
+      "pmids": [
+        "28416483",
+        "35197546"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 40,
+      "mechanism": "PTPN11/SHP2适配层依赖",
+      "evidence_type": "主要功能模型",
+      "frequency_context": "未建立可泛化的人群频率或伴随诊断。",
+      "reason": "整合多种RTK旁路至RAS-MAPK，可能是复合耐药的共同节点。",
+      "interpretation_limit": "磷酸酶表达、活化变体及药物敏感性不同；部分激活等位可影响变构药覆盖。",
+      "pmids": [
+        "32928921",
+        "40333694"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 41,
+      "mechanism": "SOS1介导的适应性RAS再激活",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "临床发生率及模型标志物阈值未知。",
+      "reason": "维持RTK到RAS的核苷酸交换；遗传/药理干预在模型减少DTP和再生长。",
+      "interpretation_limit": "小鼠延迟复发不是患者获益，SOS1早期药物研究亦有毒性限制。",
+      "pmids": [
+        "41289356",
+        "42048384"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 42,
+      "mechanism": "SOS2–RTK/PI3K阈值调节",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "未建立临床频率。",
+      "reason": "可促进RTK/AKT重启及HGF旁路，解释无RAS热点但仍持续存活的模型。",
+      "interpretation_limit": "实验中删除SOS2不能直接等同现有SOS1药物或临床可干预性。",
+      "pmids": [
+        "38073064"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 43,
+      "mechanism": "FGF2–FGFR1自/旁分泌切换",
+      "evidence_type": "模型；部分跨驱动背景",
+      "frequency_context": "特定FGFR1/FGF2高表达模型；EGFR患者贡献率未定。",
+      "reason": "持留细胞可转向FGFR输入并恢复ERK，不一定有FGFR融合。",
+      "interpretation_limit": "不能将高表达、扩增和融合混同；部分人体资料来自ALK背景。",
+      "pmids": [
+        "37880373",
+        "39059573"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 44,
+      "mechanism": "HGF配体–MET旁路",
+      "evidence_type": "早代EGFR模型",
+      "frequency_context": "肿瘤或基质来源可不同，奥希同期联合后频率未知。",
+      "reason": "通过MET受体输入可在无MET扩增时救援下游信号。",
+      "interpretation_limit": "血清HGF不能定源或定因果；需受体活性及选择性功能验证。",
+      "pmids": [
+        "37844446",
+        "38073064"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 45,
+      "mechanism": "IGF1R及circRNA/miRNA调控回路",
+      "evidence_type": "模型＋人体关联",
+      "frequency_context": "未形成统一临床频率或用药阈值。",
+      "reason": "circ_PPAPDC1A–miR-30a-3p等回路可提高IGF1R并维持PI3K/AKT/mTOR。",
+      "interpretation_limit": "IGF1R表达、磷酸化和真实依赖不同，非编码RNA关联不替代因果。",
+      "pmids": [
+        "38715012"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 46,
+      "mechanism": "GAS6–MERTK激活",
+      "evidence_type": "直接EGFR模型＋人体关联",
+      "frequency_context": "有耐药样本表达变化；贡献率和临床药敏未确定。",
+      "reason": "可绕开EGFR重新激活AKT/ERK，遗传与抗体/激酶干预在模型支持。",
+      "interpretation_limit": "不把患者表达关联或双抗PDX效果当作已证明临床组合疗效。",
+      "pmids": [
+        "35708914",
+        "42875888"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 47,
+      "mechanism": "IL6–gp130–JAK1/2–STAT3轴",
+      "evidence_type": "模型＋患者关联",
+      "frequency_context": "没有可信统一发生率或本序列伴随诊断。",
+      "reason": "连接炎症、肿瘤存活及T/NK抑制，是非DNA耐药的重要候选回路。",
+      "interpretation_limit": "IL6可分叉至FAK/SRC/YAP，STAT3亦可促TRAIL凋亡；pSTAT3高不等于JAK药敏。",
+      "pmids": [
+        "36595561",
+        "39251588",
+        "40247082"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 48,
+      "mechanism": "OSM/OSMR–JAK1–STAT3",
+      "evidence_type": "主要功能模型",
+      "frequency_context": "靶向耐药NSCLC模型；本联合序列频率未知。",
+      "reason": "CAF与癌细胞旁分泌可推动EMT及抗凋亡，可能不出现新DNA驱动。",
+      "interpretation_limit": "不能由gp130或OSMR表达直接证明OSM依赖或JAK药效。",
+      "pmids": [
+        "28729401"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 49,
+      "mechanism": "CAF–IL11/IL11RA–STAT3",
+      "evidence_type": "铂类耐药模型",
+      "frequency_context": "肺腺癌顺铂模型，非同期奥希/铂/培美耐药队列。",
+      "reason": "直接关联化疗应激后CAF对肿瘤的抗凋亡保护，值得在联合治疗后研究。",
+      "interpretation_limit": "摘要未确立特定JAK成员；不能由IL11升高自动选择JAK药。",
+      "pmids": [
+        "27922075"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 50,
+      "mechanism": "CCL2–STAT3/ERK–ZEB1回路",
+      "evidence_type": "人体关联＋模型",
+      "frequency_context": "胸水/耐药细胞研究，无可靠群体发生率。",
+      "reason": "可推动ZEB1和EMT，属于炎症信号与肿瘤内状态的连接。",
+      "interpretation_limit": "不能未经定位就归为巨噬细胞来源；受体和下游依赖应实测。",
+      "pmids": [
+        "41800052"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 51,
+      "mechanism": "CXCL8/IL8–CXCR1/2干性回路",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "主要T790M细胞/动物证据，临床频率未定。",
+      "reason": "SHP2可经ERK/AKT/NFκB维持CXCL8正反馈及肿瘤干性。",
+      "interpretation_limit": "血清IL8也受炎症和感染影响，不是可直接选药的耐药标志。",
+      "pmids": [
+        "34217295"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 52,
+      "mechanism": "ECM/FN1–整合素–FAK力学输入",
+      "evidence_type": "功能模型＋表达关联",
+      "frequency_context": "群体贡献率和临床阈值未知。",
+      "reason": "细胞外基质与黏附信号可维持FAK/YAP及侵袭性，常规点突变分析看不见。",
+      "interpretation_limit": "刚度、药物扩散、细胞组成及受体信号作用须分开验证。",
+      "pmids": [
+        "42087187",
+        "28416483"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 53,
+      "mechanism": "ILK–SFK–YAP/TEAD及SLUG–BMF",
+      "evidence_type": "主要功能模型",
+      "frequency_context": "无经验证的人群发生率。",
+      "reason": "黏附和转录重编程可维持持留、EMT及凋亡抑制，解释无新热点时的存活。",
+      "interpretation_limit": "不同诱导条件、YAP定位与功能须分别证明；表达不等于抑制剂敏感。",
+      "pmids": [
+        "40450112",
+        "31935369"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 54,
+      "mechanism": "TGFβ–衰老相关分泌表型SASP",
+      "evidence_type": "化疗相关模型",
+      "frequency_context": "以铂类模型及人体关联为主，非特定EGFR同期序列。",
+      "reason": "治疗诱导衰老细胞的分泌组可经TGFBR1–AKT/mTOR保护邻近细胞。",
+      "interpretation_limit": "SASP不是单一JAK状态，分泌表型也不自动等同不可逆衰老或药敏。",
+      "pmids": [
+        "41634464"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 55,
+      "mechanism": "IFN–STAT1/2适应性程序",
+      "evidence_type": "双向、背景依赖",
+      "frequency_context": "患者关联与模型方向并不完全一致。",
+      "reason": "可影响持留、抗原呈递和宿主免疫，需纳入时间、细胞区室及治疗时序。",
+      "interpretation_limit": "IFN高低均不直接选JAK药；JAK1/2失活的免疫逃逸不是EGFR耐药激活。",
+      "pmids": [
+        "33269343",
+        "34001994"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 56,
+      "mechanism": "DUSP/SPRY–ERK反馈重设",
+      "evidence_type": "主要功能模型",
+      "frequency_context": "发生率未定，不能当独立常见基因突变。",
+      "reason": "反馈重设可使ERK反弹或改变适应状态，影响通路抑制的持续效果。",
+      "interpretation_limit": "ERK过强也可有毒，pERK高低都不能单独定义驱动；ERK试验有阴性证据。",
+      "pmids": [
+        "30475204",
+        "31821539",
+        "42578969"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 57,
+      "mechanism": "CD44s/CD44v8–10异常剪接",
+      "evidence_type": "模型＋人体关联",
+      "frequency_context": "临床样本有变化，稳定贡献率未知。",
+      "reason": "不同CD44转录本可与HER3相互作用并激活STAT3，DNA不一定出现新变异。",
+      "interpretation_limit": "总CD44表达不能替代具体转录本及功能验证。",
+      "pmids": [
+        "38092140"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 58,
+      "mechanism": "SPP1/骨桥蛋白–CD44干性",
+      "evidence_type": "功能模型",
+      "frequency_context": "当前研究以细胞/小鼠为主，临床贡献率未知。",
+      "reason": "可增强干细胞样状态和存活，成为基质、髓系或肿瘤内在信号的候选接口。",
+      "interpretation_limit": "需定位SPP1来源；SPP1阳性巨噬细胞存在不等于已证明耐药因果。",
+      "pmids": [
+        "41535831"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 59,
+      "mechanism": "CD73/NT5E–USP5稳定化与代谢",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "尚未形成临床预测频率。",
+      "reason": "CD73除腺苷免疫作用外，也可经PI3K/AKT/mTOR及糖酵解支持耐药。",
+      "interpretation_limit": "CD73高不单独证明腺苷或肿瘤依赖；来源、酶活与非酶作用需分开。",
+      "pmids": [
+        "41767275"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 60,
+      "mechanism": "缺氧诱导lncRNA/外泌体回路",
+      "evidence_type": "模型＋人体关联",
+      "frequency_context": "尚无统一发生率或成熟液体检测阈值。",
+      "reason": "LUCAT1可稳定MET，APCDD1L-AS1可稳定DLST并改变TCA代谢，连接低氧与耐受。",
+      "interpretation_limit": "不同lncRNA不是同一机制；外泌体浓度或HIF表达不单独定药敏。",
+      "pmids": [
+        "41145422",
+        "40634956"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 61,
+      "mechanism": "PLK1–JAK1/STAT3正反馈",
+      "evidence_type": "直接EGFR模型＋相关",
+      "frequency_context": "未建立临床贡献率或伴随诊断。",
+      "reason": "细胞周期调控与炎症存活信号互相强化，可维持STAT3活动及耐药状态。",
+      "interpretation_limit": "PLK1或pSTAT3高不能单独定义药物依赖，仍需因果验证。",
+      "pmids": [
+        "41539998"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 62,
+      "mechanism": "SWI/SNF：SMARCA4/SMARCA2调控依赖",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "部分患者来源模型支持，无临床频率阈值。",
+      "reason": "染色质重塑维持耐药转录程序；常规DNA阴性也可能存在ATPase依赖。",
+      "interpretation_limit": "基因缺失、ATPase依赖及蛋白表达不是同一事；仅部分模型可重新增敏。",
+      "pmids": [
+        "37541244"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 63,
+      "mechanism": "KDM5–H3K4me3状态改变",
+      "evidence_type": "表观遗传模型",
+      "frequency_context": "DTP模型依据，临床发生率未知。",
+      "reason": "组蛋白去甲基化帮助形成可逆持留状态，不一定留下编码区突变。",
+      "interpretation_limit": "研究化合物减少DTP不等于已进展患者受益，不能单靠KDM5表达选药。",
+      "pmids": [
+        "27214401"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 64,
+      "mechanism": "LSD1/KDM1A及低氧表观重编程",
+      "evidence_type": "表观遗传模型",
+      "frequency_context": "主要为低氧/吉非替尼模型。",
+      "reason": "低氧可经LSD1/PLU-1重编程促EMT与耐药，提示微环境与表观状态相连。",
+      "interpretation_limit": "不能等同奥希替尼加化疗后临床机制；选择性和人体组合安全性未建立。",
+      "pmids": [
+        "29934325"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 65,
+      "mechanism": "TET1降低及抑癌基因甲基化沉默",
+      "evidence_type": "表观遗传模型",
+      "frequency_context": "模型因果加人体相关，缺少本序列频率。",
+      "reason": "EGFR–C/EBPα可抑制TET1，导致部分抑癌程序沉默与耐受。",
+      "interpretation_limit": "普通WGS不能直接测甲基化；TET1恢复不等于DNMT药物必然有效。",
+      "pmids": [
+        "27346347"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 66,
+      "mechanism": "EED/PRC2–EZH2/H3K27me3谱系状态",
+      "evidence_type": "表观/谱系模型",
+      "frequency_context": "方向依赖背景，缺少临床筛选阈值。",
+      "reason": "PRC2参与神经内分泌身份与谱系选择；需观察细胞状态与染色质。",
+      "interpretation_limit": "EED失活不等于EZH2催化抑制；EZH2降低还可经MET促耐药，不能一律抑制。",
+      "pmids": [
+        "42611544",
+        "32920200"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 67,
+      "mechanism": "肺泡再生样/高可塑性残留细胞状态",
+      "evidence_type": "单细胞患者关联＋模型",
+      "frequency_context": "尚无统一临床诊断或发生率。",
+      "reason": "治疗残留细胞可沿多种再生和分化状态存活，bulk分析会稀释少数关键群体。",
+      "interpretation_limit": "AT2/HPCS签名不是确诊转化或用药标志，非所有持留细胞都EMT。",
+      "pmids": [
+        "32822576",
+        "32707077",
+        "32707078"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 68,
+      "mechanism": "脂肪酸氧化、抗氧化/NRF2持留程序",
+      "evidence_type": "主要模型＋MRD关联",
+      "frequency_context": "无可推广的人群发生率。",
+      "reason": "代谢与氧化还原适应帮助部分持续增殖persister存活，并为后续克隆演化保留细胞。",
+      "interpretation_limit": "不能把FAO/NRF2表达上调直接对应临床代谢药物。",
+      "pmids": [
+        "34381210",
+        "37541244"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 69,
+      "mechanism": "BRD4–APT1/核EGFR–CMPK2程序",
+      "evidence_type": "功能模型",
+      "frequency_context": "未建立临床发生率或选药阈值。",
+      "reason": "染色质阅读和EGFR棕榈酰化/核转位可维持不依赖新增EGFR突变的程序。",
+      "interpretation_limit": "表观阅读、蛋白修饰和DNA变异不同；药物模型效应不能直接迁移患者。",
+      "pmids": [
+        "40877429"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 70,
+      "mechanism": "METTL3–m6A/CDC25A–AURKB",
+      "evidence_type": "RNA表观转录组模型",
+      "frequency_context": "细胞系证据，无临床预测频率。",
+      "reason": "稳定特定细胞周期转录本，可促进奥希耐药形成。",
+      "interpretation_limit": "m6A是RNA修饰；不能由总m6A或METTL3表达自动推断药敏。",
+      "pmids": [
+        "41043761"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 71,
+      "mechanism": "METTL14降低–BIM转录本m6A减少",
+      "evidence_type": "RNA表观转录组模型＋关联",
+      "frequency_context": "未建立临床诊断阈值。",
+      "reason": "降低促凋亡BIM转录本稳定性，削弱EGFR抑制后的凋亡。",
+      "interpretation_limit": "与METTL3作用取决于靶转录本，不能使用统一的抑制m6A规则。",
+      "pmids": [
+        "38953880"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 72,
+      "mechanism": "ID3–SMAD3–NR2F2/HIF2A染色质回路",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "2026年机制研究，无统一人群发生率。",
+      "reason": "协同占据增强子/启动子，连接神经内分泌分化和铁死亡抑制。",
+      "interpretation_limit": "新模型机制不等于已有临床验证的转化标志或治疗靶点。",
+      "pmids": [
+        "42160004"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 73,
+      "mechanism": "ULK1/自噬通量重编程",
+      "evidence_type": "双向、时序依赖模型",
+      "frequency_context": "没有临床统一发生率；预防DTP与逆转已耐药不同。",
+      "reason": "特定模型通过自噬维持DTP，另一些模型恢复自噬可增强杀伤。",
+      "interpretation_limit": "不能用LC3或p62单个读出一律决定抑制/激活自噬。",
+      "pmids": [
+        "42407241",
+        "41241327"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 74,
+      "mechanism": "GPX4/谷胱甘肽–铁死亡逃逸",
+      "evidence_type": "直接EGFR模型",
+      "frequency_context": "临床贡献率和预测阈值未知。",
+      "reason": "SLC25A39–NRF2等维持谷胱甘肽和脂质抗氧化，使耐药细胞逃避铁死亡。",
+      "interpretation_limit": "抗氧化表达签名不是临床铁死亡药物敏感性证明。",
+      "pmids": [
+        "42402515"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 75,
+      "mechanism": "ecDNA癌基因扩增与拷贝数异质性",
+      "evidence_type": "跨癌WGS＋模型",
+      "frequency_context": "EGFR同期联合后临床贡献率未知。",
+      "reason": "染色体外扩增架构可形成快速剂量变化及细胞间异质性，普通拷贝数报告可能看不清。",
+      "interpretation_limit": "环状结构推断需验证；不是出现ecDNA就有专属药或所有WGD均耐药。",
+      "pmids": [
+        "32807987",
+        "32025007"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 76,
+      "mechanism": "非编码调控/增强子及复杂SV重连",
+      "evidence_type": "WGS研究候选",
+      "frequency_context": "大多数具体事件仍为待解释，不应统称常见。",
+      "reason": "可能改变启动子、增强子与靶基因联系，解释编码panel无新变异时的部分调控变化。",
+      "interpretation_limit": "统计关联或调控区VUS不足以定因果；需RNA/染色质及正交功能证据。",
+      "pmids": [
+        "32025015",
+        "40139189"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 77,
+      "mechanism": "TYMS增拷贝/胸苷酸合成酶适应",
+      "evidence_type": "化疗相关候选",
+      "frequency_context": "有小型NSCLC研究，非EGFR同期组合后发生率。",
+      "reason": "可降低培美曲塞相关的代谢抑制效果，适用于有该药暴露者的补充解释。",
+      "interpretation_limit": "小队列关联不是成熟伴随诊断；基线高表达不能直接称获得性。",
+      "pmids": [
+        "26220094"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 78,
+      "mechanism": "ERCC1/ERCC4及功能剪接修复适应",
+      "evidence_type": "化疗模型；标志物有反例",
+      "frequency_context": "铂类模型及异质临床资料，缺少统一阈值。",
+      "reason": "SNRPA等可改变ERCC1剪接及ERCC1-XPF功能，提高铂损伤修复。",
+      "interpretation_limit": "ERCC1常规IHC预测价值曾验证失败，不能凭高表达停用铂类。",
+      "pmids": [
+        "39555714",
+        "23514287"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 79,
+      "mechanism": "ABCB1/ABCG2药物外排与CNS暴露",
+      "evidence_type": "药理/宿主条件因素",
+      "frequency_context": "动物转运证据＋观察性宿主变异资料，非肿瘤耐药发生率。",
+      "reason": "可影响血脑屏障后药物浓度，使CNS进展缺少可检出的肿瘤驱动事件。",
+      "interpretation_limit": "宿主多态、肿瘤外排和依从性不同；不能据SNP自行改剂量。",
+      "pmids": [
+        "31175939",
+        "37125403"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 80,
+      "mechanism": "ANGPTL4–NDRG1/ECM重塑",
+      "evidence_type": "类器官/细胞模型＋相关",
+      "frequency_context": "2026年模型资料，临床贡献率未定。",
+      "reason": "分泌蛋白与NDRG1相关基质程序可降低奥希敏感性，基因热点检测可能漏掉。",
+      "interpretation_limit": "尚需独立患者队列和功能复现，虚拟筛选命中不等于可用药。",
+      "pmids": [
+        "42415069"
+      ],
+      "population_incidence_rank_established": false,
+      "patient_specific": false
+    }
+  ],
+  "sources": [
+    {
+      "pmid": "22439932",
+      "title": "NKX2-1/TITF1/TTF-1-Induced ROR1 is required to sustain EGFR survival signaling in lung adenocarcinoma.",
+      "doi": "10.1016/j.ccr.2012.02.008",
+      "journal": "Cancer cell",
+      "publication_date": "2012-03-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "22961667",
+      "title": "Reactivation of ERK signaling causes resistance to EGFR kinase inhibitors.",
+      "doi": "10.1158/2159-8290.cd-12-0103",
+      "journal": "Cancer discovery",
+      "publication_date": "2012-09-07",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "23470965",
+      "title": "Analysis of tumor specimens at the time of acquired resistance to EGFR-TKI therapy in 155 patients with EGFR-mutant lung cancers.",
+      "doi": "10.1158/1078-0432.ccr-12-2246",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2013-03-07",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "23514287",
+      "title": "ERCC1 isoform expression and DNA repair in non-small-cell lung cancer.",
+      "doi": "10.1056/nejmoa1214271",
+      "journal": "The New England journal of medicine",
+      "publication_date": "2013-03-01",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "25964297",
+      "title": "The Allelic Context of the C797S Mutation Acquired upon Treatment with Third-Generation EGFR Inhibitors Impacts Sensitivity to Subsequent Treatment Strategies.",
+      "doi": "10.1158/1078-0432.ccr-15-0560",
+      "journal": "Clinical Cancer Research",
+      "publication_date": "2015-05-11",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "26220094",
+      "title": "Thymidylate synthase gene amplification predicts pemetrexed resistance in patients with advanced non-small cell lung cancer.",
+      "doi": "10.1007/s12094-015-1359-y",
+      "journal": "Clinical & translational oncology : official publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico",
+      "publication_date": "2015-07-29",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "27214401",
+      "title": "An inhibitor of KDM5 demethylases reduces survival of drug-tolerant cancer cells.",
+      "doi": "10.1038/nchembio.2085",
+      "journal": "Nature chemical biology",
+      "publication_date": "2016-05-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "27346347",
+      "title": "Oncogenic EGFR Represses the TET1 DNA Demethylase to Induce Silencing of Tumor Suppressors in Cancer Cells.",
+      "doi": "10.1016/j.celrep.2016.05.087",
+      "journal": "Cell reports",
+      "publication_date": "2016-06-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "27922075",
+      "title": "Cancer-associated fibroblasts treated with cisplatin facilitates chemoresistance of lung adenocarcinoma through IL-11/IL-11R/STAT3 signaling pathway.",
+      "doi": "10.1038/srep38408",
+      "journal": "Scientific reports",
+      "publication_date": "2016-12-06",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "28416483",
+      "title": "SFK/FAK Signaling Attenuates Osimertinib Efficacy in Both Drug-Sensitive and Drug-Resistant Models of EGFR-Mutant Lung Cancer.",
+      "doi": "10.1158/0008-5472.can-16-2300",
+      "journal": "Cancer research",
+      "publication_date": "2017-04-17",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "28498782",
+      "title": "Clonal History and Genetic Predictors of Transformation Into Small-Cell Carcinomas From Lung Adenocarcinomas.",
+      "doi": "10.1200/jco.2016.71.9096",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "publication_date": "2017-05-12",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "28729401",
+      "title": "JAK1/STAT3 Activation through a Proinflammatory Cytokine Pathway Leads to Resistance to Molecularly Targeted Therapy in Non-Small Cell Lung Cancer.",
+      "doi": "10.1158/1535-7163.mct-17-0148",
+      "journal": "Molecular cancer therapeutics",
+      "publication_date": "2017-07-20",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "28783719",
+      "title": "Tumours with class 3 BRAF mutants are sensitive to the inhibition of activated RAS.",
+      "doi": "10.1038/nature23291",
+      "journal": "Nature",
+      "publication_date": "2017-08-02",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29127119",
+      "title": "RASA1 and NF1 are Preferentially Co-Mutated and Define A Distinct Genetic Subset of Smoking-Associated Non-Small Cell Lung Carcinomas Sensitive to MEK Inhibition.",
+      "doi": "10.1158/1078-0432.ccr-17-2343",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2017-11-10",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29483135",
+      "title": "Allele-Specific Mechanisms of Activation of MEK1 Mutants Determine Their Properties.",
+      "doi": "10.1158/2159-8290.cd-17-1452",
+      "journal": "Cancer discovery",
+      "publication_date": "2018-02-26",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29567812",
+      "title": "False-Positive Plasma Genotyping Due to Clonal Hematopoiesis.",
+      "doi": "10.1158/1078-0432.ccr-18-0143",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2018-03-22",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29641535",
+      "title": "Acquired resistance to AZD9291 as an upfront treatment is dependent on ERK signaling in a preclinical model.",
+      "doi": "10.1371/journal.pone.0194730",
+      "journal": "PloS one",
+      "publication_date": "2018-04-11",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29875142",
+      "title": "YES1 amplification is a mechanism of acquired resistance to EGFR inhibitors identified by transposon mutagenesis and clinical genomics.",
+      "doi": "10.1073/pnas.1717782115",
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "publication_date": "2018-06-06",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29883838",
+      "title": "Receptor Tyrosine Kinase Fusions and BRAF Kinase Fusions are Rare but Actionable Resistance Mechanisms to EGFR Tyrosine Kinase Inhibitors.",
+      "doi": "10.1016/j.jtho.2018.05.027",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "publication_date": "2018-06-05",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "29934325",
+      "title": "Hypoxia Promotes Resistance to EGFR Inhibition in NSCLC Cells via the Histone Demethylases, LSD1 and PLU-1.",
+      "doi": "10.1158/1541-7786.mcr-17-0637",
+      "journal": "Molecular cancer research : MCR",
+      "publication_date": "2018-06-22",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30073261",
+      "title": "Assessment of Resistance Mechanisms and Clinical Implications in Patients With EGFR T790M-Positive Lung Cancer and Acquired Resistance to Osimertinib.",
+      "doi": "10.1001/jamaoncol.2018.2969",
+      "journal": "JAMA oncology",
+      "publication_date": "2018-11-01",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30224342",
+      "title": "Impact of BRAF Mutation Class on Disease Characteristics and Clinical Outcomes in BRAF-mutant Lung Cancer.",
+      "doi": "10.1158/1078-0432.ccr-18-2062",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2018-09-17",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30257958",
+      "title": "Landscape of Acquired Resistance to Osimertinib in EGFR-Mutant NSCLC and Clinical Validation of Combined EGFR and RET Inhibition with Osimertinib and BLU-667 for Acquired RET Fusion.",
+      "doi": "10.1158/2159-8290.cd-18-1022",
+      "journal": "Cancer discovery",
+      "publication_date": "2018-09-26",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30475204",
+      "title": "Hyperactivation of ERK by multiple mechanisms is toxic to RTK-RAS mutation-driven lung adenocarcinoma cells.",
+      "doi": "10.7554/elife.33718",
+      "journal": "eLife",
+      "publication_date": "2018-11-26",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30550363",
+      "title": "EGFR-Mutant Adenocarcinomas That Transform to Small-Cell Lung Cancer and Other Neuroendocrine Carcinomas: Clinical Outcomes.",
+      "doi": "10.1200/jco.18.01585",
+      "journal": "Journal of Clinical Oncology",
+      "publication_date": "2018-12-14",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30651547",
+      "title": "AXL confers intrinsic resistance to osimertinib and advances the emergence of tolerant cells.",
+      "doi": "10.1038/s41467-018-08074-0",
+      "journal": "Nature communications",
+      "publication_date": "2019-01-16",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "30831205",
+      "title": "Acquired BRAF Rearrangements Induce Secondary Resistance to EGFR therapy in EGFR-Mutated Lung Cancers.",
+      "doi": "10.1016/j.jtho.2018.12.038",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "publication_date": "2019-03-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "31175939",
+      "title": "Brain accumulation of osimertinib and its active metabolite AZ5104 is restricted by ABCB1 (P-glycoprotein) and ABCG2 (breast cancer resistance protein).",
+      "doi": "10.1016/j.phrs.2019.104297",
+      "journal": "Pharmacological research",
+      "publication_date": "2019-06-05",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "31228622",
+      "title": "Concurrent RB1 and TP53 Alterations Define a Subset of EGFR-Mutant Lung Cancers at risk for Histologic Transformation and Inferior Clinical Outcomes.",
+      "doi": "10.1016/j.jtho.2019.06.002",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "publication_date": "2019-06-19",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "31761448",
+      "title": "Evidence of NTRK1 Fusion as Resistance Mechanism to EGFR TKI in EGFR+ NSCLC: Results From a Large-Scale Survey of NTRK1 Fusions in Chinese Patients With Lung Cancer.",
+      "doi": "10.1016/j.cllc.2019.09.004",
+      "journal": "Clinical lung cancer",
+      "publication_date": "2019-09-26",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "31821539",
+      "title": "ERK inhibition effectively overcomes acquired resistance of epidermal growth factor receptor-mutant non-small cell lung cancer cells to osimertinib.",
+      "doi": "10.1002/cncr.32655",
+      "journal": "Cancer",
+      "publication_date": "2019-12-10",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "31911548",
+      "title": "Tumor Analyses Reveal Squamous Transformation and Off-Target Alterations As Early Resistance Mechanisms to First-line Osimertinib in EGFR-Mutant Lung Cancer.",
+      "doi": "10.1158/1078-0432.ccr-19-3563",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2020-01-07",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "31935369",
+      "title": "Treatment-Induced Tumor Dormancy through YAP-Mediated Transcriptional Reprogramming of the Apoptotic Pathway.",
+      "doi": "10.1016/j.ccell.2019.12.006",
+      "journal": "Cancer cell",
+      "publication_date": "2020-01-13",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32025007",
+      "title": "Pan-cancer analysis of whole genomes.",
+      "doi": "10.1038/s41586-020-1969-6",
+      "journal": "Nature",
+      "publication_date": "2020-02-05",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32025015",
+      "title": "Analyses of non-coding somatic drivers in 2,658 cancer whole genomes.",
+      "doi": "10.1038/s41586-020-1965-x",
+      "journal": "Nature",
+      "publication_date": "2020-02-05",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32473656",
+      "title": "MYC Drives Temporal Evolution of Small Cell Lung Cancer Subtypes by Reprogramming Neuroendocrine Fate.",
+      "doi": "10.1016/j.ccell.2020.05.001",
+      "journal": "Cancer cell",
+      "publication_date": "2020-05-30",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32707077",
+      "title": "Emergence of a High-Plasticity Cell State during Lung Cancer Evolution.",
+      "doi": "10.1016/j.ccell.2020.06.012",
+      "journal": "Cancer cell",
+      "publication_date": "2020-07-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32707078",
+      "title": "Epigenomic State Transitions Characterize Tumor Progression in Mouse Lung Adenocarcinoma.",
+      "doi": "10.1016/j.ccell.2020.06.006",
+      "journal": "Cancer cell",
+      "publication_date": "2020-07-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32807987",
+      "title": "Extrachromosomal DNA is associated with oncogene amplification and poor outcome across multiple cancers.",
+      "doi": "10.1038/s41588-020-0678-2",
+      "journal": "Nature genetics",
+      "publication_date": "2020-08-17",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32822576",
+      "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "journal": "Cell",
+      "publication_date": "2020-08-20",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "32920200",
+      "title": "Loss of histone lysine methyltransferase EZH2 confers resistance to tyrosine kinase inhibitors in non-small cell lung cancer.",
+      "doi": "10.1016/j.canlet.2020.09.003",
+      "journal": "Cancer letters",
+      "publication_date": "2020-09-10",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "J05_E05",
+      "title": "Allosteric SHP2 Inhibitor, IACS-13909, Overcomes EGFR-Dependent and EGFR-Independent Resistance Mechanisms toward Osimertinib.",
+      "authors": "Sun Y, Meyers BA, Czako B, Leonard P, Mseeh F, Harris AL, Wu Q, Johnson S, Parker CA, Cross JB, Di Francesco ME, Bivona BJ, Bristow CA, Burke JP, Carrillo CC, Carroll CL, Chang Q, Feng N, Gao G, Gera S, Giuliani V, Huang JK, Jiang Y, Kang Z, Kovacs JJ, Liu CY, Lopez AM, Ma X, Mandal PK, McAfoos T, Miller MA, Mullinax RA, Peoples M, Ramamoorthy V, Seth S, Spencer ND, Suzuki E, Williams CC, Yu SS, Zuniga AM, Draetta GF, Marszalek JR, Heffernan TP, Kohl NE, Jones P.",
+      "year": 2020,
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.can-20-1634",
+      "pmid": "32928921",
+      "publication_date": "2020-09-14",
+      "url": "https://doi.org/10.1158/0008-5472.can-20-1634",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "IACS-13909变构抑制SHP2并抑制MAPK输出；在具有EGFR依赖或替代RTK旁路机制的奥希替尼耐药NSCLC模型中，单药或联合奥希替尼抑制体外增殖并在体内产生肿瘤退缩。",
+      "limitation_zh": "直接涉及EGFR突变奥希替尼耐药，但仍为细胞/动物研究；不是奥希替尼加同期化疗后临床研究，也没有证明PTPN11缺失是SHP2或JAK抑制剂的预测标志。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A31213912+OR+EXT_ID%3A28723893+OR+EXT_ID%3A34794959+OR+EXT_ID%3A38099496+OR+EXT_ID%3A32928921%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:08:10.084596+00:00"
+      }
+    },
+    {
+      "pmid": "33269343",
+      "title": "EGFR inhibition triggers an adaptive response by co-opting antiviral signaling pathways in lung cancer.",
+      "doi": "10.1038/s43018-020-0048-0",
+      "journal": "Nature cancer",
+      "publication_date": "2020-04-06",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "33937055",
+      "title": "Case Report: Dacomitinib May Not Benefit Patients Who Develop Rare Compound Mutations After Later-Line Osimertinib Treatment.",
+      "doi": "10.3389/fonc.2021.649843",
+      "journal": "Frontiers in oncology",
+      "publication_date": "2021-04-15",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "34001994",
+      "title": "A tyrosine kinase inhibitor-induced interferon response positively associates with clinical response in EGFR-mutant lung cancer.",
+      "doi": "10.1038/s41698-021-00181-4",
+      "journal": "NPJ precision oncology",
+      "publication_date": "2021-05-17",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "34155000",
+      "title": "Multiomic Analysis of Lung Tumors Defines Pathways Activated in Neuroendocrine Transformation.",
+      "doi": "10.1158/2159-8290.cd-20-1863",
+      "journal": "Cancer discovery",
+      "publication_date": "2021-12-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "34217295",
+      "title": "SHP2 inhibition enhances the anticancer effect of Osimertinib in EGFR T790M mutant lung adenocarcinoma by blocking CXCL8 loop mediated stemness.",
+      "doi": "10.1186/s12935-021-02056-x",
+      "journal": "Cancer cell international",
+      "publication_date": "2021-07-03",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "34242789",
+      "title": "Acquired Resistance to Third-Generation EGFR Tyrosine Kinase Inhibitors in Patients With De Novo EGFR<sup>T790M</sup>-Mutant NSCLC.",
+      "doi": "10.1016/j.jtho.2021.06.013",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "publication_date": "2021-07-06",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "34381210",
+      "title": "Cycling cancer persister cells arise from lineages with distinct programs.",
+      "doi": "10.1038/s41586-021-03796-6",
+      "journal": "Nature",
+      "publication_date": "2021-08-11",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "35066105",
+      "title": "Single-cell DNA-seq depicts clonal evolution of multiple driver alterations in osimertinib-resistant patients.",
+      "doi": "10.1016/j.annonc.2022.01.004",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "publication_date": "2022-01-21",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "35197546",
+      "title": "Ibrutinib reverses IL-6-induced osimertinib resistance through inhibition of Laminin α5/FAK signaling.",
+      "doi": "10.1038/s42003-022-03111-7",
+      "journal": "Communications biology",
+      "publication_date": "2022-02-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "35251316",
+      "title": "Molecular landscape of osimertinib resistance in patients and patient-derived preclinical models.",
+      "doi": "10.1177/17588359221079125",
+      "journal": "Therapeutic advances in medical oncology",
+      "publication_date": "2022-02-26",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "35579943",
+      "title": "Deficiency of the splicing factor RBM10 limits EGFR inhibitor response in EGFR-mutant lung cancer.",
+      "doi": "10.1172/jci145099",
+      "journal": "The Journal of clinical investigation",
+      "publication_date": "2022-07-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "35708914",
+      "title": "MERTK activation drives osimertinib resistance in EGFR-mutant non-small cell lung cancer.",
+      "doi": "10.1172/jci150517",
+      "journal": "The Journal of clinical investigation",
+      "publication_date": "2022-08-01",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "35932642",
+      "title": "Blockade of STAT3/IL-4 overcomes EGFR T790M-cis-L792F-induced resistance to osimertinib via suppressing M2 macrophages polarization.",
+      "doi": "10.1016/j.ebiom.2022.104200",
+      "journal": "EBioMedicine",
+      "publication_date": "2022-08-03",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "36595561",
+      "title": "IL6 Mediates Suppression of T- and NK-cell Function in EMT-associated TKI-resistant EGFR-mutant NSCLC.",
+      "doi": "10.1158/1078-0432.ccr-22-3379",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2023-04-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "36820830",
+      "title": "Genome-wide CRISPR/Cas9 screens reveal shared and cell-specific mechanisms of resistance to SHP2 inhibition.",
+      "doi": "10.1084/jem.20221563",
+      "journal": "The Journal of experimental medicine",
+      "publication_date": "2023-02-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "36849494",
+      "title": "Candidate mechanisms of acquired resistance to first-line osimertinib in EGFR-mutated advanced non-small cell lung cancer.",
+      "doi": "10.1038/s41467-023-35961-y",
+      "journal": "Nature Communications",
+      "publication_date": "2023-02-27",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "36969743",
+      "title": "Pharmaceutical Reactivation of Attenuated Apoptotic Pathways Leads to Elimination of Osimertinib Drug-Tolerant Cells.",
+      "doi": "10.1158/2767-9764.crc-22-0066",
+      "journal": "Cancer research communications",
+      "publication_date": "2022-10-31",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "36996322",
+      "title": "Osimertinib and Selpercatinib Efficacy, Safety, and Resistance in a Multicenter, Prospectively Treated Cohort of EGFR-Mutant and RET Fusion-Positive Lung Cancers.",
+      "doi": "10.1158/1078-0432.ccr-22-2189",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2023-03-30",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37053535",
+      "title": "Trametinib in Patients With NF1-, GNAQ-, or GNA11-Mutant Tumors: Results From the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocols S1 and S2.",
+      "doi": "10.1200/po.22.00421",
+      "journal": "JCO precision oncology",
+      "publication_date": "2023-04-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37125403",
+      "title": "Influence of germline variations in drug transporters ABCB1 and ABCG2 on intracerebral osimertinib efficacy in patients with non-small cell lung cancer.",
+      "doi": "10.1016/j.eclinm.2023.101955",
+      "journal": "EClinicalMedicine",
+      "publication_date": "2023-04-13",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37442265",
+      "title": "The combination of osimertinib with Raf inhibitor overcomes osimertinib resistance induced by KRAS amplification in EGFR-mutated lung cancer cells.",
+      "doi": "10.1016/j.yexcr.2023.113722",
+      "journal": "Experimental cell research",
+      "publication_date": "2023-07-12",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37541244",
+      "title": "Mammalian SWI/SNF chromatin remodeling complexes promote tyrosine kinase inhibitor resistance in EGFR-mutant lung cancer.",
+      "doi": "10.1016/j.ccell.2023.07.005",
+      "journal": "Cancer cell",
+      "publication_date": "2023-08-03",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37806383",
+      "title": "Real-World Genomic Profile of EGFR Second-Site Mutations and Other Osimertinib Resistance Mechanisms and Clinical Landscape of NSCLC Post-Osimertinib.",
+      "doi": "10.1016/j.jtho.2023.09.1453",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "publication_date": "2023-10-06",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37844446",
+      "title": "Targeting MET endocytosis or degradation to overcome HGF-induced gefitinib resistance in EGFR-sensitive mutant lung adenocarcinoma.",
+      "doi": "10.1016/j.bbrc.2023.10.037",
+      "journal": "Biochemical and biophysical research communications",
+      "publication_date": "2023-10-10",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "37880373",
+      "title": "FGFR blockade inhibits targeted therapy-tolerant persister in basal FGFR1- and FGF2-high cancers with driver oncogenes.",
+      "doi": "10.1038/s41698-023-00462-0",
+      "journal": "NPJ precision oncology",
+      "publication_date": "2023-10-25",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "38073064",
+      "title": "SOS2 modulates the threshold of EGFR signaling to regulate osimertinib efficacy and resistance in lung adenocarcinoma.",
+      "doi": "10.1002/1878-0261.13564",
+      "journal": "Molecular oncology",
+      "publication_date": "2024-01-18",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "38092140",
+      "title": "CD44s and CD44v8-10 isoforms confer acquired resistance to osimertinib by activating the ErbB3/STAT3 signaling pathway.",
+      "doi": "10.1016/j.lfs.2023.122345",
+      "journal": "Life sciences",
+      "publication_date": "2023-12-11",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "38617091",
+      "title": "MAP2K1 K57N Conferred an Acquired Resistance to Furmonertinib, Dabrafenib and Trametinib Combined Therapy in Advanced Lung Adenocarcinoma with EGFR Mutation and BRAF V600E.",
+      "doi": "10.2147/ott.s454902",
+      "journal": "OncoTargets and therapy",
+      "publication_date": "2024-04-09",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "38715012",
+      "title": "circ_PPAPDC1A promotes Osimertinib resistance by sponging the miR-30a-3p/ IGF1R pathway in non-small cell lung cancer (NSCLC).",
+      "doi": "10.1186/s12943-024-01998-w",
+      "journal": "Molecular cancer",
+      "publication_date": "2024-05-07",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "38836187",
+      "title": "Characterization of Patients with EGFR Mutation-Positive NSCLC Following Emergence of the Osimertinib Resistance Mutations, L718Q or G724S: A Multicenter Retrospective Observational Study in France.",
+      "doi": "10.2147/ott.s448909",
+      "journal": "OncoTargets and therapy",
+      "publication_date": "2024-05-29",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "38953880",
+      "title": "METTL14-Mediated Bim mRNA m6A Modification Augments Osimertinib Sensitivity in EGFR-Mutant NSCLC Cells.",
+      "doi": "10.1158/1541-7786.mcr-23-1018",
+      "journal": "Molecular cancer research : MCR",
+      "publication_date": "2024-11-01",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "39059573",
+      "title": "Triple combination therapy comprising osimertinib, an AXL inhibitor, and an FGFR inhibitor improves the efficacy of EGFR-mutated non-small cell lung cancer.",
+      "doi": "10.1016/j.canlet.2024.217124",
+      "journal": "Cancer letters",
+      "publication_date": "2024-07-24",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "39089305",
+      "title": "Tepotinib plus osimertinib in patients with EGFR-mutated non-small-cell lung cancer with MET amplification following progression on first-line osimertinib (INSIGHT 2): a multicentre, open-label, phase 2 trial.",
+      "doi": "10.1016/s1470-2045(24)00270-5",
+      "journal": "The Lancet Oncology",
+      "publication_date": "2024-08-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "39251588",
+      "title": "Defective N-glycosylation of IL6 induces metastasis and tyrosine kinase inhibitor resistance in lung cancer.",
+      "doi": "10.1038/s41467-024-51831-7",
+      "journal": "Nature communications",
+      "publication_date": "2024-09-09",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "39268146",
+      "title": "Efficacy and tolerability of osimertinib with dabrafenib and trametinib in BRAF V600E acquired EGFR-mutant non-small cell lung cancer: a case series.",
+      "doi": "10.21037/jtd-23-629",
+      "journal": "Journal of thoracic disease",
+      "publication_date": "2024-06-21",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "N06_E03",
+      "title": "ARAF Amplification in Small-Cell Lung Cancer-Transformed Tumors Following Resistance to Epidermal Growth Factor Receptor-Tyrosine Kinase Inhibitors.",
+      "authors": "Kimura R, Adachi Y, Hirade K, Kisoda S, Yanase S, Shibata N, Ishii M, Fujiwara Y, Yamaguchi R, Fujita Y, Hosoda W, Ebi H.",
+      "year": 2024,
+      "journal": "Cancers",
+      "doi": "10.3390/cancers16203501",
+      "pmid": "39456595",
+      "publication_date": "2024-10-16",
+      "url": "https://doi.org/10.3390/cancers16203501",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "retrospective",
+      "design_detail": "",
+      "main_finding_zh": "EGFR-TKI耐药再活检队列发现ARAF扩增，部分病例伴小细胞肺癌组织学转化；提示RAF通路线索与谱系转化可能并存。",
+      "limitation_zh": "单中心、少量病例和拷贝数检测关联；未证实ARAF扩增单独造成转化或耐药，也未验证ARAF扩增对应的标准治疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3AARAF+AND+%28TITLE%3Abelvarafenib+OR+TITLE%3Aresistance%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-01T09:31:41+00:00"
+      }
+    },
+    {
+      "pmid": "39555714",
+      "title": "m6A-Modified SNRPA Controls Alternative Splicing of ERCC1 Exon 8 to Induce Cisplatin Resistance in Lung Adenocarcinoma.",
+      "doi": "10.1002/advs.202404609",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "publication_date": "2024-11-18",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "40139189",
+      "title": "Amplified dosage of the NKX2-1 lineage transcription factor controls its oncogenic role in lung adenocarcinoma.",
+      "doi": "10.1016/j.molcel.2025.03.001",
+      "journal": "Molecular cell",
+      "publication_date": "2025-03-25",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "40247082",
+      "title": "Induction of IL6/STAT3-dependent TRAIL expression that contributes to the therapeutic efficacy of osimertinib in EGFR mutant NSCLC cells.",
+      "doi": "10.1038/s41388-025-03381-5",
+      "journal": "Oncogene",
+      "publication_date": "2025-04-17",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "N02_E02",
+      "title": "JAB-3312, a Potent Allosteric SHP2 Inhibitor That Enhances the Efficacy of RTK/RAS/MAPK and PD-1 Blockade Therapies.",
+      "authors": "Kang D, Wang Y, Lin Y, Ma WW, Morgensztern D, Leventakos K, Bi C, Ding Y, Xiong J, Yan M, Sun X, Wang P, Ma C, Wang Y.",
+      "year": 2025,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-24-3691",
+      "pmid": "40333694",
+      "publication_date": "2025-07-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40333694/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "变构SHP2抑制剂JAB-3312在RTK/RAS/MAPK靶向组合中抑制ERK再激活，奥希替尼联合在奥希替尼耐药NSCLC模型中显示活性。",
+      "limitation_zh": "该文关于奥希替尼联合的支持主要来自临床前模型；文中两项试验的代表性响应病例不能据摘要判定为EGFR奥希替尼耐药病例。未验证奥希替尼加化疗后疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41289356+OR+EXT_ID%3A42048384+OR+EXT_ID%3A34217295+OR+EXT_ID%3A40333694&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "pmid": "40350470",
+      "title": "Basal-shift transformation leads to EGFR therapy-resistance in human lung adenocarcinoma.",
+      "doi": "10.1038/s41467-025-59623-3",
+      "journal": "Nature communications",
+      "publication_date": "2025-05-11",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "40450112",
+      "title": "Drug tolerance and persistence to EGFR inhibitor treatment are mediated by an ILK-SFK-YAP signaling axis in lung adenocarcinoma.",
+      "doi": "10.1038/s41388-025-03461-6",
+      "journal": "Oncogene",
+      "publication_date": "2025-05-31",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "40461383",
+      "title": "Savolitinib plus osimertinib in epidermal growth factor receptor (EGFR)-mutated advanced non-small cell lung cancer with MET overexpression and/or amplification following disease progression on osimertinib: primary results from the phase II SAVANNAH study.",
+      "doi": "10.1016/j.annonc.2025.04.003",
+      "journal": "Annals of Oncology",
+      "publication_date": "2025-06-02",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "40634956",
+      "title": "Hypoxia-inducible APCDD1L-AS1 promotes osimertinib resistance by stabilising DLST to drive tricarboxylic acid cycle in lung adenocarcinoma.",
+      "doi": "10.1186/s13046-025-03462-z",
+      "journal": "Journal of experimental & clinical cancer research : CR",
+      "publication_date": "2025-07-09",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "40877429",
+      "title": "Restoration of Osimertinib sensitivity in lung cancer through BRD4 inhibitor-mediated depalmitoylation of mutant EGFR via APT1.",
+      "doi": "10.1038/s41698-025-01048-8",
+      "journal": "NPJ precision oncology",
+      "publication_date": "2025-08-28",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41043761",
+      "title": "METTL3 contributes to osimertinib resistance in non-small cell lung cancer cell lines by regulating CDC25A and AURKB mRNA stability.",
+      "doi": "10.1016/j.cellsig.2025.112156",
+      "journal": "Cellular signalling",
+      "publication_date": "2025-10-01",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41145422",
+      "title": "Hypoxia-induced exosomal LUCAT1 promotes osimertinib resistance in lung adenocarcinoma by stabilizing c-MET.",
+      "doi": "10.1038/s41419-025-08100-2",
+      "journal": "Cell death & disease",
+      "publication_date": "2025-10-27",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41241327",
+      "title": "Activation of autophagy as a strategy to overcome Osimertinib-resistance in non-small cell lung cancer.",
+      "doi": "10.1016/j.ejphar.2025.178371",
+      "journal": "European journal of pharmacology",
+      "publication_date": "2025-11-13",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "N02_E01",
+      "title": "SOS1 inhibition suppresses the emergence of osimertinib resistance to generate a durable response in <i>EGFR</i>-mutant lung cancer.",
+      "authors": "Daley BR, Theard PL, Hughes JM, Finniff BA, Hofmann MH, Kostyrko K, Schenk RL, Vieira HM, Askew JW, Lewis RE, Kortum RL.",
+      "year": 2025,
+      "journal": "Science signaling",
+      "doi": "10.1126/scisignal.aea2788",
+      "pmid": "41289356",
+      "publication_date": "2025-11-25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41289356/",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "SOS1抑制在EGFR突变NSCLC三维球体、药物耐受持留与获得性奥希替尼耐药模型中抑制适应性RAS效应器再激活，减少肿瘤起始细胞；联合治疗在小鼠停药后延缓再生长。",
+      "limitation_zh": "细胞与小鼠机制研究；未证明EGFR患者临床获益，也未专门验证奥希替尼加化疗后进展人群。小鼠联合与奥希替尼单药均可明显缩瘤，延缓停药后再生长不等于已建立临床耐药可逆转。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41289356+OR+EXT_ID%3A42048384+OR+EXT_ID%3A34217295+OR+EXT_ID%3A40333694&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "pmid": "41535831",
+      "title": "SPP1 promotes cancer stemness and reduces osimertinib sensitivity in non-small cell lung cancer through interactions with CD44.",
+      "doi": "10.1186/s12935-026-04172-y",
+      "journal": "Cancer cell international",
+      "publication_date": "2026-01-14",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41539998",
+      "title": "Targeting PLK1 potentiates the antitumor efficacy of EGFR-TKIs through inhibiting the JAK1/STAT3 pathway.",
+      "doi": "10.1038/s41419-025-08220-9",
+      "journal": "Cell death & disease",
+      "publication_date": "2026-01-15",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41634464",
+      "title": "Treatment resistance to platinum-based chemotherapy in lung and ovarian cancer is driven by a targetable TGFβ senescent secretome.",
+      "doi": "10.1038/s43587-025-01054-2",
+      "journal": "Nature aging",
+      "publication_date": "2026-02-03",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41767275",
+      "title": "USP5-mediated CD73 deubiquitination drives osimertinib resistance via PI3K/AKT and glycolysis activation in LUAD.",
+      "doi": "10.1016/j.isci.2026.114916",
+      "journal": "iScience",
+      "publication_date": "2026-02-05",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41790029",
+      "title": "Genomic Profiling of Epidermal Growth Factor Receptor Mutation-Positive Non-Small Cell Lung Cancer after Progression on First-line Osimertinib: Phase II ORCHARD Study.",
+      "doi": "10.1158/1078-0432.ccr-25-4540",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2026-09-01",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "41800052",
+      "title": "The STAT3-ZEB1 axis contributes to CCL2-mediated resistance to osimertinib in lung cancer.",
+      "doi": "10.3389/fonc.2026.1699471",
+      "journal": "Frontiers in oncology",
+      "publication_date": "2026-02-20",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "id": "N02_E05",
+      "title": "The SOS1 Inhibitor BI 1701963 as Monotherapy or in Combination with Trametinib in Patients with KRAS Mutation-Positive Solid Tumors.",
+      "authors": "Jänne PA, Johnson ML, Li J, Pant S, Dünzinger U, Ilia L, Möldner K, Soh JE, Yamamoto N.",
+      "year": 2026,
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-25-3725",
+      "pmid": "42048384",
+      "publication_date": "2026-08-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42048384/",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "prospective",
+      "main_finding_zh": "2026年三项I期研究合计94名KRAS突变实体瘤患者接受SOS1抑制剂BI1701963单药或联合曲美替尼；摘要结论为单药疗效有限，同时报告剂量限制毒性和药物相关严重肺毒性。",
+      "limitation_zh": "人群不是奥希替尼加化疗耐药的EGFR肺癌。摘要报告3名单药患者在首周期出现间质性肺病并死亡，研究者认为与药物有关；因此不得将SOS1加MEK方案据机制推演为常规安全有效治疗。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41289356+OR+EXT_ID%3A42048384+OR+EXT_ID%3A34217295+OR+EXT_ID%3A40333694&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-01T09:31:14+00:00"
+      }
+    },
+    {
+      "pmid": "42087187",
+      "title": "Unmasking the common enemy: drug resistance mechanisms across three different EGFR inhibitor generations are associated with co-targetable alterations in extracellular matrix signaling.",
+      "doi": "10.1186/s12964-026-02927-8",
+      "journal": "Cell communication and signaling : CCS",
+      "publication_date": "2026-05-06",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42160004",
+      "title": "A Non-Canonical Core Transcriptional Regulatory Circuit Orchestrates Chromatin Reprogramming to Drive Osimertinib Resistance in Non-Small Cell Lung Cancer.",
+      "doi": "10.1002/advs.75765",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "publication_date": "2026-05-20",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42202477",
+      "title": "Osimertinib plus selumetinib in patients with EGFR-mutated advanced NSCLC with BRAF alterations post-progression on first-line osimertinib: ORCHARD.",
+      "doi": "10.1016/j.ejca.2026.116807",
+      "journal": "European journal of cancer (Oxford, England : 1990)",
+      "publication_date": "2026-05-18",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42308331",
+      "title": "Clinicogenomic analysis of EGFR-mutant lung tumors identifies Rb pathway inactivation as a hallmark of squamous transformation.",
+      "doi": "10.1126/scitranslmed.aea4881",
+      "journal": "Science translational medicine",
+      "publication_date": "2026-06-17",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42402515",
+      "title": "Inhibition of ferroptosis via SLC25A39-NRF2 axis drives Osimertinib resistance in lung adenocarcinoma.",
+      "doi": "10.1007/s00018-026-06313-y",
+      "journal": "Cellular and molecular life sciences : CMLS",
+      "publication_date": "2026-07-06",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42407241",
+      "title": "ULK1, a novel therapeutic target to delay drug tolerance to EGFR-TKIs in an EGFR-mutant non-small cell lung cancer model.",
+      "doi": "10.1016/j.lungcan.2026.109516",
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "publication_date": "2026-06-30",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42415069",
+      "title": "ANGPTL4 contributes to osimertinib resistance through NDRG1-associated extracellular matrix remodeling in EGFR-mutant NSCLC organoid models.",
+      "doi": "10.1186/s12935-026-04400-5",
+      "journal": "Cancer cell international",
+      "publication_date": "2026-07-07",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42475177",
+      "title": "AXL phosphosite mapping links FAK1 and YAP1 signaling to erlotinib resistance in EGFR-mutant lung cancer.",
+      "doi": "10.1016/j.celrep.2026.117717",
+      "journal": "Cell reports",
+      "publication_date": "2026-07-20",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42546514",
+      "title": "BRAF fusions define therapeutic vulnerability and tyrosine kinase inhibitor resistance in non-small cell lung cancer.",
+      "doi": "10.1016/j.lungcan.2026.109556",
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "publication_date": "2026-07-30",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42578969",
+      "title": "ERK1/2 Inhibitor Ulixertinib in Pan-cancer Patients with BRAF Fusions or Non-V600E/K Mutations: Results from the NCI-MATCH ECOG-ACRIN Trial (EAY131) Subprotocol Z1L.",
+      "doi": "10.1158/1078-0432.ccr-24-0951",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "publication_date": "2026-08-11",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42611544",
+      "title": "Polycomb scaffolding subunit EED supports the SCLC neuroendocrine identity and EGFR-mutant LUAD-to-SCLC transformation.",
+      "doi": "10.1172/jci199454",
+      "journal": "The Journal of clinical investigation",
+      "publication_date": "2026-08-18",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42612796",
+      "title": "Therapeutic targeting of RAS-mediated resistance in oncogene-driven lung cancer.",
+      "doi": "10.1016/j.annonc.2026.08.004",
+      "journal": "Annals of oncology : official journal of the European Society for Medical Oncology",
+      "publication_date": "2026-08-18",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42846034",
+      "title": "HER2 amplification as a resistance mechanism to osimertinib and its successful treatment with trastuzumab deruxtecan: a case report.",
+      "doi": "10.3389/fonc.2026.1921556",
+      "journal": "Frontiers in oncology",
+      "publication_date": "2026-09-23",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false
+    },
+    {
+      "pmid": "42875888",
+      "title": "Fc-Dependent Targeting of the GAS6-MERTK Axis With Monoclonal and Bispecific Antibodies Overcomes Drug Resistance Across EGFR Mutations in Exons 19, 20, and 21.",
+      "doi": "10.1002/advs.78290",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "publication_date": "2026-10-14",
+      "verification": "metadata_and_abstract_or_relevant_excerpt_checked",
+      "full_text_reviewed": false
+    }
+  ]
+}

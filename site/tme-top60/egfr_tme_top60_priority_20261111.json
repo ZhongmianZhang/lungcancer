@@ -1,0 +1,1997 @@
+{
+  "meta": {
+    "date": "2026-11-11",
+    "title": "EGFR突变肺癌：肿瘤微环境60项优先核查机制",
+    "patient_data": "没有患者原始检测报告；既有知识库和合成示例不作为患者结果。",
+    "method": "定性核查/研究优先级：考虑同病种人体资料、功能因果及核查价值；相邻序号不证明相对发生率。非系统综述、非定量评分。",
+    "prevalence": "多数条目无可靠临床发生率。没有把细胞丰度、预后关联、标志物阳性率或小鼠效应解释为患者耐药贡献率。",
+    "overlap": "60项含来源、配体、效应支路和生态位状态；多项嵌套且可并存，不能相加或看作60个相互独立原因。",
+    "treatment_context": "以EGFR-TKI、尤其奥希替尼为中心；早代TKI、铂类、免疫治疗或混合背景逐项标注。不能直接外推奥希加化疗、双抗/ADC后。",
+    "jev": "JEV ultrafast为浏览器自动化代理；当前无就绪在线模型凭据，本次未执行JEV模型调用或JEV医学评分。",
+    "retrieval": "Europe PMC/PubMed索引与此前经核对文献；部分专题查询超时/503，覆盖不完整。本次未调用Firecrawl；未声称逐篇全文或原始图像复审。",
+    "literature_window": [
+      "2011-11-11",
+      "2026-11-11"
+    ],
+    "jcr_filter": "2025版JCR Oncology、Immunology、Genetics & Heredity各前80的权威榜单未取得，未执行，不能宣称所引期刊全部符合。",
+    "clinical_use": "研究阅读与复核清单，未临床验证；所列研究读出并非全部成熟临床检测，更不是基因/表达到用药的自动规则。"
+  },
+  "items": [
+    {
+      "priority": 1,
+      "mechanism": "旁分泌HGF–MET",
+      "cellular_sources": "CAF或肿瘤细胞；患者中需定位",
+      "reason": "外源HGF可在EGFR受抑时恢复MET–PI3K/AKT等存活输入，不一定出现MET扩增，是优先区分的配体型旁路。",
+      "evidence_scope": "EGFR模型＋CAF临床关联",
+      "research_readouts": "分区HGF RNA/蛋白、肿瘤pMET，结合MET拷贝数及条件培养基/中和救援研究。",
+      "interpretation_limits": "HGF模型与PDPN-CAF/HGF相关性不等于已证明患者CAF因果；血清HGF不能定源，不能把MET扩增发生率移用于本项。",
+      "pmids": [
+        "37844446",
+        "38073064",
+        "40007550"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 2,
+      "mechanism": "IL6–IL6R/gp130–STAT3存活回路",
+      "cellular_sources": "肿瘤、CAF及髓系细胞，需分区",
+      "reason": "可同时维持存活、EMT和炎症反馈，解释DNA未出现新热点但EGFR阻断不再充分的情形。",
+      "evidence_scope": "EGFR模型＋患者关联",
+      "research_readouts": "分区IL6/IL6R、gp130、STAT3活动，并做受体/配体选择性阻断。",
+      "interpretation_limits": "IL6还可分叉至FAK或SRC/YAP；不能凭血清IL6或pSTAT3判为JAK依赖，STAT3亦存在促凋亡情境。",
+      "pmids": [
+        "35197546",
+        "39251588",
+        "36595561",
+        "40247082"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 3,
+      "mechanism": "TGFβ–SMAD/EMT及基质反馈",
+      "cellular_sources": "肿瘤、CAF及免疫细胞；来源可变",
+      "reason": "可推动EMT和EGFR依赖下降，同时抑制抗肿瘤免疫，连接基质状态与药物反应。",
+      "evidence_scope": "直接EGFR模型；部分人体关联",
+      "research_readouts": "活性TGFβ、肿瘤pSMAD2/3、上皮/间质状态及空间基质联合测量。",
+      "interpretation_limits": "部分TGFβ主要由癌细胞分泌；不能一律归CAF。免疫完整小鼠中的增敏不等于临床获益。",
+      "pmids": [
+        "36217893",
+        "41757675"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 4,
+      "mechanism": "GAS6–AXL配体/受体回路",
+      "cellular_sources": "肿瘤或基质来源GAS6；须定位",
+      "reason": "AXL可维持旁路存活和EMT，早代TKI耐药模型、患者样本均有支持。",
+      "evidence_scope": "EGFR患者关联＋功能模型",
+      "research_readouts": "GAS6来源、肿瘤AXL/pAXL及配体依赖，区分受体表达与真正活性。",
+      "interpretation_limits": "不是所有AXL耐药都依赖GAS6，也未证明均由巨噬细胞或CAF引发；早代TKI结果不能当奥希联合后频率。",
+      "pmids": [
+        "22751098",
+        "39059573"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 5,
+      "mechanism": "CXCR1阳性中性粒细胞–TNF/NFκB",
+      "cellular_sources": "肿瘤浸润CXCR1阳性中性粒细胞",
+      "reason": "三代TKI耐药患者样本显示空间浸润改变，功能实验支持中性粒细胞经TNF/NFκB降低敏感性。",
+      "evidence_scope": "三代TKI患者样本＋功能模型",
+      "research_readouts": "空间定位CXCR1/中性粒细胞与肿瘤距离，结合TNF来源和肿瘤NFκB活动。",
+      "interpretation_limits": "外周NLR不能替代该亚群；中性粒细胞也存在抗肿瘤状态，不可整体视为促耐药。",
+      "pmids": [
+        "39638994"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 6,
+      "mechanism": "CD73–腺苷免疫抑制",
+      "cellular_sources": "CD73阳性肿瘤、基质与免疫细胞",
+      "reason": "胞外核苷酸代谢可形成腺苷抑制环境，影响T细胞、Treg和抗原呈递；EGFR样本及模型支持研究优先级。",
+      "evidence_scope": "EGFR样本/模型；有限早期临床",
+      "research_readouts": "分区CD39/CD73、腺苷通量及受体功能，区分酶活和非酶作用。",
+      "interpretation_limits": "小型oleclumab研究为早代TKI后、奥希未用人群，不能当奥希耐药后验证；标志物高不等于药敏。",
+      "pmids": [
+        "33388477",
+        "37218137",
+        "36641093",
+        "41853316"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 7,
+      "mechanism": "CAF–NRG1–HER3/AKT/NFκB",
+      "cellular_sources": "分泌NRG1的CAF",
+      "reason": "CAF分泌NRG1可维持HER3输入、干性并减少奥希诱导凋亡；配体敲低和共培养支持旁分泌因果。",
+      "evidence_scope": "直接奥希细胞/小鼠模型",
+      "research_readouts": "CAF内NRG1、肿瘤pHER3与配体中和或敲低的共培养救援。",
+      "interpretation_limits": "配体升高不是NRG1融合；本研究不建立临床贡献率或HER3药物预测阈值。",
+      "pmids": [
+        "40959099"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 8,
+      "mechanism": "CAF–CSF2–JAK2/STAT3–核糖体生物发生",
+      "cellular_sources": "奥希耐药组织来源CAF",
+      "reason": "CSF2可经lnc-CSRNP3/CSRNP3、CHD9及PP1α调节提高核糖体生物发生，为肿瘤提供非基因突变存活程序。",
+      "evidence_scope": "患者来源CAF＋功能模型",
+      "research_readouts": "CAF分泌CSF2、肿瘤JAK2/STAT3与CSRNP3、核糖体生物发生及受体依赖。",
+      "interpretation_limits": "这是特定CAF–肿瘤回路，不能把所有CSF2或髓系增多视为同一过程；临床药效未定。",
+      "pmids": [
+        "39036343"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 9,
+      "mechanism": "CAF相关OSM–OSMR/JAK1/STAT3",
+      "cellular_sources": "CAF与癌细胞旁分泌串扰",
+      "reason": "可诱导EMT、减少靶向药引起的凋亡，为无新驱动突变的适应提供解释。",
+      "evidence_scope": "癌基因驱动NSCLC/CAF模型",
+      "research_readouts": "配体OSM、OSMR/gp130及选择性JAK1/OSMR干预。",
+      "interpretation_limits": "原研究含多种靶向背景，未专门证明奥希加化疗后；OSMR预后关联不是患者药敏。",
+      "pmids": [
+        "28729401"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 10,
+      "mechanism": "STAT3/IL4驱动巨噬细胞M2样极化",
+      "cellular_sources": "特定EGFR复合突变肿瘤→巨噬细胞",
+      "reason": "T790M-cis-L792F模型把靶内变化与IL4分泌、巨噬细胞重编程连接，说明基因和微环境可共同构成耐药。",
+      "evidence_scope": "罕见基因型＋功能模型",
+      "research_readouts": "精确EGFR相位、肿瘤IL4与巨噬细胞状态及功能干预。",
+      "interpretation_limits": "不能推广至所有奥希耐药；CD206或CD163单阳性不能证明该回路，STAT3依赖亦非JAK必需证明。",
+      "pmids": [
+        "35932642"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 11,
+      "mechanism": "S100A9阳性MDSC/TAM–RELB",
+      "cellular_sources": "单核髓系抑制细胞及其相关巨噬细胞",
+      "reason": "早代EGFR-TKI患者资料和共培养支持髓系细胞通过非经典NFκB/RELB降低杀伤，而不只抑制T细胞。",
+      "evidence_scope": "早代TKI患者关联＋功能模型",
+      "research_readouts": "血液/组织S100A9髓系表型、巨噬细胞来源及肿瘤RELB活动。",
+      "interpretation_limits": "未建立奥希同期联合后频率；原文有2018年更正，引用时保留更正记录，未在本次重审全部原始图像。",
+      "pmids": [
+        "29484139",
+        "30140390"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 12,
+      "mechanism": "CAF–POSTN/Periostin–ERK/EMT",
+      "cellular_sources": "分泌Periostin的CAF",
+      "reason": "基质蛋白可持续支持ERK及EMT，CAF中POSTN敲低在EGFR突变模型提高奥希反应。",
+      "evidence_scope": "患者来源CAF＋直接EGFR模型",
+      "research_readouts": "CAF POSTN、细胞外沉积和肿瘤ERK/EMT，结合来源特异性敲低。",
+      "interpretation_limits": "POSTN也与一般组织修复相关，表达或预后关联尚不足以作为临床伴随诊断。",
+      "pmids": [
+        "37831111"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 13,
+      "mechanism": "周细胞–IL32–整合素β5/SRC/AKT",
+      "cellular_sources": "血管周细胞",
+      "reason": "患者来源周细胞可直接通过IL32旁分泌减弱三代TKI效果，作用可独立于血管功能。",
+      "evidence_scope": "EGFR患者来源细胞＋功能模型",
+      "research_readouts": "周细胞IL32、肿瘤ITGB5、空间接触和IL32/ITGB5选择性扰动。",
+      "interpretation_limits": "不能与单纯血管密度或CAF整体丰度混同；尚无临床阈值和干预获益验证。",
+      "pmids": [
+        "39435643"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 14,
+      "mechanism": "IL6造成T/NK效应功能受抑",
+      "cellular_sources": "EMT耐药癌细胞→T/NK细胞",
+      "reason": "耐药肿瘤分泌组可削弱宿主清除残留肿瘤的能力，把细胞内EMT与免疫环境连接。",
+      "evidence_scope": "EGFR模型＋患者标本关联",
+      "research_readouts": "肿瘤IL6来源，T/NK杀伤、细胞因子及去除IL6后的功能恢复。",
+      "interpretation_limits": "免疫细胞数量不代表功能；抗IL6与免疫药联合尚非该人群已确证方案。",
+      "pmids": [
+        "36595561"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 15,
+      "mechanism": "FN1/ECM–整合素–FAK力学存活",
+      "cellular_sources": "肿瘤、CAF及其沉积基质",
+      "reason": "细胞外基质和黏附输入可维持FAK/YAP与抗凋亡，普通点突变检测难以反映。",
+      "evidence_scope": "跨代EGFR药物模型；相关性资料",
+      "research_readouts": "基质FN1/胶原、整合素、pFAK/YAP定位及匹配基质共培养。",
+      "interpretation_limits": "基质刚度、细胞构成、侵袭和递药效应须分开；不能把所有纤维化当作耐药因果。",
+      "pmids": [
+        "42087187",
+        "40165020"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 16,
+      "mechanism": "整合素β3–YAP–AXL反馈",
+      "cellular_sources": "肿瘤细胞与细胞外基质界面",
+      "reason": "基质受体信号可经YAP上调AXL，推动无新DNA驱动的旁路；与TGFβ形成反馈。",
+      "evidence_scope": "早代TKI患者关联＋EGFR模型",
+      "research_readouts": "ITGB3、核YAP、AXL与基质/受体扰动，区分转录和受体激活。",
+      "interpretation_limits": "与TGFβ和AXL条目有交叠，不能重复计数；整合素抑制的泛癌临床结果并不一致。",
+      "pmids": [
+        "35805163",
+        "36217893"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 17,
+      "mechanism": "IL6–LAMA5/Lamininα5–FAK分叉",
+      "cellular_sources": "IL6分泌环境→肿瘤基底膜/黏附程序",
+      "reason": "IL6可通过LAMA5/FAK维持奥希耐药，说明只检查JAK/STAT可能漏掉同一配体的另一效应支路。",
+      "evidence_scope": "奥希患者关联＋功能模型",
+      "research_readouts": "IL6、肿瘤LAMA5/PTK2/pFAK及基因敲低救援。",
+      "interpretation_limits": "多靶药在模型有效不能证明单一药靶或临床获益，也不能把IL6作用全部归JAK。",
+      "pmids": [
+        "35197546",
+        "39251588"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 18,
+      "mechanism": "低氧–FGFR1/MAPK–BIM降低",
+      "cellular_sources": "长期中度缺氧的局部生态位",
+      "reason": "低氧模型可上调FGFR1、维持ERK并减弱BIM，促成奥希耐受。",
+      "evidence_scope": "直接EGFR细胞/动物模型",
+      "research_readouts": "空间低氧标志、FGFR1/ERK/BIM，结合氧条件与受体干预。",
+      "interpretation_limits": "HIF高也可能由癌基因信号引起；临床低氧标志尚不能直接预测FGFR或MEK药敏。",
+      "pmids": [
+        "32873635"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 19,
+      "mechanism": "持续VEGFA–异常血管/血管生成状态",
+      "cellular_sources": "肿瘤细胞、基质及血管内皮",
+      "reason": "EGFR耐药模型可继续维持HIF1α/VEGF输出，影响血管与局部免疫环境。",
+      "evidence_scope": "EGFR功能模型；临床联合结果不一致",
+      "research_readouts": "VEGF来源、灌注/低氧和内皮状态，不能只看血清单项。",
+      "interpretation_limits": "HIF/VEGF可不依赖低氧；奥希加贝伐珠单抗的随机研究存在阴性结果，不能从通路活跃直接推定联合有效。",
+      "pmids": [
+        "33309987",
+        "39399795"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 20,
+      "mechanism": "CXCL8/IL8–CXCR1/2干性反馈",
+      "cellular_sources": "癌细胞自分泌及可能的髓系串扰",
+      "reason": "SHP2相关ERK/AKT/NFκB回路可维持IL8、干性及耐药，是配体型适应的重要候选。",
+      "evidence_scope": "EGFR T790M功能模型",
+      "research_readouts": "局部IL8来源、CXCR1/2、肿瘤干性和配体/受体选择性阻断。",
+      "interpretation_limits": "原研究主要为模型；感染及全身炎症也能升高血清IL8，不能据此定机制。",
+      "pmids": [
+        "34217295"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 21,
+      "mechanism": "活化血小板黏附–SRC/AKT/EMT",
+      "cellular_sources": "血小板及高D-dimer血浆环境",
+      "reason": "患者关联与血浆/血小板实验支持黏附和SRC/AKT降低EGFR药物杀伤，不完全依赖新突变。",
+      "evidence_scope": "EGFR患者关联＋离体功能模型",
+      "research_readouts": "血小板活化/黏附、肿瘤SRC/AKT与去除血小板的对照。",
+      "interpretation_limits": "高D-dimer也受血栓和疾病负荷影响；不等于可用抗血小板药逆转耐药，更不构成自行用药依据。",
+      "pmids": [
+        "35756605"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 22,
+      "mechanism": "CCL2–肿瘤STAT3/ERK–ZEB1/EMT",
+      "cellular_sources": "耐药肿瘤/胸水分泌环境",
+      "reason": "可直接维持肿瘤ZEB1和EMT，与单核细胞募集是不同的受体细胞效应。",
+      "evidence_scope": "耐药胸水关联＋EGFR功能模型",
+      "research_readouts": "CCL2来源、肿瘤STAT3/ERK/ZEB1和选择性敲低/救援。",
+      "interpretation_limits": "不同研究出现AKT或STAT3/ERK分叉，不能统一强加一条下游；不能未经定位认定TAM为来源。",
+      "pmids": [
+        "41800052",
+        "38961814"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 23,
+      "mechanism": "CAF作为受损线粒体的代谢接收端",
+      "cellular_sources": "RGS5/MYL9相关CAF与持留癌细胞",
+      "reason": "CAF通过隧道纳米管接收癌细胞受损线粒体，减轻应激并支持奥希持留，是超出可溶因子的互作。",
+      "evidence_scope": "患者单细胞关联＋EGFR功能模型",
+      "research_readouts": "CAF谱系、CCL11募集、纳米管、Miro1/RhoA及线粒体转移方向。",
+      "interpretation_limits": "此研究方向是癌细胞向CAF转出受损线粒体，不能反写为CAF输入健康线粒体；模型干预并非患者获益。",
+      "pmids": [
+        "41329713"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 24,
+      "mechanism": "PDPN高表达CAF相关耐受生态位",
+      "cellular_sources": "PDPN高表达CAF及实性优势肿瘤",
+      "reason": "93例回顾性资料显示该基质表型与一线奥希较差控制相关，可提示需进一步核查的组织背景。",
+      "evidence_scope": "临床关联；非独立因果机制",
+      "research_readouts": "PDPN/CAF定位、病理亚型、取样时间及HGF分区表达。",
+      "interpretation_limits": "31/93为特定队列基线表型，不是获得性耐药发生率；手术旧标本不一定代表进展病灶。",
+      "pmids": [
+        "40007550"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 25,
+      "mechanism": "CAF–HMGB1–METTL1/NET1 m7G",
+      "cellular_sources": "分泌HMGB1的CAF→癌细胞RNA修饰",
+      "reason": "CAF信号可提高NET1相关m7G调控及AKT/NFκB，说明微环境可以把耐药程序写入RNA调控层。",
+      "evidence_scope": "直接奥希细胞/动物模型",
+      "research_readouts": "CAF HMGB1、肿瘤METTL1与NET1 RNA修饰及功能救援。",
+      "interpretation_limits": "NET1基因不是中性粒细胞胞外诱捕网NETs；m7G是RNA修饰，不等于DNA甲基化。",
+      "pmids": [
+        "41723107"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 26,
+      "mechanism": "CAF–FSTL1/AKT–LPL/LTB4–STAT3/ZEB1",
+      "cellular_sources": "CAF分泌组与肿瘤脂质代谢",
+      "reason": "基质信号可经脂质介质使EGFR转录降低，形成EGFR-low状态；保留原EGFR突变也能减少依赖。",
+      "evidence_scope": "小型患者关联＋奥希功能模型",
+      "research_readouts": "CAF FSTL1、肿瘤LPL/LTB4、STAT3/ZEB1及EGFR转录/蛋白。",
+      "interpretation_limits": "验证队列仅12例，不能推算普遍比例；体内组合结论仍为临床前。",
+      "pmids": [
+        "42810632"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 27,
+      "mechanism": "顺铂应激CAF–IL11/IL11RA–STAT3",
+      "cellular_sources": "铂类暴露后的CAF",
+      "reason": "CAF分泌IL11可增强肿瘤抗凋亡，对曾接受铂类化疗者具有治疗背景相关性。",
+      "evidence_scope": "肺腺癌铂类模型；非奥希特异",
+      "research_readouts": "化疗时序、CAF IL11、肿瘤IL11RA与STAT3/BCL2/Survivin。",
+      "interpretation_limits": "没有证明EGFR选择性、培美曲塞或奥希同期组合后贡献；摘要未证明特定JAK成员。",
+      "pmids": [
+        "27922075"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 28,
+      "mechanism": "治疗诱导衰老–TGFβ富集SASP",
+      "cellular_sources": "治疗后衰老肿瘤/邻近细胞",
+      "reason": "应激后的分泌组可经TGFBR1–AKT/mTOR保护邻近肿瘤，提供化疗相关的非基因耐受。",
+      "evidence_scope": "NSCLC/其他肿瘤铂类模型及标本关联",
+      "research_readouts": "衰老多指标、分泌组、邻近细胞AKT/mTOR与旁分泌干预。",
+      "interpretation_limits": "含KRAS及其他肿瘤背景，不能称奥希联合后已证实机制；SASP不是单一JAK状态。",
+      "pmids": [
+        "41634464"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 29,
+      "mechanism": "TAM来源胞外囊泡–AKT/ERK/STAT3",
+      "cellular_sources": "实验诱导巨噬细胞的胞外囊泡",
+      "reason": "囊泡可把保护性信号传给EGFR突变细胞，降低吉非替尼引起的凋亡。",
+      "evidence_scope": "早代TKI体外共培养模型",
+      "research_readouts": "囊泡纯度、来源、摄取、去除囊泡对照及下游信号。",
+      "interpretation_limits": "不能假设某条miRNA已被证明为必要货物；体外THP1模型不代表全部患者TAM。",
+      "pmids": [
+        "36168315"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 30,
+      "mechanism": "耐药细胞囊泡miR210-3p传播EMT",
+      "cellular_sources": "奥希耐药肿瘤细胞→邻近敏感细胞",
+      "reason": "可将耐药状态在细胞之间传播，常规DNA检测不会直接识别这种微环境传播。",
+      "evidence_scope": "直接奥希细胞模型",
+      "research_readouts": "来源特异性囊泡miR210、受体细胞EMT/药物反应及货物干预。",
+      "interpretation_limits": "研究中囊泡来自癌细胞，不能改写为CAF或TAM来源；未建立液体标志物阈值。",
+      "pmids": [
+        "33939301"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 31,
+      "mechanism": "缺氧囊泡LUCAT1–MET稳定化",
+      "cellular_sources": "低氧肿瘤细胞及其胞外囊泡",
+      "reason": "将局部低氧和旁路受体稳定化连接，能在无新MET扩增时提出机制解释。",
+      "evidence_scope": "人体关联＋类器官/细胞/动物模型",
+      "research_readouts": "低氧区域、囊泡LUCAT1、受体细胞MET稳定性与货物救援。",
+      "interpretation_limits": "高LUCAT1或囊泡总量不单独证明因果，也不是MET药物的成熟伴随诊断。",
+      "pmids": [
+        "41145422"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 32,
+      "mechanism": "GAS6–MERTK旁路",
+      "cellular_sources": "癌细胞自分泌或局部旁分泌GAS6",
+      "reason": "EGFR阻断后可经MERTK恢复AKT/ERK；患者样本表达和功能模型均支持研究。",
+      "evidence_scope": "奥希患者样本关联＋功能模型",
+      "research_readouts": "配体来源、MERTK活动和选择性受体干预，分清AXL/MERTK依赖。",
+      "interpretation_limits": "MERTK属于TAM受体家族，不等于巨噬细胞TAM；该研究并未证明配体全来自巨噬细胞。",
+      "pmids": [
+        "35708914"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 33,
+      "mechanism": "CCL2–CCR2单核MDSC募集",
+      "cellular_sources": "肿瘤分泌CCL2→单核髓系抑制细胞",
+      "reason": "可增加局部髓系免疫抑制，属于与肿瘤细胞内CCL2效应不同的生态位机制。",
+      "evidence_scope": "吉非替尼/NSCLC模型，含非EGFR突变背景",
+      "research_readouts": "CCL2梯度、CCR2阳性单核细胞迁移和抑制T细胞的实际功能。",
+      "interpretation_limits": "部分体内模型为LLC，不能自动推广至EGFR突变奥希耐药；CCR2表达不等于驱动。",
+      "pmids": [
+        "38401520"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 34,
+      "mechanism": "SAA1–TLR4/NFκB及SPP1阳性巨噬细胞",
+      "cellular_sources": "治疗诱导癌细胞SAA1分泌",
+      "reason": "可把染色质适应同时转为癌细胞自分泌存活和巨噬细胞旁分泌重编程。",
+      "evidence_scope": "奥希人体关联＋多种临床前模型",
+      "research_readouts": "ERK/GATAD2A、SAA1来源、TLR4/NFκB与巨噬细胞状态。",
+      "interpretation_limits": "2026年机制工作仍需独立验证，不能把SAA1血清升高与该回路直接等同。",
+      "pmids": [
+        "42919317"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 35,
+      "mechanism": "CXCL12–STAB1脂质巨噬细胞/SIRPα–CD47",
+      "cellular_sources": "肝转移相关肿瘤与脂质巨噬细胞",
+      "reason": "CXCL12相关募集和脂质重编程可增强不吞噬信号，模型中与奥希耐药及肝转移有关。",
+      "evidence_scope": "器官特异患者样本＋功能模型",
+      "research_readouts": "肝/原发灶对照、STAB1与脂滴、吞噬功能及SIRPα/CD47相互作用。",
+      "interpretation_limits": "器官生态位有选择性，不能作为所有部位耐药的共同解释；CD47染色不是吞噬依赖证明。",
+      "pmids": [
+        "41719890"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 36,
+      "mechanism": "NSUN2/TRIM29相关巨噬细胞重编程",
+      "cellular_sources": "肿瘤RNA调控→巨噬细胞",
+      "reason": "免疫完整而非免疫缺陷条件下的效应支持肿瘤RNA修饰经免疫环境影响TKI反应。",
+      "evidence_scope": "吉非/奥希耐药功能模型",
+      "research_readouts": "肿瘤NSUN2/TRIM29、RNA修饰、巨噬细胞迁移/功能和免疫条件对照。",
+      "interpretation_limits": "NSUN2改变不等于成熟临床标志；M1/M2为模型简化，患者亚群需要更完整功能定义。",
+      "pmids": [
+        "42284680"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 37,
+      "mechanism": "RRBP1–SREBP1/CPT1A/FAO–脂质免疫反馈",
+      "cellular_sources": "肿瘤脂代谢与巨噬细胞",
+      "reason": "肿瘤脂肪酸氧化适应可伴随促肿瘤巨噬细胞重编程，将代谢与免疫耐受连接。",
+      "evidence_scope": "多组学关联＋奥希功能模型",
+      "research_readouts": "肿瘤RRBP1/FAO通量、脂质介质和巨噬细胞功能。",
+      "interpretation_limits": "生信、机器学习或孟德尔随机化结果不能独立证明本患者机制；药理模型效应需独立复现。",
+      "pmids": [
+        "42285369"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 38,
+      "mechanism": "SPP1/骨桥蛋白–CD44干性信号",
+      "cellular_sources": "可由肿瘤或髓系分泌；需实测来源",
+      "reason": "分泌性SPP1可提高干性并降低奥希反应，提供微环境和残留细胞之间的候选接口。",
+      "evidence_scope": "直接奥希细胞/小鼠模型",
+      "research_readouts": "SPP1来源、CD44受体、干性/凋亡及配体阻断救援。",
+      "interpretation_limits": "研究未把全部效应定位到巨噬细胞，不能因看到SPP1阳性TAM就宣布该机制成立。",
+      "pmids": [
+        "41535831"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 39,
+      "mechanism": "可溶GPNMB-ECD–SDC4/骨架/YAP",
+      "cellular_sources": "耐药癌细胞释放的GPNMB胞外结构域",
+      "reason": "可溶蛋白作用于邻近癌细胞，改变骨架并促进核YAP，支持非DNA旁分泌耐药解释。",
+      "evidence_scope": "患者关联＋细胞/动物/huPDX模型",
+      "research_readouts": "可溶GPNMB-ECD与全长蛋白分测，SDC4及YAP定位。",
+      "interpretation_limits": "该研究提示主要来源为癌细胞，不能默认来自巨噬细胞；huPDX反应不等于人体疗效。",
+      "pmids": [
+        "42260371"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 40,
+      "mechanism": "PAI1/SERPINE1–整合素/EMT持留",
+      "cellular_sources": "奥希药物持留细胞及分泌环境",
+      "reason": "分泌调节蛋白与ECM/EMT改变可支持早期耐受和再生长。",
+      "evidence_scope": "直接奥希细胞/动物模型",
+      "research_readouts": "局部PAI1、整合素/EMT及时间分辨的持留形成和再生长。",
+      "interpretation_limits": "预防持留/再生长与逆转既成临床耐药不同；血浆PAI1不具有肿瘤来源特异性。",
+      "pmids": [
+        "36831438"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 41,
+      "mechanism": "ANGPTL4–NDRG1相关ECM重塑",
+      "cellular_sources": "分泌蛋白与肿瘤/基质界面",
+      "reason": "类器官模型提示分泌—基质程序可降低奥希反应，是编码热点阴性时的探索方向。",
+      "evidence_scope": "2026年类器官/细胞模型及关联",
+      "research_readouts": "ANGPTL4分泌、NDRG1和ECM改变及特异干预。",
+      "interpretation_limits": "ANGPTL4不能与ANGPT2/TIE2当作同一血管通路；虚拟筛选化合物不是可用治疗。",
+      "pmids": [
+        "42415069"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 42,
+      "mechanism": "FGF2–FGFR1自/旁分泌切换",
+      "cellular_sources": "FGF2高表达癌细胞或基质，需定位",
+      "reason": "持留细胞可转向FGFR输入维持ERK，不要求FGFR融合或新增热点。",
+      "evidence_scope": "EGFR功能模型；临床关联部分来自ALK",
+      "research_readouts": "分区FGF2/FGFR1和ERK，配体来源及中和/受体阻断。",
+      "interpretation_limits": "不能把ALK患者关联迁移为EGFR发生率；高表达、扩增、融合是不同事件。",
+      "pmids": [
+        "37880373",
+        "39059573"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 43,
+      "mechanism": "PGE2受体EP2–代谢/炎症持留回路",
+      "cellular_sources": "局部脂质介质与癌细胞EP2",
+      "reason": "EP2可经GYS1、琥珀酸/HIF1α和炎症因子维持奥希持留，连接非蛋白介质与适应。",
+      "evidence_scope": "患者关联＋直接奥希功能模型",
+      "research_readouts": "EP2、pGYS1、代谢物及IL1β/IL6/TNF，结合受体遗传干预。",
+      "interpretation_limits": "研究支持受体回路，不代表已定位PGE2全部细胞来源；延迟持留不等于患者逆转耐药。",
+      "pmids": [
+        "42647987"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 44,
+      "mechanism": "胞外乳酸–GPR81/AKT存活",
+      "cellular_sources": "乳酸富集的肿瘤/基质生态位",
+      "reason": "乳酸除代谢底物外还可作为受体信号，模型中降低厄洛替尼诱导凋亡。",
+      "evidence_scope": "早代TKI模型＋样本关联",
+      "research_readouts": "局部乳酸、GPR81活动及受体敲低，不以血乳酸替代组织测量。",
+      "interpretation_limits": "原证据非奥希加化疗后；需与乳酸转运营养效应区分。",
+      "pmids": [
+        "36545125"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 45,
+      "mechanism": "胞外乳酸–MCT1营养利用",
+      "cellular_sources": "局部代谢底物交换",
+      "reason": "MCT1输入可支持肿瘤代谢与存活，是同一乳酸环境的营养效应支路。",
+      "evidence_scope": "早代TKI功能模型",
+      "research_readouts": "乳酸示踪、MCT1通量及转运抑制对照。",
+      "interpretation_limits": "与上一项重叠且不能累计频率；MCT1表达不是已验证的临床药敏标志。",
+      "pmids": [
+        "36545125"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 46,
+      "mechanism": "酸性胸水–ASIC3/PLCG1巨胞饮",
+      "cellular_sources": "恶性胸水酸性微环境",
+      "reason": "低pH可驱动营养摄取、应激适应和奥希持留，解释体液生态位差异。",
+      "evidence_scope": "患者来源培养＋细胞/动物模型",
+      "research_readouts": "胸水pH、ASIC3/PLCG1、巨胞饮通量及匹配pH对照。",
+      "interpretation_limits": "恶性胸水特定背景不能推广到所有病灶；不意味着口服碱性物质可逆转耐药。",
+      "pmids": [
+        "41419139"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 47,
+      "mechanism": "IL1α–TNF/NFκB炎症持留",
+      "cellular_sources": "循环增殖持留癌细胞的分泌程序",
+      "reason": "治疗后IL1α可增强TNF/NFκB，形成早期存活反馈。",
+      "evidence_scope": "直接奥希细胞模型＋组织NFκB关联",
+      "research_readouts": "IL1α/TNF来源、p65活动和配体选择性抑制。",
+      "interpretation_limits": "主要因果来自细胞，并未证明全部由髓系细胞分泌；IL1α与IL1β不能互换。",
+      "pmids": [
+        "42469184"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 48,
+      "mechanism": "TNF–NFκB自分泌适应环",
+      "cellular_sources": "癌细胞分泌及炎症环境",
+      "reason": "EGFR抑制解除对TNF的调控，TNF/NFκB又强化自身转录，可维持残留存活。",
+      "evidence_scope": "EGFR突变/野生型混合功能模型",
+      "research_readouts": "治疗时序TNF、NFκB和中和救援，区分肿瘤与免疫来源。",
+      "interpretation_limits": "与中性粒细胞及IL1α条目共享效应器；临床前效应不能推定抗TNF联合临床获益。",
+      "pmids": [
+        "29613856"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 49,
+      "mechanism": "儿茶酚胺–ADRB2/LKB1/CREB–IL6",
+      "cellular_sources": "神经内分泌应激与癌细胞分泌",
+      "reason": "宿主应激信号可上调IL6并促进EGFR药物耐受，扩展了微环境的调节来源。",
+      "evidence_scope": "功能模型＋观察性患者关联",
+      "research_readouts": "局部/系统性应激信号、ADRB2及IL6因果实验。",
+      "interpretation_limits": "不能据患者情绪判定耐药，也不能用观察关联认定β阻滞剂联合有效。",
+      "pmids": [
+        "29118262"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 50,
+      "mechanism": "MET–FOSL1/CD73–STING免疫约束",
+      "cellular_sources": "MET旁路癌细胞与T细胞环境",
+      "reason": "MET扩增相关CD73可限制STING免疫效应，培美曲塞诱导的免疫刺激也可能伴腺苷负反馈。",
+      "evidence_scope": "EGFR耐药模型及基因组关联",
+      "research_readouts": "MET/CD73、STING/TBK1/IRF3/STAT1与抗原特异性T细胞功能。",
+      "interpretation_limits": "与CD73条目为嵌套回路，不可重复计数；模型不证明相应组合在联合治疗后患者有效。",
+      "pmids": [
+        "36066413"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 51,
+      "mechanism": "TREM2髓系–CCL5/CCL22–Treg募集",
+      "cellular_sources": "治疗影响的TREM2阳性巨噬细胞",
+      "reason": "可经CCR5/CCR4相关募集增强Treg环境，提示治疗也会重塑髓系—淋巴互作。",
+      "evidence_scope": "人组织关联；主要NSCLC/顺铂模型",
+      "research_readouts": "髓系TREM2、CCL5/22、Treg空间关系及募集功能。",
+      "interpretation_limits": "体内主要LLC/顺铂背景，奥希体外刺激不等于已证实EGFR奥希耐药；CCL5亦可招募效应细胞。",
+      "pmids": [
+        "42903166"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 52,
+      "mechanism": "持留细胞CCL20相关免疫逃逸",
+      "cellular_sources": "EGFR持留癌细胞与免疫细胞",
+      "reason": "持留细胞分泌组可限制PD1治疗反应，成为TKI治疗后微环境重塑的研究方向。",
+      "evidence_scope": "EGFR人源化小鼠；主要免疫治疗终点",
+      "research_readouts": "CCL20来源、免疫细胞空间分布及受体/配体功能。",
+      "interpretation_limits": "研究主要证明免疫治疗限制，不能改写为单独导致奥希药理耐药；尚无临床贡献率。",
+      "pmids": [
+        "42549034"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 53,
+      "mechanism": "Galectin9/TIM3相关适应性免疫抑制",
+      "cellular_sources": "癌细胞及宿主髓系细胞",
+      "reason": "EGFR药物可诱导STING/IFN-I相关Gal9，模型中影响髓系、DC及CD8反应。",
+      "evidence_scope": "患者配对样本关联＋混合癌种模型",
+      "research_readouts": "Gal9细胞来源、TIM3及免疫功能，结合IFN时序。",
+      "interpretation_limits": "主要因果含LLC和其他癌种；Gal9有多个受体，不能把所有作用都归TIM3或宣称奥希耐药后有效。",
+      "pmids": [
+        "40664443"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 54,
+      "mechanism": "PD1–PDL1效应T细胞抑制",
+      "cellular_sources": "肿瘤/髓系PDL1与T细胞PD1",
+      "reason": "是EGFR驱动免疫逃逸的重要轴，可能削弱免疫清除残留细胞。",
+      "evidence_scope": "EGFR免疫模型；临床预测不一致",
+      "research_readouts": "空间受体/配体、抗原特异T细胞及治疗前后变化。",
+      "interpretation_limits": "免疫逃逸不等于已证明TKI耐药主因；KEYNOTE789和CheckMate722未达主要预期，PDL1高不自动支持加PD1。",
+      "pmids": [
+        "24078774",
+        "27225694",
+        "39173098",
+        "38252907",
+        "39694766"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 55,
+      "mechanism": "PDL1阳性胞外囊泡远距免疫抑制",
+      "cellular_sources": "EGFR突变/受TKI处理的癌细胞囊泡",
+      "reason": "囊泡PDL1可抑制CD8功能，使组织局部IHC难以完整反映分泌性免疫环境。",
+      "evidence_scope": "患者血液关联＋功能实验；免疫终点",
+      "research_readouts": "sEV PDL1、囊泡来源、CD8功能及HRS/ALIX相关分泌。",
+      "interpretation_limits": "主要解释后续免疫治疗不佳，未证明是奥希耐药的独立原因；组织PDL1与囊泡PDL1不同。",
+      "pmids": [
+        "39062533"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 56,
+      "mechanism": "适应性免疫/CD8清除能力不足",
+      "cellular_sources": "肿瘤特异T细胞及其局部环境",
+      "reason": "免疫完整与免疫缺陷EGFR小鼠的奥希控制持续性不同，支持宿主免疫影响耐药演化。",
+      "evidence_scope": "直接EGFR小鼠＋小型患者早期关联",
+      "research_readouts": "TCR克隆、抗原特异性杀伤和空间接近，超越CD8计数。",
+      "interpretation_limits": "未确定患者可用阈值；免疫缺陷小鼠结果不能直接量化人的贡献。",
+      "pmids": [
+        "36657561",
+        "34001994"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 57,
+      "mechanism": "DC成熟/抗原呈递不足",
+      "cellular_sources": "树突状细胞与CD73/腺苷环境",
+      "reason": "交叉呈递不足可使残留肿瘤缺少有效免疫清除，EGFR相关免疫模型支持候选价值。",
+      "evidence_scope": "EGFR模型；主要免疫治疗背景",
+      "research_readouts": "DC成熟、交叉呈递与T细胞启动功能，结合用药阶段。",
+      "interpretation_limits": "奥希治疗小队列反可见DC成熟标志增加；不能普遍断言奥希抑制DC，也不是TKI耐药独立确证。",
+      "pmids": [
+        "41144813",
+        "37169657"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 58,
+      "mechanism": "HLAE–NKG2A相关NK抑制候选",
+      "cellular_sources": "肿瘤HLAE与NK/T细胞",
+      "reason": "可提出NK识别受限的解释，序贯TKI样本已有HLAE等表达探索。",
+      "evidence_scope": "小型表达资料＋免疫学候选",
+      "research_readouts": "HLAE/NKG2A配对、NKp46及真实杀伤功能。",
+      "interpretation_limits": "配对奥希前后标本仅4例；表达研究未证明本轴导致奥希耐药，不能据HLAE单项选药。",
+      "pmids": [
+        "41853316"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 59,
+      "mechanism": "I型IFN–RIGI/TBK1/IRF3适应",
+      "cellular_sources": "受EGFR药物影响的癌细胞与宿主",
+      "reason": "抗病毒样信号可形成持留或免疫反馈，具有时序和细胞区室依赖性。",
+      "evidence_scope": "直接/混合EGFR模型；人体关联方向不一",
+      "research_readouts": "区分IFN类型、来源、早期与晚期，结合ISG和免疫功能。",
+      "interpretation_limits": "部分患者早期IFN应答反与更长控制相关，不能一律把IFN高视为耐药或选择JAK抑制。",
+      "pmids": [
+        "33269343",
+        "34001994"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    },
+    {
+      "priority": 60,
+      "mechanism": "IFNγ反应/趋化与抗原呈递受限",
+      "cellular_sources": "癌细胞STAT1与T细胞招募环境",
+      "reason": "EGFR/SHP2可限制IFNγ应答，影响趋化因子和抗原呈递，形成免疫冷环境。",
+      "evidence_scope": "主要EGFR相关免疫治疗模型；非TKI因果确证",
+      "research_readouts": "STAT1反应动力学、HLA/抗原呈递、T细胞招募及SHP2功能。",
+      "interpretation_limits": "ICB耐药机制不能直接作为奥希耐药因果；JAK1/2失活免疫逃逸与JAK激活耐药也须分开。",
+      "pmids": [
+        "41538362",
+        "34001994",
+        "42786513"
+      ],
+      "clinical_prevalence": null,
+      "prevalence_rank_established": false,
+      "patient_specific": false
+    }
+  ],
+  "sources": [
+    {
+      "pmid": "22751098",
+      "title": "Activation of the AXL kinase causes resistance to EGFR-targeted therapy in lung cancer.",
+      "journal": "Nature genetics",
+      "doi": "10.1038/ng.2330",
+      "publication_date": "2012-07-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22751098/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "24078774",
+      "title": "Activation of the PD-1 pathway contributes to immune escape in EGFR-driven lung tumors.",
+      "journal": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-13-0310",
+      "publication_date": "2013-09-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24078774/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "24327693",
+            "reference": "Cancer Discov. 2013 Dec;3(12):1330-2. doi: 10.1158/2159-8290.CD-13-0775",
+            "type": "Comment in",
+            "orderIn": 1
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "27225694",
+      "title": "EGFR Mutations and ALK Rearrangements Are Associated with Low Response Rates to PD-1 Pathway Blockade in Non-Small Cell Lung Cancer: A Retrospective Analysis.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-15-3101",
+      "publication_date": "2016-05-25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27225694/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J01_E08",
+      "title": "Cancer-associated fibroblasts treated with cisplatin facilitates chemoresistance of lung adenocarcinoma through IL-11/IL-11R/STAT3 signaling pathway.",
+      "authors": "Tao L, Huang G, Wang R, Pan Y, He Z, Chu X, Song H, Chen L.",
+      "year": 2016,
+      "journal": "Scientific reports",
+      "doi": "10.1038/srep38408",
+      "pmid": "27922075",
+      "publication_date": "2016-12-06",
+      "url": "https://doi.org/10.1038/srep38408",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "顺铂处理的CAF上调IL11，增强肺腺癌细胞对顺铂诱导凋亡的抵抗。体内外IL11刺激伴随STAT3磷酸化与BCL2、Survivin升高；抑制STAT3磷酸化或沉默癌细胞IL11Rα可消除该效应，支持治疗应激下CAF–IL11/IL11RA–STAT3旁分泌机制。",
+      "limitation_zh": "这是顺铂相关肺腺癌临床前机制，未建立EGFR突变选择性，也没有奥希替尼、培美曲塞或同期联合后进展队列。摘要没有证明特定JAK成员是必要中介；STAT3依赖不能直接改写为某一JAK药物有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A28729401+OR+EXT_ID%3A27922075+OR+EXT_ID%3A39032875+OR+EXT_ID%3A34386085+OR+EXT_ID%3A38696655%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E07",
+      "title": "JAK1/STAT3 Activation through a Proinflammatory Cytokine Pathway Leads to Resistance to Molecularly Targeted Therapy in Non-Small Cell Lung Cancer.",
+      "authors": "Shien K, Papadimitrakopoulou VA, Ruder D, Behrens C, Shen L, Kalhor N, Song J, Lee JJ, Wang J, Tang X, Herbst RS, Toyooka S, Girard L, Minna JD, Kurie JM, Wistuba II, Izzo JG.",
+      "year": 2017,
+      "journal": "Molecular cancer therapeutics",
+      "doi": "10.1158/1535-7163.mct-17-0148",
+      "pmid": "28729401",
+      "publication_date": "2017-07-20",
+      "url": "https://doi.org/10.1158/1535-7163.mct-17-0148",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "靶向药获得性耐药NSCLC细胞出现IL6家族信号、STAT3及EMT；OSM通过OSM受体/JAK1/STAT3依赖机制促进EMT并减少药物诱导凋亡。NSCLC–CAF旁分泌串扰偏向激活OSM/STAT3；JAK1抑制与致癌通路共靶向在模型中逆转耐药，切除肺腺癌OSMR表达与较差预后相关。",
+      "limitation_zh": "功能结论主要来自细胞及CAF模型；摘要仅称oncogene-driven NSCLC和molecularly targeted drugs，不能确认奥希替尼或同期铂/培美曲塞特定背景。切除肿瘤预后相关性不等于耐药患者JAK1抑制药敏；也不能把所有gp130配体或所有CAF状态泛化为OSM依赖。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A28729401+OR+EXT_ID%3A27922075+OR+EXT_ID%3A39032875+OR+EXT_ID%3A34386085+OR+EXT_ID%3A38696655%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "id": "J01_E04",
+      "title": "Stress hormones promote EGFR inhibitor resistance in NSCLC: Implications for combinations with β-blockers.",
+      "authors": "Nilsson MB, Sun H, Diao L, Tong P, Liu D, Li L, Fan Y, Poteete A, Lim SO, Howells K, Haddad V, Gomez D, Tran H, Pena GA, Sequist LV, Yang JC, Wang J, Kim ES, Herbst R, Lee JJ, Hong WK, Wistuba I, Hung MC, Sood AK, Heymach JV.",
+      "year": 2017,
+      "journal": "Science translational medicine",
+      "doi": "10.1126/scitranslmed.aao4307",
+      "pmid": "29118262",
+      "publication_date": "2017-11-01",
+      "url": "https://doi.org/10.1126/scitranslmed.aao4307",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "preclinical",
+      "main_finding_zh": "应激激素通过β2肾上腺素受体、LKB1/CREB调节IL6并促进EGFR抑制剂耐药；患者用β阻滞剂/IL6水平的关联提示假说。",
+      "limitation_zh": "功能模型与观察性关联不能证明β阻滞剂联合奥希替尼加化疗后的临床获益；神经内分泌刺激只是IL6潜在来源之一。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "pmid": "29484139",
+      "title": "S100A9+ MDSC and TAM-mediated EGFR-TKI resistance in lung adenocarcinoma: the role of RELB.",
+      "journal": "Oncotarget",
+      "doi": "10.18632/oncotarget.24146",
+      "publication_date": "2018-01-10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29484139/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "30140390",
+            "reference": "Oncotarget. 2018 Jul 31;9(59):31559. doi: 10.18632/oncotarget.25943",
+            "type": "Erratum in",
+            "orderIn": 1
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "29613856",
+      "title": "TNF-driven adaptive response mediates resistance to EGFR inhibition in lung cancer.",
+      "journal": "The Journal of clinical investigation",
+      "doi": "10.1172/jci96148",
+      "publication_date": "2018-05-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29613856/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "30140390",
+      "title": "Correction: S100A9+ MDSC and TAM-mediated EGFR-TKI resistance in lung adenocarcinoma: the role of RELB.",
+      "journal": "Oncotarget",
+      "doi": "10.18632/oncotarget.25943",
+      "publication_date": "2018-07-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30140390/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "29484139",
+            "reference": "Oncotarget. 2018 Jan 10;9(7):7631-7643. doi: 10.18632/oncotarget.24146",
+            "type": "Erratum for",
+            "orderIn": 1
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "32873635",
+      "title": "Hypoxia Induces Resistance to EGFR Inhibitors in Lung Cancer Cells via Upregulation of FGFR1 and the MAPK Pathway.",
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.can-20-1192",
+      "publication_date": "2020-09-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32873635/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J04_E06",
+      "title": "EGFR inhibition triggers an adaptive response by co-opting antiviral signaling pathways in lung cancer.",
+      "authors": "Gong K, Guo G, Panchani N, Bender ME, Gerber DE, Minna JD, Fattah F, Gao B, Peyton M, Kernstine K, Mukherjee B, Burma S, Chiang CM, Zhang S, Amod Sathe A, Xing C, Dao KH, Zhao D, Akbay EA, Habib AA.",
+      "year": 2020,
+      "journal": "Nature cancer",
+      "doi": "10.1038/s43018-020-0048-0",
+      "pmid": "33269343",
+      "publication_date": "2020-04-06",
+      "url": "https://doi.org/10.1038/s43018-020-0048-0",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "EGFR突变NSCLC模型中，EGFR抑制通过RIG-I–TBK1–IRF3及TRIM32相关TBK1活化诱导I型IFN；EGFR野生型模型涉及NF-κB。阻断IFN信号在细胞、异种移植及免疫完整小鼠模型中提高EGFR-TKI敏感性。",
+      "limitation_zh": "涵盖EGFR突变与野生型/KRAS模型，主要是早期适应与临床前药敏；不同模型净效应不可等同患者获益。与J04_E05的患者早期正向关联需由时序、区室和IFN类型解释，不能据此常规抑制JAK或IFN，更非奥希替尼加化疗后试验证据。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "pmid": "33309987",
+      "title": "Altered Regulation of HIF-1α in Naive- and Drug-Resistant EGFR-Mutant NSCLC: Implications for a Vascular Endothelial Growth Factor-Dependent Phenotype.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2020.11.022",
+      "publication_date": "2020-12-09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33309987/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "33388477",
+      "title": "Characterization of the Immune Landscape of EGFR-Mutant NSCLC Identifies CD73/Adenosine Pathway as a Potential Therapeutic Target.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2020.12.010",
+      "publication_date": "2020-12-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33388477/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "33781438",
+            "reference": "J Thorac Oncol. 2021 Apr;16(4):509-511. doi: 10.1016/j.jtho.2021.01.1623",
+            "type": "Comment in",
+            "orderIn": 1
+          },
+          {
+            "source": "MED",
+            "id": "35216738",
+            "reference": "J Thorac Oncol. 2022 Mar;17(3):e35-e38. doi: 10.1016/j.jtho.2021.08.018",
+            "type": "Comment in",
+            "orderIn": 2
+          },
+          {
+            "source": "MED",
+            "id": "35216739",
+            "reference": "J Thorac Oncol. 2022 Mar;17(3):e39. doi: 10.1016/j.jtho.2022.01.003",
+            "type": "Comment in",
+            "orderIn": 3
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "33939301",
+      "title": "Exosome-derived miR-210 involved in resistance to osimertinib and epithelial-mesenchymal transition in EGFR mutant non-small cell lung cancer cells.",
+      "journal": "Thoracic cancer",
+      "doi": "10.1111/1759-7714.13943",
+      "publication_date": "2021-05-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33939301/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J04_E05",
+      "title": "A tyrosine kinase inhibitor-induced interferon response positively associates with clinical response in EGFR-mutant lung cancer.",
+      "authors": "Gurule NJ, McCoach CE, Hinz TK, Merrick DT, Van Bokhoven A, Kim J, Patil T, Calhoun J, Nemenoff RA, Tan AC, Doebele RC, Heasley LE.",
+      "year": 2021,
+      "journal": "NPJ precision oncology",
+      "doi": "10.1038/s41698-021-00181-4",
+      "pmid": "34001994",
+      "publication_date": "2021-05-17",
+      "url": "https://doi.org/10.1038/s41698-021-00181-4",
+      "verification": "metadata_abstract_checked",
+      "scope": "other_egfr_tki",
+      "design": "prospective",
+      "main_finding_zh": "8例EGFR突变患者治疗前及TKI开始2周后配对活检中，IFN转录程序、效应免疫细胞签名和T细胞增加与较长进展时间正相关。奥希替尼处理细胞也出现幅度各异的IFN程序，IL6/CXCL10诱导可受IKK与JAK-STAT干预影响。",
+      "limitation_zh": "小样本早期治疗关联，不能确立IFN导致延长控制；临床TKI与细胞奥希替尼实验不可混成奥希替尼后专属队列，更非奥希替尼加化疗后证据。没有经验证的IFN阈值或JAK药物治疗选择规则。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A27912061+OR+EXT_ID%3A27903500+OR+EXT_ID%3A38057662+OR+EXT_ID%3A38091951+OR+EXT_ID%3A34001994+OR+EXT_ID%3A33269343%29&format=json&resultType=core&pageSize=20",
+        "checked_at": "2026-11-04T09:11:04+00:00"
+      }
+    },
+    {
+      "pmid": "34217295",
+      "title": "SHP2 inhibition enhances the anticancer effect of Osimertinib in EGFR T790M mutant lung adenocarcinoma by blocking CXCL8 loop mediated stemness.",
+      "journal": "Cancer cell international",
+      "doi": "10.1186/s12935-021-02056-x",
+      "publication_date": "2021-07-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34217295/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J01_E01",
+      "title": "Ibrutinib reverses IL-6-induced osimertinib resistance through inhibition of Laminin α5/FAK signaling.",
+      "authors": "Li L, Li Z, Lu C, Li J, Zhang K, Lin C, Tang X, Liu Z, Zhang Y, Han R, Wang Y, Feng M, Zhuang Y, Hu C, He Y.",
+      "year": 2022,
+      "journal": "Communications biology",
+      "doi": "10.1038/s42003-022-03111-7",
+      "pmid": "35197546",
+      "publication_date": "2022-02-23",
+      "url": "https://doi.org/10.1038/s42003-022-03111-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "在奥希替尼耐药患者关联、细胞和异种移植模型中，IL6可诱导耐药；LAMA5/FAK干预恢复敏感，ibrutinib联合仅有模型支持。",
+      "limitation_zh": "混合临床关联与临床前功能证据；没有奥希替尼加化疗后随机疗效。该轴重点为LAMA5/FAK，不能反推JAK抑制必然有效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "pmid": "35708914",
+      "title": "MERTK activation drives osimertinib resistance in EGFR-mutant non-small cell lung cancer.",
+      "journal": "The Journal of clinical investigation",
+      "doi": "10.1172/jci150517",
+      "publication_date": "2022-08-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35708914/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "35756605",
+      "title": "Platelet Activation in High D-Dimer Plasma Plays a Role in Acquired Resistance to Epidermal Growth Factor Receptor Tyrosine Kinase Inhibitors in Patients with Mutant Lung Adenocarcinoma.",
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2022.876051",
+      "publication_date": "2022-06-08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35756605/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "35805163",
+      "title": "Integrin β3 Promotes Resistance to EGFR-TKI in Non-Small-Cell Lung Cancer by Upregulating AXL through the YAP Pathway.",
+      "journal": "Cells",
+      "doi": "10.3390/cells11132078",
+      "publication_date": "2022-06-30",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35805163/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "35932642",
+      "title": "Blockade of STAT3/IL-4 overcomes EGFR T790M-cis-L792F-induced resistance to osimertinib via suppressing M2 macrophages polarization.",
+      "journal": "EBioMedicine",
+      "doi": "10.1016/j.ebiom.2022.104200",
+      "publication_date": "2022-08-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35932642/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "36066413",
+      "title": "MET-Induced CD73 Restrains STING-Mediated Immunogenicity of EGFR-Mutant Lung Cancer.",
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.can-22-0770",
+      "publication_date": "2022-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36066413/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "36168315",
+      "title": "Tumor-associated macrophage-derived exosomes promote EGFR-TKI resistance in non-small cell lung cancer by regulating the AKT, ERK1/2 and STAT3 signaling pathways.",
+      "journal": "Oncology letters",
+      "doi": "10.3892/ol.2022.13476",
+      "publication_date": "2022-08-24",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36168315/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "36217893",
+      "title": "TGFβ1/integrin β3 positive feedback loop contributes to acquired EGFR TKI resistance in EGFR-mutant lung cancer.",
+      "journal": "Journal of drug targeting",
+      "doi": "10.1080/1061186x.2022.2064480",
+      "publication_date": "2023-01-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36217893/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "36545125",
+      "title": "Dual Roles of Lactate in EGFR-TKI-Resistant Lung Cancer by Targeting GPR81 and MCT1.",
+      "journal": "Journal of oncology",
+      "doi": "10.1155/2022/3425841",
+      "publication_date": "2022-12-12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36545125/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "36595561",
+      "title": "IL6 Mediates Suppression of T- and NK-cell Function in EMT-associated TKI-resistant EGFR-mutant NSCLC.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-22-3379",
+      "publication_date": "2023-04-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36595561/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "36641093",
+      "title": "CD73 Inhibitor Oleclumab Plus Osimertinib in Previously Treated Patients With Advanced T790M-Negative EGFR-Mutated NSCLC: A Brief Report.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2022.12.021",
+      "publication_date": "2023-01-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36641093/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "37087115",
+            "reference": "J Thorac Oncol. 2023 May;18(5):552-555. doi: 10.1016/j.jtho.2023.02.002.",
+            "type": "Comment in",
+            "orderIn": 1
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "36657561",
+      "title": "Novel EGFR-mutant mouse models of lung adenocarcinoma reveal adaptive immunity requirement for durable osimertinib response.",
+      "journal": "Cancer letters",
+      "doi": "10.1016/j.canlet.2023.216062",
+      "publication_date": "2023-01-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36657561/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "PPR",
+            "id": "PPR563159",
+            "type": "Preprint in",
+            "note": "CrossRef Pre-print loader",
+            "orderIn": 10002
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "36831438",
+      "title": "Association between Plasminogen Activator Inhibitor-1 and Osimertinib Tolerance in EGFR-Mutated Lung Cancer via Epithelial-Mesenchymal Transition.",
+      "journal": "Cancers",
+      "doi": "10.3390/cancers15041092",
+      "publication_date": "2023-02-08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36831438/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "37169657",
+      "title": "Regulation of dendritic cell maturation in osimertinib-treated lung adenocarcinoma patients.",
+      "journal": "Journal of the Formosan Medical Association = Taiwan yi zhi",
+      "doi": "10.1016/j.jfma.2023.04.018",
+      "publication_date": "2023-05-09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37169657/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "37218137",
+      "title": "Targeting CD73 to Overcomes Resistance to First-Generation EGFR Tyrosine Kinase Inhibitors in Non-Small Cell Lung Cancer.",
+      "journal": "Cancer research and treatment",
+      "doi": "10.4143/crt.2023.311",
+      "publication_date": "2023-05-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37218137/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "37831111",
+      "title": "Periostin secreted by cancer-associated fibroblasts promotes cancer progression and drug resistance in non-small cell lung cancer.",
+      "journal": "Journal of molecular medicine (Berlin, Germany)",
+      "doi": "10.1007/s00109-023-02384-7",
+      "publication_date": "2023-10-13",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37831111/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "38105305",
+            "reference": "J Mol Med (Berl). 2024 Jan;102(1):147. doi: 10.1007/s00109-023-02408-2.",
+            "type": "Erratum in",
+            "orderIn": 1
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "37844446",
+      "title": "Targeting MET endocytosis or degradation to overcome HGF-induced gefitinib resistance in EGFR-sensitive mutant lung adenocarcinoma.",
+      "journal": "Biochemical and biophysical research communications",
+      "doi": "10.1016/j.bbrc.2023.10.037",
+      "publication_date": "2023-10-10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37844446/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "37880373",
+      "title": "FGFR blockade inhibits targeted therapy-tolerant persister in basal FGFR1- and FGF2-high cancers with driver oncogenes.",
+      "journal": "NPJ precision oncology",
+      "doi": "10.1038/s41698-023-00462-0",
+      "publication_date": "2023-10-25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37880373/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "PPR",
+            "id": "PPR610463",
+            "type": "Preprint in",
+            "note": "CrossRef Pre-print loader",
+            "orderIn": 10002
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "38073064",
+      "title": "SOS2 modulates the threshold of EGFR signaling to regulate osimertinib efficacy and resistance in lung adenocarcinoma.",
+      "journal": "Molecular oncology",
+      "doi": "10.1002/1878-0261.13564",
+      "publication_date": "2024-01-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38073064/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {
+        "commentCorrection": [
+          {
+            "source": "MED",
+            "id": "37425733",
+            "reference": "bioRxiv. 2023 Jun 29:2023.01.20.524989. doi: 10.1101/2023.01.20.524989.",
+            "type": "Update of",
+            "orderIn": 1
+          },
+          {
+            "source": "PPR",
+            "id": "PPR600272",
+            "type": "Preprint in",
+            "note": "CrossRef Pre-print loader",
+            "orderIn": 10002
+          }
+        ]
+      }
+    },
+    {
+      "pmid": "38252907",
+      "title": "Nivolumab Plus Chemotherapy in Epidermal Growth Factor Receptor-Mutated Metastatic Non-Small-Cell Lung Cancer After Disease Progression on Epidermal Growth Factor Receptor Tyrosine Kinase Inhibitors: Final Results of CheckMate 722.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.23.01017",
+      "publication_date": "2024-01-22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38252907/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "38401520",
+      "title": "Chidamide improves gefitinib treatment outcomes in NSCLC by attenuating recruitment and immunosuppressive function of myeloid-derived suppressor cells.",
+      "journal": "Biomedicine & pharmacotherapy = Biomedecine & pharmacotherapie",
+      "doi": "10.1016/j.biopha.2024.116306",
+      "publication_date": "2024-02-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38401520/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "38961814",
+      "title": "CCL2 promotes EGFR-TKIs resistance in non-small cell lung cancer via the AKT-EMT pathway.",
+      "journal": "Acta biochimica et biophysica Sinica",
+      "doi": "10.3724/abbs.2024106",
+      "publication_date": "2024-07-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38961814/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39036343",
+      "title": "Cancer-associated fibroblast-derived colony-stimulating factor 2 confers acquired osimertinib resistance in lung adenocarcinoma via promoting ribosome biosynthesis.",
+      "journal": "MedComm",
+      "doi": "10.1002/mco2.653",
+      "publication_date": "2024-07-20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39036343/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39059573",
+      "title": "Triple combination therapy comprising osimertinib, an AXL inhibitor, and an FGFR inhibitor improves the efficacy of EGFR-mutated non-small cell lung cancer.",
+      "journal": "Cancer letters",
+      "doi": "10.1016/j.canlet.2024.217124",
+      "publication_date": "2024-07-24",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39059573/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39062533",
+      "title": "EGFR Mutation and TKI Treatment Promote Secretion of Small Extracellular Vesicle PD-L1 and Contribute to Immunosuppression in NSCLC.",
+      "journal": "Biomolecules",
+      "doi": "10.3390/biom14070820",
+      "publication_date": "2024-07-09",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39062533/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39173098",
+      "title": "Phase III KEYNOTE-789 Study of Pemetrexed and Platinum With or Without Pembrolizumab for Tyrosine Kinase Inhibitor‒Resistant, EGFR-Mutant, Metastatic Nonsquamous Non-Small Cell Lung Cancer.",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.23.02747",
+      "publication_date": "2024-08-22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39173098/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J01_E02",
+      "title": "Defective N-glycosylation of IL6 induces metastasis and tyrosine kinase inhibitor resistance in lung cancer.",
+      "authors": "Hung CH, Wu SY, Yao CD, Yeh HH, Lin CC, Chu CY, Huang TY, Shen MR, Lin CH, Su WC.",
+      "year": 2024,
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-024-51831-7",
+      "pmid": "39251588",
+      "publication_date": "2024-09-09",
+      "url": "https://doi.org/10.1038/s41467-024-51831-7",
+      "verification": "metadata_abstract_checked",
+      "scope": "post_osimertinib",
+      "design": "preclinical",
+      "main_finding_zh": "IL6 N糖基化状态改变信号偏好：糖基化IL6支持较持久JAK/STAT3，去糖基化IL6转向SRC–YAP–SOX2；奥希替尼耐药细胞出现后一状态。",
+      "limitation_zh": "结合细胞、动物与临床标本关联，尚无按IL6糖基化选择治疗的前瞻验证；总IL6或单次pSTAT3不能识别该分叉。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A35197546+OR+EXT_ID%3A39251588+OR+EXT_ID%3A36595561+OR+EXT_ID%3A29118262+OR+EXT_ID%3A28879441+OR+EXT_ID%3A37069261%29&format=json&resultType=core&pageSize=50",
+        "checked_at": "2026-11-04T09:10:18+00:00"
+      }
+    },
+    {
+      "pmid": "39399795",
+      "title": "Final Analysis Data and Exploratory Biomarker Analysis of a Randomized Phase 2 Study of Osimertinib Plus Bevacizumab Versus Osimertinib Monotherapy for Untreated Patients With Nonsquamous NSCLC Harboring EGFR Mutations: The WJOG9717L Study.",
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2024.100716",
+      "publication_date": "2024-08-23",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39399795/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39435643",
+      "title": "Pericytes Modulate Third-Generation Tyrosine Kinase Inhibitor Sensitivity in EGFR-Mutated Lung Cancer Cells Through IL32-β5-Integrin Paracrine Signaling.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "doi": "10.1002/advs.202405130",
+      "publication_date": "2024-10-22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39435643/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39638994",
+      "title": "CXCR1+ neutrophil infiltration orchestrates response to third-generation EGFR-TKI in EGFR mutant non-small-cell lung cancer.",
+      "journal": "Signal transduction and targeted therapy",
+      "doi": "10.1038/s41392-024-02045-2",
+      "publication_date": "2024-12-06",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39638994/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "39694766",
+      "title": "PD-L1 expression and immune profiling cannot predict osimertinib efficacy in lung cancer with EGFR T790 M mutation: A translational study.",
+      "journal": "Journal of the Formosan Medical Association = Taiwan yi zhi",
+      "doi": "10.1016/j.jfma.2024.12.020",
+      "publication_date": "2024-12-17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39694766/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "40007550",
+      "title": "Solid Predominant Histology and High Podoplanin Expression in Cancer-Associated Fibroblast Predict Primary Resistance to Osimertinib in EGFR-Mutated Lung Adenocarcinoma.",
+      "journal": "JTO clinical and research reports",
+      "doi": "10.1016/j.jtocrr.2024.100779",
+      "publication_date": "2024-12-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40007550/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "40165020",
+      "title": "An Agrin-YAP/TAZ Rigidity Sensing Module Drives EGFR-Addicted Lung Tumorigenesis.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "doi": "10.1002/advs.202413443",
+      "publication_date": "2025-03-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40165020/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J03_E05",
+      "title": "Induction of IL6/STAT3-dependent TRAIL expression that contributes to the therapeutic efficacy of osimertinib in EGFR mutant NSCLC cells.",
+      "authors": "Oh YT, Chen Z, Wang D, Ramalingam SS, Sun SY.",
+      "year": 2025,
+      "journal": "Oncogene",
+      "doi": "10.1038/s41388-025-03381-5",
+      "pmid": "40247082",
+      "publication_date": "2025-04-17",
+      "url": "https://doi.org/10.1038/s41388-025-03381-5",
+      "verification": "metadata_abstract_checked",
+      "scope": "preclinical",
+      "design": "preclinical",
+      "main_finding_zh": "奥希替尼诱导EGFR突变NSCLC细胞IL6/STAT3依赖的TRAIL转录；STAT3降解或敲除阻断诱导。TRAIL敲低/敲除降低体内外敏感性，DR5敲低削弱杀伤，而耐药细胞丧失TRAIL诱导。",
+      "limitation_zh": "细胞及体内模型中的促凋亡反例，未建立临床TRAIL预测阈值；不能断言JAK/STAT抑制在所有患者必然有害，也不能据此给患者激活STAT3。没有奥希替尼加化疗后前瞻疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=SRC%3AMED+AND+%28EXT_ID%3A32365499+OR+EXT_ID%3A35932642+OR+EXT_ID%3A34857889+OR+EXT_ID%3A32087696+OR+EXT_ID%3A40247082%29&format=json&resultType=core&pageSize=10",
+        "checked_at": "2026-11-04T09:09:15.412247+00:00"
+      }
+    },
+    {
+      "pmid": "40664443",
+      "title": "Anti-galectin-9 therapy synergizes with EGFR inhibition to reprogram the tumor microenvironment and overcome immune evasion.",
+      "journal": "Journal for immunotherapy of cancer",
+      "doi": "10.1136/jitc-2024-010926",
+      "publication_date": "2025-07-15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40664443/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "40959099",
+      "title": "Cancer-associated Fibroblasts Confer Osimertinib Resistance in Non-small Cell Lung Cancer Cells via NRG1-mediated HER3/AKT Signaling.",
+      "journal": "Journal of Cancer",
+      "doi": "10.7150/jca.111383",
+      "publication_date": "2025-08-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40959099/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41144813",
+      "title": "Overcoming EGFR-Mediated Dendritic Cell Dysfunction to Enhance Anti-tumor Immunity in EGFR-Mutant NSCLC by Precisely Targeting CD73 With pH-responsive Nanocarriers.",
+      "journal": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "doi": "10.1002/advs.202513182",
+      "publication_date": "2025-10-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41144813/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41145422",
+      "title": "Hypoxia-induced exosomal LUCAT1 promotes osimertinib resistance in lung adenocarcinoma by stabilizing c-MET.",
+      "journal": "Cell death & disease",
+      "doi": "10.1038/s41419-025-08100-2",
+      "publication_date": "2025-10-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41145422/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41329713",
+      "title": "Transfer of Damaged Mitochondria from Cancer Cells to Cancer-Associated Fibroblasts Promotes Tyrosine Kinase Inhibitor Tolerance in EGFR-Mutant Lung Cancer.",
+      "journal": "Cancer research",
+      "doi": "10.1158/0008-5472.can-25-0433",
+      "publication_date": "2026-03-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41329713/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41419139",
+      "title": "ASIC3-PLCG1 axis-driven macropinocytosis promotes osimertinib drug-tolerant persistence in malignant pleural effusion-associated NSCLC.",
+      "journal": "European journal of pharmaceutical sciences : official journal of the European Federation for Pharmaceutical Sciences",
+      "doi": "10.1016/j.ejps.2025.107417",
+      "publication_date": "2025-12-17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41419139/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41535831",
+      "title": "SPP1 promotes cancer stemness and reduces osimertinib sensitivity in non-small cell lung cancer through interactions with CD44.",
+      "journal": "Cancer cell international",
+      "doi": "10.1186/s12935-026-04172-y",
+      "publication_date": "2026-01-14",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41535831/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41538362",
+      "title": "EGFR activation disrupts immunotherapy response via SHP2-mediated suppression of tumor-intrinsic response to IFN-γ.",
+      "journal": "The Journal of clinical investigation",
+      "doi": "10.1172/jci194377",
+      "publication_date": "2026-01-15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41538362/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "id": "J06_E05",
+      "title": "Treatment resistance to platinum-based chemotherapy in lung and ovarian cancer is driven by a targetable TGFβ senescent secretome.",
+      "authors": "González-Gualda E, Reinius MAV, Macias D, Morsli S, Ge J, Olan I, Martín JE, Ou HL, Hartono M, Puerto-Camacho MP, Denholm M, Kieran R, Hoffmann R, Dane M, Veroutis D, Medrano G, Mulero F, Jimenez-Linan M, Fruk L, Martins CP, Barbacid M, Gorgoulis V, Korkola JE, Rassl DM, Doherty GJ, Rintoul RC, Narita M, Brenton JD, Muñoz-Espín D.",
+      "year": 2026,
+      "journal": "Nature aging",
+      "doi": "10.1038/s43587-025-01054-2",
+      "pmid": "41634464",
+      "publication_date": "2026-02-03",
+      "url": "https://doi.org/10.1038/s43587-025-01054-2",
+      "verification": "metadata_abstract_checked",
+      "scope": "mixed",
+      "design": "preclinical",
+      "main_finding_zh": "顺铂在NSCLC模型诱导促肿瘤衰老分泌表型；富集TGFβ的SASP通过TGFBR1–AKT/mTOR促进增殖，有动物干预及新辅助铂类NSCLC/卵巢癌标本关联。",
+      "limitation_zh": "含KRAS驱动模型和其他肿瘤背景，非EGFR突变奥希替尼加同期化疗后研究；未证明SASP依赖JAK。人体关联及动物改善不能替代患者随机疗效。",
+      "full_text_reviewed": false,
+      "retrieval": {
+        "provider": "Europe PMC (core metadata and abstract), cross-checked with PubMed",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41634464+AND+SRC%3AMED&format=json&resultType=core&pageSize=5",
+        "checked_at": "2026-11-04T09:15:20+00:00",
+        "secondary_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=41634464&retmode=xml",
+        "crossref_url": "https://api.crossref.org/works/10.1038/s43587-025-01054-2"
+      }
+    },
+    {
+      "pmid": "41719890",
+      "title": "Stabilin-1+ lipid-associated macrophages promote lung adenocarcinoma liver metastasis and osimertinib resistance through impairing macrophage phagocytosis via SIRPα-CD47 axis.",
+      "journal": "Drug resistance updates : reviews and commentaries in antimicrobial and anticancer chemotherapy",
+      "doi": "10.1016/j.drup.2026.101379",
+      "publication_date": "2026-02-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41719890/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41723107",
+      "title": "Cancer-associated fibroblasts promote osimertinib resistance in non-small cell lung cancer cells via METTL1-mediated NET1 m7G modification.",
+      "journal": "Cell death & disease",
+      "doi": "10.1038/s41419-026-08505-7",
+      "publication_date": "2026-02-21",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41723107/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41757675",
+      "title": "TGF-β Inhibitor Potentiates Osimertinib-Induced Anti-Tumor Immunity in Egfr-Mutant Lung Cancer.",
+      "journal": "Cancer science",
+      "doi": "10.1111/cas.70352",
+      "publication_date": "2026-02-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41757675/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41800052",
+      "title": "The STAT3-ZEB1 axis contributes to CCL2-mediated resistance to osimertinib in lung cancer.",
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2026.1699471",
+      "publication_date": "2026-02-20",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41800052/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "41853316",
+      "title": "CD73 expression as a resistance mechanism in advanced EGFR-mutated non-small cell lung cancer.",
+      "journal": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2026.1755595",
+      "publication_date": "2026-03-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41853316/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42087187",
+      "title": "Unmasking the common enemy: drug resistance mechanisms across three different EGFR inhibitor generations are associated with co-targetable alterations in extracellular matrix signaling.",
+      "journal": "Cell communication and signaling : CCS",
+      "doi": "10.1186/s12964-026-02927-8",
+      "publication_date": "2026-05-06",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42087187/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42260371",
+      "title": "GPNMB-ECD drives acquired resistance to osimertinib in NSCLC via inducing tumor cell cytoskeletal reorganization.",
+      "journal": "Cellular & molecular biology letters",
+      "doi": "10.1186/s11658-026-00965-1",
+      "publication_date": "2026-06-08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42260371/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42284680",
+      "title": "Tumor cell-intrinsic NSUN2 deficiency reprograms macrophages to sensitize non-small cell lung cancer to EGFR inhibitors by reversing immune evasion.",
+      "journal": "Neoplasia (New York, N.Y.)",
+      "doi": "10.1016/j.neo.2026.101326",
+      "publication_date": "2026-06-12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42284680/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42285369",
+      "title": "RRBP1 promotes osimertinib resistance by activating fatty acid oxidation-dependent metabolic and immune reprogramming in EGFR-Mutant lung adenocarcinoma.",
+      "journal": "Biochemical pharmacology",
+      "doi": "10.1016/j.bcp.2026.118158",
+      "publication_date": "2026-06-12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42285369/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42415069",
+      "title": "ANGPTL4 contributes to osimertinib resistance through NDRG1-associated extracellular matrix remodeling in EGFR-mutant NSCLC organoid models.",
+      "journal": "Cancer cell international",
+      "doi": "10.1186/s12935-026-04400-5",
+      "publication_date": "2026-07-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42415069/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42469184",
+      "title": "Interleukin-1α-Mediated Activation of TNF-α/NF-κB Signaling Confers Resistance to Osimertinib in EGFR-Mutant Non-Small-Cell Lung Cancer.",
+      "journal": "Thoracic cancer",
+      "doi": "10.1111/1759-7714.70360",
+      "publication_date": "2026-07-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42469184/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42549034",
+      "title": "CCL20 Released by Drug-Tolerant Persisters Impairs Immunotherapy in EGFR-Mutant Lung Adenocarcinoma.",
+      "journal": "MedComm",
+      "doi": "10.1002/mco2.70888",
+      "publication_date": "2026-08-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42549034/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42647987",
+      "title": "Targeting EP2 overcomes osimertinib-tolerant persisters through metabolic and inflammatory reprogramming in non-small cell lung cancer.",
+      "journal": "International immunopharmacology",
+      "doi": "10.1016/j.intimp.2026.117313",
+      "publication_date": "2026-08-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42647987/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42786513",
+      "title": "Longitudinal spatial multi-omics delineates tumor microenvironment remodeling across sequential EGFR-TKIs in EGFR-mutant NSCLC.",
+      "journal": "Journal of translational medicine",
+      "doi": "10.1186/s12967-026-08897-2",
+      "publication_date": "2026-09-02",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42786513/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42810632",
+      "title": "Targeting the CAF-LPL-STAT3 axis mitigates osimertinib resistance associated with EGFR downregulation.",
+      "journal": "Cellular signalling",
+      "doi": "10.1016/j.cellsig.2026.112911",
+      "publication_date": "2026-09-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42810632/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42903166",
+      "title": "TREM2+ macrophages mediate anticancer therapy-induced immune evasion in lung adenocarcinoma via the CCL5/CCL22-Treg axis.",
+      "journal": "Frontiers in immunology",
+      "doi": "10.3389/fimmu.2026.1914462",
+      "publication_date": "2026-10-06",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42903166/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    },
+    {
+      "pmid": "42919317",
+      "title": "ERK/GATAD2A/SAA1 axis drives osimertinib resistance via NF-κB and macrophage reprogramming in EGFR-mutated lung adenocarcinoma.",
+      "journal": "Journal of experimental & clinical cancer research : CR",
+      "doi": "10.1186/s13046-026-03792-6",
+      "publication_date": "2026-07-28",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42919317/",
+      "verification": "indexed_metadata_and_abstract_or_prior_curated_summary_checked",
+      "full_text_reviewed": false,
+      "correction_metadata": {}
+    }
+  ]
+}

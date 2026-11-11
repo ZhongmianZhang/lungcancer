@@ -42,6 +42,14 @@
     "multiomics/example/result.json",
     "multiomics/index.html",
     "multiomics/knowledge.json",
-    "multiomics/references.csv"
+    "multiomics/references.csv",
+    "resistance-top80/README.md",
+    "resistance-top80/egfr_top80_priority_20261111.csv",
+    "resistance-top80/egfr_top80_priority_20261111.html",
+    "resistance-top80/egfr_top80_priority_20261111.json",
+    "tme-top60/README.md",
+    "tme-top60/egfr_tme_top60_priority_20261111.csv",
+    "tme-top60/egfr_tme_top60_priority_20261111.html",
+    "tme-top60/egfr_tme_top60_priority_20261111.json"
   ]
 }

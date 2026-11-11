@@ -6,6 +6,8 @@
 
 ## 阅读入口
 
+- [80项耐药机制／变异／表观调控优先核查清单（2026-11-11）](site/resistance-top80/)
+- [微环境60项优先核查机制与来源（2026-11-11）](site/tme-top60/)
 - [中文综述：机制、克服方法与未来前景](docs/egfr-bypass-resistance.md)
 - [15 类机制证据表（CSV，可下载分析）](docs/evidence-matrix.csv)
 - [参考文献、试验登记与核验状态](docs/references.md)
