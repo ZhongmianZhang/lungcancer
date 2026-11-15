@@ -1,4 +1,18 @@
-# EGFR蛋白结构与TKI疗效：单文件离线报告
+# EGFR蛋白结构与TKI疗效：离线报告与白底PPT
+
+## 30页白底PPT（2026-11-15）
+
+- [直接下载可编辑PPTX（约6.0 MB）](https://github.com/ZhongmianZhang/lungcancer/raw/refs/heads/main/site/egfr-structure/EGFR_structure_white_20261115.pptx)
+- [下载PDF预览（约2.9 MB）](https://github.com/ZhongmianZhang/lungcancer/raw/refs/heads/main/site/egfr-structure/EGFR_structure_white_20261115.pdf)
+- [幻灯片来源清单](presentation_manifest.json) · [文件与排版检查记录](presentation_verification.json) · [PPT/PDF校验值](PPT_SHA256SUMS.txt)
+
+16:9全白背景，正文可编辑；变异/基因为蓝色，结构/动力学为青绿，证据/推测为紫色，重要边界为橙红。包含8个实验结构的内嵌静态图片、9个结构清单、30条来源及逐页备注。图片与正文可离线查看；外部参考链接和配套HTML下载需要联网。PPT中的图片为静态投影；可旋转模型在配套离线HTML中。
+
+使用 Noto Sans CJK SC 字体；系统缺少该字体时，PowerPoint/WPS可能采用本地中文字体替换。PDF可用于查看固定排版。
+
+![白底PPT部分页面](presentation_preview.png)
+
+## 单文件离线HTML
 
 **推荐先下载ZIP，解压后在本机Chrome或Edge中打开里面唯一的HTML。**
 

@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-15",
+  "slides": 30,
+  "notes_slides": 30,
+  "white_background_slides": 30,
+  "unique_embedded_molecular_images": 8,
+  "picture_instances": 9,
+  "external_images": 0,
+  "editable_text": true,
+  "text_color_character_counts": {
+    "006D77": 552,
+    "174EA6": 1808,
+    "243746": 5475,
+    "64748B": 2182,
+    "B54708": 523,
+    "B42318": 28,
+    "7137B5": 204
+  },
+  "shapes_outside_page": [],
+  "pptx_archive_integrity": "passed",
+  "pdf_preview_pages": 30,
+  "visual_review": "All slides reviewed; Chinese font fallback corrected; references expanded to 4 slides; images are static experimental coordinate projections.",
+  "files": [
+    {
+      "name": "EGFR_structure_white_20261115.pptx",
+      "bytes": 5967049,
+      "sha256": "457322c09e2031e5fb23207dcbd686fe8f5bde0539926fae683b3eddac18b0d3"
+    },
+    {
+      "name": "EGFR_structure_white_20261115.pdf",
+      "bytes": 2864285,
+      "sha256": "55ec6cec149c0e6885b6b361ea32859222d289765af69155da3ef836a304fe11"
+    }
+  ],
+  "chinese_text_completeness": "Passed: each slide compared by Chinese character counts between editable PPTX text and PDF extraction.",
+  "reference_audit": {
+    "unique_pmids": 30,
+    "reference_slides": [
+      8,
+      8,
+      8,
+      6
+    ],
+    "all_note_pmid_urls_match": true
+  },
+  "font_family": "Noto Sans CJK SC"
+}

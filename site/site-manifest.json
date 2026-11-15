@@ -54,11 +54,17 @@
     "egfr-structure/.gitattributes",
     "egfr-structure/EGFR_structure_offline_20261115.html",
     "egfr-structure/EGFR_structure_offline_20261115.zip",
+    "egfr-structure/EGFR_structure_white_20261115.pdf",
+    "egfr-structure/EGFR_structure_white_20261115.pptx",
+    "egfr-structure/PPT_SHA256SUMS.txt",
     "egfr-structure/README.md",
     "egfr-structure/SHA256SUMS.txt",
     "egfr-structure/download_manifest.json",
     "egfr-structure/index.html",
     "egfr-structure/offline_verification.json",
+    "egfr-structure/presentation_manifest.json",
+    "egfr-structure/presentation_preview.png",
+    "egfr-structure/presentation_verification.json",
     "egfr-structure/preview.png"
   ]
 }
