@@ -1,0 +1,202 @@
+{
+  "4lrm": {
+    "UniProt": {
+      "P00533": {
+        "name": "EGFR_HUMAN",
+        "mappings": [
+          {
+            "entity_id": 1,
+            "chain_id": "A",
+            "struct_asym_id": "A",
+            "unp_start": 694,
+            "unp_end": 770,
+            "start": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 3
+            },
+            "end": {
+              "author_residue_number": 770,
+              "author_insertion_code": "",
+              "residue_number": 79
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "A",
+            "struct_asym_id": "A",
+            "unp_start": 771,
+            "unp_end": 1022,
+            "start": {
+              "author_residue_number": 774,
+              "author_insertion_code": "",
+              "residue_number": 83
+            },
+            "end": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 334
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "B",
+            "struct_asym_id": "B",
+            "unp_start": 694,
+            "unp_end": 770,
+            "start": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 3
+            },
+            "end": {
+              "author_residue_number": 770,
+              "author_insertion_code": "",
+              "residue_number": 79
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "B",
+            "struct_asym_id": "B",
+            "unp_start": 771,
+            "unp_end": 1022,
+            "start": {
+              "author_residue_number": 774,
+              "author_insertion_code": "",
+              "residue_number": 83
+            },
+            "end": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 334
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "C",
+            "struct_asym_id": "C",
+            "unp_start": 694,
+            "unp_end": 770,
+            "start": {
+              "author_residue_number": 694,
+              "author_insertion_code": "",
+              "residue_number": 3
+            },
+            "end": {
+              "author_residue_number": 770,
+              "author_insertion_code": "",
+              "residue_number": 79
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "C",
+            "struct_asym_id": "C",
+            "unp_start": 771,
+            "unp_end": 1022,
+            "start": {
+              "author_residue_number": 774,
+              "author_insertion_code": "",
+              "residue_number": 83
+            },
+            "end": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 334
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "D",
+            "struct_asym_id": "D",
+            "unp_start": 694,
+            "unp_end": 770,
+            "start": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 3
+            },
+            "end": {
+              "author_residue_number": 770,
+              "author_insertion_code": "",
+              "residue_number": 79
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "D",
+            "struct_asym_id": "D",
+            "unp_start": 771,
+            "unp_end": 1022,
+            "start": {
+              "author_residue_number": 774,
+              "author_insertion_code": "",
+              "residue_number": 83
+            },
+            "end": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 334
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "E",
+            "struct_asym_id": "E",
+            "unp_start": 694,
+            "unp_end": 770,
+            "start": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 3
+            },
+            "end": {
+              "author_residue_number": 770,
+              "author_insertion_code": "",
+              "residue_number": 79
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          },
+          {
+            "entity_id": 1,
+            "chain_id": "E",
+            "struct_asym_id": "E",
+            "unp_start": 771,
+            "unp_end": 1022,
+            "start": {
+              "author_residue_number": 774,
+              "author_insertion_code": "",
+              "residue_number": 83
+            },
+            "end": {
+              "author_residue_number": null,
+              "author_insertion_code": "",
+              "residue_number": 334
+            },
+            "identity": 0.99,
+            "coverage": 0.277
+          }
+        ],
+        "identifier": "EGFR_HUMAN"
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@
 
 ## 阅读入口
 
+- [EGFR蛋白结构与TKI疗效：独立离线3D报告及ZIP下载（2026-11-15）](site/egfr-structure/)
 - [80项耐药机制／变异／表观调控优先核查清单（2026-11-11）](site/resistance-top80/)
 - [微环境60项优先核查机制与来源（2026-11-11）](site/tme-top60/)
 - [中文综述：机制、克服方法与未来前景](docs/egfr-bypass-resistance.md)

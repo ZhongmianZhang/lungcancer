@@ -1,0 +1,27 @@
+{
+  "name": "3dmol",
+  "version": "2.5.5",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "url": "git+https://github.com/3dmol/3Dmol.js.git",
+    "type": "git"
+  },
+  "retrieved_date": "2026-11-15",
+  "assets": {
+    "3Dmol_LICENSE.txt": {
+      "url": "https://cdn.jsdelivr.net/npm/3dmol@2.5.5/LICENSE",
+      "bytes": 4283,
+      "sha256": "4c6eaaed856f3f28a3b1a98e74f4a8a71618de7d51ea4155c29f6f793bcef861"
+    },
+    "3Dmol-min.js": {
+      "url": "https://cdn.jsdelivr.net/npm/3dmol@2.5.5/build/3Dmol-min.js",
+      "bytes": 537792,
+      "sha256": "f7cc78921ae72e7623e89cdd111434f58c2efddd2ffda1cd212644b406fb8016"
+    },
+    "3Dmol_third_party_licenses.txt": {
+      "url": "https://cdn.jsdelivr.net/npm/3dmol@2.5.5/build/3Dmol-min.js.LICENSE.txt",
+      "bytes": 120,
+      "sha256": "ae3bfc688d0c9687b76e0ecc7fece0b393bcb4acf2aee09e19dda697eaa10b16"
+    }
+  }
+}

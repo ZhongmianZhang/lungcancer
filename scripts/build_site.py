@@ -57,6 +57,8 @@ def main() -> int:
             links = links.replace('      </nav>', '        <a class="button secondary" href="./resistance-top80/egfr_top80_priority_20261111.html">80项耐药优先核查清单</a>\n      </nav>')
         if (args.output / "tme-top60/egfr_tme_top60_priority_20261111.html").is_file():
             links = links.replace('      </nav>', '        <a class="button secondary" href="./tme-top60/egfr_tme_top60_priority_20261111.html">微环境60项优先核查机制</a>\n      </nav>')
+        if (args.output / "egfr-structure/index.html").is_file():
+            links = links.replace('      </nav>', '        <a class="button secondary" href="./egfr-structure/index.html">EGFR结构与TKI：离线3D报告下载</a>\n      </nav>')
         content = content.replace(marker, links + marker, 1)
         extra_css = '.site-downloads{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}.site-downloads a{text-decoration:none}@media print{.site-downloads{display:none}}'
         content = content.replace("</style>", extra_css + "</style>", 1)
@@ -77,7 +79,7 @@ def main() -> int:
             "research_status": "文献与JCR期刊排名待核验的研究草稿",
             "files": ["index.html", *["downloads/" + name for name in assets]],
         }
-        for folder in ("ras-mapk", "lineage", "jak-stat", "multiomics", "resistance-top80", "tme-top60"):
+        for folder in ("ras-mapk", "lineage", "jak-stat", "multiomics", "resistance-top80", "tme-top60", "egfr-structure"):
             extra_dir = output / folder
             if extra_dir.is_dir():
                 manifest["files"].extend(str(p.relative_to(output)) for p in sorted(extra_dir.rglob("*")) if p.is_file())

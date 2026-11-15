@@ -50,6 +50,15 @@
     "tme-top60/README.md",
     "tme-top60/egfr_tme_top60_priority_20261111.csv",
     "tme-top60/egfr_tme_top60_priority_20261111.html",
-    "tme-top60/egfr_tme_top60_priority_20261111.json"
+    "tme-top60/egfr_tme_top60_priority_20261111.json",
+    "egfr-structure/.gitattributes",
+    "egfr-structure/EGFR_structure_offline_20261115.html",
+    "egfr-structure/EGFR_structure_offline_20261115.zip",
+    "egfr-structure/README.md",
+    "egfr-structure/SHA256SUMS.txt",
+    "egfr-structure/download_manifest.json",
+    "egfr-structure/index.html",
+    "egfr-structure/offline_verification.json",
+    "egfr-structure/preview.png"
   ]
 }

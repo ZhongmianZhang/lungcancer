@@ -1,0 +1,1204 @@
+{
+  "meta": {
+    "title": "EGFR突变蛋白结构与TKI疗效：证据、推测及实验3D结构",
+    "date": "2026-11-15",
+    "literature_window": [
+      "2011-11-15",
+      "2026-11-15"
+    ],
+    "historical_note": "2ITY/2ITZ/2ITO为2007年历史实验坐标，仅作基线；核心讨论使用近15年研究。",
+    "protein": "EGFR / UniProt P00533 / canonical 1210 aa",
+    "scope": "文献与结构资源综合，非系统综述；未提供患者原始检测报告或患者结构。",
+    "inference": "区分结构观察、生化因果、细胞/动物模型、临床关联与研究性推测；不计算患者药物评分或对接自由能。",
+    "viewer_delivery": "当前无模型可调用的结构查看器打开/控制工具；交付原始PDB坐标与官方交互3D入口，未声称已在聊天内渲染。",
+    "coordinates": "原样下载实验坐标，未把WT重标或修改成未验证突变模型。",
+    "source_checks": "PDB/PDBe元数据、UniProt、题录和关键摘要；两篇论文审读部分全文段落，并非全部文献全文复核。",
+    "clinical_boundary": "结构分类、预测置信度、对接姿态或病理致病性均不能单独预测临床敏感性；无自动用药规则。"
+  },
+  "factors": [
+    {
+      "id": 1,
+      "name": "激酶活性/非活性构象平衡",
+      "kind": "结构直接因子",
+      "examples": "L858R、部分19del",
+      "mechanism": "突变可解除自抑制或改变αC/活化环构象的分布；激活并不保证对每个抑制剂都同样敏感。",
+      "evidence": "构象研究＋生化；常见驱动有临床支持",
+      "limits": "全长受体功能、酶动力学与构象分布，不能只比较一张静态图。",
+      "pmids": [
+        "34526717",
+        "17349580",
+        "29151359"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "ATP竞争及Km,ATP",
+      "kind": "动力学直接因子",
+      "examples": "T790M、不同19del",
+      "mechanism": "细胞内药物与ATP竞争。不同突变可改变ATP相关动力学，即使药物本身的抑制常数相近，也能产生不同IC50。",
+      "evidence": "酶动力学＋晶体/HDX-MS",
+      "limits": "在匹配ATP、底物、时间和酶条件下测量；Km不能简单等同Kd。",
+      "pmids": [
+        "36357385",
+        "32672461"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "共价反应位点与反应动力学",
+      "kind": "结构/化学直接因子",
+      "examples": "C797S",
+      "mechanism": "二/三代许多药物依赖C797的半胱氨酸反应；C797S破坏这一优势，但仍可能在高浓度晶体中观察到非共价占位。",
+      "evidence": "结构＋模型＋患者耐药资料",
+      "limits": "区分非共价亲和、kinact/KI、靶点占有和细胞抑制。",
+      "pmids": [
+        "25964297",
+        "32943545",
+        "32672461"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "口袋体积、侧链形状和局部空间阻碍",
+      "kind": "结构直接因子",
+      "examples": "T790M、L718Q/V、G796替换",
+      "mechanism": "不同侧链可改变药物接近路径、可容纳构象或疏水配合；同一改变对不同分子未必同向。",
+      "evidence": "直接结构与部分变体的模型/病例",
+      "limits": "精确替换和共突变必要；不可将所有G796或L718变体互换。",
+      "pmids": [
+        "32672461",
+        "38836187",
+        "37806383"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "铰链定位及非共价相互作用",
+      "kind": "结构直接因子",
+      "examples": "M793附近、L792等邻近变化",
+      "mechanism": "ATP位点药物需获得合适的铰链定位和非共价作用，才能稳定占位或进一步反应；邻近突变可能改变这一过程。",
+      "evidence": "结构证据；罕见位点需独立验证",
+      "limits": "氢键/水网络推断受分辨率和质子化影响；距离或对接分数不等于自由能。",
+      "pmids": [
+        "32672461",
+        "34526717",
+        "37806383"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "P-loop/αC耦合与PACC状态",
+      "kind": "结构分类因子",
+      "examples": "G719X、S768I、部分L747变体",
+      "mechanism": "P-loop与αC的耦合可改变药物可利用的空间和构象分布，形成跨外显子的功能类群。",
+      "evidence": "大队列结构分类＋模型；临床证据演进中",
+      "limits": "PACC不能简化为某一代药统一最优；具体分子、复合等位和中枢暴露仍重要。",
+      "pmids": [
+        "34526717",
+        "42191070",
+        "42887497"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "β3–αC连接区的精确缺失/插入序列",
+      "kind": "结构直接因子",
+      "examples": "E746_A750del、L747_A750delinsP、L747_E749del",
+      "mechanism": "同为19del，实际删除长度与替换残基不同，可造成不同柔性及ATP竞争，不能仅以外显子号归类。",
+      "evidence": "酶学＋HDX-MS＋患者关联",
+      "limits": "不将小队列关联或新分型视为所有治疗阶段通用规则。",
+      "pmids": [
+        "31182434",
+        "36357385",
+        "42144506",
+        "42691830"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "20外显子插入的位置、长度与序列",
+      "kind": "结构直接因子",
+      "examples": "D770_N771insNPG、A763_Y764insFQEA",
+      "mechanism": "插入可形成αC末端楔子、改变螺旋配准或构象景观。并非全部20ins都只是ATP口袋被挤小。",
+      "evidence": "晶体/酶学＋临床关联",
+      "limits": "近环/远环的药敏差异还依赖药物；FQEA不能用来推定所有20ins敏感。",
+      "pmids": [
+        "24353160",
+        "40993146"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "复合突变的非加和效应",
+      "kind": "结构/等位背景因子",
+      "examples": "Ex19del/G724S、L858R/G724S",
+      "mechanism": "同一耐药位点在不同激活背景下可能形成不同构象；需要解释“激活突变—耐药突变—药物”组合。",
+      "evidence": "计算＋等基因模型＋患者基因组",
+      "limits": "不能把两个单突变的预测分数相加来代表复合蛋白。",
+      "pmids": [
+        "30405134",
+        "30796031",
+        "42191070"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "顺反式及是否来自同一克隆",
+      "kind": "分子组成因子",
+      "examples": "T790M/C797S",
+      "mechanism": "cis可在同一条EGFR蛋白上合并两类阻碍；trans或不同克隆并不代表同一复合蛋白。",
+      "evidence": "模型机制；患者需可靠相位",
+      "limits": "bulk DNA共检出或相似VAF不能单独证明cis/trans；原始2015用药结论有时代边界。",
+      "pmids": [
+        "25964297",
+        "42191070"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "二聚化和变构口袋可及性",
+      "kind": "结构/复合物因子",
+      "examples": "αC构象、二聚体背景",
+      "mechanism": "受体二聚体两侧激酶的环境不同，可影响变构抑制；纯酶有效不保证全长受体细胞有效。",
+      "evidence": "晶体＋功能/动物模型",
+      "limits": "5D41含T790M/V948R工程背景；不能将其当作患者三突变临床敏感结构。",
+      "pmids": [
+        "27251290",
+        "34526717"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "蛋白柔性、交换过程与结合时序",
+      "kind": "动力学直接因子",
+      "examples": "19del、PACC、共价药物",
+      "mechanism": "相近静态结构可有不同构象分布、熵代价或反应路径。HDX-MS能补足晶体快照看不到的信息。",
+      "evidence": "HDX-MS/晶体/酶学；部分计算支持",
+      "limits": "HDX变化不直接给出Kd；MD与QM/MM数值依模型、质子化和采样。",
+      "pmids": [
+        "36357385",
+        "42917552"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "突变体/野生型选择性与治疗窗",
+      "kind": "药物—结构共同因子",
+      "examples": "T790M、PACC、20ins",
+      "mechanism": "除抑制突变体外，药物对WT EGFR及其他靶点的作用也会限制可达到的有效暴露。",
+      "evidence": "结构/化学蛋白组＋临床研究",
+      "limits": "较强体外抑制不能直接转换为更高临床疗效，也不能据此自行增量。",
+      "pmids": [
+        "32672461",
+        "29191878",
+        "42887497"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "实际表达的蛋白、修饰及信号输出",
+      "kind": "蛋白背景修饰因子；非纯结构因果",
+      "examples": "变异肽、EGFR蛋白量、磷酸化/膜环境",
+      "mechanism": "DNA检出不足以证明突变蛋白被充分表达或仍为主要依赖；蛋白组和磷酸化组可检验功能背景。",
+      "evidence": "LUAD/CCLE蛋白组资源；个体预测待验证",
+      "limits": "PTM/膜环境对具体突变药敏的影响需专门实验；磷酸化高不等于直接结合亲和力高。",
+      "pmids": [
+        "32649874",
+        "31978347",
+        "29191878"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "组织暴露、旁路与谱系状态",
+      "kind": "临床修饰因子；不归为EGFR内在结构",
+      "examples": "CNS、MET/RAS旁路、组织转化",
+      "mechanism": "即使受体仍可被药物结合，游离药物不足或肿瘤改用其他通路，也可使临床疗效不佳。",
+      "evidence": "临床场景约束",
+      "limits": "不能用PDB、AlphaFold或对接单独预测患者ORR/PFS；本报告没有患者特异结构。",
+      "pmids": [
+        "29151359",
+        "34526717",
+        "32649874"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "variant": "常见E746_A750del",
+      "mechanism": "主要涉及β3–αC区域和构象/ATP相关动力学",
+      "implication": "有成熟TKI临床证据；仍应保留精确等位名称。",
+      "limits": "7TVD只展示另一19del L747_E749del，不得重标为E746_A750del。",
+      "pmids": [
+        "29151359",
+        "36357385"
+      ]
+    },
+    {
+      "variant": "L858R",
+      "mechanism": "活化环附近，解除自抑制并改变抑制剂相对偏好",
+      "implication": "经典敏感驱动，结构解释需结合临床证据。",
+      "limits": "演示使用2ITZ与2ITY的历史对照坐标，原始研究为2007年。",
+      "pmids": [
+        "17349580",
+        "29151359"
+      ]
+    },
+    {
+      "variant": "G719X/S768I及部分L747变体",
+      "mechanism": "P-loop/αC耦合与PACC",
+      "implication": "部分二代药有支持；特定三代分子也可有活性。",
+      "limits": "不能把PACC写成所有患者统一换二代的规则。",
+      "pmids": [
+        "34526717",
+        "26051236",
+        "42887497"
+      ]
+    },
+    {
+      "variant": "L861Q",
+      "mechanism": "经典样结构分类，但与L858R并非同一精确变体",
+      "implication": "不常见突变研究支持部分TKI活性，疗效异质。",
+      "limits": "不能按“同属21外显子”或单一结构类别替代位点临床证据。",
+      "pmids": [
+        "34526717",
+        "31825714",
+        "37991747"
+      ]
+    },
+    {
+      "variant": "T790M",
+      "mechanism": "gatekeeper侧链及ATP竞争，同时可有利于特定三代分子匹配",
+      "implication": "不是仅用体积变大解释；奥希等分子的突变选择性有结构基础。",
+      "limits": "C797状态、原激活突变与治疗阶段会改变解释。",
+      "pmids": [
+        "32672461",
+        "25964297"
+      ]
+    },
+    {
+      "variant": "C797S",
+      "mechanism": "失去许多二/三代药所需的Cys共价反应条件",
+      "implication": "晶体有占位与细胞敏感需要分开。",
+      "limits": "6LUD为三突变且含额外工程改造，不能单独隔离C797S效应。",
+      "pmids": [
+        "25964297",
+        "32943545"
+      ]
+    },
+    {
+      "variant": "G724S",
+      "mechanism": "glycine-rich/P-loop局部构象及等位背景",
+      "implication": "Ex19del/G724S与L858R/G724S的功能结果可不同。",
+      "limits": "研究联合或换药信号不等同于所有G724S患者的标准方案。",
+      "pmids": [
+        "30405134",
+        "30796031",
+        "38836187"
+      ]
+    },
+    {
+      "variant": "L718Q/V、L792H/F、G796替换",
+      "mechanism": "结合路径、局部口袋或邻近相互作用候选改变",
+      "implication": "需要具体替换及复合基因型，不能按一个残基名统一解释。",
+      "limits": "本组未提供这些每一精确变体的实验结构，不能把WT坐标重标为这些突变。",
+      "pmids": [
+        "37806383",
+        "38836187"
+      ]
+    },
+    {
+      "variant": "L747_A750delinsP等少见19del",
+      "mechanism": "连接区序列、ATP竞争和柔性",
+      "implication": "酶学/模型及回顾性资料支持与常见19del存在差异。",
+      "limits": "2026年分型与临床队列不是所有治疗序列的前瞻验证。",
+      "pmids": [
+        "31182434",
+        "36357385",
+        "42144506",
+        "42691830"
+      ]
+    },
+    {
+      "variant": "D770_N771insNPG等20ins",
+      "mechanism": "αC末端插入楔子与活性构象稳定",
+      "implication": "经典研究显示激活但未同步提高既有TKI亲和，不能只归咎口袋缩小。",
+      "limits": "4LRM配体为研究性PD168393，不能改标为奥希或某获批20ins药。",
+      "pmids": [
+        "24353160",
+        "40993146"
+      ]
+    },
+    {
+      "variant": "A763_Y764insFQEA",
+      "mechanism": "αC螺旋配准改变，区别于多数环区20ins",
+      "implication": "属于重要敏感性例外。",
+      "limits": "不能据此推广到其他插入，也没有在本包伪造FQEA结构。",
+      "pmids": [
+        "24353160"
+      ]
+    }
+  ],
+  "hypotheses": [
+    {
+      "name": "未知19del可能主要改变ATP竞争，而不是显著降低药物非共价亲和",
+      "reason": "较短连接区改变若保留较低Km,ATP，可能在细胞ATP条件下表现弱敏感，即使静态药物姿态近似。",
+      "experiment": "测量匹配ATP条件的Km、KI与时间依赖抑制；结合HDX-MS和等基因细胞。",
+      "limits": "研究性推测，不能给未知变体直接分配药物。",
+      "pmids": [
+        "36357385",
+        "42144506"
+      ]
+    },
+    {
+      "name": "复合PACC改变可能通过构象耦合产生非加和药敏",
+      "reason": "需要研究同一蛋白中的两个改变，而非叠加两个单突变结论。",
+      "experiment": "先做可靠相位，再构建cis双变体、单变体及WT匹配对照。",
+      "limits": "已有队列/模型提供方向，但未知复合体仍需验证。",
+      "pmids": [
+        "42191070",
+        "34526717"
+      ]
+    },
+    {
+      "name": "C797S后非共价高效抑制有可能恢复部分靶向作用",
+      "reason": "替代相互作用和突变体选择性可能补偿失去的共价优势。",
+      "experiment": "同时比较ATP竞争、突变/WT选择性、靶点占有及全长受体细胞效应。",
+      "limits": "CH7233163等研究不能等同于已确认可用的个体治疗。",
+      "pmids": [
+        "32943545",
+        "25964297"
+      ]
+    },
+    {
+      "name": "二聚化/膜背景可能改变变构抑制剂的可及性",
+      "reason": "孤立激酶与全长膜受体的二聚状态不同，可能解释酶学强而细胞弱。",
+      "experiment": "全长受体、二聚功能和变构口袋可及性联合实验。",
+      "limits": "不能凭5D41一个工程构建体推断全部EGFR突变。",
+      "pmids": [
+        "27251290"
+      ]
+    },
+    {
+      "name": "变异蛋白实际表达量与靶点占有可改进DNA基础预测",
+      "reason": "变异肽、磷酸化和占有率可帮助识别同一DNA事件是否仍为功能性依赖。",
+      "experiment": "在可行的配对样本做靶向蛋白组、磷酸化组和占有率实验，记录检出限。",
+      "limits": "未检出变异肽也可能是灵敏度不足，尚无通用临床评分。",
+      "pmids": [
+        "32649874",
+        "31978347",
+        "29191878"
+      ]
+    }
+  ],
+  "platforms": [
+    {
+      "name": "UniProt P00533",
+      "url": "https://www.uniprot.org/uniprotkb/P00533/entry",
+      "result": "已取得官方EBI Proteins API记录：1210 aa；统一标准编号与结构域。",
+      "status": "本次实查",
+      "limits": "序列/结构域注释不能独立给出药敏。"
+    },
+    {
+      "name": "RCSB PDB / PDBe / PDBj",
+      "url": "https://www.ebi.ac.uk/pdbe/",
+      "result": "已下载9个原始PDB坐标，并核对配体、实验、分辨率、构建体及来源。",
+      "status": "本次实查",
+      "limits": "晶体常为截短或工程构建体；静态占位不等于临床敏感。"
+    },
+    {
+      "name": "PDBe SIFTS",
+      "url": "https://www.ebi.ac.uk/pdbe/docs/sifts/",
+      "result": "已核查4LRM作者编号至UniProt映射：作者C800对应标准C797。",
+      "status": "本次实查",
+      "limits": "插入/缺失后不可直接用同一数字指向同一标准位点。"
+    },
+    {
+      "name": "PRIDE / ProteomeXchange",
+      "url": "https://www.ebi.ac.uk/pride/",
+      "result": "2022年研究登记PXD037374、PXD037355、PXD037448；以HDX-MS补充EGFR动态。",
+      "status": "已核文献数据登记；未重分析原始谱图",
+      "limits": "PXD037374含L747_A750delinsP/L747P；PXD037355含常见19del等；PXD037448为WT。"
+    },
+    {
+      "name": "CPTAC / PDC",
+      "url": "https://pdc.cancer.gov/",
+      "result": "LUAD研究整合110例肿瘤的基因组、蛋白组、磷酸化及乙酰化组。",
+      "status": "方法/研究文献已核验；未下载患者原始谱图",
+      "limits": "帮助解释信号依赖，未提供每个EGFR变体的结构药敏真值。"
+    },
+    {
+      "name": "DepMap / CCLE及GDSC、PRISM",
+      "url": "https://depmap.org/portal/",
+      "result": "CCLE蛋白组研究提供375个细胞系的蛋白定量；可与药物功能实验交叉。",
+      "status": "CCLE研究已核验；未在本次重新计算药敏矩阵",
+      "limits": "细胞系共变异、表达和培养条件影响结果。"
+    },
+    {
+      "name": "ProteomicsDB",
+      "url": "https://www.proteomicsdb.org/",
+      "result": "Science化学蛋白组研究分析243个临床研究激酶药物的靶谱，说明选择性与多靶性。",
+      "status": "研究文献已核验；未下载全矩阵",
+      "limits": "多数信息不是精确EGFR复合等位的临床预测。"
+    },
+    {
+      "name": "COSMIC / AACR GENIE / cBioPortal",
+      "url": "https://www.cbioportal.org/",
+      "result": "用于变异谱、共突变和队列背景；部分本报告论文已利用这些平台。",
+      "status": "平台用途说明；未执行患者级实时查询",
+      "limits": "检出频率和共现不等于致因、相位或药敏。"
+    },
+    {
+      "name": "CIViC / OncoKB",
+      "url": "https://civicdb.org/",
+      "result": "后续应按变体、疾病、药物及治疗阶段核查临床证据。",
+      "status": "平台用途说明；未核验实时药物标注",
+      "limits": "证据级别及地区批准状态需单独更新，不能自动由结构推定。"
+    },
+    {
+      "name": "AlphaFold DB / AlphaFold 3",
+      "url": "https://alphafold.ebi.ac.uk/entry/P00533",
+      "result": "可提供结构/复合物假说；本报告没有把预测模型当作实验突变结构。",
+      "status": "方法文献已核验；未运行突变建模",
+      "limits": "pLDDT不是药物亲和力，预测复合物也不是临床疗效证明。"
+    },
+    {
+      "name": "AlphaMissense",
+      "url": "https://github.com/google-deepmind/alphamissense",
+      "result": "提供错义变异功能/致病性预测的一类参考。",
+      "status": "方法文献已核验；未计算患者评分",
+      "limits": "致病性预测不等于TKI敏感性，不能直接用于药物排序。"
+    }
+  ],
+  "structures": [
+    {
+      "pdb_id": "2ITY",
+      "label": "WT激酶 + gefitinib",
+      "path": "structures/2ITY.pdb",
+      "ligand": "IRE",
+      "ligand_author_number": 2020,
+      "author_chain": "A",
+      "focus": "标准编号719、745、790、793、797、858",
+      "construct": "无本表关注的疾病突变",
+      "limits": "2007年历史基线，3.42 Å，不适合据此精细比较水网络。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 3.42,
+      "revision_date": "20240327",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb2ity.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/2ity",
+      "official_3d_url": "https://www.rcsb.org/3d-view/2ITY",
+      "atom_records": 2396,
+      "hetatm_records": 50,
+      "bytes": 250452,
+      "sha256": "c49febda8422da4d8d072f1c45614abd1a6a64c1ad9420e6dc550babfdab9e6d",
+      "sequence_changes": [],
+      "deposited_link_records": [],
+      "pmids": [
+        "17349580"
+      ]
+    },
+    {
+      "pdb_id": "2ITZ",
+      "label": "L858R + gefitinib",
+      "path": "structures/2ITZ.pdb",
+      "ligand": "IRE",
+      "ligand_author_number": 2021,
+      "author_chain": "A",
+      "focus": "ARG858、M793及IRE",
+      "construct": "L858R",
+      "limits": "2007年历史基线；与WT独立晶体比较不能当作新的自由能计算。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.8,
+      "revision_date": "20240327",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb2itz.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/2itz",
+      "official_3d_url": "https://www.rcsb.org/3d-view/2ITZ",
+      "atom_records": 2415,
+      "hetatm_records": 97,
+      "bytes": 254664,
+      "sha256": "773e94e123e6ba991d48936d1332a9d4b260284cf58fa00dd0dae6056ad35879",
+      "sequence_changes": [
+        "SEQADV 2ITZ ARG A  858  UNP  P00533    LEU   858 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "17349580"
+      ]
+    },
+    {
+      "pdb_id": "2ITO",
+      "label": "G719S + gefitinib",
+      "path": "structures/2ITO.pdb",
+      "ligand": "IRE",
+      "ligand_author_number": 2020,
+      "author_chain": "A",
+      "focus": "SER719及P-loop、IRE",
+      "construct": "G719S",
+      "limits": "2007年历史基线，3.25 Å；用于定位，不单凭静态图推断PACC全部动力学。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 3.25,
+      "revision_date": "20240327",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb2ito.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/2ito",
+      "official_3d_url": "https://www.rcsb.org/3d-view/2ITO",
+      "atom_records": 2419,
+      "hetatm_records": 65,
+      "bytes": 250047,
+      "sha256": "0e6ac6bf100cf98b877ff871abd737e5583e9a97aa5fd76afb4c0c32f0776a30",
+      "sequence_changes": [
+        "SEQADV 2ITO SER A  719  UNP  P00533    GLY   719 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "17349580"
+      ]
+    },
+    {
+      "pdb_id": "7TVD",
+      "label": "19del L747_E749del，无抑制剂",
+      "path": "structures/7TVD.pdb",
+      "ligand": "",
+      "ligand_author_number": null,
+      "author_chain": "A",
+      "focus": "缺失747–749附近的β3–αC连接区",
+      "construct": "L747_E749del",
+      "limits": "不是常见E746_A750del，也不是L747_A750delinsP；apo结构不能展示药物结合。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.96,
+      "revision_date": "20231025",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb7tvd.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/7tvd",
+      "official_3d_url": "https://www.rcsb.org/3d-view/7TVD",
+      "atom_records": 2338,
+      "hetatm_records": 0,
+      "bytes": 418203,
+      "sha256": "6f458c22fc61f8c76664c6ba0fda0acad53d655ee1b89fbe6877f114efc6c8fa",
+      "sequence_changes": [
+        "SEQADV 7TVD MET A  685  UNP  P00533              INITIATING METHIONINE",
+        "SEQADV 7TVD LYS A  686  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD LYS A  687  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD GLY A  688  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  689  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  690  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  691  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD GLY A  695  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD     A       UNP  P00533    LEU   747 DELETION",
+        "SEQADV 7TVD     A       UNP  P00533    ARG   748 DELETION",
+        "SEQADV 7TVD     A       UNP  P00533    GLU   749 DELETION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "36357385"
+      ]
+    },
+    {
+      "pdb_id": "6JXT",
+      "label": "WT背景 + osimertinib（含结晶工程改造）",
+      "path": "structures/6JXT.pdb",
+      "ligand": "YY3",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "C797、M793、T790及YY3 A1101",
+      "construct": "WT背景；E865A/E866A/K867A工程改造",
+      "limits": "并非完全未改造WT；与6JX0构建体不完全相同，不将全部差异归为T790M。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.307,
+      "revision_date": "20241009",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb6jxt.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/6jxt",
+      "official_3d_url": "https://www.rcsb.org/3d-view/6JXT",
+      "atom_records": 2232,
+      "hetatm_records": 87,
+      "bytes": 224937,
+      "sha256": "3602a7683cfea5810ee68d64239ee9d64009853d1d24a7ff34d5f8a5a8c81029",
+      "sequence_changes": [
+        "SEQADV 6JXT GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT ALA A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT MET A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT GLY A  695  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT ALA A  865  UNP  P00533    GLU   865 ENGINEERED MUTATION",
+        "SEQADV 6JXT ALA A  866  UNP  P00533    GLU   866 ENGINEERED MUTATION",
+        "SEQADV 6JXT ALA A  867  UNP  P00533    LYS   867 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [
+        "LINK         SG  CYS A 797                 C9  YY3 A1101     1555   1555  1.80"
+      ],
+      "pmids": [
+        "32672461"
+      ]
+    },
+    {
+      "pdb_id": "6JX0",
+      "label": "T790M + osimertinib",
+      "path": "structures/6JX0.pdb",
+      "ligand": "YY3",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "MET790、C797、YY3 A1101",
+      "construct": "T790M",
+      "limits": "同一晶体另有YY3 A1102/A1103，示范关注A1101；不把多个占位当作临床多位点药效。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.53,
+      "revision_date": "20241023",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb6jx0.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/6jx0",
+      "official_3d_url": "https://www.rcsb.org/3d-view/6JX0",
+      "atom_records": 2250,
+      "hetatm_records": 245,
+      "bytes": 247779,
+      "sha256": "b71cdc67b94858659fc8a67c44d7965dd7401d45c20c2c8b05689b2a90592357",
+      "sequence_changes": [
+        "SEQADV 6JX0 GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 ALA A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 MET A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 GLY A  695  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 MET A  790  UNP  P00533    THR   790 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [
+        "LINK         SG  CYS A 797                 C9  YY3 A1101     1555   1555  1.80"
+      ],
+      "pmids": [
+        "32672461"
+      ]
+    },
+    {
+      "pdb_id": "6LUD",
+      "label": "L858R/T790M/C797S + osimertinib",
+      "path": "structures/6LUD.pdb",
+      "ligand": "YY3",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "SER797、MET790、ARG858、YY3 A1101",
+      "construct": "L858R/T790M/C797S；另有E865A/E866A/K867A",
+      "limits": "仍可观察药物占位，不能据此认定临床敏感；构建体同时包含多个改变。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.05,
+      "revision_date": "20231129",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb6lud.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/6lud",
+      "official_3d_url": "https://www.rcsb.org/3d-view/6LUD",
+      "atom_records": 2388,
+      "hetatm_records": 90,
+      "bytes": 242109,
+      "sha256": "43b7f85bacee2923eb833cb5648d6989e71ebb2d566e01fb54e003b3962f1464",
+      "sequence_changes": [
+        "SEQADV 6LUD GLY A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6LUD MET A  790  UNP  P00533    THR   790 ENGINEERED MUTATION",
+        "SEQADV 6LUD SER A  797  UNP  P00533    CYS   797 ENGINEERED MUTATION",
+        "SEQADV 6LUD ARG A  858  UNP  P00533    LEU   858 ENGINEERED MUTATION",
+        "SEQADV 6LUD ALA A  865  UNP  P00533    GLU   865 ENGINEERED MUTATION",
+        "SEQADV 6LUD ALA A  866  UNP  P00533    GLU   866 ENGINEERED MUTATION",
+        "SEQADV 6LUD ALA A  867  UNP  P00533    LYS   867 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "32943545"
+      ]
+    },
+    {
+      "pdb_id": "4LRM",
+      "label": "D770_N771insNPG + PD168393",
+      "path": "structures/4LRM.pdb",
+      "ligand": "YUN",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "作者771–773为插入NPG；标准C797对应作者C800",
+      "construct": "D770_N771insNPG",
+      "limits": "配体为研究性PD168393；3.526 Å。作者编号在插入之后偏移，已核SIFTS。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 3.526,
+      "revision_date": "20241106",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb4lrm.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/4lrm",
+      "official_3d_url": "https://www.rcsb.org/3d-view/4LRM",
+      "atom_records": 11565,
+      "hetatm_records": 131,
+      "bytes": 1982151,
+      "sha256": "86a8ab8d660b92fd0c87b2935f15213d2629f7b85676402a3a77c2d925bc55fa",
+      "sequence_changes": [
+        "SEQADV 4LRM GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN A  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO A  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY A  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY B  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER B  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN B  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO B  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY B  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY C  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER C  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN C  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO C  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY C  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY D  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER D  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN D  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO D  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY D  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY E  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER E  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN E  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO E  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY E  773  UNP  P00533              INSERTION"
+      ],
+      "deposited_link_records": [
+        "LINK         SG  CYS A 800                 CAN YUN A1101     1555   1555  1.76",
+        "LINK         SG  CYS B 800                 CAN YUN B1101     1555   1555  1.76",
+        "LINK         SG  CYS C 800                 CAN YUN C1101     1555   1555  1.76",
+        "LINK         SG  CYS D 800                 CAN YUN D1101     1555   1555  1.75",
+        "LINK         SG  CYS E 800                 CAN YUN E1101     1555   1555  1.76"
+      ],
+      "pmids": [
+        "24353160"
+      ]
+    },
+    {
+      "pdb_id": "5D41",
+      "label": "T790M/V948R背景 + 57N变构配体与AMP-PNP",
+      "path": "structures/5D41.pdb",
+      "ligand": "57N",
+      "ligand_author_number": 1103,
+      "author_chain": "A",
+      "focus": "57N A1103、ANP A1102、αC邻近变构口袋",
+      "construct": "T790M/V948R",
+      "limits": "V948R为实验构建体改变；不是L858R/T790M/C797S三突变结构，也不直接代表EAI045临床疗效。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.31,
+      "revision_date": "20230927",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb5d41.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/5d41",
+      "official_3d_url": "https://www.rcsb.org/3d-view/5D41",
+      "atom_records": 4826,
+      "hetatm_records": 487,
+      "bytes": 490536,
+      "sha256": "c4e6a3770fe859f131fe1f2fcbf55f69dc0fd20d56532983b45e19c4fdc73ab1",
+      "sequence_changes": [
+        "SEQADV 5D41 GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 5D41 SER A  693  UNP  P00533    THR   693 EXPRESSION TAG",
+        "SEQADV 5D41 THR A  694  UNP  P00533    PRO   694 EXPRESSION TAG",
+        "SEQADV 5D41 MET A  790  UNP  P00533    THR   790 ENGINEERED MUTATION",
+        "SEQADV 5D41 ARG A  948  UNP  P00533    VAL   948 ENGINEERED MUTATION",
+        "SEQADV 5D41 GLY B  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 5D41 SER B  693  UNP  P00533    THR   693 EXPRESSION TAG",
+        "SEQADV 5D41 THR B  694  UNP  P00533    PRO   694 EXPRESSION TAG",
+        "SEQADV 5D41 MET B  790  UNP  P00533    THR   790 ENGINEERED MUTATION",
+        "SEQADV 5D41 ARG B  948  UNP  P00533    VAL   948 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [
+        "LINK         OD1 ASN A 842                MG    MG A1101     1555   1555  2.05",
+        "LINK         OD2 ASP A 855                MG    MG A1101     1555   1555  2.01",
+        "LINK        MG    MG A1101                 O1B ANP A1102     1555   1555  1.90",
+        "LINK        MG    MG A1101                 O2A ANP A1102     1555   1555  2.17",
+        "LINK        MG    MG A1101                 O   HOH A1212     1555   1555  2.22",
+        "LINK        MG    MG A1101                 O   HOH A1304     1555   1555  2.29",
+        "LINK         OD1 ASN B 842                MG    MG B2000     1555   1555  2.13",
+        "LINK         OD2 ASP B 855                MG    MG B2000     1555   1555  2.07",
+        "LINK        MG    MG B2000                 O2G ANP B2001     1555   1555  2.48",
+        "LINK        MG    MG B2000                 O2B ANP B2001     1555   1555  1.84",
+        "LINK        MG    MG B2000                 O1A ANP B2001     1555   1555  2.20",
+        "LINK        MG    MG B2000                 O   HOH B2192     1555   1555  2.56"
+      ],
+      "pmids": [
+        "27251290"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "pmid": "17349580",
+      "title": "Structures of lung cancer-derived EGFR mutants and inhibitor complexes: mechanism of activation and insights into differential inhibitor sensitivity.",
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccr.2006.12.017",
+      "date": "2007-03-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17349580/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": true,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "24353160",
+      "title": "Structural, biochemical, and clinical characterization of epidermal growth factor receptor (EGFR) exon 20 insertion mutations in lung cancer.",
+      "journal": "Science translational medicine",
+      "doi": "10.1126/scitranslmed.3007205",
+      "date": "2013-12-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24353160/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "25964297",
+      "title": "The Allelic Context of the C797S Mutation Acquired upon Treatment with Third-Generation EGFR Inhibitors Impacts Sensitivity to Subsequent Treatment Strategies.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-15-0560",
+      "date": "2015-05-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25964297/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "26051236",
+      "title": "Clinical activity of afatinib in patients with advanced non-small-cell lung cancer harbouring uncommon EGFR mutations: a combined post-hoc analysis of LUX-Lung 2, LUX-Lung 3, and LUX-Lung 6.",
+      "journal": "The Lancet. Oncology",
+      "doi": "10.1016/s1470-2045(15)00026-1",
+      "date": "2015-06-04",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26051236/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "27251290",
+      "title": "Overcoming EGFR(T790M) and EGFR(C797S) resistance with mutant-selective allosteric inhibitors.",
+      "journal": "Nature",
+      "doi": "10.1038/nature17960",
+      "date": "2016-05-25",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27251290/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "29151359",
+      "title": "Osimertinib in Untreated EGFR-Mutated Advanced Non-Small-Cell Lung Cancer.",
+      "journal": "The New England journal of medicine",
+      "doi": "10.1056/nejmoa1713137",
+      "date": "2017-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29151359/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "29191878",
+      "title": "The target landscape of clinical kinase drugs.",
+      "journal": "Science (New York, N.Y.)",
+      "doi": "10.1126/science.aan4368",
+      "date": "2017-12-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29191878/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "30405134",
+      "title": "Overcoming EGFRG724S-mediated osimertinib resistance through unique binding characteristics of second-generation EGFR inhibitors.",
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-018-07078-0",
+      "date": "2018-11-07",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30405134/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "30796031",
+      "title": "On-target Resistance to the Mutant-Selective EGFR Inhibitor Osimertinib Can Develop in an Allele-Specific Manner Dependent on the Original EGFR-Activating Mutation.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-18-3829",
+      "date": "2019-02-22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30796031/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "31182434",
+      "title": "The EGFR Exon 19 Mutant L747-A750>P Exhibits Distinct Sensitivity to Tyrosine Kinase Inhibitors in Lung Adenocarcinoma.",
+      "journal": "Clinical cancer research : an official journal of the American Association for Cancer Research",
+      "doi": "10.1158/1078-0432.ccr-19-0780",
+      "date": "2019-06-10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31182434/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "31825714",
+      "title": "Osimertinib for Patients With Non-Small-Cell Lung Cancer Harboring Uncommon EGFR Mutations: A Multicenter, Open-Label, Phase II Trial (KCSG-LU15-09).",
+      "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+      "doi": "10.1200/jco.19.00931",
+      "date": "2019-12-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31825714/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "31978347",
+      "title": "Quantitative Proteomics of the Cancer Cell Line Encyclopedia.",
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2019.12.023",
+      "date": "2020-01-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31978347/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "32649874",
+      "title": "Proteogenomic Characterization Reveals Therapeutic Vulnerabilities in Lung Adenocarcinoma.",
+      "journal": "Cell",
+      "doi": "10.1016/j.cell.2020.06.013",
+      "date": "2020-07-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32649874/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "32672461",
+      "title": "Structural Basis of AZD9291 Selectivity for EGFR T790M.",
+      "journal": "Journal of medicinal chemistry",
+      "doi": "10.1021/acs.jmedchem.0c00891",
+      "date": "2020-08-03",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32672461/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "32943545",
+      "title": "CH7233163 Overcomes Osimertinib-Resistant EGFR-Del19/T790M/C797S Mutation.",
+      "journal": "Molecular cancer therapeutics",
+      "doi": "10.1158/1535-7163.mct-20-0229",
+      "date": "2020-09-17",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32943545/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "34265844",
+      "title": "Highly accurate protein structure prediction with AlphaFold.",
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-03819-2",
+      "date": "2021-07-15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "34526717",
+      "title": "Structure-based classification predicts drug response in EGFR-mutant NSCLC.",
+      "journal": "Nature",
+      "doi": "10.1038/s41586-021-03898-1",
+      "date": "2021-09-15",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34526717/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": true
+    },
+    {
+      "pmid": "36357385",
+      "title": "Biochemical and structural basis for differential inhibitor sensitivity of EGFR with distinct exon 19 mutations.",
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-022-34398-z",
+      "date": "2022-11-10",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36357385/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": true
+    },
+    {
+      "pmid": "37733863",
+      "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense.",
+      "journal": "Science (New York, N.Y.)",
+      "doi": "10.1126/science.adg7492",
+      "date": "2023-09-22",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37733863/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "37806383",
+      "title": "Real-World Genomic Profile of EGFR Second-Site Mutations and Other Osimertinib Resistance Mechanisms and Clinical Landscape of NSCLC Post-Osimertinib.",
+      "doi": "10.1016/j.jtho.2023.09.1453",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "publication_date": "2023-10-06",
+      "verification": "metadata_abstract_checked",
+      "full_text_reviewed": false,
+      "date": "2023-10-06",
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "37991747",
+      "title": "First-Line Osimertinib for Previously Untreated Patients With NSCLC and Uncommon EGFR Mutations: The UNICORN Phase 2 Nonrandomized Clinical Trial.",
+      "journal": "JAMA oncology",
+      "doi": "10.1001/jamaoncol.2023.5013",
+      "date": "2024-01-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37991747/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "38718835",
+      "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3.",
+      "journal": "Nature",
+      "doi": "10.1038/s41586-024-07487-w",
+      "date": "2024-05-08",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38718835/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "38836187",
+      "title": "Characterization of Patients with EGFR Mutation-Positive NSCLC Following Emergence of the Osimertinib Resistance Mutations, L718Q or G724S: A Multicenter Retrospective Observational Study in France.",
+      "journal": "OncoTargets and therapy",
+      "doi": "10.2147/ott.s448909",
+      "date": "2024-05-29",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38836187/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "40993146",
+      "title": "Poziotinib for EGFR exon 20-insertion NSCLC: Clinical efficacy of the phase 2 ZENITH trial and differential impact of EGFR exon 20 insertion location on sensitivity.",
+      "journal": "Nature communications",
+      "doi": "10.1038/s41467-025-61817-8",
+      "date": "2025-09-24",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40993146/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "42126003",
+      "title": "BLU-451, a CNS-Active, Potent, and Selective Small-Molecule Inhibitor against Uncommon EGFR Mutations.",
+      "journal": "Molecular cancer therapeutics",
+      "doi": "10.1158/1535-7163.mct-25-1056",
+      "date": "2026-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42126003/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "42144506",
+      "title": "Structure-based classification for differential tyrosine kinase inhibitors efficacy of EGFR exon 19 deletions in non-small cell lung cancer.",
+      "journal": "Science China. Life sciences",
+      "doi": "10.1007/s11427-025-3266-x",
+      "date": "2026-05-11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42144506/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "42191070",
+      "title": "Compound EGFR Mutations Are Predominantly P-Loop and Alpha-C Helix Compressing Mutations With Increased Responsiveness to Second- Versus Third-Generation Tyrosine Kinase Inhibitors.",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "doi": "10.1016/j.jtho.2026.103948",
+      "date": "2026-05-26",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42191070/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "42691830",
+      "title": "Clinical outcomes and genomic features of uncommon EGFR exon 19 deletion subtypes in osimertinib-treated non-small cell lung cancer.",
+      "journal": "Lung cancer (Amsterdam, Netherlands)",
+      "doi": "10.1016/j.lungcan.2026.109604",
+      "date": "2026-08-31",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42691830/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "42887497",
+      "title": "Firmonertinib in advanced non-small cell lung cancer with epidermal growth factor receptor P-loop and αC-helix compressing mutations.",
+      "journal": "Cancer cell",
+      "doi": "10.1016/j.ccell.2026.09.011",
+      "date": "2026-10-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42887497/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    },
+    {
+      "pmid": "42917552",
+      "title": "Mutation-Dependent Conformational Dynamics and Dual-Mode Afatinib Binding in EGFR Exon 19 Variants.",
+      "journal": "The journal of physical chemistry. B",
+      "doi": "10.1021/acs.jpcb.6c03491",
+      "date": "2026-09-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42917552/",
+      "verification": "indexed_metadata_checked; key abstracts and selected full-text sections reviewed",
+      "full_text_reviewed": false,
+      "historical_coordinate_reference": false,
+      "full_text_sections_checked": false
+    }
+  ],
+  "pride_datasets": [
+    {
+      "id": "PXD037374",
+      "scope": "L747_A750delinsP、L747P TKD ± erlotinib"
+    },
+    {
+      "id": "PXD037355",
+      "scope": "E746_A750del、L747_P753delinsS、L747_E749del TKD ± erlotinib"
+    },
+    {
+      "id": "PXD037448",
+      "scope": "WT TKD ± erlotinib"
+    }
+  ]
+}

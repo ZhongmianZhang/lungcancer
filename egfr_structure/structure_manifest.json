@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-15",
+  "structures": [
+    {
+      "pdb_id": "2ITY",
+      "label": "WT激酶 + gefitinib",
+      "path": "structures/2ITY.pdb",
+      "ligand": "IRE",
+      "ligand_author_number": 2020,
+      "author_chain": "A",
+      "focus": "标准编号719、745、790、793、797、858",
+      "construct": "无本表关注的疾病突变",
+      "limits": "2007年历史基线，3.42 Å，不适合据此精细比较水网络。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 3.42,
+      "revision_date": "20240327",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb2ity.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/2ity",
+      "official_3d_url": "https://www.rcsb.org/3d-view/2ITY",
+      "atom_records": 2396,
+      "hetatm_records": 50,
+      "bytes": 250452,
+      "sha256": "c49febda8422da4d8d072f1c45614abd1a6a64c1ad9420e6dc550babfdab9e6d",
+      "sequence_changes": [],
+      "deposited_link_records": [],
+      "pmids": [
+        "17349580"
+      ]
+    },
+    {
+      "pdb_id": "2ITZ",
+      "label": "L858R + gefitinib",
+      "path": "structures/2ITZ.pdb",
+      "ligand": "IRE",
+      "ligand_author_number": 2021,
+      "author_chain": "A",
+      "focus": "ARG858、M793及IRE",
+      "construct": "L858R",
+      "limits": "2007年历史基线；与WT独立晶体比较不能当作新的自由能计算。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.8,
+      "revision_date": "20240327",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb2itz.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/2itz",
+      "official_3d_url": "https://www.rcsb.org/3d-view/2ITZ",
+      "atom_records": 2415,
+      "hetatm_records": 97,
+      "bytes": 254664,
+      "sha256": "773e94e123e6ba991d48936d1332a9d4b260284cf58fa00dd0dae6056ad35879",
+      "sequence_changes": [
+        "SEQADV 2ITZ ARG A  858  UNP  P00533    LEU   858 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "17349580"
+      ]
+    },
+    {
+      "pdb_id": "2ITO",
+      "label": "G719S + gefitinib",
+      "path": "structures/2ITO.pdb",
+      "ligand": "IRE",
+      "ligand_author_number": 2020,
+      "author_chain": "A",
+      "focus": "SER719及P-loop、IRE",
+      "construct": "G719S",
+      "limits": "2007年历史基线，3.25 Å；用于定位，不单凭静态图推断PACC全部动力学。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 3.25,
+      "revision_date": "20240327",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb2ito.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/2ito",
+      "official_3d_url": "https://www.rcsb.org/3d-view/2ITO",
+      "atom_records": 2419,
+      "hetatm_records": 65,
+      "bytes": 250047,
+      "sha256": "0e6ac6bf100cf98b877ff871abd737e5583e9a97aa5fd76afb4c0c32f0776a30",
+      "sequence_changes": [
+        "SEQADV 2ITO SER A  719  UNP  P00533    GLY   719 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "17349580"
+      ]
+    },
+    {
+      "pdb_id": "7TVD",
+      "label": "19del L747_E749del，无抑制剂",
+      "path": "structures/7TVD.pdb",
+      "ligand": "",
+      "ligand_author_number": null,
+      "author_chain": "A",
+      "focus": "缺失747–749附近的β3–αC连接区",
+      "construct": "L747_E749del",
+      "limits": "不是常见E746_A750del，也不是L747_A750delinsP；apo结构不能展示药物结合。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.96,
+      "revision_date": "20231025",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb7tvd.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/7tvd",
+      "official_3d_url": "https://www.rcsb.org/3d-view/7TVD",
+      "atom_records": 2338,
+      "hetatm_records": 0,
+      "bytes": 418203,
+      "sha256": "6f458c22fc61f8c76664c6ba0fda0acad53d655ee1b89fbe6877f114efc6c8fa",
+      "sequence_changes": [
+        "SEQADV 7TVD MET A  685  UNP  P00533              INITIATING METHIONINE",
+        "SEQADV 7TVD LYS A  686  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD LYS A  687  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD GLY A  688  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  689  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  690  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  691  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD HIS A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD GLY A  695  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 7TVD     A       UNP  P00533    LEU   747 DELETION",
+        "SEQADV 7TVD     A       UNP  P00533    ARG   748 DELETION",
+        "SEQADV 7TVD     A       UNP  P00533    GLU   749 DELETION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "36357385"
+      ]
+    },
+    {
+      "pdb_id": "6JXT",
+      "label": "WT背景 + osimertinib（含结晶工程改造）",
+      "path": "structures/6JXT.pdb",
+      "ligand": "YY3",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "C797、M793、T790及YY3 A1101",
+      "construct": "WT背景；E865A/E866A/K867A工程改造",
+      "limits": "并非完全未改造WT；与6JX0构建体不完全相同，不将全部差异归为T790M。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.307,
+      "revision_date": "20241009",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb6jxt.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/6jxt",
+      "official_3d_url": "https://www.rcsb.org/3d-view/6JXT",
+      "atom_records": 2232,
+      "hetatm_records": 87,
+      "bytes": 224937,
+      "sha256": "3602a7683cfea5810ee68d64239ee9d64009853d1d24a7ff34d5f8a5a8c81029",
+      "sequence_changes": [
+        "SEQADV 6JXT GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT ALA A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT MET A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT GLY A  695  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JXT ALA A  865  UNP  P00533    GLU   865 ENGINEERED MUTATION",
+        "SEQADV 6JXT ALA A  866  UNP  P00533    GLU   866 ENGINEERED MUTATION",
+        "SEQADV 6JXT ALA A  867  UNP  P00533    LYS   867 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [
+        "LINK         SG  CYS A 797                 C9  YY3 A1101     1555   1555  1.80"
+      ],
+      "pmids": [
+        "32672461"
+      ]
+    },
+    {
+      "pdb_id": "6JX0",
+      "label": "T790M + osimertinib",
+      "path": "structures/6JX0.pdb",
+      "ligand": "YY3",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "MET790、C797、YY3 A1101",
+      "construct": "T790M",
+      "limits": "同一晶体另有YY3 A1102/A1103，示范关注A1101；不把多个占位当作临床多位点药效。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.53,
+      "revision_date": "20241023",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb6jx0.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/6jx0",
+      "official_3d_url": "https://www.rcsb.org/3d-view/6JX0",
+      "atom_records": 2250,
+      "hetatm_records": 245,
+      "bytes": 247779,
+      "sha256": "b71cdc67b94858659fc8a67c44d7965dd7401d45c20c2c8b05689b2a90592357",
+      "sequence_changes": [
+        "SEQADV 6JX0 GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 ALA A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 MET A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 GLY A  695  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6JX0 MET A  790  UNP  P00533    THR   790 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [
+        "LINK         SG  CYS A 797                 C9  YY3 A1101     1555   1555  1.80"
+      ],
+      "pmids": [
+        "32672461"
+      ]
+    },
+    {
+      "pdb_id": "6LUD",
+      "label": "L858R/T790M/C797S + osimertinib",
+      "path": "structures/6LUD.pdb",
+      "ligand": "YY3",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "SER797、MET790、ARG858、YY3 A1101",
+      "construct": "L858R/T790M/C797S；另有E865A/E866A/K867A",
+      "limits": "仍可观察药物占位，不能据此认定临床敏感；构建体同时包含多个改变。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.05,
+      "revision_date": "20231129",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb6lud.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/6lud",
+      "official_3d_url": "https://www.rcsb.org/3d-view/6LUD",
+      "atom_records": 2388,
+      "hetatm_records": 90,
+      "bytes": 242109,
+      "sha256": "43b7f85bacee2923eb833cb5648d6989e71ebb2d566e01fb54e003b3962f1464",
+      "sequence_changes": [
+        "SEQADV 6LUD GLY A  694  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 6LUD MET A  790  UNP  P00533    THR   790 ENGINEERED MUTATION",
+        "SEQADV 6LUD SER A  797  UNP  P00533    CYS   797 ENGINEERED MUTATION",
+        "SEQADV 6LUD ARG A  858  UNP  P00533    LEU   858 ENGINEERED MUTATION",
+        "SEQADV 6LUD ALA A  865  UNP  P00533    GLU   865 ENGINEERED MUTATION",
+        "SEQADV 6LUD ALA A  866  UNP  P00533    GLU   866 ENGINEERED MUTATION",
+        "SEQADV 6LUD ALA A  867  UNP  P00533    LYS   867 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [],
+      "pmids": [
+        "32943545"
+      ]
+    },
+    {
+      "pdb_id": "4LRM",
+      "label": "D770_N771insNPG + PD168393",
+      "path": "structures/4LRM.pdb",
+      "ligand": "YUN",
+      "ligand_author_number": 1101,
+      "author_chain": "A",
+      "focus": "作者771–773为插入NPG；标准C797对应作者C800",
+      "construct": "D770_N771insNPG",
+      "limits": "配体为研究性PD168393；3.526 Å。作者编号在插入之后偏移，已核SIFTS。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 3.526,
+      "revision_date": "20241106",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb4lrm.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/4lrm",
+      "official_3d_url": "https://www.rcsb.org/3d-view/4LRM",
+      "atom_records": 11565,
+      "hetatm_records": 131,
+      "bytes": 1982151,
+      "sha256": "86a8ab8d660b92fd0c87b2935f15213d2629f7b85676402a3a77c2d925bc55fa",
+      "sequence_changes": [
+        "SEQADV 4LRM GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER A  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN A  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO A  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY A  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY B  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER B  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN B  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO B  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY B  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY C  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER C  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN C  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO C  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY C  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY D  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER D  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN D  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO D  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY D  773  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY E  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM SER E  693  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 4LRM ASN E  771  UNP  P00533              INSERTION",
+        "SEQADV 4LRM PRO E  772  UNP  P00533              INSERTION",
+        "SEQADV 4LRM GLY E  773  UNP  P00533              INSERTION"
+      ],
+      "deposited_link_records": [
+        "LINK         SG  CYS A 800                 CAN YUN A1101     1555   1555  1.76",
+        "LINK         SG  CYS B 800                 CAN YUN B1101     1555   1555  1.76",
+        "LINK         SG  CYS C 800                 CAN YUN C1101     1555   1555  1.76",
+        "LINK         SG  CYS D 800                 CAN YUN D1101     1555   1555  1.75",
+        "LINK         SG  CYS E 800                 CAN YUN E1101     1555   1555  1.76"
+      ],
+      "pmids": [
+        "24353160"
+      ]
+    },
+    {
+      "pdb_id": "5D41",
+      "label": "T790M/V948R背景 + 57N变构配体与AMP-PNP",
+      "path": "structures/5D41.pdb",
+      "ligand": "57N",
+      "ligand_author_number": 1103,
+      "author_chain": "A",
+      "focus": "57N A1103、ANP A1102、αC邻近变构口袋",
+      "construct": "T790M/V948R",
+      "limits": "V948R为实验构建体改变；不是L858R/T790M/C797S三突变结构，也不直接代表EAI045临床疗效。",
+      "experimental_method": [
+        "X-ray diffraction"
+      ],
+      "resolution_A": 2.31,
+      "revision_date": "20230927",
+      "source_url": "https://www.ebi.ac.uk/pdbe/entry-files/download/pdb5d41.ent",
+      "pdbe_url": "https://www.ebi.ac.uk/pdbe/entry/pdb/5d41",
+      "official_3d_url": "https://www.rcsb.org/3d-view/5D41",
+      "atom_records": 4826,
+      "hetatm_records": 487,
+      "bytes": 490536,
+      "sha256": "c4e6a3770fe859f131fe1f2fcbf55f69dc0fd20d56532983b45e19c4fdc73ab1",
+      "sequence_changes": [
+        "SEQADV 5D41 GLY A  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 5D41 SER A  693  UNP  P00533    THR   693 EXPRESSION TAG",
+        "SEQADV 5D41 THR A  694  UNP  P00533    PRO   694 EXPRESSION TAG",
+        "SEQADV 5D41 MET A  790  UNP  P00533    THR   790 ENGINEERED MUTATION",
+        "SEQADV 5D41 ARG A  948  UNP  P00533    VAL   948 ENGINEERED MUTATION",
+        "SEQADV 5D41 GLY B  692  UNP  P00533              EXPRESSION TAG",
+        "SEQADV 5D41 SER B  693  UNP  P00533    THR   693 EXPRESSION TAG",
+        "SEQADV 5D41 THR B  694  UNP  P00533    PRO   694 EXPRESSION TAG",
+        "SEQADV 5D41 MET B  790  UNP  P00533    THR   790 ENGINEERED MUTATION",
+        "SEQADV 5D41 ARG B  948  UNP  P00533    VAL   948 ENGINEERED MUTATION"
+      ],
+      "deposited_link_records": [
+        "LINK         OD1 ASN A 842                MG    MG A1101     1555   1555  2.05",
+        "LINK         OD2 ASP A 855                MG    MG A1101     1555   1555  2.01",
+        "LINK        MG    MG A1101                 O1B ANP A1102     1555   1555  1.90",
+        "LINK        MG    MG A1101                 O2A ANP A1102     1555   1555  2.17",
+        "LINK        MG    MG A1101                 O   HOH A1212     1555   1555  2.22",
+        "LINK        MG    MG A1101                 O   HOH A1304     1555   1555  2.29",
+        "LINK         OD1 ASN B 842                MG    MG B2000     1555   1555  2.13",
+        "LINK         OD2 ASP B 855                MG    MG B2000     1555   1555  2.07",
+        "LINK        MG    MG B2000                 O2G ANP B2001     1555   1555  2.48",
+        "LINK        MG    MG B2000                 O2B ANP B2001     1555   1555  1.84",
+        "LINK        MG    MG B2000                 O1A ANP B2001     1555   1555  2.20",
+        "LINK        MG    MG B2000                 O   HOH B2192     1555   1555  2.56"
+      ],
+      "pmids": [
+        "27251290"
+      ]
+    }
+  ]
+}

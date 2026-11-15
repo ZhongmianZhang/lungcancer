@@ -1,0 +1,124 @@
+{
+  "single_file_isolation": true,
+  "load_method": "document API; file:// navigation is disabled by managed browser policy",
+  "offline_browser_context": true,
+  "http_requests": [],
+  "page_errors": [],
+  "structures": [
+    {
+      "pdb": "2ITY",
+      "atoms": 2446,
+      "ligand_atoms": 31,
+      "pocket_residues": 23,
+      "labels": [
+        790,
+        793,
+        797
+      ]
+    },
+    {
+      "pdb": "2ITZ",
+      "atoms": 2512,
+      "ligand_atoms": 31,
+      "pocket_residues": 22,
+      "labels": [
+        858,
+        793,
+        797
+      ]
+    },
+    {
+      "pdb": "2ITO",
+      "atoms": 2484,
+      "ligand_atoms": 31,
+      "pocket_residues": 22,
+      "labels": [
+        719,
+        793,
+        797
+      ]
+    },
+    {
+      "pdb": "7TVD",
+      "atoms": 2338,
+      "ligand_atoms": 0,
+      "pocket_residues": 0,
+      "labels": [
+        746,
+        750,
+        762
+      ]
+    },
+    {
+      "pdb": "6JXT",
+      "atoms": 2316,
+      "ligand_atoms": 37,
+      "pocket_residues": 23,
+      "labels": [
+        790,
+        793,
+        797
+      ]
+    },
+    {
+      "pdb": "6JX0",
+      "atoms": 2495,
+      "ligand_atoms": 37,
+      "pocket_residues": 19,
+      "labels": [
+        790,
+        793,
+        797
+      ]
+    },
+    {
+      "pdb": "6LUD",
+      "atoms": 2478,
+      "ligand_atoms": 37,
+      "pocket_residues": 19,
+      "labels": [
+        790,
+        797,
+        858
+      ]
+    },
+    {
+      "pdb": "4LRM",
+      "atoms": 11696,
+      "ligand_atoms": 23,
+      "pocket_residues": 20,
+      "labels": [
+        771,
+        772,
+        773,
+        800
+      ]
+    },
+    {
+      "pdb": "5D41",
+      "atoms": 5302,
+      "ligand_atoms": 25,
+      "pocket_residues": 19,
+      "labels": [
+        790,
+        948
+      ]
+    }
+  ],
+  "rotation": true,
+  "zoom": true,
+  "reset": true,
+  "labels_toggle": true,
+  "styles": true,
+  "pdb_export_hash_matches": true,
+  "png_export": true,
+  "print_snapshot": true,
+  "reference_csv_rows": 30,
+  "json_scientific_content_preserved": true,
+  "mobile_widths": {
+    "viewport": 390,
+    "scroll": 390
+  },
+  "file_bytes": 6598959,
+  "library": "3Dmol.js 2.5.5"
+}

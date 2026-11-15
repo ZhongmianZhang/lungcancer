@@ -1,0 +1,6 @@
+# Preserve deposited coordinate bytes and the pinned viewer hash on Windows.
+structures/*.pdb -text -diff
+offline_assets/3Dmol-min.js -text -diff
+offline_assets/3Dmol_LICENSE.txt -text -whitespace
+offline_assets/3Dmol_third_party_licenses.txt -text -whitespace
+*.csv -text

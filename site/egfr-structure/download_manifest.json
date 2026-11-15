@@ -1,0 +1,22 @@
+{
+  "html": "EGFR_structure_offline_20261115.html",
+  "zip": "EGFR_structure_offline_20261115.zip",
+  "zip_entries": [
+    "EGFR_structure_offline_20261115.html"
+  ],
+  "single_file": true,
+  "structures": 9,
+  "references": 30,
+  "external_runtime_assets": 0,
+  "library": "3Dmol.js 2.5.5",
+  "downloads": {
+    "EGFR_structure_offline_20261115.html": {
+      "bytes": 6598959,
+      "sha256": "61d54b0dfbcf90f286baa3e6581b9acbdfab4b125c8d01fb86eaf4f60a01249f"
+    },
+    "EGFR_structure_offline_20261115.zip": {
+      "bytes": 1477909,
+      "sha256": "0e1a5a8c1bcc5d16d6e701df2c85af4c2f270c8a3c1bed35b05d61b3752519ff"
+    }
+  }
+}
