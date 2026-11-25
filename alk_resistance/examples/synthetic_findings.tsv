@@ -1,0 +1,4 @@
+sample_id	assay_id	id	kind	gene	feature	status	qc	attributes_json
+T1	WGS	T1-met	copy_number	MET	amplification	detected	pass	{"focality":"focal","validated_call":true,"criteria":"模拟经人工审核的局灶性、纯度和倍性校正结果","value":9,"unit":"tumor_copies"}
+T1	RNA	T1-vim	expression	VIM	increased	detected	pass	{"value":1.8,"unit":"log2_fold_change","cell_origin":"bulk"}
+T1	METH	T1-cda	methylation	CDA	promoter_hypomethylation	detected	pass	{"value":-0.18,"unit":"delta_beta","method":"EPIC_array","paired_reviewed":true}

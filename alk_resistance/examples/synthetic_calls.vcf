@@ -1,0 +1,10 @@
+##fileformat=VCFv4.3
+##contig=<ID=chr2>
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Synthetic VEP annotations. Format: Allele|SYMBOL|Feature|HGVSp|ALLELE_NUM">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=PS,Number=1,Type=Integer,Description="Phase set">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Read depth per allele">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	TUMOR
+chr2	1000	.	A	T	60	PASS	CSQ=T|ALK|ENST00000389048.8|p.Leu1196Met|1	GT:PS:DP:AD	0|1:1000:106:80,26
+chr2	1018	.	A	G	60	PASS	CSQ=G|ALK|ENST00000389048.8|p.Gly1202Arg|1	GT:PS:DP:AD	0|1:1000:100:74,26
