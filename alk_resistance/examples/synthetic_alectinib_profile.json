@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "case_id": "SYNTHETIC-ALECTINIB-01",
+  "disease": "ALK_fusion_NSCLC",
+  "progression": {
+    "failed_tki": "alectinib",
+    "tki_line": 1,
+    "tki_setting": "advanced",
+    "pattern": "systemic",
+    "best_response": "PR",
+    "months_to_progression": 19
+  },
+  "clinical": {
+    "age_group": "adult",
+    "setting": "metastatic",
+    "baseline_histology": "adenocarcinoma",
+    "jurisdiction": "US",
+    "advanced_treatment_history_complete": true,
+    "prior_advanced_alk_tkis": ["alectinib"],
+    "prior_advanced_platinum": false
+  },
+  "specimens": [
+    {
+      "id": "A0",
+      "timepoint": "pre_alectinib",
+      "material": "tissue",
+      "site": "liver_synthetic",
+      "qc": "pass",
+      "genome_build": "GRCh38",
+      "tumor_fraction": 0.43,
+      "assays": [
+        {"id": "RNA", "modality": "rna", "qc": "pass", "platform": "Synthetic RNA calls"},
+        {"id": "DNA", "modality": "wgs", "qc": "pass", "platform": "Synthetic somatic WGS",
+         "coverage": [{"gene": "ALK", "kind": "variant", "feature": "G1202R", "status": "adequate",
+                       "details": "模拟已审查 G1202R 位点有效深度和检测限"}]}
+      ],
+      "findings": [
+        {"id": "fusion-A0", "assay_id": "RNA", "kind": "fusion", "gene": "ALK",
+         "feature": "EML4::ALK", "qc": "pass",
+         "attributes": {"partner_exon": "6a", "alk_exon": 20, "reported_variant": "V3a",
+                        "in_frame": true, "kinase_domain_retained": true}},
+        {"id": "tp53-A0", "assay_id": "DNA", "kind": "variant", "gene": "TP53",
+         "feature": "p.Arg248Trp", "qc": "pass", "attributes": {"classification": "pathogenic"}},
+        {"id": "cdkn2a-A0", "assay_id": "DNA", "kind": "copy_number", "gene": "CDKN2A",
+         "feature": "homozygous_deletion", "qc": "pass", "attributes": {"validated_call": true}},
+        {"id": "alk-A0", "assay_id": "DNA", "kind": "variant", "gene": "ALK",
+         "feature": "G1202R", "status": "not_detected", "qc": "pass"}
+      ]
+    },
+    {
+      "id": "A1",
+      "timepoint": "progression_on_alectinib",
+      "material": "tissue",
+      "site": "liver_synthetic",
+      "qc": "pass",
+      "genome_build": "GRCh38",
+      "tumor_fraction": 0.41,
+      "baseline_sample_id": "A0",
+      "comparable_baseline_assays": {"DNA": "DNA"},
+      "assays": [
+        {"id": "DNA", "modality": "wgs", "qc": "pass", "platform": "Synthetic somatic WGS"}
+      ],
+      "findings": [
+        {"id": "alk-A1", "assay_id": "DNA", "kind": "variant", "gene": "ALK",
+         "feature": "p.Gly1202Arg", "qc": "pass",
+         "attributes": {"transcript": "NM_004304.5", "vaf": 0.24, "tumor_origin": "confirmed"}}
+      ]
+    }
+  ]
+}

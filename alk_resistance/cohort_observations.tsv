@@ -22,3 +22,17 @@ Satpathy_2025	CPTAC_ICPC	primary_luad	tissue	cross_population	ALK_fusion	17	406	
 Longitudinal_methylation_2022	EGAS00001006573	mixed_ALK_TKI	plasma	serial_sampling	prior_lorlatinib	5	21	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC9719130/
 ASCO8503_2026	NCT05384626	prior_lorlatinib	clinical	efficacy_evaluable	overall_response_including_two_unconfirmed	50	190	patients	https://www.asco.org/abstracts-presentations/259327
 DagogoJack_2023	MGH_DFCI_MET_treatment	mixed_prior_ALK_TKI	clinical	ALK_MET_combination	partial_response	5	12	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC10391652/
+Lin_variants_2018	MGH_variants	mixed_ALK_TKI	tissue	EML4_v3_progression	ALK_resistance_mutation	25	44	specimens	https://pmc.ncbi.nlm.nih.gov/articles/PMC5903999/#F2
+Lin_variants_2018	MGH_variants	mixed_ALK_TKI	tissue	EML4_v1_progression	ALK_resistance_mutation	10	33	specimens	https://pmc.ncbi.nlm.nih.gov/articles/PMC5903999/#F2
+Lin_variants_2018	MGH_variants	mixed_ALK_TKI	tissue	EML4_v3_progression	ALK_G1202R	14	44	specimens	https://pmc.ncbi.nlm.nih.gov/articles/PMC5903999/#F2
+Lin_variants_2018	MGH_variants	mixed_ALK_TKI	tissue	EML4_v1_progression	ALK_G1202R	0	33	specimens	https://pmc.ncbi.nlm.nih.gov/articles/PMC5903999/#F2
+GuardantINFORM_2024	GuardantINFORM	first_line_next_gen_TKI	plasma	detectable_baseline_ALK_fusion	TP53_comutation	115	307	patients	https://www.sciencedirect.com/science/article/pii/S1556086424006774#tbl1
+Coalterations_2023	JTO_coalterations	first_line_second_generation_ALK_TKI	tissue	clinico_genomic_cohort	CDKN2AB_loss	21	116	patients	https://pubmed.ncbi.nlm.nih.gov/37572870/
+Noe_2020	NP28673_NP28761	post_crizotinib_alectinib	plasma	alectinib_progression	ALK_mutation	26	49	patients	https://www.sciencedirect.com/science/article/pii/S1556086419336330#tbl3
+Noe_2020	NP28673_NP28761	post_crizotinib_alectinib	plasma	alectinib_progression	known_alectinib_resistance_variant	15	49	patients	https://www.sciencedirect.com/science/article/pii/S1556086419336330#tbl3
+Alectinib_MET_NF2_2025	Alectinib_108	first_line_alectinib	mixed_samples	selected_progression	on_target	13	52	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC12420365/#mol270029-fig-0001
+Alectinib_MET_NF2_2025	Alectinib_108	first_line_alectinib	mixed_samples	selected_progression	bypass_candidate	21	52	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC12420365/#mol270029-fig-0001
+Alectinib_MET_NF2_2025	Alectinib_108	first_line_alectinib	mixed_samples	selected_progression	MET_amplification	8	52	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC12420365/#mol270029-fig-0001
+Alectinib_MET_NF2_2025	Alectinib_108	first_line_alectinib	mixed_samples	selected_progression	NF2_event	5	52	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC12420365/#mol270029-fig-0001
+Alectinib_MET_NF2_2025	Alectinib_108	post_crizotinib_alectinib	mixed_samples	selected_progression	on_target	44	56	patients	https://pmc.ncbi.nlm.nih.gov/articles/PMC12420365/#mol270029-fig-0001
+Xia_complex_ALK_2021	Complex_ALK_NGS	orthogonal_assay_comparison	tissue	RNA_evaluable_complex_DNA	canonical_EML4_ALK_transcript	13	13	cases	https://pmc.ncbi.nlm.nih.gov/articles/PMC8283930/

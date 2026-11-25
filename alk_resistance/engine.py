@@ -5,11 +5,12 @@ from collections import defaultdict
 from functools import lru_cache
 from pathlib import Path
 
-from .input import PHYSICAL_PHASE, is_alk_reference, normalize_case
+from . import __version__
+from .input import PHYSICAL_PHASE, TKI_TIMES, is_alk_reference, normalize_case, usable
+from .profiles import assess_profiles, documented_focal, loss_of_function, pathogenic_variant
 
 
 ADVANCED = {"unresectable_locally_advanced", "metastatic"}
-COPY_GAIN = "amplification"
 COVERAGE_TARGETS = (
     ("ALK", "variant"), ("ALK", "fusion"), ("MET", "copy_number"),
     ("MET", "fusion"), ("HISTOLOGY", "histology"), ("EMT", "expression"),
@@ -30,26 +31,21 @@ GAP_REVIEW = {
 @lru_cache(maxsize=1)
 def knowledge():
     data = json.loads(Path(__file__).with_name("knowledge.json").read_text(encoding="utf-8"))
-    for group in ("mechanisms", "options"):
+    for group in ("mechanisms", "options", "profiles"):
         for key, entry in data[group].items():
             if not entry["sources"] or set(entry["sources"]) - data["sources"].keys():
                 raise ValueError(f"知识库引用无效 {group}/{key}")
-    for mapping in ("alk_pairs", "exploratory_features", "exploratory_gene_events"):
-        ids = data[mapping].keys() if mapping == "alk_pairs" else data[mapping].values()
+    for mapping in ("alk_pairs", "alk_candidate_pairs", "exploratory_features", "exploratory_gene_events"):
+        ids = data[mapping].keys() if mapping in ("alk_pairs", "alk_candidate_pairs") else data[mapping].values()
         if set(ids) - data["mechanisms"].keys():
             raise ValueError(f"知识库机制引用无效 {mapping}")
+    if set(data["alk_model_features"].values()) - data["profiles"].keys():
+        raise ValueError("知识库功能图谱引用无效")
     return data
 
 
 def catalog_entry(group, key):
     return {"id": key, **knowledge()[group][key]}
-
-
-def usable(specimen, finding):
-    observed = finding["status"] == "not_detected" or finding["attributes"].get("vaf") != 0
-    return (observed and specimen["qc"] == "pass" and specimen["tumor_fraction"] != 0 and finding["qc"] == "pass"
-            and finding["attributes"].get("tumor_origin") not in ("germline", "hematopoietic")
-            and specimen["assays"][finding["assay_id"]]["qc"] == "pass")
 
 
 def covers_event(assay, finding):
@@ -107,9 +103,36 @@ def emit(case, specimen, matches, key, level, reasons, *findings):
     })
 
 
+def alectinib_alk_rules(case, specimen, canonical, matches):
+    changes = {row["feature"] for row in canonical}
+    features = knowledge()["alectinib_alk_features"]
+    for row in canonical:
+        if row["feature"] not in features:
+            continue
+        level = "candidate"
+        reason = features[row["feature"]]
+        is_tumor = specimen["material"] == "tissue" or row["attributes"].get("tumor_origin") == "confirmed"
+        if len(changes) == 1 and is_tumor:
+            level = "supported"
+        else:
+            reason += "。需核对肿瘤来源、多变异相位和克隆组成"
+        emit(case, specimen, matches, "alectinib_alk_variant", level, reason, row)
+    unknown = [row for row in canonical if row["feature"] not in features]
+    if unknown:
+        emit(case, specimen, matches, "alectinib_alk_unresolved", "insufficient",
+             "需确认位点、物理相位、基线及对阿来替尼的特异证据", *unknown)
+
+
 def alk_rules(case, specimen, positive, matches):
     variants = [row for row in positive if row["gene"] == "ALK" and row["kind"] == "variant"]
     canonical = [row for row in variants if reference_variant(row)]
+    nonreference = [row for row in variants if not reference_variant(row)]
+    if nonreference:
+        emit(case, specimen, matches, "alk_unresolved", "insufficient",
+             "蛋白注释使用非参考 ALK 转录本", *nonreference)
+    if case["progression"]["failed_tki"] == "alectinib":
+        alectinib_alk_rules(case, specimen, canonical, matches)
+        return
     phases = defaultdict(dict)
     for row in canonical:
         phase = row["attributes"].get("phase", {})
@@ -117,14 +140,15 @@ def alk_rules(case, specimen, positive, matches):
             key = (row["assay_id"], phase["method"], phase["block"], phase["haplotype"])
             phases[key].setdefault(row["feature"], row)
     supported_features = set()
-    for group in phases.values():
-        for rule, pair in knowledge()["alk_pairs"].items():
-            if set(pair) != group.keys():
-                continue
-            rows = [group[feature] for feature in pair]
-            supported_features.update(pair)
-            emit(case, specimen, matches, rule, "supported",
-                 "在同一进展样本、同一检测及同一物理单倍型上得到已报道的精确变异组合", *rows)
+    for field, level in (("alk_pairs", "supported"), ("alk_candidate_pairs", "candidate")):
+        for group in phases.values():
+            for rule, pair in knowledge()[field].items():
+                if set(pair) != group.keys():
+                    continue
+                rows = [group[feature] for feature in pair]
+                supported_features.update(pair)
+                emit(case, specimen, matches, rule, level,
+                     "同一进展样本及检测内具有与已报道组合一致的物理相位", *rows)
     for row in canonical:
         if row["feature"] == "K1150dup":
             emit(case, specimen, matches, "alk_k1150dup", "candidate",
@@ -134,23 +158,12 @@ def alk_rules(case, specimen, positive, matches):
         unresolved = [row for row in canonical if row["feature"] not in supported_features]
         emit(case, specimen, matches, "alk_unresolved", "insufficient",
              "单变异、未证实同一物理单倍型或缺少精确组合证据", *unresolved)
-    for row in variants:
-        if not reference_variant(row):
-            emit(case, specimen, matches, "alk_unresolved", "insufficient",
-                 "蛋白注释使用非参考 ALK 转录本", row)
-
-
-def met_is_focal(row):
-    attrs = row["attributes"]
-    return (row["feature"] == COPY_GAIN and attrs.get("focality") == "focal"
-            and attrs.get("validated_call") is True
-            and isinstance(attrs.get("criteria"), str) and bool(attrs["criteria"].strip()))
 
 
 def met_rules(case, specimen, positive, matches):
     cnvs = [row for row in positive if row["gene"] == "MET" and row["kind"] == "copy_number"]
-    focal = [row for row in cnvs if met_is_focal(row)]
-    provisional = [row for row in cnvs if not met_is_focal(row) and row["feature"] in {COPY_GAIN, "gain"}]
+    focal = [row for row in cnvs if documented_focal(row)]
+    provisional = [row for row in cnvs if row not in focal and row["feature"] in {"amplification", "gain"}]
     for row in focal:
         baseline_status = acquisition(case, specimen, row)["state"]
         level = "supported" if baseline_status == "newly_detected_in_comparable_specimens" else "candidate"
@@ -210,6 +223,7 @@ def histology_rules(case, specimen, positive, matches):
 
 
 def exploratory_rules(case, specimen, positive, matches):
+    failed_tki = case["progression"]["failed_tki"]
     for row in positive:
         gene, kind, feature = row["gene"], row["kind"], row["feature"]
         attrs = row["attributes"]
@@ -226,18 +240,23 @@ def exploratory_rules(case, specimen, positive, matches):
             "tumor_cell_localized", "multiple_markers", "paired_reviewed",
         )):
             key = "emt_incomplete"
+        if failed_tki == "alectinib":
+            if key in {"crown_bypass_candidate", "crown_2026_discovery", "egfr_bypass_candidate", "nf2_loss"}:
+                key = None
+            if gene == "NF2" and loss_of_function(row) and (
+                specimen["material"] == "tissue" or attrs.get("tumor_origin") == "confirmed"
+            ):
+                key = "alectinib_nf2_candidate"
+            elif key is None:
+                key = knowledge()["alectinib_exploratory_features"].get(f"{gene}|{kind}|{feature}")
         if key:
             level = "insufficient" if key == "emt_incomplete" else "candidate"
             emit(case, specimen, matches, key, level,
                  "与文献机制线索相符，需结合纵向样本及路径活性独立验证", row)
-    genes = {row["gene"] for row in positive if (
-        row["kind"] == "variant"
-        and row["attributes"].get("classification") in ("pathogenic", "likely_pathogenic")
-    )}
-    if {"TP53", "RB1"} <= genes and not any(row["id"] == "lineage_transformation" for row in matches):
-        evidence = [row for row in positive if row["gene"] in ("TP53", "RB1")
-                    and row["kind"] == "variant"
-                    and row["attributes"].get("classification") in ("pathogenic", "likely_pathogenic")]
+    evidence = [row for row in positive if row["gene"] in {"TP53", "RB1"} and pathogenic_variant(row)
+                and (specimen["material"] == "tissue" or row["attributes"].get("tumor_origin") == "confirmed")]
+    if ({"TP53", "RB1"} <= {row["gene"] for row in evidence}
+            and not any(row["id"] == "lineage_transformation" for row in matches)):
         emit(case, specimen, matches, "lineage_review", "candidate",
              "TP53 与 RB1 同时有致病级改变可触发组织复核，转化须依赖病理证据", *evidence)
 
@@ -286,8 +305,8 @@ def neladalkib_label(clinical, progression, *, transformed=False):
     prior = clinical["prior_advanced_alk_tkis"]
     if clinical["unrecognized_advanced_alk_tkis"]:
         return "insufficient_information", "有未识别的 ALK TKI 通用名，需核实并去重"
-    if "lorlatinib" not in prior and progression["lorlatinib_setting"] != "other":
-        return "insufficient_information", "需核对本次洛拉替尼用药是否计入相关治疗阶段"
+    if progression["failed_tki"] not in prior and progression["tki_setting"] != "other":
+        return "insufficient_information", "需核对本次进展相关的 ALK TKI 是否计入既往晚期治疗"
     if transformed:
         return "histology_review_required", "进展组织具有神经内分泌表型，需复核标签对当前治疗目标的适用性"
     if prior == ["alectinib"]:
@@ -307,9 +326,10 @@ def make_option(key, status="multidisciplinary_review", reason=None, samples=())
     return entry
 
 
-def clinical_options(case, per_sample):
+def clinical_options(case, per_sample, molecular_profiles):
     clinical = case["clinical"]
     pattern = case["progression"]["pattern"]
+    failed_tki = case["progression"]["failed_tki"]
     all_mechanisms = [row for record in per_sample for row in record["mechanisms"]]
     changed_histology = set()
     neuroendocrine = set()
@@ -331,9 +351,23 @@ def clinical_options(case, per_sample):
     if changed_histology:
         options.append(make_option("histology_review", samples=changed_histology))
     elif pattern == "systemic" and clinical["setting"] in ADVANCED:
+        if failed_tki == "alectinib" and clinical["age_group"] == "adult":
+            prior = clinical["prior_advanced_alk_tkis"]
+            if "lorlatinib" in prior:
+                options.append(make_option("lorlatinib_after_alectinib", "prior_lorlatinib_review",
+                                           "既往已用洛拉替尼，需核对原疗效、进展或停药原因"))
+            elif (clinical["advanced_treatment_history_complete"] and "alectinib" in prior
+                  and not clinical["unrecognized_advanced_alk_tkis"]):
+                options.append(make_option("lorlatinib_after_alectinib"))
+            else:
+                options.append(make_option("lorlatinib_after_alectinib", "insufficient_information",
+                                           "需核实是否曾使用洛拉替尼及既往用药记录"))
         if clinical["baseline_histology"] in {"adenocarcinoma", "other_nonsquamous"}:
             prior_platinum = clinical["prior_advanced_platinum"]
-            if prior_platinum is False:
+            if prior_platinum is False and failed_tki == "alectinib":
+                options.append(make_option("platinum_pemetrexed", "sequencing_review",
+                                           "结合可用 ALK TKI、耐受性、局部处理和其他治疗线讨论含铂方案"))
+            elif prior_platinum is False:
                 options.append(make_option("platinum_pemetrexed"))
             else:
                 status = "insufficient_information" if prior_platinum is None else "prior_platinum_review"
@@ -342,7 +376,8 @@ def clinical_options(case, per_sample):
         else:
             options.append(make_option("systemic_histology_review"))
     elif pattern in {"oligoprogression", "isolated_cns"}:
-        options.append(make_option("local_treatment"))
+        key = "local_treatment_alectinib" if failed_tki == "alectinib" else "local_treatment"
+        options.append(make_option(key))
     elif pattern == "unknown":
         options.append(make_option("progression_review", "insufficient_information"))
 
@@ -367,16 +402,23 @@ def clinical_options(case, per_sample):
         options.append(make_option("gilteritinib_trial", "trial_eligibility_review", samples=rare_samples))
     if shaw_samples:
         options.append(make_option("crizotinib_case", "case_report_context", samples=shaw_samples))
-    if clinical["age_group"] == "adult" and clinical["setting"] in ADVANCED and not neuroendocrine:
+    if (failed_tki == "lorlatinib" and clinical["age_group"] == "adult"
+            and clinical["setting"] in ADVANCED and not neuroendocrine):
         options.append(make_option("alkove_trial", "trial_eligibility_review"))
+        mtap_samples = [profile["sample_id"] for profile in molecular_profiles if profile["stage"] == "progression"
+                        and any(row["id"] == "mtap_trial_marker" for row in profile["coalterations"])]
+        if mtap_samples:
+            options.append(make_option("tap_alk_trial", "registered_not_yet_recruiting", samples=mtap_samples))
     return options
 
 
 def assess(document):
     case = normalize_case(document)
+    _, progression_time = TKI_TIMES[case["progression"]["failed_tki"]]
+    molecular_profiles = assess_profiles(case, knowledge())
     records, gaps = [], []
     for specimen in case["specimens"].values():
-        if specimen["timepoint"] != "progression_on_lorlatinib":
+        if specimen["timepoint"] != progression_time:
             continue
         positive = [row for row in specimen["findings"] if (
             row["status"] == "detected" and usable(specimen, row)
@@ -400,18 +442,22 @@ def assess(document):
         })
         gaps.extend(gaps_for(specimen))
     if not records:
-        gaps.append({"status": "no_progression_specimen", "reason": "未输入洛拉替尼进展时样本"})
+        gaps.append({"status": "no_progression_specimen", "reason": "缺少所评估 ALK TKI 的进展样本"})
     state = "unresolved"
     if any(row["state"] == "supported_hypothesis" for row in records):
         state = "supported_hypothesis"
-    options = clinical_options(case, records)
+    options = clinical_options(case, records, molecular_profiles)
     sources = {sid for record in records for row in record["mechanisms"] for sid in row["sources"]}
     sources.update(sid for option in options for sid in option["sources"])
+    for profile in molecular_profiles:
+        for key in ("fusions", "coalterations", "joint_associations", "experimental_associations"):
+            sources.update(sid for row in profile[key] for sid in row["sources"])
     sources.add("ESMO_ctDNA_2022")
     return {
-        "schema_version": 1, "knowledge_version": knowledge()["version"],
+        "schema_version": 1, "program_version": __version__, "knowledge_version": knowledge()["version"],
         "case_id": case["case_id"], "progression": case["progression"],
         "clinical_context": case["clinical"],
+        "molecular_profiles": molecular_profiles,
         "assessment": state, "specimens": records, "assay_gaps": gaps,
         "unresolved_specimens": [row["sample_id"] for row in records if row["state"] == "unresolved"],
         "clinical_options": options,

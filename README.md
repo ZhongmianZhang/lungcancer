@@ -6,7 +6,7 @@
 
 ## 阅读入口
 
-- [ALK 融合肺癌洛拉替尼进展判读、检测平台与证据（2026-11-25）](alk_resistance/README.md)
+- [ALK 融合亚型、共变异与阿来替尼／洛拉替尼进展判读（2026-11-25）](alk_resistance/README.md)
 - [EGFR蛋白结构与TKI疗效：白底PPT、PDF及离线3D报告下载（2026-11-15）](site/egfr-structure/)
 - [80项耐药机制／变异／表观调控优先核查清单（2026-11-11）](site/resistance-top80/)
 - [微环境60项优先核查机制与来源（2026-11-11）](site/tme-top60/)

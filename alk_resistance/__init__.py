@@ -1,3 +1,3 @@
-"""Source-traceable interpretation of post-lorlatinib ALK-fusion NSCLC."""
+"""Source-traceable interpretation of resistance in ALK-fusion NSCLC."""
 
-__version__ = "1.0.0"
+__version__ = "1.1.0"

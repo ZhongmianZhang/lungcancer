@@ -17,8 +17,8 @@ ANN_FIELDS = (
 )
 # VCF processing is intentionally limited to genes used by the curated rules.
 VCF_GENES = {
-    "ALK", "BRAF", "EGFR", "FAT1", "FLT1", "HDAC6", "KRAS", "LRP5", "MAP2K1",
-    "NF2", "NTRK1", "PIK3CA", "PTEN", "RB1", "TP53", "XRCC2",
+    "ALK", "BRAF", "CDKN2A", "CDKN2B", "EGFR", "FAT1", "FLT1", "HDAC6",
+    "KRAS", "LRP5", "MAP2K1", "MET", "NF2", "NTRK1", "PIK3CA", "PTEN", "RB1", "TP53", "XRCC2",
 }
 
 

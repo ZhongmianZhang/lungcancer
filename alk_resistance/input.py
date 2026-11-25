@@ -1,5 +1,6 @@
 """Validate reported observations and normalize protein notation."""
 
+import math
 import re
 from urllib.parse import unquote
 
@@ -8,7 +9,12 @@ class InputError(ValueError):
     """An input document cannot be interpreted without changing its meaning."""
 
 
-TIMES = {"pre_lorlatinib", "progression_on_lorlatinib", "other", "unknown"}
+TKI_TIMES = {
+    "alectinib": ("pre_alectinib", "progression_on_alectinib"),
+    "lorlatinib": ("pre_lorlatinib", "progression_on_lorlatinib"),
+}
+PRE_FOR_PROGRESSION = {post: pre for pre, post in TKI_TIMES.values()}
+TIMES = {timepoint for pair in TKI_TIMES.values() for timepoint in pair} | {"other", "unknown"}
 MATERIALS = {"tissue", "plasma", "csf", "other", "unknown"}
 QUALITY = {"pass", "limited", "fail", "unknown"}
 COVERAGE = {"adequate", "limited", "not_assayed", "unknown"}
@@ -145,6 +151,15 @@ def validate_fraction(value, where):
         raise InputError(f"{where} 必须是 0 到 1 之间的小数")
 
 
+def usable(specimen, finding):
+    attrs = finding["attributes"]
+    observed = finding["status"] == "not_detected" or attrs.get("vaf") != 0
+    return (observed and specimen["qc"] == "pass" and specimen["tumor_fraction"] != 0
+            and finding["qc"] == "pass"
+            and attrs.get("tumor_origin") not in ("germline", "hematopoietic")
+            and specimen["assays"][finding["assay_id"]]["qc"] == "pass")
+
+
 def normalize_assays(items, where):
     assays = {}
     unique_ids(items, where)
@@ -206,6 +221,36 @@ def normalize_clinical(item):
     }
 
 
+def normalize_progression(raw):
+    item = object_value(raw, "progression")
+    failed_tki = choice(item.get("failed_tki", "lorlatinib"), TKI_TIMES, "progression.failed_tki")
+    pattern = choice(item.get("pattern", "unknown"), {
+        "systemic", "oligoprogression", "isolated_cns", "unknown",
+    }, "progression.pattern")
+    if failed_tki != "lorlatinib" and {"lorlatinib_line", "lorlatinib_setting"} & item.keys():
+        raise InputError("阿来替尼进展请使用 tki_line 和 tki_setting")
+    for new, legacy in (("tki_line", "lorlatinib_line"), ("tki_setting", "lorlatinib_setting")):
+        if new in item and legacy in item and item[new] != item[legacy]:
+            raise InputError(f"progression.{new} 与旧字段 {legacy} 矛盾")
+    line = item.get("tki_line", item.get("lorlatinib_line"))
+    if line is not None and (type(line) is not int or line < 1):
+        raise InputError("progression.tki_line 必须是正整数或 null")
+    setting = choice(item.get("tki_setting", item.get("lorlatinib_setting", "unknown")), {
+        "advanced", "other", "unknown",
+    }, "progression.tki_setting")
+    response = choice(item.get("best_response", "unknown"), {"CR", "PR", "SD", "PD", "unknown"},
+                      "progression.best_response")
+    months = item.get("months_to_progression")
+    if months is not None and (type(months) not in (int, float) or months < 0
+                               or (type(months) is float and not math.isfinite(months))):
+        raise InputError("progression.months_to_progression 必须是非负有限数字或 null")
+    progression = {"failed_tki": failed_tki, "pattern": pattern, "tki_line": line, "tki_setting": setting,
+                   "best_response": response, "months_to_progression": months}
+    if failed_tki == "lorlatinib":
+        progression.update(lorlatinib_line=line, lorlatinib_setting=setting)
+    return progression
+
+
 def normalize_case(document):
     root = object_value(document, "case")
     if type(root.get("schema_version")) is not int or root["schema_version"] != 1:
@@ -214,16 +259,8 @@ def normalize_case(document):
         raise InputError("disease 必须为 ALK_fusion_NSCLC")
     case_id = string_value(root.get("case_id"), "case_id")
     clinical = normalize_clinical(root.get("clinical", {}))
-    progression = object_value(root.get("progression", {}), "progression")
-    pattern = choice(progression.get("pattern", "unknown"), {
-        "systemic", "oligoprogression", "isolated_cns", "unknown",
-    }, "progression.pattern")
-    line = progression.get("lorlatinib_line")
-    if line is not None and (type(line) is not int or line < 1):
-        raise InputError("progression.lorlatinib_line 必须是正整数或 null")
-    prior_setting = choice(progression.get("lorlatinib_setting", "unknown"), {
-        "advanced", "other", "unknown",
-    }, "progression.lorlatinib_setting")
+    progression_input = object_value(root.get("progression", {}), "progression")
+    progression = normalize_progression(progression_input)
     rows = list_value(root.get("specimens", []), "specimens")
     unique_ids(rows, "specimens")
     specimens = {}
@@ -252,18 +289,21 @@ def normalize_case(document):
             "baseline_sample_id": baseline_id, "comparable_baseline_assays": matched,
             "findings": [normalize_finding(f, assays, f"{where}/{f['id']}") for f in findings],
         }
+    if ("failed_tki" not in progression_input
+            and any(s["timepoint"] in TKI_TIMES["alectinib"] for s in specimens.values())):
+        raise InputError("含阿来替尼相关样本时请明确填写 progression.failed_tki")
     for s in specimens.values():
         key = s["baseline_sample_id"]
         if key is None and not s["comparable_baseline_assays"]:
             continue
         baseline = specimens.get(key)
-        if (s["timepoint"] != "progression_on_lorlatinib" or baseline is None
-                or baseline["timepoint"] != "pre_lorlatinib"):
-            raise InputError(f"样本 {s['id']} 的基线必须指向洛拉替尼前样本")
+        expected_pre = PRE_FOR_PROGRESSION.get(s["timepoint"])
+        if expected_pre is None or baseline is None or baseline["timepoint"] != expected_pre:
+            raise InputError(f"样本 {s['id']} 的基线须对应同一种药，并指向用药前样本")
         for post, pre in s["comparable_baseline_assays"].items():
             if post not in s["assays"] or not isinstance(pre, str) or pre not in baseline["assays"]:
                 raise InputError(f"样本 {s['id']} 的基线比较引用了未知检测")
     return {
         "case_id": case_id, "clinical": clinical, "specimens": specimens,
-        "progression": {"pattern": pattern, "lorlatinib_line": line, "lorlatinib_setting": prior_setting},
+        "progression": progression,
     }

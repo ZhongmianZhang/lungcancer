@@ -25,7 +25,7 @@ def write_report(path, text):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(description="解释 ALK 融合 NSCLC 洛拉替尼进展样本的耐药证据")
+    parser = argparse.ArgumentParser(description="解释 ALK 融合 NSCLC 阿来替尼或洛拉替尼进展的耐药证据")
     parser.add_argument("--case", required=True, type=Path, help="带样本和检测元数据的 JSON")
     parser.add_argument("--findings-tsv", action="append", type=Path, default=[],
                         help="已审阅的 CNV、融合、病理和其他多组学结果，可重复")

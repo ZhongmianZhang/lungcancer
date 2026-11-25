@@ -244,9 +244,12 @@ class AdapterAndArtifactTest(unittest.TestCase):
             self.assertEqual(report.read_text(), previous)
 
     def test_literature_tables_preserve_lookup_and_denominators(self):
-        references = json.loads((PROJECT / "references.json").read_text(encoding="utf-8"))["references"]
-        ids = {row["id"] for row in references}
-        self.assertEqual(len(ids), len(references))
+        ids = set()
+        for filename in ("references.json", "variant_literature.json"):
+            references = json.loads((PROJECT / filename).read_text(encoding="utf-8"))["references"]
+            source_ids = {row["id"] for row in references}
+            self.assertEqual(len(source_ids), len(references))
+            ids.update(source_ids)
         self.assertTrue(set(knowledge()["sources"]) <= ids)
         with (PROJECT / "cohort_observations.tsv").open(encoding="utf-8", newline="") as handle:
             for row in csv.DictReader(handle, delimiter="\t"):

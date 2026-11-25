@@ -26,7 +26,35 @@
     "ALKOVE_1": {"type": "trial_registration", "title": "ALKOVE-1, NCT05384626", "url": "https://clinicaltrials.gov/study/NCT05384626"},
     "ASCO8503_2026": {"type": "conference_single_arm", "year": 2026, "title": "ALKOVE-1 efficacy and safety, ASCO 2026 abstract 8503", "url": "https://www.asco.org/abstracts-presentations/259327"},
     "Gilteritinib_NCT07140016": {"type": "trial_registration", "title": "Gilteritinib in ALK-rearranged NSCLC, NCT07140016", "url": "https://clinicaltrials.gov/study/NCT07140016"},
-    "Gilteritinib_NCT06225427": {"type": "trial_registration", "title": "Gilteritinib in metastatic ALK-positive NSCLC, NCT06225427", "url": "https://clinicaltrials.gov/study/NCT06225427"}
+    "Gilteritinib_NCT06225427": {"type": "trial_registration", "title": "Gilteritinib in metastatic ALK-positive NSCLC, NCT06225427", "url": "https://clinicaltrials.gov/study/NCT06225427"},
+    "Lin_variants_2018": {"type": "retrospective_therapy_and_biopsy", "year": 2018, "title": "Impact of EML4-ALK Variant on Resistance Mechanisms and Clinical Outcomes in ALK-Positive Lung Cancer", "url": "https://doi.org/10.1200/JCO.2017.76.2294", "pmid": "29373100"},
+    "ALEX_variants_2019": {"type": "randomized_trial_exploratory_biomarkers", "year": 2019, "title": "Updated Efficacy and Safety Data and Impact of the EML4-ALK Fusion Variant on the Efficacy of Alectinib in Untreated ALK-Positive Advanced NSCLC in the Global Phase III ALEX Study", "url": "https://doi.org/10.1016/j.jtho.2019.03.007", "pmid": "30902613"},
+    "CROWN_variants_2023": {"type": "randomized_trial_exploratory_biomarkers", "year": 2023, "title": "Efficacy of Lorlatinib in Treatment-Naive Patients With ALK-Positive Advanced NSCLC in Relation to EML4::ALK Variant Type and ALK With or Without TP53 Mutations", "url": "https://doi.org/10.1016/j.jtho.2023.07.023", "pmid": "37541389"},
+    "GuardantINFORM_2024": {"type": "retrospective_claims_and_genomics", "year": 2024, "title": "Impact of EML4-ALK Variants and Co-Occurring TP53 Mutations on Duration of First-Line ALK Tyrosine Kinase Inhibitor Treatment and Overall Survival in ALK Fusion-Positive NSCLC", "url": "https://doi.org/10.1016/j.jtho.2024.07.009", "pmid": "39019326"},
+    "Christopoulos_2019": {"type": "retrospective_prognosis", "year": 2019, "title": "Identification of a highly lethal V3+ TP53+ subset in ALK+ lung adenocarcinoma", "url": "https://doi.org/10.1002/ijc.31893", "pmid": "30255938"},
+    "TP53_NOXA_2021": {"type": "retrospective_cohort_and_preclinical_function", "year": 2021, "title": "Proteasome Inhibition Overcomes ALK-TKI Resistance in ALK-Rearranged/TP53-Mutant NSCLC via Noxa Expression", "url": "https://doi.org/10.1158/1078-0432.CCR-20-2853", "pmid": "33310890"},
+    "Coalterations_2023": {"type": "retrospective_clinical_prognosis", "year": 2023, "title": "Impact of Concurrent Genomic Alterations on Clinical Outcomes in Patients With ALK-Rearranged NSCLC", "url": "https://doi.org/10.1016/j.jtho.2023.08.007", "pmid": "37572870"},
+    "Tumor_intrinsic_2024": {"type": "retrospective_clinical_and_liquid_cohorts", "year": 2024, "title": "Impact of Tumor-intrinsic Molecular Features on Survival and Acquired Tyrosine Kinase Inhibitor Resistance in ALK-positive NSCLC", "url": "https://doi.org/10.1158/2767-9764.CRC-24-0065", "pmid": "38407352"},
+    "Alectinib_MET_NF2_2025": {"type": "retrospective_with_paired_subset", "year": 2025, "title": "MET and NF2 alterations confer primary and early resistance to first-line alectinib treatment in ALK-positive non-small-cell lung cancer", "url": "https://doi.org/10.1002/1878-0261.70029", "pmid": "40168046"},
+    "Noe_2020": {"type": "prospective_trials_pooled_biomarkers", "year": 2020, "title": "ALK Mutation Status Before and After Alectinib Treatment in Locally Advanced or Metastatic ALK-Positive NSCLC", "url": "https://doi.org/10.1016/j.jtho.2019.10.015", "pmid": "31712133"},
+    "Mizuta_2021": {"type": "patient_derived_and_preclinical", "year": 2021, "title": "Gilteritinib overcomes lorlatinib resistance in ALK-rearranged cancer", "url": "https://doi.org/10.1038/s41467-021-21396-w", "pmid": "33627640"},
+    "Shaw_lorlatinib_2019": {"type": "single_arm_phase_two_exploratory_biomarkers", "year": 2019, "title": "ALK Resistance Mutations and Efficacy of Lorlatinib in Advanced Anaplastic Lymphoma Kinase-Positive Non–Small-Cell Lung Cancer", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544460/"},
+    "Rare_ALK_2026": {"type": "multicenter_retrospective", "year": 2026, "title": "Beyond EML4: efficacy of targeted therapy in lung cancer patients with rare ALK fusions", "url": "https://doi.org/10.1038/s41698-026-01486-y"},
+    "Benayed_RNA_2019": {"type": "human_dna_and_rna_testing", "year": 2019, "title": "High Yield of RNA Sequencing for Targetable Kinase Fusions in Lung Adenocarcinomas", "url": "https://doi.org/10.1158/1078-0432.CCR-19-0225"},
+    "Zhu_cis_2021": {"type": "single_case_molecular_phasing", "year": 2021, "title": "A Novel Sequentially Evolved EML4-ALK Variant 3 G1202R/S1206Y Double Mutation In Cis Confers Resistance to Lorlatinib", "url": "https://doi.org/10.1016/j.jtocrr.2020.100116", "pmid": "34589977"},
+    "Lin_NVL655_2024": {"type": "early_case_observations_and_functional", "year": 2024, "title": "NVL-655 Is a Selective and Brain-Penetrant Inhibitor of Diverse ALK-Mutant Oncoproteins", "url": "https://doi.org/10.1158/2159-8290.CD-24-0231"},
+    "Sampson_condensates_2021": {"type": "preclinical_cell_signaling", "year": 2021, "title": "Phase-separated foci of EML4-ALK facilitate signalling and depend upon an active kinase conformation", "url": "https://doi.org/10.15252/embr.202153693", "pmid": "34661367"},
+    "ORegan_NEK_2020": {"type": "preclinical_plus_exploratory_clinical", "year": 2020, "title": "EML4–ALK V3 oncogenic fusion proteins promote microtubule stabilization and accelerated migration through NEK9 and NEK7", "url": "https://doi.org/10.1242/jcs.241505"},
+    "IMMUNOTARGET_2019": {"type": "multicenter_retrospective_immunotherapy", "year": 2019, "title": "Immune checkpoint inhibitors for patients with advanced lung cancer and oncogenic driver alterations: results from the IMMUNOTARGET registry", "url": "https://doi.org/10.1093/annonc/mdz167"},
+    "Razavi_CH_2019": {"type": "matched_plasma_wbc_and_tissue", "year": 2019, "title": "High-intensity sequencing reveals the sources of plasma circulating cell-free DNA variants", "url": "https://doi.org/10.1038/s41591-019-0652-7"},
+    "Oh_ALK_atlas_2026": {"type": "preclinical_functional_atlas", "year": 2026, "title": "A comprehensive functional atlas of ALK kinase domain variants reveals resistance landscape to ALK inhibitors", "url": "https://doi.org/10.1186/s13059-026-03977-4"},
+    "Xia_complex_ALK_2021": {"type": "human_rna_orthogonal_validation", "year": 2021, "title": "Molecular characteristics and clinical outcomes of complex ALK rearrangements identified by next-generation sequencing in non-small cell lung cancers", "url": "https://doi.org/10.1186/s12967-021-02982-4"},
+    "Kleczko_immunity_2023": {"type": "immune_competent_mouse_models", "year": 2023, "title": "Durable responses to alectinib in murine models of EML4-ALK lung cancer requires adaptive immunity", "url": "https://doi.org/10.1038/s41698-023-00355-2"},
+    "Arai_myeloid_2025": {"type": "human_tumor_immune_profiling_and_models", "year": 2025, "title": "EML4–ALK Rearrangement Creates a Distinctive Myeloid Cell–Dominant Immunosuppressive Microenvironment in Lung Cancer", "url": "https://doi.org/10.1158/2326-6066.CIR-24-0532"},
+    "Li_alectinib_local_2024": {"type": "retrospective_oligoprogression", "year": 2024, "title": "Alectinib continuation beyond progression in ALK-positive non-small cell lung cancer with alectinib-refractory", "url": "https://doi.org/10.21037/tlcr-23-798"},
+    "Tulpule_granules_2021": {"type": "preclinical_cell_signaling", "year": 2021, "title": "Kinase-mediated RAS signaling via membraneless cytoplasmic protein granules", "url": "https://doi.org/10.1016/j.cell.2021.03.031"},
+    "ASCO_2026_3_4": {"type": "living_guideline", "year": 2026, "title": "Therapy for Stage IV Non-Small Cell Lung Cancer With Driver Alterations: ASCO Living Guideline, Version 2026.3.4", "url": "https://doi.org/10.1200/JCO-26-02597"},
+    "TAP_ALK_2026": {"type": "trial_registration", "date": "2026-11-25", "title": "TAP-ALK, NCT07938463", "url": "https://clinicaltrials.gov/study/NCT07938463"}
   },
   "alk_pairs": {
     "alk_g1202r_l1196m": ["G1202R", "L1196M"],
@@ -69,7 +97,7 @@
     "alk_c1156y_l1198f": {"title": "ALK 顺式 C1156Y + L1198F", "pathway": "on_target", "basis": "有定相及功能实验支持。临床证据来自一例既往多线治疗患者。", "sources": ["Shaw_2016", "Shiba_Ishii_2022"]},
     "alk_k1150dup": {"title": "罕见 ALK K1150dup", "pathway": "on_target", "basis": "一线进展单例中组织和血浆复现，功能模型支持靶内耐药。", "sources": ["Nagasaka_2026"]},
     "alk_unresolved": {"title": "ALK 靶内变异待解释", "pathway": "on_target", "basis": "共现频率或接近的等位基因频率无法证明顺式。", "sources": ["Yoda_2018", "Shiba_Ishii_2022"]},
-    "met_focal_amplification": {"title": "局灶 MET 扩增", "pathway": "bypass", "basis": "进展病例和功能研究支持 MET 旁路，扩增与倍体增加需区分。", "sources": ["DagogoJack_2020", "CROWN_2024", "CROWN_2026"]},
+    "met_focal_amplification": {"title": "局灶 MET 扩增", "pathway": "bypass", "basis": "进展病例和功能研究支持 MET 旁路，扩增与倍体增加需区分。", "sources": ["DagogoJack_2020", "CROWN_2024", "CROWN_2026", "Alectinib_MET_NF2_2025"]},
     "met_gain_unresolved": {"title": "MET 拷贝增益待核实", "pathway": "bypass", "basis": "组织、血浆和 FISH 的拷贝数或比值有不同含义。", "sources": ["DagogoJack_2020"]},
     "st7_met": {"title": "ST7::MET 与 MET 扩增共现", "pathway": "bypass", "basis": "直接的进展病例具有 WGS、RNA 和功能支持，尚无独立治疗获益估计。", "sources": ["DagogoJack_2020"]},
     "st7_met_unresolved": {"title": "ST7::MET 待核实", "pathway": "bypass", "basis": "配对 WGS 与 RNA 有助确认事件，参考病例为 ST7 exon 1 接 MET exon 2。", "sources": ["DagogoJack_2020"]},
@@ -84,7 +112,13 @@
     "epi_earlier_tki": {"title": "miR-34a/449a–AXL 表观调控线索", "pathway": "epigenetic", "basis": "人体配对和模型主要为克唑替尼、色瑞替尼研究。", "sources": ["Yun_2018"]},
     "cda_epigenomics": {"title": "CDA 表达与表观调控线索", "pathway": "epigenetic", "basis": "来自色瑞替尼耐药模型，人群 IHC 未见显著差异。", "sources": ["Heo_2022"]},
     "nkx21_lineage": {"title": "NKX2-1 甲基化及谱系线索", "pathway": "epigenetic", "basis": "来自原发肺腺癌多组学队列，缺少洛拉替尼后特异验证。", "sources": ["Satpathy_2025"]},
-    "small_cell_methylation": {"title": "血浆甲基化小细胞信号待验证", "pathway": "epigenetic", "basis": "早期证据为阿来替尼后单病例，应由进展病灶病理复核。", "sources": ["Methylation_SCLC_2026"]}
+    "small_cell_methylation": {"title": "血浆甲基化小细胞信号待验证", "pathway": "epigenetic", "basis": "早期证据为阿来替尼后单病例，应由进展病灶病理复核。", "sources": ["Methylation_SCLC_2026"]},
+    "alectinib_alk_variant": {"title": "阿来替尼进展的 ALK 激酶域变异", "pathway": "on_target", "basis": "人类进展活检和功能实验支持这些具体位点。药物敏感性随等位基因和组合改变。", "sources": ["Noe_2020", "Alectinib_MET_NF2_2025", "Mizuta_2021"]},
+    "alectinib_alk_unresolved": {"title": "阿来替尼进展的 ALK 变异待解释", "pathway": "on_target", "basis": "进展时检出可以沿自较早线别，须核对基线和对阿来替尼的位点特异证据。", "sources": ["Alectinib_MET_NF2_2025", "Noe_2020"]},
+    "alectinib_nf2_candidate": {"title": "阿来替尼进展的 NF2 功能丧失线索", "pathway": "bypass", "basis": "早期人体耐药观察支持 NF2 候选。NF2 功能实验来自洛拉替尼患者模型，干预仍处研究阶段。", "sources": ["Alectinib_MET_NF2_2025", "Recondo_2020"]},
+    "alectinib_bypass_candidate": {"title": "阿来替尼进展的旁路候选事件", "pathway": "bypass", "basis": "少量患者中见特定 MET、RAS 或 PI3K 事件。进展部位和纵向克隆证据有助复核。", "sources": ["Alectinib_MET_NF2_2025"]},
+    "alk_g1202r_s1206y": {"title": "ALK 顺式 G1202R + S1206Y 候选", "pathway": "on_target", "basis": "在 EML4::ALK V3 的多线治疗患者中有纵向和分子定相单例证据。", "sources": ["Zhu_cis_2021"]},
+    "alk_g1202r_f1174c": {"title": "ALK 顺式 G1202R + F1174C 候选", "pathway": "on_target", "basis": "洛拉替尼后早期个案有分子定相及 neladalkib 反应观察。标签资格按临床信息独立核对。", "sources": ["Lin_NVL655_2024", "FDA_Nelkarmi_2026"]}
   },
   "options": {
     "neladalkib_us": {"title": "Neladalkib 美国加速批准适应证复核", "type": "regulatory_label", "details": "仅核对人群及既往治疗条件。FDA 两队列为 67 人 ORR 49% 与 155 人 ORR 32%，来自单臂研究。标签未要求特定耐药位点。", "sources": ["FDA_Nelkarmi_2026", "US_Nelkarmi_label_2026"]},
@@ -97,6 +131,57 @@
     "alk_met_combination": {"title": "ALK 与 MET 双抑制研究讨论", "type": "retrospective_off_label_evidence", "details": "12 例混合治疗线回顾中 5 例部分缓解。洛拉替尼加克唑替尼 3/6 的分母包含既往未用洛拉替尼者。按当地适应证、试验及联合毒性复核。", "sources": ["DagogoJack_2020", "DagogoJack_2023"]},
     "crizotinib_case": {"title": "克唑替尼再挑战的病例背景", "type": "single_case_context", "details": "精确顺式组合有一个历史病例伴影像反应，并有同期治疗混杂。需结合完整基因型和病史审阅。", "sources": ["Shaw_2016"]},
     "gilteritinib_trial": {"title": "Gilteritinib 早期试验线索", "type": "preclinical_and_registry", "details": "K1150dup 敏感性来自模型，试验资格和当前队列需核对。", "sources": ["Nagasaka_2026", "Gilteritinib_NCT07140016", "Gilteritinib_NCT06225427"]},
-    "alkove_trial": {"title": "ALKOVE-1 研究资格复核", "type": "single_arm_trial_and_registry", "details": "注册含仅既往洛拉替尼的 2c 队列。ASCO 既往洛拉替尼亚组 ORR 50/190，含 2 个未确认缓解，与 2c 队列分母不同。按地区、既往治疗及研究状态核实。", "sources": ["ALKOVE_1", "ASCO8503_2026"]}
+    "alkove_trial": {"title": "ALKOVE-1 研究资格复核", "type": "single_arm_trial_and_registry", "details": "注册含仅既往洛拉替尼的 2c 队列。ASCO 既往洛拉替尼亚组 ORR 50/190，含 2 个未确认缓解，与 2c 队列分母不同。按地区、既往治疗及研究状态核实。", "sources": ["ALKOVE_1", "ASCO8503_2026"]},
+    "lorlatinib_after_alectinib": {"title": "阿来替尼后洛拉替尼的治疗讨论", "type": "guideline_and_phase_two_discussion", "details": "适用于二代 ALK TKI 后系统进展语境。既往二代 TKI 的单臂研究中，组织 ALK 耐药变异检出与未检出亚组 ORR 分别为 69% 与 27%。融合亚型、TP53 及耐药测序结果均不单独决定选择。", "sources": ["ESMO_ALK", "ASCO_2026_3_4", "Shaw_lorlatinib_2019"]},
+    "local_treatment_alectinib": {"title": "局限进展的局部治疗和阿来替尼策略", "type": "guideline_discussion", "details": "由团队核实可局部处理的病灶及其他部位控制程度，再讨论继续或调整 ALK TKI。一项 15 例回顾性研究支持进一步讨论，缺少随机比较。", "sources": ["ASCO_2026", "ESMO_ALK", "Li_alectinib_local_2024"]},
+    "tap_alk_trial": {"title": "MTAP 缺失 TAP-ALK 注册研究", "type": "trial_registration", "details": "NCT07938463 研究 vopimetostat 联合洛拉替尼。2026-11-25 注册尚未招募，也未报告结果。需复核既往洛拉替尼影像进展、可测量颅外病灶和其余入组条件。", "sources": ["TAP_ALK_2026"]}
+  },
+  "alectinib_alk_features": {
+    "G1202R": "溶剂前沿 G1202R 可妨碍早代 ALK 抑制剂与激酶结合",
+    "I1171N": "I1171N 位于 αC 螺旋，阿来替尼进展患者和功能模型均有证据",
+    "I1171S": "I1171S 有阿来替尼进展及功能检测证据",
+    "I1171T": "I1171T 有阿来替尼进展及功能检测证据",
+    "V1180L": "V1180L 有阿来替尼进展及功能检测证据"
+  },
+  "alectinib_exploratory_features": {
+    "MET|variant|L1195F": "alectinib_bypass_candidate",
+    "MET|variant|Y1248H": "alectinib_bypass_candidate",
+    "MET|structural_variant|kinase_domain_duplication": "alectinib_bypass_candidate",
+    "PIK3CA|variant|E542K": "alectinib_bypass_candidate",
+    "KRAS|variant|G12V": "alectinib_bypass_candidate"
+  },
+  "alk_candidate_pairs": {
+    "alk_g1202r_s1206y": ["G1202R", "S1206Y"],
+    "alk_g1202r_f1174c": ["G1202R", "F1174C"]
+  },
+  "profiles": {
+    "fusion_v1_v2": {"type": "fusion_context", "title": "常见 EML4::ALK 转录本", "basis": "ALEX 的探索性结果中，阿来替尼相对克唑替尼的获益见于常见亚型。", "sources": ["ALEX_variants_2019", "CROWN_variants_2023"]},
+    "fusion_v3": {"type": "population_association", "title": "EML4::ALK V3", "basis": "回顾性队列中富集 G1202R 等获得性突变。进展样本、药物序列与检测决定个体判读。", "sources": ["Lin_variants_2018", "GuardantINFORM_2024", "ALEX_variants_2019", "CROWN_variants_2023", "Sampson_condensates_2021", "ORegan_NEK_2020"]},
+    "fusion_other_eml4": {"type": "fusion_context", "title": "少见 EML4::ALK 接头", "basis": "既往分层样本较少，保留完整转录本和可评价范围。", "sources": ["Lin_variants_2018", "ALEX_variants_2019"]},
+    "fusion_non_eml4": {"type": "fusion_context", "title": "非 EML4 的 ALK 伴侣", "basis": "多中心回顾性研究中，多种伴侣可见 ALK TKI 反应。个别伴侣的疗效与序贯证据稀少。", "sources": ["Rare_ALK_2026", "Benayed_RNA_2019"]},
+    "fusion_unresolved": {"type": "assay_review", "title": "融合转录本待确认", "basis": "DNA 断点、FISH 或 IHC 无法单独确认表达接头、阅读框和融合蛋白亚型。", "sources": ["Benayed_RNA_2019", "ALEX_variants_2019", "Xia_complex_ALK_2021"]},
+    "tp53_prognosis": {"type": "prognosis", "title": "TP53 共变异", "basis": "多个队列观察到较短治疗获益。凋亡功能研究提示 p53–NOXA–MCL-1 参与，联合药物仍属临床前。", "sources": ["GuardantINFORM_2024", "TP53_NOXA_2021", "CROWN_variants_2023"]},
+    "v3_tp53": {"type": "prognosis", "title": "同一样本 V3 与 TP53 共现", "basis": "观察性资料中的风险分层。从样本共检无法确认同一克隆或证明可按该组合选择 TKI。", "sources": ["Christopoulos_2019", "GuardantINFORM_2024"]},
+    "cdkn2ab_prognosis": {"type": "prognosis", "title": "CDKN2A/B 功能丧失", "basis": "回顾性队列观察到较短 PFS 和较高 CNS 进展风险。暂无按该标记选择 CDK 抑制剂的临床证据。", "sources": ["Coalterations_2023", "Tumor_intrinsic_2024"]},
+    "rb1_lineage": {"type": "lineage_review", "title": "RB1 功能丧失", "basis": "结合 TP53 与组织学复核。需进展病理确认细胞谱系。", "sources": ["Shiba_Ishii_2022", "Li_2023"]},
+    "nf2_coalteration": {"type": "resistance_context", "title": "NF2 功能丧失", "basis": "报告变异来源和时序。基线 NF2 功能丧失有早期阿来替尼耐药线索。", "sources": ["Alectinib_MET_NF2_2025", "Recondo_2020"]},
+    "alectinib_early_nf2": {"type": "primary_resistance_hypothesis", "title": "基线 NF2 与短期原发进展", "basis": "小型回顾队列支持预先存在 NF2 的可能作用，需验证配对样本和机制。", "sources": ["Alectinib_MET_NF2_2025"]},
+    "met_coalteration": {"type": "resistance_context", "title": "局灶 MET 扩增", "basis": "判读需稳健的局灶扩增定性，以及基线和进展的独立证据。", "sources": ["Alectinib_MET_NF2_2025", "DagogoJack_2020"]},
+    "circulating_origin": {"type": "assay_review", "title": "液体变异肿瘤来源待核", "basis": "结合白细胞对照、组织或经验证肿瘤来源证据，再解释 TP53 等风险标记。", "sources": ["Razavi_CH_2019", "ESMO_ctDNA_2022"]},
+    "pdl1_context": {"type": "immunotherapy_context", "title": "高 PD-L1 IHC 的临床语境", "basis": "ALK 阳性回顾性人群的免疫单药证据有限。结合驱动基因类型及既往治疗讨论。", "sources": ["IMMUNOTARGET_2019", "ESMO_ALK", "Arai_myeloid_2025"]},
+    "atlas_model_clinical_discordance": {"type": "experimental_drug_response", "assay_drug_readouts": {"alectinib": "resistance_signal", "lorlatinib": "resistance_signal"}, "title": "体外双药信号及临床证据差异", "basis": "2026 图谱的 EML4::ALK V1 背景筛选中，该单变异对阿来替尼和洛拉替尼呈耐药信号。二代 TKI 后洛拉替尼有人体活动记录，模型信号不覆盖临床证据。", "sources": ["Oh_ALK_atlas_2026", "Shaw_lorlatinib_2019"]},
+    "atlas_dual_model": {"type": "experimental_drug_response", "assay_drug_readouts": {"alectinib": "resistance_signal", "lorlatinib": "resistance_signal"}, "title": "图谱的双药体外耐药信号", "basis": "EML4::ALK V1 细胞背景的药物实验结果，缺少对应患者中的独立验证。", "sources": ["Oh_ALK_atlas_2026"]},
+    "atlas_multi_model": {"type": "experimental_drug_response", "assay_drug_readouts": {"alectinib": "resistance_signal", "lorlatinib": "resistance_signal"}, "title": "图谱的多药体外耐药信号", "basis": "EML4::ALK V1 筛选及验证实验中的单变异发现，不提供该患者的药敏结论。", "sources": ["Oh_ALK_atlas_2026"]},
+    "atlas_alectinib_model": {"type": "experimental_drug_response", "assay_drug_readouts": {"alectinib": "resistance_signal", "lorlatinib": "sensitivity_signal"}, "title": "图谱的阿来替尼特异体外信号", "basis": "EML4::ALK V1 细胞实验提示阿来替尼耐药；洛拉替尼模型结果尚待人体验证。", "sources": ["Oh_ALK_atlas_2026"]},
+    "mtap_trial_marker": {"type": "trial_biomarker", "title": "MTAP 缺失试验标志", "basis": "已验证纯合缺失或内对照阳性的完全蛋白丢失可支持研究资格核对，机制及疗效仍在研究。", "sources": ["TAP_ALK_2026"]}
+  },
+  "alk_model_features": {
+    "G1202R": "atlas_model_clinical_discordance",
+    "L1196M": "atlas_model_clinical_discordance",
+    "I1171M": "atlas_dual_model",
+    "F1174C": "atlas_multi_model",
+    "F1245C": "atlas_multi_model",
+    "P1153R": "atlas_multi_model",
+    "M1199L": "atlas_alectinib_model"
   }
 }
