@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "case_id": "SYNTHETIC-001",
+  "disease": "ALK_fusion_NSCLC",
+  "progression": {"pattern": "systemic", "lorlatinib_line": 3, "lorlatinib_setting": "advanced"},
+  "clinical": {
+    "age_group": "adult",
+    "setting": "metastatic",
+    "baseline_histology": "adenocarcinoma",
+    "jurisdiction": "US",
+    "advanced_treatment_history_complete": true,
+    "prior_advanced_alk_tkis": ["alectinib", "lorlatinib"],
+    "prior_advanced_platinum": false
+  },
+  "specimens": [
+    {
+      "id": "T0",
+      "timepoint": "pre_lorlatinib",
+      "material": "tissue",
+      "site": "liver_synthetic",
+      "genome_build": "GRCh38",
+      "tumor_fraction": 0.45,
+      "qc": "pass",
+      "assays": [
+        {"id": "WGS", "modality": "wgs", "platform": "Synthetic genome calls", "qc": "pass",
+         "coverage": [{"gene": "MET", "kind": "copy_number", "feature": "amplification", "status": "adequate",
+                       "details": "模拟记录已复核该局灶拷贝数事件的检出范围和 LoD"}]}
+      ],
+      "findings": [
+        {"id": "T0-met", "assay_id": "WGS", "kind": "copy_number", "gene": "MET",
+         "feature": "amplification", "status": "not_detected", "qc": "pass"}
+      ]
+    },
+    {
+      "id": "T1",
+      "timepoint": "progression_on_lorlatinib",
+      "material": "tissue",
+      "site": "liver_synthetic",
+      "genome_build": "GRCh38",
+      "tumor_fraction": 0.41,
+      "qc": "pass",
+      "baseline_sample_id": "T0",
+      "comparable_baseline_assays": {"WGS": "WGS"},
+      "assays": [
+        {"id": "WGS", "modality": "wgs", "platform": "Synthetic genome calls", "qc": "pass",
+         "coverage": [{"gene": "ALK", "kind": "variant", "status": "adequate",
+                       "details": "模拟报告中完整评估预先定义的 ALK 耐药相关区域"}]},
+        {"id": "RNA", "modality": "rna", "platform": "Synthetic RNA analysis", "qc": "pass"},
+        {"id": "METH", "modality": "methylation", "platform": "Synthetic EPIC measurements", "qc": "pass"}
+      ]
+    },
+    {
+      "id": "P1",
+      "timepoint": "progression_on_lorlatinib",
+      "material": "plasma",
+      "site": "peripheral_blood",
+      "tumor_fraction": 0.001,
+      "qc": "limited",
+      "assays": [
+        {"id": "ctDNA", "modality": "targeted_dna", "platform": "Synthetic plasma panel", "qc": "limited",
+         "coverage": [{"gene": "ALK", "kind": "variant", "status": "limited",
+                       "details": "模拟血浆肿瘤分数低于对应事件的可解释范围"}]}
+      ]
+    }
+  ]
+}
